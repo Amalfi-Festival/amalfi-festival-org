@@ -11,7 +11,7 @@ tuition:
 menu-title: Writing
 ---
 
-July 19 - 25, 2023​
+July 19 - 25, 2023
 Instructor: Mary Hall Surface
 
 The Writing Program invites participants to find inspiration in the landscape and character of a region known for attracting generations of writers and artists.  Participants will reflect on a range of writings by authors such as John Steinbeck and Virginia Woolf and paintings by artists like John Singer Sargent and M.C. Escher that capture the singular beauty and history of Amalfi, Ravello, Positano and more.

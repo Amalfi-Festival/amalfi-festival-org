@@ -11,7 +11,7 @@ This season Ms. Oppens has performed twice at New York’s Bargemusic, first in 
 
 Recent releases also include a collaboration with pianist Robert Levin in a recording of the noted British composer Bernard Rands’s selected piano works on Bridge records. In
 addition, Ms. Oppens will perform Frederic Rzewski’s legendary “The People United Will Never Be Defeated” in Winnipeg, Canada, and at Florida State University College of Music’s 17th annual New Music Festival, as well as participating in the Young Concert Artists Composer’s Concert at the Kaufman Center’s Merkin Hall in New York City.
-​
+
 Ms. Oppens has been nominated four times for a Grammy Award; most recently in the coveted category of “Best Classical Instrumental Solo” for the highly praised album “Winging It: Piano Music of John Corigliano,” released on Cedille Records. The disc featured the world premiere recording of John Corigliano’s work by the same name, which had its debut performance by Ms. Oppens at New York’s Symphony Space in May 2009.
 
 Earlier Grammy nominations were for “Oppens Plays Carter” a recording of the complete piano works of Elliott Carter for Cedille Records (which also was named a “Best of the Year” selection by The New York Times long-time music critic Allan Kozinn), her “Piano Music of Our Time” featuring compositions by John Adams, Elliott Carter, Julius Hemphill, and Conlon Nancarrow for the Music and Arts label, and her legendary cult classic “The People United Will Never Be Defeated,” by Frederic Rzewski on Vanguard.
