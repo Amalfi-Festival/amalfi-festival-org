@@ -76,7 +76,7 @@ All pianists will enjoy:
 
 {% for session in page.sessions %}
 
-## {{ session.session-name }}: {% include site/date-range.html dates=session.dates %}
+## {{ session.session-name }}: {% include utilities/date-range.html dates=session.dates %}
 
 {% assign faculty = session.faculty -%}
 <div class="tiles">
@@ -115,9 +115,9 @@ All pianists will enjoy:
 
 The cost for Tuition & Accommodations is listed as one total fee, which includes private lessons, masterclasses, workshops, all concerts, plus accommodations for 12 nights:
 
-* Hotel accommodations (triple occupancy) & buffet breakfast: **${% include site/number-delimited.html number=page.tuition.hotel-triple %}**\
+* Hotel accommodations (triple occupancy) & buffet breakfast: **${% include utilities/number-delimited.html number=page.tuition.hotel-triple %}**\
     **Limited number of triple rooms available.** For double and single rooms, see below.
-* Hostel accommodations (triple rooms with shared bathroom): **${% include site/number-delimited.html number=page.tuition.hostel-triple %}**
+* Hostel accommodations (triple rooms with shared bathroom): **${% include utilities/number-delimited.html number=page.tuition.hostel-triple %}**
 
 {% assign guests = site.programs | where: "slug", "guests" | first %}
 For more information for guests, [click here]({{ guests.url | relative_url }})

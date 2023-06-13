@@ -1,6 +1,6 @@
 ## 报名及录音须知
 
-报名截止日期：**{% include site/date-range-cn.html date=site.data.institute.application.deadline %}**
+报名截止日期：**{% include utilities/date-range-cn.html date=site.data.institute.application.deadline %}**
 
 ## 网上报名
 

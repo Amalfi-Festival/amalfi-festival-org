@@ -23,7 +23,7 @@ The key themes and perspectives of these writings and art works will offer vivid
 
 The cost for Tuition & Accommodations is listed as one total fee, which includes six days of writing sessions with class-based excursions, two receptions, and all festival activities.
 
-* Hotel accommodations (double occupancy) & buffet breakfast: **${% include site/number-delimited.html number=page.tuition.hotel-double %}**\
+* Hotel accommodations (double occupancy) & buffet breakfast: **${% include utilities/number-delimited.html number=page.tuition.hotel-double %}**\
     For single rooms, see below.
 
 {% include optional-fees.md tuition=page.tuition %}

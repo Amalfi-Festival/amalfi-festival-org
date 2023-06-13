@@ -48,9 +48,9 @@ Guest Program fees includes access all festival activities for the full session.
 <h3>{{ program.program-name }}</h3>
 <ul>
     {%- for session in guest-sessions -%}
-    <li>{{ session.session-name }} ({% include site/date-range.html dates=session.dates %})
+    <li>{{ session.session-name }} ({% include utilities/date-range.html dates=session.dates %})
         <ul>
-            <li>{{ session.guests.hotel-description }}: <strong>${% include site/number-delimited.html number=session.guests.hotel-fee %}</strong></li>
+            <li>{{ session.guests.hotel-description }}: <strong>${% include utilities/number-delimited.html number=session.guests.hotel-fee %}</strong></li>
             <li><a href="{{ session.guests.form-url }}">Online application form</a></li>
         </ul>
     </li>

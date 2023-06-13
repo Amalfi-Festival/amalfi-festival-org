@@ -63,7 +63,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
         {%- if session.session-name -%}
             {{- session.session-name }}:
         {% endif -%}
-        {%- include site/date-range.html dates=session.dates -%}
+        {%- include utilities/date-range.html dates=session.dates -%}
         </li>
     {%- endfor -%}
     </ul>

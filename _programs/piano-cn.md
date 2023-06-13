@@ -14,7 +14,7 @@ menu-title: 钢琴艺术节
 {% assign piano = site.programs | where: "slug", "piano" | first %}
 {% for session in piano.sessions %}
 
-## {% if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include site/date-range-cn.html dates=session.dates %}
+## {% if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates %}
 
 {% assign faculty = session.faculty -%}
 <div class="tiles">
@@ -52,9 +52,9 @@ menu-title: 钢琴艺术节
 
 注：学费为单期音乐节单人费用，包括一对一私教课、大师班、讲座、研讨会、音乐会等
 
-* 酒店三人房 及 自助式早餐—— **{% include site/number-delimited.html number=piano.tuition.hotel-triple %}美元**\
+* 酒店三人房 及 自助式早餐—— **{% include utilities/number-delimited.html number=piano.tuition.hotel-triple %}美元**\
     （三人间房型较少，请参考下方双人间及单人间费用）
-* 青年旅馆 及 欧陆式早餐—— **{% include site/number-delimited.html number=piano.tuition.hostel-triple %}美元**
+* 青年旅馆 及 欧陆式早餐—— **{% include utilities/number-delimited.html number=piano.tuition.hostel-triple %}美元**
 
 {% assign guests = site.programs | where: "slug", "guests" | first %}
 For more information for guests, [click here]({{ guests.url | relative_url }})

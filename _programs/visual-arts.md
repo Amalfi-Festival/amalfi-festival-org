@@ -64,7 +64,7 @@ See faculty artwork  here.
 
 The cost for Tuition & Accommodations is listed as one total fee, which includes tuition for class of your choice, hotel accommodations (double occupancy), art-related excursions at instructor's discretion, daily concerts, and group transportation to and from Naples airport (on arrival and departure day at designated times).
 
-* Hotel accommodations (double occupancy) & buffet breakfast: **${% include site/number-delimited.html number=page.tuition.hotel-double %}**\
+* Hotel accommodations (double occupancy) & buffet breakfast: **${% include utilities/number-delimited.html number=page.tuition.hotel-double %}**\
     For single rooms, see below.
 * Lab fee for in-studio art classes: **$145**
 
