@@ -1,5 +1,5 @@
 ---
-title: Program For Guests & Auditors
+program-name: Program For Guests & Auditors
 sessions:
     -   dates:
             start: 2023-07-05
