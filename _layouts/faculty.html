@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<h1>{{ page.first-name }} {{ page.last-name }}</h1>
+<h2>{{ page.school }}</h2>
+
+<img src="{{ site.faculty-image-directory | append: page.headshot-filename | relative_url }}" />
+
+{{ content }}
+
+{%- assign availability = site.empty-array -%}
+{%- for program in site.programs -%}
+    {%- for session in program.sessions -%}
+        {%- if session.faculty contains page.slug -%}
+            {%- capture session-available %}{{ program.program-name | smartify }}, {{ session.session-name }} ({% include site/date-range.html dates=session.dates %}){% endcapture -%}
+            {%- assign availability = availability | push: session-available -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endfor -%}
+
+{%- if availability.size == 1 -%}
+<p>
+    <strong>Available in:</strong>
+    {{ availability | join: ", " -}}
+</p>
+{%- elsif availability.size > 1 -%}
+<p>
+    <strong>Available in:</strong>
+    <ul>
+        {%- for available in availability -%}
+        <li>{{ available }}</li>
+        {%- endfor -%}
+    </ul>
+</p>
+{%- endif -%}

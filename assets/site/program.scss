@@ -1,0 +1,27 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+.tiles {
+    gap: 0;
+    a {
+        display: block;
+        text-decoration: none;
+        border: 2px solid transparent;
+        padding: .5em;
+        text-align: center;
+    }
+    a:hover {
+        border-image-slice: 1;
+        border-image-source: linear-gradient(160deg, #038C8C, #025E5E);
+    }
+    .name {
+        font-weight: bold;
+        line-height: $minimum-line-height;
+    }
+    .school {
+        display: block;
+        line-height: $minimum-line-height;
+    }
+}

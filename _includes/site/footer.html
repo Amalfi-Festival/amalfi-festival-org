@@ -1,0 +1,27 @@
+{% include site/social.svg %}
+<footer><div class="wrapper">
+<div>
+    <a href="{{ site.baseurl }}{% link index.md %}" class="logo"><span>Amalfi Coast</span> <span>Music & Arts Festival</span></a>
+
+    <div id="social">
+        <a href="{{ site.social.instagram }}"><svg><use xlink:href="#instagram" /></svg></a>
+        <a href="{{ site.social.twitter }}"><svg><use xlink:href="#twitter" /></svg></a>
+        <a href="{{ site.social.facebook }}"><svg><use xlink:href="#facebook" /></svg></a>
+        <a href="{{ site.social.youtube }}"><svg><use xlink:href="#youtube" /></svg></a>
+    </div>
+
+    <div id="copyright">&copy; {{ "now" | date: "%Y" }} Center for Musical Studies</div>
+</div>
+<nav>
+    <h1>Institute</h1>
+    {%- include site/institute-links.html include-translations=true -%}
+</nav>
+<nav>
+    <h1>Info</h1>
+    <a href="{{ site.baseurl }}{% link donations.md %}">Make a donation</a>
+    <div><a href="{{ site.baseurl }}{% link getting-here.md %}">Getting Here</a> | <a href="{{ site.baseurl }}{% link getting-here-cn.md %}">中文</a></div>
+    <a href="{{ site.baseurl }}{% link staff.md %}">Staff</a>
+    <a href="{{ site.baseurl }}{% link faq.md %}">FAQ</a>
+    <a href="{{ site.baseurl }}{% link contact.md %}">Contact</a>
+</nav>
+</div></footer>

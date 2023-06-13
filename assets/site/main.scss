@@ -1,0 +1,166 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang&family=Bodoni+Moda:opsz@6..96&family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: $standard-line-height;
+    font-synthesis: none;
+}
+
+body {
+    background-color: $background-color;
+    font-family: "Karla";
+    letter-spacing: -.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fahkwang";
+    line-height: $minimum-line-height;
+    margin-bottom: 1rem;
+    letter-spacing: 0;
+}
+
+.logo {
+    span {
+        line-height: 1;
+    }
+    span:first-of-type {
+        display: block;
+        font-family: "Bodoni Moda";
+        text-transform: uppercase;
+        letter-spacing: -.05em;
+    }
+    span:last-of-type {
+        display: block;
+        text-transform: lowercase;
+        letter-spacing: -.1em;
+    }
+}
+
+body > :is(header,footer) {
+    > div.wrapper {
+        @include standard-block-behavior;
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+        color: $brand-yellow;
+        &:hover {
+            color: $brand-light-yellow;
+        }
+    }
+}
+body > header {
+    background-color: #05C7F2;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    nav {
+        flex-grow: 1;
+        display: flex;
+        gap: 1em;
+        justify-content: flex-end;
+    }
+}
+body > main {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+body > footer {
+    background-color: #05AFF2;
+    > div.wrapper {
+        justify-content: space-between;
+    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    #social {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1em;
+        a {
+            display: block;
+        }
+        svg {
+            width: 1.5em;
+            height: 1.5em;
+            fill: $brand-yellow;
+            transition: $animation-length;
+        }
+        a:hover svg {
+            fill: $brand-light-yellow;
+            transition: $animation-length;
+        }
+    }
+
+    #copyright {
+        font-size: .8em;
+    }
+}
+
+main {
+    > * {
+        @include standard-block-behavior;
+    }
+    > :is(ul, ol) {
+        @include standard-block-behavior($additional-left-padding: 1.5em);
+
+        :is(ul, ol) {
+            padding-left: 1.5em;
+        }
+    }
+    p, > :is(ul, ol) {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    gap: 2em 1em;
+
+    a {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 10em;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+a {
+    text-underline-offset: .15em;
+    transition: $animation-length color;
+    &:link, &:active, &:visited {
+        text-decoration-thickness: 1px;
+    }
+    &:hover {
+        transition: $animation-length color;
+    }
+}

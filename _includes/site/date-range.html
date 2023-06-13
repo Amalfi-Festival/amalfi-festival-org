@@ -1,0 +1,19 @@
+{%- if include.dates.end -%}
+    {%- assign start-year = include.dates.start | date: "%Y" -%}
+    {%- assign end-year = include.dates.end | date: "%Y" -%}
+    {%- if start-year != end-year -%}
+        {{- include.dates.start | date: "%B %e, %Y" }}–{{ include.dates.end | date: "%B %e, %Y" -}}
+    {%- else -%}
+        {%- assign start-month = include.dates.start | date: "%m" -%}
+        {%- assign end-month = include.dates.end | date: "%m" -%}
+        {%- if start-month != end-month -%}
+            {{- include.dates.start | date: "%B %e" }}–{{ include.dates.end | date: "%B %e, %Y" -}}
+        {%- else -%}
+            {{- include.dates.start | date: "%B %e" }}–{{ include.dates.end | date: "%e, %Y" -}}
+        {%- endif -%}
+    {%- endif -%}
+{%- elsif include.dates.start -%}
+    {{- include.dates.start | date: "%B %e, %Y" -}}
+{%- elsif include.dates.note -%}
+    {{- include.dates.note -}}
+{%- endif -%}
