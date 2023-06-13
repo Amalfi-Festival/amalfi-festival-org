@@ -94,3 +94,14 @@ section#institute {
         }
     }
 }
+
+section#sponsors {
+    .sponsor-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        gap: .5em;
+    }
+    img {
+        width: 100%;
+    }
+}
