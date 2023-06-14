@@ -1,6 +1,7 @@
 ---
-title: 第26届意大利阿马尔菲海岸钢琴艺术节
+program-name: 第26届意大利阿马尔菲海岸钢琴艺术节
 menu-title: 钢琴艺术节
+reference-program: piano
 ---
 
 ## 钢琴艺术节简介
@@ -11,25 +12,12 @@ menu-title: 钢琴艺术节
 
 每位学生将会被分配到四堂一对一私教课以及一堂大师班表演。我们会尽最大的努力去满足每位学员对私教课及大师班教授的需求。除了每位学员本人的课程外，其他所有大师班和音乐会都供正式学员们聆听观摩！
 
+
+
+
 {% assign piano = site.programs | where: "slug", "piano" | first %}
-{% for session in piano.sessions %}
+{% include site/session-info.md program=piano show-localization=true %}
 
-## {% if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates %}
-
-{% assign faculty = session.faculty -%}
-<div class="tiles">
-{%- for faculty-member-name in faculty %}
-    {%- for faculty-candidate in site.faculty -%}
-        {%- if faculty-candidate.slug == faculty-member-name -%}
-            {%- assign faculty-member = faculty-candidate -%}
-            {%- break -%}
-        {%- endif -%}
-    {%- endfor -%}
-<a href="{{ faculty-member.url | relative_url }}"><img src="{{ site.faculty-image-directory | append: faculty-member.headshot-filename | relative_url }}" /> <div class="name">{{ faculty-member.first-name }} {{ faculty-member.last-name }}{% if faculty-member.cn-name %} ({{ faculty-member.cn-name }}){% endif %}</div> <div class="school">{% if faculty-member.school-cn %}{{ faculty-member.school-cn }}{% else %}{{ faculty-member.school }}{% endif %}</div>
-</a>
-{%- endfor -%}
-</div>
-{%- endfor -%}
 
 {% include application-instructions-cn.md application=piano.application is-music=true %}
 

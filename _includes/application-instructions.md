@@ -1,10 +1,17 @@
 ## How to Apply
 
-Application Deadline: **{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}**
+<div class="highlight-box" markdown="1">
 
-Registration Fee: **${{ site.data.institute.application.registration-fee }}** (non-refundable)
+Application Deadline:<br/>
+**{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}**
 
-Deposit: **${{ site.data.institute.application.deposit }}** (refundable [in case of cancellation](#cancellation-policy--refunds))
+Registration Fee (non-refundable):<br/>
+**${{ site.data.institute.application.registration-fee }}**
+
+Deposit (refundable [in case of cancellation](#cancellation-policy--refunds)):<br/>
+**${{ site.data.institute.application.deposit }}**
+
+</div>
 
 1. Complete the {% if include.application.form-url %}[online registration form]({{ include.application.form-url }}).{% else %}online registration form.{% endif %}
 

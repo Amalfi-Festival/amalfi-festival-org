@@ -21,15 +21,19 @@
 
 body {
     background-color: $background-color;
-    font-family: "Karla";
+    font-family: $body-font;
     letter-spacing: -.01em;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Fahkwang";
     line-height: $minimum-line-height;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     letter-spacing: 0;
+}
+:is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
+    margin-top: 1rem;
 }
 
 .logo {
@@ -87,7 +91,7 @@ body > main {
     margin-bottom: 3rem;
 }
 body > footer {
-    background-color: #05AFF2;
+    background-color: #4F35C4;
     > div.wrapper {
         justify-content: space-between;
 
@@ -183,15 +187,19 @@ main {
 
 .tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-    gap: 2em 1em;
+    $side-padding: .75em;
+    $image-width: 10.5em;
+    grid-template-columns: repeat(auto-fit, minmax($image-width + 2 * $side-padding, 1fr));
 
     a {
         display: flex;
+        gap: .5em;
         flex-direction: column;
+        padding: 1em .75em;
+        width: $image-width + 2 * $side-padding;
     }
     img {
-        width: 10em;
+        width: $image-width;
         aspect-ratio: 1;
         object-fit: cover;
     }

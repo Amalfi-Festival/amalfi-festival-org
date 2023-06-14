@@ -62,6 +62,11 @@ tuition:
     double-room-upgrade: 465
     single-room-upgrade: 945
 menu-title: Piano
+translations:
+    -   abbreviation: en
+        program-name: piano
+    -   abbreviation: 中文
+        program-name: piano-cn
 ---
 
 ## Master Classes, Private Lessons, Seminars & Performance Opportunities
@@ -73,25 +78,7 @@ All pianists will enjoy:
 * Daily faculty concerts and  institute recital for students (Young Artist Series).
 * Young Artist Series concerts provide an array of performance opportunities at historic landmarks in the intimate settings of historic churches and halls.
 
-
-{% for session in page.sessions %}
-
-## {{ session.session-name }}: {% include utilities/date-range.html dates=session.dates %}
-
-{% assign faculty = session.faculty -%}
-<div class="tiles">
-{%- for faculty-member-name in faculty %}
-    {%- for faculty-candidate in site.faculty -%}
-        {%- if faculty-candidate.slug == faculty-member-name -%}
-            {%- assign faculty-member = faculty-candidate -%}
-            {%- break -%}
-        {%- endif -%}
-    {%- endfor -%}
-<a href="{{ faculty-member.url | relative_url }}"><img src="{{ site.faculty-image-directory | append: faculty-member.headshot-filename | relative_url }}" /> <div class="name">{{ faculty-member.first-name }} {{ faculty-member.last-name }}</div> <div class="school">{{ faculty-member.school }}</div>
-</a>
-{%- endfor -%}
-</div>
-{%- endfor -%}
+{% include site/session-info.md show-localization=false %}
 
 {% include application-instructions.md application=page.application is-music=true %}
 
