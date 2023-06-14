@@ -16,7 +16,7 @@ Hotel Upgrades:
 </ul>
 {%- endif %}
 
-From excursions to Italian language and cooking classes:
+Additional activities are available with the fees listed below. [Learn more about the activities and excursions.]({{ site.baseurl }}{% link activities.md %})
 
 <ul>
 {%- for activity in site.data.institute.activity-fees -%}
