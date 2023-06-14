@@ -1,0 +1,9 @@
+---
+first-name: Mary Hall
+last-name: Surface
+headshot-filename: MHSurface1.jpeg
+---
+
+Mary Hall Surface  is a popular creative writing instructor and an award-winning playwright, theatre director and producer. She was featured in  The Washington Post   for her innovative approach to the writing-visual art connection. She is the founding instructor of Washington, DC's National Gallery of Art’s Writing Salon, a public program that embraces art as an inspiration for writing and approaches writing as a way to deepen connection to visual art.  She offers a popular “Write into Art” Series through the Smithsonian Associates, and has presented workshops as a writer/museum educator with the Smithsonian American Art Museum, Phoenix Art Museum, the Phillips Collection and more. She is  a Kennedy Center National teaching artist in both creative writing and drama and  has been a guest artist with Harvard’s Project Zero, a research institute devoted to innovative learning.  Her plays have been produced around the world at theaters, museums, and festivals, including 17 productions at the Kennedy Center in Washington, DC.  Six of her plays are inspired by visual art, including Who ’ s in the Hopper , inspired by the work of Edward Hopper and Color ’ s Garden , inspired by the cut-outs of Henri Matisse . Mary Hall has published 12 plays, 3 original cast albums, 2 collections of scenes and monologues, an anthology of her plays and numerous articles. She is the proud founding artistic director of DC’s Atlas INTERSECTIONS Festival, an all-arts festival that celebrates connection across boundaries of age, community and perspectives.
+
+[Personal website](www.maryhallsurface.com)

@@ -33,13 +33,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    svg {
-        aspect-ratio: 3.29;
-    }
     --logo-dome: red;
     --logo-amalfi: yellow;
     --logo-coast: green;
     --logo-festival: purple;
+
+    svg {
+        aspect-ratio: 3.29;
+
+        &:hover {
+        --logo-dome: #{$brand-light-yellow};
+        --logo-amalfi: #{$brand-light-yellow};
+        --logo-coast: #{$brand-light-yellow};
+        --logo-festival: #{$brand-light-yellow};
+        }
+    }
 }
 
 body > :is(header,footer) {

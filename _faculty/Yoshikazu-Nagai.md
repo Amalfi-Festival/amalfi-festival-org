@@ -21,4 +21,4 @@ Mr. Nagai frequently gives master classes at universities and conservatories thr
 
 Currently Professor of Piano and Chair of the Piano Department at the San Francisco Conservatory of Music, Mr. Nagai teaches during the summers at the Amalfi Coast Music Festival in Italy, and "Art of Piano" at Cincinnati Conservatory. He has also been summer faculty at the Shanghai and Beijing International Piano Festivals in China, Eastern Music Festival in North Carolina, Pianofest in the Hamptons, Chautauqua, Summit Festivals in New York, South Eastern Piano Festival in South Carolina, and Colburn Academy and Montecito International Music Festival in California. Mr. Nagai is a former faculty member at the Interlochen Arts Academy.
 
-www.yoshinagai.com
+[Personal website](www.yoshinagai.com)

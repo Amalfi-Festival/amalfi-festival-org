@@ -13,7 +13,7 @@ layout: default
 {%- for program in site.programs -%}
     {%- for session in program.sessions -%}
         {%- if session.faculty contains page.slug -%}
-            {%- capture session-available %}{{ program.program-name | smartify }}, {{ session.session-name }} ({% include utilities/date-range.html dates=session.dates %}){% endcapture -%}
+            {%- capture session-available %}{{ program.program-name | smartify }}{% if session.session-name %}, {{ session.session-name }}{% endif %} ({% include utilities/date-range.html dates=session.dates %}){% endcapture -%}
             {%- assign availability = availability | push: session-available -%}
         {%- endif -%}
     {%- endfor -%}
