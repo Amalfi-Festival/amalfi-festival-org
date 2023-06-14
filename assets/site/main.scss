@@ -163,7 +163,7 @@ main {
         margin-block-start: 1em;
         margin-block-end: 1em;
     }
-    > :is(ul, ol, p) {
+    > :is(ul, ol, p), dd {
         max-width: 30em;
         margin-left: 3em;
         @include breakpoint(mobile) {
