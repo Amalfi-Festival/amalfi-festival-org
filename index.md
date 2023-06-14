@@ -15,12 +15,10 @@ sponsors:
         - hertz.jpg
 custom-css: home
 ---
-
+{%- include site/home-logo.svg -%}
 <section id="hero">
     <div class="logo">
-        <img src="{{ site.site-assets-directory | append: 'logo.png' | relative_url }}" />
-        <span>Amalfi Coast</span>
-        <span>Music&Arts Festival</span>
+        <svg><use xlink:href="#home-logo" /></svg>
     </div>
     <div class="image">
         <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
@@ -33,6 +31,14 @@ custom-css: home
 
 ## {{ institute-age }} Years of Music & Art on the Amalfi Coast
 The Amalfi Coast Music & Arts Festival is produced by the Center of Musical Studies of Washington, in conjunction with the Accademia Jacopo Napoli of Salerno, Italy, and Artis International. The festival is based in Maiori, Italy, and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast, in the area, including the excavations of Pompeii, the world-famous vistas of Ravello, where Wagner composed Parisfal, the incomparable Greek temples at Paestum, the magical isle of Capri, and more.
+
+</section>
+
+<section>
+    <iframe src="https://www.youtube.com/embed/bP4LVZUGYYs?modestbranding=1" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="copy" markdown="1">
 
 ## Concerts Around the Clock... Art, Writing, Italian Language & Mediterranean Cuisine!
 Concerts take place daily and include chamber music with the Fine Arts Quartet, piano recitals, vocal performances and opera. The Music Institute, staffed by internationally recognized artists and professors, offers high-level training in piano, strings, and voice, including concert opera productions with orchestra, in addition to a choral program. The festival also presents a rich program in in the visual arts, offering courses in painting and ceramics, in addition to intensive workshops in fiction, poetry, and memoir for writers of all levels.
@@ -54,7 +60,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 {%- endif -%}
 {%- assign program-name = program-entry.name -%}
 {%- assign program = site.programs | where: "slug", program-name | first -%}
-<div>
+<a href="{{ program.url | relative_url }}">
     <h3 class="program-name">{{ program.program-name | smartify }}</h3>
     <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
     <ul>
@@ -67,7 +73,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
         </li>
     {%- endfor -%}
     </ul>
-</div>
+</a>
 {%- endfor -%}
 </div>
 

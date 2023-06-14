@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang&family=Bodoni+Moda:opsz@6..96&family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
+    color: $body-color;
     font-size: 18px;
 }
 
@@ -32,26 +33,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    span {
-        line-height: 1;
+    svg {
+        aspect-ratio: 3.29;
     }
-    span:first-of-type {
-        display: block;
-        font-family: "Bodoni Moda";
-        text-transform: uppercase;
-        letter-spacing: -.05em;
-    }
-    span:last-of-type {
-        display: block;
-        text-transform: lowercase;
-        letter-spacing: -.1em;
-    }
+    --logo-dome: red;
+    --logo-amalfi: yellow;
+    --logo-coast: green;
+    --logo-festival: purple;
 }
 
 body > :is(header,footer) {
     > div.wrapper {
         @include standard-block-behavior;
         display: flex;
+        gap: 1em;
     }
     a {
         text-decoration: none;
@@ -66,6 +61,12 @@ body > header {
     align-items: center;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    .wrapper {
+        align-items: center;
+    }
+    svg {
+        height: 3rem;
+    }
     nav {
         flex-grow: 1;
         display: flex;
@@ -81,60 +82,94 @@ body > footer {
     background-color: #05AFF2;
     > div.wrapper {
         justify-content: space-between;
+
+        @include breakpoint(mobile) {
+            flex-direction: column-reverse;
+            align-content: center;
+            font-size: .9em;
+        }
     }
     padding-top: 2rem;
     padding-bottom: 2rem;
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-    h1 {
-        text-transform: uppercase;
-        font-size: 1em;
-    }
 
-    .logo {
-        font-size: 1.5rem;
+    > div.wrapper {
+        > div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        > div:nth-of-type(2) {
+            flex-grow: 1;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-around;
+        }
     }
-
+    svg {
+        height: 5rem;
+        @include breakpoint(tablet) {
+            height: 4.5rem;
+        }
+        @include breakpoint(mobile) {
+            width: min(70vw, 20em);
+            height: initial;
+        }
+    }
     #social {
-        margin-top: 1rem;
         display: flex;
         gap: 1em;
         a {
             display: block;
+            --social-instagram: #{$brand-yellow};
+            --social-youtube: #{$brand-yellow};
+            --social-facebook: #{$brand-yellow};
+            --social-twitter: #{$brand-yellow};
+
+            &:hover {
+                --social-instagram: #{$brand-light-yellow};
+                --social-youtube: #{$brand-light-yellow};
+                --social-facebook: #{$brand-light-yellow};
+                --social-twitter: #{$brand-light-yellow};
+            }
         }
         svg {
             width: 1.5em;
             height: 1.5em;
-            fill: $brand-yellow;
-            transition: $animation-length;
-        }
-        a:hover svg {
-            fill: $brand-light-yellow;
-            transition: $animation-length;
         }
     }
-
     #copyright {
         font-size: .8em;
     }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
+body.program main, body.page main {
+    @include standard-block-behavior;
+}
 main {
-    > * {
-        @include standard-block-behavior;
-    }
-    > :is(ul, ol) {
-        @include standard-block-behavior($additional-left-padding: 1.5em);
-
-        :is(ul, ol) {
-            padding-left: 1.5em;
-        }
+    :is(ul, ol) {
+        padding-left: 1.5em;
     }
     p, > :is(ul, ol) {
         margin-block-start: 1em;
         margin-block-end: 1em;
+    }
+    > :is(ul, ol, p) {
+        max-width: 30em;
+        margin-left: 3em;
+        @include breakpoint(mobile) {
+            max-width: initial;
+            margin-left: 0;
+        }
     }
 }
 
@@ -155,12 +190,14 @@ main {
 }
 
 a {
+    color: $body-color;
     text-underline-offset: .15em;
-    transition: $animation-length color;
+    transition: color $animation-length;
     &:link, &:active, &:visited {
         text-decoration-thickness: 1px;
     }
     &:hover {
-        transition: $animation-length color;
+        color: $body-color;
+        transition: color $animation-length;
     }
 }

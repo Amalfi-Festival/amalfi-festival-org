@@ -2,7 +2,7 @@
 program-name: Choral Program
 sessions:
     - dates:
-        note: Coming soon
+        note: Coming in 2024
 menu-title: Choral
 ---
 

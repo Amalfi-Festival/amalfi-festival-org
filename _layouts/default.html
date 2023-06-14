@@ -7,7 +7,7 @@
 {%- if layout.body-class or page.body-class -%}
     {{ layout.body-class }} {{ page.body-class }}
 {%- endif -%}
-{%- if page.categories -%}
+{%- if page.categories[0] -%}
     {{ page.categories }}-{{ page.title | slugify }}
 {%- endif -%}
     ">

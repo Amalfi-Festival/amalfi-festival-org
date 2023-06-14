@@ -1,7 +1,7 @@
 {% include utilities/social.svg %}
 <footer><div class="wrapper">
 <div>
-    <a href="{{ site.baseurl }}{% link index.md %}" class="logo"><span>Amalfi Coast</span> <span>Music & Arts Festival</span></a>
+    {%- include site/logo.html -%}
 
     <div id="social">
         <a href="{{ site.social.instagram }}"><svg><use xlink:href="#instagram" /></svg></a>
@@ -12,16 +12,19 @@
 
     <div id="copyright">&copy; {{ "now" | date: "%Y" }} Center for Musical Studies</div>
 </div>
-<nav>
-    <h1>Institute</h1>
-    {%- include site/institute-links.html include-translations=true -%}
-</nav>
-<nav>
-    <h1>Info</h1>
-    <a href="{{ site.baseurl }}{% link donations.md %}">Make a donation</a>
-    <div><a href="{{ site.baseurl }}{% link getting-here.md %}">Getting Here</a> | <a href="{{ site.baseurl }}{% link getting-here-cn.md %}">中文</a></div>
-    <a href="{{ site.baseurl }}{% link staff.md %}">Staff</a>
-    <a href="{{ site.baseurl }}{% link faq.md %}">FAQ</a>
-    <a href="{{ site.baseurl }}{% link contact.md %}">Contact</a>
-</nav>
+<div>
+    <nav>
+        <h1>Institute</h1>
+        {%- include site/institute-links.html include-translations=true -%}
+    </nav>
+    <nav>
+        <h1>Info</h1>
+        <div><a href="{{ site.baseurl }}{% link getting-here.md %}">Getting Here</a> | <a href="{{ site.baseurl }}{% link getting-here-cn.md %}">中文</a></div>
+        <a href="{{ site.baseurl }}{% link activities.md %}">Activities</a>
+        <a href="{{ site.baseurl }}{% link faq.md %}">FAQ</a>
+        <a href="{{ site.baseurl }}{% link donations.md %}">Make a donation</a>
+        <a href="{{ site.baseurl }}{% link staff.md %}">Staff</a>
+        <a href="{{ site.baseurl }}{% link contact.md %}">Contact</a>
+    </nav>
+</div>
 </div></footer>
