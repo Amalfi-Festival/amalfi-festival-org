@@ -4,11 +4,11 @@
             {%- continue -%}
         {%- endunless -%}
     {%- endif -%}
-    {%- assign program = site.programs | where: "slug", program-entry.name | first -%}
-    {%- if program -%}
-<a href="{{ program.url | relative_url }}">{{ program.menu-title }}</a>
+    {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
+    {%- if p -%}
+<a href="{{ p.url | relative_url }}">{{ p.menu-title }}</a>
     {%- endif -%}
 {%- endfor -%}
 
-{%- assign program = site.programs | where: "slug", "guests" | first -%}
-<a href="{{ program.url | relative_url }}">{{ program.menu-title }}</a>
+{%- assign p = site.programs | where: "slug", "guests" | first -%}
+<a href="{{ p.url | relative_url }}">{{ p.menu-title }}</a>

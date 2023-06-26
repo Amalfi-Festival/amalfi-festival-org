@@ -1,12 +1,14 @@
+{%- assign tuition = reference-program.tuition %}
+
 ### 可额外加购项目
 
 <ul>
-<li>音乐节期间的晚餐（每餐包括前餐、主餐、甜点、以及红/白酒）——<strong>{{ include.tuition.meal-plan }}美元</strong></li>
-{%- if include.tuition.double-room-upgrade -%}
-<li>酒店房型升级至双人间——<strong>{{ include.tuition.double-room-upgrade }}美元</strong></li>
+<li>音乐节期间的晚餐（每餐包括前餐、主餐、甜点、以及红/白酒）——<strong>{{ tuition.meal-plan }}美元</strong></li>
+{%- if tuition.double-room-upgrade -%}
+<li>酒店房型升级至双人间——<strong>{{ tuition.double-room-upgrade }}美元</strong></li>
 {%- endif -%}
-{%- if include.tuition.single-room-upgrade -%}
-<li>酒店房型升级至单人间——<strong>{{ include.tuition.single-room-upgrade }}美元</strong></li>
+{%- if tuition.single-room-upgrade -%}
+<li>酒店房型升级至单人间——<strong>{{ tuition.single-room-upgrade }}美元</strong></li>
 {%- endif -%}
 
 {%- for activity in site.data.institute.activity-fees -%}

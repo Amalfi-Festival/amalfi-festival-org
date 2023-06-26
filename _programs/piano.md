@@ -18,6 +18,9 @@ sessions:
             -   Yoshikazu-Nagai
             -   Joseph-Rackers
             -   Jerry-Wong
+        associate-faculty:
+            -   Yetong-Tang
+            -   Shichao-Zhang
         guests:
             hotel-description: Hotel accommodations (triple occupancy) & buffet breakfast
             hotel-fee: 3195
@@ -37,24 +40,18 @@ sessions:
             -   Joseph-Rackers
             -   Chi-Wu
             -   Hong-Xu
+        associate-faculty:
+            -   Yetong-Tang
+            -   Shichao-Zhang
         guests:
             hotel-description: Hotel accommodations (triple occupancy) & buffet breakfast
             hotel-fee: 3195
             form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
-    -   session-name: Piano Teacher Seminar
-        dates:
-            start: 2023-07-10
-            end: 2023-07-17
-        faculty:
-            -   Yetong-Tang
-            -   Shichao-Zhang
-associate-faculty:
-    -   Yetong-Tang
-    -   Shichao-Zhang
 application:
     extended-deadline: 2023-04-23
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     payment-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
+    include-audition: true
 tuition:
     meal-plan: 625
     hotel-triple: 3385
@@ -62,53 +59,110 @@ tuition:
     double-room-upgrade: 465
     single-room-upgrade: 945
 menu-title: Piano
+hero-image: concert.jpg
 translations:
     -   abbreviation: en
         program-name: piano
     -   abbreviation: 中文
         program-name: piano-cn
 ---
+{%- include site/initialize-program-variables.md program=page -%}
 
-## Master Classes, Private Lessons, Seminars & Performance Opportunities
+<section id="splash" class="standard-block" markdown="1">
 
-All pianists will enjoy:
-* The individual attention of private lessons.
-* Daily master classes that provide a dynamic, interactive learning experience in a supportive environment.
-* Workshops and round tables to be held on ground-breaking topics such as musical memory, performance anxiety, technique, and wellness.
-* Daily faculty concerts and  institute recital for students (Young Artist Series).
-* Young Artist Series concerts provide an array of performance opportunities at historic landmarks in the intimate settings of historic churches and halls.
+## Experience an intensive piano education within the breathtaking views of the Amalfi Coast
 
-{% include site/session-info.md show-localization=false %}
+<div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
+<a class="apply" href="{{ apply-page.url | relative_url }}#how-to-apply">Apply</a>
+</div>
 
-{% include application-instructions.md application=page.application is-music=true %}
-
-### Recording guidelines
-
-* Recordings (audio or video) should contain two works, preferably solo, which demonstrate a contrast of style and character. Individual movements of sonatas and suites are acceptable.
-* Recordings must be recent, made no more than six months prior to application.
-* Each excerpt or work must be played through without stopping.
-* Each work should be uploaded as separate tracks.
-* All excerpts and works must be uploaded in the order listed.
-* Audition materials must be submitted together with (or after) an application is received in our office.  No audition recordings will be considered without a completed registration from the applicant.
-
-### Submitting recordings
-
-1. Audition recordings may be YouTube links or mp3 files.
-1. Label each upload with the name of the excerpt or work. **Do not include your name.**
-2. Email recordings to [music@amalfi-festival.org](mailto:music@amalfi-festival.org).
+<div class="image-copy">
+<div class="image rellax" data-rellax-speed="-1" markdown="1">
+![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }})
+</div>
+<div class="copy">
+Receive individual attention from world-renowned faculty with 4 one-hour private lessons.
+</div>
+</div>
 
 
-## Tuition & Accommodations
+<div class="image-copy right">
+<div class="image rellax" data-rellax-speed="-.7" markdown="1">
+![Nagai teaching]({{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }})
+</div>
+<div class="copy">
+Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
+</div>
+</div>
 
-The cost for Tuition & Accommodations is listed as one total fee, which includes private lessons, masterclasses, workshops, all concerts, plus accommodations for 12 nights:
 
-* Hotel accommodations (triple occupancy) & buffet breakfast: **${% include utilities/number-delimited.html number=page.tuition.hotel-triple %}**\
-    **Limited number of triple rooms available.** For double and single rooms, see below.
-* Hostel accommodations (triple rooms with shared bathroom): **${% include utilities/number-delimited.html number=page.tuition.hostel-triple %}**
+<div class="image-copy">
+<div class="image rellax" data-rellax-speed="-.3" markdown="1">
+![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }})
+</div>
+<div class="copy" style="bottom: -7rem;">
+Held in an array of intimate settings at historic churches, halls, and landmarks, the Festival hosts daily faculty concerts and the Young Artist Series, the institute recital series for students.
+</div>
+</div>
 
-{% assign guests = site.programs | where: "slug", "guests" | first %}
-For more information for guests, [click here]({{ guests.url | relative_url }})
+<div class="image-copy right">
+<div class="image rellax" data-rellax-speed=".3" markdown="1">
+![Student performing]({{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }})
+</div>
+</div>
 
-{% include optional-fees.md tuition=page.tuition %}
+<div class="image-copy">
+<div class="image rellax" data-rellax-speed=".5" markdown="1">
+![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/art show 2.jpg" | relative_url }})
+</div>
+<div class="copy" style="bottom: 5rem;">
+Opportunities to fully experience the Amalfi Coast with excursions to world-renowned locations, and cultural activities including language, pottery, and cooking classes.
+</div>
+</div>
 
-{% include fees-deposits-cancellations.md %}
+
+</section>
+
+<section id="faculty" markdown="1">
+
+## Learn from world-class faculty
+
+<div id="faculty-list" class="standard-block">
+{%- assign all-faculty = page.sessions[0].faculty | concat: page.sessions[1].faculty | uniq | sort -%}
+{%- for faculty-name in all-faculty -%}
+    {%- for faculty-candidate in site.faculty -%}
+        {%- if faculty-candidate.slug == faculty-name -%}
+            {%- assign faculty-member = faculty-candidate -%}
+            {%- break -%}
+        {%- endif -%}
+    {%- endfor -%}
+<div><a href="{{ faculty-member.url | relative_url }}"><div><img src="{{ site.faculty-image-directory | append: faculty-member.headshot-filename | relative_url }}" /></div><div class="name">{{ faculty-member.first-name }} {{ faculty-member.last-name }}{% if faculty-member.cn-name and include.show-localization %}<br/>({{ faculty-member.cn-name }}){% endif %}</div><div class="school">{{ faculty-member.school }}</div>
+</a></div>
+{%- endfor -%}
+
+</div>
+
+</section>
+
+<section markdown="1">
+
+## Perform concerts in historic churches, halls, and landmarks within the Amalfi region
+
+PICTURES/SLIDESHOW?
+
+</section>
+
+<section markdown="1">
+
+## Experience the beauty of Amalfi and immerse yourself in Italian culture
+
+PICTURES of excursions
+
+PICTURES of activities
+
+</section>
+
+<section id="learn">
+<a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
+</section>
+

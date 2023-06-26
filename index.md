@@ -13,15 +13,17 @@ sponsors:
         - progetto.jpg
         - coelmo.jpg
         - hertz.jpg
+custom-js: rellax.min
 custom-css: home
 ---
 {%- include site/home-logo.svg -%}
 <section id="hero">
     <div class="logo">
         <svg><use xlink:href="#home-logo" /></svg>
+        <span>{{ site.data.institute.edition }}</span>
     </div>
-    <div class="image">
-        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
+    <div class="image-container">
+        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" class="rellax" data-rellax-speed="-2" />
     </div>
 </section>
 
@@ -51,7 +53,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 
 <section id="institute" markdown="1">
 
-## The Institute
+## Programs
 
 <div>
 {%- for program-entry in site.data.institute.programs -%}
@@ -104,3 +106,9 @@ A special program for guests provides an unparalleled opportunity in cultural to
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
+
+
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>

@@ -1,8 +1,6 @@
 $body-font: "Karla", Helvetica, sans-serif;
-$brand-font: $body-font;
-$form-text-font: $body-font;
-$header-footer-font: "Barlow Condensed", sans-serif;
-$form-placeholder-font: $header-footer-font;
+$header-footer-font: "Fahkwang", Georgia, serif;
+$brand-font: "Fahkwang", Georgia, serif;
 
 $darkest-color: #221a10; // 34, 26, 16
 $dark-color: #6b6460;
@@ -11,11 +9,11 @@ $lighter-color: #ececd9;
 $lightest-color: #fafaf7;
 $accent-color: #7f0e1d;
 
-$brand-yellow: #FFB800;
-$brand-light-yellow: #FDE8C3;
+$brand-yellow: #B09676; //#BFA380; //#FFB800;
+$brand-light-yellow: #D9B589; //#FDE8C3;
+$brand-blue: #08698D;
 
-
-$background-color: #F4FDFE;
+$background-color: #FEFCFA; //#F4FDFE;
 $body-color: $darkest-color;
 $link-color: $dark-color;
 $link-hover-color: $light-color;
@@ -24,7 +22,7 @@ $footer-background-color: $accent-color;
 $footer-body-color: $dark-color;
 
 $standard-line-height: 1.7;
-$minimum-line-height: 1.4;
+$minimum-line-height: 1.2;
 
 $animation-length: 100ms;
 
@@ -47,8 +45,11 @@ $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
 $list-padding-left: 2em;
 
 $default-max-content-width: 60rem;
+$default-max-copy-width: 30rem;
 @mixin standard-block-behavior($additional-left-padding: null, $max-width: $default-max-content-width) {
-    max-width: $max-width;
+    @if $max-width != nil {
+        max-width: $max-width;
+    }
     margin-left: auto;
     margin-right: auto;
     padding-left: minimum-side-padding-with-addition($additional-left-padding);

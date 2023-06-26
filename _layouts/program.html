@@ -1,16 +1,23 @@
 ---
 layout: default
 body-class: program
+custom-js: rellax.min
 custom-css: program
 ---
+{%- include site/initialize-program-variables.md program=page -%}
 
-{% capture translations %}{%- assign reference-program = page -%}
-{%- if page.reference-program -%}
-    {% assign reference-program = site.programs | where: "slug", page.reference-program | first %}
+{%- if page.hero-image -%}
+<div id="hero" style="overflow:clip">
+    <img src="{{ site.program-assets-directory | append: page.slug | append: '/' | append: page.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
+</div>
 {%- endif -%}
+
+
+{% capture translations %}
 {%- if reference-program.translations -%}
     {%- for translation in reference-program.translations -%}
         {%- if translation.program-name == page.slug -%}
+<span>{{ translation.abbreviation }}</span>
             {%- continue -%}
         {%- endif -%}
         {% assign program = site.programs | where: "slug", translation.program-name | first %}
@@ -21,4 +28,22 @@ custom-css: program
 
 <h1>{{ page.program-name | smartify }} <div><span>{{ translations }}</span></div></h1>
 
+<h2>
+{%- for session in reference-program.sessions -%}
+{%- if forloop.index > 1 -%}<br/>{%- endif -%}
+    {%- unless include.show-localization -%}
+        {%- if session.session-name %}{{ session.session-name }}: {% endif %}{% include utilities/date-range.html dates=session.dates -%}
+    {%- else -%}
+        {%- if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates -%}
+    {%- endunless -%}
+{%- endfor -%}
+</h2>
+
+<h3>Application deadline: {{ site.data.institute.application.deadline | date: "%B %e, %Y"}}</h3>
+
 {{ content }}
+
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>

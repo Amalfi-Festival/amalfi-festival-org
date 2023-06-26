@@ -1,13 +1,14 @@
 ---
 layout: default
+custom-css: faculty
 ---
 
-<h1>{{ page.first-name }} {{ page.last-name }}</h1>
+<div id="headshot">
+    <img src="{{ site.faculty-image-directory | append: page.headshot-filename | relative_url }}" />
+</div>
+
+<h1>{{ page.first-name }} {{ page.last-name }}{% if page.cn-name %} ({{ page.cn-name }}){% endif %}</h1>
 <h2>{{ page.school }}</h2>
-
-<img src="{{ site.faculty-image-directory | append: page.headshot-filename | relative_url }}" />
-
-{{ content }}
 
 {%- assign availability = site.empty-array -%}
 {%- for program in site.programs -%}
@@ -18,7 +19,6 @@ layout: default
         {%- endif -%}
     {%- endfor -%}
 {%- endfor -%}
-
 {%- if availability.size == 1 -%}
 <p>
     <strong>Available in:</strong>
@@ -34,3 +34,5 @@ layout: default
     </ul>
 </p>
 {%- endif -%}
+
+{{ content }}

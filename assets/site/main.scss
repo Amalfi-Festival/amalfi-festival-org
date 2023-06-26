@@ -3,12 +3,31 @@
 @charset "utf-8";
 @import "base";
 
+@font-face {
+    font-family: 'Karla';
+    src: url({{ "/assets/site/fonts/Karla-VariableFont_wght.ttf" | relative_url }}) format('truetype');
+}
+@font-face {
+    font-family: 'Karla';
+    font-style: italic;
+    src: url({{ "/assets/site/fonts/Karla-Italic-VariableFont_wght.ttf" | relative_url }}) format('truetype');
+}
+@font-face {
+    font-family: 'Fahkwang';
+    font-weight: 400;
+    src: url({{ "/assets/site/fonts/Fahkwang-Regular.ttf" | relative_url }}) format('truetype');
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang&family=Bodoni+Moda:opsz@6..96&family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
     color: $body-color;
     font-size: 18px;
+    @include breakpoint(tablet) {
+        font-size: 17px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
 }
 
 * {
@@ -37,10 +56,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    --logo-dome: red;
-    --logo-amalfi: yellow;
-    --logo-coast: green;
-    --logo-festival: purple;
+    --logo-dome: #{$brand-blue};
+    --logo-amalfi: #{$brand-blue};
+    --logo-coast: #{$brand-yellow};
+    --logo-festival: #{$brand-yellow};
 
     svg {
         aspect-ratio: 3.29;
@@ -55,8 +74,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body > :is(header,footer) {
-    > div.wrapper {
+    .section-wrapper {
         @include standard-block-behavior;
+    }
+    .content-wrapper {
         display: flex;
         gap: 1em;
     }
@@ -69,15 +90,18 @@ body > :is(header,footer) {
     }
 }
 body > header {
-    background-color: #05C7F2;
     align-items: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    .wrapper {
+    .content-wrapper {
         align-items: center;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        border-bottom: .5px solid $brand-blue;
     }
     svg {
-        height: 3rem;
+        height: 4rem;
+        @include breakpoint(mobile) {
+            height: 3rem;
+        }
     }
     nav {
         flex-grow: 1;
@@ -86,13 +110,27 @@ body > header {
         justify-content: flex-end;
     }
 }
+body:has(#hero) > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: initial;
+    background-image: linear-gradient(rgba(26,26,26,1), rgba(26,26,26,0));
+
+    .content-wrapper {
+        border-bottom: 0;
+    }
+}
 body > main {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 body > footer {
-    background-color: #4F35C4;
-    > div.wrapper {
+    background-image: linear-gradient(#C9F2F2, #83DEF2);
+    color: $brand-blue;
+    div.content-wrapper {
         justify-content: space-between;
 
         @include breakpoint(mobile) {
@@ -104,7 +142,7 @@ body > footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    > div.wrapper {
+    div.content-wrapper {
         > div:nth-of-type(1) {
             display: flex;
             flex-direction: column;
@@ -115,7 +153,11 @@ body > footer {
             flex-grow: 1;
             display: flex;
             gap: 1rem;
-            justify-content: space-around;
+            justify-content: center;
+
+            nav {
+                min-width: 10em;
+            }
         }
     }
     svg {
@@ -164,19 +206,27 @@ body > footer {
     }
 }
 
-body.program main, body.page main {
-    @include standard-block-behavior;
-}
-main {
+main:not(.standard-block) {
     :is(ul, ol) {
         padding-left: 1.5em;
+    }
+    > :is(ul, ol) {
+        @include standard-block-behavior($additional-left-padding: 1.5em);
+    }
+    > :is(p, h1, h2, h3, h4, h5, h6) {
+        @include standard-block-behavior;
     }
     p, > :is(ul, ol) {
         margin-block-start: 1em;
         margin-block-end: 1em;
     }
-    > :is(ul, ol, p), dd {
-        max-width: 30em;
+}
+
+.standard-block {
+    @include standard-block-behavior;
+
+    > :is(ul, ol, p), dd, table {
+        max-width: $default-max-copy-width;
         margin-left: 3em;
         @include breakpoint(mobile) {
             max-width: initial;
@@ -184,6 +234,40 @@ main {
         }
     }
 }
+
+table {
+    border: 1px solid $brand-blue;
+    width: $default-max-copy-width;
+    border-collapse: collapse;
+}
+tr.header {
+    font-family: $brand-font;
+    font-size: 1.1em;
+    background-color: $brand-blue;
+    color: $background-color;
+    p {
+        margin-block-start: .5em;
+        margin-block-end: .5em;
+    }
+}
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    p.name {
+        font-weight: bold;
+    }
+    p.description {
+        font-size: .9em;
+    }
+}
+td.cost {
+    padding-right: 2em;
+}
+tbody {
+    padding-bottom: 1em;
+}
+
 
 .tiles {
     display: grid;
@@ -208,12 +292,16 @@ main {
 a {
     color: $body-color;
     text-underline-offset: .15em;
-    transition: color $animation-length;
+    transition: $animation-length;
     &:link, &:active, &:visited {
         text-decoration-thickness: 1px;
     }
     &:hover {
         color: $body-color;
-        transition: color $animation-length;
+        transition: $animation-length;
     }
+}
+
+.image-container {
+    overflow: clip;
 }

@@ -24,9 +24,6 @@ Guests are invited to daily performances and are welcome to sit in on master cla
 Guests will enjoy eating and socializing with the musicians and attending pre-concert lectures and post-concert receptions…not to mention indulging in gelato or sipping limoncello with the performers on a terrace late into the night!
 
 
-{% include application-instructions.md application=page.application %}
-
-
 ## Accommodations
 
 Guest Program fees includes access all festival activities for the full session.
@@ -58,5 +55,9 @@ Guest Program fees includes access all festival activities for the full session.
     <li><a href="{{ program.url | relative_url }}#options-for-meal-plan-excursions-cooking--language-classes">Fees for additional options</a></li>
 </ul>
 {%- endfor -%}
+
+
+
+{% include application-instructions.md application=page.application %}
 
 {% include fees-deposits-cancellations.md %}

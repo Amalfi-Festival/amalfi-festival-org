@@ -3,6 +3,7 @@ program-name: 第26届意大利阿马尔菲海岸钢琴艺术节
 menu-title: 钢琴艺术节
 reference-program: piano
 ---
+{%- include site/initialize-program-variables.md program=page -%}
 
 ## 钢琴艺术节简介
 
@@ -13,13 +14,9 @@ reference-program: piano
 每位学生将会被分配到四堂一对一私教课以及一堂大师班表演。我们会尽最大的努力去满足每位学员对私教课及大师班教授的需求。除了每位学员本人的课程外，其他所有大师班和音乐会都供正式学员们聆听观摩！
 
 
+{% include site/session-info.md show-localization=true %}
 
-
-{% assign piano = site.programs | where: "slug", "piano" | first %}
-{% include site/session-info.md program=piano show-localization=true %}
-
-
-{% include application-instructions-cn.md application=piano.application is-music=true %}
+{% include application-instructions-cn.md %}
 
 ## 录像/录音要求
 
@@ -40,13 +37,13 @@ reference-program: piano
 
 注：学费为单期音乐节单人费用，包括一对一私教课、大师班、讲座、研讨会、音乐会等
 
-* 酒店三人房 及 自助式早餐—— **{% include utilities/number-delimited.html number=piano.tuition.hotel-triple %}美元**\
+* 酒店三人房 及 自助式早餐—— **{% include utilities/number-delimited.html number=reference-program.tuition.hotel-triple %}美元**\
     （三人间房型较少，请参考下方双人间及单人间费用）
-* 青年旅馆 及 欧陆式早餐—— **{% include utilities/number-delimited.html number=piano.tuition.hostel-triple %}美元**
+* 青年旅馆 及 欧陆式早餐—— **{% include utilities/number-delimited.html number=reference-program.tuition.hostel-triple %}美元**
 
 {% assign guests = site.programs | where: "slug", "guests" | first %}
 For more information for guests, [click here]({{ guests.url | relative_url }})
 
-{% include optional-fees-cn.md tuition=piano.tuition %}
+{% include optional-fees-cn.md %}
 
 {% include fees-deposits-cancellations-cn.md %}

@@ -3,27 +3,6 @@ title: Special Activities
 ---
 
 
-## Italian Language Mini-Course
-
-Daily lessons of basic Italian, with emphasis on oral communication and pronunciation through lively exchanges.
-For program participants and guests.
-
-## Italian Cooking Classes
-
-Mediterranean Cuisine of Campania : a series of regional southern Italian cooking lessons will be offered in the kitchens of the area's most famous restaurants. A gastronomic hands-on adventure where you will learn the finest traditional local pastas, savory Mediterranean side dishes, and seafood specialties. Then sit down and sample your labors at a four-course lunch! Take home the recipes and insiders' knowledge of ingredients.
-For guests & program participants.
-
-Price: $375 for series of 3 lessons (Guests only)
-
-$135 for an individual lesson. Includes instruction, transportation, interpreter-escort, 5-course meal and recipes. (Open to both guests and Institute participants)
-
-## Ceramics Class
-
-For guests:  A ceramics class will be offered at a world famous ceramics center within walking distance of the hotel. Daily sessions will take you through each step of shaping a piece, painting, glazing, and firing your own work, in the superb facilities of this hub of ceramics under the direction of talented artisans. A visit to the Ceramics Museum located at the Villa Guariglia is included.
-
-Price: $365. Includes daily two hour sessions. (Guests only)
-
-Individual 2-hour Ceramics Workshops also available: $65 (Open to both guests and Institute participants)
 
 ## Excursions
 
@@ -108,3 +87,27 @@ Anacapri - The Ancient Greek prefix ana means "up" or "above", indicating that t
 
 Villa Jovis - The best preserved of Emperor Tiberius’s villas, it was restored in the 1990's by the Lysis Association and the Council of Capri. Constructed on the top of cliffs from which there are views of the Bay of Naples, the islands of Ischia and Procida, the Sorrentine Peninsula and the Bay of Salerno, visitors can access the villa by walking from the Piazzetta through the town's medieval center, beneath the vaulted arches of Via Longarno, and along the panoramic Via Sopramonte and Via Tiberius (approx. 40 min.).
 Capri
+
+
+
+## Italian Language Mini-Course
+
+Daily lessons of basic Italian, with emphasis on oral communication and pronunciation through lively exchanges.
+For program participants and guests.
+
+## Italian Cooking Classes
+
+Mediterranean Cuisine of Campania : a series of regional southern Italian cooking lessons will be offered in the kitchens of the area's most famous restaurants. A gastronomic hands-on adventure where you will learn the finest traditional local pastas, savory Mediterranean side dishes, and seafood specialties. Then sit down and sample your labors at a four-course lunch! Take home the recipes and insiders' knowledge of ingredients.
+For guests & program participants.
+
+Price: $375 for series of 3 lessons (Guests only)
+
+$135 for an individual lesson. Includes instruction, transportation, interpreter-escort, 5-course meal and recipes. (Open to both guests and Institute participants)
+
+## Ceramics Class
+
+For guests:  A ceramics class will be offered at a world famous ceramics center within walking distance of the hotel. Daily sessions will take you through each step of shaping a piece, painting, glazing, and firing your own work, in the superb facilities of this hub of ceramics under the direction of talented artisans. A visit to the Ceramics Museum located at the Villa Guariglia is included.
+
+Price: $365. Includes daily two hour sessions. (Guests only)
+
+Individual 2-hour Ceramics Workshops also available: $65 (Open to both guests and Institute participants)

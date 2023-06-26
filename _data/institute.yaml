@@ -7,6 +7,7 @@ programs:
     -   name: visual-arts
     -   name: writing
     -   name: choral
+edition: XXVI season, July 2023
 application:
     deadline: 2023-04-15
     registration-fee: 45
@@ -18,19 +19,24 @@ activity-fees:
     -   name: Cooking Lesson
         name-cn: 烹饪教学课程（单节）
         cost: 165
-    -   name: Studio Art Class - Single workshop
+    -   name: Studio Art Class
         name-cn: 绘画课程（单节）
         cost: 85
-    -   name: Ceramics Class - Single workshop
+        description: Single workshop
+    -   name: Ceramics Class
         name-cn: 陶瓷制作课程（单节）
         cost: 85
+        description: Single workshop
 excursions:
     -   name: Ravello
         name-cn: 拉韦洛 Ravello
         cost: 95
+        description: (Half day) Experience stunning views of the Mediterranean in this idyllic community with renowned gardens and cathedrals. Includes all applicable fees.
     -   name: Pompeii
         name-cn: 庞贝古城 Pompeii （半日，费用包括大巴、门票、导游）
         cost: 115
+        description: (Half day) Explore the extensive excavations of one of the best preserved cities of antiquity, buried under the lava of Vesuvius in 79 A.D. Includes bus transportation, entrance fees, and professional guide.
     -   name: Capri
         name-cn: 卡普里岛 Capri Island （一日，费用包括大巴、渡轮、缆车、门票、导游）
         cost: 155
+        description: (Full day) Travel by boat to visit the magical island of Capri. Revel in the rugged coastline, the bluffs and the sense of a world set apart. Includes bus transportation, round-trip ferry (2 hours) and funicular plus full-day guide, entrances, etc.

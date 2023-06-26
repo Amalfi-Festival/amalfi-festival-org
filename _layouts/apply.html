@@ -1,0 +1,28 @@
+---
+layout: default
+body-class: program
+custom-css:
+    - apply
+---
+{%- include site/initialize-program-variables.md program=page.program-name -%}
+
+{% capture translations %}
+{%- if reference-program.translations -%}
+    {%- for translation in reference-program.translations -%}
+        {%- if translation.program-name == page.slug -%}
+{{ translation.abbreviation }}
+            {%- continue -%}
+        {%- endif -%}
+        {% assign program-translated = site.programs | where: "slug", translation.program-name | first %}
+<a href="{{ program-translated.url | relative_url }}">{{ translation.abbreviation }}</a>
+    {%- endfor -%}
+{%- endif -%}
+{% endcapture %}
+
+<h1>{{ program.program-name | smartify }} <div><span>{{ translations }}</span></div></h1>
+
+<section class="standard-block" markdown="1">
+
+{{ content }}
+
+</section>

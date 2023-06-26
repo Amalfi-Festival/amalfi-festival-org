@@ -1,0 +1,39 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+body > main {
+    @include breakpoint(mobile) {
+        margin-top: 0;
+    }
+}
+
+#headshot {
+    @include standard-block-behavior;
+    @include breakpoint(mobile) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    img {
+        float: right;
+        margin-left: 2rem;
+        @include breakpoint(mobile) {
+            margin-left: 0;
+        }
+
+        width: 20em;
+        @include breakpoint(tablet) {
+            width: 16em;
+        }
+        border-radius: 1rem;
+
+        @include breakpoint(mobile) {
+            border-radius: 0;
+            width: 100%;
+            height: min(60vh, 80vw);
+            object-fit: cover;
+            float: initial;
+        }
+    }
+}
