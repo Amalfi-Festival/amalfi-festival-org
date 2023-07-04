@@ -144,24 +144,6 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 </section>
 
-<section markdown="1">
-
-## Perform concerts in historic churches, halls, and landmarks within the Amalfi region
-
-PICTURES/SLIDESHOW?
-
-</section>
-
-<section markdown="1">
-
-## Experience the beauty of Amalfi and immerse yourself in Italian culture
-
-PICTURES of excursions
-
-PICTURES of activities
-
-</section>
-
 <section id="learn">
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>
