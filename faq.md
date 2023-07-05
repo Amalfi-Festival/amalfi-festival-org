@@ -3,8 +3,13 @@ title: Frequently Asked Questions
 custom-css: faq
 ---
 
-1. contents
+<section class="standard-block" markdown="1">
+
+<div class="highlight-box" markdown="1">
+<div class="header">Contents</div>
+- contents
 {:toc}
+</div>
 
 ## Transportation to Italy
 
@@ -115,3 +120,5 @@ See listing of travel insurance agencies.
  
 Does my health insurance cover me in Italy?
 : You should check your policy carefully but under most circumstances you should be covered. If not, you might want to consider a short-term policy even though the Italian system is very hospitable to foreigners.
+
+</section>

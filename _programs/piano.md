@@ -59,7 +59,7 @@ tuition:
     double-room-upgrade: 465
     single-room-upgrade: 945
 menu-title: Piano
-hero-image: concert.jpg
+hero-image: 23.jpg
 translations:
     -   abbreviation: en
         program-name: piano
@@ -71,10 +71,6 @@ translations:
 <section id="splash" class="standard-block" markdown="1">
 
 ## Experience an intensive piano education within the breathtaking views of the Amalfi Coast
-
-<div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
-<a class="apply" href="{{ apply-page.url | relative_url }}#how-to-apply">Apply</a>
-</div>
 
 <div class="image-copy">
 <div class="image rellax" data-rellax-speed="-1" markdown="1">
@@ -144,7 +140,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 </section>
 
-<section id="learn">
+<section id="learn" style="background-image: url({{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }});">
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>
 

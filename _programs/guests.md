@@ -9,6 +9,8 @@ application:
 menu-title: Guests
 ---
 
+<section class="standard-block" markdown="1">
+
 Tour fascinating locales, sit in on rehearsal and enjoy concerts under the stars. Expand your culinary vistas, experiment with clay or capture fabulous landscapes in paint. Visit the enchanting coastal towns of Amalfi and Positano, discover the stunning vistas of Ravello and the sparkling beaches of Capri and explore the haunting ruins of Pompeii.
 
 ## Soak up the magical atmosphere!
@@ -61,3 +63,5 @@ Guest Program fees includes access all festival activities for the full session.
 {% include application-instructions.md application=page.application %}
 
 {% include fees-deposits-cancellations.md %}
+
+</section>

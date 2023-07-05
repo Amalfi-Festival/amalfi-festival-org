@@ -34,7 +34,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: $standard-line-height;
     font-synthesis: none;
 }
 
@@ -42,6 +41,7 @@ body {
     background-color: $background-color;
     font-family: $body-font;
     letter-spacing: -.01em;
+    line-height: $standard-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -128,7 +128,7 @@ body > main {
     margin-bottom: 3rem;
 }
 body > footer {
-    background-image: linear-gradient(#C9F2F2, #83DEF2);
+    background-image: linear-gradient(80deg, #CDEDF4, #C9F2F2);
     color: $brand-blue;
     div.content-wrapper {
         justify-content: space-between;
@@ -141,6 +141,14 @@ body > footer {
     }
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    a {
+        color: $footer-link-color;
+    }
+    .logo {
+        --logo-coast: #{$footer-link-color};
+        --logo-festival: #{$footer-link-color};
+    }
 
     div.content-wrapper {
         > div:nth-of-type(1) {
@@ -175,10 +183,10 @@ body > footer {
         gap: 1em;
         a {
             display: block;
-            --social-instagram: #{$brand-yellow};
-            --social-youtube: #{$brand-yellow};
-            --social-facebook: #{$brand-yellow};
-            --social-twitter: #{$brand-yellow};
+            --social-instagram: #{$footer-link-color};
+            --social-youtube: #{$footer-link-color};
+            --social-facebook: #{$footer-link-color};
+            --social-twitter: #{$footer-link-color};
 
             &:hover {
                 --social-instagram: #{$brand-light-yellow};
@@ -235,40 +243,6 @@ main:not(.standard-block) {
     }
 }
 
-table {
-    border: 1px solid $brand-blue;
-    width: $default-max-copy-width;
-    border-collapse: collapse;
-}
-tr.header {
-    font-family: $brand-font;
-    font-size: 1.1em;
-    background-color: $brand-blue;
-    color: $background-color;
-    p {
-        margin-block-start: .5em;
-        margin-block-end: .5em;
-    }
-}
-td {
-    padding-left: 1em;
-    padding-right: 1em;
-
-    p.name {
-        font-weight: bold;
-    }
-    p.description {
-        font-size: .9em;
-    }
-}
-td.cost {
-    padding-right: 2em;
-}
-tbody {
-    padding-bottom: 1em;
-}
-
-
 .tiles {
     display: grid;
     $side-padding: .75em;
@@ -304,4 +278,61 @@ a {
 
 .image-container {
     overflow: clip;
+}
+
+.highlight-box {
+    width: 19em;
+    margin-left: 1rem;
+    float: right;
+    @include breakpoint(mobile) {
+        display: none;
+    }
+
+    p:first-child {
+        margin-block-start: 0;
+    }
+    p:last-child {
+        margin-block-end: 0;
+    }
+
+    border-left: 1px solid $brand-blue;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    &.colored {
+        background-color: $brand-light-yellow;
+        padding: 1em;
+        border-radius: 1rem;
+        border-left: 0;
+        @include breakpoint(mobile) {
+            display: block;
+            width: auto;
+            margin-left: 0;
+            float: initial;
+        }
+    }
+
+    .header {
+        font-family: $brand-font;
+        font-size: 1.1em;
+    }
+    ul.markdown-toc ul {
+        display: none;
+    }
+}
+.sidebar {
+    display: flex;
+    gap: 1em;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+    > *:first-child {
+        flex-grow: 2;
+    }
+    > *:nth-child(2) {
+        flex-grow: 1;
+    }
+    :is(h2,h3) {
+        margin-top: 0;
+    }
 }

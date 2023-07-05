@@ -2,6 +2,8 @@
 title: Travel and Arrival Information
 ---
 
+<section class="standard-block" markdown="1">
+
 The Amalfi Coast Music & Arts Festival is based on the Amalfi Coast  in the charming town of Maiori, just  3.5 miles east of Amalfi. The town is below the cliffs of Ravello and situated between  the towns of Minori and  Cetara. 
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3027.1651019693795!2d14.63873187657893!3d40.64829084151269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1686737576484!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -27,12 +29,12 @@ Keep in mind that ticket prices are subject to change until the time you actuall
  
 If you prefer to deal with a travel agent, we can recommend several reputable companies that are experienced in travel to Italy: 
 
-Bethesda Travel Center\
-1-201-656-1670\
+Bethesda Travel Center<br/>
+1-201-656-1670<br/>
 ciao@bethesdatravel.com
 
-Fare Deals, Ltd.\
-1-800-347-7006\
+Fare Deals, Ltd.<br/>
+1-800-347-7006<br/>
 travel@faredeals.com
 
 Be sure to double check on precise arrival and departure dates for specific program (see below).
@@ -60,3 +62,4 @@ Agencies offering travel insurance:
  
 ACMAF does not endorse any particular insurance agency.
 
+<section class="standard-block" markdown="1">

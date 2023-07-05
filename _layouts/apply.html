@@ -10,12 +10,12 @@ custom-css:
 {%- if reference-program.translations -%}
     {%- for translation in reference-program.translations -%}
         {%- if translation.program-name == page.slug -%}
-{{ translation.abbreviation }}
-            {%- continue -%}
+<span>{{ translation.abbreviation }}</span>
+            {% continue -%}
         {%- endif -%}
-        {% assign program-translated = site.programs | where: "slug", translation.program-name | first %}
+        {%- assign program-translated = site.apply | where: "slug", translation.program-name | first -%}
 <a href="{{ program-translated.url | relative_url }}">{{ translation.abbreviation }}</a>
-    {%- endfor -%}
+    {% endfor -%}
 {%- endif -%}
 {% endcapture %}
 

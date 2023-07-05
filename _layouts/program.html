@@ -28,7 +28,8 @@ custom-css: program
 
 <h1>{{ page.program-name | smartify }} <div><span>{{ translations }}</span></div></h1>
 
-<h2>
+<div id="header" class="standard-block sidebar">
+    <div><h2>
 {%- for session in reference-program.sessions -%}
 {%- if forloop.index > 1 -%}<br/>{%- endif -%}
     {%- unless include.show-localization -%}
@@ -37,9 +38,11 @@ custom-css: program
         {%- if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates -%}
     {%- endunless -%}
 {%- endfor -%}
-</h2>
-
-<h3>Application deadline: {{ site.data.institute.application.deadline | date: "%B %e, %Y"}}</h3>
+    </h2></div>
+    <div><h3>Application deadline:<br/>{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}</h3>
+    <a class="apply" href="{{ apply-page.url | relative_url }}#how-to-apply">Apply</a>
+    </div>
+</div>
 
 {{ content }}
 

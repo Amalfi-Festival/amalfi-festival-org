@@ -30,6 +30,9 @@ body:has(#hero) {
         object-position: 50% 80%;
     }
 }
+main:has(#learn) {
+    margin-bottom: 0;
+}
 
 h1 {
     display: flex;
@@ -101,7 +104,7 @@ section#splash {
 
 #faculty {
     background-color: white;
-    padding: 3rem 0;
+    padding: 3rem 0 6rem;
     h2 {
         text-align: center;
         margin-top: 0;
@@ -175,37 +178,15 @@ h2.session, h2.session + h3 {
     text-align: center;
 }
 
-.highlight-box {
-    line-height: $minimum-line-height;
-    background-color: $brand-light-yellow;
-    padding: 1em;
-    border-radius: 1rem;
-
-    width: 19em;
-    margin-left: 1rem;
-    float: right;
-    @include breakpoint(mobile) {
-        width: auto;
-        margin-left: 0;
-        float: initial;
-    }
-
-    p:first-child {
-        margin-block-start: 0;
-    }
-    p:last-child {
-        margin-block-end: 0;
-    }
-}
-
-
 section#learn {
     text-align: center;
-    padding: 3rem 0;
+    padding: 12rem 0;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
 }
 
 .apply {
-    font-size: 1.5em;
     text-decoration: none;
     display: inline-block;
     padding: .2em 1.5em;

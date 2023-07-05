@@ -1,6 +1,6 @@
 ## How to Apply
 
-<div class="highlight-box" markdown="1">
+<div class="highlight-box colored" markdown="1">
 
 Application Deadline:<br/>
 **{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}**
@@ -20,7 +20,7 @@ Deposit (refundable [in case of cancellation](#cancellation-policy--refunds)):<b
 
 1. Pay [registration fee and deposit]({{ application.payment-url }}) electronically.
 
-    * If registering by mail, enclose a check made out and sent to:
+    * If paying by mail, enclose a check made out to *Center for Musical Studies* and send to:
 
         Center for Musical Studies\
         724 Chesapeake Ave.\

@@ -1,34 +1,8 @@
 {%- assign tuition = reference-program.tuition %}
 
-### Options for Meal Plan, Excursions, Cooking & Language Classes
- 
-Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of these options.
+### Excursions and Activities
 
-<table>
-    <tbody>
-        <tr class="header"><td colspan="2"><p>Room and board additions</p></td></tr>
-        <tr>
-            <td>
-                <p class="name">Meal plan dinners</p>
-                <p class="description">Includes full three-course meal with wine & mineral water</p>
-            </td><td class="cost" align="center" valign="top"><p><strong>${{ tuition.meal-plan }}</strong></p></td>
-        </tr>
-{%- if tuition.double-room-upgrade -%}
-        <tr>
-            <td><p class="name">Hotel upgrade: Double Room</p></td>
-            <td class="cost" align="center" valign="top"><p><strong>${{ tuition.double-room-upgrade }}</strong></p></td>
-        </tr>
-{%- endif -%}
-{%- if tuition.single-room-upgrade -%}
-        <tr>
-            <td><p class="name">Hotel upgrade: Single Room</p></td>
-            <td class="cost" align="center" valign="top"><p><strong>${{ tuition.single-room-upgrade }}</strong></p></td>
-        </tr>
-{%- endif -%}
-    </tbody>
-</table>
-
-Additional activities are available with the fees listed below. [Learn more about the activities and excursions.]({{ site.baseurl }}{% link activities.md %})
+Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of the following [available excursions and activities]({{ site.baseurl }}{% link activities.md %}).
 
 <table>
     <tbody>

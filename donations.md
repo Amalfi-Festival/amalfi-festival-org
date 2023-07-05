@@ -2,6 +2,8 @@
 title: Make a donation
 ---
 
+<section class="standard-block" markdown="1">
+
 ## Make Your Gift to the Amalfi Coast Music & Arts Festival
 Each summer, dozens of artists, musicians and writers converge on the Amalfi Coast from a wide range of countries. They bring with them their individual talents, their varying cultural backgrounds, and unique artistic offerings.  Young musicians and "emerging artists" take inspiration from the breathtaking setting of the Amalfi Coast. They find the creative process is nurtured by the warm, convivial atmosphere at the festival, with its emphasis on mentoring and strong sense of community.  Outstanding teachers and seasoned professionals work in collaboration with festival participatants to present unforgettable concerts and art exhibits, readings and seminars, sharing their gifts with festival guests and appreciative audiences. 
  
@@ -13,4 +15,16 @@ All donations go directly to support our artistic programs and to help build the
  
 Please click below to make a sustaining gift. Please accept our enduring gratitude for your support.
 
-## TODO: add Donate buttons
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+<input type="hidden" name="cmd" value="_s-xclick">
+
+<input type="hidden" name="hosted_button_id" value="XS5GMK723S7FC">
+
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+</form>
+
+</section>

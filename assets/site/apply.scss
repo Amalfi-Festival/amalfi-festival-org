@@ -30,6 +30,15 @@ h1 div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     gap: 1em;
+
+    h3 {
+        grid-column: 1 / -1;
+        margin-top: 1em;
+        &:first-child {
+            margin-top: 0;
+        }
+        margin-bottom: 0;
+    }
     a {
         display: grid;
         grid-template-columns: min-content 1fr;
@@ -75,25 +84,50 @@ h2 {
     margin-top: 4rem;
 }
 
-.highlight-box {
-    line-height: $minimum-line-height;
-    background-color: $brand-light-yellow;
-    padding: 1em;
-    border-radius: 1rem;
-
-    width: 19em;
-    margin-left: 1rem;
-    float: right;
+table {
+    border: 1px solid $brand-blue;
+    width: $default-max-copy-width;
     @include breakpoint(mobile) {
-        width: auto;
-        margin-left: 0;
-        float: initial;
+        width: 100%;
     }
+    border-collapse: collapse;
+    line-height: $minimum-line-height;
+}
+tr.header {
+    font-family: $brand-font;
+    font-size: 1.1em;
+    background-color: $brand-blue;
+    color: $background-color;
+    p {
+        margin-block-start: .5em;
+        margin-block-end: .5em;
+    }
+}
+td {
+    padding-left: 1em;
+    padding-right: 1em;
 
-    p:first-child {
-        margin-block-start: 0;
+    p.name {
+        font-weight: bold;
     }
-    p:last-child {
-        margin-block-end: 0;
+    p.description {
+        font-size: .9em;
+    }
+}
+td.cost {
+    width: 7em;
+}
+tbody {
+    padding-bottom: 1em;
+}
+.border-bottom {
+    border-bottom: 1px solid $brand-blue;
+}
+.upgrade {
+    td:first-child p {
+        margin-left: 2em;
+    }
+    td p {
+        margin-block-start: 0;
     }
 }

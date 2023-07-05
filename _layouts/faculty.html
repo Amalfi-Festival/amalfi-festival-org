@@ -14,25 +14,23 @@ custom-css: faculty
 {%- for program in site.programs -%}
     {%- for session in program.sessions -%}
         {%- if session.faculty contains page.slug -%}
-            {%- capture session-available %}{{ program.program-name | smartify }}{% if session.session-name %}, {{ session.session-name }}{% endif %} ({% include utilities/date-range.html dates=session.dates %}){% endcapture -%}
+            {%- assign apply-url = site.apply | where: "slug", program.slug | first -%}
+            {%- assign apply-url = apply-url.url | relative_url -%}
+            {%- if session.session-name -%}
+                {%- capture session-id -%}{% include site/session-name.html session=session %}{%- endcapture -%}
+                {%- assign session-id = session-id | slugify -%}
+                {%- assign apply-url = apply-url | append: "#" | append: session-id -%}
+            {%- endif -%}
+            {%- capture session-available %}<a href="{{ apply-url }}">{{ program.program-name | smartify }}{% if session.session-name %}, {{ session.session-name }}{% endif %} ({% include utilities/date-range.html dates=session.dates %})</a>{% endcapture -%}
             {%- assign availability = availability | push: session-available -%}
         {%- endif -%}
     {%- endfor -%}
 {%- endfor -%}
-{%- if availability.size == 1 -%}
-<p>
-    <strong>Available in:</strong>
-    {{ availability | join: ", " -}}
-</p>
-{%- elsif availability.size > 1 -%}
-<p>
-    <strong>Available in:</strong>
-    <ul>
-        {%- for available in availability -%}
-        <li>{{ available }}</li>
-        {%- endfor -%}
-    </ul>
-</p>
-{%- endif -%}
+
+<ul class="availability">
+    {%- for available in availability -%}
+    <li>{{ available }}</li>
+    {%- endfor -%}
+</ul>
 
 {{ content }}

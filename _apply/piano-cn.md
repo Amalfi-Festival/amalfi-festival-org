@@ -1,5 +1,5 @@
 ---
-program-name: piano
+program-name: piano-cn
 ---
 {%- include site/initialize-program-variables.md program=page.program-name -%}
 
@@ -20,7 +20,7 @@ The Amalfi Festival's Piano Program offers 2 sessions, each of which includes:
 
 During the application process, you may request lessons with the faculty listed below. While there is no guarantee of faculty assignments, we will attempt to accommodate your requests.
 
-{% include site/session-info.md show-localization=false %}
+{% include site/session-info.md show-localization=true %}
 
 ## Tuition & Accommodations
 
@@ -72,9 +72,9 @@ The meal plan provides daily dinners. We recommend this option as participants a
 </tbody>
 </table>
 
-{% include optional-fees.md %}
+{% include optional-fees-cn.md %}
 
-{% include application-instructions.md %}
+{% include application-instructions-cn.md %}
 
 ### Recording guidelines
 
