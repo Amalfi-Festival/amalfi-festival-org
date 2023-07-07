@@ -42,17 +42,17 @@ The cost for tuition and accommodations is listed as one total fee. For guests a
                 <p class="description">Triple rooms includes buffet breakfast. <strong>Limited number of triple rooms available.</strong></p>
             </td><td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hotel-triple %}</strong></p></td>
         </tr>
-{%- if reference-program.tuition.double-room-upgrade -%}
+{%- if reference-program.tuition.hotel-double-upgrade -%}
         <tr class="upgrade">
             <td><p class="name">Hotel upgrade: Double Room</p></td>
-            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.double-room-upgrade -%}
+            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.hotel-double-upgrade -%}
             <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
         </tr>
 {%- endif -%}
-{%- if reference-program.tuition.single-room-upgrade -%}
+{%- if reference-program.tuition.hotel-single-upgrade -%}
         <tr class="upgrade">
             <td><p class="name">Hotel upgrade: Single Room</p></td>
-            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.single-room-upgrade -%}
+            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.hotel-single-upgrade -%}
             <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
         </tr>
 {%- endif -%}

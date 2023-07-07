@@ -25,7 +25,7 @@
             {%- capture faculty-name -%}{{ faculty-member.cn-name }}{%- endcapture -%}
         {%- endif -%}
     {%- endunless -%}
-<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{{ site.faculty-image-directory | append: faculty-member.headshot-filename | relative_url }}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-cn and include.show-localization %}{{ faculty-member.school-cn }}{% else %}{{ faculty-member.school }}{% endif %}</div>
+<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/faculty-headshot-filepath.html faculty=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-cn and include.show-localization %}{{ faculty-member.school-cn }}{% else %}{{ faculty-member.school }}{% endif %}</div>
 </a></div>
 {%- endfor -%}
 
@@ -46,7 +46,7 @@
             {%- capture faculty-name -%}{{ faculty-member.cn-name }}{%- endcapture -%}
         {%- endif -%}
     {%- endunless -%}
-<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{{ site.faculty-image-directory | append: faculty-member.headshot-filename | relative_url }}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-cn and include.show-localization %}{{ faculty-member.school-cn }}{% else %}{{ faculty-member.school }}{% endif %}</div>
+<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/faculty-headshot-filepath.html faculty=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-cn and include.show-localization %}{{ faculty-member.school-cn }}{% else %}{{ faculty-member.school }}{% endif %}</div>
 </a></div>
 {%- endfor -%}
 {%- endif -%}

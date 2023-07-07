@@ -1,37 +1,36 @@
 ---
 program-name: Visual Arts Program
 sessions:
-    -   session-name: Session I
+    -   session-name: Painting
+        class-name: exploring-watercolor
         dates:
             start: 2023-07-08
             end: 2023-07-17
         faculty:
             - David-Daniels
-        guests:
-            hotel-description: Hotel accommodations (double occupancy) & buffet breakfast
-            hotel-fee: 3195
-            form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:9464b5c4-5b72-4d58-8ad3-dce49b354f56
-    -   session-name: Session II
+    -   session-name: Mixed Media
+        class-name: mapping-the-amalfi-coast
         dates:
             start: 2023-07-18
             end: 2023-07-27
+        faculty:
+            - Robert-Devers
 application:
-    deadline: 2023-04-15
     extended-deadline: 2023-04-23
-    registration-fee: 45
-    deposit: 350
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
+    guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:9464b5c4-5b72-4d58-8ad3-dce49b354f56
     payment-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c76
 tuition:
     meal-plan: 540
-    single-room-upgrade: 749
     hotel-double: 3495
+    hotel-single-upgrade: 749
     guests:
         hotel-double: 3195
 menu-title: Visual Arts
+hero-image: capri.jpg
 ---
 
-## We look forward to welcoming you in Summer 2023!
+<section class="standard-block" markdown="1">
 
 A legendary retreat for artists, poets, and composers seeking inspiration in its sublime beauty, the Amalfi Coast is a natural setting to explore the visual arts.
 
@@ -42,18 +41,14 @@ At the Amalfi Coast Music & Arts Festival, students are encouraged to explore th
 
 The Visual Arts Program is designed to take advantage of the cultural riches in the area. Students will be able to tour an array of museums and architectural treasures, such as the Naples Archaeology Museum, the magnificently preserved Greek temples in Paestum, and the haunting ruins of Pompeii. Instructors will bring perspectives gained back into the classroom. Students may also be invited to visit local studios and meet Italian artists to exchange ideas and share techniques. An exhibit of student work is held at the end of each session.
 
-## Visual Arts Classes offered in 2023
+## Sessions
 
-Exploring Watercolor
-         David Daniels, Washington, D.C.
+{% for session in page.sessions -%}
+{{ session.session-name }}
 
-Sketchbook
-         Rebecca Cross, Washington, D.C.
+{% include site/faculty-tiles.md faculty=session.faculty -%}
+{%- endfor -%}
 
-Mixed Media - Mapping the Amalfi Coast: Tile Painting & Artist Books
-         Robert J. Devers, Washington, D.C.
-
-Photography: Finding Your Vision
 
 See course descriptions here.
 See faculty artwork  here.
@@ -74,3 +69,5 @@ For more information for guests, [click here]({{ guests.url | relative_url }})
 {% include optional-fees.md tuition=page.tuition %}
 
 {% include fees-deposits-cancellations.md %}
+
+</section>

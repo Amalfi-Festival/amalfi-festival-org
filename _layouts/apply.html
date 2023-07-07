@@ -7,13 +7,13 @@ custom-css:
 {%- include site/initialize-program-variables.md program=page.program-name -%}
 
 {% capture translations %}
-{%- if reference-program.translations -%}
-    {%- for translation in reference-program.translations -%}
-        {%- if translation.program-name == page.slug -%}
+{%- if reference-program.localizations -%}
+    {%- for translation in reference-program.localizations -%}
+        {%- if translation.program == page.slug -%}
 <span>{{ translation.abbreviation }}</span>
             {% continue -%}
         {%- endif -%}
-        {%- assign program-translated = site.apply | where: "slug", translation.program-name | first -%}
+        {%- assign program-translated = site.apply | where: "slug", translation.program | first -%}
 <a href="{{ program-translated.url | relative_url }}">{{ translation.abbreviation }}</a>
     {% endfor -%}
 {%- endif -%}

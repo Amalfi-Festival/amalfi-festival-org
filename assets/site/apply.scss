@@ -117,7 +117,7 @@ td {
 td.cost {
     width: 7em;
 }
-tbody {
+tbody tr:last-child td {
     padding-bottom: 1em;
 }
 .border-bottom {

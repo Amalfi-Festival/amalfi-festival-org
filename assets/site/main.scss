@@ -233,9 +233,23 @@ main:not(.standard-block) {
 .standard-block {
     @include standard-block-behavior;
 
-    > :is(ul, ol, p), dd, table {
+    > :is(ul, ol, p), > div > :is(ul, ol, p), > div > div > :is(ul, ol, p), dd, table {
         max-width: $default-max-copy-width;
         margin-left: 3em;
+        @include breakpoint(mobile) {
+            max-width: initial;
+            margin-left: 0;
+        }
+    }
+
+    .highlight-box {
+        :is(ul, ol) {
+            margin-left: 0;
+        }
+        @include breakpoint(tablet) {
+            max-width: $default-max-copy-width;
+            margin-left: 3em;
+        }
         @include breakpoint(mobile) {
             max-width: initial;
             margin-left: 0;
@@ -295,19 +309,21 @@ a {
         margin-block-end: 0;
     }
 
-    border-left: 1px solid $brand-blue;
+    &:not(.image) {
+        border-left: 1px solid $brand-blue;
+        padding-bottom: 2em;
+    }
+
     padding-left: 1em;
-    padding-bottom: 2em;
     margin-bottom: 1em;
     &.colored {
         background-color: $brand-light-yellow;
         padding: 1em;
         border-radius: 1rem;
         border-left: 0;
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             display: block;
             width: auto;
-            margin-left: 0;
             float: initial;
         }
     }
@@ -319,18 +335,62 @@ a {
     ul.markdown-toc ul {
         display: none;
     }
+
+    &:is(ul) {
+        line-height: $minimum-line-height;
+        list-style-type: none;
+        > li:not(:first-child) {
+            margin-top: 1em;
+        }
+        div {
+            margin-left: 0;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+        @include breakpoint(tablet) {
+            div {
+                display: inline;
+            }
+            ul {
+                list-style-type: none;
+                display: inline;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline;
+                    &:not(:first-child)::before {
+                        content: ", "
+                    }
+                }
+            }
+        }
+    }
+
+    &.image {
+        clear: right;
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+        @include breakpoint(tablet) {
+            display: block;
+            width: auto;
+            float: initial;
+            margin-top: 1em;
+        }
+    }
 }
 .sidebar {
     display: flex;
-    gap: 1em;
+    gap: 2em;
     @include breakpoint(mobile) {
         flex-direction: column;
     }
     > *:first-child {
-        flex-grow: 2;
-    }
-    > *:nth-child(2) {
-        flex-grow: 1;
+        width: 66%;
     }
     :is(h2,h3) {
         margin-top: 0;

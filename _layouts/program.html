@@ -6,21 +6,21 @@ custom-css: program
 ---
 {%- include site/initialize-program-variables.md program=page -%}
 
-{%- if page.hero-image -%}
-<div id="hero" style="overflow:clip">
-    <img src="{{ site.program-assets-directory | append: page.slug | append: '/' | append: page.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
+{%- if reference-program.hero-image -%}
+<div id="hero">
+    <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
 </div>
 {%- endif -%}
 
 
 {% capture translations %}
-{%- if reference-program.translations -%}
-    {%- for translation in reference-program.translations -%}
-        {%- if translation.program-name == page.slug -%}
+{%- if reference-program.localizations -%}
+    {%- for translation in reference-program.localizations -%}
+        {%- if translation.program == page.slug -%}
 <span>{{ translation.abbreviation }}</span>
             {%- continue -%}
         {%- endif -%}
-        {% assign program = site.programs | where: "slug", translation.program-name | first %}
+        {% assign program = site.programs | where: "slug", translation.program | first %}
 <a href="{{ program.url | relative_url }}">{{ translation.abbreviation }}</a>
     {%- endfor -%}
 {%- endif -%}
@@ -32,15 +32,15 @@ custom-css: program
     <div><h2>
 {%- for session in reference-program.sessions -%}
 {%- if forloop.index > 1 -%}<br/>{%- endif -%}
-    {%- unless include.show-localization -%}
-        {%- if session.session-name %}{{ session.session-name }}: {% endif %}{% include utilities/date-range.html dates=session.dates -%}
+    {%- unless page.show-localization -%}
+        {%- if session.session-name %}{{ session.session-name | smartify}}: {% endif %}{% include utilities/date-range.html dates=session.dates -%}
     {%- else -%}
         {%- if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates -%}
     {%- endunless -%}
 {%- endfor -%}
     </h2></div>
     <div><h3>Application deadline:<br/>{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}</h3>
-    <a class="apply" href="{{ apply-page.url | relative_url }}#how-to-apply">Apply</a>
+    <a class="apply" href="{{ apply-page.url | relative_url }}">Apply</a>
     </div>
 </div>
 

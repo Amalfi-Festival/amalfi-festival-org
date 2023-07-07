@@ -4,7 +4,7 @@ custom-css: faculty
 ---
 
 <div id="headshot">
-    <img src="{{ site.faculty-image-directory | append: page.headshot-filename | relative_url }}" />
+    <img src="{%- include site/faculty-headshot-filepath.html -%}" />
 </div>
 
 <h1>{{ page.first-name }} {{ page.last-name }}{% if page.cn-name %} ({{ page.cn-name }}){% endif %}</h1>
@@ -27,10 +27,23 @@ custom-css: faculty
     {%- endfor -%}
 {%- endfor -%}
 
-<ul class="availability">
+<section class="standard-block" markdown="1">
+<ul class="availability {% if availability.size == 1 -%}
+single{%- endif -%}">
     {%- for available in availability -%}
     <li>{{ available }}</li>
     {%- endfor -%}
 </ul>
 
 {{ content }}
+</section>
+
+{%- if page.portfolio -%}
+{%- assign image-directory = site.faculty-image-directory | append: '/' | append: page.folder-name | append: '/' -%}
+<h2>Portfolio</h2>
+<section id="portfolio" class="standard-block">
+    {%- for image-path in page.portfolio -%}
+        <img src="{{ image-directory | append: image-path | relative_url }}" />
+    {%- endfor -%}
+</section>
+{%- endif -%}

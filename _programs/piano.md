@@ -21,10 +21,6 @@ sessions:
         associate-faculty:
             -   Yetong-Tang
             -   Shichao-Zhang
-        guests:
-            hotel-description: Hotel accommodations (triple occupancy) & buffet breakfast
-            hotel-fee: 3195
-            form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
     -   session-name: Session II
         session-name-cn: 第二期
         dates:
@@ -43,28 +39,27 @@ sessions:
         associate-faculty:
             -   Yetong-Tang
             -   Shichao-Zhang
-        guests:
-            hotel-description: Hotel accommodations (triple occupancy) & buffet breakfast
-            hotel-fee: 3195
-            form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
 application:
     extended-deadline: 2023-04-23
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
+    guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
     payment-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     include-audition: true
 tuition:
     meal-plan: 625
     hotel-triple: 3385
     hostel-triple: 2995
-    double-room-upgrade: 465
-    single-room-upgrade: 945
+    hotel-double-upgrade: 465
+    hotel-single-upgrade: 945
+    guests:
+        hotel-triple: 3195
 menu-title: Piano
 hero-image: 23.jpg
-translations:
+localizations:
     -   abbreviation: en
-        program-name: piano
+        program: piano
     -   abbreviation: 中文
-        program-name: piano-cn
+        program: piano-cn
 ---
 {%- include site/initialize-program-variables.md program=page -%}
 
@@ -83,8 +78,8 @@ Receive individual attention from world-renowned faculty with 4 one-hour private
 
 
 <div class="image-copy right">
-<div class="image rellax" data-rellax-speed="-.7" markdown="1">
-![Nagai teaching]({{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }})
+<div class="image rellax" data-rellax-speed="-.7">
+<img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
 </div>
 <div class="copy">
 Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
@@ -102,8 +97,8 @@ Held in an array of intimate settings at historic churches, halls, and landmarks
 </div>
 
 <div class="image-copy right">
-<div class="image rellax" data-rellax-speed=".3" markdown="1">
-![Student performing]({{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }})
+<div class="image rellax" data-rellax-speed=".3">
+<img src="{{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }}" alt="Student performing" />
 </div>
 </div>
 
@@ -123,24 +118,14 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 ## Learn from world-class faculty
 
+{% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
 <div id="faculty-list" class="standard-block">
-{%- assign all-faculty = page.sessions[0].faculty | concat: page.sessions[1].faculty | uniq | sort -%}
-{%- for faculty-name in all-faculty -%}
-    {%- for faculty-candidate in site.faculty -%}
-        {%- if faculty-candidate.slug == faculty-name -%}
-            {%- assign faculty-member = faculty-candidate -%}
-            {%- break -%}
-        {%- endif -%}
-    {%- endfor -%}
-<div><a href="{{ faculty-member.url | relative_url }}"><div><img src="{{ site.faculty-image-directory | append: faculty-member.headshot-filename | relative_url }}" /></div><div class="name">{{ faculty-member.first-name }} {{ faculty-member.last-name }}{% if faculty-member.cn-name and include.show-localization %}<br/>({{ faculty-member.cn-name }}){% endif %}</div><div class="school">{{ faculty-member.school }}</div>
-</a></div>
-{%- endfor -%}
-
+{%- include site/faculty-tiles.md faculty=all-faculty -%}
 </div>
-
 </section>
 
-<section id="learn" style="background-image: url({{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }});">
+<section id="learn">
+<img class="background rellax" data-rellax-speed="-2" data-rellax-percentage="3.5" src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>
 
