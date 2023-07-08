@@ -113,7 +113,7 @@ reference-program: piano
 </section>
 
 
-<section id="learn">
+<section id="learn" class="image-container">
 <img class="background rellax" data-rellax-speed="-2" data-rellax-percentage="0" src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>

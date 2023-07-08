@@ -22,57 +22,9 @@ During the application process, you may request lessons with the faculty listed 
 
 {% include site/session-info.md show-localization=false %}
 
-## Tuition & Accommodations
+{% include tuition-accommodations.md %}
 
-{% assign guests = site.programs | where: "slug", "guests" | first -%}
-
-The cost for tuition and accommodations is listed as one total fee. For guests and auditors, [click here]({{ guests.url | relative_url }}) for more information.
-
-<table>
-    <tbody>
-        <tr class="border-bottom">
-            <td>
-                <p class="name">Tuition with Hostel accommodations, triple occupancy</p>
-                <p class="description">Triple rooms with shared bathroom.</p>
-            </td><td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hostel-triple %}</strong></p></td>
-        </tr>
-        <tr>
-            <td>
-                <p class="name">Tuition with Hotel accommodations, triple occupancy</p>
-                <p class="description">Triple rooms includes buffet breakfast. <strong>Limited number of triple rooms available.</strong></p>
-            </td><td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hotel-triple %}</strong></p></td>
-        </tr>
-{%- if reference-program.tuition.hotel-double-upgrade -%}
-        <tr class="upgrade">
-            <td><p class="name">Hotel upgrade: Double Room</p></td>
-            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.hotel-double-upgrade -%}
-            <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
-        </tr>
-{%- endif -%}
-{%- if reference-program.tuition.hotel-single-upgrade -%}
-        <tr class="upgrade">
-            <td><p class="name">Hotel upgrade: Single Room</p></td>
-            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.hotel-single-upgrade -%}
-            <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
-        </tr>
-{%- endif -%}
-    </tbody>
-</table>
-
-The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
-
-<table>
-<tbody>
-    <tr>
-        <td>
-            <p class="name">Meal plan dinners</p>
-            <p class="description">Includes full three-course meal with wine & mineral water</p>
-        </td><td class="cost" align="center" valign="top"><p><strong>${{ reference-program.tuition.meal-plan }}</strong></p></td>
-    </tr>
-</tbody>
-</table>
-
-{% include optional-fees.md %}
+{% include activity-fees.md %}
 
 {% include application-instructions.md %}
 

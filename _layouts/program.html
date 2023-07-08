@@ -6,13 +6,6 @@ custom-css: program
 ---
 {%- include site/initialize-program-variables.md program=page -%}
 
-{%- if reference-program.hero-image -%}
-<div id="hero">
-    <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
-</div>
-{%- endif -%}
-
-
 {% capture translations %}
 {%- if reference-program.localizations -%}
     {%- for translation in reference-program.localizations -%}
@@ -26,7 +19,17 @@ custom-css: program
 {%- endif -%}
 {% endcapture %}
 
+
+{%- if reference-program.hero-image -%}
+<div id="hero" class="image-container">
+    <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
+    <div><h1 class="standard-block">{{ page.program-name | smartify }} <div><span>{{ translations }}</span></div></h1></div>
+</div>
+{%- else -%}
 <h1>{{ page.program-name | smartify }} <div><span>{{ translations }}</span></div></h1>
+{%- endif -%}
+
+
 
 <div id="header" class="standard-block sidebar">
     <div><h2>
@@ -39,7 +42,7 @@ custom-css: program
     {%- endunless -%}
 {%- endfor -%}
     </h2></div>
-    <div><h3>Application deadline:<br/>{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}</h3>
+    <div><h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>
     <a class="apply" href="{{ apply-page.url | relative_url }}">Apply</a>
     </div>
 </div>

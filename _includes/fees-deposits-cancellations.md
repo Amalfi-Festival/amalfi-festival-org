@@ -15,14 +15,6 @@ imposed, and fare increases as the price of the program was established Dec.
 30, 2022. Registrants will be notified by May 15, 2023 if price increases and
 may withdraw without penalty if there is more than a 5% increase.
 
-## Balance of Payment
- 
-Balance of payment will be due upon receipt of invoice, approximately 60 days before departure .
- 
-Pay your balance here through PayPal's secure system.
-
-**Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for on-line payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*
-
 ## Cancellation Policy & Refunds
 
 If you need to cancel your participation in the program, the following policies and deadlines must be respected:

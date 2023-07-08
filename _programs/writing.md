@@ -31,6 +31,6 @@ The cost for Tuition & Accommodations is listed as one total fee, which includes
 * Hotel accommodations (double occupancy) & buffet breakfast: **${% include utilities/number-delimited.html number=page.tuition.hotel-double %}**\
     For single rooms, see below.
 
-{% include optional-fees.md tuition=page.tuition %}
+{% include activity-fees.md tuition=page.tuition %}
 
 {% include fees-deposits-cancellations.md %}

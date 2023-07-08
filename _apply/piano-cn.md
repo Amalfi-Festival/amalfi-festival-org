@@ -109,7 +109,7 @@ The meal plan provides daily dinners. We recommend this option as participants a
 </tbody>
 </table>
 
-{% include optional-fees-cn.md %}
+{% include activity-fees-cn.md %}
 
 {% include application-instructions-cn.md %}
 

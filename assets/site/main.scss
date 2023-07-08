@@ -80,6 +80,9 @@ body > :is(header,footer) {
     .content-wrapper {
         display: flex;
         gap: 1em;
+        @include breakpoint(mobile) {
+            flex-direction: column;
+        }
     }
     a {
         text-decoration: none;
@@ -100,7 +103,8 @@ body > header {
     svg {
         height: 4rem;
         @include breakpoint(mobile) {
-            height: 3rem;
+            width: 15rem;
+            height: auto;
         }
     }
     nav {
@@ -108,6 +112,11 @@ body > header {
         display: flex;
         gap: 1em;
         justify-content: flex-end;
+        flex-wrap: wrap;
+        @include breakpoint(mobile) {
+            justify-content: center;
+            gap: .5em 1.5em;
+        }
     }
 }
 body:has(#hero) > header {
@@ -156,6 +165,9 @@ body > footer {
             flex-direction: column;
             gap: 1rem;
             align-items: center;
+            @include breakpoint(mobile) {
+                margin-top: 1rem;
+            }
         }
         > div:nth-of-type(2) {
             flex-grow: 1;
@@ -164,7 +176,7 @@ body > footer {
             justify-content: center;
 
             nav {
-                min-width: 10em;
+                min-width: 8em;
             }
         }
     }
@@ -181,6 +193,7 @@ body > footer {
     #social {
         display: flex;
         gap: 1em;
+        margin-top: 1em;
         a {
             display: block;
             --social-instagram: #{$footer-link-color};
@@ -207,6 +220,7 @@ body > footer {
     h1 {
         text-transform: uppercase;
         font-size: 1em;
+        margin-top: 0;
     }
     nav {
         display: flex;
@@ -257,26 +271,6 @@ main:not(.standard-block) {
     }
 }
 
-.tiles {
-    display: grid;
-    $side-padding: .75em;
-    $image-width: 10.5em;
-    grid-template-columns: repeat(auto-fit, minmax($image-width + 2 * $side-padding, 1fr));
-
-    a {
-        display: flex;
-        gap: .5em;
-        flex-direction: column;
-        padding: 1em .75em;
-        width: $image-width + 2 * $side-padding;
-    }
-    img {
-        width: $image-width;
-        aspect-ratio: 1;
-        object-fit: cover;
-    }
-}
-
 a {
     color: $body-color;
     text-underline-offset: .15em;
@@ -292,6 +286,7 @@ a {
 
 .image-container {
     overflow: clip;
+    position: relative;
 }
 
 .highlight-box {
@@ -383,16 +378,27 @@ a {
         }
     }
 }
-.sidebar {
+#header.sidebar {
     display: flex;
     gap: 2em;
-    @include breakpoint(mobile) {
-        flex-direction: column;
-    }
     > *:first-child {
         width: 66%;
     }
-    :is(h2,h3) {
-        margin-top: 0;
+    @include breakpoint(tablet) {
+        flex-direction: column;
+        gap: 0;
+        h3 {
+            margin-top: 0;
+        }
+        > *:first-child {
+            width: auto;
+        }
+        > *:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+        }
+        .apply {
+            height: 100%;
+        }
     }
 }

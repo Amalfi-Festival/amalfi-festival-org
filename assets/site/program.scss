@@ -1,20 +1,18 @@
 ---
 ---
 @charset "utf-8";
-@import "base";
+@import "base", "institute";
 
 body:has(#hero) {
     > main {
         margin-top: 0;
         h1 {
             position: relative;
-            margin-top: -4rem;
-            margin-bottom: 4rem;
             color: $background-color;
             z-index: 1;
 
             a {
-                color: rgba(254, 252, 250, .4);
+                color: rgba(254, 252, 250, .6);
                 &:hover {
                     color: $background-color;
                 }
@@ -23,14 +21,19 @@ body:has(#hero) {
     }
 }
 #hero {
-    overflow: clip;
-    position: relative;
     height: min(70vh, 80vw);
+    @include breakpoint(mobile) {
+        height: 70vh;
+    }
     img {
+        position: absolute;
+        left: 0;
+        top: 0;
         min-width: 100%;
         min-height: 100%;
         margin-left: 50%;
         translate: -50%;
+        z-index: -1;
     }
     .gradient-bottom {
         position: absolute;
@@ -41,31 +44,12 @@ body:has(#hero) {
         background-image: linear-gradient(rgba(26,26,26,0), rgba(26,26,26,1));
         z-index: 1;
     }
-}
-main:has(#learn) {
-    margin-bottom: 0;
-}
-
-h1 {
-    display: flex;
-    justify-content: space-between;
-}
-h1 div {
-    font-family: $body-font;
-    font-weight: 400;
-    line-height: $minimum-line-height;
-    > span {
-        font-size: .5em;
-        > * {
-            margin-left: .5em;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: rgba(34, 26, 16, .4);
-        &:hover {
-            color: $body-color;
-        }
+    > div {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
     }
 }
 
@@ -149,6 +133,10 @@ section#splash {
             background-color: $brand-blue;
             color: $background-color;
             border-radius: 1rem;
+            @include breakpoint(mobile) {
+                padding: 1rem;
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -196,79 +184,18 @@ section.proto-3 {
         margin-bottom: 2rem;
     }
 }
-#faculty-list {
-    display: flex;
-    gap: 1.5rem .75rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    > div {
-        width: 8rem;
-        text-align: center;
-    }
-    img {
-        width: 7rem;
-        height: 7rem;
-        border-radius: .5rem;
-        object-fit: cover;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: .5rem;
-    }
-    a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        gap: .1em;
-    }
-    .name {
-        font-weight: bold;
-        font-size: .9em;
-        line-height: $minimum-line-height;
-    }
-    .school {
-        font-size: .7em;
-        line-height: $minimum-line-height;
-    }
-}
-
-
-.tiles {
-    a {
-        text-decoration: none;
-        text-align: center;
-        border-radius: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a:hover {
-        background-image: linear-gradient(160deg, #038C8CEE, #025E5EEE);
-        color: $brand-yellow;
-    }
-    .name {
-        font-weight: bold;
-        line-height: $minimum-line-height;
-    }
-    .school {
-        display: block;
-        line-height: 1.2;
-        font-size: .9em;
-    }
-    img {
-        border-radius: 1rem;
-    }
-}
 
 h2.session, h2.session + h3 {
     text-align: center;
 }
 
+main:has(#learn) {
+    margin-bottom: 0;
+}
 section#learn {
-    position: relative;
     text-align: center;
     aspect-ratio: 2.37;
     font-size: 1.5em;
-    overflow: clip;
     display: flex;
     align-items: center;
     justify-content: center;

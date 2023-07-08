@@ -40,7 +40,6 @@ sessions:
             -   Yetong-Tang
             -   Shichao-Zhang
 application:
-    extended-deadline: 2023-04-23
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
     payment-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
@@ -119,12 +118,12 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 ## Learn from world-class faculty
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
-<div id="faculty-list" class="standard-block">
+<div class="standard-block tiles front-of-brochure">
 {%- include site/faculty-tiles.md faculty=all-faculty -%}
 </div>
 </section>
 
-<section id="learn">
+<section id="learn" class="image-container">
 <img class="background rellax" data-rellax-speed="-2" data-rellax-percentage="3.5" src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>
