@@ -7,6 +7,7 @@ school: San Francisco Conservatory of Music
 school-cn: 旧金山音乐学院/皮博迪音乐学院
 headshot-filename: yoshi_headshot.jpg
 role: Piano Faculty Chair
+website: https://yoshinagai.com
 ---
 
 Praised by audiences and critics alike for his fresh interpretations and dramatic presentation style, Yoshikazu Nagai has performed as soloist and chamber musician throughout Asia, Europe and America in such venues as Shanghai Concert Hall in China, National Recital Hall in Taiwan, Carnegie Recital Hall and Merkin Concert Hall in New York, Kennedy Center's Terrace Theatre, The National Gallery and Phillips Collection in Washington D.C., and Seattle's Benaroya Hall. His schedule in recent seasons include recitals in Naples, Seoul, Guangzhou, Hong Kong, Shanghai, Singapore, Beijing, Cincinnati, Chicago, San Francisco and in recent collaborations with the Ives Quartet, violinists Robert Mann, and Anthony Marwood.
@@ -21,5 +22,3 @@ He has been recognized by the National Foundation for Advancements in the Arts f
 Mr. Nagai frequently gives master classes at universities and conservatories throughout the United States and Asia including recent classes at Shanghai Conservatory, Beijing's Central Conservatory, Xinghai Conservatory, Shenzhen Arts School in China, Seoul National University, Seoul Arts School, in Korea, Hong Kong Academy for the Performing Arts, Northwestern University, Oberlin Conservatory, and Eastman School of Music. He also regularly serves as adjudicator of international piano competitions and has served on the juries of the Gina Bachauer International Piano Competitions, World Piano Competition, and Alaska International Piano E-Competition amongst others.
 
 Currently Professor of Piano and Chair of the Piano Department at the San Francisco Conservatory of Music, Mr. Nagai teaches during the summers at the Amalfi Coast Music Festival in Italy, and "Art of Piano" at Cincinnati Conservatory. He has also been summer faculty at the Shanghai and Beijing International Piano Festivals in China, Eastern Music Festival in North Carolina, Pianofest in the Hamptons, Chautauqua, Summit Festivals in New York, South Eastern Piano Festival in South Carolina, and Colburn Academy and Montecito International Music Festival in California. Mr. Nagai is a former faculty member at the Interlochen Arts Academy.
-
-[Personal website](www.yoshinagai.com)

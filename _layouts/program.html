@@ -43,7 +43,9 @@ custom-css: program
 {%- endfor -%}
     </h2></div>
     <div><h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>
+{%- if apply-page -%}
     <a class="apply" href="{{ apply-page.url | relative_url }}">Apply</a>
+{%- endif -%}
     </div>
 </div>
 

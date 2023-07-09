@@ -6,9 +6,9 @@
     {%- endif -%}
     {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
     {%- if p -%}
-<a href="{{ p.url | relative_url }}">{{ p.menu-title }}</a>
+<a class="link-{{ p.slug }}" href="{{ p.url | relative_url }}">{{ p.menu-title }}</a>
     {%- endif -%}
 {%- endfor -%}
 
 {%- assign p = site.programs | where: "slug", "guests" | first -%}
-<a href="{{ p.url | relative_url }}">{{ p.menu-title }}</a>
+<a class="link-{{ p.slug }}" href="{{ p.url | relative_url }}">{{ p.menu-title }}</a>

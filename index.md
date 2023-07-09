@@ -15,6 +15,7 @@ sponsors:
         - hertz.jpg
 custom-js: rellax.min
 custom-css: home
+header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
 <section id="hero">
@@ -51,9 +52,10 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 
 </section>
 
-<section id="institute" markdown="1">
+<section id="institute" class="background-image-container">
+<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
 
-## Programs
+<h2>Programs</h2>
 
 <div>
 {%- for program-entry in site.data.institute.programs -%}

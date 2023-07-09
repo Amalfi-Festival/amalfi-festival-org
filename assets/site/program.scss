@@ -21,9 +21,9 @@ body:has(#hero) {
     }
 }
 #hero {
-    height: min(70vh, 80vw);
+    height: min(80vh, 80vw);
     @include breakpoint(mobile) {
-        height: 70vh;
+        height: 80vh;
     }
     img {
         position: absolute;
@@ -81,6 +81,7 @@ section#splash {
                 -webkit-backdrop-filter: blur(4px);
                 font-size: 1.3em;
                 line-height: $minimum-line-height;
+                border: 10px solid $background-color;
                 position: absolute;
                 right: 4rem;
                 bottom: -1rem;
@@ -177,7 +178,7 @@ section.proto-3 {
 
 #faculty {
     background-color: white;
-    padding: 3rem 0 6rem;
+    padding: 3rem 0;
     h2 {
         text-align: center;
         margin-top: 0;
@@ -185,28 +186,24 @@ section.proto-3 {
     }
 }
 
-h2.session, h2.session + h3 {
-    text-align: center;
-}
-
 main:has(#learn) {
     margin-bottom: 0;
 }
 section#learn {
     text-align: center;
-    aspect-ratio: 2.37;
     font-size: 1.5em;
     display: flex;
+    gap: 3rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.background {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    width: calc(100% + 10px);
-    z-index: -1;
-    filter: blur(2px) opacity(.5);
+    padding: 6rem 0;
+    h3 {
+        margin: 0;
+        padding: 2rem;
+        background-color: $brand-light-yellow;
+        border-radius: 1rem;
+    }
 }
 
 .apply {
@@ -221,6 +218,6 @@ section#learn {
 
     &:hover {
         background-color: $brand-blue;
-        color: #FDE8C3;
+        color: $brand-light-yellow;
     }
 }

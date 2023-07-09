@@ -2,28 +2,23 @@ $body-font: "Karla", Helvetica, sans-serif;
 $header-footer-font: "Fahkwang", Georgia, serif;
 $brand-font: "Fahkwang", Georgia, serif;
 
-$darkest-color: #221a10; // 34, 26, 16
-$dark-color: #6b6460;
-$light-color: #b0a589;
-$lighter-color: #ececd9;
-$lightest-color: #fafaf7;
-$accent-color: #7f0e1d;
+$dark-color: #17212F;
+$brand-yellow: #BFA380;//#F2B705; //#BFA380; //#B09676; //#FFB800;
+$brand-light-yellow: #F9C56B; //#FAD66A; //#D9B589; //#FDE8C3;
+$brand-blue: #025E73; //#08698D;
+$brand-light-blue: #0A85B2;
 
-$brand-yellow: #BFA380; //#B09676; //#FFB800;
-$brand-light-yellow: #D9B589; //#FDE8C3;
-$brand-blue: #08698D;
+$background-color: #FDFAF6; //#FEFCFA; //#F4FDFE;
+$body-color: $dark-color;
+$link-color: $brand-blue;
+$link-hover-color: $brand-light-blue;
 
-$background-color: #FEFCFA; //#F4FDFE;
-$body-color: $darkest-color;
-$link-color: $dark-color;
-$link-hover-color: $light-color;
-
-$footer-background-color: $accent-color;
 $footer-body-color: $dark-color;
-$footer-link-color: #8C865E;
+$footer-link-color: $brand-blue;
+$footer-link-hover-color: $brand-light-blue;
 
 $standard-line-height: 1.7;
-$minimum-line-height: 1.2;
+$minimum-line-height: 1.3;
 
 $animation-length: 100ms;
 

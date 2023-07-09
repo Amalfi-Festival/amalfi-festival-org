@@ -3,14 +3,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 {%- include site/head.html -%}
-<body class="
-{%- if layout.body-class or page.body-class -%}
-    {{ layout.body-class }} {{ page.body-class }}
-{%- endif -%}
-{%- if page.categories[0] -%}
-    {{ page.categories }}-{{ page.title | slugify }}
-{%- endif -%}
-    ">
+{%- capture body-class -%}
+    {%- if layout.body-class or page.body-class -%}
+        {{ layout.body-class }} {{ page.body-class }}
+    {%- endif -%}
+    {%- if page.collection == "programs" or page.collection == "apply" -%}
+        {{ page.slug }}
+    {%- endif -%}
+{%- endcapture -%}
+<body class="{{ body-class }}">
 {%- include site/header.html -%}
 <main>
 {{ content }}

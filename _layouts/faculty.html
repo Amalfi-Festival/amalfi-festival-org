@@ -8,7 +8,8 @@ custom-css: faculty
 </div>
 
 <h1>{{ page.first-name }} {{ page.last-name }}{% if page.cn-name %} ({{ page.cn-name }}){% endif %}</h1>
-<h2>{{ page.school }}</h2>
+{% if page.school %}<h2>{{ page.school }}</h2>{% endif %}
+{% if page.website %}<h3><a href="{{ page.website }}">Personal website</a></h3>{% endif %}
 
 {%- assign availability = site.empty-array -%}
 {%- for program in site.programs -%}

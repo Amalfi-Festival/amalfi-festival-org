@@ -18,7 +18,6 @@ sessions:
 application:
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:9464b5c4-5b72-4d58-8ad3-dce49b354f56
-    payment-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c76
 tuition:
     meal-plan: 540
     lab-fee: 145
@@ -28,6 +27,7 @@ tuition:
         hotel-double: 3195
 menu-title: Visual Arts
 hero-image: capri.jpg
+header-blend-mode: multiply
 ---
 {%- include site/initialize-program-variables.md program=page -%}
 
@@ -44,16 +44,16 @@ The Visual Arts Program is designed to take advantage of the cultural riches in 
 
 ## Sessions
 
-{% include site/session-info.md %}
-
-{% include application-instructions.md %}
+{% include site/session-info.md faculty-type="Instructor" %}
 
 {% capture tuition-description %}
 The cost for tuition & accommodations is listed as one total fee, which includes tuition for class of your choice, hotel accommodations, art-related excursions at instructor’s discretion, daily concerts, and group transportation to and from Naples airport (on arrival and departure day at designated times).
 {% endcapture %}
 {% include tuition-accommodations.md description=tuition-description %}
 
-{% include activity-fees.md tuition=page.tuition %}
+{% include activity-fees.md %}
+
+{% include application-instructions.md %}
 
 {% include fees-deposits-cancellations.md %}
 

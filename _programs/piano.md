@@ -42,7 +42,6 @@ sessions:
 application:
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
-    payment-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     include-audition: true
 tuition:
     meal-plan: 625
@@ -62,33 +61,33 @@ localizations:
 ---
 {%- include site/initialize-program-variables.md program=page -%}
 
-<section id="splash" class="standard-block" markdown="1">
+<section id="splash" class="proto-2 standard-block" markdown="1">
 
 ## Experience an intensive piano education within the breathtaking views of the Amalfi Coast
 
 <div class="image-copy">
-<div class="image rellax" data-rellax-speed="-1" markdown="1">
-![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }})
+<div class="image" data-rellax-speed="-1" data-rellax-percentage="0">
+<img src="{{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }}" />
 </div>
 <div class="copy">
-Receive individual attention from world-renowned faculty with 4 one-hour private lessons.
+    Receive individual attention from world-renowned faculty with 4 one-hour private lessons.
 </div>
 </div>
 
 
 <div class="image-copy right">
-<div class="image rellax" data-rellax-speed="-.7">
+<div class="image" data-rellax-speed="-.7" data-rellax-percentage="0">
 <img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
 </div>
 <div class="copy">
-Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
+    Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
 </div>
 </div>
 
 
 <div class="image-copy">
-<div class="image rellax" data-rellax-speed="-.3" markdown="1">
-![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }})
+<div class="image" data-rellax-speed="-.3" data-rellax-percentage="0">
+<img src="{{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }}" />
 </div>
 <div class="copy" style="bottom: -7rem;">
 Held in an array of intimate settings at historic churches, halls, and landmarks, the Festival hosts daily faculty concerts and the Young Artist Series, the institute recital series for students.
@@ -96,21 +95,22 @@ Held in an array of intimate settings at historic churches, halls, and landmarks
 </div>
 
 <div class="image-copy right">
-<div class="image rellax" data-rellax-speed=".3">
+<div class="image" data-rellax-speed=".3" data-rellax-percentage="0">
 <img src="{{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }}" alt="Student performing" />
+</div>
+<div class="image" data-rellax-speed=".3" data-rellax-percentage="0.5">
+<img src="{{ site.program-assets-directory | append: "piano/lowenthal-oppens.jpg" | relative_url }}" alt="Student performing" />
 </div>
 </div>
 
 <div class="image-copy">
-<div class="image rellax" data-rellax-speed=".5" markdown="1">
-![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/art show 2.jpg" | relative_url }})
+<div class="image" data-rellax-speed=".5" data-rellax-percentage="0">
+<img src="{{ site.program-assets-directory | append: "piano/art show 2.jpg" | relative_url }}" />
 </div>
 <div class="copy" style="bottom: 5rem;">
 Opportunities to fully experience the Amalfi Coast with excursions to world-renowned locations, and cultural activities including language, pottery, and cooking classes.
 </div>
 </div>
-
-
 </section>
 
 <section id="faculty" markdown="1">
@@ -123,8 +123,9 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 </div>
 </section>
 
-<section id="learn" class="image-container">
-<img class="background rellax" data-rellax-speed="-2" data-rellax-percentage="3.5" src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
+<section id="learn" class="background-image-container">
+<img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
+<h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>
 

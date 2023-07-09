@@ -65,8 +65,8 @@ h1, h2, h3, h4, h5, h6 {
         aspect-ratio: 3.29;
 
         &:hover {
-        --logo-dome: #{$brand-light-yellow};
-        --logo-amalfi: #{$brand-light-yellow};
+        --logo-dome: #{$link-hover-color};
+        --logo-amalfi: #{$link-hover-color};
         --logo-coast: #{$brand-light-yellow};
         --logo-festival: #{$brand-light-yellow};
         }
@@ -79,30 +79,26 @@ body > :is(header,footer) {
     }
     .content-wrapper {
         display: flex;
-        gap: 1em;
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             flex-direction: column;
         }
     }
     a {
         text-decoration: none;
-        color: $brand-yellow;
-        &:hover {
-            color: $brand-light-yellow;
-        }
     }
 }
 body > header {
     align-items: center;
     .content-wrapper {
         align-items: center;
+        gap: 1em;
         padding-top: .5rem;
         padding-bottom: 1rem;
         border-bottom: .5px solid $brand-blue;
     }
     svg {
         height: 4rem;
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             width: 15rem;
             height: auto;
         }
@@ -110,14 +106,25 @@ body > header {
     nav {
         flex-grow: 1;
         display: flex;
-        gap: 1em;
+        gap: .5em 1.5em;
         justify-content: flex-end;
         flex-wrap: wrap;
-        @include breakpoint(mobile) {
+        text-transform: uppercase;
+        font-size: .9em;
+        letter-spacing: .1em;
+        @include breakpoint(tablet) {
             justify-content: center;
-            gap: .5em 1.5em;
         }
     }
+    a {
+        color: $brand-yellow;
+        &:hover {
+            color: $brand-light-yellow;
+        }
+    }
+}
+body:not(:has(#hero)) > header nav {
+    align-self: flex-end;
 }
 body:has(#hero) > header {
     position: absolute;
@@ -126,23 +133,46 @@ body:has(#hero) > header {
     z-index: 1;
     width: 100%;
     background-color: initial;
-    background-image: linear-gradient(rgba(26,26,26,1), rgba(26,26,26,0));
+    mix-blend-mode: screen;
 
     .content-wrapper {
         border-bottom: 0;
     }
+    a {
+        &:hover {
+            mix-blend-mode: initial;
+        }
+    }
 }
+{%- for program-entry in site.data.institute.programs -%}
+    {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
+    {%- assign rp = p -%}
+    {%- if p.reference-program -%}
+        {%- assign rp = site.programs | where: "slug", p.reference-program | first -%}
+    {%- endif -%}
+    {%- if p -%}
+body.{{ p.slug }} > header .link-{{ rp.slug }},
+    {%- endif -%}
+{%- endfor -%}
+body.guests > header .link-guests {
+    letter-spacing: .07em;
+    font-weight: 600;
+    color: $brand-blue;
+}
+
 body > main {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 body > footer {
-    background-image: linear-gradient(80deg, #CDEDF4, #C9F2F2);
-    color: $brand-blue;
+    border-top: .5px solid $brand-blue;
+    #footer-background {
+        opacity: .2;
+    }
     div.content-wrapper {
         justify-content: space-between;
 
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             flex-direction: column-reverse;
             align-content: center;
             font-size: .9em;
@@ -151,21 +181,14 @@ body > footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    a {
-        color: $footer-link-color;
-    }
-    .logo {
-        --logo-coast: #{$footer-link-color};
-        --logo-festival: #{$footer-link-color};
-    }
-
     div.content-wrapper {
+        gap: 1rem;
         > div:nth-of-type(1) {
             display: flex;
             flex-direction: column;
             gap: 1rem;
             align-items: center;
-            @include breakpoint(mobile) {
+            @include breakpoint(tablet) {
                 margin-top: 1rem;
             }
         }
@@ -185,7 +208,7 @@ body > footer {
         @include breakpoint(tablet) {
             height: 4.5rem;
         }
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             width: min(70vw, 20em);
             height: initial;
         }
@@ -202,10 +225,10 @@ body > footer {
             --social-twitter: #{$footer-link-color};
 
             &:hover {
-                --social-instagram: #{$brand-light-yellow};
-                --social-youtube: #{$brand-light-yellow};
-                --social-facebook: #{$brand-light-yellow};
-                --social-twitter: #{$brand-light-yellow};
+                --social-instagram: #{$footer-link-hover-color};
+                --social-youtube: #{$footer-link-hover-color};
+                --social-facebook: #{$footer-link-hover-color};
+                --social-twitter: #{$footer-link-hover-color};
             }
         }
         svg {
@@ -272,21 +295,32 @@ main:not(.standard-block) {
 }
 
 a {
-    color: $body-color;
-    text-underline-offset: .15em;
+    color: $link-color; //$body-color;
+    text-underline-offset: .35em;
     transition: $animation-length;
     &:link, &:active, &:visited {
-        text-decoration-thickness: 1px;
+        text-decoration-thickness: .5px;
     }
     &:hover {
-        color: $body-color;
+        color: $link-hover-color;
         transition: $animation-length;
     }
 }
 
-.image-container {
+.image-container, .background-image-container {
     overflow: clip;
     position: relative;
+}
+.background-image-container > img:first-child {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(1px);
+    opacity: .5;
 }
 
 .highlight-box {
@@ -327,7 +361,7 @@ a {
         font-family: $brand-font;
         font-size: 1.1em;
     }
-    ul.markdown-toc ul {
+    ul#markdown-toc ul {
         display: none;
     }
 
@@ -335,9 +369,10 @@ a {
         line-height: $minimum-line-height;
         list-style-type: none;
         > li:not(:first-child) {
-            margin-top: 1em;
+            margin-top: 1.2em;
         }
         div {
+            margin-top: .4em;
             margin-left: 0;
             font-weight: bold;
         }
@@ -382,7 +417,10 @@ a {
     display: flex;
     gap: 2em;
     > *:first-child {
-        width: 66%;
+        flex-grow: 1;
+    }
+    > *:last-child {
+        width: 33%;
     }
     @include breakpoint(tablet) {
         flex-direction: column;
@@ -393,7 +431,8 @@ a {
         > *:first-child {
             width: auto;
         }
-        > *:nth-child(2) {
+        > *:last-child {
+            width: auto;
             display: flex;
             justify-content: space-between;
         }
@@ -401,4 +440,7 @@ a {
             height: 100%;
         }
     }
+}
+.address {
+    line-height: $minimum-line-height;
 }

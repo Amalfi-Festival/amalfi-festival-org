@@ -30,9 +30,9 @@
 
     * If paying by mail, enclose a check made out to *Center for Musical Studies* and send to:
 
-        Center for Musical Studies\
-        724 Chesapeake Ave.\
-        Silver Spring, MD 20910
+        <div class="address">Center for Musical Studies<br/>
+        724 Chesapeake Ave.<br/>
+        Silver Spring, MD 20910</div>
 
 1. Applications are accepted until spaces are filled.
 

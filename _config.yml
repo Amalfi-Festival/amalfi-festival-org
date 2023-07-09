@@ -48,6 +48,8 @@ collections:
     apply:
         output: true
         permalink: /:title-apply
+    classes:
+        output: false
 
 defaults:
     -   scope:

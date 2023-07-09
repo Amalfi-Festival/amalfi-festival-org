@@ -20,6 +20,14 @@ program-name: piano-cn
 
 每位学生将会被分配到四堂一对一私教课以及一堂大师班表演。我们会尽最大的努力去满足每位学员对私教课及大师班教授的需求。除了每位学员本人的课程外，其他所有大师班和音乐会都供正式学员们聆听观摩！
 
+{% include site/session-info.md show-localization=true %}
+
+{% include tuition-accommodations-cn.md %}
+
+{% include activity-fees-cn.md %}
+
+{% include application-instructions-cn.md %}
+
 ## 录像/录音要求
 
 每位欲报名阿马尔菲海岸音乐艺术节的钢琴学员需要上传两首作品（录像或录音均可）。我们强烈建议这两首作品为钢琴独奏曲，并选自不同的风格时期。奏鸣曲单乐章或者组曲的单乐章都可接受。
@@ -34,101 +42,6 @@ program-name: piano-cn
 您可将录像/录音上传至 YouTube 后，将视频链接发送至此 [邮箱](mailto:music@amalfi-festival.org)（music@amalfi-festival.org）。也可直接发送mp3文件至上述[邮箱](mailto:music@amalfi-festival.org)。
 
 请注意，我们只会在收到完整报名表之后（或同时）接受您的录像/录音。我们不会受理任何收到报名表之前上传的录像/录音。
-
-## 费用一览表
-
-注：学费为单期音乐节单人费用，包括一对一私教课、大师班、讲座、研讨会、音乐会等
-
-* 酒店三人房 及 自助式早餐—— **{% include utilities/number-delimited.html number=reference-program.tuition.hotel-triple %}美元**\
-    （三人间房型较少，请参考下方双人间及单人间费用）
-* 青年旅馆 及 欧陆式早餐—— **{% include utilities/number-delimited.html number=reference-program.tuition.hostel-triple %}美元**
-
-{% assign guests = site.programs | where: "slug", "guests" | first %}
-For more information for guests, [click here]({{ guests.url | relative_url }})
-
-## Program details and application
-
-The Amalfi Festival's Piano Program offers 2 sessions, each of which includes:
-
-* Four 1-hour private lessons, with multiple faculty
-* An opportunity to participate in one masterclass
-* An opportunity to perform in Young Artist Series
-* Admission to all festival concerts
-
-During the application process, you may request lessons with the faculty listed below. While there is no guarantee of faculty assignments, we will attempt to accommodate your requests.
-
-{% include site/session-info.md show-localization=true %}
-
-## Tuition & Accommodations
-
-{% assign guests = site.programs | where: "slug", "guests" | first -%}
-
-The cost for tuition and accommodations is listed as one total fee. For guests and auditors, [click here]({{ guests.url | relative_url }}) for more information.
-
-<table>
-    <tbody>
-        <tr class="border-bottom">
-            <td>
-                <p class="name">Tuition with Hostel accommodations, triple occupancy</p>
-                <p class="description">Triple rooms with shared bathroom.</p>
-            </td><td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hostel-triple %}</strong></p></td>
-        </tr>
-        <tr>
-            <td>
-                <p class="name">Tuition with Hotel accommodations, triple occupancy</p>
-                <p class="description">Triple rooms includes buffet breakfast. <strong>Limited number of triple rooms available.</strong></p>
-            </td><td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hotel-triple %}</strong></p></td>
-        </tr>
-{%- if reference-program.tuition.hotel-double-upgrade -%}
-        <tr class="upgrade">
-            <td><p class="name">Hotel upgrade: Double Room</p></td>
-            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.double-room-upgrade -%}
-            <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
-        </tr>
-{%- endif -%}
-{%- if reference-program.tuition.hotel-single-upgrade -%}
-        <tr class="upgrade">
-            <td><p class="name">Hotel upgrade: Single Room</p></td>
-            {%- assign price = reference-program.tuition.hotel-triple | plus: reference-program.tuition.single-room-upgrade -%}
-            <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
-        </tr>
-{%- endif -%}
-    </tbody>
-</table>
-
-The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
-
-<table>
-<tbody>
-    <tr>
-        <td>
-            <p class="name">Meal plan dinners</p>
-            <p class="description">Includes full three-course meal with wine & mineral water</p>
-        </td><td class="cost" align="center" valign="top"><p><strong>${{ reference-program.tuition.meal-plan }}</strong></p></td>
-    </tr>
-</tbody>
-</table>
-
-{% include activity-fees-cn.md %}
-
-{% include application-instructions-cn.md %}
-
-### Recording guidelines
-
-* Recordings (audio or video) should contain two works, preferably solo, which demonstrate a contrast of style and character. Individual movements of sonatas and suites are acceptable.
-* Recordings must be recent, made no more than six months prior to application.
-* Each excerpt or work must be played through without stopping.
-* Each work should be uploaded as separate tracks.
-* All excerpts and works must be uploaded in the order listed.
-* Audition materials must be submitted together with (or after) an application is received in our office.  No audition recordings will be considered without a completed registration from the applicant.
-
-### Submitting recordings
-
-1. Audition recordings may be YouTube links or mp3 files.
-1. Label each upload with the name of the excerpt or work. **Do not include your name.**
-2. Email recordings to [music@amalfi-festival.org](mailto:music@amalfi-festival.org).
-
-
 
 {% include fees-deposits-cancellations-cn.md %}
 

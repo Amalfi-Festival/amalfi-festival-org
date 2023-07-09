@@ -38,19 +38,47 @@ h1 div {
 
 // Tiled list of people
 .tiles {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            background-color: #025E73DD;
+            color: $brand-light-yellow;
+        }
+    }
     img {
         display: block;
         object-fit: cover;
         border-radius: .5rem;
     }
+    .name {
+        font-weight: 600;
+    }
+    .name, .school {
+        line-height: $minimum-line-height;
+    }
+
+    &.class {
+        float: right;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        width: 33%;
+        @include breakpoint(tablet) {
+            float: none;
+            margin-left: 0;
+            width: auto;
+            h3 {
+                display: none;
+            }
+        }
+    }
 }
 .front-of-brochure .tiles, .front-of-brochure.tiles {
     display: flex;
-    gap: 1.5rem .75rem;
     justify-content: center;
     flex-wrap: wrap;
     > div {
-        width: 8rem;
+        width: 9rem;
         text-align: center;
     }
     img {
@@ -61,46 +89,38 @@ h1 div {
         margin-bottom: .5rem;
     }
     a {
-        text-decoration: none;
         display: flex;
         flex-direction: column;
         gap: .1em;
+        padding: .75rem .5rem .75rem;
+        border-radius: .9rem;
     }
     .name {
-        font-weight: bold;
         font-size: .9em;
-        line-height: $minimum-line-height;
     }
     .school {
         font-size: .7em;
-        line-height: $minimum-line-height;
     }
 }
 .inside-brochure .tiles, .inside-brochure.tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    gap: 1em;
 
     h3 {
         grid-column: 1 / -1;
-        margin-top: 1em;
+        margin-top: 1.5rem;
         &:first-child {
             margin-top: 0;
         }
-        margin-bottom: 0;
+        margin-bottom: .5rem;
     }
     a {
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-template-rows: auto auto;
-        text-decoration: none;
-        border-radius: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: initial;
-        padding: 0;
         gap: .2em .75em;
-
+        padding: .5rem;
+        border-radius: .8rem;
     }
     img {
         width: 3rem;
@@ -110,21 +130,12 @@ h1 div {
         grid-area: 1 / 1 / span 2 / 2;
     }
     .name {
-        font-weight: 500;
-        font-size: 1;
-        @include breakpoint(mobile) {
-            font-size: .9em;
-        }
-        line-height: $minimum-line-height;
         align-self: end;
+        font-size: 1em;
     }
     .school {
         display: block;
-        line-height: 1.2;
         font-size: .9em;
-        @include breakpoint(mobile) {
-            font-size: .8em;
-        }
     }
 }
 
@@ -156,7 +167,7 @@ td {
     }
 
     p.name {
-        font-weight: bold;
+        font-weight: 600;
         margin-block-end: .5rem;
         &:last-child {
             margin-block-end: 1rem;

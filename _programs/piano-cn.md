@@ -5,6 +5,56 @@ show-localization: true
 reference-program: piano
 ---
 {%- include site/initialize-program-variables.md program=page -%}
+<section id="splash" class="standard-block" markdown="1">
+
+## Experience an intensive piano education within the breathtaking views of the Amalfi Coast
+
+<div class="image-copy">
+<div class="image rellax" data-rellax-speed="-1" markdown="1">
+![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }})
+</div>
+<div class="copy">
+Receive individual attention from world-renowned faculty with 4 one-hour private lessons.
+</div>
+</div>
+
+
+<div class="image-copy right">
+<div class="image rellax" data-rellax-speed="-.7">
+<img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
+</div>
+<div class="copy">
+Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
+</div>
+</div>
+
+
+<div class="image-copy">
+<div class="image rellax" data-rellax-speed="-.3" markdown="1">
+![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }})
+</div>
+<div class="copy" style="bottom: -7rem;">
+Held in an array of intimate settings at historic churches, halls, and landmarks, the Festival hosts daily faculty concerts and the Young Artist Series, the institute recital series for students.
+</div>
+</div>
+
+<div class="image-copy right">
+<div class="image rellax" data-rellax-speed=".3">
+<img src="{{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }}" alt="Student performing" />
+</div>
+</div>
+
+<div class="image-copy">
+<div class="image rellax" data-rellax-speed=".5" markdown="1">
+![Giles at San Domenico]({{ site.program-assets-directory | append: "piano/art show 2.jpg" | relative_url }})
+</div>
+<div class="copy" style="bottom: 5rem;">
+Opportunities to fully experience the Amalfi Coast with excursions to world-renowned locations, and cultural activities including language, pottery, and cooking classes.
+</div>
+</div>
+
+
+</section>
 
 
 <section id="splash" class="proto-2 standard-block" markdown="1">
@@ -107,13 +157,13 @@ reference-program: piano
 ## 向世界一流的教师学习
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
-<div id="faculty-list" class="standard-block">
+<div class="standard-block tiles front-of-brochure">
 {%- include site/faculty-tiles.md faculty=all-faculty localization=true -%}
 </div>
 </section>
 
 
-<section id="learn" class="image-container">
-<img class="background rellax" data-rellax-speed="-2" data-rellax-percentage="0" src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
+<section id="learn" class="background-image-container">
+<img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>

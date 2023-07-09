@@ -7,6 +7,13 @@ body > main {
     @include breakpoint(mobile) {
         margin-top: 0;
     }
+    h1 {
+        margin-bottom: 0;
+    }
+    :is(h1,h2) + :is(h2,h3) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 #headshot {
@@ -39,7 +46,8 @@ body > main {
 }
 
 .availability {
-    font-weight: bold;
+    font-weight: 600;
+    margin-top: 1em;
     margin-left: 0 !important;
     max-width: initial !important;
 
