@@ -435,8 +435,12 @@ a {
             width: auto;
             display: flex;
             justify-content: space-between;
+            @include breakpoint(tiny) {
+                flex-direction: column;
+            }
         }
         .apply {
+            text-align: center;
             height: 100%;
         }
     }

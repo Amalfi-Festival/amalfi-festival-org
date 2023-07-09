@@ -108,13 +108,22 @@ section#splash {
             display: flex;
             gap: 1rem;
             padding-top: 1rem;
+            @include breakpoint(mobile) {
+                flex-direction: column;
+            }
 
             &.image-copy:nth-child(even) {
                 flex-direction: row-reverse;
+                @include breakpoint(mobile) {
+                    flex-direction: column;
+                }
             }
         }
         .image {
             width: 60%;
+            @include breakpoint(mobile) {
+                width: 100%;
+            }
             aspect-ratio: 1.4;
             flex-grow: 1;
             img {
@@ -126,18 +135,19 @@ section#splash {
         }
         .copy {
             width: 40%;
-            display: flex;
-            align-items: center;
             padding: 2rem;
             font-size: 1.5em;
+            @include breakpoint(mobile) {
+                width: 100%;
+                padding: 2rem;
+                font-size: 1.2em;
+            }
+            display: flex;
+            align-items: center;
             line-height: $minimum-line-height;
             background-color: $brand-blue;
             color: $background-color;
             border-radius: 1rem;
-            @include breakpoint(mobile) {
-                padding: 1rem;
-                font-size: 1rem;
-            }
         }
     }
 }
@@ -173,6 +183,14 @@ section.proto-3 {
             color: $background-color;
         }
         align-self: center;
+    }
+}
+
+#header {
+    @include breakpoint(tiny) {
+        span {
+            display: block;
+        }
     }
 }
 
