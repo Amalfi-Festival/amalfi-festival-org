@@ -44,14 +44,14 @@ For guests and auditors, [click here]({{ guests.url | relative_url }}) for more 
     <tr class="upgrade">
         <td valign="top"><p class="name">Hotel upgrade: Double Room</p></td>
         {%- assign price = base-price | plus: reference-program.tuition.hotel-double-upgrade -%}
-        <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
+        <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=reference-program.tuition.hotel-double-upgrade %}</strong></p></td>
     </tr>
 {%- endif -%}
 {%- if reference-program.tuition.hotel-single-upgrade -%}
     <tr class="upgrade">
         <td valign="top"><p class="name">Hotel upgrade: Single Room</p></td>
         {%- assign price = base-price | plus: reference-program.tuition.hotel-single-upgrade -%}
-        <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=price %}</strong></p></td>
+        <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=reference-program.tuition.hotel-single-upgrade %}</strong></p></td>
     </tr>
 {%- endif -%}
 {%- if reference-program.tuition.lab-fee -%}
@@ -69,9 +69,9 @@ The meal plan provides daily dinners. We recommend this option as participants a
 <tbody>
     <tr>
         <td>
-            <p class="name">Meal plan dinners</p>
+            <p class="name">Meal plan dinners (optional)</p>
             <p class="description">Includes full three-course meal with wine & mineral water</p>
-        </td><td class="cost" align="center" valign="top"><p><strong>${{ reference-program.tuition.meal-plan }}</strong></p></td>
+        </td><td class="cost" align="center" valign="top"><p><strong>+ ${{ reference-program.tuition.meal-plan }}</strong></p></td>
     </tr>
 </tbody>
 </table>

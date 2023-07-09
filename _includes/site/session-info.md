@@ -13,7 +13,7 @@
 {%- if session.class-name -%}
     {%- assign class = site.classes | where: "slug", session.class-name | first %}
     {%- if class.class-name %}
-### {{ class.class-name }}
+### {{ class.class-name | smartify }}
     {% endif %}
 
 <div class="tiles inside-brochure class">

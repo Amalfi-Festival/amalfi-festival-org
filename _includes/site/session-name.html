@@ -1,1 +1,5 @@
-{% if include.session.session-name %}{{ include.session.session-name }}: {% endif %}{% include utilities/date-range.html dates=include.session.dates %}
+{% unless include.localization -%}
+    {%- if include.session.session-name %}{{ include.session.session-name | smartify }}: {% endif %}<span>{% include utilities/date-range.html dates=session.dates -%}</span>
+{%- else -%}
+    {%- if include.session.session-name-cn %}{{ include.session.session-name-cn }}{% else %}{{ include.session.session-name | smartify }}{% endif %}: <span>{% include utilities/date-range-cn.html dates=session.dates -%}</span>
+{%- endunless %}

@@ -35,11 +35,7 @@ custom-css: program
     <div><h2>
 {%- for session in reference-program.sessions -%}
 {%- if forloop.index > 1 -%}<br/>{%- endif -%}
-    {%- unless page.show-localization -%}
-        {%- if session.session-name %}{{ session.session-name | smartify}}: {% endif %}{% include utilities/date-range.html dates=session.dates -%}
-    {%- else -%}
-        {%- if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates -%}
-    {%- endunless -%}
+{%- include site/session-name.html session=session localization=page.show-localization -%}
 {%- endfor -%}
     </h2></div>
     <div><h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>
