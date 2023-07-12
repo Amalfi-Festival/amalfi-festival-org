@@ -1,5 +1,5 @@
 ---
-program-name: Visual Arts Program
+title: Visual Arts Program
 sessions:
     -   session-name: Painting
         class-name: exploring-watercolor
@@ -32,7 +32,7 @@ menu-title: Visual Arts
 hero-image: capri.jpg
 header-blend-mode: normal
 ---
-{%- include site/initialize-program-variables.md program=page -%}
+{%- include site/program/initialize-program-variables.fx program=page -%}
 
 <section class="standard-block" markdown="1">
 

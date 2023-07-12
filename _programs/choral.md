@@ -1,5 +1,5 @@
 ---
-program-name: Choral Program
+title: Choral Program
 sessions:
     - dates:
         note: Coming in 2024

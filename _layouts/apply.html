@@ -3,7 +3,7 @@ layout: default
 body-class: program
 custom-css: apply
 ---
-{%- include site/initialize-program-variables.md program=page.program-name -%}
+{%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
 {% capture translations %}
 {%- if reference-program.localizations -%}
@@ -18,7 +18,7 @@ custom-css: apply
 {%- endif -%}
 {% endcapture %}
 
-<h1>{{ program.program-name | smartify }} <div><span>{{ translations }}</span></div></h1>
+<h1>{{ program.title | smartify }} <div><span>{{ translations }}</span></div></h1>
 
 <section class="standard-block" markdown="1">
 

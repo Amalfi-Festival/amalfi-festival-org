@@ -111,6 +111,8 @@ class Accordion {
   }
 }
 
-document.querySelectorAll('details').forEach((el) => {
-  new Accordion(el);
+window.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('details').forEach((el) => {
+    new Accordion(el);
+  });
 });

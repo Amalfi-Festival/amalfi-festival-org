@@ -1,0 +1,35 @@
+{%- comment -%}
+Fills in cost table with either the base tuition price, or with separate rows for individual session items.
+
+If there is no base tuition price for the program, and we are listing the prices for each session, then no item is listed for sessions that don't specifically add that fee. cf. lab fee.
+
+item-td: name/description of item to include table row
+item-name: name of tuition item
+has-tuition-item: result of has-tuition-item.fx for |item-name|
+{%- endcomment -%}
+
+{%- assign __p = reference-program -%}
+{%- assign base-price = __p.tuition[include.item-name] -%}
+<tr class="base">
+    <td>{{ include.item-td }}</td>
+{%- unless include.has-tuition-item == 2 -%}
+    <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=base-price %}</strong></p></td>
+</tr>
+{%- else -%}
+    <td></td>
+</tr>
+    {%- for session in __p.sessions -%}
+        {%- if session.tuition[include.item-name] or base-price -%}
+<tr>
+    <td>
+        <p class="session">{%- include site/session/get-session-name-with-dates.html session=session -%}</p>
+    </td>
+        {%- assign price = base-price -%}
+        {%- if session.tuition[include.item-name] -%}
+            {%- assign price = session.tuition[include.item-name] -%}
+        {%- endif -%}
+    <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=price %}</strong></p></td>
+</tr>
+        {%- endif -%}
+    {%- endfor -%}
+{%- endunless -%}

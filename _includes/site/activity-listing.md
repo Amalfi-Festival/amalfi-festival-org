@@ -13,7 +13,7 @@
     <ul>
     {%- for group in activity.available-to-programs -%}
         {%- assign program = site.programs | where: "slug", group | first -%}
-        <li><a href="{{ program.url | relative_url }}">{{ program.program-name | smartify }}</a></li>
+        <li><a href="{{ program.url | relative_url }}">{{ program.title | smartify }}</a></li>
     {%- endfor -%}
     </ul></li>
     {%- endunless -%}

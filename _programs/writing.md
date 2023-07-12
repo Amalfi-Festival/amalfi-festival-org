@@ -1,5 +1,5 @@
 ---
-program-name: Writers' Studio
+title: Writers' Studio
 sessions:
     -   class-name: writing-studio
         dates:
@@ -16,7 +16,7 @@ tuition:
 menu-title: Writing
 hero-image: ravello-villa-cimbrone.jpg
 ---
-{%- include site/initialize-program-variables.md program=page -%}
+{%- include site/program/initialize-program-variables.fx program=page -%}
 
 <section class="standard-block" markdown="1">
 

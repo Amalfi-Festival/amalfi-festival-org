@@ -1,5 +1,6 @@
 {%- comment -%}
 program: program object (optional)
+    uses |reference-program| as default
 tuition-item-name: name of the tuition item
 
 returns:

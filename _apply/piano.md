@@ -1,7 +1,7 @@
 ---
 program-name: piano
 ---
-{%- include site/initialize-program-variables.md program=page.program-name -%}
+{%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
 <div class="highlight-box" markdown="1">
 <h5>Contents</h5>

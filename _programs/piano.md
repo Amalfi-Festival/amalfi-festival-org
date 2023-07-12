@@ -1,5 +1,5 @@
 ---
-program-name: Piano Program
+title: Piano Program
 sessions:
     -   session-name: Session I
         session-name-cn: 第一期
@@ -59,7 +59,7 @@ localizations:
     -   abbreviation: 中文
         program: piano-cn
 ---
-{%- include site/initialize-program-variables.md program=page -%}
+{%- include site/program/initialize-program-variables.fx program=page -%}
 
 <section id="splash" class="proto-2 standard-block" markdown="1">
 

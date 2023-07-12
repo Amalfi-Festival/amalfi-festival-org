@@ -1,5 +1,7 @@
-# List of all the active programs in order. The names of the programs must
-# match the filenames for each program.
+### What the name of this/next year's festival is. This appears in the home page.
+edition: XXVI season, July 2023
+### List of all the active programs for the festival in order. The names of the programs must
+### match the filenames for each program.
 programs:
     -   name: piano
     -   name: piano-cn
@@ -7,7 +9,9 @@ programs:
     -   name: visual-arts
     -   name: writing
     -   name: choral
-edition: XXVI season, July 2023
+### Application deadline, registration fee, and deposit.
+### Optionally if the deadline is to be extended, uncomment the "extended-deadline" line
+### with the new date. Both dates are listed so that users understand the previous deadline is old.
 application:
     deadline: 2023-04-15
 #    extended-deadline: 2023-04-23

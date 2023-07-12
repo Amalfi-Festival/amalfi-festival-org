@@ -3,11 +3,11 @@ This establishes three local variables:
 
     - program: either a slug of the program, or the program object itself
     - reference-program: is self by default
-    - apply-page: apply object if there is one
+    - apply-url: URL to apply page (may be program page using #)
 {% endcomment %}
 
 {%- assign program = include.program -%}
-{%- unless program.program-name -%}
+{%- unless program.title -%}
     {%- assign program = site.programs | where: "slug", include.program | first -%}
 {%- endunless -%}
 {%- assign reference-program = program -%}
@@ -15,4 +15,5 @@ This establishes three local variables:
     {%- assign reference-program = site.programs | where: "slug", program.reference-program | first -%}
 {%- endif -%}
 
-{%- assign apply-page = site.apply | where: "slug", program.slug | first -%}
+{%- include site/program/get-apply-url.fx program-name=program.slug -%}
+{%- assign apply-url = __return -%}

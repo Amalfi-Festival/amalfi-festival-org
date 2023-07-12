@@ -1,5 +1,5 @@
 ---
-program-name: Guests & Auditors
+title: Guests & Auditors
 sessions:
     -   dates:
             start: 2023-07-05
@@ -44,7 +44,7 @@ Guest Program fees includes access all festival activities for the full session.
     {%- unless guest-sessions[0] -%}
         {%- continue -%}
     {%- endunless %}
-<h3>{{ program.program-name }}</h3>
+<h3>{{ program.title }}</h3>
 <ul>
     {%- for session in guest-sessions -%}
     <li>{{ session.session-name }} ({% include utilities/date-range.html dates=session.dates %})

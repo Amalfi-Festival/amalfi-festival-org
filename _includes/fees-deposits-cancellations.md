@@ -27,37 +27,28 @@ Deposit and tuition payment refunds are made according to the following schedule
 Before {{ p.full-refund.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-Your deposit and any tuition payments made will be fully refunded without penalty.
+<div><p markdown="1">Your deposit and any tuition payments made will be fully refunded without penalty.</p></div>
 
 As of {{ p.processing-fee.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-A {% include utilities/format-cost.md cost=p.processing-fee.amount %} processing fee will be applied to your refund.
+<div><p markdown="1">A **{% include utilities/format-cost.md cost=p.processing-fee.amount %}** processing fee will be applied to your refund.</p></div>
 
 After {{ p.withdrawal-fee.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-A {% include utilities/format-cost.md cost=p.withdrawal-fee.amount %} withdrawal fee will be applied to your refund.
+<div><p markdown="1">A **{% include utilities/format-cost.md cost=p.withdrawal-fee.amount %}** withdrawal fee will be applied to your refund.</p></div>
 
 As of {{ p.forfeit.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-Your {% include utilities/format-cost.md cost=site.data.institute.application.deposit %} deposit be forfeited plus any prepaid nonrefundable expenses up to {% include utilities/format-cost.md cost=p.forfeit.deductible %}.
+<div><p markdown="1">Your **{% include utilities/format-cost.md cost=site.data.institute.application.deposit %}** deposit be forfeited plus any prepaid nonrefundable expenses up to **{% include utilities/format-cost.md cost=p.forfeit.deductible %}**.</p></div>
 
 As of {{ p.no-refund.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-**No refunds will be made after this date.** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exception can be made.
+<div><p markdown="1">***No refunds will be made after this date.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exception can be made.</p></div>
 </div>
-
-If you need to cancel your participation in the program, the following policies and deadlines must be respected:
-
-1. All cancellations must be made in writing by email. Phone calls or phone messages are not an acceptable form of cancellation. 
-2. Cancellations before March 31st, 2023: Your deposit and any tuition payments made will be fully refunded without penalty.
-3. Cancellations as of April 1, 2023: A $50 processing fee will be applied to your refund. 
-4. Cancellations after April 15, 2023: A $100 withdrawal fee will be applied to your refund. 
-5. Cancellations as of May 1st, 2023: Your $350 deposit be forfeited plus any prepaid nonrefundable expenses up to $1,500. 
-6. Cancellations as of June 1st, 2023: **No refunds will be made after this date.** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exception can be made.
 
 Trip insurance is strongly recommended for your protection in case of cancellation or trip interruption. No refunds are available for partial use of program.
 

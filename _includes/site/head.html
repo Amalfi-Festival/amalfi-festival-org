@@ -6,6 +6,8 @@
 
     {%- if page.title -%}
         {%- assign page-title = page.title | strip_html | smartify | append:" &middot; " | append: site.title -%}
+    {%- elsif page.collection == "apply" -%}
+        {%- assign page-title = "Apply to the " | append: page.title | strip_html | smartify | append:" &middot; " | append: site.title -%}
     {%- else -%}
         {%- assign page-title = site.title -%}
     {%- endif -%}

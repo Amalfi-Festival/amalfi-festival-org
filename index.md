@@ -64,13 +64,13 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 {%- if program-entry.translation -%}
     {%- continue -%}
 {%- endif -%}
-{%- assign program-name = program-entry.name -%}
-{%- assign program = site.programs | where: "slug", program-name | first -%}
+{%- assign program-slug = program-entry.name -%}
+{%- assign program = site.programs | where: "slug", program-slug | first -%}
 <div>
-    <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
+    <img src="{{ site.program-assets-directory | append: program-slug | append: '/home.jpg' | relative_url }}" />
     <div>
         <a href="{{ program.url | relative_url }}">
-            <h3 class="program-name">{{ program.program-name | smartify }}</h3>
+            <h3 class="program-name">{{ program.title | smartify }}</h3>
         </a>
         <ul>
         {%- for session in program.sessions -%}
@@ -82,15 +82,10 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
             </li>
         {%- endfor -%}
         </ul>
-        {%- assign apply-url = site.apply | where: "slug", program-name | first -%}
-        {%- if apply-url -%}
-            {%- assign apply-url = apply-url.url | relative_url -%}
-        {%- else -%}
-            {%- assign apply-url = program.url | append: "#how-to-apply" | relative_url -%}
-        {%- endif -%}
         <div class="buttons">
-            <a href="{{ program.url | relative_url }}" class="button">Learn more</a>
-            <a href="{{ apply-url }}" class="button">Apply</a>
+            <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
+            {%- include site/program/get-apply-url.fx program-name=program-slug -%}
+            <a href="{{ __return }}" class="button">Apply</a>
         </div>
     </div>
 </div>
@@ -115,7 +110,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 {%- assign program-name = program-entry.name -%}
 {%- assign program = site.programs | where: "slug", program-name | first -%}
 <a href="{{ program.url | relative_url }}">
-    <h3 class="program-name">{{ program.program-name | smartify }}</h3>
+    <h3 class="program-name">{{ program.title | smartify }}</h3>
     <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
     <ul>
     {%- for session in program.sessions -%}

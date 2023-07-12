@@ -1,10 +1,10 @@
 ---
-program-name: 第26届意大利阿马尔菲海岸钢琴艺术节
+title: 第26届意大利阿马尔菲海岸钢琴艺术节
 menu-title: 钢琴艺术节
 show-localization: true
 reference-program: piano
 ---
-{%- include site/initialize-program-variables.md program=page -%}
+{%- include site/program/initialize-program-variables.fx program=page -%}
 <section id="splash" class="standard-block" markdown="1">
 
 ## Experience an intensive piano education within the breathtaking views of the Amalfi Coast
