@@ -8,6 +8,8 @@ sessions:
             end: 2023-07-17
         faculty:
             - David-Daniels
+        tuition:
+            hotel-double: 3100
     -   session-name: Mixed Media
         class-name: mapping-the-amalfi-coast
         dates:
@@ -15,19 +17,20 @@ sessions:
             end: 2023-07-27
         faculty:
             - Robert-Devers
+        tuition:
+            lab-fee: 145
 application:
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
     guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:9464b5c4-5b72-4d58-8ad3-dce49b354f56
 tuition:
     meal-plan: 540
-    lab-fee: 145
     hotel-double: 3495
     hotel-single-upgrade: 749
     guests:
         hotel-double: 3195
 menu-title: Visual Arts
 hero-image: capri.jpg
-header-blend-mode: multiply
+header-blend-mode: normal
 ---
 {%- include site/initialize-program-variables.md program=page -%}
 

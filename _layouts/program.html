@@ -35,7 +35,7 @@ custom-css: program
     <div><h2>
 {%- for session in reference-program.sessions -%}
 {%- if forloop.index > 1 -%}<br/>{%- endif -%}
-{%- include site/session-name.html session=session localization=page.show-localization -%}
+{%- include site/session/get-session-name-with-dates.html session=session localization=page.show-localization -%}
 {%- endfor -%}
     </h2></div>
     <div><h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>

@@ -14,7 +14,6 @@ h1 {
 h1 div {
     flex-shrink: 0;
     font-family: $body-font;
-    font-weight: 400;
     line-height: $minimum-line-height;
     align-self: flex-end;
     @include breakpoint(tiny) {
@@ -22,6 +21,7 @@ h1 div {
     }
     > span {
         font-size: .5em;
+        font-weight: 600;
         > *:not(:first-child) {
             margin-left: 1em;
         }
@@ -29,8 +29,11 @@ h1 div {
     a {
         text-decoration: none;
         color: rgba(34, 26, 16, .4);
+        font-weight: 300;
         &:hover {
             color: $body-color;
+            letter-spacing: 0;
+            font-weight: 600;
         }
     }
 }
@@ -42,20 +45,26 @@ h1 div {
         text-decoration: none;
 
         &:hover {
-            background-color: #025E73DD;
-            color: $brand-light-yellow;
+            background-color: $brand-blue;
+            > * {
+                color: $brand-light-yellow;
+            }
         }
     }
     img {
         display: block;
         object-fit: cover;
-        border-radius: .5rem;
+        border-radius: $border-radius-small;
+        border: $border-style;
     }
     .name {
         font-weight: 600;
     }
     .name, .school {
         line-height: $minimum-line-height;
+    }
+    .school {
+        color: $body-color;
     }
 
     &.class {
@@ -142,7 +151,7 @@ h1 div {
 
 // Apply fees table
 table {
-    border: 1px solid $brand-blue;
+    border: $border-style;
     width: $default-max-copy-width;
     @include breakpoint(mobile) {
         width: 100%;
@@ -192,7 +201,7 @@ tr:not(.header):has(+ tr:not(.base)) p:last-child {
     margin-block-end: 0;
 }
 tr:has(+ tr.base) {
-    border-bottom: 1px solid $brand-blue;
+    border-bottom: $border-style;
 }
 .upgrade {
     td:first-child p {
@@ -205,4 +214,7 @@ tr:has(+ tr.base) {
     &:last-child p {
         margin-block-end: 1rem;
     }
+}
+.session {
+    font-style: italic;
 }

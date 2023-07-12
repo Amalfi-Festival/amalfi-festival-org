@@ -25,7 +25,7 @@
                 {%- if excursion.description -%}
                 <p class="description">{{ excursion-text.description }}</p>
                 {%- endif -%}
-            </td><td class="cost" align="center" valign="top"><p><strong>{% include site/format-cost.md localization=include.localization cost=excursion.cost %}</strong></p></td>
+            </td><td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md localization=include.localization cost=excursion.cost %}</strong></p></td>
         </tr>
     {%- endfor -%}
     </tbody>
@@ -57,7 +57,7 @@
                 <p class="description">{{ activity-text.description }}</p>
                 {%- endif -%}
             </td>
-            <td class="cost" align="center" valign="top"><p><strong>{% include site/format-cost.md localization=include.localization cost=activity.cost %}</strong></p></td></tr>
+            <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md localization=include.localization cost=activity.cost %}</strong></p></td></tr>
     {%- endfor -%}
     </tbody>
 {%- endif -%}

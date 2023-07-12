@@ -1,18 +1,6 @@
 {% include utilities/social.svg %}
 <footer class="background-image-container"><img id="footer-background" src="{{ site.image-directory | append: 'porto-di-maiori.jpg' | relative_url }}" /><div class="section-wrapper"><div class="content-wrapper">
 <div>
-    {%- include site/logo.html -%}
-
-    <div id="social">
-        <a href="{{ site.social.instagram }}"><svg><use xlink:href="#instagram" /></svg></a>
-        <a href="{{ site.social.twitter }}"><svg><use xlink:href="#twitter" /></svg></a>
-        <a href="{{ site.social.facebook }}"><svg><use xlink:href="#facebook" /></svg></a>
-        <a href="{{ site.social.youtube }}"><svg><use xlink:href="#youtube" /></svg></a>
-    </div>
-
-    <div id="copyright">&copy; {{ "now" | date: "%Y" }} Center for Musical Studies</div>
-</div>
-<div>
     <nav>
         <h1>Programs</h1>
         {%- include site/institute-links.html include-translations=true -%}
@@ -26,5 +14,27 @@
         <a href="{{ site.baseurl }}{% link staff.md %}">Staff</a>
         <a href="{{ site.baseurl }}{% link contact.md %}">Contact</a>
     </nav>
+    <nav id="contact">
+        <h1>Contact</h1>
+        <div class="contact">Amalfi Coast Music & Arts Festival<br/>
+        Center for Musical Studies<br/>
+        724 Chesapeake Ave.<br/>
+        Silver Spring, MD 20910<br/>
+        U.S.A.</div>
+        <a href="tel:+13015876189">(301) 587-6189</a>
+        <a href="mailto:music@amalfi-festival.org">music@amalfi-festival.org</a>
+    </nav>
 </div>
-</div></div></footer>
+<div>
+    {%- include site/logo.html -%}
+
+    <div id="social">
+        <a href="{{ site.social.instagram }}"><svg><use xlink:href="#instagram" /></svg></a>
+        <a href="{{ site.social.twitter }}"><svg><use xlink:href="#twitter" /></svg></a>
+        <a href="{{ site.social.facebook }}"><svg><use xlink:href="#facebook" /></svg></a>
+        <a href="{{ site.social.youtube }}"><svg><use xlink:href="#youtube" /></svg></a>
+    </div>
+
+    <div id="copyright">&copy; {{ "now" | date: "%Y" }} Center for Musical Studies</div>
+</div>
+</div></footer>

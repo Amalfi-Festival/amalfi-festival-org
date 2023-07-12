@@ -4,7 +4,7 @@ program-name: piano-cn
 {%- include site/initialize-program-variables.md program=page.program-name -%}
 
 <div class="highlight-box" markdown="1">
-<div class="header">Contents</div>
+<h5>Contents</h5>
 - contents
 {:toc}
 </div>

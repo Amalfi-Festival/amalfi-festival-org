@@ -11,12 +11,12 @@
 
 <div class="excursion-info standard-block">
 <ul class="highlight-box colored">
-    <li>Price: <div>${{ excursion.cost }}</div></li>
-    <li>Duration: <div>{{ excursion.length }}</div></li>
+    <li><h5>Price</h5> <div>${{ excursion.cost }}</div></li>
+    <li><h5>Duration</h5> <div>{{ excursion.length }}</div></li>
     {%- unless excursion.available-to-programs[0] -%}
-    <li>Available to all programs participants and guests</li>
+    <li><h5>Available to</h5> <div>all programs participants and guests</div></li>
     {%- else -%}
-    <li>Available to:
+    <li><h5>Available to</h5>
     <ul>
     {%- for group in excursion.available-to-programs -%}
         {%- assign program = site.programs | where: "slug", group | first -%}
@@ -24,7 +24,7 @@
     {%- endfor -%}
     </ul></li>
     {%- endunless -%}
-    <li>{{ excursion.description | markdownify }}</li>
+    <li class="description">{{ excursion.description | markdownify }}</li>
 </ul>
 
 <div>{%- if excursion.tagline -%}

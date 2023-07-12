@@ -18,7 +18,7 @@ custom-css: faculty
             {%- assign apply-url = site.apply | where: "slug", program.slug | first -%}
             {%- assign apply-url = apply-url.url | relative_url -%}
             {%- if session.session-name -%}
-                {%- capture session-id -%}{% include site/session-name.html session=session %}{%- endcapture -%}
+                {%- capture session-id -%}{% include site/session/get-session-name-with-dates.html session=session %}{%- endcapture -%}
                 {%- assign session-id = session-id | slugify -%}
                 {%- assign apply-url = apply-url | append: "#" | append: session-id -%}
             {%- endif -%}
@@ -44,7 +44,7 @@ single{%- endif -%}">
 <h2>Portfolio</h2>
 <section id="portfolio" class="standard-block">
     {%- for image-path in page.portfolio -%}
-        <img src="{{ image-directory | append: image-path | relative_url }}" />
+        <div><img src="{{ image-directory | append: image-path | relative_url }}" /></div>
     {%- endfor -%}
 </section>
 {%- endif -%}

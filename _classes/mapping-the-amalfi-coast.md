@@ -1,10 +1,10 @@
 ---
 class-name: Mapping the Amalfi Coast by Brush and Paper
+summary: |
+    This nine-day workshop is open to explorers, artists and students of art of any level, world travellers, and guests alike. 
+ 
+    This hybrid workshop will feature hands-on experiences in ceramic glaze painting on tiles or plates and hand-made artists books, woven together by a love of the Italian ceramics tradition known as maiolica.
 ---
-This nine-day workshop is open to explorers, artists and students of art of any level, world travellers, and guests alike. 
- 
-This hybrid workshop will feature hands-on experiences in ceramic glaze painting on tiles or plates and hand-made artists books, woven together by a love of the Italian ceramics tradition known as maiolica.
- 
 We will travel to numerous sublime and mythically beautiful sites to sketch, wander, explore, photograph, and gather inspiration from the landscape, the historic architecture, fabulous culture, and the rich craft traditions found uniquely integrated into the built environment along the Amalfi Coast.
  
 We will focus our lens upon the ceramic genre known as maiolica, a type of tin-glazed earthenware with brightly colored surfaces and a rich history dating back centuries in the area.  Beginning with the appreciation of maiolica tile patterns we will explore symmetrical patterns, tessellating patterns, and circular mandala designs, by drawing in our sketchbooks,

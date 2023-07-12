@@ -3,16 +3,32 @@ title: Staff
 custom-css: staff
 ---
 
-## TODO: GET PHOTOS OF EVERYONE?
+<section class="standard-block">
 
-<ul>
+<div>
 {%- for staff in site.data.staff -%}
-<li>
+{%- assign faculty = nil -%}
+{%- if staff.faculty -%}
+    {%- assign faculty = site.faculty | where: "slug", staff.faculty | first -%}
+{%- endif -%}
+<div>
+    <div class="image">
+{%- unless faculty -%}
+{%- else -%}
+    <img src="{% include site/faculty-headshot-filepath.html faculty=faculty %}" />
+{%- endunless -%}
+    </div>
+{%- unless faculty -%}
     <div class="name">{{ staff.name | smartify }}</div>
+{%- else -%}
+    <div class="name"><a href="{{ faculty.url | relative_url }}">{{ staff.name | smartify }}</a></div>
+{%- endunless -%}
     <div class="title">{{ staff.title | smartify }}</div>
     {%- if staff.email -%}
-    <div class="email"><a href="mailto:{{ staff.email }}">{{ staff.email }}</a></div>
+    <div class="email"><svg><use xlink:href="#envelope" /></svg><a href="mailto:{{ staff.email }}">{{ staff.email }}</a></div>
     {%- endif -%}
-</li>
+</div>
 {%- endfor -%}
-</ul>
+</div>
+
+</section>

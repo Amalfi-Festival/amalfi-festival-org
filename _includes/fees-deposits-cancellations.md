@@ -17,6 +17,39 @@ may withdraw without penalty if there is more than a 5% increase.
 
 ## Cancellation Policy & Refunds
 
+All cancellations must be made in writing by email. Phone calls or phone messages are not accepted.
+
+Deposit and tuition payment refunds are made according to the following schedule:
+
+{% assign p = site.data.institute.cancellation-policy %}
+
+<div id="cancellation-schedule" markdown="1">
+Before {{ p.full-refund.date | date: "%B %e, %Y" }}
+{: class="dateline"}
+
+Your deposit and any tuition payments made will be fully refunded without penalty.
+
+As of {{ p.processing-fee.date | date: "%B %e, %Y" }}
+{: class="dateline"}
+
+A {% include utilities/format-cost.md cost=p.processing-fee.amount %} processing fee will be applied to your refund.
+
+After {{ p.withdrawal-fee.date | date: "%B %e, %Y" }}
+{: class="dateline"}
+
+A {% include utilities/format-cost.md cost=p.withdrawal-fee.amount %} withdrawal fee will be applied to your refund.
+
+As of {{ p.forfeit.date | date: "%B %e, %Y" }}
+{: class="dateline"}
+
+Your {% include utilities/format-cost.md cost=site.data.institute.application.deposit %} deposit be forfeited plus any prepaid nonrefundable expenses up to {% include utilities/format-cost.md cost=p.forfeit.deductible %}.
+
+As of {{ p.no-refund.date | date: "%B %e, %Y" }}
+{: class="dateline"}
+
+**No refunds will be made after this date.** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exception can be made.
+</div>
+
 If you need to cancel your participation in the program, the following policies and deadlines must be respected:
 
 1. All cancellations must be made in writing by email. Phone calls or phone messages are not an acceptable form of cancellation. 

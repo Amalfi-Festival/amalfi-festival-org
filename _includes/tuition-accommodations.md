@@ -21,7 +21,13 @@ For guests and auditors, [click here]({{ guests.url | relative_url }}) for more 
         <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hostel-triple %}</strong></p></td>
     </tr>
 {%- endif -%}
-{%- if reference-program.tuition.hotel-triple -%}
+
+{%- include site/program/has-tuition-item.mdfx tuition-item-name="hotel-triple" -%}
+{%- assign has-hotel-triple = __return %}
+{%- include site/program/has-tuition-item.mdfx tuition-item-name="hotel-double" -%}
+{%- assign has-hotel-double = __return %}
+
+{%- if has-hotel-triple -%}
     {%- assign base-price = reference-program.tuition.hotel-triple -%}
     <tr class="base">
         <td>
@@ -30,15 +36,32 @@ For guests and auditors, [click here]({{ guests.url | relative_url }}) for more 
         </td>
         <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=base-price %}</strong></p></td>
     </tr>
-{%- elsif reference-program.tuition.hotel-double -%}
-    {%- assign base-price = reference-program.tuition.hotel-double -%}
+{%- elsif has-hotel-double -%}
+    {%- assign base-price = reference-program.tuition["hotel-double"] -%}
     <tr>
         <td>
             <p class="name">Tuition with Hotel accommodations, double occupancy</p>
             <p class="description">Double rooms includes buffet breakfast.</p>
         </td>
-        <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=base-price %}</strong></p></td>
+    {%- unless has-hotel-double == 2 -%}
+        <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=base-price %}</strong></p></td>
     </tr>
+    {%- else -%}
+        <td></td>
+    </tr>
+        {%- for session in reference-program.sessions -%}
+    <tr>
+        <td>
+            <p class="session">{%- include site/session/get-class-or-session-name.md session=session -%}</p>
+        </td>
+            {%- assign price = base-price -%}
+            {%- if session.tuition["hotel-double"] -%}
+                {%- assign price = session.tuition["hotel-double"] -%}
+            {%- endif -%}
+        <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=price %}</strong></p></td>
+    </tr>
+        {%- endfor -%}
+    {%- endunless -%}
 {%- endif -%}
 {%- if reference-program.tuition.hotel-double-upgrade -%}
     <tr class="upgrade">
@@ -54,11 +77,33 @@ For guests and auditors, [click here]({{ guests.url | relative_url }}) for more 
         <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=reference-program.tuition.hotel-single-upgrade %}</strong></p></td>
     </tr>
 {%- endif -%}
-{%- if reference-program.tuition.lab-fee -%}
+
+{%- include site/program/has-tuition-item.mdfx tuition-item-name="lab-fee" -%}
+{%- if __return -%}
+    {%- assign base-price = reference-program.tuition["lab-fee"] -%}
     <tr class="base">
         <td><p class="name">Lab fee for in-studio art classes</p></td>
-        <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.lab-fee %}</strong></p></td>
+    {%- unless has-hotel-double == 2 -%}
+        <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=base-price %}</strong></p></td>
     </tr>
+    {%- else -%}
+        <td></td>
+    </tr>
+        {%- for session in reference-program.sessions -%}
+            {%- if session.tuition["lab-fee"] or base-price -%}
+    <tr>
+        <td>
+            <p class="session">{%- include site/session/get-class-or-session-name.md session=session -%}</p>
+        </td>
+            {%- assign price = base-price -%}
+            {%- if session.tuition["lab-fee"] -%}
+                {%- assign price = session.tuition["lab-fee"] -%}
+            {%- endif -%}
+        <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=price %}</strong></p></td>
+    </tr>
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endunless -%}
 {%- endif -%}
 </tbody>
 </table>

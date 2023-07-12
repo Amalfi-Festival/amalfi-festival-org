@@ -4,12 +4,12 @@
 
 <div class="activity-info standard-block">
 <ul class="highlight-box colored">
-    <li>Price: <div>${{ activity.cost }}</div></li>
+    <li><h5>Price</h5> <div>${{ activity.cost }}</div></li>
 
     {%- unless activity.available-to-programs[0] -%}
-    <li>Available to all programs participants and guests</li>
+    <li><h5>Available to</h5> <div>all programs participants and guests</div></li>
     {%- else -%}
-    <li>Available to:
+    <li><h5>Available to</h5>
     <ul>
     {%- for group in activity.available-to-programs -%}
         {%- assign program = site.programs | where: "slug", group | first -%}

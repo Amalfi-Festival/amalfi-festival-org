@@ -85,3 +85,17 @@ excursions:
         available-to-programs:
             - piano
             - visual-arts
+cancellation-policy:
+    full-refund:
+        date: 2023-03-31
+    processing-fee:
+        date: 2023-04-01
+        amount: 50
+    withdrawal-fee:
+        date: 2023-04-15
+        amount: 100
+    forfeit:
+        date: 2023-05-01
+        deductible: 1500
+    no-refund:
+        date: 2023-06-01

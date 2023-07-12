@@ -11,7 +11,9 @@ h3 {
     .activity-info, .excursion-info {
         display: flex;
         flex-direction: column-reverse;
-        gap: 2rem;
+        > div ul {
+            margin-block-end: 1em;
+        }
     }
     h4 {
         margin-top: 0;

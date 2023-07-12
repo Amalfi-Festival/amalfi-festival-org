@@ -3,9 +3,49 @@
 @charset "utf-8";
 @import "base";
 
-li {
-    margin-bottom: 1rem;
+section > div {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding-left: 0;
+    line-height: $minimum-line-height;
+    > div {
+        position: relative;
+        display: grid;
+        grid-template-rows: repeat(4, min-content);
+        grid-template-columns: min-content 1fr;
+        gap: 0 1rem;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.image {
+    grid-area: 1 / 1 / 5 / 2;
+    width: 5rem;
+    img {
+        width: 100%;
+        aspect-ratio: 1;
+        border: $border-style;
+        border-radius: $border-radius-small;
+        object-fit: cover;
+    }
 }
 .name {
-    font-weight: 700;
+    font-weight: 600;
+}
+.title {
+    font-size: .9em;
+}
+.email {
+    font-size: .9em;
+    white-space: nowrap;
+    svg {
+        width: 1em;
+        height: 1em;
+        top: .2em;
+        position: relative;
+        margin-right: .5em;
+    }
 }

@@ -21,6 +21,12 @@ $standard-line-height: 1.7;
 $minimum-line-height: 1.3;
 
 $animation-length: 100ms;
+$border-style: .5px solid $brand-blue;
+@function border-style-with-color($color) {
+    @return .5px solid $color;
+}
+$border-radius-large: 1rem;
+$border-radius-small: .5rem;
 
 $minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
 $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));

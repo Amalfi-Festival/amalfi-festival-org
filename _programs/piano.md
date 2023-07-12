@@ -103,11 +103,11 @@ Held in an array of intimate settings at historic churches, halls, and landmarks
 </div>
 </div>
 
-<div class="image-copy">
+<div class="image-copy row">
 <div class="image" data-rellax-speed=".5" data-rellax-percentage="0">
 <img src="{{ site.program-assets-directory | append: "piano/art show 2.jpg" | relative_url }}" />
 </div>
-<div class="copy" style="bottom: 5rem;">
+<div class="copy">
 Opportunities to fully experience the Amalfi Coast with excursions to world-renowned locations, and cultural activities including language, pottery, and cooking classes.
 </div>
 </div>
@@ -116,6 +116,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 <section id="faculty" markdown="1">
 
 ## Learn from world-class faculty
+{: class="standard-block"}
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
 <div class="standard-block tiles front-of-brochure">

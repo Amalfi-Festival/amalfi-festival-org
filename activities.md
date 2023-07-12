@@ -6,8 +6,8 @@ custom-css: activities
 
 <section class="standard-block" markdown="1">
 
-<div class="highlight-box" markdown="1">
-<div class="header">Contents</div>
+<div class="highlight-box show-second-level" markdown="1">
+<h5>Contents</h5>
 - contents
 {:toc}
 </div>

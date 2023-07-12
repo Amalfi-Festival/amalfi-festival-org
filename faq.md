@@ -6,7 +6,7 @@ custom-css: faq
 <section class="standard-block" markdown="1">
 
 <div class="highlight-box" markdown="1">
-<div class="header">Contents</div>
+<h5>Contents</h5>
 - contents
 {:toc}
 </div>

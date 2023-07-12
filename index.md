@@ -15,6 +15,7 @@ sponsors:
         - hertz.jpg
 custom-js: rellax.min
 custom-css: home
+body-class: home
 header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
@@ -55,6 +56,55 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 <section id="institute" class="background-image-container">
 <img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
 
+<div class="inset-container">
+<div class="content-container">
+<h2 id="programs">Programs</h2>
+<div>
+{%- for program-entry in site.data.institute.programs -%}
+{%- if program-entry.translation -%}
+    {%- continue -%}
+{%- endif -%}
+{%- assign program-name = program-entry.name -%}
+{%- assign program = site.programs | where: "slug", program-name | first -%}
+<div>
+    <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
+    <div>
+        <a href="{{ program.url | relative_url }}">
+            <h3 class="program-name">{{ program.program-name | smartify }}</h3>
+        </a>
+        <ul>
+        {%- for session in program.sessions -%}
+            <li>
+            {%- if session.session-name -%}
+                {{- session.session-name }}:
+            {% endif -%}
+            {%- include utilities/date-range.html dates=session.dates -%}
+            </li>
+        {%- endfor -%}
+        </ul>
+        {%- assign apply-url = site.apply | where: "slug", program-name | first -%}
+        {%- if apply-url -%}
+            {%- assign apply-url = apply-url.url | relative_url -%}
+        {%- else -%}
+            {%- assign apply-url = program.url | append: "#how-to-apply" | relative_url -%}
+        {%- endif -%}
+        <div class="buttons">
+            <a href="{{ program.url | relative_url }}" class="button">Learn more</a>
+            <a href="{{ apply-url }}" class="button">Apply</a>
+        </div>
+    </div>
+</div>
+{%- endfor -%}
+</div>
+</div>
+</div>
+
+</section>
+
+
+<section id="institute2" class="background-image-container">
+<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
+
 <h2>Programs</h2>
 
 <div>
@@ -82,6 +132,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 </div>
 
 </section>
+
 
 <section class="copy" markdown="1">
 

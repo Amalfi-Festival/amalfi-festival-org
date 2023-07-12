@@ -30,8 +30,12 @@
     }
 }
 
-* {
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
     font-synthesis: none;
@@ -53,6 +57,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 :is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
     margin-top: 1rem;
+}
+// Used for headers of TOC, and highlight boxes
+h5 {
+    font-size: 1.05em;
+    margin: 0;
+}
+@include breakpoint(mobile) {
+    h1 { font-size: 1.8em; } // 2
+    h2 { font-size: 1.4em; } // 1.5
+    h3 { font-size: 1.15em; } // 1.17
+    // h4 is 1em in user agent stylesheet.
 }
 
 .logo {
@@ -93,8 +108,8 @@ body > header {
         align-items: center;
         gap: 1em;
         padding-top: .5rem;
-        padding-bottom: 1rem;
-        border-bottom: .5px solid $brand-blue;
+        padding-bottom: .5rem;
+        border-bottom: $border-style;
     }
     svg {
         height: 4rem;
@@ -108,23 +123,26 @@ body > header {
         display: flex;
         gap: .5em 1.5em;
         justify-content: flex-end;
+        padding-bottom: .1rem;
         flex-wrap: wrap;
         text-transform: uppercase;
         font-size: .9em;
         letter-spacing: .1em;
+        align-self: flex-end;
         @include breakpoint(tablet) {
             justify-content: center;
+            align-self: center;
         }
     }
     a {
         color: $brand-yellow;
+        font-weight: 300;
         &:hover {
             color: $brand-light-yellow;
+            letter-spacing: .059em;
+            font-weight: 600;
         }
     }
-}
-body:not(:has(#hero)) > header nav {
-    align-self: flex-end;
 }
 body:has(#hero) > header {
     position: absolute;
@@ -133,10 +151,10 @@ body:has(#hero) > header {
     z-index: 1;
     width: 100%;
     background-color: initial;
-    mix-blend-mode: screen;
+    mix-blend-mode: plus-lighter;
 
     .content-wrapper {
-        border-bottom: 0;
+        //border-bottom: 0;
     }
     a {
         &:hover {
@@ -165,48 +183,48 @@ body > main {
     margin-bottom: 3rem;
 }
 body > footer {
-    border-top: .5px solid $brand-blue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: $border-style;
+    font-size: .9em;
     #footer-background {
         opacity: .2;
     }
     div.content-wrapper {
-        justify-content: space-between;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
 
-        @include breakpoint(tablet) {
-            flex-direction: column-reverse;
-            align-content: center;
+        @include breakpoint(mobile) {
             font-size: .9em;
         }
-    }
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 
-    div.content-wrapper {
-        gap: 1rem;
-        > div:nth-of-type(1) {
+        > div:nth-of-type(2) {
             display: flex;
             flex-direction: column;
             gap: 1rem;
             align-items: center;
-            @include breakpoint(tablet) {
-                margin-top: 1rem;
-            }
+            align-self: center;
         }
-        > div:nth-of-type(2) {
+        > div:nth-of-type(1) {
             flex-grow: 1;
             display: flex;
-            gap: 1rem;
+            flex-wrap: wrap;
+            gap: 2rem;
             justify-content: center;
-
-            nav {
-                min-width: 8em;
+            @include breakpoint(mobile) {
+                > * {
+                    align-items: center;
+                    text-align: center;
+                }
             }
         }
     }
     svg {
-        height: 5rem;
+        height: 4.5rem;
         @include breakpoint(tablet) {
-            height: 4.5rem;
+            height: 4rem;
         }
         @include breakpoint(tablet) {
             width: min(70vw, 20em);
@@ -215,7 +233,7 @@ body > footer {
     }
     #social {
         display: flex;
-        gap: 1em;
+        gap: 1.5rem;
         margin-top: 1em;
         a {
             display: block;
@@ -239,15 +257,31 @@ body > footer {
     #copyright {
         font-size: .8em;
     }
+    #contact {
+        .contact {
+            padding-top: .35em;
+            @include breakpoint(mobile) {
+                padding-top: 0;
+            }
+            font-size: .9em;
+            line-height: $minimum-line-height;
+        }
+    }
 
     h1 {
         text-transform: uppercase;
         font-size: 1em;
         margin-top: 0;
+        @include breakpoint(mobile) {
+            margin-bottom: .5em;
+        }
     }
     nav {
         display: flex;
         flex-direction: column;
+        @include breakpoint(tablet) {
+            gap: .5rem;
+        }
     }
 }
 
@@ -270,7 +304,7 @@ main:not(.standard-block) {
 .standard-block {
     @include standard-block-behavior;
 
-    > :is(ul, ol, p), > div > :is(ul, ol, p), > div > div > :is(ul, ol, p), dd, table {
+    > :is(ul, ol, p), > div > :is(ul, ol, p), > div > div > :is(ul, ol, p), dd, table, details {
         max-width: $default-max-copy-width;
         margin-left: 3em;
         @include breakpoint(mobile) {
@@ -297,13 +331,13 @@ main:not(.standard-block) {
 a {
     color: $link-color; //$body-color;
     text-underline-offset: .35em;
-    transition: $animation-length;
+    transition: $animation-length color, $animation-length background-color, $animation-length border;
     &:link, &:active, &:visited {
         text-decoration-thickness: .5px;
     }
     &:hover {
         color: $link-hover-color;
-        transition: $animation-length;
+        transition: $animation-length color, $animation-length background-color, $animation-length border;
     }
 }
 
@@ -331,6 +365,9 @@ a {
         display: none;
     }
 
+    h5 {
+        display: inline-block;
+    }
     p:first-child {
         margin-block-start: 0;
     }
@@ -348,7 +385,7 @@ a {
     &.colored {
         background-color: $brand-light-yellow;
         padding: 1em;
-        border-radius: 1rem;
+        border-radius: $border-radius-large;
         border-left: 0;
         @include breakpoint(tablet) {
             display: block;
@@ -357,12 +394,12 @@ a {
         }
     }
 
-    .header {
-        font-family: $brand-font;
-        font-size: 1.1em;
-    }
     ul#markdown-toc ul {
         display: none;
+    }
+
+    &.show-second-level ul#markdown-toc > li > ul {
+        display: block;
     }
 
     &:is(ul) {
@@ -371,8 +408,11 @@ a {
         > li:not(:first-child) {
             margin-top: 1.2em;
         }
-        div {
-            margin-top: .4em;
+        div:has(+ div) {
+            font-size: .9em;
+        }
+        :not(.description) *:last-child {
+            margin-top: .2em;
             margin-left: 0;
             font-weight: bold;
         }
@@ -381,8 +421,12 @@ a {
             list-style-type: disc;
         }
         @include breakpoint(tablet) {
-            div {
+            h5, div {
                 display: inline;
+            }
+            li > *:nth-last-child(2):after {
+                content: ":";
+                font-size: 1.05rem;
             }
             ul {
                 list-style-type: none;
@@ -403,13 +447,21 @@ a {
         clear: right;
         img {
             width: 100%;
-            border-radius: 1rem;
+            border-radius: $border-radius-large;
         }
         @include breakpoint(tablet) {
             display: block;
             width: auto;
             float: initial;
             margin-top: 1em;
+            img {
+                width: auto;
+                max-width: 90%;
+                max-height: 80vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 }
@@ -447,4 +499,103 @@ a {
 }
 .address {
     line-height: $minimum-line-height;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: .2em 1.5em;
+    background-color: #BEDDE8;
+    color: $brand-blue;
+    border: 1px solid $brand-blue;
+    border-radius: $border-radius-small;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $brand-blue;
+        color: $brand-light-yellow;
+    }
+}
+
+details {
+    $details-padding: 1rem;
+
+    position: relative;
+    border: $border-style;
+    border-radius: $border-radius-small;
+
+    .summary-title {
+        user-select: none;
+        width: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .details-content {
+        cursor: default;
+        padding-left: $details-padding;
+        padding-right: $details-padding;
+        border-top: $border-style;
+     }
+
+    summary {
+        list-style: none;
+        font-size: .9em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        padding: $details-padding/2 $details-padding;
+
+        .summary-title {
+            display: inline-block;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover .summary-chevron-up svg {
+            opacity: 1;
+        }
+    }
+    &[open] .details-content {
+    }
+
+    .summary-chevron-up svg {
+        opacity: 0.6;
+    }
+
+    .summary-chevron-up,
+    .summary-chevron-down {
+        pointer-events: none;
+        position: absolute;
+        background: $background-color;
+        top: calc(.1em + #{$details-padding/2});
+        right: $details-padding;
+
+        svg {
+            display: block;
+        }
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+}
+
+
+#cancellation-schedule {
+    display: grid;
+    grid-template-columns: auto auto;
+    @include breakpoint(mobile) {
+        grid-template-columns: 1fr;
+    }
+    .dateline {
+        font-family: $brand-font;
+    }
+    p {
+        margin: 0;
+    }
 }

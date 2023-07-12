@@ -1,10 +1,19 @@
 {%- for faculty-member-name in include.faculty -%}
+    {%- assign faculty-member = nil -%}
     {%- for faculty-candidate in site.faculty -%}
         {%- if faculty-candidate.slug == faculty-member-name -%}
             {%- assign faculty-member = faculty-candidate -%}
             {%- break -%}
         {%- endif -%}
     {%- endfor -%}
+    {%- unless faculty-member -%}
+        {%- for staff-candidate in site.staff -%}
+            {%- if staff-candidate.slug == faculty-member-name -%}
+                {%- assign faculty-member = staff-candidate -%}
+                {%- break -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endunless -%}
 
     {%- capture faculty-name -%}{{ faculty-member.first-name }} {{ faculty-member.last-name }}{%- if faculty-member.cn-name and include.localization -%}<br/>({{ faculty-member.cn-name }}){%- endif -%}{%- endcapture -%}
     {%- unless faculty-member.prefers-en-name -%}
