@@ -4,4 +4,4 @@
 
 Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of the following [available excursions and activities]({{ site.baseurl }}{% link activities.md %}).
 
-{% include site/activity-table.md %}
+{% include site/institute/activity-table.md %}

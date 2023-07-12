@@ -20,7 +20,7 @@ program-name: piano-cn
 
 每位学生将会被分配到四堂一对一私教课以及一堂大师班表演。我们会尽最大的努力去满足每位学员对私教课及大师班教授的需求。除了每位学员本人的课程外，其他所有大师班和音乐会都供正式学员们聆听观摩！
 
-{% include site/session-info.md show-localization=true %}
+{% include site/session/session-info.md show-localization=true %}
 
 {% include tuition-accommodations-cn.md %}
 

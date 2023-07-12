@@ -13,7 +13,7 @@ has-tuition-item: result of has-tuition-item.fx for |item-name|
 <tr class="base">
     <td>{{ include.item-td }}</td>
 {%- unless include.has-tuition-item == 2 -%}
-    <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=base-price %}</strong></p></td>
+    <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html cost=base-price %}</strong></p></td>
 </tr>
 {%- else -%}
     <td></td>
@@ -28,7 +28,7 @@ has-tuition-item: result of has-tuition-item.fx for |item-name|
         {%- if session.tuition[include.item-name] -%}
             {%- assign price = session.tuition[include.item-name] -%}
         {%- endif -%}
-    <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.md cost=price %}</strong></p></td>
+    <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html cost=price %}</strong></p></td>
 </tr>
         {%- endif -%}
     {%- endfor -%}

@@ -18,7 +18,7 @@
 
 <div class="tiles inside-brochure class">
     <h3>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}Faculty{% endif %}</h3>
-    {%- include site/faculty-tiles.md faculty=session.faculty localization=include.show-localization -%}
+    {%- include site/faculty-tiles.html faculty=session.faculty localization=include.show-localization -%}
 </div>
 
 {%- unless class.summary %}
@@ -38,10 +38,10 @@
 {%- else -%}
 <div class="tiles inside-brochure">
     <h3>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}Faculty{% endif %}</h3>
-    {%- include site/faculty-tiles.md faculty=session.faculty localization=include.show-localization -%}
+    {%- include site/faculty-tiles.html faculty=session.faculty localization=include.show-localization -%}
     {%- if session.associate-faculty -%}
     <h3>Associate Staff</h3>
-    {%- include site/faculty-tiles.md faculty=session.associate-faculty localization=include.show-localization -%}
+    {%- include site/faculty-tiles.html faculty=session.associate-faculty localization=include.show-localization -%}
     {%- endif -%}
 </div>
 {%- endif -%}

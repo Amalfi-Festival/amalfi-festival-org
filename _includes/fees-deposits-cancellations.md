@@ -32,17 +32,17 @@ Before {{ p.full-refund.date | date: "%B %e, %Y" }}
 As of {{ p.processing-fee.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-<div><p markdown="1">A **{% include utilities/format-cost.md cost=p.processing-fee.amount %}** processing fee will be applied to your refund.</p></div>
+<div><p markdown="1">A **{% include utilities/format-cost.html cost=p.processing-fee.amount %}** processing fee will be applied to your refund.</p></div>
 
 After {{ p.withdrawal-fee.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-<div><p markdown="1">A **{% include utilities/format-cost.md cost=p.withdrawal-fee.amount %}** withdrawal fee will be applied to your refund.</p></div>
+<div><p markdown="1">A **{% include utilities/format-cost.html cost=p.withdrawal-fee.amount %}** withdrawal fee will be applied to your refund.</p></div>
 
 As of {{ p.forfeit.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-<div><p markdown="1">Your **{% include utilities/format-cost.md cost=site.data.institute.application.deposit %}** deposit be forfeited plus any prepaid nonrefundable expenses up to **{% include utilities/format-cost.md cost=p.forfeit.deductible %}**.</p></div>
+<div><p markdown="1">Your **{% include utilities/format-cost.html cost=site.data.institute.application.deposit %}** deposit be forfeited plus any prepaid nonrefundable expenses up to **{% include utilities/format-cost.html cost=p.forfeit.deductible %}**.</p></div>
 
 As of {{ p.no-refund.date | date: "%B %e, %Y" }}
 {: class="dateline"}

@@ -38,7 +38,7 @@ custom-css: program
 {%- include site/session/get-session-name-with-dates.html session=session localization=page.show-localization -%}
 {%- endfor -%}
     </h2></div>
-    <div><h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>
+    <div><h3>Application deadline:<br/>{% include site/institute/application-deadline.html %}</h3>
     <a class="apply" href="{{ apply-url }}">Apply</a>
     </div>
 </div>

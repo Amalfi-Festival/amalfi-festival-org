@@ -20,7 +20,7 @@ hero-image: ravello-villa-cimbrone.jpg
 
 <section class="standard-block" markdown="1">
 
-{% include site/session-info.md faculty-type="Instructor" %}
+{% include site/session/session-info.md faculty-type="Instructor" %}
 
 {% capture tuition-description %}
 The cost for Tuition & Accommodations is listed as one total fee, which includes six days of writing sessions with class-based excursions, two receptions, and all festival activities.

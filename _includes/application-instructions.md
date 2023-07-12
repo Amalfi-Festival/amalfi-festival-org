@@ -1,7 +1,7 @@
 ## How to Apply
 
 * ##### Application Deadline
-    <div>{% include site/application-deadline.md %}</div>
+    <div>{% include site/institute/application-deadline.html %}</div>
 * <h5>Registration Fee</h5>
     <div>(non-refundable)</div>
     <div>${{ site.data.institute.application.registration-fee }}</div>

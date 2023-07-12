@@ -120,13 +120,13 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
 <div class="standard-block tiles front-of-brochure">
-{%- include site/faculty-tiles.md faculty=all-faculty -%}
+{%- include site/faculty-tiles.html faculty=all-faculty -%}
 </div>
 </section>
 
 <section id="learn" class="background-image-container">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
-<h3>Application deadline:<br/>{% include site/application-deadline.md %}</h3>
+<h3>Application deadline:<br/>{% include site/institute/application-deadline.html %}</h3>
 <a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
 </section>
 

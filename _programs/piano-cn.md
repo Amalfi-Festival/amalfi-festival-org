@@ -158,7 +158,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
 <div class="standard-block tiles front-of-brochure">
-{%- include site/faculty-tiles.md faculty=all-faculty localization=true -%}
+{%- include site/faculty-tiles.html faculty=all-faculty localization=true -%}
 </div>
 </section>
 

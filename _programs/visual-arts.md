@@ -47,7 +47,7 @@ The Visual Arts Program is designed to take advantage of the cultural riches in 
 
 ## Sessions
 
-{% include site/session-info.md faculty-type="Instructor" %}
+{% include site/session/session-info.md faculty-type="Instructor" %}
 
 {% capture tuition-description %}
 The cost for tuition & accommodations is listed as one total fee, which includes tuition for class of your choice, hotel accommodations, art-related excursions at instructor’s discretion, daily concerts, and group transportation to and from Naples airport (on arrival and departure day at designated times).
