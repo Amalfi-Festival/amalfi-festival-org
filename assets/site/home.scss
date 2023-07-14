@@ -215,10 +215,28 @@ section#sponsors {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        gap: 1em .5em;
+        gap: 1em;
+        @include breakpoint(mobile) {
+            column-gap: .5em;
+            justify-content: center;
+        }
+        > div {
+            display: flex;
+            align-items: center;
+            gap: .8em;
+            div {
+                width: 7.5em;
+                line-height: $minimum-line-height;
+                font-size: .9em;
+            }
+        }
     }
     img {
+        mix-blend-mode: darken;
         max-height: 4rem;
+        @include breakpoint(mobile) {
+            max-height: 3.5rem;
+        }
         justify-self: center;
     }
 }

@@ -2,13 +2,18 @@
 layout: default
 sponsors:
     government:
-        - ps1.gif
-        - campania-logo.png
-        - salerno-logo.png
-        - salerno-ente-logo.png
-        - amalfi-logo.png
-        - maiori-logo.png
-        - minori-logo.png
+        - icon: campania-arms.jpg
+          label: Regione Campania
+        - icon: salerno-arms.jpg
+          label: Provincia di Salerno
+        - icon: salerno-ente.jpg
+          label: Ente Pronvinciale di Salerno
+        - icon: amalfi-arms.jpg
+          label: Comune di Amalfi
+        - icon: maiori-arms.jpg
+          label: Comune di Maiori
+        - icon: minori-arms.gif
+          label: Comune di Minori
     corporate:
         - progetto.jpg
         - coelmo.jpg
@@ -143,7 +148,7 @@ A special program for guests provides an unparalleled opportunity in cultural to
 
 <div class="sponsor-gallery">
 {%- for sponsor-image in page.sponsors.government -%}
-<img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
+<div><img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image.icon | relative_url }}" /><div>{{ sponsor-image.label }}</div></div>
 {%- endfor -%}
 </div>
 
