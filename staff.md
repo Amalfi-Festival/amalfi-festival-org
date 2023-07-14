@@ -8,12 +8,15 @@ custom-css: staff
 <div>
 {%- for staff in site.data.staff -%}
 {%- assign faculty = nil -%}
-{%- if staff.faculty -%}
-    {%- assign faculty = site.faculty | where: "slug", staff.faculty | first -%}
+{%- if staff.faculty-slug -%}
+    {%- assign faculty = site.faculty | where: "slug", staff.faculty-slug | first -%}
 {%- endif -%}
 <div>
     <div class="image">
 {%- unless faculty -%}
+    {%- if staff.headshot-filename -%}
+    <img src="{{ site.people-image-directory | append: staff.headshot-filename | relative_url }}" />
+    {%- endif -%}
 {%- else -%}
     <img src="{% include site/faculty-headshot-filepath.html faculty=faculty %}" />
 {%- endunless -%}

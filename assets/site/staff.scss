@@ -25,6 +25,7 @@ section > div {
     grid-area: 1 / 1 / 5 / 2;
     width: 5rem;
     img {
+        display: block;
         width: 100%;
         aspect-ratio: 1;
         border: $border-style;

@@ -23,7 +23,7 @@ baseurl: "/amalfi-festival-org" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 favicon-directory: "/assets/favicon/"
-faculty-image-directory: "/assets/people/"
+people-image-directory: "/assets/people/"
 program-assets-directory: "/assets/programs/"
 site-assets-directory: "/assets/site/"
 image-directory: "/assets/images/"

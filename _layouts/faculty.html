@@ -40,7 +40,7 @@ single{%- endif -%}">
 </section>
 
 {%- if page.portfolio -%}
-{%- assign image-directory = site.faculty-image-directory | append: '/' | append: page.folder-name | append: '/' -%}
+{%- assign image-directory = site.people-image-directory | append: '/' | append: page.folder-name | append: '/' -%}
 <h2>Portfolio</h2>
 <section id="portfolio" class="standard-block">
     {%- for image-path in page.portfolio -%}
