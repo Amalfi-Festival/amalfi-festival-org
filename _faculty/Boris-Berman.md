@@ -3,7 +3,6 @@ first-name: Boris
 last-name: Berman
 school: Yale School of Music
 school-cn: 耶鲁大学音乐学院
-headshot-filename: Boris-Berman.jpg
 ---
 
 Well known to the audiences of nearly fifty countries on six continents, Professor Berman regularly appears with leading orchestras, on major recital series, and in important festivals. He studied at the Moscow Tchaikovsky Conservatory with the distinguished pianist Lev Oborin.

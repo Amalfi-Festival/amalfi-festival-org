@@ -3,7 +3,6 @@ first-name: Bernadene
 last-name: Blaha
 school: USC Thornton School of Music
 school-cn: 南加州大学桑顿音乐学院
-headshot-filename: Bernadene-Blaha-2.jpg
 ---
 
 Bernadene Blaha’s “brilliant command of the piano,” whether featured as recitalist, concerto soloist or chamber musician, has been heralded in performances throughout North America, Europe, Australia, Asia and Mexico. Piano and Keyboard magazine has reviewed her as “a pianist of integrity, with lovely sonorities and total clarity of line.” Highlights of this season include return engagements at the Piatigorsky International Cello Festival, Newport Music Festival, Los Angeles Philharmonic Chamber Music Series, Worcester Chamber Music Society as well as performances throughout the US, Canada, France and Italy.

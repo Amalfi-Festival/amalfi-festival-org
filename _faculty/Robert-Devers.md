@@ -2,22 +2,20 @@
 first-name: Robert
 last-name: Devers
 school: Blue Fire Studio, Mt. Rainier, MD
-folder-name: Robert-Devers
-headshot-filename: DSC09020_edited.JPG.png
 portfolio:
-    - "41 large.jpg"
+    - 41 large.jpg
     - DSC09713.jpg
     - DSC09715.jpg
     - DSC09716.jpg
     - DSC01070.jpg
     - image001.jpg
     - DSC00570.jpg
-    - "47 large.jpg"
-    - "46 large.jpg"
+    - 47 large.jpg
+    - 46 large.jpg
     - DSC00721.jpg
-    - "27 large.jpg"
-    - "53 large.jpg"
-    - "57 large.jpg"
+    - 27 large.jpg
+    - 53 large.jpg
+    - 57 large.jpg
 
 ---
 

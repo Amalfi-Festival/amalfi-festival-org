@@ -1,0 +1,15 @@
+{%- comment -%}
+Parameters:
+    faculty (optional) - Person object. When not specified, assumed to be the included page.
+{%- endcomment -%}
+
+{%- assign person = page -%}
+{%- if include.faculty -%}
+    {%- assign person = include.faculty -%}
+{%- endif -%}
+
+{%- capture temp -%}
+{{- site.people-image-directory -}}{{ person.slug }}/-thumbnail.jpg
+{%- endcapture -%}
+
+{{- temp | relative_url -}}

@@ -2,8 +2,6 @@
 first-name: David
 last-name: Daniels
 school: Smithsonian Institution, Washington, D.C.
-folder-name: David-Daniels
-headshot-filename: daniels2.jpg
 portfolio:
     - NASTURTIUM  36 X  48.jpg
     - Waterfall 48__x 28__.jpg

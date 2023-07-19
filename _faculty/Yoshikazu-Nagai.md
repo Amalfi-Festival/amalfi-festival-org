@@ -5,7 +5,6 @@ cn-name: 永井良和
 prefers-en-name: true
 school: San Francisco Conservatory of Music
 school-cn: 旧金山音乐学院/皮博迪音乐学院
-headshot-filename: yoshi_headshot.jpg
 role: Piano Faculty Chair
 website: https://yoshinagai.com
 ---

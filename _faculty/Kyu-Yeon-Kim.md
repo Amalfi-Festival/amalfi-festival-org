@@ -3,7 +3,6 @@ first-name: Kyu Yeon
 last-name: Kim
 school: Seoul National University
 school-cn: 首尔大学
-headshot-filename: Kyu Yeon Kim headshot.jpg
 ---
 Kyu Yeon Kim is a laureate of the 2006 Dublin International Piano Competition,
 2010 Queen Elisabeth International Music Competition, 2011 Cleveland

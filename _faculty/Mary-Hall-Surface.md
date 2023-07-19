@@ -1,7 +1,6 @@
 ---
 first-name: Mary Hall
 last-name: Surface
-headshot-filename: MHSurface1.jpeg
 website: https://www.maryhallsurface.com
 ---
 

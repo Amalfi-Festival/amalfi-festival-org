@@ -2,8 +2,6 @@
 first-name: Rebecca
 last-name: Cross
 school: Washington, DC
-folder-name: Rebecca-Cross
-headshot-filename: rebecca cross.jpeg
 website: https://rebeccacross.com
 portfolio:
     - Becca Domestic Landscape.jpg

@@ -3,7 +3,6 @@ first-name: Jerome
 last-name: Lowenthal
 school: The Juilliard School
 school-cn: 茱莉亚学院
-headshot-filename: J.Lowenthal.jpg
 ---
 Jerome Lowenthal has been a prominent presence in the international piano world for more than a half-century. He  studied with Olga Samaroff-Stokowski in his native Philadelphia, William Kapell and Eduard Steuermann at the Juilliard School in New York, and Alfred Cortot at the  École Normale de Musique de Paris in Paris, France. Mmeanwhile he travelled annually to Los Angeles for coachings with Artur Rubinstein. After winning prizes in three international competitions (Ferruccio Busoni International Piano Competition in Bolzano, Italy in 1957; Queen Elisabeth Music Competition in Brussels in 1960; and Darmstadt International Chopin Piano Competition), he moved to Jerusalem where, for three years, he played, taught and lectured.
 

@@ -18,7 +18,7 @@ custom-css: staff
     <img src="{{ site.people-image-directory | append: staff.headshot-filename | relative_url }}" />
     {%- endif -%}
 {%- else -%}
-    <img src="{% include site/faculty-headshot-filepath.html faculty=faculty %}" />
+    <img src="{% include site/person/faculty-thumbnail-filepath.html faculty=faculty %}" />
 {%- endunless -%}
     </div>
 {%- unless faculty -%}

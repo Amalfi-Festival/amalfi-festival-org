@@ -3,7 +3,6 @@ first-name: Ian
 last-name: Jones
 school: Royal College of Music, London
 school-cn: 英国皇家音乐学院
-headshot-filename: Ian Jones_headshot.jpg
 ---
 
 Ian Jones’ career as a Steinway Artist has taken him to all five continents. Appearances with the Royal Phil-harmonic Orchestra and National Symphony Orchestra at London’s Royal Festival Hall and Barbican Hall include critically acclaimed performances of Rachmaninov’s Second and Third Piano Concertos and Paganini Rhapsody as well as concertos by Beethoven, Tchaikovsky, Grieg and Schumann. He has appeared in Paris and throughout France as concerto soloist with the Ensemble International and has performed many of Mozart’s piano concertos in Europe and USA.

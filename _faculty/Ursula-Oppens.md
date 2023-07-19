@@ -3,7 +3,6 @@ first-name: Ursula
 last-name: Oppens
 school: Brooklyn College & CUNY Graduate Center
 school-cn: 曼尼斯音乐学院
-headshot-filename: Ursula Oppens_headshot.jpg
 ---
 Ursula Oppens has long been recognized as the leading champion of contemporary American piano music. In addition her original and perceptive readings of other music, old and new, have earned her a place among the elect of today’s performing musicians.
 
