@@ -12,7 +12,7 @@
 {: class="highlight-box colored" markdown="1"}
 
 {% assign application = reference-program.application -%}
-1. Complete the {% if application.form-url %}[online registration form]({{ application.form-url }}).{% else %}online registration form.{% endif %}
+1. Complete the {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">online registration form</a>.{% else %}online registration form.{% endif %}
 
 {% if application.include-audition %}
     * Submit [audition recording](mailto:music@amalfi-festival.org).

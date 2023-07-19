@@ -90,7 +90,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
         <div class="buttons">
             <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
             {%- include site/program/get-apply-url.fx program-name=program-slug -%}
-            <a target="apply" href="{{ __return }}" class="button">Apply</a>
+            <a href="{{ __return }}" class="button">Apply</a>
         </div>
     </div>
 </div>

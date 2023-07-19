@@ -132,6 +132,6 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 <section id="learn" class="background-image-container">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <h3><span class="label">{% include utilities/localize.html string="Application deadline" %}:</span><br/>{% include site/institute/application-deadline.html %}</h3>
-<a class="apply" target="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
+<a class="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
 </section>
 
