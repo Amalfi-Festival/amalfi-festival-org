@@ -1,5 +1,5 @@
 ## Fees & Deposits
- 
+
 A non-refundable registration fee of **${{ site.data.institute.application.registration-fee }}**
 is required at the time of registration in addition to a deposit of
 **${{ site.data.institute.application.deposit }}** towards your total fees. On-line
