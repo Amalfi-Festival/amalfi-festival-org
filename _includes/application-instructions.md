@@ -1,26 +1,35 @@
 ## How to Apply
 
-* ##### Application Deadline
+<ul class="highlight-box colored">
+<li>
+    <h5>Application Deadline</h5>
     <div>{% include site/institute/application-deadline.html %}</div>
-* <h5>Registration Fee</h5>
+</li>
+<li>
+    <h5>Registration Fee</h5>
     <div>(non-refundable)</div>
     <div>${{ site.data.institute.application.registration-fee }}</div>
-* ##### Deposit
+</li>
+<li>
+    <h5>Deposit</h5>
     <div>(refundable <a href="#cancellation-policy--refunds">in case of cancellation</a>)</div>
     <div>${{ site.data.institute.application.deposit }}</div>
-^
-{: class="highlight-box colored" markdown="1"}
+</li>
+{%- if reference-program.application.form-url -%}
+<li>
+    <a class="button" href="{{ reference-program.application.form-url }}">Application form</a>
+</li>
+{%- endif -%}
+</ul>
 
 {% assign application = reference-program.application -%}
-1. Complete the {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">online registration form</a>.{% else %}online registration form.{% endif %}
+1. Complete the online {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
 
-{% if application.include-audition %}
-    * Submit [audition recording](mailto:music@amalfi-festival.org).
-{% else %}
+{% if application.allow-mail-registration %}
     * If you wish to register by mail, print and fill out the form.
 {% endif %}
 
-1. Pay registration fee and deposit either electronically via PayPal (use the button below) or by mail.
+1. Pay registration fee and deposit<sup>†</sup> either electronically via PayPal (use the button below) or by mail.
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_s-xclick">
@@ -37,7 +46,7 @@
 
 1. Applications are accepted until spaces are filled.
 
-1. [Balance of payment](#balance-of-payment) is due upon receipt of invoice, approximately 60 days before departure. Pay electronically via Paypal or by mail using instructions above.
+1. [Balance of payment](#balance-of-payment) is due upon receipt of invoice, approximately 60 days before departure. Pay electronically via PayPal or by mail using instructions above.
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_s-xclick">
@@ -46,4 +55,4 @@
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
 
-    **Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for on-line payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*
+**†** **Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for on-line payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*
