@@ -1,0 +1,8 @@
+---
+class-name: The Artist's Sketchbook
+summary: |
+    The artist’s sketchbook is more than a visual record of experiences, a daily travel log or a starting off point for future projects – it is all of these. But ideally, it is the act of drawing itself that engages the artist’s full attention – intense observation of one’s surroundings, revealing a deeper understanding of the subject. The dramatic landscapes and rich culture of the Amalfi Coast have inspired the great Italian masters’ sketchbooks for centuries. Even Italian food tastes better after you have sketched your plate.
+---
+We will playfully experiment with techniques and drawing styles to suit our subjects and enliven our pages. Loose charcoal gestures will capture the performing musicians; colored pencils will delicately shade the still-lives of our favorite dishes, pen and ink crosshatching will describe the lines in the baroque architecture and watercolor will mimic the Mediterranean’s azure water and bright yellow lemon orchards.
+ 
+Participants will be free to use their preferred medium or they can follow our suggested outline. We will sketch in and around the colorful streets of Positano, Capri, Ravello, Maiori and Amalfi, from our comfortable table at lunch to the dramatic cliff’s edge. Among these day trips to search for the most splendid views, will be a visit to a nearby artisanal agribusinesses aa well as a trip to the Museo Della Carta where we will learn about the history and production of the region’s famous handmade paper and purchase our next sketchbook.
