@@ -1,6 +1,9 @@
 -   string: "Application deadline"
     localizations:
         cn: 报名截止日期
+-   string: "Contents"
+    localizations:
+        cn: 目录
 -   string: "Learn more and apply"
     localizations:
         cn: 了解更多并申请

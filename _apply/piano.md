@@ -4,7 +4,7 @@ program-name: piano
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
 <div class="highlight-box" markdown="1">
-<h5>Contents</h5>
+<h5>{% include utilities/localize.html string="Contents" %}</h5>
 - contents
 {:toc}
 </div>
