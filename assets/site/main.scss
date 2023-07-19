@@ -417,7 +417,7 @@ a {
         div:has(+ div) {
             font-size: .9em;
         }
-        :not(.description) *:last-child {
+        :not(.description) div:last-child {
             margin-top: .2em;
             margin-left: 0;
             font-weight: 600;
@@ -516,6 +516,7 @@ a {
     border: 1px solid $brand-blue;
     border-radius: $border-radius-small;
     text-transform: uppercase;
+    line-height: $standard-line-height;
 
     &:hover {
         background-color: $brand-blue;
