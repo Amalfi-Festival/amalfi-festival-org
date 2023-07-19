@@ -73,7 +73,7 @@ localizations:
 <img src="{{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }}" />
 </div>
 <div class="copy">
-    Receive individual attention from world-renowned faculty with 4 one-hour private lessons.
+    Receive individual lessons from world-renowned faculty.
 </div>
 </div>
 
@@ -83,7 +83,7 @@ localizations:
 <img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
 </div>
 <div class="copy">
-    Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
+    Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
 </div>
 </div>
 
@@ -93,7 +93,7 @@ localizations:
 <img src="{{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }}" />
 </div>
 <div class="copy" style="bottom: -7rem;">
-Held in an array of intimate settings at historic churches, halls, and landmarks, the Festival hosts daily faculty concerts and the Young Artist Series, the institute recital series for students.
+Held in spectacular venues throughout the Amalfi Coast, the Festival hosts daily concerts, including faculty recitals, and the Young Artist Series for students.
 </div>
 </div>
 
@@ -108,10 +108,10 @@ Held in an array of intimate settings at historic churches, halls, and landmarks
 
 <div class="image-copy row">
 <div class="image" data-rellax-speed=".5" data-rellax-percentage="0">
-<img src="{{ site.program-assets-directory | append: "piano/art show 2.jpg" | relative_url }}" />
+<img src="{{ site.image-directory | append: "ravello.JPG" | relative_url }}" />
 </div>
 <div class="copy">
-Opportunities to fully experience the Amalfi Coast with excursions to world-renowned locations, and cultural activities including language, pottery, and cooking classes.
+Opportunities to fully experience the Amalfi Coast with excursions to historic locations.
 </div>
 </div>
 
@@ -120,13 +120,17 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 <section id="faculty" markdown="1">
 
-## Learn from world-class faculty
+## Our distinguished {{ site.data.institute.application.deadline | date: "%Y" }} faculty
 {: class="standard-block"}
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
 <div class="standard-block tiles front-of-brochure">
 {%- include site/faculty-tiles.html faculty=all-faculty -%}
 </div>
+</section>
+
+<section id="video">
+    <iframe src="https://www.youtube.com/embed/bP4LVZUGYYs?modestbranding=1" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section id="learn" class="background-image-container">

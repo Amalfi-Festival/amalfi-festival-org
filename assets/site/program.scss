@@ -230,6 +230,16 @@ h3 .label {
     }
 }
 
+#video {
+    @include standard-block-behavior;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}
+
 main:has(#learn) {
     margin-bottom: 0;
 }

@@ -24,7 +24,7 @@ Receive individual attention from world-renowned faculty with 4 one-hour private
 <img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
 </div>
 <div class="copy">
-Daily masterclasses provide a dynamic, interactive learning experience in a supportive environment.
+Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
 </div>
 </div>
 
