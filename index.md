@@ -43,10 +43,6 @@ The Amalfi Coast Music & Arts Festival is produced by the Center of Musical Stud
 
 </section>
 
-<section>
-    <iframe src="https://www.youtube.com/embed/bP4LVZUGYYs?modestbranding=1" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
-</section>
-
 <section class="copy" markdown="1">
 
 ## Concerts Around the Clock... Art, Writing, Italian Language & Mediterranean Cuisine!
