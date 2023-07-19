@@ -28,7 +28,8 @@ sessions:
             hotel-double: 2885
             lab-fee: 145
 application:
-    form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
+    allow-mail-registration: true
+    form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:aed9e956-ee8b-4408-b23d-cf4ca992e5f7
     guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:9464b5c4-5b72-4d58-8ad3-dce49b354f56
 tuition:
     meal-plan: 540
