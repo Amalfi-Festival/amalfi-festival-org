@@ -1,0 +1,20 @@
+{%- comment -%}
+key: string reference to either |key| or |string| in site.data.localizations
+show-localization: Optional. Will take from page.show-localization if not specified.
+
+Looks up by |key| first before trying |string|
+{%- endcomment -%}
+
+{%- assign entry = site.data.localizations | where: "key", include.string | first -%}
+{%- unless entry -%}
+    {%- assign entry = site.data.localizations | where: "string", include.string | first-%}
+{%- endunless -%}
+{%- assign show-l18n = include.show-localization -%}
+{%- unless show-l18n -%}
+    {%- assign show-l18n = page.show-localization -%}
+{%- endunless -%}
+{%- unless show-l18n -%}
+{{ include.string }}
+{%- else -%}
+{{ entry.localizations.cn }}
+{%- endunless -%}

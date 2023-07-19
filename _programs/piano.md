@@ -53,6 +53,7 @@ tuition:
         hotel-triple: 3195
 menu-title: Piano
 hero-image: 23.jpg
+program-header-subtitle: "<h3>James Giles, Director<br/>Yoshikazu Nagai, Faculty Chair</h3>"
 localizations:
     -   abbreviation: en
         program: piano
@@ -61,9 +62,11 @@ localizations:
 ---
 {%- include site/program/initialize-program-variables.fx program=page -%}
 
-<section id="splash" class="proto-2 standard-block" markdown="1">
 
-## Experience an intensive piano education within the breathtaking views of the Amalfi Coast
+<section id="splash" class="proto-2">
+<div class="standard-block" markdown="1">
+
+## Experience an intensive piano education amid the breathtaking views of the Amalfi Coast
 
 <div class="image-copy">
 <div class="image" data-rellax-speed="-1" data-rellax-percentage="0">
@@ -111,6 +114,8 @@ Held in an array of intimate settings at historic churches, halls, and landmarks
 Opportunities to fully experience the Amalfi Coast with excursions to world-renowned locations, and cultural activities including language, pottery, and cooking classes.
 </div>
 </div>
+
+</div>
 </section>
 
 <section id="faculty" markdown="1">
@@ -126,7 +131,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to world-reno
 
 <section id="learn" class="background-image-container">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
-<h3>Application deadline:<br/>{% include site/institute/application-deadline.html %}</h3>
-<a class="apply" href="{{ apply-page.url | relative_url }}">Learn More and Apply</a>
+<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}:</span><br/>{% include site/institute/application-deadline.html %}</h3>
+<a class="apply" target="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
 </section>
 

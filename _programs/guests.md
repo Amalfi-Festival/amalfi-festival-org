@@ -56,9 +56,7 @@ Guest Program fees includes access all festival activities for the full session.
     {%- endfor -%}
     <li><a href="{{ program.url | relative_url }}#options-for-meal-plan-excursions-cooking--language-classes">Fees for additional options</a></li>
 </ul>
-{%- endfor -%}
-
-
+{%- endfor %}
 
 {% include application-instructions.md application=page.application %}
 

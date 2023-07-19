@@ -17,7 +17,11 @@
     font-weight: 400;
     src: url({{ "/assets/site/fonts/Fahkwang-Regular.ttf" | relative_url }}) format('truetype');
 }
-
+@font-face {
+    font-family: 'Fahkwang';
+    font-weight: 600;
+    src: url({{ "/assets/site/fonts/Fahkwang-SemiBold.ttf" | relative_url }}) format('truetype');
+}
 
 :root {
     color: $body-color;
@@ -49,11 +53,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Fahkwang";
+    font-family: $brand-font;
     line-height: $minimum-line-height;
     margin-top: 2rem;
     margin-bottom: 1rem;
     letter-spacing: 0;
+    font-weight: 600;
 }
 :is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
     margin-top: 1rem;
@@ -62,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 h5 {
     font-size: 1.05em;
     margin: 0;
+    font-weight: 400;
 }
 @include breakpoint(mobile) {
     h1 { font-size: 1.8em; } // 2
@@ -69,6 +75,7 @@ h5 {
     h3 { font-size: 1.15em; } // 1.17
     // h4 is 1em in user agent stylesheet.
 }
+strong { font-weight: 600; }
 
 .logo {
     --logo-dome: #{$brand-blue};
@@ -201,7 +208,7 @@ body > footer {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
-            justify-content: center;
+            justify-content: space-evenly;
             @include breakpoint(mobile) {
                 > * {
                     align-items: center;
@@ -267,6 +274,7 @@ body > footer {
     h1 {
         text-transform: uppercase;
         font-size: 1em;
+        font-weight: 400;
         margin-top: 0;
         @include breakpoint(mobile) {
             margin-bottom: .5em;
@@ -349,8 +357,7 @@ a {
     height: calc(100% + 20px);
     object-fit: cover;
     z-index: -1;
-    filter: blur(1px);
-    opacity: .5;
+    filter: contrast(.55) brightness(1.4) blur(.8px);
 }
 
 .highlight-box {
@@ -410,7 +417,7 @@ a {
         :not(.description) *:last-child {
             margin-top: .2em;
             margin-left: 0;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         ul {

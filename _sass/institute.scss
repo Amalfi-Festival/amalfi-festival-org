@@ -191,6 +191,7 @@ td {
 td.cost {
     p {
         margin-block-end: 0;
+        font-weight: 600;
     }
     width: 7em;
     @include breakpoint(mobile) {

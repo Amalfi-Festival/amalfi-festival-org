@@ -90,7 +90,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
         <div class="buttons">
             <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
             {%- include site/program/get-apply-url.fx program-name=program-slug -%}
-            <a href="{{ __return }}" class="button">Apply</a>
+            <a target="apply" href="{{ __return }}" class="button">Apply</a>
         </div>
     </div>
 </div>
@@ -142,7 +142,18 @@ A special program for guests provides an unparalleled opportunity in cultural to
 </section>
 
 
+<section class="copy" markdown="1">
+
+## We Appreciate Your Support!
+
+Donations help keep the festival alive and thriving.
+
+DONATE NOW
+</section>
+
 <section id="sponsors" markdown="1">
+
+## Many thanks to our generous sponsors
 
 ### Government sponsors
 

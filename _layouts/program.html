@@ -37,9 +37,13 @@ custom-css: program
 {%- if forloop.index > 1 -%}<br/>{%- endif -%}
 {%- include site/session/get-session-name-with-dates.html session=session localization=page.show-localization -%}
 {%- endfor -%}
-    </h2></div>
-    <div><h3>Application deadline:<br/>{% include site/institute/application-deadline.html %}</h3>
-    <a class="apply" href="{{ apply-url }}">Apply</a>
+    </h2>
+{%- if page.program-header-subtitle -%}
+    {{- page.program-header-subtitle -}}
+{%- endif -%}
+</div>
+    <div><h3><span class="label">{% include utilities/localize.html string="Application deadline" %}:</span><br/>{% include site/institute/application-deadline.html %}</h3>
+    <a class="apply" target="apply" href="{{ apply-url }}">Apply</a>
     </div>
 </div>
 
