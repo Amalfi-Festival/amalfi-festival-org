@@ -23,7 +23,7 @@
             <td>
                 <p class="name">{{ excursion-text.name }} ({{ excursion-text.length }})</p>
                 {%- if excursion.description -%}
-                <p class="description">{{ excursion-text.description }}</p>
+                <p class="description">{{ excursion-text.description }} <a href="{{ site.baseurl }}{% link activities.md %}#{{ excursion-text.name | downcase }}">Learn more</a></p>
                 {%- endif -%}
             </td><td class="cost" align="center" valign="top"><p>{% include utilities/format-cost.html localization=include.localization cost=excursion.cost %}</p></td>
         </tr>
