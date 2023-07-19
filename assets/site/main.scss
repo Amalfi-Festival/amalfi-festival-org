@@ -363,9 +363,11 @@ a {
 .highlight-box {
     width: 19em;
     margin-left: 1rem;
+    padding-left: 1em;
+    margin-bottom: 1em;
     float: right;
     @include breakpoint(mobile) {
-        display: none;
+        float: initial;
     }
 
     h5 {
@@ -381,10 +383,11 @@ a {
     &:not(.image) {
         border-left: 1px solid $brand-blue;
         padding-bottom: 2em;
+        @include breakpoint(mobile) {
+            padding-bottom: 0;
+        }
     }
 
-    padding-left: 1em;
-    margin-bottom: 1em;
     &.colored {
         background-color: $brand-light-yellow;
         padding: 1em;
