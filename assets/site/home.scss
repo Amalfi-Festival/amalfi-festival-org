@@ -24,29 +24,44 @@ section#hero {
     display: flex;
     color: #FDE8C3;
     font-size: min(2.2rem, 3.5vw);
-    div {
+    line-height: $minimum-line-height;
+    > div {
         width: 50%;
     }
     .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        padding: 0 .5rem 0 1rem;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr min-content;
+        align-content: center;
+        padding: 6rem .5rem 1rem 1rem;
+        gap: .2rem;
 
         --home-logo-dome: #FDE8C3;
         --home-logo-amalfi: #FDE8C3;
         --home-logo-coast: #{$brand-yellow};
         --home-logo-festival: #{$brand-yellow};
 
-        svg {
+        #logo-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+        #svg-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             aspect-ratio: .85;
-            max-width: min(30rem, 100%);
+            width: min(26rem, 100%, calc(62svh - 5.53rem));
+            height: 100%;
+            svg {
+                aspect-ratio: .85;
+                width: 100%;
+            }
         }
     }
     span {
         padding-right: .4em;
+        text-align: right;
+        font-size: min(4vw, 4vh);
     }
     .image-container img {
         width: 100%;
@@ -201,10 +216,6 @@ section#institute2 {
     }
 }
 
-iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
-}
 section#sponsors {
     h3 {
         margin-top: 3rem;

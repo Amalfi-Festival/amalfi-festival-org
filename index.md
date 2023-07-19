@@ -26,7 +26,7 @@ header-blend-mode: normal
 {%- include site/home-logo.svg -%}
 <section id="hero">
     <div class="logo">
-        <svg><use xlink:href="#home-logo" /></svg>
+        <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
         <span>{{ site.data.institute.edition }}</span>
     </div>
     <div class="image-container">
