@@ -71,7 +71,7 @@ h1 div {
         float: right;
         margin-left: 2rem;
         margin-bottom: 2rem;
-        width: 33%;
+        width: $sidebar-width;
         @include breakpoint(tablet) {
             float: none;
             margin-left: 0;

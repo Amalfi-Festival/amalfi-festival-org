@@ -364,6 +364,8 @@ a {
     width: 19em;
     margin-left: 1rem;
     padding-left: 1em;
+    width: $sidebar-width;
+    margin-left: 2rem;
     margin-bottom: 1em;
     float: right;
     @include breakpoint(mobile) {
@@ -382,8 +384,11 @@ a {
 
     &:not(.image) {
         border-left: 1px solid $brand-blue;
+        margin-left: 1rem;
+        padding-left: 1em;
         padding-bottom: 2em;
         @include breakpoint(mobile) {
+            margin-left: 0;
             padding-bottom: 0;
         }
     }
@@ -503,6 +508,7 @@ a {
         }
     }
 }
+
 .address {
     line-height: $minimum-line-height;
 }
