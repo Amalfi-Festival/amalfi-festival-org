@@ -17,7 +17,6 @@ sponsors:
     corporate:
         - progetto.jpg
         - coelmo.jpg
-        - hertz.jpg
 custom-js: rellax.min
 custom-css: home
 body-class: home
@@ -142,9 +141,10 @@ A special program for guests provides an unparalleled opportunity in cultural to
 
 ## We Appreciate Your Support!
 
-Donations help keep the festival alive and thriving.
+Donations help keep the festival alive and thriving. Help extend the legacy of this unique festival, and bring experiences of a lifetime to the artists and musicians looking for inspiration along the beautiful Amalfi Coast.
 
-DONATE NOW
+<a class="button" href="{{ site.baseurl }}{% link donations.md %}">Donate Now</a>
+
 </section>
 
 <section id="sponsors" markdown="1">
