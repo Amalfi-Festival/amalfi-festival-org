@@ -1,4 +1,6 @@
 ---
+images:
+    - writing/IMG_4240.jpeg
 ---
 The Writing Program invites participants to find inspiration in the landscape and character of a region known for attracting generations of writers and artists.
 

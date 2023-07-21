@@ -361,9 +361,6 @@ a {
 }
 
 .highlight-box {
-    width: 19em;
-    margin-left: 1rem;
-    padding-left: 1em;
     width: $sidebar-width;
     margin-left: 2rem;
     margin-bottom: 1em;
@@ -473,38 +470,6 @@ a {
                 margin-left: auto;
                 margin-right: auto;
             }
-        }
-    }
-}
-#header.sidebar {
-    display: flex;
-    gap: 2em;
-    > *:first-child {
-        flex-grow: 1;
-    }
-    > *:last-child {
-        width: 33%;
-    }
-    @include breakpoint(tablet) {
-        flex-direction: column;
-        gap: 0;
-        h3 {
-            margin-top: 0;
-        }
-        > *:first-child {
-            width: auto;
-        }
-        > *:last-child {
-            width: auto;
-            display: flex;
-            justify-content: space-between;
-            @include breakpoint(tiny) {
-                flex-direction: column;
-            }
-        }
-        .apply {
-            text-align: center;
-            height: 100%;
         }
     }
 }

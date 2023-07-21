@@ -4,6 +4,8 @@ summary: |
     This nine-day workshop is open to explorers, artists and students of art of any level, world travellers, and guests alike. 
  
     This hybrid workshop will feature hands-on experiences in ceramic glaze painting on tiles or plates and hand-made artists books, woven together by a love of the Italian ceramics tradition known as maiolica.
+images:
+    - visual-arts/37.jpg
 ---
 We will travel to numerous sublime and mythically beautiful sites to sketch, wander, explore, photograph, and gather inspiration from the landscape, the historic architecture, fabulous culture, and the rich craft traditions found uniquely integrated into the built environment along the Amalfi Coast.
  

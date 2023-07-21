@@ -17,31 +17,46 @@
     {% endif %}
 
 <div class="tiles inside-brochure class">
-    <h3>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}Faculty{% endif %}</h3>
+    <h4>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}Faculty{% endif %}</h4>
     {%- include site/faculty-tiles.html faculty=session.faculty localization=include.show-localization -%}
 </div>
 
-{%- unless class.summary %}
+
+{%- unless class.summary -%}
+    {%- if class.images -%}
+        {%- for image in class.images -%}
+<div class="highlight-box image">
+    <img src="{{ site.program-assets-directory | append: image | relative_url }}" />
+</div>
+        {%- endfor -%}
+    {%- endif -%}
 {{ class.content }}
 {%- else -%}
 {{ class.summary | smartify | markdownify }}
+{%- if class.images -%}
+    {%- for image in class.images -%}
+<div class="image-container">
+    <img src="{{ site.program-assets-directory | append: image | relative_url }}" />
+</div>
+    {%- endfor -%}
+{%- endif -%}
 <details>
     <summary>
         <div class="summary-chevron-up"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#025E73" stroke-width="2" stroke-linecap="cap" stroke-linejoin="cap" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
         <span class="summary-title">More information</span>
     </summary>
     <div class="summary-chevron-down"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#025E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></div>
-    <section class="details-content" markdown="1">{{ class.content | markdownify }}</section>
+    <section class="details-content" markdown="1">{{ class.content | smartify | markdownify }}</section>
 </details>
 {%- endunless -%}
 
 {%- else -%}
 <div class="tiles inside-brochure">
-    <h3>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}Faculty{% endif %}</h3>
+    <h4>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}Faculty{% endif %}</h4>
     {%- include site/faculty-tiles.html faculty=session.faculty localization=include.show-localization -%}
-    {%- if session.associate-faculty -%}
-    <h3>Associate Staff</h3>
-    {%- include site/faculty-tiles.html faculty=session.associate-faculty localization=include.show-localization -%}
+    {%- if session.associate-staff -%}
+    <h4>Associate Staff</h4>
+    {%- include site/faculty-tiles.html faculty=session.associate-staff localization=include.show-localization -%}
     {%- endif -%}
 </div>
 {%- endif -%}
