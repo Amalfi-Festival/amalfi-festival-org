@@ -69,6 +69,7 @@ h1 div {
 
     &.class {
         float: right;
+        clear: right;
         margin-left: 2rem;
         margin-bottom: 2rem;
         width: $sidebar-width;
@@ -76,9 +77,6 @@ h1 div {
             float: none;
             margin-left: 0;
             width: auto;
-            h3 {
-                display: none;
-            }
         }
     }
 }
@@ -115,7 +113,9 @@ h1 div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 
-    h3 {
+    h4 {
+        font-weight: 400;
+        font-size: 1em;
         grid-column: 1 / -1;
         margin-top: 1.5rem;
         &:first-child {
@@ -235,7 +235,7 @@ tr:has(+ tr.base) {
         margin-left: 0;
     }
     > * {
-        padding: .2rem 1rem;
+        padding: .5rem 1rem;
         border-bottom: $border-style;
     }
     .dateline {
