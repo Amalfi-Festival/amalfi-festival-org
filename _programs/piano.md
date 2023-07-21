@@ -18,7 +18,7 @@ sessions:
             -   Yoshikazu-Nagai
             -   Joseph-Rackers
             -   Jerry-Wong
-        associate-faculty:
+        associate-staff:
             -   Yetong-Tang
             -   Shichao-Zhang
     -   session-name: Session II
@@ -36,7 +36,7 @@ sessions:
             -   Joseph-Rackers
             -   Chi-Wu
             -   Hong-Xu
-        associate-faculty:
+        associate-staff:
             -   Yetong-Tang
             -   Shichao-Zhang
 application:
@@ -134,7 +134,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to historic l
 
 <section id="learn" class="background-image-container">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
-<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}:</span><br/>{% include site/institute/application-deadline.html %}</h3>
+<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/institute/application-deadline.html %}</h3>
 <a class="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
 </section>
 
