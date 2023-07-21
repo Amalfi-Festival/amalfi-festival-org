@@ -46,7 +46,7 @@
 
 1. Applications are accepted until spaces are filled.
 
-1. [Balance of payment](#balance-of-payment) is due upon receipt of invoice, approximately 60 days before departure. Pay electronically via PayPal or by mail using instructions above.
+1. Balance of payment is due upon receipt of invoice, approximately 60 days before departure. Pay electronically via PayPal or by mail using instructions above.
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_s-xclick">
