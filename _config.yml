@@ -42,9 +42,6 @@ collections:
         output: true
         permalink: /faculty/:title
         sort_by: last-name
-    staff:
-        output: false
-        sort_by: last-name
     programs:
         output: true
         permalink: /:title
