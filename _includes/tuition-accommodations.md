@@ -12,14 +12,12 @@ For guests and auditors, [click here]({{ guests.url | relative_url }}) for more 
 
 <table>
 <tbody>
-{%- if reference-program.tuition.hostel-triple -%}
-    <tr class="base">
-        <td>
-            <p class="name">Tuition with Hostel accommodations, triple occupancy</p>
-            <p class="description">Triple rooms with shared bathroom.</p>
-        </td>
-        <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=reference-program.tuition.hostel-triple %}</strong></p></td>
-    </tr>
+
+{%- include site/program/has-tuition-item.fx tuition-item-name="hostel-triple" -%}
+{%- assign has-hostel-triple = __return %}
+
+{%- if has-hostel-triple -%}
+    {%- include site/program/tuition-item.html item-name="hostel-triple" has-tuition-item=has-hostel-triple -%}
 {%- endif -%}
 
 {%- include site/program/has-tuition-item.fx tuition-item-name="hotel-triple" -%}
@@ -28,21 +26,11 @@ For guests and auditors, [click here]({{ guests.url | relative_url }}) for more 
 {%- assign has-hotel-double = __return %}
 
 {%- if has-hotel-triple -%}
-    {%- assign base-price = reference-program.tuition.hotel-triple -%}
-    <tr class="base">
-        <td>
-            <p class="name">Tuition with Hotel accommodations, triple occupancy</p>
-            <p class="description">Triple rooms includes buffet breakfast. <strong>Limited number of triple rooms available.</strong></p>
-        </td>
-        <td class="cost" align="center" valign="top"><p><strong>${% include utilities/number-delimited.html number=base-price %}</strong></p></td>
-    </tr>
+    {%- include site/program/tuition-item.html item-name="hotel-triple" has-tuition-item=has-hotel-triple -%}
 {%- elsif has-hotel-double -%}
-    {%- capture item-td -%}
-        <p class="name">Tuition with Hotel accommodations, double occupancy</p>
-        <p class="description">Double rooms includes buffet breakfast.</p>
-    {%- endcapture -%}
-    {%- include site/program/tuition-item.html item-name="hotel-double" item-td=item-td has-tuition-item=has-hotel-double -%}
+    {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=has-hotel-double -%}
 {%- endif -%}
+
 {%- if reference-program.tuition.hotel-double-upgrade -%}
     <tr class="upgrade">
         <td valign="top"><p class="name">Hotel upgrade: Double Room</p></td>
