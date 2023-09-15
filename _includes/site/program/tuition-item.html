@@ -11,7 +11,10 @@ has-tuition-item: result of has-tuition-item.fx for |item-name|
 {%- assign __p = reference-program -%}
 {%- assign base-price = __p.tuition[include.item-name] -%}
 <tr class="base">
-    <td>{{ include.item-td }}</td>
+    <td>
+        <p class="name">{{ site.data.accommodations[include.item-name].name }}</p>
+        <p class="description">{{ site.data.accommodations[include.item-name].description }}</p>
+    </td>
 {%- unless include.has-tuition-item == 2 -%}
     <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html cost=base-price %}</strong></p></td>
 </tr>
