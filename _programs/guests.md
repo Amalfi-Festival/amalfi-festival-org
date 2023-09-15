@@ -8,6 +8,7 @@ application:
     allow-mail-registration: true
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
 menu-title: Guests
+custom-css: guests
 ---
 
 <section class="standard-block" markdown="1">
@@ -31,23 +32,32 @@ Guests will enjoy eating and socializing with the musicians and attending pre-co
 
 Guest Program fees includes access all festival activities for the full session.
 
-{%- for program-entry in site.data.institute.programs -%}
+{% for program-entry in site.data.institute.programs -%}
     {%- if program-entry.translation -%}
         {%- continue -%}
     {%- endif -%}
     {%- assign program = site.programs | where: "slug", program-entry.name | first -%}
-    {%- assign guest-sessions = site.empty-array -%}
-    {%- for session in program.sessions -%}
-        {%- if session.guests -%}
-            {%- assign guest-sessions = guest-sessions | push: session -%}
-        {%- endif -%}
-    {%- endfor -%}
-    {%- unless guest-sessions[0] -%}
-        {%- continue -%}
+    {%- assign program-guest = program.tuition.guests -%}
+    {%- assign can-have-guests = false -%}
+    {%- unless program-guest -%}
+        {%- for session in program.sessions -%}
+            {%- if session.guests -%}
+                {%- assign can-have-guests = true -%}
+                {%- break -%}
+            {%- endif -%}
+        {%- endfor -%}
     {%- endunless %}
+    {%- unless program-guest or can-have-guests -%}
+        {%- continue -%}
+    {%- endunless -%}
+
+{%- capture details_summary -%}
 <h3>{{ program.title }}</h3>
+{%- endcapture -%}
+
+{%- capture details_content -%}
 <ul>
-    {%- for session in guest-sessions -%}
+    {%- for session in program.sessions -%}
     <li>{{ session.session-name }} ({% include utilities/date-range.html dates=session.dates %})
         <ul>
             <li>{{ session.guests.hotel-description }}: <strong>${% include utilities/number-delimited.html number=session.guests.hotel-fee %}</strong></li>
@@ -55,8 +65,10 @@ Guest Program fees includes access all festival activities for the full session.
         </ul>
     </li>
     {%- endfor -%}
-    <li><a href="{{ program.url | relative_url }}#options-for-meal-plan-excursions-cooking--language-classes">Fees for additional options</a></li>
+    <li><a href="{{ program.url | relative_url }}#excursions-and-activities">Fees for additional options</a></li>
 </ul>
+{%- endcapture -%}
+{% include site/details.html summary=details_summary details=details_content %}
 {%- endfor %}
 
 {% include application-instructions.md application=page.application %}

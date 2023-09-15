@@ -1,0 +1,17 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+details {
+    margin: 1rem 0;
+    h3 {
+        margin: 0;
+        text-transform: initial;
+    }
+
+    .details-content {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
