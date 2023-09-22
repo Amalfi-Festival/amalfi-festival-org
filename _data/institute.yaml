@@ -13,25 +13,25 @@ programs:
 ### Optionally if the deadline is to be extended, uncomment the "extended-deadline" line
 ### with the new date. Both dates are listed so that users understand the previous deadline is old.
 application:
-    deadline: 2023-04-15
-#    extended-deadline: 2023-04-23
+    deadline: 2024-04-15
+#    extended-deadline: 2024-04-24
     registration-fee: 45
     deposit: 350
 ### Information regarding the cancellation policy.
 cancellation-policy:
     full-refund:
-        date: 2023-03-31
+        date: 2024-03-31
     processing-fee:
-        date: 2023-04-01
+        date: 2024-04-01
         amount: 50
     withdrawal-fee:
-        date: 2023-04-15
+        date: 2024-04-15
         amount: 100
     forfeit:
-        date: 2023-05-01
+        date: 2024-05-01
         deductible: 1500
     no-refund:
-        date: 2023-06-01
+        date: 2024-06-01
 activities:
     -   name: Italian Language Class
         cost: 450

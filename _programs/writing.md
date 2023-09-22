@@ -3,8 +3,8 @@ title: Writers' Studio
 sessions:
     -   class-name: writing-studio
         dates:
-            start: 2023-07-19
-            end: 2023-07-25
+            start: 2024-07-19
+            end: 2024-07-25
         faculty:
             - Mary-Hall-Surface
 application:

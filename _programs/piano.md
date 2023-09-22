@@ -4,8 +4,8 @@ sessions:
     -   session-name: Session I
         session-name-cn: 第一期
         dates:
-            start: 2023-07-05
-            end: 2023-07-17
+            start: 2024-07-05
+            end: 2024-07-17
         faculty:
             -   Boris-Berman
             -   Bernadene-Blaha
@@ -24,8 +24,8 @@ sessions:
     -   session-name: Session II
         session-name-cn: 第二期
         dates:
-            start: 2023-07-18
-            end: 2023-07-30
+            start: 2024-07-18
+            end: 2024-07-30
         faculty:
             -   James-Giles
             -   Kyu-Yeon-Kim

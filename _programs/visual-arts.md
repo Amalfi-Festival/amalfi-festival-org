@@ -4,8 +4,8 @@ sessions:
     -   session-name: Painting
         class-name: exploring-watercolor
         dates:
-            start: 2023-07-08
-            end: 2023-07-17
+            start: 2024-07-08
+            end: 2024-07-17
         faculty:
             - David-Daniels
     -   session-name: Multimedia
@@ -20,8 +20,8 @@ sessions:
     -   session-name: Mixed Media
         class-name: artists-sketchbook
         dates:
-            start: 2023-07-18
-            end: 2023-07-25
+            start: 2024-07-18
+            end: 2024-07-25
         faculty:
             - Rebecca-Cross
         tuition:
