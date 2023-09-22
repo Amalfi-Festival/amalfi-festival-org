@@ -17,10 +17,10 @@ Is air travel included in the program cost?
 : No, you must purchase your airline tickets independently. We are happy to advise you on various options.
  
 What airport/city should I fly into?
-: Most people generally fly into Naples, which is about 90 minutes from our facilities. You may also fly into Rome to suit your travel schedule --- in which case you must transfer to the downtown train station and take a train (a 3 or 4 hour trip) to Naples. In Naples you will need to get a public bus to Maiori or else get a taxi to the Naples airport to join the group waiting for the Festival shuttle.
+: Generally, people fly into Naples, which is 60 to 90 minutes from our facilities. You may also fly into Rome to suit your travel schedule --- in which case you must transfer to the downtown train station and take a train (approx. a 3-hour trip on Frecciarossa) to Naples. In Naples you will need to get a public bus to Maiori or else get a taxi to the Naples airport to join the group waiting for the Festival shuttle. Otherwise, take a train to Salerno, the town closest to our facilities, where you can take a public bus (40 mins) to Maiori or arrange a private pick-up at the train station for approx. 80 euros. Night rates apply. 
 
 How do I get from the airport to the festival?
-: A festival bus will run mid-day for each program's arrival and departure dates and is scheduled to accommodate the greatest number of flights. We are also happy to arrange private pick-up from the airport for a small fee to help you avoid spending exorbitant taxi fares.
+: A festival bus will run mid-day for each program's arrival and departure dates and is scheduled to accommodate the greatest number of flights. We are also happy to arrange private pick-up from the airport for a fee to help you avoid spending exorbitant taxi fares.
 
 ## Arrival/Departure
  
