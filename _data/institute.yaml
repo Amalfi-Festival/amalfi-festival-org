@@ -1,7 +1,8 @@
 ### What the name of this/next year's festival is. This appears in the home page.
 edition: XXVII season, 2024
-### List of all the active programs for the festival in order. The names of the programs must
-### match the filenames for each program.
+
+### List of all the active programs for the festival in order. Each program name listed here must
+### have a matching filename in `_programs/`.
 programs:
     -   name: piano
     -   name: piano-cn
@@ -9,15 +10,19 @@ programs:
     -   name: visual-arts
     -   name: writing
     -   name: choral
+
 ### Application deadline, registration fee, and deposit.
 ### Optionally if the deadline is to be extended, uncomment the "extended-deadline" line
 ### with the new date. Both dates are listed so that users understand the previous deadline is old.
+### These dates can be overridden on a per-program basis.
 application:
     deadline: 2024-04-15
 #    extended-deadline: 2024-04-24
     registration-fee: 45
     deposit: 350
 ### Information regarding the cancellation policy.
+
+### Information regarding fee changes and the cancellation policy.
 cancellation-policy:
     full-refund:
         date: 2024-03-31
@@ -32,6 +37,16 @@ cancellation-policy:
         deductible: 1500
     no-refund:
         date: 2024-06-01
+
+### Optional activities for all participants of the festival.
+###
+### available-to-programs:
+###     Determines whether the activity lists as a possible add-on for a program. Its value can be
+###     one of the following:
+###     - |true| if it is something available to all programs
+###     - |false| if it is not available to any program (a way to remove the activity as an option
+###               without having to delete it from the file)
+###     - list of programs to which the activity is made available
 activities:
     -   name: Italian Language Class
         cost: 450
@@ -68,6 +83,8 @@ activities:
                 name: 陶瓷制作课程
                 description: 单节
         available-to-programs: false
+
+### Optional excursions for all participants of the festival.
 excursions:
     -   name: Ravello
         tagline: An Artistic Refuge
