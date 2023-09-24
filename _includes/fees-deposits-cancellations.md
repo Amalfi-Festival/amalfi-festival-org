@@ -11,9 +11,9 @@ deposits are accepted by Center for Musical Studies. For information on
 refunds, see [Cancellation Policy](#cancellation-policy--refunds).
  
 Price may be subject to change for currency, inflation, taxes, surcharges
-imposed, and fare increases as the price of the program was established Dec.
-30, 2022. Registrants will be notified by May 15, 2023 if price increases and
-may withdraw without penalty if there is more than a 5% increase.
+imposed, and fare increases as the price of the program was established {{ site.data.institute.fees-and-deposits.prices-established-on | date: "%B %e, %Y" }}.
+Registrants will be notified by {{ site.data.institute.fees-and-deposits.notification-date-if-prices-increase | date: "%B %e, %Y" }}
+if price increases and may withdraw without penalty if there is more than a 5% increase.
 
 ## Cancellation Policy & Refunds
 
@@ -52,6 +52,6 @@ As of {{ p.no-refund.date | date: "%B %e, %Y" }}
 
 Trip insurance is strongly recommended for your protection in case of cancellation or trip interruption. No refunds are available for partial use of program.
 
-**Reminder: No refunds for cancellations will be issued after June 1, 2023.**
+**Reminder: No refunds for cancellations will be issued after {{ p.no-refund.date | date: "%B %e, %Y" }}.**
 
 **Please note:** *Fees are subject to revision in cases of significant currency fluctuation between the Euro and the dollar or if international political situations or natural disaster cause significant economic duress resulting in unexpected cost increases.*

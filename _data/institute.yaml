@@ -20,9 +20,11 @@ application:
 #    extended-deadline: 2024-04-24
     registration-fee: 45
     deposit: 350
-### Information regarding the cancellation policy.
 
 ### Information regarding fee changes and the cancellation policy.
+fees-and-deposits:
+    prices-established-on: 2022-12-30
+    notification-date-if-prices-increase: 2023-05-15
 cancellation-policy:
     full-refund:
         date: 2024-03-31
