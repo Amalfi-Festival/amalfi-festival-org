@@ -220,35 +220,3 @@ tr:has(+ tr.base) {
     font-style: italic;
 }
 
-// Cancellation schedule
-
-#cancellation-schedule {
-    display: grid;
-    border-top: $border-style;
-    border-left: $border-style;
-    border-right: $border-style;
-    max-width: 50em;
-    grid-template-columns: auto auto;
-    margin-left: 3em;
-    @include breakpoint(mobile) {
-        grid-template-columns: 1fr;
-        margin-left: 0;
-    }
-    > * {
-        padding: .5rem 1rem;
-        border-bottom: $border-style;
-    }
-    .dateline {
-        font-family: $brand-font;
-        background-color: $brand-blue;
-        color: $background-color;
-        border-bottom: border-style-with-color($background-color);
-        &:nth-last-child(2) {
-            border-bottom-color: $brand-blue;
-        }
-    }
-    p {
-        margin: 0;
-        max-width: initial;
-    }
-}
