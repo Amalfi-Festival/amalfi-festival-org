@@ -43,5 +43,6 @@ program-name: piano-cn
 
 请注意，我们只会在收到完整报名表之后（或同时）接受您的录像/录音。我们不会受理任何收到报名表之前上传的录像/录音。
 
-{% include fees-deposits-cancellations-cn.md %}
+{% include fees-deposits-cn.md %}
 
+{% include cancellations-cn.md %}

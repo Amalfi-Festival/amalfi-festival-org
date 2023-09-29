@@ -67,6 +67,7 @@ The cost for tuition & accommodations is listed as one total fee, which includes
 
 {% include application-instructions.md %}
 
-{% include fees-deposits-cancellations.md %}
+{% include fees-deposits.md %}
+{% include cancellations.md %}
 
 </section>

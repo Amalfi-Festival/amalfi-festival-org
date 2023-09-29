@@ -73,6 +73,7 @@ Guest Program fees includes access all festival activities for the full session.
 
 {% include application-instructions.md application=page.application %}
 
-{% include fees-deposits-cancellations.md %}
+{% include fees-deposits.md %}
+{% include cancellations.md %}
 
 </section>
