@@ -1,8 +1,9 @@
 {% comment %}
-program-name: name of program (optional)
-    uses |reference-program| as default
+Input variables:
+    program-name: name of program (optional)
+        uses |reference-program| as default
 
-return: URL string
+Returns: URL string
 {% endcomment %}
 
 {%- assign __return = site.apply | where: "slug", program.slug | first -%}

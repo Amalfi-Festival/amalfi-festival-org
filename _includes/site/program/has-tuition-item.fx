@@ -1,9 +1,10 @@
 {%- comment -%}
-program: program object (optional)
-    uses |reference-program| as default
-tuition-item-name: name of the tuition item
+Input variables:
+    program: program object (optional)
+        uses |reference-program| as default
+    tuition-item-name: name of the tuition item
 
-returns:
+Returns:
     false - program does not have tuition item
     1 - program has tuition item
     2 - program has sessions with override tuition items (but not necessarily a fallback/general program tuition item)
