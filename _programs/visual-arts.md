@@ -8,25 +8,6 @@ sessions:
             end: 2024-07-17
         faculty:
             - David-Daniels
-    -   session-name: Multimedia
-        class-name: mapping-the-amalfi-coast
-        dates:
-            start: 2023-07-18
-            end: 2023-07-27
-        faculty:
-            - Robert-Devers
-        tuition:
-            lab-fee: 145
-    -   session-name: Mixed Media
-        class-name: artists-sketchbook
-        dates:
-            start: 2024-07-18
-            end: 2024-07-25
-        faculty:
-            - Rebecca-Cross
-        tuition:
-            hotel-double: 2885
-            lab-fee: 145
 application:
     allow-mail-registration: true
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:aed9e956-ee8b-4408-b23d-cf4ca992e5f7

@@ -48,17 +48,20 @@ tuition:
     hostel-triple: 2995
     hotel-double-upgrade: 465
     hotel-single-upgrade: 945
-    guests:
-        hotel-triple: 3195
+tuition-guests:
+    meal-plan: true
+    hotel-triple: 3195
+    hotel-double-upgrade: true
+    hotel-single-upgrade: true
 webpage-data:
     menu-title: Piano
     hero-image: 23.jpg
     program-header-subtitle: "<h3>James Giles, Director<br/>Yoshikazu Nagai, Faculty Chair</h3>"
-    localizations:
-        -   abbreviation: en
-            program: piano
-        -   abbreviation: 中文
-            program: piano-cn
+#    localizations:
+#        -   abbreviation: en
+#            program: piano
+#        -   abbreviation: 中文
+#            program: piano-cn
 ---
 {%- include site/program/initialize-program-variables.fx program=page -%}
 
