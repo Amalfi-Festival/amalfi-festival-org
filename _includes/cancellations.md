@@ -9,27 +9,27 @@ Deposit and tuition payment refunds are made according to the following schedule
 {% assign p = site.data.institute.cancellation-policy %}
 
 <div id="cancellation-schedule" markdown="1">
-Before {{ p.full-refund.date | date: "%B %e, %Y" }}
+Before {{ p.full-refund.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {: class="dateline"}
 
 <div><p markdown="1">Your deposit and any tuition payments made will be fully refunded without penalty.</p></div>
 
-As of {{ p.processing-fee.date | date: "%B %e, %Y" }}
+As of {{ p.processing-fee.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {: class="dateline"}
 
 <div><p markdown="1">A **{% include utilities/format-cost.html cost=p.processing-fee.amount %}** processing fee will be applied to your refund.</p></div>
 
-After {{ p.withdrawal-fee.date | date: "%B %e, %Y" }}
+After {{ p.withdrawal-fee.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {: class="dateline"}
 
 <div><p markdown="1">A **{% include utilities/format-cost.html cost=p.withdrawal-fee.amount %}** withdrawal fee will be applied to your refund.</p></div>
 
-As of {{ p.forfeit.date | date: "%B %e, %Y" }}
+As of {{ p.forfeit.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {: class="dateline"}
 
 <div><p markdown="1">Your {% if application-deposit %}**{% include utilities/format-cost.html cost=application-deposit %}**{% endif %} deposit will be forfeited plus any prepaid nonrefundable expenses up to **{% include utilities/format-cost.html cost=p.forfeit.deductible %}**.</p></div>
 
-As of {{ p.no-refund.date | date: "%B %e, %Y" }}
+As of {{ p.no-refund.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {: class="dateline"}
 
 <div><p markdown="1">***No refunds will be made after this date.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exception can be made.</p></div>
@@ -37,6 +37,6 @@ As of {{ p.no-refund.date | date: "%B %e, %Y" }}
 
 Trip insurance is strongly recommended for your protection in case of cancellation or trip interruption. No refunds are available for partial use of program.
 
-**Reminder: No refunds for cancellations will be issued after {{ p.no-refund.date | date: "%B %e, %Y" }}.**
+**Reminder: No refunds for cancellations will be issued after {{ p.no-refund.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}.**
 
 **Please note:** *Fees are subject to revision in cases of significant currency fluctuation between the Euro and the dollar or if international political situations or natural disaster cause significant economic duress resulting in unexpected cost increases.*

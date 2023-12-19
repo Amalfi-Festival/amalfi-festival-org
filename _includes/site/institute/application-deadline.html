@@ -9,8 +9,8 @@ deposit in one object, and then the deadline in another if it isn't specified.
 {%- endcomment -%}
 
 {%- if application-extended-deadline -%}
-<del>{{ application-deadline | date: "%B %e, %Y"}}</del><br/>
-extended to {{ application-extended-deadline | date: "%B %e, %Y"}}
+<del>{{ application-deadline | date: "%B&nbsp;%-e,&nbsp;%Y"}}</del><br/>
+extended to {{ application-extended-deadline | date: "%B&nbsp;%-e,&nbsp;%Y"}}
 {%- else -%}
-{{ application-deadline | date: "%B %e, %Y"}}
+{{ application-deadline | date: "%B&nbsp;%-e,&nbsp;%Y"}}
 {%- endif -%}
