@@ -25,7 +25,7 @@ After {{ p.withdrawal-fee.date | date: "%B %e, %Y" }}
 As of {{ p.forfeit.date | date: "%B %e, %Y" }}
 {: class="dateline"}
 
-<div><p markdown="1">Your **{% include utilities/format-cost.html cost=application.deposit %}** deposit will be forfeited plus any prepaid nonrefundable expenses up to **{% include utilities/format-cost.html cost=p.forfeit.deductible %}**.</p></div>
+<div><p markdown="1">Your **{% include utilities/format-cost.html cost=application-deposit %}** deposit will be forfeited plus any prepaid nonrefundable expenses up to **{% include utilities/format-cost.html cost=p.forfeit.deductible %}**.</p></div>
 
 As of {{ p.no-refund.date | date: "%B %e, %Y" }}
 {: class="dateline"}

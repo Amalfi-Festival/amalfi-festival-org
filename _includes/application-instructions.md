@@ -8,21 +8,21 @@
 <li>
     <h5>Registration Fee</h5>
     <div>(non-refundable)</div>
-    <div>${{ site.data.institute.application.registration-fee }}</div>
+    <div>${{ application-registration-fee }}</div>
 </li>
 <li>
     <h5>Deposit</h5>
     <div>(refundable <a href="#cancellation-policy--refunds">in case of cancellation</a>)</div>
-    <div>${{ site.data.institute.application.deposit }}</div>
+    <div>${{ application-deposit }}</div>
 </li>
-{%- if reference-program.application.form-url -%}
+{%- if application.form-url -%}
 <li>
-    <a class="button" href="{{ reference-program.application.form-url }}">Application form</a>
+    <a class="button" href="{{ application.form-url }}">Application form</a>
 </li>
 {%- endif -%}
 </ul>
 
-{% assign application = reference-program.application -%}
+
 1. Complete the online {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
 
 {% if application.allow-mail-registration %}

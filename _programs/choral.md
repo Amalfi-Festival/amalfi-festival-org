@@ -3,6 +3,10 @@ title: Choral Program
 sessions:
     - dates:
         note: Coming in 2024
+application:
+    deadline: 2024-01-31
+    registration-fee: 45
+    deposit: 500
 webpage-data:
     menu-title: Choral
 ---

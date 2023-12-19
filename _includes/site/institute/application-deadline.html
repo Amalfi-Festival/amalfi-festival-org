@@ -1,6 +1,16 @@
-{%- if site.data.institute.application.extended-deadline -%}
-<del>{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}</del><br/>
-extended to {{ site.data.institute.application.extended-deadline | date: "%B %e, %Y"}}
+{%- comment -%}
+Creates HTML representing the application deadline.
+
+By default it will use the information in `institute.yaml`. If an |application| object exists in
+|reference-program| it will use that instead. It will also accept an |application| object directly.
+
+All relevant items are expected to be in the application object. It will not, for example, use the
+deposit in one object, and then the deadline in another if it isn't specified.
+{%- endcomment -%}
+
+{%- if application-extended-deadline -%}
+<del>{{ application-deadline | date: "%B %e, %Y"}}</del><br/>
+extended to {{ application-extended-deadline | date: "%B %e, %Y"}}
 {%- else -%}
-{{ site.data.institute.application.deadline | date: "%B %e, %Y"}}
+{{ application-deadline | date: "%B %e, %Y"}}
 {%- endif -%}

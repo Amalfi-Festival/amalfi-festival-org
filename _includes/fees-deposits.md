@@ -1,8 +1,8 @@
 ## Fees & Deposits
 
-A non-refundable registration fee of **${{ application.registration-fee }}**
+A non-refundable registration fee of **${{ application-registration-fee }}**
 is required at the time of registration in addition to a deposit of
-**${{ application.deposit }}** towards your total fees. On-line
+**${{ application-deposit }}** towards your total fees. On-line
 registrations area also assessed a service fee.
  
 Deposits are accepted on a first-come basis as space is limited.
