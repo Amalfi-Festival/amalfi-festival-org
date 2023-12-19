@@ -3,7 +3,8 @@ title: Choral Program
 sessions:
     - dates:
         note: Coming in 2024
-menu-title: Choral
+webpage-data:
+    menu-title: Choral
 ---
 
 You are invited to join fellow choristers for an unforgettable

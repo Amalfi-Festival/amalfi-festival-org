@@ -14,8 +14,9 @@ tuition:
     meal-plan: 330
     hotel-double: 3100
     hotel-single-upgrade: 430
-menu-title: Writing
-hero-image: ravello-villa-cimbrone.jpg
+webpage-data:
+    menu-title: Writing
+    hero-image: ravello-villa-cimbrone.jpg
 ---
 {%- include site/program/initialize-program-variables.fx program=page -%}
 

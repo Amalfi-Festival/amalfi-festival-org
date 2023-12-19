@@ -7,8 +7,8 @@ custom-css: program
 {%- include site/program/initialize-program-variables.fx program=page -%}
 
 {% capture translations %}
-{%- if reference-program.localizations -%}
-    {%- for translation in reference-program.localizations -%}
+{%- if reference-program.webpage-data.localizations -%}
+    {%- for translation in reference-program.webpage-data.localizations -%}
         {%- if translation.program == page.slug -%}
 <span>{{ translation.abbreviation }}</span>
             {%- continue -%}
@@ -19,10 +19,9 @@ custom-css: program
 {%- endif -%}
 {% endcapture %}
 
-
-{%- if reference-program.hero-image -%}
+{%- if reference-program.webpage-data.hero-image -%}
 <div id="hero" class="image-container">
-    <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
+    <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.webpage-data.hero-image | relative_url }}" class="rellax" data-rellax-speed="-2" />
     <div><h1 class="standard-block">{{ page.title | smartify }} <div><span>{{ translations }}</span></div></h1></div>
 </div>
 {%- else -%}

@@ -37,9 +37,9 @@ tuition:
     hotel-single-upgrade: 749
     guests:
         hotel-double: 3195
-menu-title: Visual Arts
-hero-image: capri.jpg
-header-blend-mode: normal
+webpage-data:
+    menu-title: Visual Arts
+    hero-image: capri.jpg
 ---
 {%- include site/program/initialize-program-variables.fx program=page -%}
 

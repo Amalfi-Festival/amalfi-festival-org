@@ -6,8 +6,8 @@ custom-css: apply
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
 {% capture translations %}
-{%- if reference-program.localizations -%}
-    {%- for translation in reference-program.localizations -%}
+{%- if reference-program.webpage-data.localizations -%}
+    {%- for translation in reference-program.webpage-data.localizations -%}
         {%- if translation.program == page.slug -%}
 <span>{{ translation.abbreviation }}</span>
             {% continue -%}

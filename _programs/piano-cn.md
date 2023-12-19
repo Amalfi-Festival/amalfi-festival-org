@@ -1,8 +1,9 @@
 ---
-title: 第26届意大利阿马尔菲海岸钢琴艺术节
-menu-title: 钢琴艺术节
-show-localization: true
 reference-program: piano
+title: 第26届意大利阿马尔菲海岸钢琴艺术节
+webpage-data:
+    menu-title: 钢琴艺术节
+    show-localization: true
 ---
 {%- include site/program/initialize-program-variables.fx program=page -%}
 <section id="splash" class="standard-block" markdown="1">

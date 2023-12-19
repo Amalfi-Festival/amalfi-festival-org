@@ -20,7 +20,8 @@ sponsors:
 custom-js: rellax.min
 custom-css: home
 body-class: home
-header-blend-mode: normal
+webpage-data:
+    header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
 <section id="hero">

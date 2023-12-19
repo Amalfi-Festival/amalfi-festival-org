@@ -7,7 +7,8 @@ sessions:
 application:
     allow-mail-registration: true
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
-menu-title: Guests
+webpage-data:
+    menu-title: Guests
 custom-css: guests
 ---
 
