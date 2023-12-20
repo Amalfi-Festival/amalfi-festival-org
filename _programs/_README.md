@@ -16,6 +16,10 @@ sessions:
 application:
     form-url:
     guest-form-url:
+    deadline: # OPTIONAL. Overrides _institute.yaml.
+    extended-deadline: # OPTIONAL. Overrides _institute.yaml.
+    registration-fee: # OPTIONAL. Overrides _institute.yaml.
+    deposit: # OPTIONAL. Overrides _institute.yaml.
 tuition:
     meal-plan: # cost
     hotel-triple: # cost
