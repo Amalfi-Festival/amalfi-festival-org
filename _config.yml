@@ -35,8 +35,6 @@ social:
     twitter: https://twitter.com/FestivalAmalfi
     youtube: http://www.youtube.com/user/AmalfiFestival
 
-permalink: pretty
-
 collections:
     faculty:
         output: true
@@ -50,6 +48,8 @@ collections:
         permalink: /:title-apply
     classes:
         output: false
+
+permalink: /:categories/:year/:month/:day/:title
 
 defaults:
     -   scope:
