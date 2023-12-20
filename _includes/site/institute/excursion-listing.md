@@ -1,7 +1,7 @@
 {%- assign excursion = site.data.institute.excursions | where: "name", include.excursion-name | first %}
 
 <div class="excursion-hero">
-<img class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.6" src="{{ site.image-directory | append: include.hero-image | relative_url }}" />
+<img src="{{ site.image-directory | append: include.hero-image | relative_url }}" />
 <div class="title">
 <div class="standard-block" markdown="1">
 ### {{ excursion.name }}
