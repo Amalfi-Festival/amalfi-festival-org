@@ -25,7 +25,10 @@ If there is no base tuition price for the program, and we are listing the prices
 <tr class="base">
     <td>
         <p class="name">{{ site.data.accommodations[include.item-name].name | default: __t.name | smartify }}</p>
-        <p class="description">{{ site.data.accommodations[include.item-name].description | default: __t.description | smartify }}</p>
+        {%- capture _d -%}
+        {{- site.data.accommodations[include.item-name].description | default: __t.description -}}
+        {%- endcapture -%}
+        <p class="description">{% include utilities/markdownify-without-p.html text=_d %}</p>
     </td>
 {%- unless include.has-tuition-item == 2 -%}
     <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html cost=base-price %}</strong></p></td>

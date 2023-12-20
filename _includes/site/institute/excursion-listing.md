@@ -24,7 +24,7 @@
     {%- endfor -%}
     </ul></li>
     {%- endunless -%}
-    <li class="description">{{ excursion.description | markdownify }}</li>
+    <li class="description">{% include utilities/markdownify-without-p.html text=excursion.description %}</li>
 </ul>
 
 <div>{%- if excursion.tagline -%}

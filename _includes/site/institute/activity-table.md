@@ -23,7 +23,7 @@
             <td>
                 <p class="name">{{ excursion-text.name }} ({{ excursion-text.length }})</p>
                 {%- if excursion.description -%}
-                <p class="description">{{ excursion-text.description }} <a href="{{ site.baseurl }}{% link activities.md %}#{{ excursion-text.name | downcase }}">Learn more</a></p>
+                <p class="description">{% include utilities/markdownify-without-p.html text=excursion-text.description %} <a href="{{ site.baseurl }}{% link activities.md %}#{{ excursion-text.name | downcase }}">Learn more</a></p>
                 {%- endif -%}
             </td><td class="cost" align="center" valign="top"><p>{% include utilities/format-cost.html localization=include.localization cost=excursion.cost %}</p></td>
         </tr>
@@ -54,7 +54,7 @@
             <td>
                 <p class="name">{{ activity-text.name }}</p>
                 {%- if activity-text.description -%}
-                <p class="description">{{ activity-text.description }}</p>
+                <p class="description">{% include utilities/markdownify-without-p.html text=activity-text.description %}</p>
                 {%- endif -%}
             </td>
             <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html localization=include.localization cost=activity.cost %}</strong></p></td></tr>

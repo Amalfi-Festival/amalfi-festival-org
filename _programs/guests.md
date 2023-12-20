@@ -99,7 +99,7 @@ Guest Program fees includes access to all festival activities for the full sessi
 <tr class="base">
     <td>
         <p class="name">{{ site.data.accommodations.meal-plan.name }}</p>
-        <p class="description">{{ site.data.accommodations.meal-plan.description }}</p>
+        <p class="description">{% include utilities/markdownify-without-p.html text=site.data.accommodations.meal-plan.description %}</p>
     </td>
     {%- assign _c = program.tuition-guests.meal-plan -%}
     {%- if _c == true -%}

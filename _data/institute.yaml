@@ -121,7 +121,7 @@ excursions:
         tagline: Isle of Beauty and Mystery
         cost: 155
         length: Full day
-        description: Travel by boat to the mythical island of Capri, an international wonder. Includes boat tickets, entries, expert guide. ***No lessons are scheduled on this day because almost all students take this trip.
+        description: Travel by boat to the mythical island of Capri, an international wonder. Includes boat tickets, entries, expert guide. ***No lessons are scheduled on this day because almost all students take this trip.***
         localization:
             cn:
                 name: 卡普里岛 Capri Island

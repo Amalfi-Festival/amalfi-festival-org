@@ -75,7 +75,7 @@ The meal plan provides daily dinners. We recommend this option as participants a
     <tr>
         <td>
             <p class="name">{{ site.data.accommodations.meal-plan.name }}</p>
-            <p class="description">{{ site.data.accommodations.meal-plan.description }}</p>
+            <p class="description">{% include utilities/markdownify-without-p.html text=site.data.accommodations.meal-plan.description %}</p>
         </td><td class="cost" align="center" valign="top"><p><strong>+ ${{ reference-program.tuition.meal-plan }}</strong></p></td>
     </tr>
 </tbody>

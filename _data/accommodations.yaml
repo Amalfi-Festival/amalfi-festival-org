@@ -4,7 +4,7 @@ hostel-triple:
 
 hotel-triple:
     name: Tuition with Hotel accommodations, triple occupancy
-    description: Triple rooms includes buffet breakfast. <strong>Limited number of triple rooms available.</strong>
+    description: Triple rooms includes buffet breakfast. **Limited number of triple rooms available.**
 
 hotel-double:
     name: Tuition with Hotel accommodations, double occupancy
