@@ -60,7 +60,7 @@ activities:
             - piano
             - guests
     -   name: Cooking Lesson
-        cost: 165
+        cost: 150
         description: Includes instruction, transportation, interpreter-escort, 5-course meal and recipes.
         localization:
             cn:

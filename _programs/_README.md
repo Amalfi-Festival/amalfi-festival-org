@@ -21,15 +21,22 @@ application:
     registration-fee: # OPTIONAL. Overrides _institute.yaml.
     deposit: # OPTIONAL. Overrides _institute.yaml.
 tuition:
+    # For most programs with accommodation options
     meal-plan: # cost
     hotel-triple: # cost
+    hotel-double: # cost
     hostel-triple: # cost
     hotel-double-upgrade: # cost
     hotel-single-upgrade: # cost
+    # For choral tour
+    cost: # cost
+    name: # summary name of what the cost is
+    description: # details about the cost
 tuition-guests:
     # The use of |true| means to refer to the participants' tuition for the value
     meal-plan: # |true| or cost
     hotel-triple: # |true| or cost
+    hotel-double: # |true| or cost
     hotel-double-upgrade: # |true| or cost
     hotel-single-upgrade: # |true| or cost
 cancellation-policy:

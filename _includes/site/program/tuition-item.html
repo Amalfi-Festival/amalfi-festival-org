@@ -13,8 +13,8 @@ If there is no base tuition price for the program, and we are listing the prices
 {%- assign base-price = __p.tuition[include.item-name] -%}
 <tr class="base">
     <td>
-        <p class="name">{{ site.data.accommodations[include.item-name].name }}</p>
-        <p class="description">{{ site.data.accommodations[include.item-name].description }}</p>
+        <p class="name">{{ site.data.accommodations[include.item-name].name | default: __p.tuition.name | smartify }}</p>
+        <p class="description">{{ site.data.accommodations[include.item-name].description | default: __p.tuition.description | smartify }}</p>
     </td>
 {%- unless include.has-tuition-item == 2 -%}
     <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html cost=base-price %}</strong></p></td>
