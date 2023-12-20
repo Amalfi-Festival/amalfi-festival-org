@@ -2,11 +2,13 @@
 edition: XXVII season, 2024
 
 ### List of all the active programs for the festival in order. Each program name listed here must
-### have a matching filename in `_programs/`.
+### have a matching filename in `_programs/`. If a program is not being offered this year, either
+### comment out that item or delete it.
 programs:
     -   name: piano
     -   name: piano-cn
         translation: true
+    -   name: piano-teaching
     -   name: visual-arts
     -   name: writing
     -   name: choral
@@ -58,6 +60,7 @@ activities:
                 name: 意大利语课程
         available-to-programs:
             - piano
+            - piano-teaching
             - guests
     -   name: Cooking Lesson
         cost: 150
@@ -109,7 +112,11 @@ excursions:
                 name: 庞贝古城 Pompeii
                 length: 半日
                 description: 费用包括大巴、门票、导游
-        available-to-programs: true
+        available-to-programs:
+            - piano
+            - piano-teaching
+            - visual-arts
+            - writing
     -   name: Capri
         tagline: Isle of Beauty and Mystery
         cost: 155
