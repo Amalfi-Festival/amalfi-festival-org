@@ -13,7 +13,7 @@ tuition:
 webpage-data:
     menu-title: Choral
 ---
-{%- include site/program/initialize-program-variables.fx program=page -%}
+{%- include site/program/initialize-program-variables.fx -%}
 
 <section class="standard-block" markdown="1">
 

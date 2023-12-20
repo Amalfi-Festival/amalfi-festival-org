@@ -5,7 +5,8 @@ webpage-data:
     menu-title: 钢琴艺术节
     show-localization: true
 ---
-{%- include site/program/initialize-program-variables.fx program=page -%}
+{%- include site/program/initialize-program-variables.fx -%}
+
 <section id="splash" class="standard-block" markdown="1">
 
 ## Experience an intensive piano education within the breathtaking views of the Amalfi Coast

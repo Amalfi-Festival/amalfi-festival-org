@@ -41,7 +41,7 @@ webpage-data:
             program: # slug for the specific program
         # ...
 ---
-{%- include site/program/initialize-program-variables.fx program=page -%}
+{%- include site/program/initialize-program-variables.fx -%}
 
 {% include site/session/session-info.md faculty-type="Instructor" %}
 

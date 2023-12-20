@@ -22,7 +22,7 @@ webpage-data:
     menu-title: Visual Arts
     hero-image: capri.jpg
 ---
-{%- include site/program/initialize-program-variables.fx program=page -%}
+{%- include site/program/initialize-program-variables.fx -%}
 
 <section class="standard-block" markdown="1">
 

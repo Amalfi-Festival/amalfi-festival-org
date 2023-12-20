@@ -63,7 +63,7 @@ webpage-data:
 #        -   abbreviation: 中文
 #            program: piano-cn
 ---
-{%- include site/program/initialize-program-variables.fx program=page -%}
+{%- include site/program/initialize-program-variables.fx -%}
 
 
 <section id="splash" class="proto-2">

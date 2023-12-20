@@ -1,6 +1,6 @@
 {% comment %}
 Input variables:
-    program: either a slug of the program, or the program object itself
+    program: Optional. Either a slug of the program, or the program object itself. If not specified, assumed to be |page|.
 
 Establishes local variables:
     - program: the program object
@@ -17,7 +17,7 @@ Establishes local variables:
     - application-deposit
 {% endcomment %}
 
-{%- assign program = include.program -%}
+{%- assign program = include.program | default: page -%}
 {%- unless program.title -%}
     {%- assign program = site.programs | where: "slug", include.program | first -%}
 {%- endunless -%}
