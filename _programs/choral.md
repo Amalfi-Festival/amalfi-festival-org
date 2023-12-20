@@ -1,5 +1,5 @@
 ---
-title: Choral Program
+title: Choral Tour
 sessions:
     -    dates:
             start: 2024-06-29
