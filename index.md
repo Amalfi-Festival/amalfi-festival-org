@@ -135,6 +135,8 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 ## Guests Are Always Welcome
 A special program for guests provides an unparalleled opportunity in cultural tourism. Guests are welcomed as part of the festival community and are afforded a unique backstage experience. They are invited to attend rehearsals, master classes, and pre-concert lectures. They may take advantage of the many educational offerings at the festival, such as art courses, Italian language classes, cooking lessons, and excursions to the area's monuments and cultural sites, such as the excavations of Pompeii, the isle of Capri, and the delightful seaside towns that have made this region famous -- Positano, Ravello, Sorrento, Amalfi, and others.
 
+<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">Learn more</a>
+
 </section>
 
 

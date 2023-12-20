@@ -9,9 +9,10 @@ application:
     form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
 webpage-data:
     menu-title: Guests
+    hero-image: home.jpg
+    header-blend-mode: multiply
 custom-css: guests
 ---
-
 <section class="standard-block" markdown="1">
 
 Tour fascinating locales, sit in on rehearsal and enjoy concerts under the stars. Expand your culinary vistas, experiment with clay or capture fabulous landscapes in paint. Visit the enchanting coastal towns of Amalfi and Positano, discover the stunning vistas of Ravello and the sparkling beaches of Capri and explore the haunting ruins of Pompeii.
@@ -31,14 +32,14 @@ Guests will enjoy eating and socializing with the musicians and attending pre-co
 
 ## Accommodations
 
-Guest Program fees includes access all festival activities for the full session.
+Guest Program fees includes access to all festival activities for the full session.
 
 {% for program-entry in site.data.institute.programs -%}
     {%- if program-entry.translation -%}
         {%- continue -%}
     {%- endif -%}
     {%- assign program = site.programs | where: "slug", program-entry.name | first -%}
-    {%- assign program-guest = program.tuition.guests -%}
+    {%- assign program-guest = program.tuition-guests -%}
     {%- assign can-have-guests = false -%}
     {%- unless program-guest -%}
         {%- for session in program.sessions -%}
@@ -57,22 +58,72 @@ Guest Program fees includes access all festival activities for the full session.
 {%- endcapture -%}
 
 {%- capture details_content -%}
-<ul>
-    {%- for session in program.sessions -%}
-    <li>{{ session.session-name }} ({% include utilities/date-range.html dates=session.dates %})
-        <ul>
-            <li>{{ session.guests.hotel-description }}: <strong>${% include utilities/number-delimited.html number=session.guests.hotel-fee %}</strong></li>
-            <li><a href="{{ session.guests.form-url }}">Online application form</a></li>
-        </ul>
-    </li>
-    {%- endfor -%}
-    <li><a href="{{ program.url | relative_url }}#excursions-and-activities">Fees for additional options</a></li>
-</ul>
+<table>
+<tbody>
+
+{% comment %}This next section is taken from tuition-accommodations.md{% endcomment %}
+
+{%- include site/program/has-tuition-item.fx tuition-item-name="hotel-triple" program=program -%}
+{%- assign _has-hotel-triple = __return %}
+{%- include site/program/has-tuition-item.fx tuition-item-name="hotel-double" program=program -%}
+{%- assign _has-hotel-double = __return %}
+
+{%- if _has-hotel-triple -%}
+    {%- include site/program/tuition-item.html item-name="hotel-triple" has-tuition-item=_has-hotel-triple program=program use-guest-tuition=true -%}
+{%- elsif _has-hotel-double -%}
+    {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=_has-hotel-double program=program use-guest-tuition=true -%}
+{%- endif -%}
+
+{%- if program.tuition-guests.hotel-double-upgrade -%}
+<tr class="upgrade">
+    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-double-upgrade.name }}</p></td>
+    {%- assign _c = program.tuition-guests.hotel-double-upgrade -%}
+    {%- if _c == true -%}
+        {%- assign _c = program.tuition.hotel-double-upgrade -%}
+    {%- endif -%}
+    <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
+</tr>
+{%- endif -%}
+{%- if program.tuition-guests.hotel-single-upgrade -%}
+<tr class="upgrade">
+    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-single-upgrade.name }}</p></td>
+    {%- assign _c = program.tuition-guests.hotel-single-upgrade -%}
+    {%- if _c == true -%}
+        {%- assign _c = program.tuition.hotel-single-upgrade -%}
+    {%- endif -%}
+    <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
+</tr>
+{%- endif -%}
+
+{%- if program.tuition-guests.meal-plan -%}
+<tr class="base">
+    <td>
+        <p class="name">{{ site.data.accommodations.meal-plan.name }}</p>
+        <p class="description">{{ site.data.accommodations.meal-plan.description }}</p>
+    </td>
+    {%- assign _c = program.tuition-guests.meal-plan -%}
+    {%- if _c == true -%}
+        {%- assign _c = program.tuition.meal-plan -%}
+    {%- endif -%}
+    <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
+</tr>
+{%- endif -%}
+
+<tr class="base"><td><p><a href="{{ program.url | relative_url }}#excursions-and-activities">Fees for available excursions and activities</a></p>
+</td></tr>
+</tbody>
+</table>
 {%- endcapture -%}
+
 {% include site/details.html summary=details_summary details=details_content %}
 {%- endfor %}
 
-{% include application-instructions.md application=page.application %}
+
+{%- assign application-deadline = site.data.institute.application.deadline -%}
+{%- assign application-extended-deadline = site.data.institute.application.extended-deadline -%}
+{%- assign application-registration-fee = site.data.institute.application.registration-fee -%}
+{%- assign application-deposit = site.data.institute.application.deposit -%}
+{% include application-instructions.md %}
 
 {% include fees-deposits.md %}
 {% include cancellations.md %}

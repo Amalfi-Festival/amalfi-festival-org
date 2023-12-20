@@ -16,8 +16,10 @@ tuition:
     meal-plan: 540
     hotel-double: 3245
     hotel-single-upgrade: 749
-    guests:
-        hotel-double: 3195
+tuition-guests:
+    meal-plan: true
+    hotel-double: 3195
+    hotel-single-upgrade: true
 webpage-data:
     menu-title: Visual Arts
     hero-image: capri.jpg

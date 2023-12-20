@@ -5,6 +5,7 @@ Input variables:
     item-td: name/description of item to include table row
     item-name: name of tuition item
     has-tuition-item: result of has-tuition-item.fx for |item-name|
+    use-guest-tuition: whether to try to use the guest values for tuition costs. Falls back to normal tuition if not available.
 
 Fills in cost table with either the base tuition price, or with separate rows for individual session items.
 
@@ -12,11 +13,19 @@ If there is no base tuition price for the program, and we are listing the prices
 {%- endcomment -%}
 
 {%- assign __p = reference-program | default: include.program -%}
-{%- assign base-price = __p.tuition[include.item-name] -%}
+{%- if include.use-guest-tuition -%}
+    {%- assign __t = __p.tuition-guests -%}
+{%- else -%}
+    {%- assign __t = __p.tuition -%}
+{%- endif -%}
+{%- assign base-price = __t[include.item-name] -%}
+{%- if base-price == true -%}
+    {%- assign base-price = __p.tuition[include.item-name] -%}
+{%- endif -%}
 <tr class="base">
     <td>
-        <p class="name">{{ site.data.accommodations[include.item-name].name | default: __p.tuition.name | smartify }}</p>
-        <p class="description">{{ site.data.accommodations[include.item-name].description | default: __p.tuition.description | smartify }}</p>
+        <p class="name">{{ site.data.accommodations[include.item-name].name | default: __t.name | smartify }}</p>
+        <p class="description">{{ site.data.accommodations[include.item-name].description | default: __t.description | smartify }}</p>
     </td>
 {%- unless include.has-tuition-item == 2 -%}
     <td class="cost" align="center" valign="top"><p><strong>{% include utilities/format-cost.html cost=base-price %}</strong></p></td>
