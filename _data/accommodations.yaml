@@ -9,3 +9,13 @@ hotel-triple:
 hotel-double:
     name: Tuition with Hotel accommodations, double occupancy
     description: Double rooms includes buffet breakfast.
+
+hotel-double-upgrade:
+    name: "Hotel upgrade: Double Room"
+
+hotel-single-upgrade:
+    name: "Hotel upgrade: Single Room"
+
+meal-plan:
+    name: Meal plan dinners (optional)
+    description: Includes full three-course meal with wine & mineral water.
