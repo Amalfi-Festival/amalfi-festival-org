@@ -18,7 +18,7 @@ webpage-data:
     menu-title: Writing
     hero-image: ravello-villa-cimbrone.jpg
 ---
-{%- include site/program/initialize-program-variables.fx program=page -%}
+{%- include site/program/initialize-program-variables.fx -%}
 
 <section class="standard-block" markdown="1">
 
