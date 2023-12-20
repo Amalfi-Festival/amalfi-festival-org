@@ -27,18 +27,18 @@ fees-and-deposits:
     notification-date-if-prices-increase: 2024-05-15
 cancellation-policy:
     full-refund:
-        date: 2024-03-31
+        before-date: 2024-03-31
     processing-fee:
-        date: 2024-04-01
+        as-of-date: 2024-04-01
         amount: 50
     withdrawal-fee:
-        date: 2024-04-15
+        as-of-date: 2024-04-15
         amount: 100
     forfeit:
-        date: 2024-05-01
+        as-of-date: 2024-05-01
         deductible: 1500
     no-refund:
-        date: 2024-06-01
+        as-of-date: 2024-06-01
 
 ### Optional activities for all participants of the festival.
 ###

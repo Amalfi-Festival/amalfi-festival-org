@@ -10,6 +10,19 @@ application:
     deposit: 500
 tuition:
     cost: 2195
+cancellation-policy:
+    full-refund:
+        before-date: 2024-02-15
+    processing-fee:
+        as-of-date: 2024-03-15
+        amount: 50
+    withdrawal-fee:
+        as-of-date: 2024-04-15
+        amount: 100
+    forfeit:
+        as-of-date: 2024-05-01
+    no-refund:
+        after-date: 2024-05-01
 webpage-data:
     menu-title: Choral
 ---

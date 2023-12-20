@@ -32,6 +32,23 @@ tuition-guests:
     hotel-triple: # |true| or cost
     hotel-double-upgrade: # |true| or cost
     hotel-single-upgrade: # |true| or cost
+cancellation-policy:
+    # Optional override of cancellation policy for a specific program. This is unusual to have (mostly for choral program), and most programs rely on the cancellation schedule provided in _institute.yaml.
+    full-refund:
+        before-date: 2024-02-15
+    processing-fee:
+        as-of-date: 2024-03-15
+        amount: 50
+    withdrawal-fee:
+        as-of-date: 2024-04-15
+        amount: 100
+    forfeit:
+        as-of-date: 2024-05-01
+        deductible: # if specified, adds the phrase "up to a deductible of X."
+    no-refund:
+        # Choose one of the following.
+        as-of-date: # "As of [date]"
+        after-date: # "After [date]"
 webpage-data:
     menu-title:
     hero-image:
