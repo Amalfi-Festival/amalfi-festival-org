@@ -1,5 +1,7 @@
 {%- comment -%}
 Input variables:
+    program: program object (optional)
+        uses |reference-program| as default
     item-td: name/description of item to include table row
     item-name: name of tuition item
     has-tuition-item: result of has-tuition-item.fx for |item-name|
@@ -9,7 +11,7 @@ Fills in cost table with either the base tuition price, or with separate rows fo
 If there is no base tuition price for the program, and we are listing the prices for each session, then no item is listed for sessions that don't specifically add that fee. cf. lab fee.
 {%- endcomment -%}
 
-{%- assign __p = reference-program -%}
+{%- assign __p = reference-program | default: include.program -%}
 {%- assign base-price = __p.tuition[include.item-name] -%}
 <tr class="base">
     <td>

@@ -8,12 +8,11 @@ Returns:
     false - program does not have tuition item
     1 - program has tuition item
     2 - program has sessions with override tuition items (but not necessarily a fallback/general program tuition item)
+
+    Used in tuition-item.html.
 {%- endcomment -%}
 
-{%- assign __p = reference-program -%}
-{%- unless __p -%}
-    {%- assign __p = include.program -%}
-{%- endunless -%}
+{%- assign __p = reference-program | default: include.program -%}
 
 {%- assign __return = false -%}
 {%- for session in __p.sessions -%}
