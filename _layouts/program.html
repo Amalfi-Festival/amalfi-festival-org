@@ -38,8 +38,8 @@ custom-css: program
 {%- include site/session/get-session-name-with-dates.html session=session localization=page.show-localization -%}
 {%- endfor -%}
     </h2>
-{%- if page.program-header-subtitle -%}
-    {{- page.program-header-subtitle -}}
+{%- if page.webpage-data.program-header-subtitle -%}
+    {{- page.webpage-data.program-header-subtitle -}}
 {%- endif -%}
     </div>
 </div>
