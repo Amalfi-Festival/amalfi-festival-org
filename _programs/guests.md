@@ -1,12 +1,5 @@
 ---
 title: Guests & Auditors
-sessions:
-    -   dates:
-            start: 2023-07-05
-            end: 2023-07-30
-application:
-    allow-mail-registration: true
-    form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
 webpage-data:
     menu-title: Guests
     hero-image: home.jpg

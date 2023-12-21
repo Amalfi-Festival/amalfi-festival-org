@@ -27,16 +27,31 @@
 
 {% if application.allow-mail-registration %}
     * If you wish to register by mail, print and fill out the form.
-{% endif %}
+{%- endif -%}
+{%- unless application.form-url -%}
+    {%- for program-entry in site.data.institute.programs -%}
+        {%- if program-entry.translation -%}
+            {%- continue -%}
+        {%- endif -%}
+        {%- assign program = site.programs | where: "slug", program-entry.name | first -%}
+        {%- assign program-guest = program.tuition-guests -%}
+        {%- assign can-have-guests = false -%}
+        {%- unless program-guest -%}
+            {%- for session in program.sessions -%}
+                {%- if session.guests -%}
+                    {%- assign can-have-guests = true -%}
+                    {%- break -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endunless -%}
+        {%- unless program-guest or can-have-guests -%}
+            {%- continue -%}
+        {%- endunless %}
+    * [{{ program.title }}]({{ program.application.guest-form-url }})
+    {%- endfor -%}
+{%- endunless %}
 
-1. Pay registration fee and deposit<sup>†</sup> either electronically via PayPal (use the button below) or by mail.
-
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="V3ERVBU7KJCZL">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
+1. Pay registration fee and deposit either <a href="{{ site.baseurl }}{% link payment.html %}">electronically via PayPal</a><sup>†</sup> or by mail.
 
     * If paying by mail, enclose a check made out to *Center for Musical Studies* and send to:
 
@@ -46,13 +61,6 @@
 
 1. Applications are accepted until spaces are filled.
 
-1. Balance of payment is due upon receipt of invoice, approximately 60 days before departure. Pay electronically via PayPal or by mail using instructions above.
+1. Balance of payment is due upon receipt of invoice, approximately 60 days before departure. Pay <a href="{{ site.baseurl }}{% link payment.html %}">electronically via PayPal</a> or by mail using instructions above.
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="V3ERVBU7KJCZL">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
-
-**†** **Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for on-line payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*
+**†** **Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for online payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*
