@@ -70,16 +70,6 @@ activities:
                 name: 烹饪教学课程
                 description: 单节
         available-to-programs: true
-    -   name: Studio Art Class
-        cost: 85
-        description: Single workshop.
-        localization:
-            cn:
-                name: 绘画课程
-                description: 单节
-        available-to-programs:
-            - writing
-            - guests
     -   name: Ceramics Class
         cost: 85
         description: Single two-hour workshop.
