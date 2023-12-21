@@ -40,8 +40,8 @@ sessions:
             -   Yetong-Tang
             -   Shichao-Zhang
 application:
-    form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
-    guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
+    form-url: https://forms.gle/ebvRKq7ULbid4MC48
+    guest-form-url: https://forms.gle/LpyNuznuL6uogNDM9
 tuition:
     meal-plan: 625
     hotel-triple: 3385

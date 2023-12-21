@@ -5,8 +5,7 @@ sessions:
             start: 2024-07-10
             end: 2024-07-17
 application:
-    form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:c7610bfe-617b-4482-8a7f-b09513d1c287
-    guest-form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:edcacead-0546-45f0-bc7a-481cb8a4ffc0
+    form-url: https://forms.gle/33Zk5TXN2YP4Fb188
 tuition:
     hotel-double: 2450
     hotel-single-upgrade: 945

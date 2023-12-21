@@ -9,7 +9,7 @@ sessions:
             - Mary-Hall-Surface
 application:
     allow-mail-registration: true
-    form-url: https://forms.wix.com/0cb07d8d-319b-4ed3-a053-999b7fe2e326:a21a3441-3b15-49bc-aee2-ca2584bdbe35
+    form-url: https://forms.gle/wiA3j5DWk6XkVAGZ7
 tuition:
     meal-plan: 330
     hotel-double: 3100
