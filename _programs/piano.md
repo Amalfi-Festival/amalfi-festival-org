@@ -42,6 +42,19 @@ sessions:
 application:
     form-url: https://forms.gle/ebvRKq7ULbid4MC48
     guest-form-url: https://forms.gle/LpyNuznuL6uogNDM9
+outings:
+    activities:
+        -   outing-slug: language
+        -   outing-slug: cooking
+        -   outing-slug: ceramics
+    excursions:
+        -   outing-slug: ravello
+        -   outing-slug: pompeii
+        -   outing-slug: capri
+            additional-description: "***No lessons are scheduled on this day because almost all students take this trip.***"
+            localizations:
+                cn:
+                    additional-description: "asdf"
 tuition:
     meal-plan: 625
     hotel-triple: 3385
@@ -138,7 +151,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to historic l
 
 <section id="learn" class="background-image-container">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
-<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/festival/application-deadline.html %}</h3>
+<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
 <a class="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
 </section>
 

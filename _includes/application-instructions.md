@@ -3,7 +3,7 @@
 <ul class="highlight-box colored">
 <li>
     <h5>Application Deadline</h5>
-    <div>{% include site/festival/application-deadline.html %}</div>
+    <div>{% include site/program/application-deadline.html %}</div>
 </li>
 <li>
     <h5>Registration Fee</h5>
