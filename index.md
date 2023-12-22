@@ -72,7 +72,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
     {%- if program.to-be-announced -%}
     <div>
         <h3 class="program-name">{{ program.title | smartify }}</h3>
-        <ul><li>To be announced</li></ul>
+        <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
     </div>
     {%- else -%}
     <div>
