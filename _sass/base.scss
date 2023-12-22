@@ -49,6 +49,7 @@ $list-padding-left: 2em;
 
 $default-max-content-width: 60rem;
 $default-max-copy-width: 30rem;
+$standard-block-margin-left: 3rem;
 @mixin standard-block-behavior($additional-left-padding: null, $max-width: $default-max-content-width) {
     @if $max-width != nil {
         max-width: $max-width;

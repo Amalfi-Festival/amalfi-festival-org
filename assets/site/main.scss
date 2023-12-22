@@ -310,7 +310,7 @@ main:not(.standard-block) {
 
     > :is(ul, ol, p), > div > :is(ul, ol, p), > div > div > :is(ul, ol, p), dd, table, details {
         max-width: $default-max-copy-width;
-        margin-left: 3em;
+        margin-left: $standard-block-margin-left;
         @include breakpoint(mobile) {
             max-width: initial;
             margin-left: 0;
@@ -323,7 +323,7 @@ main:not(.standard-block) {
         }
         @include breakpoint(tablet) {
             max-width: $default-max-copy-width;
-            margin-left: 3em;
+            margin-left: $standard-block-margin-left;
         }
         @include breakpoint(mobile) {
             max-width: initial;
@@ -570,7 +570,7 @@ details {
     border-right: $border-style;
     max-width: 50em;
     grid-template-columns: auto auto;
-    margin-left: 3em;
+    margin-left: $standard-block-margin-left;
     @include breakpoint(mobile) {
         grid-template-columns: 1fr;
         margin-left: 0;

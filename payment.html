@@ -1,0 +1,86 @@
+---
+title: Online Payment Form
+custom-js: payment
+custom-css: payment
+---
+<section id="formSelectionContainer">
+<form class="standard-block">
+<h3>Select the payment type:</h3>
+<ol id="payTypeContainer">
+    <li><input type="radio" name="payType" id="payTypeRegistration" value="registration" /> <label for="payTypeRegistration">Pay registration fee</label></li>
+    <li><input type="radio" name="payType" id="payTypeBalance" value="balance" /> <label for="payTypeBalance">Pay balance</label></li>
+</ol>
+</form>
+</section>
+
+<section id="formContainer">
+
+<form class="standard-block" id="formRegistration" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+<h3>Select the program:</h3>
+<input type="hidden" name="on0" value="Program" />
+<ol id="programContainer">
+{% for program-slug in site.data.institute.programs -%}
+{%- if program-slug.translation -%}
+    {%- continue -%}
+{%- endif -%}
+{%- assign _program = site.programs | where: "slug", program-slug.name | first %}
+    <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
+{% endfor %}
+</ol>
+
+<h3><label for="os1">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
+<input type="hidden" name="on1" value="Applicant Name" />
+<input type="text" name="os1" id="os1" maxLength="200" required />
+
+{% for program-slug in site.data.institute.programs -%}
+    {%- if program-slug.translation -%}
+        {%- continue -%}
+    {%- endif -%}
+
+    {%- assign _program = site.programs | where: "slug", program-slug.name | first %}
+    {%- include site/program/initialize-program-variables.fx program=_program -%}
+<div class="invoice" id="invoice-{{ program-slug.name }}">
+<h3>Fee items</h3>
+<table><tbody>
+    <tr class="header"><td colspan="2"><p>{{ _program.title | smartify }}</p></td></tr>
+    <tr>
+        <td><p>Registration fee (non-refundable):</p></td>
+        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-registration-fee %}</p></td>
+    </tr>
+    <tr>
+        <td><p>Deposit:</p></td>
+        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-deposit %}</p></td>
+    </tr>
+    <tr>
+        <td><p>Credit card payment service fee:</p></td>
+        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=15 %}</p></td>
+    </tr>
+    <tr class="base">
+        <td><p>Total:</p></td>
+        {%- assign _total = application-registration-fee | plus: application-deposit | plus: 15 -%}
+        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=_total %}</p></td>
+    </tr>
+</tbody></table>
+</div>
+{% endfor %}
+
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="Q9299ADLMEWBL" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="submit" class="button" name="submit" value="Pay Through PayPal" />
+</form>
+
+<form class="standard-block" id="formBalance" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<h3><label for="os0">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
+<input type="hidden" name="on0" value="Applicant Name"/>
+<input type="text" name="os0" id="os0" maxLength="200" />
+
+<h3>{{ "Click the button below to enter the balance of payment and complete the transaction on PayPal's website." | smartify }}</h3>
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4WQYXEQBMSJCG">
+<input type="hidden" name="currency_code" value="USD" />
+<input type="submit" class="button" name="submit" value="Pay Through PayPal" />
+</form>
+
+</section>

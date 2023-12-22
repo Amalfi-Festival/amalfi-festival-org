@@ -1,0 +1,53 @@
+---
+---
+@charset "utf-8";
+@import "base", "institute";
+
+$form-text-size: 1.2rem;
+
+main {
+    min-height: 50vh;
+}
+ol {
+    font-size: $form-text-size;
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+#formRegistration, #formBalance {
+    display: none;
+}
+.registration #formRegistration,
+.balance #formBalance {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: $form-text-size;
+    font-family: $body-font;
+    padding: .5em;
+    margin-left: $standard-block-margin-left;
+}
+
+.cost {
+    padding-right: 2em;
+}
+
+.invoice {
+    display: none;
+}
+{% for program-slug in site.data.institute.programs -%}
+    {%- if program-slug.translation -%}
+        {%- continue -%}
+    {%- endif -%}
+{% if forloop.index0 > 0 %},{% endif %}.{{ program-slug.name }} #invoice-{{ program-slug.name }}
+{% endfor %}
+{
+    display: block;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1em;
+    font-family: $body-font;
+}

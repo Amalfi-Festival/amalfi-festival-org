@@ -287,7 +287,7 @@ section .image-container {
         display: block;
 
         width: $default-max-copy-width;
-        margin-left: 3em;
+        margin-left: $standard-block-margin-left;
         @include breakpoint(mobile) {
             width: 100%;
             margin-left: 0;
