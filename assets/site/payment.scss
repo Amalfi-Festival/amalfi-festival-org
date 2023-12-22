@@ -25,7 +25,16 @@ input[type="text"] {
     font-size: $form-text-size;
     font-family: $body-font;
     padding: .5em;
+    border: 1px solid $brand-blue;
+    border-radius: $border-radius-small;
+
+    width: $default-max-copy-width;
     margin-left: $standard-block-margin-left;
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
 
 .cost {
@@ -71,12 +80,6 @@ input[type="radio"] {
     &:checked::before {
         transform: scale(1);
     }
-}
-
-input[type="text"] {
-    border: 1px solid $brand-blue;
-    border-radius: $border-radius-small;
-    width: $default-max-copy-width;
 }
 
 input[type="submit"] {
