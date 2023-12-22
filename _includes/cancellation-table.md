@@ -34,5 +34,3 @@ As of {{ __c.no-refund.as-of-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 
 <div><p markdown="1">***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made.</p></div>
 </div>
-
-**Please note:** *Fees are subject to revision in cases of significant currency fluctuation between the Euro and the dollar or if international political situations or natural disaster cause significant economic duress resulting in unexpected cost increases.*

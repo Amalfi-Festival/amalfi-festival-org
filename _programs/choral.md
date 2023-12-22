@@ -26,6 +26,7 @@ tuition:
     name: Cost (not including airfare)
     description: Balance due will be made in two payments of $975. Invoices will be sent to trip participants with the deadline for those amounts.
 cancellation-policy:
+    trip-insurance-required: true
     full-refund:
         before-date: 2024-02-15
     processing-fee:
