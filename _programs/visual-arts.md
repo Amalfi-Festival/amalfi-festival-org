@@ -1,5 +1,6 @@
 ---
 title: Visual Arts Program
+to-be-announced: true
 sessions:
     -   session-name: Painting
         class-name: exploring-watercolor

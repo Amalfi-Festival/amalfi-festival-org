@@ -95,7 +95,7 @@ section#institute {
 
         > div {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
             @include breakpoint(mobile) {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -127,9 +127,9 @@ section#institute {
             object-fit: cover;
 
             + div {
-                min-width: 14em;
+                width: 16em;
                 @include breakpoint(mobile) {
-                    min-width: initial;
+                    width: initial;
                 }
             }
         }

@@ -184,6 +184,9 @@ body.guests > header .link-guests {
     font-weight: 600;
     color: $brand-blue;
 }
+.link-disabled {
+    opacity: .4;
+}
 
 body > main {
     margin-top: 3rem;

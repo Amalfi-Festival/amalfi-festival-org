@@ -24,9 +24,12 @@ custom-css: payment
 {%- if program-slug.translation -%}
     {%- continue -%}
 {%- endif -%}
-{%- assign _program = site.programs | where: "slug", program-slug.name | first %}
+{%- assign _program = site.programs | where: "slug", program-slug.name | first -%}
+{%- if _program.to-be-announced -%}
+    {%- continue -%}
+{%- endif -%}
     <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
-{% endfor %}
+{%- endfor -%}
 </ol>
 
 <h3><label for="os1">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>

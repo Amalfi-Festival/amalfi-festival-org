@@ -6,7 +6,11 @@
     {%- endif -%}
     {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
     {%- if p -%}
+        {%- if p.to-be-announced -%}
+<span class="link-{{ p.slug }} link-disabled">{{ p.webpage-data.menu-title }}</span>
+        {%- else -%}
 <a class="link-{{ p.slug }}" href="{{ p.url | relative_url }}">{{ p.webpage-data.menu-title }}</a>
+        {%- endif -%}
     {%- endif -%}
 {%- endfor -%}
 

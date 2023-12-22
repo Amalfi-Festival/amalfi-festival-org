@@ -69,6 +69,12 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 {%- assign program = site.programs | where: "slug", program-slug | first -%}
 <div>
     <img src="{{ site.program-assets-directory | append: program-slug | append: '/home.jpg' | relative_url }}" />
+    {%- if program.to-be-announced -%}
+    <div>
+        <h3 class="program-name">{{ program.title | smartify }}</h3>
+        <ul><li>To be announced</li></ul>
+    </div>
+    {%- else -%}
     <div>
         <a href="{{ program.url | relative_url }}">
             <h3 class="program-name">{{ program.title | smartify }}</h3>
@@ -89,6 +95,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
             <a href="{{ __return }}" class="button">Apply</a>
         </div>
     </div>
+    {%- endif -%}
 </div>
 {%- endfor -%}
 </div>

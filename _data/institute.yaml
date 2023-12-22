@@ -9,9 +9,9 @@ programs:
     -   name: piano-cn
         translation: true
     -   name: piano-teaching
+    -   name: choral
     -   name: visual-arts
     -   name: writing
-    -   name: choral
 
 ### Application deadline, registration fee, and deposit for all programs.
 ### Optionally if the deadline is to be extended, uncomment the "extended-deadline" line
