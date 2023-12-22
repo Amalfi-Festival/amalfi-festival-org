@@ -1,6 +1,6 @@
 ---
 title:
-to-be-announced: # set to |true| if not yet confirmed. Remove the line completely once it is. If a program is not supposed to be part of the festival at all, remove it in institute.yaml.
+to-be-announced: # set to |true| if not yet confirmed. Remove the line completely once it is. If a program is not supposed to be part of the festival at all, remove it in festival.yaml.
 sessions:
     -   session-name:
         session-name-cn:
@@ -17,10 +17,10 @@ sessions:
 application:
     form-url:
     guest-form-url:
-    deadline: # OPTIONAL. Overrides _institute.yaml.
-    extended-deadline: # OPTIONAL. Overrides _institute.yaml.
-    registration-fee: # OPTIONAL. Overrides _institute.yaml.
-    deposit: # OPTIONAL. Overrides _institute.yaml.
+    deadline: # OPTIONAL. Overrides festival.yaml.
+    extended-deadline: # OPTIONAL. Overrides festival.yaml.
+    registration-fee: # OPTIONAL. Overrides festival.yaml.
+    deposit: # OPTIONAL. Overrides festival.yaml.
 tuition:
     # For most programs with accommodation options
     meal-plan: # cost
@@ -41,7 +41,7 @@ tuition-guests:
     hotel-double-upgrade: # |true| or cost
     hotel-single-upgrade: # |true| or cost
 cancellation-policy:
-    # Optional override of cancellation policy for a specific program. This is unusual to have (mostly for choral program), and most programs rely on the cancellation schedule provided in _institute.yaml.
+    # Optional override of cancellation policy for a specific program. This is unusual to have (mostly for choral program), and most programs rely on the cancellation schedule provided in festival.yaml.
     full-refund:
         before-date: 2024-02-15
     processing-fee:

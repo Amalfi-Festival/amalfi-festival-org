@@ -27,7 +27,7 @@ webpage-data:
 <section id="hero">
     <div class="logo">
         <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
-        <span>{{ site.data.institute.edition }}</span>
+        <span>{{ site.data.festival.edition }}</span>
     </div>
     <div class="image-container">
         <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" class="rellax" data-rellax-speed="-2" />
@@ -36,9 +36,9 @@ webpage-data:
 
 <section class="copy" markdown="1">
 
-{% assign institute-age = 'now' | date: "%Y" | minus: 1997 %}
+{% assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
 
-## {{ institute-age }} Years of Music & Art on the Amalfi Coast
+## {{ festival-age }} Years of Music & Art on the Amalfi Coast
 The Amalfi Coast Music & Arts Festival is produced by the Center of Musical Studies of Washington, in conjunction with the Accademia Jacopo Napoli of Salerno, Italy, and Artis International. The festival is based in Maiori, Italy, and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast, in the area, including the excavations of Pompeii, the world-famous vistas of Ravello, where Wagner composed Parisfal, the incomparable Greek temples at Paestum, the magical isle of Capri, and more.
 
 </section>
@@ -54,14 +54,14 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 
 </section>
 
-<section id="institute" class="background-image-container">
+<section id="festival" class="background-image-container">
 <img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
 
 <div class="inset-container">
 <div class="content-container">
 <h2 id="programs">Programs</h2>
 <div>
-{%- for program-entry in site.data.institute.programs -%}
+{%- for program-entry in site.data.festival.programs -%}
 {%- if program-entry.translation -%}
     {%- continue -%}
 {%- endif -%}
@@ -103,39 +103,6 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 </div>
 
 </section>
-
-
-<section id="institute2" class="background-image-container">
-<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
-
-<h2>Programs</h2>
-
-<div>
-{%- for program-entry in site.data.institute.programs -%}
-{%- if program-entry.translation -%}
-    {%- continue -%}
-{%- endif -%}
-{%- assign program-name = program-entry.name -%}
-{%- assign program = site.programs | where: "slug", program-name | first -%}
-<a href="{{ program.url | relative_url }}">
-    <h3 class="program-name">{{ program.title | smartify }}</h3>
-    <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
-    <ul>
-    {%- for session in program.sessions -%}
-        <li>
-        {%- if session.session-name -%}
-            {{- session.session-name }}:
-        {% endif -%}
-        {%- include utilities/date-range.html dates=session.dates -%}
-        </li>
-    {%- endfor -%}
-    </ul>
-</a>
-{%- endfor -%}
-</div>
-
-</section>
-
 
 <section class="copy" markdown="1">
 

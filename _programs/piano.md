@@ -123,7 +123,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to historic l
 
 <section id="faculty" markdown="1">
 
-## Our distinguished {{ site.data.institute.application.deadline | date: "%Y" }} faculty
+## Our distinguished {{ site.data.festival.application.deadline | date: "%Y" }} faculty
 {: class="standard-block"}
 
 {% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
@@ -138,7 +138,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to historic l
 
 <section id="learn" class="background-image-container">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
-<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/institute/application-deadline.html %}</h3>
+<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/festival/application-deadline.html %}</h3>
 <a class="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
 </section>
 

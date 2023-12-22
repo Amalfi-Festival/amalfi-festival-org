@@ -4,7 +4,7 @@ All cancellations must be made in writing by email. Phone calls or phone message
 
 Deposit and tuition payment refunds are made according to the following schedule:
 
-{% assign p = site.data.institute.cancellation-policy %}
+{% assign p = site.data.festival.cancellation-policy %}
 
 <div id="cancellation-schedule" markdown="1">
 Before {{ p.full-refund.date | date: "%B&nbsp;%-e,&nbsp;%Y" }}

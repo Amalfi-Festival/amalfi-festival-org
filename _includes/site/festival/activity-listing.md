@@ -1,4 +1,4 @@
-{%- assign activity = site.data.institute.activities | where: "name", include.activity-name | first -%}
+{%- assign activity = site.data.festival.activities | where: "name", include.activity-name | first -%}
 {%- if activity.available-to-programs %}
 ### {{ activity.name }}
 

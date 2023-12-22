@@ -27,7 +27,7 @@ Guests will enjoy eating and socializing with the musicians and attending pre-co
 
 Guest Program fees includes access to all festival activities for the full session.
 
-{% for program-entry in site.data.institute.programs -%}
+{% for program-entry in site.data.festival.programs -%}
     {%- if program-entry.translation -%}
         {%- continue -%}
     {%- endif -%}
@@ -112,10 +112,10 @@ Guest Program fees includes access to all festival activities for the full sessi
 {%- endfor %}
 
 
-{%- assign application-deadline = site.data.institute.application.deadline -%}
-{%- assign application-extended-deadline = site.data.institute.application.extended-deadline -%}
-{%- assign application-registration-fee = site.data.institute.application.registration-fee -%}
-{%- assign application-deposit = site.data.institute.application.deposit -%}
+{%- assign application-deadline = site.data.festival.application.deadline -%}
+{%- assign application-extended-deadline = site.data.festival.application.extended-deadline -%}
+{%- assign application-registration-fee = site.data.festival.application.registration-fee -%}
+{%- assign application-deposit = site.data.festival.application.deposit -%}
 {% include application-instructions.md %}
 
 {% include fees-deposits.md %}

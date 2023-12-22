@@ -10,7 +10,7 @@ Establishes local variables:
 
     The following application data is set based on the following priority order:
         1. |reference-program|
-        2. institute.yaml
+        2. festival.yaml
     - application-deadline
     - application-extended-deadline: this is set by the same object used for |application-deadline|
     - application-registration-fee
@@ -30,10 +30,10 @@ Establishes local variables:
 {%- assign apply-url = __return -%}
 
 
-{%- assign application-deadline = site.data.institute.application.deadline -%}
-{%- assign application-extended-deadline = site.data.institute.application.extended-deadline -%}
-{%- assign application-registration-fee = site.data.institute.application.registration-fee -%}
-{%- assign application-deposit = site.data.institute.application.deposit -%}
+{%- assign application-deadline = site.data.festival.application.deadline -%}
+{%- assign application-extended-deadline = site.data.festival.application.extended-deadline -%}
+{%- assign application-registration-fee = site.data.festival.application.registration-fee -%}
+{%- assign application-deposit = site.data.festival.application.deposit -%}
 
 {%- if program.application -%}
     {%- assign application = program.application -%}

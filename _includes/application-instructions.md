@@ -3,7 +3,7 @@
 <ul class="highlight-box colored">
 <li>
     <h5>Application Deadline</h5>
-    <div>{% include site/institute/application-deadline.html %}</div>
+    <div>{% include site/festival/application-deadline.html %}</div>
 </li>
 <li>
     <h5>Registration Fee</h5>
@@ -29,7 +29,7 @@
     * If you wish to register by mail, print and fill out the form.
 {%- endif -%}
 {%- unless application.form-url -%}
-    {%- for program-entry in site.data.institute.programs -%}
+    {%- for program-entry in site.data.festival.programs -%}
         {%- if program-entry.translation -%}
             {%- continue -%}
         {%- endif -%}

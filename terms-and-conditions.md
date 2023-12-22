@@ -1,13 +1,13 @@
 ---
 title: Terms & Conditions
-custom-css: institute
+custom-css: festival
 ---
 
 <section id="cancellation-policy" class="standard-block" markdown="1">
 {% include cancellation-policy.md %}
 {%- assign hide-all = "" -%}
 {%- assign show-only = "" -%}
-{%- for _program in site.data.institute.programs -%}
+{%- for _program in site.data.festival.programs -%}
     {%- if _program.translation -%}
         {%- continue -%}
     {%- endif -%}

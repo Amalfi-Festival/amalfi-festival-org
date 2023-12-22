@@ -1,6 +1,6 @@
 <table>
 {%- assign excursions = site.empty-array -%}
-{%- for excursion in site.data.institute.excursions -%}
+{%- for excursion in site.data.festival.excursions -%}
     {%- unless excursion.available-to-programs -%}
         {%- continue -%}
     {%- endunless -%}
@@ -31,7 +31,7 @@
     </tbody>
 {%- endif -%}
 {%- assign activities = site.empty-array -%}
-{%- for activity in site.data.institute.activities -%}
+{%- for activity in site.data.festival.activities -%}
     {%- unless activity.available-to-programs -%}
         {%- continue -%}
     {%- endunless -%}

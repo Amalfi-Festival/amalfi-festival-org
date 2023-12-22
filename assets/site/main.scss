@@ -169,7 +169,7 @@ body:has(#hero) > header {
         }
     }
 }
-{%- for program-entry in site.data.institute.programs -%}
+{%- for program-entry in site.data.festival.programs -%}
     {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
     {%- assign rp = p -%}
     {%- if p.reference-program -%}

@@ -1,7 +1,7 @@
 ---
 ---
 @charset "utf-8";
-@import "base", "institute";
+@import "base", "festival";
 
 $form-text-size: 1.2rem;
 
@@ -35,7 +35,7 @@ input[type="text"] {
 .invoice {
     display: none;
 }
-{% for program-slug in site.data.institute.programs -%}
+{% for program-slug in site.data.festival.programs -%}
     {%- if program-slug.translation -%}
         {%- continue -%}
     {%- endif -%}

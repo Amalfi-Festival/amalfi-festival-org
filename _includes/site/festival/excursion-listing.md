@@ -1,4 +1,4 @@
-{%- assign excursion = site.data.institute.excursions | where: "name", include.excursion-name | first %}
+{%- assign excursion = site.data.festival.excursions | where: "name", include.excursion-name | first %}
 
 <div class="excursion-hero">
 <img src="{{ site.image-directory | append: include.hero-image | relative_url }}" />

@@ -10,7 +10,7 @@ body > main {
     margin-top: 0;
 }
 section {
-    &:not(:first-of-type, #institute) {
+    &:not(:first-of-type, #festival) {
         @include standard-block-behavior;
         margin-top: 3rem;
         margin-bottom: 3rem;
@@ -71,7 +71,7 @@ section#hero {
     }
 }
 
-section#institute {
+section#festival {
     padding-top: 3rem;
     padding-bottom: 3rem;
 
@@ -166,54 +166,6 @@ section#institute {
         margin: 0
     }
 
-}
-
-section#institute2 {
-    display: none;
-    > img {
-        filter: brightness(1.2) saturate(2.0) blur(2px);
-        opacity: .6;
-    }
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    max-width: initial;
-    h2 {
-        text-transform: uppercase;
-        font-size: 2em;
-        margin-bottom: 2rem;
-    }
-    h3 {
-        font-size: 1.25em;
-        margin-top: 1rem;
-    }
-    > div {
-        @include standard-block-behavior;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
-        gap: 2em;
-
-        > a {
-            padding: 1rem;
-            border-radius: $border-radius-large;
-            background-color: white;
-            text-decoration: none;
-            &:hover {
-                background-image: linear-gradient(160deg, #038C8CEE, #025E5EEE);
-                color: $brand-light-yellow;
-            }
-            ul {
-                list-style-type: none;
-                padding-left: 0;
-            }
-            img {
-                width: 100%;
-                max-width: 19em;
-                aspect-ratio: 1;
-                object-fit: cover;
-            }
-        }
-    }
 }
 
 section#sponsors {

@@ -20,7 +20,7 @@ custom-css: payment
 <h3>Select the program:</h3>
 <input type="hidden" name="on0" value="Program" />
 <ol id="programContainer">
-{% for program-slug in site.data.institute.programs -%}
+{% for program-slug in site.data.festival.programs -%}
 {%- if program-slug.translation -%}
     {%- continue -%}
 {%- endif -%}
@@ -36,7 +36,7 @@ custom-css: payment
 <input type="hidden" name="on1" value="Applicant Name" />
 <input type="text" name="os1" id="os1" maxLength="200" required />
 
-{% for program-slug in site.data.institute.programs -%}
+{% for program-slug in site.data.festival.programs -%}
     {%- if program-slug.translation -%}
         {%- continue -%}
     {%- endif -%}

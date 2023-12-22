@@ -1,4 +1,4 @@
-{% assign __c = reference-program.cancellation-policy | default: site.data.institute.cancellation-policy %}
+{% assign __c = reference-program.cancellation-policy | default: site.data.festival.cancellation-policy %}
 
 <div id="cancellation-schedule" markdown="1">
 Before {{ __c.full-refund.before-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
