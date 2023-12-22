@@ -64,6 +64,6 @@
 
 1. Applications are accepted until spaces are filled.
 
-1. Balance of payment is due upon receipt of invoice, approximately 60 days before departure. Pay <a href="{{ paymentURL }}">electronically via PayPal</a> or by mail using instructions above.
+1. Balance of payment is due upon receipt of invoice, approximately 60 days before departure. Pay <a href="{{ site.baseurl }}{% link payment.html %}?balance=1">electronically via PayPal</a> or by mail using instructions above.
 
 **†** **Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for online payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*

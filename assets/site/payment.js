@@ -19,5 +19,8 @@ window.addEventListener("DOMContentLoaded", function() {
         document.getElementById(`program-${search.get("registration")}`).checked = true;
         payTypeChanged();
         programChanged();
+    } else if (search.get("balance")) {
+        document.getElementById("payTypeBalance").checked = true;
+        payTypeChanged();
     }
 });
