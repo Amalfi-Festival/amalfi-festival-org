@@ -1,11 +1,3 @@
-## Cancellation Policy & Refunds
-
-All cancellations must be made in writing by email. Phone calls or phone messages are not accepted.
-
-If the festival is cancelled for any reason by the Amalfi Coast Music & Arts Festival, a full refund will be given, less the registration fee.
-
-Deposit and tuition payment refunds are made according to the following schedule:
-
 {% assign __c = reference-program.cancellation-policy | default: site.data.institute.cancellation-policy %}
 
 <div id="cancellation-schedule" markdown="1">
@@ -31,10 +23,8 @@ As of {{ __c.forfeit.as-of-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 
 {% capture __no-refund-date %}
 {%- if __c.no-refund.after-date -%}
-    {%- assign __reminder-date = __c.no-refund.after-date -%}
 After {{ __c.no-refund.after-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {%- else -%}
-    {%- assign __reminder-date = __c.no-refund.as-of-date -%}
 As of {{ __c.no-refund.as-of-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 {%- endif -%}
 {% endcapture %}
@@ -44,9 +34,5 @@ As of {{ __c.no-refund.as-of-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}
 
 <div><p markdown="1">***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made.</p></div>
 </div>
-
-Trip insurance is strongly recommended for your protection in case of cancellation or trip interruption. No refunds are available for partial use of program.
-
-**Reminder: No refunds for cancellations will be issued after {{ __reminder-date | date: "%B&nbsp;%-e,&nbsp;%Y" }}.**
 
 **Please note:** *Fees are subject to revision in cases of significant currency fluctuation between the Euro and the dollar or if international political situations or natural disaster cause significant economic duress resulting in unexpected cost increases.*

@@ -119,6 +119,6 @@ Guest Program fees includes access to all festival activities for the full sessi
 {% include application-instructions.md %}
 
 {% include fees-deposits.md %}
-{% include cancellations.md %}
+{% include site/program/cancellations.md %}
 
 </section>

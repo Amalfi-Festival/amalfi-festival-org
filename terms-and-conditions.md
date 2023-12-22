@@ -3,9 +3,46 @@ title: Terms & Conditions
 custom-css: institute
 ---
 
-<section class="standard-block" markdown="1">
+<section id="cancellation-policy" class="standard-block" markdown="1">
+{% include cancellation-policy.md %}
+{%- assign hide-all = "" -%}
+{%- assign show-only = "" -%}
+{%- for _program in site.data.institute.programs -%}
+    {%- if _program.translation -%}
+        {%- continue -%}
+    {%- endif -%}
+    {%- assign reference-program = site.programs | where: "slug", _program.name | first -%}
+    {%- if reference-program.to-be-announced -%}
+        {%- continue -%}
+    {%- endif -%}
 
-{% include cancellations.md %}
+    {%- if hide-all == "" -%}
+        {%- assign hide-all = hide-all | append: "." | append: reference-program.slug | append: " > div" -%}
+        {%- assign show-only = show-only | append: "." | append: reference-program.slug | append: " #cancellation-" | append: reference-program.slug -%}
+    {%- else -%}
+        {%- assign hide-all = hide-all | append: ",." | append: reference-program.slug | append: " > div" -%}
+        {%- assign show-only = show-only | append: ",." | append: reference-program.slug | append: " #cancellation-" | append: reference-program.slug -%}
+    {%- endif %}
+
+<div id="cancellation-{{ reference-program.slug }}" markdown="1">
+### {{ reference-program.title | smartify }}
+
+{% include cancellation-table.md %}
+</div>
+{%- endfor %}
+<style>
+{{ hide-all }} { display: none; }
+{{ show-only }} { display: block; }
+</style>
+<script>
+var _queryProgram = new URLSearchParams(location.search).get("program");
+if (_queryProgram) {
+    document.getElementById("cancellation-policy").classList.add(_queryProgram);
+}
+</script>
+</section>
+
+<section class="standard-block" markdown="1">
 
 ## Miscellaneous Costs Not Included in Festival Fees
 

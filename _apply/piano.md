@@ -35,5 +35,5 @@ During the application process, you may request lessons with the faculty listed 
 * Each work should be uploaded as separate tracks.
 
 {% include fees-deposits.md %}
-{% include cancellations.md %}
+{% include site/program/cancellations.md %}
 

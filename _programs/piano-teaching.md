@@ -76,5 +76,5 @@ The cost for Tuition & Accommodations is listed as one total fee, which includes
 {% include activity-fees.md %}
 {% include application-instructions.md %}
 {% include fees-deposits.md %}
-{% include cancellations.md %}
+{% include site/program/cancellations.md %}
 </section>
