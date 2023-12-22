@@ -13,6 +13,14 @@ application:
     registration-fee: 45
     deposit: 500
     form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
+outings:
+    excursions:
+        -   outing-slug: ravello
+            cost: 0
+        -   outing-slug: pompeii
+            cost: 0
+    activities:
+        -   outing-slug: cooking
 tuition:
     cost: 2195
     name: Cost (not including airfare)
@@ -54,7 +62,7 @@ Friends and family members are welcome to join the tour as guests. They will enj
 {% endcapture %}
 {% include tuition-accommodations.md title="What's Included" description=tuition-description %}
 
-{% include activity-fees.md %}
+{% include outings-fees.md %}
 
 {% include application-instructions.md %}
 

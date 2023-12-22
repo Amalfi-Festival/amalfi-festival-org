@@ -1,0 +1,8 @@
+<table>
+{%- if reference-program.outings.excursions -%}
+    {%- include site/program/outings-table-body.html header="Excursions" outing-type="excursions" -%}
+{%- endif -%}
+{%- if reference-program.outings.activities -%}
+    {%- include site/program/outings-table-body.html header="Activities" outing-type="activities" -%}
+{%- endif -%}
+</table>

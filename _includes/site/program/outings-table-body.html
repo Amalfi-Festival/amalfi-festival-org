@@ -1,0 +1,21 @@
+<tbody>
+<tr class="header"><td colspan="2"><p>{{ include.header }}</p></td></tr>
+{%- for _outing in reference-program.outings[include.outing-type] -%}
+{%- assign _festival-outing = site.data.outings[include.outing-type][_outing.outing-slug] -%}
+<tr>
+<td>
+    <p class="name">{{ _festival-outing.name }}{% if _festival-outing.length %} ({{ _festival-outing.length }}){% endif %}</p>
+    {%- if _festival-outing.description -%}
+    <p class="description">{% include utilities/markdownify-without-p.html text=_festival-outing.description %} {% include utilities/markdownify-without-p.html text=_outing.additional-description %} <a href="{{ site.baseurl }}{% link excursions-and-activities.md  %}#{{ _outing.outing-slug | downcase }}">Learn more</a></p>
+    {%- endif -%}
+</td><td class="cost" align="center" valign="top"><p>
+    {%- assign _cost = _outing.cost | default: _festival-outing.cost -%}
+    {%- if _cost == 0 -%}
+        Included
+    {%- else -%}
+        {%- include utilities/format-cost.html localization=include.localization cost=_cost -%}
+    {%- endif -%}
+</p></td>
+</tr>
+{%- endfor -%}
+</tbody>

@@ -40,7 +40,7 @@ Its stunning views and powerful atmosphere have made it a favorite respite and i
 * **Villa Cimbrone** – Purchased and remodeled by Lord William Beckett in 1904, this beautiful architectural phenomenon is an eclectic mix of styles and eras, archeological relics and souvenirs of Beckett’s own extensive travels. The luxuriant garden is filled with decorative elements including fountains, small temples, pavilions, statues, and paths which culminate in the “Terrace of the Infinite," known as one of the most beautiful views in the whole world.
 * **Oscar Niemeyer Auditorium** - A controversial international design legend, it is a powerful work of modern architecture whose 400-seat amphitheater has been likened to a “sheet of white paper blowing in the wind.”
 {%- endcapture -%}
-{%- include site/festival/excursion-listing.md excursion-name="Ravello" hero-image="ravello.jpg" description=description -%}
+{%- include site/festival/excursion-listing.md outing-slug="ravello" hero-image="ravello.jpg" description=description -%}
 
 
 {%- capture description -%}
@@ -62,7 +62,7 @@ A tourist destination for over 250 years, Pompeii is now an UNESCO World Heritag
 * **Amphitheatre of Pompeii** – Believed to be the earliest Roman amphitheater constructed of stone, it remains in startlingly practical condition today. Praised for its acoustics and optimal design, it is still used today as a concert and public events venue.
 * **Garden of the Fugitives** - Giuseppe Fiorelli took charge of the Pompeii excavations in 1863. During early excavations of the site, occasional voids in the ash layer had been found that contained human remains. Fiorelli realized these were spaces left by the decomposed bodies and devised the technique of injecting plaster into them to recreate the forms of Vesuvius's victims. This technique is still in use today, with a clear resin now used instead of plaster because it is more durable, and does not destroy the bones, allowing further analysis. Today, many casts can also be found in the Archaeological Museum of Naples.
 {%- endcapture -%}
-{%- include site/festival/excursion-listing.md excursion-name="Pompeii" hero-image="pompeii.jpg" description=description -%}
+{%- include site/festival/excursion-listing.md outing-slug="pompeii" hero-image="pompeii.jpg" description=description -%}
 
 
 {%- capture description -%}
@@ -88,7 +88,7 @@ In the latter half of the 19th century, Capri started to become a popular resort
 * **Anacapri** - The Ancient Greek prefix ana means "up" or "above", indicating that this separate comune is located at a higher elevation than Capri (about 150 m higher on average). Claude Debussy was a regular visitor here, naming one of his preludes from the first book, No.5 "Les collines d'Anacapri", or “The hills of Anacapri.” There is a bus service, via numerous hairpin bends, from Marina Grande and Capri to Anacapri. However, one may choose to take the popular chairlift (seggiovia) to 589-m Monte Solaro for picturesque views of the south-facing coast.
 * **Villa Jovis** - The best preserved of Emperor Tiberius’s villas, it was restored in the 1990's by the Lysis Association and the Council of Capri. Constructed on the top of cliffs from which there are views of the Bay of Naples, the islands of Ischia and Procida, the Sorrentine Peninsula and the Bay of Salerno, visitors can access the villa by walking from the Piazzetta through the town's medieval center, beneath the vaulted arches of Via Longarno, and along the panoramic Via Sopramonte and Via Tiberius (approx. 40 min.).
 {%- endcapture -%}
-{%- include site/festival/excursion-listing.md excursion-name="Capri" hero-image="capri.jpg" description=description -%}
+{%- include site/festival/excursion-listing.md outing-slug="capri" hero-image="capri.jpg" description=description -%}
 
 
 ## Activities
@@ -96,26 +96,13 @@ In the latter half of the 19th century, Capri started to become a popular resort
 {%- capture description -%}
 Daily lessons of basic Italian, with emphasis on oral communication and pronunciation through lively exchanges.
 {%- endcapture -%}
-{%- include site/festival/activity-listing.md activity-name="Italian Language Class" description=description -%}
+{%- include site/festival/activity-listing.md outing-slug="language" description=description -%}
 
 
 {%- capture description -%}
 Mediterranean Cuisine of Campania: a series of regional southern Italian cooking lessons will be offered in the kitchens of the area's most famous restaurants. A gastronomic hands-on adventure where you will learn the finest traditional local pastas, savory Mediterranean side dishes, and seafood specialties. Then sit down and sample your labors at a four-course lunch! Take home the recipes and insiders' knowledge of ingredients.
 {%- endcapture -%}
-{%- include site/festival/activity-listing.md activity-name="Cooking Lesson" description=description -%}
-
-
-{%- capture description -%}
-TEXT DESCRIPTION OF STUDIO ARTS CLASS
-{%- endcapture -%}
-{%- include site/festival/activity-listing.md activity-name="Studio Art Class" description=description -%}
-
-
-
-{%- capture description -%}
-A ceramics class will be offered at a world famous ceramics center within walking distance of the hotel. Daily sessions will take you through each step of shaping a piece, painting, glazing, and firing your own work, in the superb facilities of this hub of ceramics under the direction of talented artisans. A visit to the Ceramics Museum located at the Villa Guariglia is included.
-{%- endcapture -%}
-{%- include site/festival/activity-listing.md activity-name="Ceramics Class" description=description %}
+{%- include site/festival/activity-listing.md outing-slug="cooking" description=description -%}
 
 <script>
   // Accepts any class name

@@ -1,0 +1,59 @@
+### Contains all optional activities and excursions for all participants of
+### the festival.
+###
+### Each outing listed under |activities| or |excursions| uses a name which is referenced elsewhere
+### as the |outing-slug|.
+###
+### name: Human-readable name for the outing.
+### cost: Cost of outing for all programs. Can be overridden on a per-program basis.
+### description: Text is formatted as Markup.
+### localizations: Localizations for the same data.
+excursions:
+    ravello:
+        name: Ravello
+        tagline: An Artistic Refuge
+        cost: 95
+        length: Half day
+        description: Called the "jewel of the coast." Exceptional views over the sea with unforgettable landscapes and visit to historical villa. Favorite destination of artists & musicians. Includes transportation, entry tickets, guide.
+        localizations:
+            cn:
+                name: 拉韦洛 Ravello
+                length: 半日
+    pompeii:
+        name: Pompeii
+        tagline: A Buried Past
+        cost: 115
+        length: Half day
+        description: World-famous archaeologic site of the ancient civilization frozen in time when buried under the lava of the 4th century eruption of the volcano Vesuvius. Includes transportation, entry tickets, expert guide.
+        localizations:
+            cn:
+                name: 庞贝古城 Pompeii
+                length: 半日
+                description: 费用包括大巴、门票、导游
+    capri:
+        name: Capri
+        tagline: Isle of Beauty and Mystery
+        cost: 155
+        length: Full day
+        description: Travel by boat to the mythical island of Capri, an international wonder. Includes boat tickets, entries, expert guide.
+        localizations:
+            cn:
+                name: 卡普里岛 Capri Island
+                length: 一日
+                description: 费用包括大巴、渡轮、缆车、门票、导游
+activities:
+    language:
+        name: Italian Language Class
+        cost: 450
+        description: Daily group class.
+        localizations:
+            cn:
+                name: 意大利语课程
+    cooking:
+        name: Cooking Lesson
+        cost: 150
+        description: Includes instruction, transportation, interpreter-escort, 5-course meal and recipes.
+        localizations:
+            cn:
+                name: 烹饪教学课程
+                description: 单节

@@ -24,6 +24,23 @@ application: # REQUIRED.
     extended-deadline: 2024-04-01 # OPTIONAL. Overrides festival.yaml.
     registration-fee: 100 # OPTIONAL. Overrides festival.yaml.
     deposit: 100 # OPTIONAL. Overrides festival.yaml.
+outings: # OPTIONAL.
+    activities: # OPTIONAL.
+        -   outing-slug: outing-slug # REQUIRED.
+            cost: 0 # OPTIONAL. Overrides the festival's cost for the excursion. If you use 0, the outing will say "included" instead of having a price.
+            additional-description: text # OPTIONAL.
+            localizations:
+                cn:
+                    additional-description: text # OPTIONAL.
+        # ...
+    excursions: # OPTIONAL.
+        -   outing-slug: outing-slug # REQUIRED.
+            cost: 0 # OPTIONAL. Overrides the festival's cost for the excursion. If you use 0, the outing will say "included" instead of having a price.
+            additional-description: text # OPTIONAL.
+            localizations:
+                cn:
+                    additional-description: text # OPTIONAL.
+        # ...
 tuition: # REQUIRED.
     # For most programs with accommodation options
     meal-plan: 1 # cost
@@ -77,7 +94,7 @@ The cost for Tuition & Accommodations is listed as one total fee, which includes
 {% endcapture %}
 {% include tuition-accommodations.md description=tuition-description %}
 
-{% include activity-fees.md %}
+{% include outings-fees.md %}
 
 {% include application-instructions.md %}
 

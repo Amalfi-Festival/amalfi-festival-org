@@ -43,10 +43,6 @@ application:
     form-url: https://forms.gle/ebvRKq7ULbid4MC48
     guest-form-url: https://forms.gle/LpyNuznuL6uogNDM9
 outings:
-    activities:
-        -   outing-slug: language
-        -   outing-slug: cooking
-        -   outing-slug: ceramics
     excursions:
         -   outing-slug: ravello
         -   outing-slug: pompeii
@@ -55,6 +51,9 @@ outings:
             localizations:
                 cn:
                     additional-description: "asdf"
+    activities:
+        -   outing-slug: language
+        -   outing-slug: cooking
 tuition:
     meal-plan: 625
     hotel-triple: 3385

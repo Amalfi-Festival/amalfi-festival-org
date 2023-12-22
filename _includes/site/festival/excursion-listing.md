@@ -1,36 +1,48 @@
-{%- assign excursion = site.data.festival.excursions | where: "name", include.excursion-name | first %}
+{%- assign _excursion = site.data.outings.excursions[include.outing-slug] %}
 
-<div class="excursion-hero">
+<div class="excursion-hero" id="{{ include.outing-slug }}">
 <img src="{{ site.image-directory | append: include.hero-image | relative_url }}" />
 <div class="title">
 <div class="standard-block" markdown="1">
-### {{ excursion.name }}
+### {{ _excursion.name }}
+{: id="" }
 </div>
 </div>
 </div>
 
 <div class="excursion-info standard-block">
 <ul class="highlight-box colored">
-    <li><h5>Price</h5> <div>${{ excursion.cost }}</div></li>
-    <li><h5>Duration</h5> <div>{{ excursion.length }}</div></li>
-    {%- unless excursion.available-to-programs[0] -%}
-    <li><h5>Available to</h5> <div>all programs participants and guests</div></li>
-    {%- else -%}
-    <li><h5>Available to</h5>
+<li><h5>Duration</h5> <div>{{ _excursion.length }}</div></li>
+
+{%- assign _availability = site.empty-array -%}
+{%- for _program in site.data.festival.programs -%}
+    {%- if _program.translation -%}
+        {%- continue -%}
+    {%- endif -%}
+    {%- assign _festival-program = site.programs | where: "slug", _program.name | first -%}
+    {%- if _festival-program.to-be-announced -%}
+        {%- continue -%}
+    {%- endif -%}
+    {%- assign _has-excursion = _festival-program.outings.excursions | where: "outing-slug", include.outing-slug | first -%}
+    {%- if _has-excursion -%}
+        {%- assign _availability = _availability | push: _festival-program -%}
+    {%- endif -%}
+{%- endfor -%}
+<li><h5>Available to</h5>
     <ul>
-    {%- for group in excursion.available-to-programs -%}
-        {%- assign program = site.programs | where: "slug", group | first -%}
-        <li><a href="{{ program.url | relative_url }}">{{ program.title | smartify }}</a></li>
-    {%- endfor -%}
-    </ul></li>
-    {%- endunless -%}
-    <li class="description">{% include utilities/markdownify-without-p.html text=excursion.description %}</li>
+{%- for _program in _availability -%}
+    <li><a href="{{ _program.url | relative_url }}">{{ _program.title | smartify }}</a></li>
+{%- endfor -%}
+    </ul>
+</li>
+<li class="description">{% include utilities/markdownify-without-p.html text=_excursion.description %}</li>
 </ul>
 
-<div>{%- if excursion.tagline -%}
-<h4>{{ excursion.tagline }}</h4>
+<div>
+{%- if _excursion.tagline -%}
+<h4>{{ _excursion.tagline }}</h4>
 {%- endif -%}
-
-{{ include.description | markdownify }}</div>
+{{ include.description | markdownify }}
+</div>
 
 </div>

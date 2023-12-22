@@ -6,6 +6,15 @@ sessions:
             end: 2024-07-17
 application:
     form-url: https://forms.gle/33Zk5TXN2YP4Fb188
+outings:
+    excursions:
+        -   outing-slug: ravello
+            cost: 0
+        -   outing-slug: capri
+            cost: 0
+    activities:
+        -   outing-slug: language
+        -   outing-slug: cooking
 tuition:
     hotel-double: 2450
     hotel-single-upgrade: 945
@@ -73,7 +82,7 @@ The cost for Tuition & Accommodations is listed as one total fee, which includes
 {% endcapture %}
 {% include tuition-accommodations.md description=tuition-description %}
 
-{% include activity-fees.md %}
+{% include outings-fees.md %}
 {% include application-instructions.md %}
 {% include fees-deposits.md %}
 {% include site/program/cancellations.md %}

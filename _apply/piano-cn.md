@@ -24,7 +24,7 @@ program-name: piano-cn
 
 {% include tuition-accommodations-cn.md %}
 
-{% include activity-fees-cn.md %}
+{% include outings-fees-cn.md %}
 
 {% include application-instructions-cn.md %}
 
@@ -45,4 +45,4 @@ program-name: piano-cn
 
 {% include fees-deposits-cn.md %}
 
-{% include cancellations-cn.md %}
+{% include site/program/cancellations.md %}

@@ -13,6 +13,12 @@ application:
     allow-mail-registration: true
     form-url: https://forms.gle/aYdqoqpffnM7gxR19
     guest-form-url: https://forms.gle/eXFQow9k8NtbAdga8
+outings:
+    excursions:
+        -   outing-slug: pompeii
+        -   outing-slug: capri
+    activities:
+        -   outing-slug: cooking
 tuition:
     meal-plan: 540
     hotel-double: 3245
@@ -47,7 +53,7 @@ The cost for tuition & accommodations is listed as one total fee, which includes
 {% endcapture %}
 {% include tuition-accommodations.md description=tuition-description %}
 
-{% include activity-fees.md %}
+{% include outings-fees.md %}
 
 {% include application-instructions.md %}
 
