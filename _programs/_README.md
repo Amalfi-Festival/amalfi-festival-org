@@ -1,5 +1,6 @@
 ---
 title:
+to-be-announced: # set to |true| if not yet confirmed. Remove the line completely once it is. If a program is not supposed to be part of the festival at all, remove it in institute.yaml.
 sessions:
     -   session-name:
         session-name-cn:
