@@ -68,6 +68,33 @@ custom-css: payment
 </div>
 {% endfor %}
 
+<h3>{{ "Click the button below to complete the transaction on PayPal's website." | smartify }}</h3>
+{% capture commonPayPalInstructions %}
+1. You may be asked to log into PayPal. If you have an account, log in and complete the transaction.
+
+If you do not have a PayPal account, continue with the following steps:
+
+1. Click on **Pay with Debit or Credit Card**.
+
+    <img src="{{ site.image-directory | append: "payment-pay.png" | relative_url }}" />
+
+1. You will be asked to enter an email address. This is to send you a receipt of your payment. This does not create a PayPal account. Click on **Continue to Payment**.
+
+1. Enter your debit or credit card information.
+
+1. At the bottom of the form make sure that **Save info & create your PayPal account** is turned off.
+
+    <img src="{{ site.image-directory | append: "payment-account-creation.png" | relative_url }}" />
+
+1. Click on **Pay now as guest** to complete the transaction.
+{% endcapture %}
+{% capture paypalInstructions %}
+1. Click on the **Pay Through PayPal** button below. You will taken to the PayPal website.
+
+{{ commonPayPalInstructions }}
+{% endcapture %}
+{% assign paypalInstructions = paypalInstructions | markdownify %}
+{% include site/details.html summary="Detailed Instructions" details=paypalInstructions %}
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="Q9299ADLMEWBL" />
 <input type="hidden" name="currency_code" value="USD" />
@@ -80,6 +107,17 @@ custom-css: payment
 <input type="text" name="os0" id="os0" maxLength="200" />
 
 <h3>{{ "Click the button below to enter the balance of payment and complete the transaction on PayPal's website." | smartify }}</h3>
+{% capture paypalInstructions %}
+1. Click on the **Pay Through PayPal** button below. You will taken to the PayPal website.
+
+1. Enter the balance of payment. Click **Continue**.
+
+    <img src="{{ site.image-directory | append: "payment-amount.png" | relative_url }}" />
+
+{{ commonPayPalInstructions }}
+{% endcapture %}
+{% assign paypalInstructions = paypalInstructions | markdownify %}
+{% include site/details.html summary="Detailed Instructions" details=paypalInstructions %}
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="4WQYXEQBMSJCG">
 <input type="hidden" name="currency_code" value="USD" />

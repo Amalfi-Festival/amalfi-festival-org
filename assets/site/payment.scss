@@ -8,7 +8,7 @@ $form-text-size: 1.2rem;
 main {
     min-height: 50vh;
 }
-ol {
+form > ol {
     font-size: $form-text-size;
     list-style-type: none;
     padding-left: 0 !important;
@@ -50,4 +50,8 @@ input[type="submit"] {
     margin-top: 2rem;
     font-size: 1em;
     font-family: $body-font;
+}
+
+details img {
+    width: 100%;
 }
