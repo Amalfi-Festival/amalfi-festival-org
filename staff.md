@@ -8,8 +8,8 @@ custom-css: staff
 <div>
 {%- for staff in site.data.staff -%}
 {%- assign faculty = nil -%}
-{%- if staff.faculty-slug -%}
-    {%- assign faculty = site.faculty | where: "slug", staff.faculty-slug | first -%}
+{%- if staff.person-slug -%}
+    {%- assign faculty = site.faculty | where: "slug", staff.person-slug | first -%}
 {%- endif -%}
 <div>
     <div class="image">
