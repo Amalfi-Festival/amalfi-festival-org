@@ -12,4 +12,12 @@ function programChanged() {
 window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("payTypeContainer").addEventListener("click", payTypeChanged);
     document.getElementById("programContainer").addEventListener("click", programChanged);
+
+    var search = new URLSearchParams(location.search);
+    if (search.get("registration")) {
+        document.getElementById("payTypeRegistration").checked = true;
+        document.getElementById(`program-${search.get("registration")}`).checked = true;
+        payTypeChanged();
+        programChanged();
+    }
 });
