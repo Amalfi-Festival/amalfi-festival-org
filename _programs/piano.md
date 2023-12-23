@@ -92,7 +92,6 @@ webpage-data:
 </div>
 </div>
 
-
 <div class="image-copy right">
 <div class="image" data-rellax-speed="-.7" data-rellax-percentage="0">
 <img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
@@ -101,7 +100,6 @@ webpage-data:
     Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
 </div>
 </div>
-
 
 <div class="image-copy">
 <div class="image" data-rellax-speed="-.3" data-rellax-percentage="0">

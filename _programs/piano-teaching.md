@@ -4,6 +4,18 @@ sessions:
     -   dates:
             start: 2024-07-10
             end: 2024-07-17
+        faculty:
+            -   Boris-Berman
+            -   Bernadene-Blaha
+            -   Enrico-Elisi
+            -   Kevin-Fitz-Gerald
+            -   James-Giles
+            -   Ian-Jones
+            -   Wei-Lung-Li
+            -   Marina-Lomazov
+            -   Yoshikazu-Nagai
+            -   Joseph-Rackers
+            -   Jerry-Wong
 application:
     form-url: https://forms.gle/33Zk5TXN2YP4Fb188
 outings:
@@ -27,7 +39,7 @@ webpage-data:
 
 <section class="standard-block" markdown="1">
 
-## A private customized course plan for a week-long seminar in piano pedagogy
+## A customized course plan in piano pedagogy
 
 ### Topic Lecture
 
@@ -44,27 +56,56 @@ Discuss music art and teaching experience with masters in a charming Mediterrane
 ### Concert and master class observation
 
 All master class courses, teachers and student concerts of the Piano Music Festival are observed throughout the whole process.
+</section>
+
+<section id="faculty" markdown="1">
+
+## {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+{: class="standard-block" id="" }
+
+{% assign all-faculty = reference-program.sessions[0].faculty | sort -%}
+<div class="standard-block tiles front-of-brochure">
+{%- include site/faculty-tiles.html faculty=all-faculty -%}
+</div>
+</section>
+
+<section class="standard-block" markdown="1">
 
 ## Experience the best of the Amalfi Coast
 
-Maiori
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url }}" /></div>
+
+### Maiori
+
 Since ancient Roman times, the tourist attraction has the longest coastline on the Amalfi coast. There are mountain paths where you can walk on foot, and rare volcanic sand and gravel beaches. Majori is our main venue, where the accommodation of the music festival and most of the course activities are held.
 
-Amalfi's🍋
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url }}" /></div>
+
+### Amalfi's Lemons 🍋
+
 Experience a walk on the world-famous lemon tree path on the Amalfi coast in the morning, and taste a cup of southern Italy's most mellow espresso with friends.
 
-Minori (Minori)
-In Minori, a small town only a 20-minute walk from Majori, there is a dessert shop Sal di Riso that has appeared on a CNN documentary, one of the most famous of which is Delizia al limone, nicknamed "Venus's Breasts". Each music festival will have an outdoor concert and dinner at Minoli, and some students will choose to visit the store here. Holding a cake, holding an Italian handmade ice cream, and walking back to Mayori in the sea breeze.
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/delizia-al-limone.jpg" | relative_url }}" /></div>
 
+### Minori
+
+In Minori, a small town only a 20-minute walk from Maiori, there is a dessert shop Sal De Riso that has appeared on a CNN documentary, one of the most famous of which is Delizia al limone, nicknamed "Venus's Breasts". Each music festival will have an outdoor concert and dinner at Minori, and some students will choose to visit the store here. Holding a cake, holding an Italian handmade ice cream, and walking back to Maiori in the sea breeze.
+
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url }}" /></div>
+
+### Concerts
 
 The concerts of the festival are divided into Faculty Concert and Young Artist Recital Series. There is a concert almost every day during the festival. Our event venue has selected churches and concert halls with different architectural styles in different towns, and strives to create a diversified music and artistic experience for the audience.
 
-Day & Night in a Mediterranean Town
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/fireworks.jpg" | relative_url }}" /></div>
+
+### Day & Night in a Mediterranean Town
+
 The Amalfi Coast follows the Siesta Hour, which is unique to the Mediterranean region. Most shops and restaurants will close at the peak of the day at noon, when our piano master class will be held in the air-conditioned hall. After the lunch break, the nightlife in the Mediterranean town is wonderful. After a group formal dinner and daily concerts, professors and students often choose to drink in a small restaurant by the sea. If you are lucky, you can also watch a wonderful fireworks show in a nearby town at the seaside.
 
+### Capri & Ravello Travels
 
-
--Capri & Ravello Travels-
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/capri.jpg" | relative_url }}" /></div>
 
 Listening to Debussy's piano prelude "The Hill of Anna Capri", I drove through Mamma Mia in the local population! ( All the way to horror), then take the cable car to the top of Anna Capri and immerse yourself in the color #0476D0 Capri blue.
 
@@ -72,6 +113,7 @@ In addition to the exciting beauty, Capri is one of the top ten most expensive r
 
 The one-day tour of Capri for members of Art Week includes ferry tickets, tickets, and tour guide services.
 
+<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/ravello.jpg" | relative_url }}" /></div>
 
 Ravello is known as the "City of Music", and the Ravello Festival, which is often attended by the conductor Muti, is held at Villa Rufolo. Lavillo is one of the inspirations for Wagner's opera Parsifal and a musical shrine walked by Liszt.
 
