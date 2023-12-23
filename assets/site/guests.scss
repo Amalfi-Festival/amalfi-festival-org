@@ -11,7 +11,10 @@ details {
     }
 
     .details-content {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 0;
     }
+}
+.standard-block details table {
+    margin-left: 0;
+    border: 0;
 }
