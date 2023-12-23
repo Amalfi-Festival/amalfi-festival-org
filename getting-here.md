@@ -60,6 +60,6 @@ Agencies offering travel insurance:
 * www.travelguard.com
 * www.worldtravelcenter.com
  
-ACMAF does not endorse any particular insurance agency.
+ACM&AF does not endorse any particular insurance agency.
 
 <section class="standard-block" markdown="1">
