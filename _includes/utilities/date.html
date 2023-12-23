@@ -1,0 +1,32 @@
+{%- comment -%}
+lang: Language code.
+dates:
+    start:
+    end:
+date:
+
+Formats date and date ranges.
+{%- endcomment -%}
+{%- assign _l = page.lang | default: include.lang | default: "en" -%}
+{%- assign _f = site.data.site.date-formats[_l] -%}
+{%- if include.dates.end -%}
+    {%- assign start-year = include.dates.start | date: "%Y" -%}
+    {%- assign end-year = include.dates.end | date: "%Y" -%}
+    {%- if start-year != end-year -%}
+        {{- include.dates.start | date: _f.mdy }}–{{ include.dates.end | date: _f.mdy -}}
+    {%- else -%}
+        {%- assign start-month = include.dates.start | date: "%-m" -%}
+        {%- assign end-month = include.dates.end | date: "%-m" -%}
+        {%- if start-month != end-month -%}
+            {{- include.dates.start | date: _f.range-same-y-start }}{{ include.dates.end | date: _f.range-same-y-end -}}
+        {%- else -%}
+            {{- include.dates.start | date: _f.range-same-my-start }}{{ include.dates.end | date: _f.range-same-my-end -}}
+        {%- endif -%}
+    {%- endif -%}
+{%- elsif include.dates.start -%}
+    {{- include.dates.start | date: _f.mdy -}}
+{%- elsif include.date -%}
+    {{- include.date | date: _f.mdy -}}
+{%- elsif include.dates.note -%}
+    {{- include.dates.note -}}
+{%- endif -%}

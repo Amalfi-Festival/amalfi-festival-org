@@ -25,7 +25,7 @@ custom-css: faculty
                 {%- assign session-id = session-id | slugify -%}
                 {%- assign apply-url = apply-url | append: "#" | append: session-id -%}
             {%- endif -%}
-            {%- capture session-available %}<a href="{{ apply-url }}">{{ program.title | smartify }}{% if session.session-name %}, {{ session.session-name }}{% endif %} ({% include utilities/date-range.html dates=session.dates %})</a>{% endcapture -%}
+            {%- capture session-available %}<a href="{{ apply-url }}">{{ program.title | smartify }}{% if session.session-name %}, {{ session.session-name }}{% endif %} ({% include utilities/date.html dates=session.dates %})</a>{% endcapture -%}
             {%- assign availability = availability | push: session-available -%}
         {%- endif -%}
     {%- endfor -%}

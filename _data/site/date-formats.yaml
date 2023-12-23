@@ -1,0 +1,12 @@
+en:
+    mdy: "%B&nbsp;%-e,&nbsp;%Y"
+    range-same-y-start: "%B&nbsp;%-e"
+    range-same-y-end: "–%B&nbsp;%-e,&nbsp;%Y"
+    range-same-my-start: "%B&nbsp;%-e"
+    range-same-my-end: "–%-e,&nbsp;%Y"
+zh:
+    mdy: "%Y年%-m月%-e日"
+    range-same-y-start: "%Y年%-m月%-e日"
+    range-same-y-end: "至%-m月%-e日"
+    range-same-my-start: "%Y年%-m月%-e日"
+    range-same-my-end: "至%-e日"
