@@ -30,9 +30,6 @@
 {%- endif -%}
 {%- unless application.form-url -%}
     {%- for _p in site.data.festival.programs -%}
-        {%- if _p.translation -%}
-            {%- continue -%}
-        {%- endif -%}
         {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
         {%- assign program-guest = program.tuition-guests -%}
         {%- assign can-have-guests = false -%}

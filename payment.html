@@ -21,9 +21,6 @@ custom-css: payment
 <input type="hidden" name="on0" value="Program" />
 <ol id="programContainer">
 {% for _p in site.data.festival.programs -%}
-{%- if _p.translation -%}
-    {%- continue -%}
-{%- endif -%}
 {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
 {%- if _program.to-be-announced -%}
     {%- continue -%}
@@ -37,10 +34,6 @@ custom-css: payment
 <input type="text" name="os1" id="os1" maxLength="200" required />
 
 {% for _p in site.data.festival.programs -%}
-    {%- if _p.translation -%}
-        {%- continue -%}
-    {%- endif -%}
-
     {%- assign _program = site.programs | where: "slug", _p.program-slug | first %}
     {%- include site/program/initialize-program-variables.fx program=_program -%}
 <div class="invoice" id="invoice-{{ _p.program-slug }}">

@@ -62,9 +62,6 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 <h2 id="programs">Programs</h2>
 <div>
 {%- for _p in site.data.festival.programs -%}
-{%- if _p.translation -%}
-    {%- continue -%}
-{%- endif -%}
 {%- assign _ps = _p.program-slug -%}
 {%- assign program = site.programs | where: "slug", _ps | first -%}
 <div>

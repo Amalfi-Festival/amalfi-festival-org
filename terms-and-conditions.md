@@ -8,9 +8,6 @@ custom-css: festival
 {%- assign hide-all = "" -%}
 {%- assign show-only = "" -%}
 {%- for _p in site.data.festival.programs -%}
-    {%- if _p.translation -%}
-        {%- continue -%}
-    {%- endif -%}
     {%- assign reference-program = site.programs | where: "slug", _p.program-slug | first -%}
     {%- if reference-program.to-be-announced -%}
         {%- continue -%}

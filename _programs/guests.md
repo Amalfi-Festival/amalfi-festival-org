@@ -28,9 +28,6 @@ Guests will enjoy eating and socializing with the musicians and attending pre-co
 Guest Program fees includes access to all festival activities for the full session.
 
 {% for _p in site.data.festival.programs -%}
-    {%- if _p.translation -%}
-        {%- continue -%}
-    {%- endif -%}
     {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
     {%- assign program-guest = program.tuition-guests -%}
     {%- assign can-have-guests = false -%}

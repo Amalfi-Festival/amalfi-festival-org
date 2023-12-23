@@ -45,9 +45,6 @@ input[type="text"] {
     display: none;
 }
 {% for _p in site.data.festival.programs -%}
-    {%- if _p.translation -%}
-        {%- continue -%}
-    {%- endif -%}
 {% if forloop.index0 > 0 %},{% endif %}.{{ _p.program-slug }} #invoice-{{ _p.program-slug }}
 {% endfor %}
 {

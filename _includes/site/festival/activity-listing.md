@@ -6,9 +6,6 @@
 <ul class="highlight-box colored">
 {%- assign _availability = site.empty-array -%}
 {%- for _p in site.data.festival.programs -%}
-    {%- if _p.translation -%}
-        {%- continue -%}
-    {%- endif -%}
     {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
     {%- if _program.to-be-announced -%}
         {%- continue -%}
