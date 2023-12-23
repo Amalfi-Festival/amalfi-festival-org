@@ -20,7 +20,7 @@ The Amalfi Festival's Piano Program offers 2 sessions, each of which includes:
 
 During the application process, you may request lessons with the faculty listed below. While there is no guarantee of faculty assignments, we will attempt to accommodate your requests.
 
-{% include site/session/session-info.md show-localization=false %}
+{% include site/session/session-info.md %}
 
 {% include tuition-accommodations.md %}
 

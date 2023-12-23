@@ -1,17 +1,24 @@
 ### Dictionary of text for localizations.
 
--   string: "Application deadline"
-    localizations:
-        zh: 报名截止日期
--   string: "Contents"
-    localizations:
-        zh: 目录
--   string: "Learn more and apply"
-    localizations:
-        zh: 了解更多并申请
--   string: "Excursions"
-    localizations:
-        zh: 短途旅行
--   string: "Activities"
-    localizations:
-        zh: 课外探索活动
+-   en: "Application deadline"
+    zh: 报名截止日期
+-   en: "Contents"
+    zh: 目录
+-   en: "Learn more and apply"
+    zh: 了解更多并申请
+-   en: "Excursions"
+    zh: 短途旅行
+-   en: "Activities"
+    zh: 课外探索活动
+-   en: "Apply"
+    zh: 报名
+-   en: "Faculty"
+    zh: 学院
+-   en: "Associate Staff"
+    zh: 协理人员
+-   en: "Learn more"
+    zh: 了解更多
+-   en: "Included"
+    zh: 包括
+-   en: "Application form"
+    zh: 申请表

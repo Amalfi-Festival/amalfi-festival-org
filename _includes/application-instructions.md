@@ -8,12 +8,12 @@
 <li>
     <h5>Registration Fee</h5>
     <div>(non-refundable)</div>
-    <div>${{ application-registration-fee }}</div>
+    <div>{% include utilities/format-cost.html cost=application-registration-fee %}</div>
 </li>
 <li>
     <h5>Deposit</h5>
     <div>(refundable <a href="#cancellation-policy--refunds">in case of cancellation</a>)</div>
-    <div>${{ application-deposit }}</div>
+    <div>{% include utilities/format-cost.html cost=application-deposit %}</div>
 </li>
 {%- if application.form-url -%}
 <li>

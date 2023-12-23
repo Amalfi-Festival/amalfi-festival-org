@@ -1,3 +1,4 @@
+{%- assign _l = page.lang | default: include.lang | default: "en" -%}
 {%- for faculty-member-name in include.faculty -%}
     {%- assign faculty-member = nil -%}
     {%- for faculty-candidate in site.faculty -%}
@@ -15,12 +16,12 @@
         {%- endfor -%}
     {%- endunless -%}
 
-    {%- capture faculty-name -%}{{ faculty-member.first-name }} {{ faculty-member.last-name }}{%- if faculty-member.zh-name and include.localization -%}<br/>({{ faculty-member.zh-name }}){%- endif -%}{%- endcapture -%}
+    {%- capture faculty-name -%}{{ faculty-member.first-name }} {{ faculty-member.last-name }}{%- if faculty-member.zh-name and _l == "zh" -%}<br/>({{ faculty-member.zh-name }}){%- endif -%}{%- endcapture -%}
     {%- unless faculty-member.prefers-en-name -%}
-        {%- if faculty-member.zh-name and include.localization -%}
+        {%- if faculty-member.zh-name and _l == "zh" -%}
             {%- capture faculty-name -%}{{ faculty-member.zh-name }}{%- endcapture -%}
         {%- endif -%}
     {%- endunless -%}
-<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/person/faculty-thumbnail-filepath.html faculty=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-zh and include.localization %}{{ faculty-member.school-zh }}{% else %}{{ faculty-member.school }}{% endif %}</div>
+<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/person/faculty-thumbnail-filepath.html faculty=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-zh and _l == "zh" %}{{ faculty-member.school-zh }}{% else %}{{ faculty-member.school }}{% endif %}</div>
 </a></div>
 {%- endfor -%}

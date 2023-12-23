@@ -1,13 +1,16 @@
 {%- for _p in site.data.festival.programs -%}
-    {%- assign p = site.programs | where: "slug", _p.program-slug | first -%}
-    {%- if p -%}
-        {%- if p.to-be-announced -%}
-<span class="link-{{ p.slug }} link-disabled">{{ p.webpage-data.menu-title }}</span>
+    {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
+        {%- if _program.to-be-announced -%}
+<span class="link-{{ _program.slug }} link-disabled">{{ _program.webpage-data.menu-title }}</span>
         {%- else -%}
-<a class="link-{{ p.slug }}" href="{{ p.url | relative_url }}">{{ p.webpage-data.menu-title }}</a>
+<div><a class="link-{{ _program.slug }}" href="{{ _program.url | relative_url }}">{{ _program.webpage-data.menu-title }}</a>
+            {%- if include.include-translations and _p.zh -%}
+                {%- assign _pzh = site.programs | where: "slug", _p.zh | first %}
+    | <a class="link-{{ _pzh.slug }}" href="{{ _pzh.url | relative_url }}">中文</a>
+            {%- endif -%}
+</div>
         {%- endif -%}
-    {%- endif -%}
 {%- endfor -%}
 
-{%- assign p = site.programs | where: "slug", "guests" | first -%}
-<a class="link-{{ p.slug }}" href="{{ p.url | relative_url }}">{{ p.webpage-data.menu-title }}</a>
+{%- assign _program = site.programs | where: "slug", "guests" | first -%}
+<div><a class="link-{{ _program.slug }}" href="{{ _program.url | relative_url }}">{{ _program.webpage-data.menu-title }}</a></div>

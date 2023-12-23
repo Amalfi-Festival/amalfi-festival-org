@@ -1,5 +1,6 @@
 ---
 program-name: piano-zh
+lang: zh
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
@@ -9,9 +10,6 @@ program-name: piano-zh
 {:toc}
 </div>
 
-
-
-
 ## 钢琴艺术节简介
 
 我们为每位参加阿马尔菲海岸音乐艺术节的学员提供一对一私教课、大师班、讲座、研讨会、以及演出机会。在这里，每位学生都会得到国际著名教授们的一对一指导；每天的教学安排中都会包括充满活力、知识、互动性及包容性极强的大师班课程；我们也会在研讨会上探讨诸多钢琴学习中的议题，如：背谱、克服紧张、技巧的突破、健康正确的练琴方法等等。我们每天都会举办教师音乐会令学员观摩；同时，我们鼓励学员们参加我们在阿马尔菲海岸历史悠久的教堂及音乐厅里举办的青年艺术家系列音乐会，使学员们充分利用艺术节的资源增长演奏经验。
@@ -20,7 +18,7 @@ program-name: piano-zh
 
 每位学生将会被分配到四堂一对一私教课以及一堂大师班表演。我们会尽最大的努力去满足每位学员对私教课及大师班教授的需求。除了每位学员本人的课程外，其他所有大师班和音乐会都供正式学员们聆听观摩！
 
-{% include site/session/session-info.md show-localization=true %}
+{% include site/session/session-info.md %}
 
 {% include tuition-accommodations-zh.md %}
 
@@ -28,7 +26,7 @@ program-name: piano-zh
 
 {% include application-instructions-zh.md %}
 
-## 录像/录音要求
+### 录像/录音要求
 
 每位欲报名阿马尔菲海岸音乐艺术节的钢琴学员需要上传两首作品（录像或录音均可）。我们强烈建议这两首作品为钢琴独奏曲，并选自不同的风格时期。奏鸣曲单乐章或者组曲的单乐章都可接受。
 录像/录音的录制时间应不超过报名前6个月。
@@ -37,12 +35,11 @@ program-name: piano-zh
 曲目上传顺序请与报名表上填写的顺序一致。
 上传的文件名请注明作曲家及作品名，但**请勿包括学员姓名**.
 
-## 录像/录音上传须知
+### 录像/录音上传须知
 
 您可将录像/录音上传至 YouTube 后，将视频链接发送至此 [邮箱](mailto:music@amalfi-festival.org)（music@amalfi-festival.org）。也可直接发送mp3文件至上述[邮箱](mailto:music@amalfi-festival.org)。
 
 请注意，我们只会在收到完整报名表之后（或同时）接受您的录像/录音。我们不会受理任何收到报名表之前上传的录像/录音。
 
 {% include fees-deposits-zh.md %}
-
-{% include site/program/cancellations.md %}
+{% include site/program/cancellations-zh.md %}

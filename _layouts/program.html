@@ -30,12 +30,12 @@ custom-css: program
 
 <div id="header" class="standard-block sidebar">
     <div><h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
-    <a class="apply" href="{{ apply-url }}">Apply</a>
+    <a class="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Apply" %}</a>
     </div>
     <div><h2>
 {%- for session in reference-program.sessions -%}
 {%- if forloop.index > 1 -%}<br/>{%- endif -%}
-{%- include site/session/get-session-name-with-dates.html session=session localization=page.show-localization -%}
+{%- include site/session/get-session-name-with-dates.html session=session lang=page.lang -%}
 {%- endfor -%}
     </h2>
 {%- if page.webpage-data.program-header-subtitle -%}

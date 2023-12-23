@@ -1,11 +1,16 @@
-## 如您需要取消音乐节行程，请注意以下退款规则
+## 费用和押金
 
-1. 所有退款申请必须以邮件形式发送。我们不接受电话或短信申请。
-1. 2023年3月31日之前申请退款：已缴纳订金及学费将被全额退款。
-1. 2023年4月1日（含）之后申请退款：我们将收取50美元手续费。
-1. 2023年4月15日（含）之后申请退款：我们将收取100美元手续费。
-1. 2023年5月1日（含）之后申请退款：350美元订金将不予退还。其余已缴纳之不可退款项目皆不会被退回。
-1. 2023年6月1日（含）之后：我们不再受理取消行程的申请。一切已缴费用将不予退还。
-
-
-\* 详细费用及退费标准以阿马尔菲海岸音乐艺术节官网（英文）为准。解释权归阿马尔菲海岸音乐艺术节所有。
+A non-refundable registration fee of **{% include utilities/format-cost.html cost=application-registration-fee %}**
+is required at the time of registration in addition to a deposit of
+**{% include utilities/format-cost.html cost=application-deposit %}** towards your total fees. On-line
+registrations area also assessed a service fee.
+ 
+Deposits are accepted on a first-come basis as space is limited.
+Formal participation in the program may not be considered confirmed until
+deposits are accepted by Center for Musical Studies. For information on
+refunds, see [Cancellation Policy](#cancellation-policy--refunds).
+ 
+Price may be subject to change for currency, inflation, taxes, surcharges
+imposed, and fare increases as the price of the program was established {% include utilities/date.html date=site.data.festival.fees-and-deposits.prices-established-on %}.
+Registrants will be notified by {% include utilities/date.html date=site.data.festival.fees-and-deposits.notification-date-if-prices-increase %}
+if price increases and may withdraw without penalty if there is more than a 5% increase.

@@ -1,5 +1,6 @@
-{% unless include.localization -%}
-${% include utilities/number-delimited.html number=include.cost -%}
-{%- else -%}
+{%- assign _l = page.lang | default: include.lang | default: "en" -%}
+{% if _l == "zh" -%}
 {%- include utilities/number-delimited.html number=include.cost -%}美元
-{%- endunless %}
+{%- else -%}
+${% include utilities/number-delimited.html number=include.cost -%}
+{%- endif %}
