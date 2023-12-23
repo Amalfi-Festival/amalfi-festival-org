@@ -44,7 +44,9 @@ At the Amalfi Coast Music & Arts Festival, students are encouraged to explore th
 
 The Visual Arts Program is designed to take advantage of the cultural riches in the area. Students will be able to tour an array of museums and architectural treasures, such as the Naples Archaeology Museum, the magnificently preserved Greek temples in Paestum, and the haunting ruins of Pompeii. Instructors will bring perspectives gained back into the classroom. Students may also be invited to visit local studios and meet Italian artists to exchange ideas and share techniques. An exhibit of student work is held at the end of each session.
 
+{% if page.sessions.size > 1 %}
 ## Sessions
+{% endif %}
 
 {% include site/session/session-info.md faculty-type="Instructor" %}
 

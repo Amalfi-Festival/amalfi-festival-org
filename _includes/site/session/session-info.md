@@ -1,12 +1,14 @@
 {% for session in reference-program.sessions %}
 
-{%- capture session-name -%}{%- include site/session/get-session-name-with-dates.html session=session -%}{%- endcapture -%}
-{%- if session.session-name -%}
-{%- unless page.lang -%}
+{%- if session.class-name == nil or reference-program.sessions.size > 1 -%}
+    {%- capture session-name -%}{%- include site/session/get-session-name-with-dates.html session=session -%}{%- endcapture -%}
+    {%- if session.session-name -%}
+        {%- unless page.lang -%}
 <h2 class="session" id="{{ session-name | slugify }}">{{ session-name }}</h2>
-{%- else -%}
-<h2 class="session" id="{{ session-name | slugify }}">{% if session.session-name-zh %}{{ session.session-name-zh }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date.html dates=session.dates %}</h2>
-{% endunless %}
+        {%- else -%}
+<h2 class="session" id="{{ session-name | slugify }}">{{ session.session-name-zh | default: session.session-name }}: {% include utilities/date.html dates=session.dates %}</h2>
+        {%- endunless -%}
+    {%- endif -%}
 {%- endif -%}
 
 {%- if session.class-name -%}
