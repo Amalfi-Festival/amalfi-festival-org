@@ -30,7 +30,7 @@ custom-css: program
 
 <div id="header" class="standard-block sidebar">
     <div><h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
-    <a class="apply" href="{{ apply-url }}">{% include utilities/localize.html string="Apply" %}</a>
+    <a class="apply button" href="{{ apply-url }}">{% include utilities/localize.html string="Apply" %}</a>
     </div>
     <div><h2>
 {%- for session in reference-program.sessions -%}

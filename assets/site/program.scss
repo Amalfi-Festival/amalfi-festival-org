@@ -237,20 +237,3 @@ section#learn {
         border-radius: $border-radius-large;
     }
 }
-
-.apply {
-    text-decoration: none;
-    display: inline-block;
-    padding: .2em 1.5em;
-    margin-bottom: 1rem;
-    background-color: #BEDDE8;
-    color: $brand-blue;
-    border: 1px solid $brand-blue;
-    border-radius: $border-radius-small;
-    text-transform: uppercase;
-
-    &:hover {
-        background-color: $brand-blue;
-        color: $brand-light-yellow;
-    }
-}
