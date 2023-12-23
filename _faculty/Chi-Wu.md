@@ -1,9 +1,9 @@
 ---
 first-name: Chi
 last-name: Wu
-cn-name: 吴驰
+zh-name: 吴驰
 school: Sichuan Conservatory of Music
-school-cn: 四川音乐学院
+school-zh: 四川音乐学院
 ---
 
 Recognized as one of the most talented pianists today in China, Chi Wu is Professor and Vice Chairman of the Piano Department of the Sichuan Conservatory of Music. He studied with renowned teachers Maestro Franco Scala and Lazar Berman at the Imola academia incontri col Maestri,Italy and has won top prizes at many international competitions including 2nd place in the Ettlingen International Piano Competition (Lang Lang won first prize); and 3rd place in the Franz Liszt International Piano Competition (Utrecht, Holland).

@@ -2,7 +2,7 @@
 first-name: Enrico
 last-name: Elisi
 school: University of Toronto
-school-cn: 多伦多大学
+school-zh: 多伦多大学
 ---
 
 Born and raised in Bologna, Italy, Enrico Elisi has been hailed for his “mastery of elegance, refinement, and fantasy” (La Nueva España). He regularly performs to acclaim throughout the Americas, Europe, and Asia and his interpretations reveal “remarkable sensitivity, imagination, and polish,” (Baltimore Sun).

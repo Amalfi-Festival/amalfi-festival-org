@@ -2,7 +2,7 @@
 first-name: Marina
 last-name: Lomazov
 school: Eastman School of Music
-school-cn: 伊斯曼音乐学院
+school-zh: 伊斯曼音乐学院
 ---
 
 Praised by critics as “a diva of the piano” (The Salt Lake City Tribune), “a mesmerizing risk-taker” (The Plain Dealer, Cleveland), and “simply spectacular” (Chicago International Music Foundation) Ukrainian-American pianist Marina Lomazov has established herself as one of the most passionate and charismatic performers on the concert scene today. Following prizes in the Cleveland International Piano Competition, William Kapell International Piano Competition, Gina Bachauer International Piano Competition, and Hilton Head International Piano Competition, Ms. Lomazov has given performances throughout North America, South America, China, South Korea, England, France, Germany, Italy, Spain, Austria, Bulgaria, Ukraine, Russia, Japan and in nearly all of the fifty states in the U.S.

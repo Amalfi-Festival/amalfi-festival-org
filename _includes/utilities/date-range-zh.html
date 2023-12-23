@@ -2,12 +2,12 @@
     {%- assign start-year = include.dates.start | date: "%Y" -%}
     {%- assign end-year = include.dates.end | date: "%Y" -%}
     {%- if start-year != end-year -%}
-        {{- include.dates.start | date: "%B %-e, %Y" }}–{{ include.dates.end | date: "%B %-e, %Y" -}}
+        {{- include.dates.start | date: "%B&nbsp;%-e,&nbsp;%Y" }}–{{ include.dates.end | date: "%B&nbsp;%-e,&nbsp;%Y" -}}
     {%- else -%}
         {%- assign start-month = include.dates.start | date: "%-m" -%}
         {%- assign end-month = include.dates.end | date: "%-m" -%}
         {%- if start-month != end-month -%}
-            {{- include.dates.start | date: "%B %-e" }}–{{ include.dates.end | date: "%B %-e, %Y" -}}
+            {{- include.dates.start | date: "%B&nbsp;%-e" }}–{{ include.dates.end | date: "%B&nbsp;%-e,&nbsp;%Y" -}}
         {%- else -%}
             {{- include.dates.start | date: "%Y年%-m月%-e日" }}{{ include.dates.end | date: "至%-e日" -}}
         {%- endif -%}

@@ -2,10 +2,16 @@
 
 -   string: "Application deadline"
     localizations:
-        cn: 报名截止日期
+        zh: 报名截止日期
 -   string: "Contents"
     localizations:
-        cn: 目录
+        zh: 目录
 -   string: "Learn more and apply"
     localizations:
-        cn: 了解更多并申请
+        zh: 了解更多并申请
+-   string: "Excursions"
+    localizations:
+        zh: 短途旅行
+-   string: "Activities"
+    localizations:
+        zh: 课外探索活动

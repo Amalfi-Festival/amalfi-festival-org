@@ -2,7 +2,7 @@
 title: Piano Program
 sessions:
     -   session-name: Session I
-        session-name-cn: 第一期
+        session-name-zh: 第一期
         dates:
             start: 2024-07-05
             end: 2024-07-17
@@ -22,7 +22,7 @@ sessions:
             -   Yetong-Tang
             -   Shichao-Zhang
     -   session-name: Session II
-        session-name-cn: 第二期
+        session-name-zh: 第二期
         dates:
             start: 2024-07-18
             end: 2024-07-30
@@ -49,8 +49,8 @@ outings:
         -   outing-slug: capri
             additional-description: "***No lessons are scheduled on this day because almost all students take this trip.***"
             localizations:
-                cn:
-                    additional-description: "asdf"
+                zh:
+                    additional-description: "***这一天没有安排课程，因为几乎所有学生都会参加这次旅行。***"
     activities:
         -   outing-slug: language
         -   outing-slug: cooking
@@ -69,14 +69,13 @@ webpage-data:
     menu-title: Piano
     hero-image: 23.jpg
     program-header-subtitle: "<h3>James Giles, Artistic Director<br/>Yoshikazu Nagai, Faculty Chair</h3>"
-#    localizations:
-#        -   abbreviation: en
-#            program: piano
-#        -   abbreviation: 中文
-#            program: piano-cn
+    localizations:
+        -   abbreviation: en
+            program: piano
+        -   abbreviation: 中文
+            program: piano-zh
 ---
 {%- include site/program/initialize-program-variables.fx -%}
-
 
 <section id="splash" class="proto-2">
 <div class="standard-block" markdown="1">
@@ -84,7 +83,7 @@ webpage-data:
 ## Experience an intensive piano education amid the breathtaking views of the Amalfi Coast
 
 <div class="image-copy">
-<div class="image" data-rellax-speed="-1" data-rellax-percentage="0">
+<div class="image">
 <img src="{{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }}" />
 </div>
 <div class="copy">
@@ -93,7 +92,7 @@ webpage-data:
 </div>
 
 <div class="image-copy right">
-<div class="image" data-rellax-speed="-.7" data-rellax-percentage="0">
+<div class="image">
 <img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
 </div>
 <div class="copy">
@@ -102,25 +101,25 @@ webpage-data:
 </div>
 
 <div class="image-copy">
-<div class="image" data-rellax-speed="-.3" data-rellax-percentage="0">
+<div class="image">
 <img src="{{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }}" />
 </div>
-<div class="copy" style="bottom: -7rem;">
+<div class="copy">
 Held in spectacular venues throughout the Amalfi Coast, the Festival hosts daily concerts, including faculty recitals, and the Young Artist Series for students.
 </div>
 </div>
 
 <div class="image-copy right">
-<div class="image" data-rellax-speed=".3" data-rellax-percentage="0">
-<img src="{{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }}" alt="Student performing" />
+<div class="image">
+<img src="{{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }}" />
 </div>
-<div class="image" data-rellax-speed=".3" data-rellax-percentage="0.5">
-<img src="{{ site.program-assets-directory | append: "piano/lowenthal-oppens.jpg" | relative_url }}" alt="Student performing" />
+<div class="image">
+<img src="{{ site.program-assets-directory | append: "piano/lowenthal-oppens.jpg" | relative_url }}" />
 </div>
 </div>
 
 <div class="image-copy row">
-<div class="image" data-rellax-speed=".5" data-rellax-percentage="0">
+<div class="image">
 <img src="{{ site.image-directory | append: "ravello.JPG" | relative_url }}" />
 </div>
 <div class="copy">

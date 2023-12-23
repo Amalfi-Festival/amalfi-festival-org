@@ -2,7 +2,7 @@
 first-name: James
 last-name: Giles
 school: Northwestern University
-school-cn: 美国西北大学音乐学院
+school-zh: 美国西北大学音乐学院
 ---
 
 James Giles regularly performs in important musical centers in America, Europe, and Asia. Recent tours have taken him to the Nancy Music Festival in France, the Accademia Cristofori in Florence, the Gijon Piano Festival in Spain, the Amalfi Coast Music Festival in Italy, and the Beijing International Music Festival. Last season featured a recording with the St. Petersburg Chamber Philharmonic in Russia; recitals in Florida, California, North Carolina, and France; and trips to Hong Kong and Shanghai.

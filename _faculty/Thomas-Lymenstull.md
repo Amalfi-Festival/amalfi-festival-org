@@ -2,7 +2,7 @@
 first-name: Thomas
 last-name: Lymenstull
 school: Interlochen Academy
-school-cn: Interlochen艺术高中
+school-zh: Interlochen艺术高中
 ---
 Pianist Thomas Lymenstull has performed throughout the US, in Japan, and China, and has been heard on WFMT Chicago, the Voice of America, and National Public Radio. Lymenstull was first prizewinner in the Joanna Hodges (now Virginia Waring) Piano Competition and the Fresno Philharmonic Rotary Young Artists Competitions, and a prizewinner in several other national and international competitions. Lymenstull has performed with the Kronos Quartet, the Los Angeles Chamber Orchestra, and with orchestras in the United States and China.
 

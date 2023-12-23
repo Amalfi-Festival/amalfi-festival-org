@@ -6,7 +6,7 @@ custom-css: faculty
 <div id="headshot">
     <img src="{%- include site/person/faculty-headshot-filepath.html -%}" />
 </div>
-<h1>{{ page.first-name }} {{ page.last-name }}{% if page.cn-name %} ({{ page.cn-name }}){% endif %}</h1>
+<h1>{{ page.first-name }} {{ page.last-name }}{% if page.zh-name %} ({{ page.zh-name }}){% endif %}</h1>
 {% if page.school %}<h2>{{ page.school }}</h2>{% endif %}
 {% if page.website %}<h3><a href="{{ page.website }}">Personal website</a></h3>{% endif %}
 

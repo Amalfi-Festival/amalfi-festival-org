@@ -5,7 +5,7 @@ title: text # REQUIRED.
 to-be-announced: true # OPTIONAL, |true| or string. If the program is not yet confirmed, set to |true| and the message will say "To be announced", otherwise set a custom message. Remove the line completely once it is. If a program is not supposed to be part of the festival at all, remove it in festival.yaml.
 sessions: # REQUIRED. At least one session needs to exist.
     -   session-name: # OPTIONAL.
-        session-name-cn: # OPTIONAL.
+        session-name-zh: # OPTIONAL.
         dates: # REQUIRED.
             start:
             end:
@@ -30,7 +30,7 @@ outings: # OPTIONAL.
             cost: 0 # OPTIONAL. Overrides the festival's cost for the excursion. If you use 0, the outing will say "included" instead of having a price.
             additional-description: text # OPTIONAL.
             localizations:
-                cn:
+                zh:
                     additional-description: text # OPTIONAL.
         # ...
     excursions: # OPTIONAL.
@@ -38,7 +38,7 @@ outings: # OPTIONAL.
             cost: 0 # OPTIONAL. Overrides the festival's cost for the excursion. If you use 0, the outing will say "included" instead of having a price.
             additional-description: text # OPTIONAL.
             localizations:
-                cn:
+                zh:
                     additional-description: text # OPTIONAL.
         # ...
 tuition: # REQUIRED.
@@ -81,7 +81,7 @@ webpage-data:
     hero-image: image-file.jpg
     program-header-subtitle: HTML markup # OPTIONAL.
     localizations:
-        -   abbreviation: cn # text to display for language
+        -   abbreviation: zh # text to display for language
             program: program-slug # slug for the specific program
         # ...
 ---

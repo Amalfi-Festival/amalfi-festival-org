@@ -2,7 +2,7 @@
 first-name: Jerry
 last-name: Wong
 school: University of Melbourne
-school-cn: 墨尔本音乐学院
+school-zh: 墨尔本音乐学院
 ---
 
 Hailed as an “American Virtuoso” (Audiophile Audition), “enormous power and intelligent, instinctive interpretation” (Spoleto Today), and “simply dazzling” (The State), pianist Joseph Rackers has performed for enthusiastic audiences in New York, Boston, Chicago, Kiev, Los Angeles, Las Vegas, Paris, Rome, Shanghai, Seoul and Washington D.C., at venues across Canada, China, France, Germany, Italy, South Korea, Spain, Bulgaria, Ukraine and extensively throughout the United States. His performances around the world include the Shanghai and Sichuan Conservatories of Music, Kiev International Music Festival, Gina Bachauer International Piano Festival, Seoul International Piano Festival, Dame Myra Hess Concert Series, Banff Centre for the Arts, Indiana University Piano Festival, American Liszt Society Festival, Yantai International Music Festival, Varna International Piano Festival and Society of Composers International Conference, in addition to recitals in most of the fifty states in the U.S. Gramophone writes, “the results are consistently compelling…as if Rackers response were primarily to his relationship with the composer as some sort of kindred spirit.”

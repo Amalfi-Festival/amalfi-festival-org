@@ -1,9 +1,9 @@
 ---
 first-name: Wei-Lung
 last-name: Li
-cn-name: 李威龍
+zh-name: 李威龍
 school: Tainan National University of the Arts, Taiwan
-school-cn: 台南艺术大学
+school-zh: 台南艺术大学
 ---
 
 Taiwanese pianist Wei-Lung Li was a recipient for two consecutive years as Liberace Scholar from the University of Minnesota. Dr. Li has distinguished himself in his native country by winning many piano competitions since he was young. He has performed internationally as a recitalist, concerto soloist and chamber musician and has made appearances at prestigious concert halls throughout Taiwan, Singapore, China and Indonesia. His performances have frequently been featured on National Public TV in Taiwan and Music de Camera in the US.

@@ -1,10 +1,10 @@
 ---
 first-name: Yoshikazu
 last-name: Nagai
-cn-name: 永井良和
+zh-name: 永井良和
 prefers-en-name: true
 school: San Francisco Conservatory of Music
-school-cn: 旧金山音乐学院/皮博迪音乐学院
+school-zh: 旧金山音乐学院/皮博迪音乐学院
 website: https://yoshinagai.com
 ---
 

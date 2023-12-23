@@ -6,7 +6,7 @@ edition: XXVII season, 2024
 ### comment out that item or delete it.
 programs:
     -   program-slug: piano
-    -   program-slug: piano-cn
+    -   program-slug: piano-zh
         translation: true
     -   program-slug: piano-teaching
     -   program-slug: choral

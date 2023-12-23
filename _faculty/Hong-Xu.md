@@ -1,9 +1,9 @@
 ---
 first-name: Hong
 last-name: Xu
-cn-name: 徐洪
+zh-name: 徐洪
 school: Wuhan Conservatory of Music
-school-cn: 武汉音乐学院
+school-zh: 武汉音乐学院
 ---
 Hailed by the New York Times as "technically brilliant, insightful musician, and seemingly limitless potential". Hong Xu is one of China's most accomplished pianists in his generation.
 

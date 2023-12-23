@@ -7,10 +7,10 @@
 
 first-name: # English first name
 last-name: # English last name
-cn-name: # Chinese name, if available
-prefers-en-name: # For almost everyone, please delete this line. Only include it, and set it to |true| (see Nagai's page) if the following is desired: on Chinese pages the English name will be listed first, with |cn-name| listed in parenthesis. Usually, |cn-name| is used if it exists, otherwise the English name is used.
+zh-name: # Chinese name, if available
+prefers-en-name: # For almost everyone, please delete this line. Only include it, and set it to |true| (see Nagai's page) if the following is desired: on Chinese pages the English name will be listed first, with |zh-name| listed in parenthesis. Usually, |zh-name| is used if it exists, otherwise the English name is used.
 school: # School from which professor teaches
-school-cn: # Chinese name of the school
+school-zh: # Chinese name of the school
 website: # If faculty has a personal website they'd like to include, include it here. Otherwise, remove this line.
 portfolio:
     # For visual arts faculty, their works may be displayed as a gallery on their profile page. The images should be listed in order, and should be in the /assets/people/[person-slug]/ directory.

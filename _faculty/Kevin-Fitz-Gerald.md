@@ -2,7 +2,7 @@
 first-name: Kevin
 last-name: Fitz-Gerald
 school: USC Thornton School of Music
-school-cn: 南加州大学桑顿音乐学院
+school-zh: 南加州大学桑顿音乐学院
 ---
 
 Critically acclaimed pianist, Kevin Fitz-Gerald, enjoys a versatile performing career as recitalist, orchestra soloist and chamber musician.  His performances have garnered international praise and he has been recognized for his “hypnotically powerful and precise” pianism and “dynamic and distinguished” interpretations.  His concert tours and performances have taken place in major concert halls, universities and concert organizations throughout the United States, Canada, Europe, China, Japan, Korea, Australia, Mexico, South America, the Mediterranean and the Caribbean.  Notable venues include Carnegie Recital Hall (New York), The Mormon Tabernacle (Utah), Walt Disney Concert Hall (Los Angeles), National Arts Centre (Ottawa), Roy Thompson Hall (Toronto), Place des Arts (Montreal), Izumi Hall (Osaka), Suntori Hall (Tokyo), National Gallery (Kingston) and Town Hall (Melbourne).

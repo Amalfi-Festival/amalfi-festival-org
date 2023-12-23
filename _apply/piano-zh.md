@@ -1,5 +1,5 @@
 ---
-program-name: piano-cn
+program-name: piano-zh
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
@@ -22,11 +22,11 @@ program-name: piano-cn
 
 {% include site/session/session-info.md show-localization=true %}
 
-{% include tuition-accommodations-cn.md %}
+{% include tuition-accommodations-zh.md %}
 
-{% include outings-fees-cn.md %}
+{% include outings-fees-zh.md %}
 
-{% include application-instructions-cn.md %}
+{% include application-instructions-zh.md %}
 
 ## 录像/录音要求
 
@@ -43,6 +43,6 @@ program-name: piano-cn
 
 请注意，我们只会在收到完整报名表之后（或同时）接受您的录像/录音。我们不会受理任何收到报名表之前上传的录像/录音。
 
-{% include fees-deposits-cn.md %}
+{% include fees-deposits-zh.md %}
 
 {% include site/program/cancellations.md %}

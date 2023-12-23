@@ -6,7 +6,7 @@
     <h2 class="session" id="{{ session-name | slugify }}">{{ session-name }}</h2>
     {%- endif -%}
 {%- else -%}
-## {% if session.session-name-cn %}{{ session.session-name-cn }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-cn.html dates=session.dates %}
+## {% if session.session-name-zh %}{{ session.session-name-zh }}{% else %}{{ session.session-name }}{% endif %}: {% include utilities/date-range-zh.html dates=session.dates %}
 {: class="session" id="{{ session-name | slugify }}"}
 {% endunless %}
 
