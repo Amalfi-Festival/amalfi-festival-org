@@ -22,8 +22,8 @@ Establishes local variables:
     {%- assign program = site.programs | where: "slug", include.program | first -%}
 {%- endunless -%}
 {%- assign reference-program = program -%}
-{%- if program.reference-program -%}
-    {%- assign reference-program = site.programs | where: "slug", program.reference-program | first -%}
+{%- if program.reference-program-slug -%}
+    {%- assign reference-program = site.programs | where: "slug", program.reference-program-slug | first -%}
 {%- endif -%}
 
 {%- include site/program/get-apply-url.fx program-name=program.slug -%}

@@ -29,11 +29,11 @@
     * If you wish to register by mail, print and fill out the form.
 {%- endif -%}
 {%- unless application.form-url -%}
-    {%- for program-entry in site.data.festival.programs -%}
-        {%- if program-entry.translation -%}
+    {%- for _p in site.data.festival.programs -%}
+        {%- if _p.translation -%}
             {%- continue -%}
         {%- endif -%}
-        {%- assign program = site.programs | where: "slug", program-entry.name | first -%}
+        {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
         {%- assign program-guest = program.tuition-guests -%}
         {%- assign can-have-guests = false -%}
         {%- unless program-guest -%}

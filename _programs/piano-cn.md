@@ -1,5 +1,5 @@
 ---
-reference-program: piano
+reference-program-slug: piano
 title: 第26届意大利阿马尔菲海岸钢琴艺术节
 webpage-data:
     menu-title: 钢琴艺术节

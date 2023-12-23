@@ -1,10 +1,10 @@
-{%- for program-entry in site.data.festival.programs -%}
-    {%- if program-entry.translation -%}
+{%- for _p in site.data.festival.programs -%}
+    {%- if _p.translation -%}
         {%- unless include.include-translations -%}
             {%- continue -%}
         {%- endunless -%}
     {%- endif -%}
-    {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
+    {%- assign p = site.programs | where: "slug", _p.program-slug | first -%}
     {%- if p -%}
         {%- if p.to-be-announced -%}
 <span class="link-{{ p.slug }} link-disabled">{{ p.webpage-data.menu-title }}</span>

@@ -169,11 +169,11 @@ body:has(#hero) > header {
         }
     }
 }
-{%- for program-entry in site.data.festival.programs -%}
-    {%- assign p = site.programs | where: "slug", program-entry.name | first -%}
+{%- for _p in site.data.festival.programs -%}
+    {%- assign p = site.programs | where: "slug", _p.program-slug | first -%}
     {%- assign rp = p -%}
-    {%- if p.reference-program -%}
-        {%- assign rp = site.programs | where: "slug", p.reference-program | first -%}
+    {%- if p.reference-program-slug -%}
+        {%- assign rp = site.programs | where: "slug", p.reference-program-slug | first -%}
     {%- endif -%}
     {%- if p -%}
 body.{{ p.slug }} > header .link-{{ rp.slug }},

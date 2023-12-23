@@ -20,11 +20,11 @@ custom-css: payment
 <h3>Select the program:</h3>
 <input type="hidden" name="on0" value="Program" />
 <ol id="programContainer">
-{% for program-slug in site.data.festival.programs -%}
-{%- if program-slug.translation -%}
+{% for _p in site.data.festival.programs -%}
+{%- if _p.translation -%}
     {%- continue -%}
 {%- endif -%}
-{%- assign _program = site.programs | where: "slug", program-slug.name | first -%}
+{%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
 {%- if _program.to-be-announced -%}
     {%- continue -%}
 {%- endif -%}
@@ -36,14 +36,14 @@ custom-css: payment
 <input type="hidden" name="on1" value="Applicant Name" />
 <input type="text" name="os1" id="os1" maxLength="200" required />
 
-{% for program-slug in site.data.festival.programs -%}
-    {%- if program-slug.translation -%}
+{% for _p in site.data.festival.programs -%}
+    {%- if _p.translation -%}
         {%- continue -%}
     {%- endif -%}
 
-    {%- assign _program = site.programs | where: "slug", program-slug.name | first %}
+    {%- assign _program = site.programs | where: "slug", _p.program-slug | first %}
     {%- include site/program/initialize-program-variables.fx program=_program -%}
-<div class="invoice" id="invoice-{{ program-slug.name }}">
+<div class="invoice" id="invoice-{{ _p.program-slug }}">
 <h3>Fee items</h3>
 <table><tbody>
     <tr class="header"><td colspan="2"><p>{{ _program.title | smartify }}</p></td></tr>

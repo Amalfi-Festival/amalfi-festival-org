@@ -7,11 +7,11 @@ custom-css: festival
 {% include cancellation-policy.md %}
 {%- assign hide-all = "" -%}
 {%- assign show-only = "" -%}
-{%- for _program in site.data.festival.programs -%}
-    {%- if _program.translation -%}
+{%- for _p in site.data.festival.programs -%}
+    {%- if _p.translation -%}
         {%- continue -%}
     {%- endif -%}
-    {%- assign reference-program = site.programs | where: "slug", _program.name | first -%}
+    {%- assign reference-program = site.programs | where: "slug", _p.program-slug | first -%}
     {%- if reference-program.to-be-announced -%}
         {%- continue -%}
     {%- endif -%}

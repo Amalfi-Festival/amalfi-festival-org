@@ -61,14 +61,14 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 <div class="content-container">
 <h2 id="programs">Programs</h2>
 <div>
-{%- for program-entry in site.data.festival.programs -%}
-{%- if program-entry.translation -%}
+{%- for _p in site.data.festival.programs -%}
+{%- if _p.translation -%}
     {%- continue -%}
 {%- endif -%}
-{%- assign program-slug = program-entry.name -%}
-{%- assign program = site.programs | where: "slug", program-slug | first -%}
+{%- assign _ps = _p.program-slug -%}
+{%- assign program = site.programs | where: "slug", _ps | first -%}
 <div>
-    <img src="{{ site.program-assets-directory | append: program-slug | append: '/home.jpg' | relative_url }}" />
+    <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
     {%- if program.to-be-announced -%}
     <div>
         <h3 class="program-name">{{ program.title | smartify }}</h3>
@@ -91,7 +91,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
         </ul>
         <div class="buttons">
             <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
-            {%- include site/program/get-apply-url.fx program-name=program-slug -%}
+            {%- include site/program/get-apply-url.fx program-name=_ps -%}
             <a href="{{ __return }}" class="button">Apply</a>
         </div>
     </div>

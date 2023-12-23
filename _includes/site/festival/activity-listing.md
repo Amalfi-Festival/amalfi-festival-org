@@ -5,23 +5,23 @@
 <div class="activity-info standard-block">
 <ul class="highlight-box colored">
 {%- assign _availability = site.empty-array -%}
-{%- for _program in site.data.festival.programs -%}
-    {%- if _program.translation -%}
+{%- for _p in site.data.festival.programs -%}
+    {%- if _p.translation -%}
         {%- continue -%}
     {%- endif -%}
-    {%- assign _festival-program = site.programs | where: "slug", _program.name | first -%}
-    {%- if _festival-program.to-be-announced -%}
+    {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
+    {%- if _program.to-be-announced -%}
         {%- continue -%}
     {%- endif -%}
-    {%- assign _has-activity = _festival-program.outings.activities | where: "outing-slug", include.outing-slug | first -%}
+    {%- assign _has-activity = _program.outings.activities | where: "outing-slug", include.outing-slug | first -%}
     {%- if _has-activity -%}
-        {%- assign _availability = _availability | push: _festival-program -%}
+        {%- assign _availability = _availability | push: _program -%}
     {%- endif -%}
 {%- endfor -%}
 <li><h5>Available to</h5>
     <ul>
-{%- for _program in _availability -%}
-    <li><a href="{{ _program.url | relative_url }}">{{ _program.title | smartify }}</a></li>
+{%- for _p in _availability -%}
+    <li><a href="{{ _p.url | relative_url }}">{{ _p.title | smartify }}</a></li>
 {%- endfor -%}
     </ul>
 </li>
