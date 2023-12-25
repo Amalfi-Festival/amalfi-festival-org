@@ -10,7 +10,7 @@ h3 {
 @include breakpoint(tablet) {
     .activity-info, .excursion-info {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         > div ul {
             margin-block-end: 1em;
         }
@@ -29,7 +29,7 @@ h3 {
     position: relative;
     clear: both;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     overflow: clip;
 
     img {
