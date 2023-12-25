@@ -1,3 +1,7 @@
+{%- capture paymentRegistrationURL -%}
+{{ site.baseurl }}{% link payment.html %}{% if reference-program %}?registration={{ reference-program.slug }}{% endif %}
+{%- endcapture %}
+
 ## How to Apply
 
 <ul class="highlight-box colored">
@@ -16,8 +20,9 @@
     <div>{% include utilities/format-cost.html cost=application-deposit %}</div>
 </li>
 {%- if application.form-url -%}
-<li>
+<li class="buttons">
     <a class="button" href="{{ application.form-url }}">Application form</a>
+    <a class="button" href="{{ site.baseurl }}{% link payment.html %}">Online payment</a>
 </li>
 {%- endif -%}
 </ul>
@@ -48,10 +53,7 @@
     {%- endfor -%}
 {%- endunless -%}
 
-{%- capture paymentURL -%}
-{{ site.baseurl }}{% link payment.html %}{% if reference-program %}?registration={{ reference-program.slug }}{% endif %}
-{%- endcapture %}
-1. Pay registration fee and deposit either <a href="{{ paymentURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
+1. Pay registration fee and deposit either <a href="{{ paymentRegistrationURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
 
     * If paying by mail, enclose a check made out to *Center for Musical Studies* and send to:
 
