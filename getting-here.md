@@ -1,12 +1,13 @@
 ---
 title: Travel and Arrival Information
+custom-css: getting-here
 ---
 
 <section class="standard-block" markdown="1">
 
 The Amalfi Coast Music & Arts Festival is based on the Amalfi Coast  in the charming town of Maiori, just  3.5 miles east of Amalfi. The town is below the cliffs of Ravello and situated between  the towns of Minori and  Cetara. 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3027.1651019693795!2d14.63873187657893!3d40.64829084151269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1686737576484!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3027.1651019693795!2d14.63873187657893!3d40.64829084151269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1686737576484!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
  
 ## Getting here
 
