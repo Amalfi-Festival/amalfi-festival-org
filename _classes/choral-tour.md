@@ -1,4 +1,10 @@
 ---
+images:
+    -   filename: choral/basilica-san-giovanni.jpg
+        alt: Basilica San Giovanni
+    -   filename: choral/palazzo-mezzacapo-gardens.jpg
+        alt: Gardens of Palazzo Mezzacapo, by Marie Thérèse Hébert & Jean Robert Thibault on flickr
+
 ---
 Join fellow choristers for an unforgettable singing-vacation in Maiori, Italy!
 Bring family members and friends along to enjoy this unique experience.  
@@ -11,9 +17,9 @@ Conductor Laureate.  Other singers are invited to participate.
 During the festival, singers will have the opportunity to perform the classics
 of choral repertoire at historic cloisters and cathedrals on the Amalfi
 Coast.  Here you can experience sacred music in the spaces it was created
-for. 
+for.
 
-## Trip Highlights
+## Tour Highlights
 
 Two concerts:
 
@@ -21,7 +27,7 @@ Two concerts:
   
 - Celebrate the 4th of July with a memorable concert --- **Independence Day Americana** --- with  Broadway hits, patriotic songs, and spirituals in the enchanting gardens of the Palazzo Mezzacapo --- a much anticipated evening for  our Italian audiences!
 
-Tour renowned cultural landmarks and stunning landscapes:
+Travel to renowned cultural landmarks and stunning landscapes:
 
 - Explore  this  magnificent  area   of  the Mediterranean,  where for centuries artists and musicians have come for inspiration and to soak up the beauty --- from the lush vineyards and terraced lemon groves to the rocky buffs and vivid sea. Visit some of the world's most dramatic sights: the haunting excavations of Pompeii, the magical island of Capri, the majesty of Ravello's villas, and more.
 
