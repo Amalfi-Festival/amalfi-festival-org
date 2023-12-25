@@ -12,6 +12,7 @@ portfolio:
     - Chicken 36 x 48.jpg
     - Goldfish  32 x 39.jpg
     - Beach garden 48 x 36.jpg
+permalink: /people/:title
 ---
 
 David Daniels' large impressionistic paintings have won him recognition through out the United States and numerous awards. David moved to Washington DC in 1983 to pursue a full time career as an artist, after teaching art in the Michigan public school system for over fifteen years. David helped establish the Boat House Art School, in Rock Creek Park, where he then took on the position of Co-director. Currently he is  the  watercolor instructor for the Studio Arts Program of the Smithsonian Institution of Washington DC.  He also teaches design and painting at Montgomery College in Rockville, MD, as well as conducting workshops across the U.S. and around the world.

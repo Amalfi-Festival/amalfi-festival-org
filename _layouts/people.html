@@ -1,10 +1,10 @@
 ---
 layout: default
-custom-css: faculty
+custom-css: people
 ---
 
 <div id="headshot">
-    <img src="{%- include site/person/faculty-headshot-filepath.html -%}" />
+    <img src="{%- include site/person/person-headshot-filepath.html -%}" />
 </div>
 <h1>{{ page.first-name }} {{ page.last-name }}{% if page.zh-name %} ({{ page.zh-name }}){% endif %}</h1>
 {% if page.school %}<h2>{{ page.school }}</h2>{% endif %}

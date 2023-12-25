@@ -1,7 +1,7 @@
 ---
 first-name: Rebecca
 last-name: Cross
-school: Washington, DC
+role: Washington, DC
 website: https://rebeccacross.com
 portfolio:
     - Becca Domestic Landscape.jpg
@@ -9,6 +9,7 @@ portfolio:
     - Becca Vatican painting.jpg
     - Becca Tulips.jpg
     - Cross Ancient weapons Drawings Amalfi.jpg
+permalink: /people/:title
 ---
 
 Rebecca Cross is a painter, sculptor and ceramicist.  She received her B.A. from Bennington College, VT, a Certificate of Advanced Sculpture at St. Martin’s School of Art, London and her M.A. in painting from The Royal College of Art, London.

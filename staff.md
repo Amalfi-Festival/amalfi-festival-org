@@ -9,7 +9,7 @@ custom-css: staff
 {%- for _s in site.data.staff -%}
 {%- assign _person = nil -%}
 {%- if _s.person-slug -%}
-    {%- assign _person = site.faculty | where: "slug", _s.person-slug | first -%}
+    {%- assign _person = site.people | where: "slug", _s.person-slug | first -%}
 {%- endif -%}
 <div>
     <div class="image">
@@ -18,7 +18,7 @@ custom-css: staff
     <img src="{{ site.people-image-directory | append: _s.headshot-filename | relative_url }}" />
     {%- endif -%}
 {%- else -%}
-    <a href="{{ _person.url | relative_url }}"><img src="{% include site/person/faculty-thumbnail-filepath.html faculty=_person %}" /></a>
+    <a href="{{ _person.url | relative_url }}"><img src="{% include site/person/person-thumbnail-filepath.html person=_person %}" /></a>
 {%- endunless -%}
     </div>
 {%- unless _person -%}

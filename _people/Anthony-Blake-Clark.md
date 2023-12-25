@@ -1,7 +1,8 @@
 ---
 first-name: Anthony Blake
 last-name: Clark
-school: Artistic Director, Baltimore Choral Arts Society<br/>Chorus Director, Dallas Symphony
+role: Artistic Director, Baltimore Choral Arts Society<br/>Chorus Director, Dallas Symphony
+permalink: /people/:title
 ---
 
 Anthony Blake Clark is a leading voice among his generation of choral conductors.

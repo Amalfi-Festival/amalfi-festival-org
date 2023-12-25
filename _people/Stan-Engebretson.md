@@ -1,7 +1,8 @@
 ---
 first-name: Stan
 last-name: Engebretson
-school: Conductor Laureate, National Philharmonic Chorale
+role: Conductor Laureate, National Philharmonic Chorale
+permalink: /people/:title
 ---
 Stan Engebretson  served as the Artistic Director and conductor of the National Philharmonic Chorale from its inception. In addition to the Chorale at Strathmore, Engebretson has appeared on concert stages throughout the United States and in Europe, Asia, and Australia. He has studied with great masters of choral music including Robert Shaw, Gregg Smith, Roger Wagner and Eric Ericson, Conductor Emeritus of the world-renowned Swedish Radio Choir in Stockholm, Sweden.
 

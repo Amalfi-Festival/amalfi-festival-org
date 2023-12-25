@@ -4,6 +4,7 @@ last-name: Zhang
 zh-name: 张世超
 school: Northwestern University, DMA
 school-zh: 美国西北大学音乐学院讲师、美国伊斯曼音乐学院钢琴表演及文献博士、音乐节钢琴及钢琴师资培训部门主管及负责人
+permalink: /people/:title
 ---
 Shichao Zhang holds a Doctor of Musical Arts in Piano Performance and Literature with a minor in Chamber Music and Accompanying, at the Eastman School of Music, under the tutelage of Professor Douglas Humpherys and Professor Jean Barr. He taught at the Eastman for seven years as a faculty of the Primary/Secondary Piano Program, Class Piano Teacher, and a Studio Teaching Assistant. Zhang was a winner of the 2013-2014 Eastman Teaching Assistant Prize. He received his Bachelor’s degree in Piano Performance at Eastman with summa cum laude and the Humanity Prize in 2012, and the Master’s degree in Piano Performance and Literature at Eastman in 2014. Zhang is a member of the Pi Kappa Lambda, a National Music Honor Society. Originally from China, Zhang received his early training in Beijing, where he studied with Madam Yafen Zhu and Ms. Chen Zhang.
 

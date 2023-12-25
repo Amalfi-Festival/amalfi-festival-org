@@ -35,7 +35,7 @@ social:
     youtube: http://www.youtube.com/user/AmalfiFestival
 
 collections:
-    faculty:
+    people:
         output: true
         permalink: /faculty/:title
         sort_by: last-name
@@ -57,9 +57,9 @@ defaults:
             layout: "page"
     -   scope:
             path: ""
-            type: "faculty"
+            type: "people"
         values:
-            layout: "faculty"
+            layout: "people"
     -   scope:
             path: ""
             type: "programs"

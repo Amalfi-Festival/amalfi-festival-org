@@ -1,7 +1,7 @@
 ---
 first-name: Robert
 last-name: Devers
-school: Blue Fire Studio, Mt. Rainier, MD
+role: Blue Fire Studio, Mt. Rainier, MD
 portfolio:
     - 41 large.jpg
     - DSC09713.jpg
@@ -16,7 +16,7 @@ portfolio:
     - 27 large.jpg
     - 53 large.jpg
     - 57 large.jpg
-
+permalink: /people/:title
 ---
 
 Robert Devers is an artist with a multi-faceted practice that includes ceramics, sculpture, painting, and photography. Ceramics remains his essential focus and provides the lens through which the other mediums are engaged and ultimately brought back into play in ceramic practice. He is the owner and founder of Blue Fire Studio in Mt. Rainier, MD., where he holds exhibitions and workshops, as well as serving as his primary studio.
