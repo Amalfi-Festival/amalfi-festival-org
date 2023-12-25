@@ -51,7 +51,7 @@
         {%- endunless %}
     * [{{ program.title }}]({{ program.application.guest-form-url }})
     {%- endfor -%}
-{%- endunless -%}
+{%- endunless %}
 
 1. Pay registration fee and deposit either <a href="{{ paymentRegistrationURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
 

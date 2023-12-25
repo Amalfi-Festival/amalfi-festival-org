@@ -110,7 +110,6 @@ Guest Program fees includes access to all festival activities for the full sessi
 {% include site/details.html summary=details_summary details=details_content %}
 {%- endfor %}
 
-
 {%- assign application-deadline = site.data.festival.application.deadline -%}
 {%- assign application-extended-deadline = site.data.festival.application.extended-deadline -%}
 {%- assign application-registration-fee = site.data.festival.application.registration-fee -%}
