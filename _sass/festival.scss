@@ -196,9 +196,6 @@ td.cost {
         font-weight: 600;
     }
     width: 7em;
-    @include breakpoint(mobile) {
-        width: 5em;
-    }
 }
 tr:not(.header):has(+ tr:not(.base)) p:last-child {
     margin-block-end: 0;
