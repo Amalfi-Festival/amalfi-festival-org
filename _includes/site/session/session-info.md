@@ -22,29 +22,31 @@
     {%- include site/faculty-tiles.html faculty=session.faculty -%}
 </div>
 
-
-{%- unless class.summary -%}
-    {%- if class.images -%}
-        {%- for image in class.images -%}
+    {%- unless class.summary -%}
+        {%- if class.images -%}
+            {%- for _i in class.images -%}
 <div class="highlight-box image">
-    <img src="{{ site.program-assets-directory | append: image | relative_url }}" />
+                {%- if _i.filename -%}
+    <img src="{{ site.program-assets-directory | append: _i.filename | relative_url }}" {% if _i.alt %}alt="{{ _i.alt | smartify }}"{% endif %} />
+                {%- else -%}
+    <img src="{{ site.program-assets-directory | append: _i | relative_url }}" />
+                {%- endif -%}
 </div>
-        {%- endfor -%}
-    {%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
 {{ class.content }}
-{%- else -%}
-{%- if class.images -%}
-    {%- for image in class.images -%}
+    {%- else -%}
+        {%- if class.images -%}
+            {%- for image in class.images -%}
 <div class="image-container">
     <img src="{{ site.program-assets-directory | append: image | relative_url }}" />
 </div>
-    {%- endfor -%}
-{%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
 {{ class.summary | smartify | markdownify }}
-{%- capture details_content -%}{{ class.content | smartify | markdownify }}{%- endcapture -%}
-{%- include site/details.html summary="More information" details=details_content -%}
-{%- endunless -%}
-
+        {%- capture details_content -%}{{ class.content | smartify | markdownify }}{%- endcapture -%}
+        {%- include site/details.html summary="More information" details=details_content -%}
+    {%- endunless -%}
 {%- else -%}
 <div class="tiles inside-brochure">
     <h4>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}{% include utilities/localize.html string="Faculty" %}{% endif %}</h4>
@@ -55,5 +57,4 @@
     {%- endif -%}
 </div>
 {%- endif -%}
-
 {%- endfor -%}
