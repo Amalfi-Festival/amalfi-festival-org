@@ -364,7 +364,6 @@ a, input, button, summary {
     height: calc(100% + 20px);
     object-fit: cover;
     z-index: -1;
-    filter: contrast(.55) brightness(1.4) blur(.8px);
 }
 
 .highlight-box {

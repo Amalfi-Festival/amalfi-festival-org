@@ -92,3 +92,8 @@ $standard-block-margin-left: 3rem;
 @mixin font-weight($weight) {
     font-variation-settings: "wght" $weight;
 }
+
+@mixin backdrop-filter {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}

@@ -75,9 +75,10 @@ section#festival {
     padding-top: 3rem;
     padding-bottom: 3rem;
 
-    > img {
-        filter: brightness(1.2) saturate(2.0) blur(2px);
-        opacity: .6;
+    @include breakpoint(mobile) {
+        > img:first-child {
+            filter: blur(1px);
+        }
     }
 
     .inset-container {
@@ -87,6 +88,7 @@ section#festival {
     .content-container {
         border-radius: 2rem;
         background-color: rgba(255, 255, 255, .8);
+        @include backdrop-filter;
         padding: 3rem 1rem;
         @include breakpoint(mobile) {
             padding-left: 1rem;

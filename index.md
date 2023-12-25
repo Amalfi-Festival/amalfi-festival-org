@@ -55,7 +55,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 </section>
 
 <section id="festival" class="background-image-container">
-<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
+<img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w, {{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w" sizes="100vw" alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
 
 <div class="inset-container">
 <div class="content-container">
