@@ -65,32 +65,29 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 {%- assign _ps = _p.program-slug -%}
 {%- assign program = site.programs | where: "slug", _ps | first -%}
 <div>
-    <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
     {%- if program.to-be-announced -%}
-    <div>
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
-        <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
-    </div>
+    <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
+    <h3 class="program-name">{{ program.title | smartify }}</h3>
+    <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
     {%- else -%}
-    <div>
-        <a href="{{ program.url | relative_url }}">
-            <h3 class="program-name">{{ program.title | smartify }}</h3>
-        </a>
-        <ul>
+    <a href="{{ program.url | relative_url }}">
+        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
+        <h3 class="program-name">{{ program.title | smartify }}</h3>
+    </a>
+    <ul>
         {%- for session in program.sessions -%}
-            <li>
+        <li>
             {%- if session.session-name -%}
                 {{- session.session-name }}:
             {% endif -%}
             {%- include utilities/date.html dates=session.dates -%}
-            </li>
+        </li>
         {%- endfor -%}
-        </ul>
-        <div class="buttons">
-            <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
-            {%- include site/program/get-apply-url.fx program-name=_ps -%}
-            <a href="{{ __return }}" class="button">Apply</a>
-        </div>
+    </ul>
+    <div class="buttons">
+        <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
+        {%- include site/program/get-apply-url.fx program-name=_ps -%}
+        <a href="{{ __return }}" class="button">Apply</a>
     </div>
     {%- endif -%}
 </div>
