@@ -21,7 +21,7 @@ railway station instead of Naples.  The Salerno station is closer and more acces
 
 ## Airlines
 
-All participants are free to make their travel plans at their own discretion. There are many efficient search engines and websites with a range of flights and prices, such as: www.kayak.com, expedia.com, etc.
+All participants are free to make their travel plans at their own discretion. There are many efficient search engines and websites with a range of flights and prices, such as [Kayak](https://www.kayak.com) or [Expedia](https://www.expedia.com).
  
 For arrival at the festival, your most convenient option is to fly into the city of Naples, which is approximately 90 minutes from our facilities. There are few direct flights from the U.S. to Naples outside of New York. Lufthansa (Star Alliance) and Air France (SkyTeam Alliance) have consistently offered reliable routes at the best prices.
  
@@ -30,12 +30,12 @@ Keep in mind that ticket prices are subject to change until the time you actuall
 If you prefer to deal with a travel agent, we can recommend several reputable companies that are experienced in travel to Italy: 
 
 Bethesda Travel Center<br/>
-1-201-656-1670<br/>
-ciao@bethesdatravel.com
+[1-201-656-1670](tel:1-201-656-1670)<br/>
+[ciao@bethesdatravel.com](mailto:ciao@bethesdatravel.com)
 
 Fare Deals, Ltd.<br/>
-1-800-347-7006<br/>
-travel@faredeals.com
+[1-800-347-7006](tel:1-800-347-7006)<br/>
+[travel@faredeals.com](mailto:travel@faredeals.com)
 
 Be sure to double check on precise arrival and departure dates for specific program (see below).
  
@@ -54,12 +54,12 @@ When planning your upcoming summer in Italy, travel insurance is essential.
 For your protection, we strongly recommend you purchase travel insurance. In case of a health problem or family emergency that might require you to make a last-minute change in plans. Although on-line search engine such as Kayak or Orbitz, usually offer an option to purchase travel insurance to cover your flight, we recommend a more extensive coverage that would cover your program fees, should you have to cancel unexpectedly.
  
 Agencies offering travel insurance:
-* www.insuremytrip.com
-* www.totaltravelinsurance.com
-* www.globaltravelshield.com
-* www.travelguard.com
-* www.worldtravelcenter.com
+* [InsureMyTrip](https://www.insuremytrip.com)
+* [Total Travel Protection](https://www.totaltravelprotection.com)
+* [Global Travel Insurance](https://globaltravelinsurance.com)
+* [Travel Guard](https://www.travelguard.com)
+* [Travel Insurance Center](https://www.travelinsurancecenter.com)
  
 ACM&AF does not endorse any particular insurance agency.
 
-<section class="standard-block" markdown="1">
+</section>
