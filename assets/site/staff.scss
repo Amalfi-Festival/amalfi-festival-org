@@ -33,6 +33,9 @@ section > div {
         object-fit: cover;
     }
 }
+a:hover img {
+    border-color: $brand-light-blue;
+}
 .name {
     font-weight: 600;
 }
@@ -42,6 +45,8 @@ section > div {
 .email {
     font-size: .9em;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     svg {
         width: 1em;
         height: 1em;
