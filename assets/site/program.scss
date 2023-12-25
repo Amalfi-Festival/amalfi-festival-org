@@ -193,9 +193,11 @@ h3 .label {
 }
 
 #video {
-    @include standard-block-behavior;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem max-minimum-side-padding(5vw);
+    @include breakpoint(mobile) {
+        padding: 2rem max-minimum-mobile-side-padding(5vw);
+    }
+    background-color: $brand-blue;
     iframe {
         width: 100%;
         aspect-ratio: 16/9;
@@ -223,17 +225,22 @@ main:has(#learn) {
 }
 section#learn {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    @include breakpoint(mobile) {
+        font-size: 1.25rem;
+    }
     display: flex;
     gap: 3rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6rem 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     h3 {
         margin: 0;
-        padding: 2rem;
+        padding: 1.2em;
         background-color: #F9C56BDD;
+        @include backdrop-filter;
         border-radius: $border-radius-large;
     }
 }

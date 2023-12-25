@@ -47,6 +47,12 @@ $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
         @return $minimum-mobile-side-padding;
     }
 }
+@function max-minimum-side-padding($padding) {
+    @return max(#{$padding}, 1.5rem + env(safe-area-inset-left));
+}
+@function max-minimum-mobile-side-padding($padding) {
+    @return max(#{$padding}, .75rem + env(safe-area-inset-left));
+}
 $list-padding-left: 2em;
 
 $default-max-content-width: 60rem;
