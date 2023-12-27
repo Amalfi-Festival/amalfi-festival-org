@@ -80,6 +80,10 @@ webpage-data:
     menu-title: text
     hero-image: image-file.jpg
     program-header-subtitle: HTML markup # OPTIONAL.
+    localizations:
+        -   abbreviation: zh # text to display for language
+            program: program-slug # slug for the specific program
+        # ...
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
