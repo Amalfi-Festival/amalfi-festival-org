@@ -31,11 +31,13 @@ Its stunning views and powerful atmosphere have made it a favorite respite and i
 
 * **The "Duomo"** - Erected in 1086, it dominates the Piazza del Vescovado with its splendid, triple-arched marble portal and magnificent bronze door created in 1179 by Parisano da Trani. The cathedral's museum houses the splendid marble bust of Sigligaida Rufolo, widely considered to be one of the most beautiful works of 13th century art.
 
-<div class="highlight-box image"><img src="{{ site.image-directory | append: "ravello-villa-rufolo.jpg" | relative_url }}" /></div>
+{% assign _src = site.image-directory | append: "ravello-villa-rufolo.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 * **Villa Rufolo** - Constructed in the latter half of the 13th century by the powerful Rufolo family, both Moorish and Norman influences can be seen in the staggering towers and cloisters. The magnificent cliff edge terrace, perched directly above the sea, is the venue for Ravello's annual Wagner Festival.
 
-<div class="highlight-box image"><img src="{{ site.image-directory | append: "ravello-villa-cimbrone.jpg" | relative_url }}" /></div>
+{% assign _src = site.image-directory | append: "ravello-villa-cimbrone.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 * **Villa Cimbrone** – Purchased and remodeled by Lord William Beckett in 1904, this beautiful architectural phenomenon is an eclectic mix of styles and eras, archeological relics and souvenirs of Beckett’s own extensive travels. The luxuriant garden is filled with decorative elements including fountains, small temples, pavilions, statues, and paths which culminate in the “Terrace of the Infinite," known as one of the most beautiful views in the whole world.
 * **Oscar Niemeyer Auditorium** - A controversial international design legend, it is a powerful work of modern architecture whose 400-seat amphitheater has been likened to a “sheet of white paper blowing in the wind.”
@@ -57,7 +59,8 @@ A tourist destination for over 250 years, Pompeii is now an UNESCO World Heritag
 
 * **Temple of Apollo** - Built in the 2nd century BC, it was the city’s most important religious structure. A peripteros featuring 48 ionic columns, it was seated on a high podium with an imposing set of entrance steps, reflecting a fusion of Greek and Italic architectural ideas.
 
-<div class="highlight-box image"><img src="{{ site.image-directory | append: "pompeii-amphitheatre.jpg" | relative_url }}" /></div>
+{% assign _src = site.image-directory | append: "pompeii-amphitheatre.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 * **Amphitheatre of Pompeii** – Believed to be the earliest Roman amphitheater constructed of stone, it remains in startlingly practical condition today. Praised for its acoustics and optimal design, it is still used today as a concert and public events venue.
 * **Garden of the Fugitives** - Giuseppe Fiorelli took charge of the Pompeii excavations in 1863. During early excavations of the site, occasional voids in the ash layer had been found that contained human remains. Fiorelli realized these were spaces left by the decomposed bodies and devised the technique of injecting plaster into them to recreate the forms of Vesuvius's victims. This technique is still in use today, with a clear resin now used instead of plaster because it is more durable, and does not destroy the bones, allowing further analysis. Today, many casts can also be found in the Archaeological Museum of Naples.
@@ -82,7 +85,8 @@ In the latter half of the 19th century, Capri started to become a popular resort
 * **Faraglioni** - Sculpted by the wind and sea, and home to rare plants and wildlife, Faraglioni is the collective name for the three rocky stacks Stella (Star), Faraglione di Mezzo (in between) and Scopolo. The latter is famous for its unique blue lizards, found nowhere else on Earth. The ultimate touch of mystique surrounding the Faraglioni is the relationship between the depth of the sea immediately surrounding the rocks, the strong currents flowing there, and the way the spray is shot through with light, creating an array of sparkling colors.
 * **Port of Marina Grande** - Encompassed by two narrow arms or quays, it borders the picturesque town of Capri. Until 1928, all docking took place directly in the bay, which in those days was smaller, formed of a natural reef. Larger vessels weighed anchor further out to sea, with goods for trade and passengers being rowed ashore in dinghies. Since its expansion, the scene has become more spacious, with a seaside resort and wide beach. Houses along the port are still structurally typical of the ancient dwellings of Capri's fishermen. In the past, these homes were built literally at sea level, with the water lapping at their front doors. However, since the restructuring of the port, the water level has changed, and their previous position is now only visible in old photographs.
 
-<div class="highlight-box image"><img src="{{ site.image-directory | append: "capri-blue-grotto.jpg" | relative_url }}" /></div>
+{% assign _src = site.image-directory | append: "capri-blue-grotto.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 * **Blue Grotto** - A jewel discovered long ago by the Roman emperors, the grotto is one of the most popular tourist attractions of Capri. According to the historians of the times, Emperor Tiberius built a passage connecting his house to the cave, using it as an elite bathing pool. At certain times of the day, old Roman statues and ruins can still be seen on the grotto floor. For a long time the grotto fell into oblivion: local sailors and fishermen were scared since, according to popular tales, it was infested by ghosts and demons. During the first half of the 1800’s, a fisherman let two German artists, Ernst Fries and August Kopisch, inside the grotto, exploring it for the first time after ages. Since then, the iridescent cave has been famous all over the world.
 * **Anacapri** - The Ancient Greek prefix ana means "up" or "above", indicating that this separate comune is located at a higher elevation than Capri (about 150 m higher on average). Claude Debussy was a regular visitor here, naming one of his preludes from the first book, No.5 "Les collines d'Anacapri", or “The hills of Anacapri.” There is a bus service, via numerous hairpin bends, from Marina Grande and Capri to Anacapri. However, one may choose to take the popular chairlift (seggiovia) to 589-m Monte Solaro for picturesque views of the south-facing coast.

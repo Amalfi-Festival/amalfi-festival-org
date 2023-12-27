@@ -116,7 +116,6 @@ window.addEventListener("DOMContentLoaded", function() {
     new Accordion(el);
   });
 
-
   let anchorlinks = document.querySelectorAll('a[href^="#"]');
   for (let item of anchorlinks) {
     item.addEventListener('click', (e)=> {
@@ -129,5 +128,8 @@ window.addEventListener("DOMContentLoaded", function() {
       history.pushState(null, null, hashval)
       e.preventDefault()
     })
-  }
+  };
+
+  var lightbox = new Lightbox();
+  lightbox.load();
 });

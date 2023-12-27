@@ -35,6 +35,7 @@
     {%- endif -%}
 
     <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.site-assets-directory | append: 'lightbox.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ site.site-assets-directory | append: 'main.css' | relative_url }}">
     {%- if layout.custom-css -%}
         {%- if layout.custom-css[0] -%}
@@ -65,6 +66,7 @@
     <meta name="msapplication-TileColor" content="{{ site.data.website.colors.dark-color }}">
     <meta name="theme-color" content="{{ site.data.website.colors.dark-color }}">
 
+    <script src="{{ site.site-assets-directory | append: 'lightbox.min.js' | relative_url }}"></script>
     <script src="{{ site.site-assets-directory | append: 'site.js' | relative_url }}"></script>
     {%- if layout.custom-js -%}
         {%- if layout.custom-js[0] -%}
@@ -84,6 +86,5 @@
             <script src="{{ site.site-assets-directory | append: page.custom-js | append: '.js' | relative_url }}"></script>
         {%- endif -%}
     {%- endif -%}
-
     <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="ab2e0c8f-fdc4-4b78-9bad-07e0d4e61283" async></script>
 </head>

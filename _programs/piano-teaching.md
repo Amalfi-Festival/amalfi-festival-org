@@ -73,31 +73,36 @@ All master class courses, teachers and student concerts of the Piano Music Festi
 
 ## Experience the best of the Amalfi Coast
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 ### Maiori
 
 Since ancient Roman times, the tourist attraction has the longest coastline on the Amalfi coast. There are mountain paths where you can walk on foot, and rare volcanic sand and gravel beaches. Majori is our main venue, where the accommodation of the music festival and most of the course activities are held.
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 ### Amalfi's Lemons 🍋
 
 Experience a walk on the world-famous lemon tree path on the Amalfi coast in the morning, and taste a cup of southern Italy's most mellow espresso with friends.
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/delizia-al-limone.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/delizia-al-limone.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 ### Minori
 
 In Minori, a small town only a 20-minute walk from Maiori, there is a dessert shop Sal De Riso that has appeared on a CNN documentary, one of the most famous of which is Delizia al limone, nicknamed "Venus's Breasts". Each music festival will have an outdoor concert and dinner at Minori, and some students will choose to visit the store here. Holding a cake, holding an Italian handmade ice cream, and walking back to Maiori in the sea breeze.
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 ### Concerts
 
 The concerts of the festival are divided into Faculty Concert and Young Artist Recital Series. There is a concert almost every day during the festival. Our event venue has selected churches and concert halls with different architectural styles in different towns, and strives to create a diversified music and artistic experience for the audience.
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/fireworks.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/fireworks.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 ### Day & Night in a Mediterranean Town
 
@@ -105,7 +110,8 @@ The Amalfi Coast follows the Siesta Hour, which is unique to the Mediterranean r
 
 ### Capri & Ravello Travels
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/capri.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/capri.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 Listening to Debussy's piano prelude "The Hill of Anna Capri", I drove through Mamma Mia in the local population! ( All the way to horror), then take the cable car to the top of Anna Capri and immerse yourself in the color #0476D0 Capri blue.
 
@@ -113,7 +119,8 @@ In addition to the exciting beauty, Capri is one of the top ten most expensive r
 
 The one-day tour of Capri for members of Art Week includes ferry tickets, tickets, and tour guide services.
 
-<div class="highlight-box image"><img src="{{ site.program-assets-directory | append: "piano-teaching/ravello.jpg" | relative_url }}" /></div>
+{% assign _src = site.program-assets-directory | append: "piano-teaching/ravello.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 Ravello is known as the "City of Music", and the Ravello Festival, which is often attended by the conductor Muti, is held at Villa Rufolo. Lavillo is one of the inspirations for Wagner's opera Parsifal and a musical shrine walked by Liszt.
 

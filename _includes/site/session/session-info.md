@@ -25,13 +25,12 @@
     {%- unless class.summary -%}
         {%- if class.images -%}
             {%- for _i in class.images -%}
-<div class="highlight-box image">
                 {%- if _i.filename -%}
-    <img src="{{ site.program-assets-directory | append: _i.filename | relative_url }}" {% if _i.alt %}alt="{{ _i.alt | smartify }}"{% endif %} />
+                    {%- assign _src = site.program-assets-directory | append: _i.filename | relative_url -%}
                 {%- else -%}
-    <img src="{{ site.program-assets-directory | append: _i | relative_url }}" />
+                    {%- assign _src = site.program-assets-directory | append: _i | relative_url -%}
                 {%- endif -%}
-</div>
+                {%- include site/sidebar-image.html src=_src alt=_i.alt -%}
             {%- endfor -%}
         {%- endif -%}
 {{ class.content }}
