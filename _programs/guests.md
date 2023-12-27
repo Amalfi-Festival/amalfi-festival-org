@@ -3,7 +3,6 @@ title: Guests & Auditors
 webpage-data:
     menu-title: Guests
     hero-image: home.jpg
-    header-blend-mode: multiply
 custom-css: guests
 ---
 <section class="standard-block" markdown="1">
