@@ -1,39 +1,7 @@
 ---
-title: Piano Teaching Seminar
-sessions:
-    -   dates:
-            start: 2024-07-10
-            end: 2024-07-17
-        faculty:
-            -   Boris-Berman
-            -   Bernadene-Blaha
-            -   Enrico-Elisi
-            -   Kevin-Fitz-Gerald
-            -   James-Giles
-            -   Ian-Jones
-            -   Wei-Lung-Li
-            -   Marina-Lomazov
-            -   Yoshikazu-Nagai
-            -   Joseph-Rackers
-            -   Jerry-Wong
-application:
-    form-url: https://forms.gle/33Zk5TXN2YP4Fb188
-outings:
-    excursions:
-        -   outing-slug: ravello
-            cost: 0
-        -   outing-slug: capri
-            cost: 0
-    activities:
-        -   outing-slug: language
-        -   outing-slug: cooking
-tuition:
-    hotel-double: 2450
-    hotel-single-upgrade: 945
-webpage-data:
-    menu-title: Piano Teaching
-    hero-image: amalfi-cloister.jpg
-    program-header-subtitle: "<h3>Shichao Zhang, Director<br/>Yetong Tang, Director</h3>"
+reference-program-slug: piano-teaching
+title: 第26届意大利阿马尔菲海岸钢琴艺术节
+lang: zh
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
