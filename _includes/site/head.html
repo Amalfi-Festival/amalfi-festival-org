@@ -13,12 +13,15 @@
     {%- endif -%}
     <title>{{ page-title }}</title>
 
-    {%- if page.meta-description -%}
-    <meta name="description" content="{{ page.meta-description }}">
-    {%- elsif page.excerpt -%}
-    <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}">
-    {%- endif -%}
     <meta property="og:title" content="{{ page-title }}" />
+    {%- assign _md = page.meta-description -%}
+    {%- if page.excerpt -%}
+        {%- assign _md = page.excerpt | strip_html | truncatewords: 50 -%}
+    {%- endif -%}
+    {%- if _md -%}
+    <meta name="description" content="{{ _md }}">
+    <meta property="og:description" content="{{ _md }}" />
+    {%- endif -%}
     <meta property="og:type" content="{% if layout.og-type %}{{ layout.og-type }}{% elsif page.og-type %}{{ page.og-type }}{% else %}website{% endif %}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     {%- assign image = page.webpage-data.hero-image -%}
@@ -27,11 +30,6 @@
     {%- endif -%}
     {%- if image -%}
     <meta property="og:image" content="" />
-    {%- endif -%}
-    {%- if page.meta-description -%}
-    <meta property="og:description" content="{{ page.meta-description }}" />
-    {%- elsif page.excerpt -%}
-    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}" />
     {%- endif -%}
 
     <!-- CSS -->
