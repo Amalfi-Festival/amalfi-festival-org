@@ -21,7 +21,7 @@
     <meta property="og:title" content="{{ page-title }}" />
     <meta property="og:type" content="{% if layout.og-type %}{{ layout.og-type }}{% elsif page.og-type %}{{ page.og-type }}{% else %}website{% endif %}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    {%- assign image = page.photos[0].filename -%}
+    {%- assign image = page.webpage-data.hero-image -%}
     {%- if page.preferred-splash-image -%}
         {%- assign image = page.preferred-splash-image -%}
     {%- endif -%}
