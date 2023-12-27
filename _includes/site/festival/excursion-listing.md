@@ -1,6 +1,6 @@
 {%- assign _excursion = site.data.outings.excursions[include.outing-slug] %}
 
-<div class="excursion-hero" id="{{ include.outing-slug }}">
+<div class="excursion-hero background-image-container parallax" id="{{ include.outing-slug }}">
 <img src="{{ site.image-directory | append: include.hero-image | relative_url }}" />
 <div class="title">
 <div class="standard-block" markdown="1">

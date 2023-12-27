@@ -360,18 +360,24 @@ img[data-jslghtbx] {
     cursor: pointer;
 }
 
-.image-container, .background-image-container {
-    overflow: clip;
+.background-image-container {
     position: relative;
-}
-.background-image-container > img:first-child {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    object-fit: cover;
-    z-index: -1;
+
+    > :first-child {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    > img:first-child,
+    .simpleParallax img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .highlight-box {

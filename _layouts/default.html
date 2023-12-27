@@ -17,5 +17,11 @@
 {{ content }}
 </main>
 {%- include site/footer.html -%}
+
+<script>
+  // Accepts any class name
+var image = document.querySelectorAll('.background-image-container.parallax > img:first-child');
+new simpleParallax(image, { orientation: 'down' });
+</script>
 </body>
 </html>

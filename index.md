@@ -17,7 +17,6 @@ sponsors:
     corporate:
         - progetto.jpg
         - coelmo.jpg
-custom-js: rellax.min
 custom-css: home
 body-class: home
 webpage-data:
@@ -29,8 +28,8 @@ webpage-data:
         <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
         <span>{{ site.data.festival.edition }}</span>
     </div>
-    <div class="image-container">
-        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" class="rellax" data-rellax-speed="-2" />
+    <div class="background-image-container parallax">
+        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
     </div>
 </section>
 
@@ -54,7 +53,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 
 </section>
 
-<section id="festival" class="background-image-container">
+<section id="festival" class="background-image-container parallax">
 <img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w, {{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w" sizes="100vw" alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
 
 <div class="inset-container">
@@ -137,9 +136,3 @@ Donations help keep the festival alive and thriving. Help extend the legacy of t
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
-
-
-<script>
-  // Accepts any class name
-  var rellax = new Rellax('.rellax');
-</script>

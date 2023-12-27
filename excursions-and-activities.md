@@ -1,6 +1,5 @@
 ---
 title: Excursions & Activities
-custom-js: rellax.min
 custom-css: activities
 ---
 
@@ -107,8 +106,3 @@ Daily lessons of basic Italian, with emphasis on oral communication and pronunci
 Mediterranean Cuisine of Campania: a series of regional southern Italian cooking lessons will be offered in the kitchens of the area's most famous restaurants. A gastronomic hands-on adventure where you will learn the finest traditional local pastas, savory Mediterranean side dishes, and seafood specialties. Then sit down and sample your labors at a four-course lunch! Take home the recipes and insiders' knowledge of ingredients.
 {%- endcapture -%}
 {%- include site/festival/activity-listing.md outing-slug="cooking" description=description -%}
-
-<script>
-  // Accepts any class name
-  var rellax = new Rellax('.rellax');
-</script>

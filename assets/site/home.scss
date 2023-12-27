@@ -27,6 +27,16 @@ section#hero {
     line-height: $minimum-line-height;
     > div {
         width: 50%;
+        &:last-child {
+            position: relative;
+            > :first-child {
+                z-index: initial;
+            }
+
+            img {
+                object-position: right;
+            }
+        }
     }
     .logo {
         display: grid;
@@ -62,12 +72,6 @@ section#hero {
         padding-right: .4em;
         text-align: right;
         font-size: min(4vw, 4vh);
-    }
-    .image-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 70%;
     }
 }
 

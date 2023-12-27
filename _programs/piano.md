@@ -145,7 +145,7 @@ Opportunities to fully experience the Amalfi Coast with excursions to historic l
     <iframe src="https://www.youtube.com/embed/bP4LVZUGYYs?modestbranding=1" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
 </section>
 
-<section id="learn" class="background-image-container">
+<section id="learn" class="background-image-container parallax">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
 <a class="apply button" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
