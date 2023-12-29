@@ -56,8 +56,10 @@ section#splash {
     padding-bottom: 3rem;
 
     &.proto-2 {
-        background: linear-gradient(181deg, #{$background-color}, #03a597 30%, #025951);
-        color: $brand-light-yellow;
+        background: linear-gradient(to bottom right, transparent 50%, #4ED4C6),
+            linear-gradient(to bottom left, transparent 50%, #6EC1D4),
+            linear-gradient(to bottom, transparent, #03a597);
+        background-blend-mode: screen;
         padding-top: 2rem;
         padding-bottom: 4rem;
         h2 {
@@ -185,7 +187,11 @@ h3 .label {
     @include breakpoint(mobile) {
         padding: 2rem max-minimum-mobile-side-padding(5vw);
     }
-    background-color: $brand-blue;
+//    background-color: $brand-blue;
+    background: linear-gradient(to top right, transparent, #{$brand-light-blue}),
+        linear-gradient(to top left, transparent 20%, #{$brand-light-yellow}),
+        linear-gradient(to bottom, transparent, #{$brand-blue});
+    background-blend-mode: overlay;
     iframe {
         width: 100%;
         aspect-ratio: 16/9;
@@ -227,7 +233,7 @@ section#learn {
     h3 {
         margin: 0;
         padding: 1.2em;
-        background-color: #F9C56BDD;
+        background: linear-gradient(to bottom, #FAD170DD, #{$brand-light-yellow}DD);
         @include backdrop-filter;
         border-radius: $border-radius-large;
     }

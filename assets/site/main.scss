@@ -347,9 +347,9 @@ a {
     }
 }
 a, input, button, summary {
-    transition: $animation-length color, $animation-length background-color, $animation-length border;
+    transition: $animation-length color, $animation-length background-color, $animation-length background, $animation-length border;
     &:hover {
-        transition: $animation-length color, $animation-length background-color, $animation-length border;
+        transition: $animation-length color, $animation-length background-color, $animation-length background, $animation-length border;
     }
 }
 img[data-jslghtbx] {
@@ -411,7 +411,7 @@ img[data-jslghtbx] {
     }
 
     &.colored {
-        background-color: $brand-light-yellow;
+        background: linear-gradient(to bottom, #FAD170, #{$brand-light-yellow});
         padding: 1em;
         border-radius: $border-radius-large;
         border-left: 0;
@@ -516,7 +516,7 @@ img[data-jslghtbx] {
     text-decoration: none;
     display: inline-block;
     padding: .35em 1.5em;
-    background-color: #BEDDE8;
+    background: linear-gradient(to bottom right, #A5DEE8, #9FD8ED);
     color: $brand-blue;
     border: 1px solid $brand-blue;
     border-radius: 5em;
@@ -524,7 +524,7 @@ img[data-jslghtbx] {
     line-height: $standard-line-height;
 
     &:hover {
-        background-color: $brand-blue;
+        background: linear-gradient(to bottom right, #037587, #{$brand-blue});
         color: $brand-lighter-yellow;
     }
 }
