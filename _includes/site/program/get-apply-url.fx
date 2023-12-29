@@ -1,17 +1,17 @@
 {% comment %}
 Input variables:
-    program-name: name of program (optional)
-        uses |reference-program| as default
+    program: program object
     hash: if not specified, goes to application section
 Returns: URL string
 {% endcomment %}
 
-{%- assign __return = site.apply | where: "slug", program.slug | first -%}
-{%- assign _hash = include.hash | "how-to-apply" -%}
+{%- assign __program = include.program -%}
+{%- assign __return = site.apply | where: "slug", __program.slug | first -%}
+{%- assign __hash = include.hash | default: "how-to-apply" -%}
 {%- if __return -%}
     {%- assign __return = __return.url | relative_url -%}
-{%- elsif page.url == program.url -%}
-    {%- assign __return = "#" | append: _hash -%}
+{%- elsif page.url == __program.url -%}
+    {%- assign __return = "#" | append: __hash -%}
 {%- else -%}
-    {%- assign __return = program.url | append: "#" | append: _hash | relative_url -%}
+    {%- assign __return = __program.url | append: "#" | append: __hash | relative_url -%}
 {%- endif -%}

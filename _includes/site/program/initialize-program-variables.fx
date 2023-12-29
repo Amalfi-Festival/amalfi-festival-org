@@ -26,7 +26,7 @@ Establishes local variables:
     {%- assign reference-program = site.programs | where: "slug", program.reference-program-slug | first -%}
 {%- endif -%}
 
-{%- include site/program/get-apply-url.fx program-name=program.slug -%}
+{%- include site/program/get-apply-url.fx program=program -%}
 {%- assign apply-url = __return -%}
 
 

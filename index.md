@@ -85,7 +85,7 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
     </ul>
     <div class="buttons">
         <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
-        {%- include site/program/get-apply-url.fx program-name=_ps -%}
+        {%- include site/program/get-apply-url.fx program=program -%}
         <a href="{{ __return }}" class="button">Apply</a>
     </div>
     {%- endif -%}
