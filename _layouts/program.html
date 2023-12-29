@@ -6,16 +6,29 @@ custom-css: program
 {%- include site/program/initialize-program-variables.fx -%}
 
 {% capture translations %}
-{%- if reference-program.webpage-data.localizations -%}
-    {%- for translation in reference-program.webpage-data.localizations -%}
-        {%- if translation.program == page.slug -%}
-<span>{{ translation.abbreviation }}</span>
-            {%- continue -%}
-        {%- endif -%}
-        {% assign program = site.programs | where: "slug", translation.program | first %}
-<a href="{{ program.url | relative_url }}">{{ translation.abbreviation }}</a>
-    {%- endfor -%}
+{%- assign _programs = site.empty-array -%}
+{%- assign _fp = site.data.festival.programs | where: "program-slug", reference-program.slug | first -%}
+{%- assign _program = site.programs | where: "slug", _fp.program-slug | first %}
+{%- assign _programs = _programs | push: _program -%}
+{%- if _fp.zh -%}
+    {%- assign _program = site.programs | where: "slug", _fp.zh | first %}
+    {%- assign _programs = _programs | push: _program -%}
 {%- endif -%}
+{%- unless _programs.size == 1 -%}
+{%- for translation in _programs -%}
+    {%- case translation.lang -%}
+        {%- when "zh" -%}
+            {%- assign _abbreviation = "中文" -%}
+        {%- else -%}
+            {%- assign _abbreviation = "en" -%}
+    {%- endcase -%}
+    {%- if translation.slug == page.slug -%}
+<span>{{ _abbreviation }}</span>
+        {%- continue -%}
+    {%- endif -%}
+<a href="{{ translation.url | relative_url }}">{{ _abbreviation }}</a>
+{%- endfor -%}
+{%- endunless -%}
 {% endcapture %}
 
 {%- if reference-program.webpage-data.hero-image -%}

@@ -150,6 +150,26 @@ body > header {
             font-weight: 600;
         }
     }
+
+{%- assign _selected-header = "" -%}
+{%- assign _programs = site.empty-array -%}
+{%- for _p in site.data.festival.programs -%}
+    {%- assign _programs = _programs | push: _p.program-slug -%}
+    {%- if _p.zh -%}
+        {%- assign _programs = _programs | push: _p.zh -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- for _p in _programs -%}
+    {%- assign p = site.programs | where: "slug", _p | first -%}
+    {%- assign rp = p -%}
+    {%- if p.reference-program-slug -%}
+        {%- assign rp = site.programs | where: "slug", p.reference-program-slug | first -%}
+    {%- endif -%}
+    {%- if p -%}
+        {%- assign _selected-header = _selected-header | append: "body." | append: p.slug | append: " > header .link-" | append: rp.slug | append: "," -%}
+
+    {%- endif -%}
+{%- endfor -%}
 }
 body:has(#hero) > header {
     position: absolute;
@@ -169,16 +189,8 @@ body:has(#hero) > header {
         }
     }
 }
-{%- for _p in site.data.festival.programs -%}
-    {%- assign p = site.programs | where: "slug", _p.program-slug | first -%}
-    {%- assign rp = p -%}
-    {%- if p.reference-program-slug -%}
-        {%- assign rp = site.programs | where: "slug", p.reference-program-slug | first -%}
-    {%- endif -%}
-    {%- if p -%}
-body.{{ p.slug }} > header .link-{{ rp.slug }},
-    {%- endif -%}
-{%- endfor -%}
+
+{{ _selected-header }}
 body.guests > header .link-guests {
     letter-spacing: .07em;
     font-weight: 600;
