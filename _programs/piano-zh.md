@@ -7,7 +7,7 @@ webpage-data:
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
-<section id="splash" class="proto-2" markdown="1">
+<section id="splash" class="proto" markdown="1">
 <div class="standard-block" markdown="1">
 
 ## 在阿马尔菲海岸的壮丽景色中体验强化钢琴教育

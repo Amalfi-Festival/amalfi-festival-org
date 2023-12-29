@@ -77,7 +77,7 @@ webpage-data:
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
-<section id="splash" class="proto-2">
+<section id="splash" class="proto">
 <div class="standard-block" markdown="1">
 
 ## Experience an intensive piano education amid the breathtaking views of the Amalfi Coast
