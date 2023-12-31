@@ -117,12 +117,19 @@ body > header {
         padding-top: .5rem;
         padding-bottom: .5rem;
         border-bottom: $border-style;
+        @include breakpoint(tablet) {
+            gap: .5rem;
+            padding-top: 1rem;
+        }
     }
     svg {
         height: 4rem;
         @include breakpoint(tablet) {
             width: 15rem;
             height: auto;
+        }
+        @include breakpoint(mobile) {
+            width: 12rem;
         }
     }
     nav {
@@ -177,16 +184,11 @@ body:has(#hero) > header {
     left: 0;
     z-index: 1;
     width: 100%;
-    background-color: initial;
-    mix-blend-mode: plus-lighter;
-
+    background: linear-gradient(to bottom, #{$background-color + 'a0'}, #{$background-color + 'd0'} 70%);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: $border-style;
     .content-wrapper {
-        //border-bottom: 0;
-    }
-    a {
-        &:hover {
-            mix-blend-mode: initial;
-        }
+        border-bottom: 0;
     }
 }
 

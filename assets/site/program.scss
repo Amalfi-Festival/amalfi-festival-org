@@ -21,13 +21,7 @@ body:has(#hero) {
     }
 }
 #hero {
-    height: min(80vh, 80vw);
-    @include breakpoint(tablet) {
-        height: 70vh;
-    }
-    @include breakpoint(mobile) {
-        height: 50vh;
-    }
+    height: min(90vh, 125vw);
     .gradient-bottom {
         position: absolute;
         width: 100%;
