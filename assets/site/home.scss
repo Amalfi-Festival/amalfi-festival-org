@@ -4,7 +4,7 @@
 @import "base";
 
 body:has(#hero) > header {
-    background-image: initial;
+    display: none;
 }
 body > main {
     margin-top: 0;

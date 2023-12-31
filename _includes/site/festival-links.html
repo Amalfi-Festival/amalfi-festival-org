@@ -11,6 +11,7 @@
 </div>
         {%- endif -%}
 {%- endfor -%}
-
+{%- unless include.omit-guests -%}
 {%- assign _program = site.programs | where: "slug", "guests" | first -%}
 <div><a class="link-{{ _program.slug }}" href="{{ _program.url | relative_url }}">{{ _program.webpage-data.menu-title }}</a></div>
+{%- endunless -%}
