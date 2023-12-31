@@ -27,10 +27,12 @@ webpage-data:
     <div class="background-image-container parallax">
         <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
     </div>
-    <div class="logo">
-        <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
-        <span id="festival-edition">{{ site.data.festival.edition }}</span>
-        <div id="hero-links">{%- include site/festival-links.html omit-guests=true -%}</div>
+    <div id="masthead">
+        <div class="logo">
+            <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
+            <span id="festival-edition">{{ site.data.festival.edition }}</span>
+            <div id="hero-links">{%- include site/festival-links.html omit-guests=true -%}</div>
+        </div>
     </div>
 </section>
 
