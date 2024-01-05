@@ -30,7 +30,7 @@ Its stunning views and powerful atmosphere have made it a favorite respite and i
 
 * **The "Duomo"** - Erected in 1086, it dominates the Piazza del Vescovado with its splendid, triple-arched marble portal and magnificent bronze door created in 1179 by Parisano da Trani. The cathedral's museum houses the splendid marble bust of Sigligaida Rufolo, widely considered to be one of the most beautiful works of 13th century art.
 
-{% assign _src = site.image-directory | append: "ravello-villa-rufolo.jpg" | relative_url -%}
+{% assign _src = site.image-directory | append: "ravello-villa-rufolo.JPG" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
 * **Villa Rufolo** - Constructed in the latter half of the 13th century by the powerful Rufolo family, both Moorish and Norman influences can be seen in the staggering towers and cloisters. The magnificent cliff edge terrace, perched directly above the sea, is the venue for Ravello's annual Wagner Festival.
@@ -41,7 +41,7 @@ Its stunning views and powerful atmosphere have made it a favorite respite and i
 * **Villa Cimbrone** – Purchased and remodeled by Lord William Beckett in 1904, this beautiful architectural phenomenon is an eclectic mix of styles and eras, archeological relics and souvenirs of Beckett’s own extensive travels. The luxuriant garden is filled with decorative elements including fountains, small temples, pavilions, statues, and paths which culminate in the “Terrace of the Infinite," known as one of the most beautiful views in the whole world.
 * **Oscar Niemeyer Auditorium** - A controversial international design legend, it is a powerful work of modern architecture whose 400-seat amphitheater has been likened to a “sheet of white paper blowing in the wind.”
 {%- endcapture -%}
-{%- include site/festival/excursion-listing.md outing-slug="ravello" hero-image="ravello.jpg" description=description -%}
+{%- include site/festival/excursion-listing.md outing-slug="ravello" hero-image="ravello.JPG" description=description -%}
 
 
 {%- capture description -%}
