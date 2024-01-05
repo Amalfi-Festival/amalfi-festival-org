@@ -14,7 +14,15 @@ details {
         padding: 0;
     }
 }
-.standard-block details table {
-    margin-left: 0;
-    border: 0;
+.standard-block details {
+    table {
+        width: 100%;
+        margin-left: 0;
+        border: 0;
+    }
+    tr:has(+ tr.base) {
+        border-bottom: border-style-with-color($brand-blue);
+    }
+
 }
+

@@ -364,16 +364,18 @@ a {
     color: $link-color; //$body-color;
     text-underline-offset: .3em;
     &:link, &:active, &:visited {
-        text-decoration-thickness: .5px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #{$brand-blue}80;
     }
     &:hover {
         color: $link-hover-color;
+        text-decoration-color: #{$link-hover-color}80;
     }
 }
 a, input, button, summary {
     transition: $animation-length color, $animation-length background-color, $animation-length background, $animation-length border;
     &:hover {
-        transition: $animation-length color, $animation-length background-color, $animation-length background, $animation-length border;
+        transition: $animation-length color, $animation-length background-color, $animation-length background, $animation-length border, $animation-length text-decoration-color;
     }
 }
 img[data-jslghtbx] {
@@ -558,6 +560,9 @@ details {
     position: relative;
     border: $border-style;
     border-radius: $border-radius-small;
+    &[open] {
+        border-color: $brand-blue;
+    }
 
     .summary-title {
         user-select: none;
@@ -581,9 +586,9 @@ details {
         text-transform: uppercase;
         letter-spacing: .1em;
         padding: $details-padding/2 $details-padding;
+        border-radius: calc(#{$border-radius-small} - 1px);
         &:hover {
             background-color: $brand-hover-blue;
-            border-radius: $border-radius-small;
         }
 
         .summary-title {
@@ -599,6 +604,9 @@ details {
         background-color: $brand-blue;
         color: $background-color;
         border-radius: calc(#{$border-radius-small} - 1px) calc(#{$border-radius-small} - 1px) 0 0;
+    }
+    &[open] .details-content {
+        border-top: border-style-with-color($brand-blue);
     }
 
     .summary-chevron-up svg {
@@ -628,7 +636,6 @@ details {
     summary::-webkit-details-marker {
         display: none;
     }
-
 }
 
 #cancellation-schedule {

@@ -8,6 +8,7 @@ $brand-light-gold: #BFA380;
 $brand-light-yellow: #FFD182; //#FAD66A; //#D9B589; //#FDE8C3;
 $brand-lighter-yellow: #FFF9B3;
 $brand-blue: #025E73; //#08698D;
+$brand-blue-50: #80adb6; // Calculated as 50% $brand-blue over $background-color
 $brand-light-blue: #0A85B2;
 $brand-hover-blue: #0A85B222;
 
@@ -20,11 +21,11 @@ $footer-body-color: $dark-color;
 $footer-link-color: $brand-blue;
 $footer-link-hover-color: $brand-light-blue;
 
-$standard-line-height: 1.7;
+$standard-line-height: 1.6;
 $minimum-line-height: 1.3;
 
 $animation-length: 100ms;
-$border-style: 1px solid $brand-blue;
+$border-style: 1px solid #{$brand-blue-50};
 @function border-style-with-color($color) {
     @return 1px solid $color;
 }
