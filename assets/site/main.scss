@@ -433,7 +433,7 @@ img[data-jslghtbx] {
     }
 
     &:not(.image) {
-        border-left: 1px solid $brand-blue;
+        border-left: $border-style;
         margin-left: 1rem;
         padding-left: 1em;
         padding-bottom: 2em;
