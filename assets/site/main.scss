@@ -459,8 +459,19 @@ img[data-jslghtbx] {
         }
     }
 
-    ul#markdown-toc ul {
-        display: none;
+    ul#markdown-toc {
+        list-style: none;
+        li::before {
+            content: "\2022";
+            color: $brand-blue;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        ul {
+            display: none;
+        }
     }
 
     &.show-second-level ul#markdown-toc > li > ul {
