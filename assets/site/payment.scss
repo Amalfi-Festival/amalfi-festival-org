@@ -27,7 +27,7 @@ input[type="text"] {
     padding: .5em;
     border-radius: $border-radius-small;
 
-    border: 1px solid $brand-blue;
+    border: border-style-with-color($brand-blue);
     &:hover {
         border-color: $brand-light-blue;
     }
@@ -68,7 +68,7 @@ input[type="radio"] {
     display: inline-grid;
     place-content: center;
 
-    border: 1px solid $brand-blue;
+    border: border-style-with-color($brand-blue);
     &:hover {
         border-color: $brand-light-blue;
     }
@@ -92,6 +92,7 @@ input[type="submit"] {
     margin-top: 2rem;
     font-size: 1em;
     font-family: $body-font;
+    font-weight: 400;
 }
 
 details img {

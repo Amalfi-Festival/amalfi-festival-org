@@ -534,7 +534,7 @@ img[data-jslghtbx] {
     padding: .35em 1.5em;
     background: linear-gradient(to bottom right, #A5DEE8, #9FD8ED);
     color: $brand-blue;
-    border: 1px solid $brand-blue;
+    border: border-style-with-color($brand-blue);
     border-radius: 5em;
     text-transform: uppercase;
     line-height: $standard-line-height;
@@ -591,7 +591,7 @@ details {
     &[open] summary {
         background-color: $brand-blue;
         color: $background-color;
-        border-radius: $border-radius-small $border-radius-small 0 0;
+        border-radius: calc(#{$border-radius-small} - 1px) calc(#{$border-radius-small} - 1px) 0 0;
     }
 
     .summary-chevron-up svg {
