@@ -48,8 +48,7 @@ section#hero {
             linear-gradient(to bottom left, transparent 25%, #24A699F0),
             linear-gradient(to bottom, transparent 25%, #{$brand-blue}80);
         background-blend-mode: multiply;
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
+        @include backdrop-filter(blur(2px));
         width: 50%;
         padding: 0 1.5rem 0 $minimum-side-padding;
         @include breakpoint(tablet) {
@@ -167,7 +166,7 @@ section#festival {
     .content-container {
         border-radius: 2rem;
         background-color: rgba(255, 255, 255, .8);
-        @include backdrop-filter;
+        @include backdrop-filter(blur(3px));
         padding: 3rem 1rem;
 
         > div {

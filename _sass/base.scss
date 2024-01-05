@@ -99,7 +99,7 @@ $standard-block-margin-left: 3rem;
     font-variation-settings: "wght" $weight;
 }
 
-@mixin backdrop-filter {
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+@mixin backdrop-filter($filter) {
+    -webkit-backdrop-filter: $filter;
+    backdrop-filter: $filter;
 }

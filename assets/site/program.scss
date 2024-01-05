@@ -228,7 +228,7 @@ section#learn {
         margin: 0;
         padding: 1.2em;
         background: linear-gradient(to bottom, #FAD170DD, #{$brand-light-yellow}DD);
-        @include backdrop-filter;
+        @include backdrop-filter(blur(3px));
         border-radius: $border-radius-large;
     }
 }
