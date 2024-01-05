@@ -49,6 +49,10 @@ h1 div {
             > * {
                 color: $brand-lighter-yellow;
             }
+
+            img {
+                border-color: $brand-blue;
+            }
         }
     }
     img {

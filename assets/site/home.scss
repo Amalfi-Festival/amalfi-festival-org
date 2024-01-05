@@ -198,6 +198,10 @@ section#festival {
             aspect-ratio: 1;
             object-fit: cover;
         }
+        a:hover img {
+            border-color: $link-hover-color;
+        }
+
         .buttons {
             display: flex;
             gap: 1rem;
