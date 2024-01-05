@@ -6,7 +6,7 @@
 <div><a class="link-{{ _program.slug }}" href="{{ _program.url | relative_url }}">{{ _program.webpage-data.menu-title }}</a>
             {%- if include.include-translations and _p.zh -%}
                 {%- assign _pzh = site.programs | where: "slug", _p.zh | first %}
-    | <a class="link-{{ _pzh.slug }}" href="{{ _pzh.url | relative_url }}">中文</a>
+    &middot; <a class="link-{{ _pzh.slug }}" href="{{ _pzh.url | relative_url }}">中文</a>
             {%- endif -%}
 </div>
         {%- endif -%}
