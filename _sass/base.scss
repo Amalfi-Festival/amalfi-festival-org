@@ -92,15 +92,6 @@ $standard-block-margin-left: 3rem;
     }
 }
 
-// It appears that Safari on Ventura does not support font-variation-settings
-// in font-face rules https://bugs.webkit.org/show_bug.cgi?id=215605
-@mixin font-style-italic {
-    font-variation-settings: "slnt" -10;
-}
-@mixin font-weight($weight) {
-    font-variation-settings: "wght" $weight;
-}
-
 @mixin backdrop-filter($filter) {
     -webkit-backdrop-filter: $filter;
     backdrop-filter: $filter;
