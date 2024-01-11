@@ -19,6 +19,7 @@
 - name: Fabrizio Soprano
   title: Production Manager
   email: fabrizio.soprano@gmail.com
+  headshot-filename: Fabrizio-Soprano.jpg
 - name: Manfredi Paterniti
   title: Director of Development
   email: manfredipaterniti@studioesse.net
@@ -37,6 +38,7 @@
   person-slug: Yetong-Tang
 - name: Paolo D'Agostino
   title: Production & Logistics Coordinator
+  headshot-filename: Paolo-DAgostino.jpg
 - name: Anais Kelsey-Verdecchia
   title: Executive Assistant
   email: anais@amalfi-festival.org
