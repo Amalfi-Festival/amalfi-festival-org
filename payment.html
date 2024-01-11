@@ -25,7 +25,7 @@ custom-css: payment
 {%- if _program.to-be-announced -%}
     {%- continue -%}
 {%- endif -%}
-    <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
+    <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title | smartify }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
 {%- endfor -%}
 </ol>
 
@@ -50,11 +50,11 @@ custom-css: payment
     </tr>
     <tr>
         <td><p>Credit card payment service fee:</p></td>
-        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=15 %}</p></td>
+        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=site.data.festival.application.credit-card-fee %}</p></td>
     </tr>
     <tr class="base">
         <td><p>Total:</p></td>
-        {%- assign _total = application-registration-fee | plus: application-deposit | plus: 15 -%}
+        {%- assign _total = application-registration-fee | plus: application-deposit | plus: site.data.festival.application.credit-card-fee -%}
         <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=_total %}</p></td>
     </tr>
 </tbody></table>
@@ -112,7 +112,7 @@ If you do not have a PayPal account, continue with the following steps:
 {% assign paypalInstructions = paypalInstructions | markdownify %}
 {% include site/details.html summary="Detailed Instructions" details=paypalInstructions %}
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="4WQYXEQBMSJCG">
+<input type="hidden" name="hosted_button_id" value="C8D429MWVTGK6">
 <input type="hidden" name="currency_code" value="USD" />
 <input type="submit" class="button" name="submit" value="Pay Through PayPal" />
 </form>

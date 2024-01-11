@@ -20,6 +20,7 @@ application:
 #    extended-deadline: 2024-04-24
     registration-fee: 45
     deposit: 350
+    credit-card-fee: 15
 
 ### Information regarding fee changes and the cancellation policy.
 fees-and-deposits:
