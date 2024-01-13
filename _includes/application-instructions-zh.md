@@ -1,27 +1,10 @@
-## 网上报名
+{%- capture paymentRegistrationURL -%}
+{{ site.baseurl }}{% link payment.html %}{% if reference-program %}?registration={{ reference-program.slug }}{% endif %}
+{%- endcapture %}
 
-<ul class="highlight-box colored">
-<li>
-    <h5>{% include utilities/localize.html string="Application deadline" %}</h5>
-    <div>{% include site/program/application-deadline.html %}</div>
-</li>
-<li>
-    <h5>{% include utilities/localize.html string="Registration fee" %}</h5>
-    <div>(non-refundable)</div>
-    <div>{% include utilities/format-cost.html cost=application-registration-fee %}</div>
-</li>
-<li>
-    <h5>{% include utilities/localize.html string="Deposit" %}</h5>
-    <div>(refundable <a href="#cancellation-policy--refunds">in case of cancellation</a>)</div>
-    <div>{% include utilities/format-cost.html cost=application-deposit %}</div>
-</li>
-{%- if application.form-url -%}
-<li>
-    <a class="button" href="{{ application.form-url }}">{% include utilities/localize.html string="Application form" %}</a>
-</li>
-{%- endif -%}
-</ul>
+## {% include utilities/localize.html string="How to Apply" %}
 
+{% include site/program/application-sidebar.html %}
 
 1. Complete the online {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
 
@@ -46,12 +29,9 @@
         {%- endunless %}
     * [{{ program.title }}]({{ program.application.guest-form-url }})
     {%- endfor -%}
-{%- endunless -%}
+{%- endunless %}
 
-{%- capture paymentURL -%}
-{{ site.baseurl }}{% link payment.html %}{% if reference-program %}?registration={{ reference-program.slug }}{% endif %}
-{%- endcapture %}
-1. Pay registration fee and deposit either <a href="{{ paymentURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
+1. Pay registration fee and deposit either <a href="{{ paymentRegistrationURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
 
     * If paying by mail, enclose a check made out to *Center for Musical Studies* and send to:
 

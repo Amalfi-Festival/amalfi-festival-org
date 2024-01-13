@@ -1,6 +1,7 @@
 ---
 program-name: piano-zh
 lang: zh
+title: 申请钢琴课程
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
@@ -20,7 +21,7 @@ lang: zh
 
 {% include site/session/session-info.md %}
 
-{% include tuition-accommodations-zh.md %}
+{% include site/program/tuition-accommodations.md %}
 
 {% include outings-fees-zh.md %}
 

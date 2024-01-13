@@ -5,9 +5,19 @@ show-localization: Optional. Will take from page.show-localization if not specif
 Looks up by |key| first before trying |string|
 {%- endcomment -%}
 
-{%- assign entry = site.data.localizations | where: "key", include.string | first -%}
-{%- unless entry -%}
-    {%- assign entry = site.data.localizations | where: "en", include.string | first -%}
-{%- endunless -%}
-{%- assign _l = page.lang | default: include.lang | default: "en" -%}
+{%- if include.source -%}
+    {%- assign _k = page.lang | default: include.lang -%}
+    {%- if _k -%}
+        {%- assign _k = _k | prepend: "-" | prepend: include.key -%}
+    {%- else -%}
+        {%- assign _k = include.key -%}
+    {%- endif -%}
+{{ include.source[_k] }}
+{%- else -%}
+    {%- assign entry = site.data.localizations | where: "key", include.string | first -%}
+    {%- unless entry -%}
+        {%- assign entry = site.data.localizations | where: "en", include.string | first -%}
+    {%- endunless -%}
+    {%- assign _l = page.lang | default: include.lang | default: "en" -%}
 {{ entry[_l] | default: include.string }}
+{%- endif -%}

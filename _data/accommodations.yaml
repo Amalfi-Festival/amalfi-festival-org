@@ -2,22 +2,32 @@
 
 hostel-triple:
     name: Tuition with Hostel accommodations, triple occupancy
+    name-zh: 青年旅馆 及 欧陆式早餐
     description: Triple rooms with shared bathroom.
+    description-zh: 三人间设有共用浴室
 
 hotel-triple:
     name: Tuition with Hotel accommodations, triple occupancy
+    name-zh: 酒店三人房 及 自助式早餐
     description: Triple rooms includes buffet breakfast. **Limited number of triple rooms available.**
+    description-zh: 三人间房型较少
 
 hotel-double:
     name: Tuition with Hotel accommodations, double occupancy
+    name-zh: 学费含酒店住宿，双人间
     description: Double rooms includes buffet breakfast.
+    description-zh: 双人间包含自助早餐
 
 hotel-double-upgrade:
     name: "Hotel upgrade: Double Room"
+    name-zh: 酒店房型升级至双人间
 
 hotel-single-upgrade:
     name: "Hotel upgrade: Single Room"
+    name-zh: 酒店房型升级至单人间
 
 meal-plan:
     name: Meal plan dinners (optional)
+    name-zh: 音乐节期间的晚餐
     description: Includes full three-course meal with wine & mineral water.
+    description-zh: 每餐包括前餐、主餐、甜点、以及红/白酒

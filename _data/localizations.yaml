@@ -1,24 +1,55 @@
 ### Dictionary of text for localizations.
 
--   en: "Application deadline"
-    zh: 报名截止日期
--   en: "Contents"
+### As in "table of contents"
+-   en: Contents
     zh: 目录
--   en: "Learn more and apply"
-    zh: 了解更多并申请
--   en: "Excursions"
-    zh: 短途旅行
--   en: "Activities"
-    zh: 课外探索活动
--   en: "Apply"
-    zh: 报名
--   en: "Faculty"
-    zh: 学院
--   en: "Associate Staff"
-    zh: 协理人员
--   en: "Learn more"
+-   en: Learn more
     zh: 了解更多
--   en: "Included"
-    zh: 包括
--   en: "Application form"
+-   en: Apply
+    zh: 报名
+-   en: Learn more and apply
+    zh: 了解更多并申请
+-   en: Application form
     zh: 申请表
+-   en: Faculty
+    zh: 学院
+-   en: Associate Staff
+    zh: 协理人员
+-   en: Excursions
+    zh: 短途旅行
+-   en: Activities
+    zh: 课外探索活动
+### This is for excursions and activities that are included in the program and
+### don't cost anything
+-   en: Included
+    zh: 包括
+
+### Tuition
+-   key: tuition-title
+    en: Tuition & Accommodations
+    zh: 费用一览表
+-   key: tuition-cost-is-one-fee
+    en: The cost for tuition and accommodations is listed as one total fee.
+    zh: 学费为单期音乐节单人费用，包括一对一私教课、大师班、讲座、研讨会、音乐会等
+-   key: tuition-guests-link
+    en: For guests and auditors, [click here](~~~URL~~~) for more information.
+    zh: 中文For guests and auditors, [click here](~~~URL~~~) for more information.
+-   key: meal-plan
+    en: The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
+    zh: 中文The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
+
+### How to apply section
+-   en: How to Apply
+    zh: 网上报名
+-   en: Application deadline
+    zh: 报名截止日期
+-   en: Registration fee
+    zh: 中文Registration fee
+-   en: (non-refundable)
+    zh: 中文Registration fee
+-   en: Deposit
+    zh: 中文Deposit
+-   en: refundable
+    zh: 中文refundable
+-   en: in case of cancellation
+    zh: 中文in case of cancellation

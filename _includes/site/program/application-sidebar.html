@@ -1,0 +1,21 @@
+<ul class="highlight-box colored">
+<li>
+    <h5>{% include utilities/localize.html string="Application deadline" %}</h5>
+    <div>{% include site/program/application-deadline.html %}</div>
+</li>
+<li>
+    <h5>{% include utilities/localize.html string="Registration fee" %}</h5>
+    <div>{% include utilities/localize.html string="(non-refundable)" %}</div>
+    <div>{% include utilities/format-cost.html cost=application-registration-fee %}</div>
+</li>
+<li>
+    <h5>{% include utilities/localize.html string="Deposit" %}</h5>
+    <div>({% include utilities/localize.html string="refundable" %} <a href="#cancellation-policy--refunds">{% include utilities/localize.html string="in case of cancellation" %}</a>)</div>
+    <div>{% include utilities/format-cost.html cost=application-deposit %}</div>
+</li>
+{%- if application.form-url -%}
+<li>
+    <a class="button" href="{{ application.form-url }}">{% include utilities/localize.html string="Application form" %}</a>
+</li>
+{%- endif -%}
+</ul>

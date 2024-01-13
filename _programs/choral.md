@@ -59,7 +59,7 @@ The cost is listed as one total fee, which includes:
 
 Friends and family members are welcome to join the tour as guests. They will enjoy the same special trips and group activities and attend concerts on the other side of the podium. The registration form has a section for guests to apply. The cost is the same for participants and guests.
 {% endcapture %}
-{% include tuition-accommodations.md title="What's Included" description=tuition-description %}
+{% include site/program/tuition-accommodations.md title="What's Included" description=tuition-description %}
 
 {% include outings-fees.md %}
 

@@ -1,5 +1,6 @@
 ---
 program-name: piano
+title: Apply to the Piano Program
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
@@ -22,7 +23,7 @@ During the application process, you may request lessons with the faculty listed 
 
 {% include site/session/session-info.md %}
 
-{% include tuition-accommodations.md %}
+{% include site/program/tuition-accommodations.md %}
 
 {% include outings-fees.md %}
 

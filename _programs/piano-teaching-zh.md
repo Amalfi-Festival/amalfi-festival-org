@@ -97,7 +97,7 @@ The half-day tour of Lavello at Art Week arranged a special car and guide for th
 {% capture tuition-description %}
 The cost for Tuition & Accommodations is listed as one total fee, which includes access to the Piano Festival, round-trip to and from Naples airport to Maiori, full hotel accommodation, daily breakfast and dinner, a formal dress party, translation services, and a certificate of completion.
 {% endcapture %}
-{% include tuition-accommodations.md description=tuition-description %}
+{% include site/program/tuition-accommodations.md description=tuition-description %}
 
 {% include outings-fees.md %}
 {% include application-instructions.md %}

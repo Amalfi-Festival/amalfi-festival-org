@@ -22,11 +22,13 @@ If there is no base tuition price for the program, and we are listing the prices
 {%- if base-price == true -%}
     {%- assign base-price = __p.tuition[include.item-name] -%}
 {%- endif -%}
+{%- assign __name-key = include.name-key | default: "name" -%}
+{%- assign __desc-key = include.description-key | default: "description" -%}
 <tr class="base">
     <td>
-        <p class="name">{{ site.data.accommodations[include.item-name].name | default: __t.name | smartify }}</p>
+        <p class="name">{{ site.data.accommodations[include.item-name][__name-key] | default: __t[__name-key] | smartify }}</p>
         {%- capture _d -%}
-        {{- site.data.accommodations[include.item-name].description | default: __t.description -}}
+        {{- site.data.accommodations[include.item-name][__desc-key] | default: __t[__desc-key] -}}
         {%- endcapture -%}
         <p class="description">{% include utilities/markdownify-without-p.html text=_d %}</p>
     </td>

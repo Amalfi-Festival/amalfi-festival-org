@@ -33,7 +33,7 @@ webpage-data:
 {% capture tuition-description %}
 The cost for Tuition & Accommodations is listed as one total fee, which includes six days of writing sessions with class-based excursions, two receptions, and all festival activities.
 {% endcapture %}
-{% include tuition-accommodations.md description=tuition-description %}
+{% include site/program/tuition-accommodations.md description=tuition-description %}
 
 {% include outings-fees.md %}
 
