@@ -12,7 +12,7 @@
 {%- include utilities/localize.html string="tuition-cost-is-one-fee" -%}
 {%- endif %}
 
-{% if reference-program.tuition-guests -%}
+{% if reference-program.tuition-guests and page.slug != "choral" -%}
     {%- capture _html -%}
     {%- include utilities/localize.html string="tuition-guests-link" -%}
     {%- endcapture -%}
@@ -36,7 +36,7 @@
 {%- assign _has-cost = __return %}
 
 {%- if _has-cost -%}
-    {%- include site/program/tuition-item.html item-name="cost" has-tuition-item=_has-hostel-triple name-key=_name-key description-key=_desc-key -%}
+    {%- include site/program/tuition-item.html item-name="cost" has-tuition-item=_has-cost name-key=_name-key description-key=_desc-key -%}
 {%- else -%}
     {%- include site/program/has-tuition-item.fx tuition-item-name="hostel-triple" -%}
     {%- assign _has-hostel-triple = __return %}

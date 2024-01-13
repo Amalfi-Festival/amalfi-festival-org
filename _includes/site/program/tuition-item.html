@@ -18,17 +18,26 @@ If there is no base tuition price for the program, and we are listing the prices
 {%- else -%}
     {%- assign __t = __p.tuition -%}
 {%- endif -%}
+{%- assign __name-key = include.name-key | default: "name" -%}
+{%- assign __desc-key = include.description-key | default: "description" -%}
+
 {%- assign base-price = __t[include.item-name] -%}
 {%- if base-price == true -%}
     {%- assign base-price = __p.tuition[include.item-name] -%}
 {%- endif -%}
-{%- assign __name-key = include.name-key | default: "name" -%}
-{%- assign __desc-key = include.description-key | default: "description" -%}
+{%- assign _item-name = __t[__name-key] -%}
+{%- if _item-name == true -%}
+    {%- assign _item-name = __p.tuition[__name-key] -%}
+{%- endif -%}
+{%- assign _item-desc = __t[__desc-key] -%}
+{%- if _item-desc == true -%}
+    {%- assign _item-desc = __p.tuition[__desc-key] -%}
+{%- endif -%}
 <tr class="base">
     <td>
-        <p class="name">{{ site.data.accommodations[include.item-name][__name-key] | default: __t[__name-key] | smartify }}</p>
+        <p class="name">{{ site.data.accommodations[include.item-name][__name-key] | default: _item-name | smartify }}</p>
         {%- capture _d -%}
-        {{- site.data.accommodations[include.item-name][__desc-key] | default: __t[__desc-key] -}}
+        {{- site.data.accommodations[include.item-name][__desc-key] | default: _item-desc -}}
         {%- endcapture -%}
         <p class="description">{% include utilities/markdownify-without-p.html text=_d %}</p>
     </td>

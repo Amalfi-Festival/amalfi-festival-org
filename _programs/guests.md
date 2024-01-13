@@ -50,38 +50,50 @@ Guest Program fees includes access to all festival activities for the full sessi
 <table>
 <tbody>
 
+{%- if program-guest.intro -%}
+<tr><td colspan="2"><p>{{ program-guest.intro | smartify }}</p></td></tr>
+{%- endif -%}
+
 {% comment %}This next section is taken from tuition-accommodations.md{% endcomment %}
 
-{%- include site/program/has-tuition-item.fx tuition-item-name="hotel-triple" program=program -%}
-{%- assign _has-hotel-triple = __return %}
-{%- include site/program/has-tuition-item.fx tuition-item-name="hotel-double" program=program -%}
-{%- assign _has-hotel-double = __return %}
 
-{%- if _has-hotel-triple -%}
-    {%- include site/program/tuition-item.html item-name="hotel-triple" has-tuition-item=_has-hotel-triple program=program use-guest-tuition=true -%}
-{%- elsif _has-hotel-double -%}
-    {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=_has-hotel-double program=program use-guest-tuition=true -%}
-{%- endif -%}
+{%- include site/program/has-tuition-item.fx tuition-item-name="cost" program=program -%}
+{%- assign _has-cost = __return %}
 
-{%- if program.tuition-guests.hotel-double-upgrade -%}
-<tr class="upgrade">
-    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-double-upgrade.name }}</p></td>
-    {%- assign _c = program.tuition-guests.hotel-double-upgrade -%}
-    {%- if _c == true -%}
-        {%- assign _c = program.tuition.hotel-double-upgrade -%}
+{%- if _has-cost -%}
+    {%- include site/program/tuition-item.html item-name="cost" has-tuition-item=_has-cost program=program use-guest-tuition=true -%}
+{%- else -%}
+    {%- include site/program/has-tuition-item.fx tuition-item-name="hotel-triple" program=program -%}
+    {%- assign _has-hotel-triple = __return %}
+    {%- include site/program/has-tuition-item.fx tuition-item-name="hotel-double" program=program -%}
+    {%- assign _has-hotel-double = __return %}
+
+    {%- if _has-hotel-triple -%}
+        {%- include site/program/tuition-item.html item-name="hotel-triple" has-tuition-item=_has-hotel-triple program=program use-guest-tuition=true -%}
+    {%- elsif _has-hotel-double -%}
+        {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=_has-hotel-double program=program use-guest-tuition=true -%}
     {%- endif -%}
-    <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
-</tr>
-{%- endif -%}
-{%- if program.tuition-guests.hotel-single-upgrade -%}
-<tr class="upgrade">
-    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-single-upgrade.name }}</p></td>
-    {%- assign _c = program.tuition-guests.hotel-single-upgrade -%}
-    {%- if _c == true -%}
-        {%- assign _c = program.tuition.hotel-single-upgrade -%}
+
+    {%- if program.tuition-guests.hotel-double-upgrade -%}
+    <tr class="upgrade">
+        <td valign="top"><p class="name">{{ site.data.accommodations.hotel-double-upgrade.name }}</p></td>
+        {%- assign _c = program.tuition-guests.hotel-double-upgrade -%}
+        {%- if _c == true -%}
+            {%- assign _c = program.tuition.hotel-double-upgrade -%}
+        {%- endif -%}
+        <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
+    </tr>
     {%- endif -%}
-    <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
-</tr>
+    {%- if program.tuition-guests.hotel-single-upgrade -%}
+    <tr class="upgrade">
+        <td valign="top"><p class="name">{{ site.data.accommodations.hotel-single-upgrade.name }}</p></td>
+        {%- assign _c = program.tuition-guests.hotel-single-upgrade -%}
+        {%- if _c == true -%}
+            {%- assign _c = program.tuition.hotel-single-upgrade -%}
+        {%- endif -%}
+        <td class="cost" align="center" valign="top"><p><strong>+ ${% include utilities/number-delimited.html number=_c %}</strong></p></td>
+    </tr>
+    {%- endif -%}
 {%- endif -%}
 
 {%- if program.tuition-guests.meal-plan -%}
@@ -98,7 +110,7 @@ Guest Program fees includes access to all festival activities for the full sessi
 </tr>
 {%- endif -%}
 
-{%- include site/program/get-apply-url.fx program=program hash="excursions-and-activities" -%}
+{%- include site/program/get-apply-url.fx program=program hash="excursions--activities" -%}
 {%- assign _apply-url = __return -%}
 <tr class="base"><td><p><a href="{{ _apply-url }}">Fees for available excursions and activities</a></p>
 </td></tr>

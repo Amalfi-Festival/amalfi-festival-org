@@ -13,6 +13,7 @@ application:
     registration-fee: 45
     deposit: 500
     form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
+    guest-form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
 outings:
     excursions:
         -   outing-slug: ravello
@@ -25,6 +26,11 @@ tuition:
     cost: 2195
     name: Cost (not including airfare)
     description: Balance due will be made in two payments of $975. Invoices will be sent to trip participants with the deadline for those amounts.
+tuition-guests:
+    intro: Guests of the choral tour will enjoy the same special trips and group activities and attend concerts on the other side of the podium. The cost and registration fees are the same for participants and guests. The registration form has a section for guests to apply.
+    cost: true
+    name: true
+    description: true
 cancellation-policy:
     trip-insurance-required: true
     full-refund:
