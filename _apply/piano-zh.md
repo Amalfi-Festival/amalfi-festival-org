@@ -23,7 +23,7 @@ title: 申请钢琴课程
 
 {% include site/program/tuition-accommodations.md %}
 
-{% include outings-fees-zh.md %}
+{% include site/program/outings-fees.md %}
 
 {% include application-instructions-zh.md %}
 

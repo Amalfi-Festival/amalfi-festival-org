@@ -61,7 +61,7 @@ Friends and family members are welcome to join the tour as guests. They will enj
 {% endcapture %}
 {% include site/program/tuition-accommodations.md title="What's Included" description=tuition-description %}
 
-{% include outings-fees.md %}
+{% include site/program/outings-fees.md %}
 
 {% include application-instructions.md %}
 

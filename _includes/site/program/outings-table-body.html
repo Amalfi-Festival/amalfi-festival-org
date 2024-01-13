@@ -1,5 +1,5 @@
 <tbody>
-<tr class="header"><td colspan="2"><p>{{ include.header }}</p></td></tr>
+<tr class="header"><td colspan="2"><p>{% include utilities/localize.html string=include.header %}</p></td></tr>
 {%- for _outing in reference-program.outings[include.outing-type] -%}
 {%- assign _festival-outing = site.data.outings[include.outing-type][_outing.outing-slug] -%}
 {%- assign _cost = _outing.cost | default: _festival-outing.cost -%}

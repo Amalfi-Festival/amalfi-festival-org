@@ -19,6 +19,7 @@ excursions:
             zh:
                 name: 拉韦洛 Ravello
                 length: 半日
+                description: 费用包括大巴、门票、导游
     pompeii:
         name: Pompeii
         tagline: A Buried Past
@@ -49,6 +50,7 @@ activities:
         localizations:
             zh:
                 name: 意大利语课程
+                description: 每日小组课
     cooking:
         name: Cooking Lesson
         cost: 150

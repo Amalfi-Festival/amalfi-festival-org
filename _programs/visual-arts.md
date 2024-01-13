@@ -55,7 +55,7 @@ The cost for tuition & accommodations is listed as one total fee, which includes
 {% endcapture %}
 {% include site/program/tuition-accommodations.md description=tuition-description %}
 
-{% include outings-fees.md %}
+{% include site/program/outings-fees.md %}
 
 {% include application-instructions.md %}
 

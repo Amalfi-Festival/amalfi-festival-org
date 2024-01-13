@@ -25,7 +25,7 @@ During the application process, you may request lessons with the faculty listed 
 
 {% include site/program/tuition-accommodations.md %}
 
-{% include outings-fees.md %}
+{% include site/program/outings-fees.md %}
 
 {% include application-instructions.md %}
 
