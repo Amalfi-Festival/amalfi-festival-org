@@ -7,15 +7,12 @@ sessions:
         faculty:
             -   Boris-Berman
             -   Bernadene-Blaha
-            -   Enrico-Elisi
             -   Kevin-Fitz-Gerald
             -   James-Giles
-            -   Ian-Jones
             -   Wei-Lung-Li
             -   Marina-Lomazov
             -   Yoshikazu-Nagai
             -   Joseph-Rackers
-            -   Jerry-Wong
 application:
     form-url: https://forms.gle/33Zk5TXN2YP4Fb188
 outings:
@@ -33,7 +30,7 @@ tuition:
 webpage-data:
     menu-title: Piano Teaching
     hero-image: amalfi-cloister.jpg
-    program-header-subtitle: "<h3>Shichao Zhang, Director<br/>Yetong Tang, Director</h3>"
+    program-header-subtitle: "<h3>Yetong Tang, Co-Director<br/>Shichao Zhang, Co-Director</h3>"
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
