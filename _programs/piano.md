@@ -77,9 +77,10 @@ webpage-data:
 
 ## Experience an intensive piano education amid the breathtaking views of the Amalfi Coast
 
+{% assign _piano-dir = site.program-assets-directory | append: "piano/" -%}
 <div class="image-copy">
 <div class="image">
-<img src="{{ site.program-assets-directory | append: "piano/Spooner & Student.JPG" | relative_url }}" />
+<img src="{{ _piano-dir | append: "spooner.jpg" | relative_url }}" alt="Spooner teaching a student" />
 </div>
 <div class="copy">
     Receive individual lessons from world-renowned faculty.
@@ -88,7 +89,7 @@ webpage-data:
 
 <div class="image-copy right">
 <div class="image">
-<img src="{{ site.program-assets-directory | append: "piano/IMG_1398_edited.jpg" | relative_url }}" alt="Nagai teaching" />
+<img src="{{ _piano-dir | append: "IMG_1398_edited.jpg" | relative_url }}" alt="Nagai masterclass" />
 </div>
 <div class="copy">
     Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
@@ -97,7 +98,7 @@ webpage-data:
 
 <div class="image-copy">
 <div class="image">
-<img src="{{ site.program-assets-directory | append: "piano/giles-san-domenico.jpg" | relative_url }}" />
+<img src="{{ _piano-dir | append: "giles-san-domenico.jpg" | relative_url }}" alt="Giles performing in San Domenico" />
 </div>
 <div class="copy">
 Held in spectacular venues throughout the Amalfi Coast, the Festival hosts daily concerts, including faculty recitals, and the Young Artist Series for students.
@@ -106,16 +107,16 @@ Held in spectacular venues throughout the Amalfi Coast, the Festival hosts daily
 
 <div class="image-copy right">
 <div class="image">
-<img src="{{ site.program-assets-directory | append: "piano/1554040_orig.jpg" | relative_url }}" />
+<img src="{{ _piano-dir | append: "group-naples-piazza-2023.jpg" | relative_url }}" alt="Group in Naples piazza" />
 </div>
 <div class="image">
-<img src="{{ site.program-assets-directory | append: "piano/lowenthal-oppens.jpg" | relative_url }}" />
+<img src="{{ _piano-dir | append: "lowenthal-oppens.jpg" | relative_url }}" alt="Lowenthal and Oppens duet" />
 </div>
 </div>
 
 <div class="image-copy row">
 <div class="image">
-<img src="{{ site.image-directory | append: "ravello.JPG" | relative_url }}" />
+<img src="{{ _piano-dir | append: "amalfi-from-water.jpg" | relative_url }}" alt="View of Amalfi from the water" />
 </div>
 <div class="copy">
 Opportunities to fully experience the Amalfi Coast with excursions to historic locations.

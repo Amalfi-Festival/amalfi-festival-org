@@ -8,8 +8,8 @@ body:has(#hero) {
         margin-top: 0;
         h1 {
             position: relative;
-            color: $background-color;
             z-index: 1;
+            @include hero-text;
 
             a {
                 color: rgba(254, 252, 250, .6);

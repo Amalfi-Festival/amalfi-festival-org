@@ -459,7 +459,9 @@ img[data-jslghtbx] {
     }
 
     ul#markdown-toc {
-        list-style: none;
+        &, ul {
+            list-style: none;
+        }
         li::before {
             content: "\2022";
             color: $brand-blue;
