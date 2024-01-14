@@ -58,9 +58,9 @@ webpage-data:
 {% capture tuition-description %}
 The cost is listed as one total fee, which includes:
 
-- Accommodation in gracious festival hotels situated only steps from the beach.
-- Two meals a day:  Breakfast  buffet  and classic 3-course Italian dinners (wine included).
-- Excursions with guide to Pompeii,  Amalfi, and Ravello plus a boat trip to Positano or Capri.
+- Accommodation in gracious festival hotels in heart of Maiori.
+- Meals:  All breakfasts  (buffet) and 5 dinners (classic 3-course Italian dinners with wine and mineral water included).
+- Excursions with guide to Pompeii and Ravello.
 - Bilingual tour assistant and experienced festival personnel to assure every detail goes smoothly.
 
 Friends and family members are welcome to join the tour as guests. They will enjoy the same special trips and group activities and attend concerts on the other side of the podium. The registration form has a section for guests to apply. The cost is the same for participants and guests.
