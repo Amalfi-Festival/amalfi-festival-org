@@ -20,16 +20,16 @@ What airport/city should I fly into?
 : Generally, people fly into Naples, which is 60 to 90 minutes from our facilities. You may also fly into Rome to suit your travel schedule --- in which case you must transfer to the downtown train station and take a train (approx. a 3-hour trip on Frecciarossa) to Naples. In Naples you will need to get a public bus to Maiori or else get a taxi to the Naples airport to join the group waiting for the Festival shuttle. Otherwise, take a train to Salerno, the town closest to our facilities, where you can take a public bus (40 mins) to Maiori or arrange a private pick-up at the train station for approx. 80 euros. Night rates apply. 
 
 How do I get from the airport to the festival?
-: A festival bus will run mid-day for each program's arrival and departure dates and is scheduled to accommodate the greatest number of flights. We are also happy to arrange private pick-up from the airport for a fee to help you avoid spending exorbitant taxi fares.
+: A morning and afternoon festival bus is provided for each program's arrival and departure dates and is scheduled to accommodate the greatest number of flights. A private pick-up from the airport for a fee can be requested to help you avoid spending exorbitant taxi fares.
 
 ## Arrival/Departure
  
 What time of day do people arrive and depart the program?
-: You are invited to arrive any time after 12 p.m. on arrival day. We do recommend you try to arrive by 5 p.m. in time for our orientation and introductory meeting. On departure day people generally leave first thing in the morning because the international flights leave Naples on an early schedule. Hotel check-out time is 11:00 a.m.
+: You are invited to arrive any time after 12 p.m. on arrival day. We do recommend you try to arrive by 5 p.m. in time for our orientation and introductory meeting. On departure day people generally leave first thing in the morning because the international flights leave Naples on an early schedule. Hotel check-out time is 10:00 a.m.
  
  
 Can I come a day or two early or stay on afterwards?
-: You are welcome to arrive a day or two early and stay on to enjoy the festival. However, we must know in advance to assure your reservations. Arrangements are made through the festival and your stay will be pro-rated based on festival “guest program” rates.
+: We cannot accommodate extra days before or after the program although you are welcome to make independent arrangements. 
 
 ## Everyday Concerns
  
@@ -37,13 +37,13 @@ Do I need any electrical appliances, such as a hairdryer?
 : We do recommend you try to leave electrical appliances at home. The hotel rooms are all equipped with hair-dryers. The hotel has strict regulations about using irons in the rooms due to fire hazards. If you find it necessary to bring something, you will need a transformer for European current as well as an adaptor plug to fit into the wall outlet (adaptors can also be found locally in hardware stores).
  
 What kind of internet service is there in the town?
-: The hotel is equipped with wireless service if you have a la top or i-pad.. There is also an internet café within walking distance and several other cafes where wireless is available (also an on-site computer).
+: The hotel is equipped with wireless service if you have a laptop or i-pad. 
  
 What kind of laundry facilities are there?
-: Try to bring enough clothes with you to not waste much time on laundry. Many people do handwash in their sinks. The hotel has a laundry service but it is extremely expensive. There are also “lavanderias” in town where they will wash individual items but it can take several days. There are no Laundromats.
+: Try to bring enough clothes with you to not waste much time on laundry. Many people do handwash in their sinks.  There are two laundromats in close proximity.
  
 How do I exchange money?
-: The easiest way to have access to money is by using an ATM machine locally (called a Bancomat) with your credit card. You may also bring travelers checks which can be exchanged at the front desk in the hotel or in a local bank. Be sure to check about fees associated with your credit card for international transactions.
+: The easiest way to have access to money is by using an ATM machine locally (called a Bancomat) with your credit card. Be sure to check about fees associated with your credit card for international transactions.
 
 ## What to Bring
 
@@ -54,11 +54,11 @@ Music Stands
 : Instrumentalists should bring an easy fold-up music stand for practice time in your room, etc.
  
 Clothing
-: Be prepared to bring clothes for hot weather. Dress during the day is informal. Keep in mind, however, that Italians (both men and women) are generally more attentive to dress than Americans and shorts are worn infrequently. Women will feel more comfortable in sun dresses or summery skirts and tops. For evenings, be prepared to dress for concerts. Please note: NO SHORTS (or tank tops) are permitted in the hotel dining room at dinner-time (The hotel has advised us that this policy will be strictly enforced).
+: Be prepared to bring clothes for hot weather. Dress during the day is informal. Keep in mind, however, that Italians (both men and women) are generally more attentive to dress than Americans and shorts are worn infrequently. Women will feel more comfortable in sun dresses or summery skirts and tops. For evenings, be prepared to dress for concerts. Please note: NO SHORTS (or tank tops) are permitted in the hotel dining room at dinner-time.
  
 Performers
-: Men are expected to perform in coat & tie (dress shirt) while women should plan to appear in dressy (summery) attire – cocktail-style dresses or full-length dresses are appropriate. Please be sure to bring appropriate dress shoes. Opera participants will be contacted directly by Stage Director regarding their performance attire.
- 
+: Men are expected to perform in dress shirt while women should plan to appear in dressy (summery) attire. Please be sure to bring appropriate dress shoes. 
+
 Beach & Pool Wear
 : Swimmers who plan on using the pool will need a bathing cap (required for both men & women). You can usually find one in town but it's not guaranteed. A bathing suit “cover-up” is a good idea so you can walk down to the beach through the hotel. Be sure to pack hats & sunscreen for that dazzling Mediterranean sun!
  
@@ -82,7 +82,7 @@ Sheets & Towels
 ## Meals
 
 Do you recommend signing up for the Meal Plan?
-: While you are free to eat on your own, we do strongly recommend you consider the festival Meal Plan. Due to our intensive rehearsal and concert schedule, it is much more convenient to eat with the group at specially arranged times when local restaurants are not always open (usually not until 8 p.m.); also it is an important time to socialize with faculty and other participants; many announcements are made, etc.
+: While you are free to eat on your own, we do strongly recommend you consider the festival Meal Plan. Due to our concert schedule, it is much more convenient to eat with the group at specially arranged times when local restaurants are not always open (usually not until 8 p.m.). Also, it is an important time to socialize with faculty and other participants.
  
 If I'm on the Meal Plan, what happens when we go to other towns for concerts?
 : For those on the Meal Plan, we arrange to eat together in a local trattoria or restaurant for a delicious 3-course meal when we are in a different town for a performance.

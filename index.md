@@ -17,31 +17,29 @@ sponsors:
     corporate:
         - progetto.jpg
         - coelmo.jpg
+custom-js: rellax.min
 custom-css: home
 body-class: home
-webpage-data:
-    header-blend-mode: normal
+header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
 <section id="hero">
-    <div class="background-image-container parallax">
-        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
+    <div class="logo">
+        <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
+        <span>{{ site.data.institute.edition }}</span>
     </div>
-    <div id="masthead">
-        <div class="logo">
-            <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
-            <span id="festival-edition">{{ site.data.festival.edition }}</span>
-            <div id="hero-links">{%- include site/festival-links.html omit-guests=true -%}</div>
-        </div>
+    <div class="image-container">
+        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" class="rellax" data-rellax-speed="-2" />
     </div>
 </section>
 
 <section class="copy" markdown="1">
 
-{% assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
+{% assign institute-age = 'now' | date: "%Y" | minus: 1997 %}
 
-## {{ festival-age }} Years of Music & Art on the Amalfi Coast
-The Amalfi Coast Music & Arts Festival is produced by the Center of Musical Studies of Washington, in conjunction with the Accademia Jacopo Napoli of Salerno, Italy, and Artis International. The festival is based in Maiori, Italy, and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast, in the area, including the excavations of Pompeii, the world-famous vistas of Ravello, where Wagner composed Parisfal, the incomparable Greek temples at Paestum, the magical isle of Capri, and more.
+## {{ institute-age }} 27 Years of Music & Art on the Amalfi Coast
+The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes world-heritage sites and landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
+ .
 
 </section>
 
@@ -52,48 +50,50 @@ Concerts take place daily and include chamber music with the Fine Arts Quartet, 
 
 
 ## The Festival Spirit
-More than a series of concerts, the festival is a Chautauqua-style social experiment in the arts on an international level. The festival is a vibrant community that brings together performing artists, visual artists, writers and poets, students, teachers, and music aficionados from different countries to interact and learn from each other while engaged in the creative process. In this stimulating and supportive environment, participants form long-lasting friendships and invaluable professional associations. Musicians and singers embarking upon a professional career gain invaluable performing experience. Visual artists present their work at festival exhibitions. Writers present their work at evening readings. The festival also embraces the wider community and creates ongoing cultural exchanges by inviting Italian artists, students and teachers to participate in its symposia, master classes, and social events. Local towns host receptions and boat rides; mayors and ambassadors come to dinner!
+More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists and writers, students, teachers and guests,  all from a wide range of countries to interact and learn from each other while engaged in the creative process.
+
+
+ Participants take excursions and enjoy meals together, spend time on the beach, and, in the close-knit community, form long-lasting friendships and invaluable professional associations. 
+
+
 
 </section>
 
-<section id="festival" class="background-image-container parallax">
-<img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w, {{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w" sizes="100vw" alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
+<section id="institute" class="background-image-container">
+<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
 
 <div class="inset-container">
 <div class="content-container">
 <h2 id="programs">Programs</h2>
 <div>
-{%- for _p in site.data.festival.programs -%}
-{%- assign _ps = _p.program-slug -%}
-{%- assign program = site.programs | where: "slug", _ps | first -%}
+{%- for program-entry in site.data.institute.programs -%}
+{%- if program-entry.translation -%}
+    {%- continue -%}
+{%- endif -%}
+{%- assign program-slug = program-entry.name -%}
+{%- assign program = site.programs | where: "slug", program-slug | first -%}
 <div>
-    {%- if program.to-be-announced -%}
+    <img src="{{ site.program-assets-directory | append: program-slug | append: '/home.jpg' | relative_url }}" />
     <div>
-        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
-    </div>
-    <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
-    {%- else -%}
-    <a href="{{ program.url | relative_url }}">
-        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
-    </a>
-    <ul>
+        <a href="{{ program.url | relative_url }}">
+            <h3 class="program-name">{{ program.title | smartify }}</h3>
+        </a>
+        <ul>
         {%- for session in program.sessions -%}
-        <li>
+            <li>
             {%- if session.session-name -%}
                 {{- session.session-name }}:
             {% endif -%}
-            {%- include utilities/date.html dates=session.dates -%}
-        </li>
+            {%- include utilities/date-range.html dates=session.dates -%}
+            </li>
         {%- endfor -%}
-    </ul>
-    <div class="buttons">
-        <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
-        {%- include site/program/get-apply-url.fx program=program -%}
-        <a href="{{ __return }}" class="button">Apply</a>
+        </ul>
+        <div class="buttons">
+            <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
+            {%- include site/program/get-apply-url.fx program-name=program-slug -%}
+            <a href="{{ __return }}" class="button">Apply</a>
+        </div>
     </div>
-    {%- endif -%}
 </div>
 {%- endfor -%}
 </div>
@@ -102,12 +102,44 @@ More than a series of concerts, the festival is a Chautauqua-style social experi
 
 </section>
 
+
+<section id="institute2" class="background-image-container">
+<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
+
+<h2>Programs</h2>
+
+<div>
+{%- for program-entry in site.data.institute.programs -%}
+{%- if program-entry.translation -%}
+    {%- continue -%}
+{%- endif -%}
+{%- assign program-name = program-entry.name -%}
+{%- assign program = site.programs | where: "slug", program-name | first -%}
+<a href="{{ program.url | relative_url }}">
+    <h3 class="program-name">{{ program.title | smartify }}</h3>
+    <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
+    <ul>
+    {%- for session in program.sessions -%}
+        <li>
+        {%- if session.session-name -%}
+            {{- session.session-name }}:
+        {% endif -%}
+        {%- include utilities/date-range.html dates=session.dates -%}
+        </li>
+    {%- endfor -%}
+    </ul>
+</a>
+{%- endfor -%}
+</div>
+
+</section>
+
+
 <section class="copy" markdown="1">
 
 ## Guests Are Always Welcome
-A special program for guests provides an unparalleled opportunity in cultural tourism. Guests are welcomed as part of the festival community and are afforded a unique backstage experience. They are invited to attend rehearsals, master classes, and pre-concert lectures. They may take advantage of the many educational offerings at the festival, such as art courses, Italian language classes, cooking lessons, and excursions to the area's monuments and cultural sites, such as the excavations of Pompeii, the isle of Capri, and the delightful seaside towns that have made this region famous -- Positano, Ravello, Sorrento, Amalfi, and others.
+The Amalfi Guest Program offers a unique opportunity in cultural tourism. Sit in on  master classes and attend concerts and pre-concert lectures. Take advantage of festival excursions to the area's cultural sites and join festival meals and receptions. 
 
-<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">Learn more</a>
 
 </section>
 
@@ -116,7 +148,7 @@ A special program for guests provides an unparalleled opportunity in cultural to
 
 ## We Appreciate Your Support!
 
-Donations help keep the festival alive and thriving. Help extend the legacy of this unique festival, and bring experiences of a lifetime to the artists and musicians looking for inspiration along the beautiful Amalfi Coast.
+Your donations keep the festival thriving and provide much needed scholarship funds. Help extend the legacy of this unique festival and bring experiences of a lifetime to the artists and musicians seeking inspiration in this historic part of Italy.
 
 <a class="button" href="{{ site.baseurl }}{% link donations.md %}">Donate Now</a>
 
@@ -141,3 +173,9 @@ Donations help keep the festival alive and thriving. Help extend the legacy of t
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
+
+
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>

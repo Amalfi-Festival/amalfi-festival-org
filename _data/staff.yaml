@@ -1,15 +1,15 @@
-### Each item in this list is a member of the staff. List them in the order they
-### should be presented.
-###
-### Properties:
-### name (required) - Full name of the staff member
-### title (required) - Title of the staff member
-### email (optional) - Email contact
-### headshot-filename (optional) - File name of staff member's headshot. The image file
-###     should be located in `assets/people/`.
-### person-slug (optional) - If the staff member have their own bio page (as faculty or
-###.    associate staff), include their slug here. Their faculty headshot is
-###     used, and their name turns into a link to their faculty page.
+# Each item in this list is a member of the staff. List them in the order they
+# should be presented.
+#
+# Properties:
+# name (required) - Full name of the staff member
+# title (required) - Title of the staff member
+# email (optional) - Email contact
+# headshot-filename (optional) - File name of staff member's headshot. The image file
+#     should be located in `assets/people/`.
+# faculty-slug (optional) - If the staff member is also faculty, include their slug
+#     here. Their faculty headshot is used, and their name turns into a link to their
+#     faculty page.
 - name: Alexander (Sasha) Katsnelson
   title: General Director
   email: sasha@amalfi-festival.org
@@ -19,29 +19,25 @@
 - name: Fabrizio Soprano
   title: Production Manager
   email: fabrizio.soprano@gmail.com
-  headshot-filename: Fabrizio-Soprano.jpg
 - name: Manfredi Paterniti
-  title: Director of Development
+  title: Director of Business & Development
   email: manfredipaterniti@studioesse.net
 - name: Teresa Rocciola
   title: Publicist/Public Relations
-- name: Patricia Hussey
-  title: Executive Administrator --- Registration and Communications
-  email: pat@amalfi-festival.org
 - name: Shichao Zhang
   title: Festival Coordinator and Head of the Piano Teacher Seminar
   email: szhang.amalfifestival@gmail.com
-  person-slug: Shichao-Zhang
+  faculty-slug: Shichao-Zhang
 - name: Yetong Tang
   title: Program Coordinator and Assistant to the Artistic Director
   email: yetongtang2026@u.northwestern.edu
-  person-slug: Yetong-Tang
+  faculty-slug: Yetong-Tang
 - name: Paolo D'Agostino
   title: Production & Logistics Coordinator
-  headshot-filename: Paolo-DAgostino.jpg
 - name: Anais Kelsey-Verdecchia
   title: Executive Assistant
   email: anais@amalfi-festival.org
 - name: Simona D'Acunto 
   title: Staff Assistant
-  headshot-filename: Simona-DAcunto.jpg
+- name: Simona D'Acunto
+  title: Staff Assistant
