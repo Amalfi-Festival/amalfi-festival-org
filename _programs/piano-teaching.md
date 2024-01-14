@@ -5,14 +5,7 @@ sessions:
             start: 2024-07-10
             end: 2024-07-17
         faculty:
-            -   Boris-Berman
-            -   Bernadene-Blaha
-            -   Kevin-Fitz-Gerald
             -   James-Giles
-            -   Wei-Lung-Li
-            -   Marina-Lomazov
-            -   Yoshikazu-Nagai
-            -   Joseph-Rackers
 application:
     form-url: https://forms.gle/33Zk5TXN2YP4Fb188
 outings:
