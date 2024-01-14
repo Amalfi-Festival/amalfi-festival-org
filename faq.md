@@ -37,7 +37,7 @@ Do I need any electrical appliances, such as a hairdryer?
 : We do recommend you try to leave electrical appliances at home. The hotel rooms are all equipped with hair-dryers. The hotel has strict regulations about using irons in the rooms due to fire hazards. If you find it necessary to bring something, you will need a transformer for European current as well as an adaptor plug to fit into the wall outlet (adaptors can also be found locally in hardware stores).
  
 What kind of internet service is there in the town?
-: The hotel is equipped with wireless service if you have a laptop or i-pad. 
+: The hotel is equipped with wireless service if you have a laptop or iPad. 
  
 What kind of laundry facilities are there?
 : Try to bring enough clothes with you to not waste much time on laundry. Many people do handwash in their sinks.  There are two laundromats in close proximity.
