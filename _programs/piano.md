@@ -116,7 +116,7 @@ Held in spectacular venues throughout the Amalfi Coast, the Festival hosts daily
 
 <div class="image-copy row">
 <div class="image">
-<img src="{{ _piano-dir | append: "amalfi-from-water.JPG" | relative_url }}" alt="View of Amalfi from the water" />
+<img src="{{ _piano-dir | append: "amalfi-from-water.jpg" | relative_url }}" alt="View of Amalfi from the water" />
 </div>
 <div class="copy">
 Opportunities to fully experience the Amalfi Coast with excursions to historic locations.
