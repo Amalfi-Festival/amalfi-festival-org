@@ -33,6 +33,11 @@ $border-radius-large: 1rem;
 $border-radius-small: .5rem;
 $sidebar-width: 19rem;
 
+@mixin hero-text() {
+    color: $background-color;
+    text-shadow: $dark-color 0 0 15px;
+}
+
 $minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
 $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
 @function minimum-side-padding-with-addition($padding: null) {
