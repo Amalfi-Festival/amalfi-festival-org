@@ -41,18 +41,19 @@ webpage-data:
 {% assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
 
 ## {{ festival-age }} Years of Music & Art on the Amalfi Coast
-The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes world-heritage sites and landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
+The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
 
 </section>
 
 <section class="copy" markdown="1">
 
-## Concerts Around the Clock... Art, Writing, Italian Language & Mediterranean Cuisine!
-Concerts take place daily and include chamber music with the Fine Arts Quartet, piano recitals, vocal performances and opera. The Music Institute, staffed by internationally recognized artists and professors, offers high-level training in piano, strings, and voice, including concert opera productions with orchestra, in addition to a choral program. The festival also presents a rich program in in the visual arts, offering courses in painting and ceramics, in addition to intensive workshops in fiction, poetry, and memoir for writers of all levels.
+## Concerts around the clock, art exhibits, and writing workshops plus Italian language & Mediterranean cooking classes!
+
+Concerts and master classes take place daily daily and are open to all festival participants. Seminars and workshops are offered by our outstanding faculty. Group meals provide opportunities to sample the finest in regional cuisine. Take advantage of excursions to the area's outstanding tourist destinations. 
 
 
 ## The Festival Spirit
-More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists and writers, students, teachers and guests,  all from a wide range of countries to interact and learn from each other while engaged in the creative process.
+More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists and writers, and guests,  all from a wide range of countries, to interact and learn from each other while engaged in the creative process.
 
 Participants take excursions and enjoy meals together, spend time on the beach, and, in the close-knit community, form long-lasting friendships and invaluable professional associations. 
 </section>
