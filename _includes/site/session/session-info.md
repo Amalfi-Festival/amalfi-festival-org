@@ -51,7 +51,7 @@
     <h4>{% if include.faculty-type %}{{ include.faculty-type }}{% else %}{% include utilities/localize.html string="Faculty" %}{% endif %}</h4>
     {%- include site/faculty-tiles.html faculty=session.faculty localization=include.show-localization -%}
     {%- if session.associate-staff -%}
-    <h4>{% include utilities/localize.html string="Associate Staff" %}</h4>
+    <h4>{% include utilities/localize.html string="Associate Faculty" %}</h4>
     {%- include site/faculty-tiles.html faculty=session.associate-staff localization=include.show-localization -%}
     {%- endif -%}
 </div>
