@@ -17,29 +17,31 @@ sponsors:
     corporate:
         - progetto.jpg
         - coelmo.jpg
-custom-js: rellax.min
 custom-css: home
 body-class: home
-header-blend-mode: normal
+webpage-data:
+    header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
 <section id="hero">
-    <div class="logo">
-        <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
-        <span>{{ site.data.institute.edition }}</span>
+    <div class="background-image-container parallax">
+        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
     </div>
-    <div class="image-container">
-        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" class="rellax" data-rellax-speed="-2" />
+    <div id="masthead">
+        <div class="logo">
+            <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
+            <span id="festival-edition">{{ site.data.festival.edition }}</span>
+            <div id="hero-links">{%- include site/festival-links.html omit-guests=true -%}</div>
+        </div>
     </div>
 </section>
 
 <section class="copy" markdown="1">
 
-{% assign institute-age = 'now' | date: "%Y" | minus: 1997 %}
+{% assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
 
-## {{ institute-age }} 27 Years of Music & Art on the Amalfi Coast
+## {{ festival-age }} Years of Music & Art on the Amalfi Coast
 The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes world-heritage sites and landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
- .
 
 </section>
 
@@ -52,94 +54,61 @@ Concerts take place daily and include chamber music with the Fine Arts Quartet, 
 ## The Festival Spirit
 More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists and writers, students, teachers and guests,  all from a wide range of countries to interact and learn from each other while engaged in the creative process.
 
-
- Participants take excursions and enjoy meals together, spend time on the beach, and, in the close-knit community, form long-lasting friendships and invaluable professional associations. 
-
-
-
+Participants take excursions and enjoy meals together, spend time on the beach, and, in the close-knit community, form long-lasting friendships and invaluable professional associations. 
 </section>
 
-<section id="institute" class="background-image-container">
-<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
+<section id="festival" class="background-image-container parallax">
+<img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w, {{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w" sizes="100vw" alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
 
 <div class="inset-container">
 <div class="content-container">
 <h2 id="programs">Programs</h2>
 <div>
-{%- for program-entry in site.data.institute.programs -%}
-{%- if program-entry.translation -%}
-    {%- continue -%}
-{%- endif -%}
-{%- assign program-slug = program-entry.name -%}
-{%- assign program = site.programs | where: "slug", program-slug | first -%}
+{%- for _p in site.data.festival.programs -%}
+{%- assign _ps = _p.program-slug -%}
+{%- assign program = site.programs | where: "slug", _ps | first -%}
 <div>
-    <img src="{{ site.program-assets-directory | append: program-slug | append: '/home.jpg' | relative_url }}" />
+    {%- if program.to-be-announced -%}
     <div>
-        <a href="{{ program.url | relative_url }}">
-            <h3 class="program-name">{{ program.title | smartify }}</h3>
-        </a>
-        <ul>
+        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
+        <h3 class="program-name">{{ program.title | smartify }}</h3>
+    </div>
+    <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
+    {%- else -%}
+    <a href="{{ program.url | relative_url }}">
+        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
+        <h3 class="program-name">{{ program.title | smartify }}</h3>
+    </a>
+    <ul>
         {%- for session in program.sessions -%}
-            <li>
+        <li>
             {%- if session.session-name -%}
                 {{- session.session-name }}:
             {% endif -%}
-            {%- include utilities/date-range.html dates=session.dates -%}
-            </li>
-        {%- endfor -%}
-        </ul>
-        <div class="buttons">
-            <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
-            {%- include site/program/get-apply-url.fx program-name=program-slug -%}
-            <a href="{{ __return }}" class="button">Apply</a>
-        </div>
-    </div>
-</div>
-{%- endfor -%}
-</div>
-</div>
-</div>
-
-</section>
-
-
-<section id="institute2" class="background-image-container">
-<img src="{{ site.image-directory | append: "amalfi2.jpg" | relative_url }}" />
-
-<h2>Programs</h2>
-
-<div>
-{%- for program-entry in site.data.institute.programs -%}
-{%- if program-entry.translation -%}
-    {%- continue -%}
-{%- endif -%}
-{%- assign program-name = program-entry.name -%}
-{%- assign program = site.programs | where: "slug", program-name | first -%}
-<a href="{{ program.url | relative_url }}">
-    <h3 class="program-name">{{ program.title | smartify }}</h3>
-    <img src="{{ site.program-assets-directory | append: program.slug | append: '/home.jpg' | relative_url }}" />
-    <ul>
-    {%- for session in program.sessions -%}
-        <li>
-        {%- if session.session-name -%}
-            {{- session.session-name }}:
-        {% endif -%}
-        {%- include utilities/date-range.html dates=session.dates -%}
+            {%- include utilities/date.html dates=session.dates -%}
         </li>
-    {%- endfor -%}
+        {%- endfor -%}
     </ul>
-</a>
+    <div class="buttons">
+        <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
+        {%- include site/program/get-apply-url.fx program=program -%}
+        <a href="{{ __return }}" class="button">Apply</a>
+    </div>
+    {%- endif -%}
+</div>
 {%- endfor -%}
+</div>
+</div>
 </div>
 
 </section>
-
 
 <section class="copy" markdown="1">
 
 ## Guests Are Always Welcome
-The Amalfi Guest Program offers a unique opportunity in cultural tourism. Sit in on  master classes and attend concerts and pre-concert lectures. Take advantage of festival excursions to the area's cultural sites and join festival meals and receptions. 
+The Amalfi Guest Program offers a unique opportunity in cultural tourism. Sit in on  master classes and attend concerts and pre-concert lectures. Take advantage of festival excursions to the area's cultural sites and join festival meals and receptions.
 
+<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">Learn more</a>
 
 </section>
 
@@ -173,9 +142,3 @@ Your donations keep the festival thriving and provide much needed scholarship fu
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
-
-
-<script>
-  // Accepts any class name
-  var rellax = new Rellax('.rellax');
-</script>

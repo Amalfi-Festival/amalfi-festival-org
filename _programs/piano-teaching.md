@@ -36,7 +36,7 @@ webpage-data:
 
 <section class="standard-block" markdown="1">
 
-## A customized course plan in piano pedagogy
+## A customized course plan in piano teaching
 
 ### Topic Lecture
 
