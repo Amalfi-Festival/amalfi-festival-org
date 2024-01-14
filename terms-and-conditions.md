@@ -24,7 +24,7 @@ custom-css: festival
 <div id="cancellation-{{ reference-program.slug }}" markdown="1">
 ### {{ reference-program.title | smartify }}
 
-{% include cancellation-table.md %}
+{% include site/program/cancellation-table.md %}
 </div>
 {%- endfor %}
 <style>

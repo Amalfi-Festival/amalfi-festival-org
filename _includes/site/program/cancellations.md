@@ -1,2 +1,2 @@
 {% include cancellation-policy.md %}
-{% include cancellation-table.md %}
+{% include site/program/cancellation-table.md %}

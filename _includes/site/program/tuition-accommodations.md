@@ -13,13 +13,10 @@
 {%- endif %}
 
 {% if reference-program.tuition-guests and page.slug != "choral" -%}
-    {%- capture _html -%}
-    {%- include utilities/localize.html string="tuition-guests-link" -%}
-    {%- endcapture -%}
     {%- capture _url -%}
     {{- _guests.url | relative_url -}}
     {%- endcapture -%}
-    {{- _html | replace: "~~~URL~~~", _url | smartify | markdownify -}}
+    {%- include utilities/localize.html string="tuition-guests-link" replace-key="~~~URL~~~" replace-value=_url -%}
 {%- endif %}
 
 {%- assign _name-key = include.name-key | default: "name" -%}

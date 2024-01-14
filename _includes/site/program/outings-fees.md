@@ -2,12 +2,9 @@
 
 ### {% include utilities/localize.html string="outings-title" %}
 
-{% capture _html -%}
-{%- include utilities/localize.html string="outings-intro" -%}
-{%- endcapture -%}
-{%- capture _url -%}
+{% capture _url -%}
 {{- site.baseurl }}{% link excursions-and-activities.md -%}
 {%- endcapture -%}
-{{- _html | replace: "~~~URL~~~", _url | smartify | markdownify -}}
+{%- include utilities/localize.html string="outings-intro" replace-key="~~~URL~~~" replace-value=_url -%}
 
 {% include site/program/outings-table.html %}

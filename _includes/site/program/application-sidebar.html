@@ -10,7 +10,7 @@
 </li>
 <li>
     <h5>{% include utilities/localize.html string="Deposit" %}</h5>
-    <div>({% include utilities/localize.html string="refundable" %} <a href="#cancellation-policy--refunds">{% include utilities/localize.html string="in case of cancellation" %}</a>)</div>
+    <div>{%- include utilities/localize.html string="deposit-refundable" replace-key="~~~URL~~~" replace-value="#cancellation-policy--refunds" -%}</div>
     <div>{% include utilities/format-cost.html cost=application-deposit %}</div>
 </li>
 {%- if application.form-url -%}

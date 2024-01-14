@@ -26,6 +26,7 @@
 -   key: tuition-guests-link
     en: For guests and auditors, [click here](~~~URL~~~) for more information.
     zh: 中文For guests and auditors, [click here](~~~URL~~~) for more information.
+    is-markdown: true
 -   key: meal-plan
     en: The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
     zh: 中文The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
@@ -37,6 +38,7 @@
 -   key: outings-intro
     en: Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of the following available [excursions and activities](~~~URL~~~).
     zh: 利用以下[可用的短途旅行和活动](~~~URL~~~)增强您的节日体验和阿马尔菲海岸的享受。
+    is-markdown: true
 -   en: Excursions
     zh: 短途旅行
 -   en: Activities
@@ -57,7 +59,42 @@
     zh: 中文Registration fee
 -   en: Deposit
     zh: 中文Deposit
--   en: refundable
-    zh: 中文refundable
--   en: in case of cancellation
-    zh: 中文in case of cancellation
+-   key: deposit-refundable
+    en: (refundable [in case of cancellation](~~~URL~~~))
+    zh: 中文(refundable [in case of cancellation](~~~URL~~~))
+    is-markdown: true
+
+### Cancellation schedule
+-   key: before-date
+    en: Before ~~~DATE~~~
+    zh: ~~~DATE~~~之前申请退款
+-   key: as-of-date
+    en: As of ~~~DATE~~~
+    zh: ~~~DATE~~~（含）之后申请退款
+-   key: after-date
+    en: After ~~~DATE~~~
+    zh: ~~~DATE~~~（含）之后
+-   key: full-refund
+    en: Your deposit and any tuition payments made will be fully refunded without penalty (excluding registration fees).
+    zh: 已缴纳订金及学费将被全额退款。
+    is-markdown: true
+-   key: processing-fee
+    en: A **~~~COST~~~** processing fee will be applied to your refund plus any prepaid nonrefundable expenses.
+    zh: 我们将收取**~~~COST~~~**手续费。
+    is-markdown: true
+-   key: withdrawal-fee
+    en: A **~~~COST~~~** withdrawal fee will be applied to your refund plus any prepaid nonrefundable expenses.
+    zh: 我们将收取**~~~COST~~~**手续费。
+    is-markdown: true
+-   key: deposit-forfeit
+    en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses.
+    zh: ~COST~订金将不予退还。其余已缴纳之不可退款项目皆不会被退回。
+    is-markdown: true
+-   key: deposit-forfeit-with-deductible
+    en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses up to **~~~DEDUCTIBLE~~~**.
+    zh: 您的~COST~押金以及最多**~~~DEDUCTIBLE~~~**的预付不可退还费用将被没收。
+    is-markdown: true
+-   key: no-refund
+    en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made."
+    zh: 我们不再受理取消行程的申请。**一切已缴费用将不予退还。**
+    is-markdown: true
