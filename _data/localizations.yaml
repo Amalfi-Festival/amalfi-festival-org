@@ -12,9 +12,9 @@
 -   en: Application form
     zh: 申请表
 -   en: Faculty
-    zh: 学院
--   en: Associate Staff
-    zh: 协理人员
+    zh: 教授团队
+-   en: Associate Faculty
+    zh: 助理教师
 
 ### Tuition
 -   key: tuition-title
@@ -25,11 +25,11 @@
     zh: 学费为单期音乐节单人费用，包括一对一私教课、大师班、讲座、研讨会、音乐会等
 -   key: tuition-guests-link
     en: For guests and auditors, [click here](~~~URL~~~) for more information.
-    zh: 中文For guests and auditors, [click here](~~~URL~~~) for more information.
+    zh: 同行及旁听人员, [点击这里](~~~URL~~~) 获取更多信息。
     is-markdown: true
 -   key: meal-plan
     en: The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
-    zh: 中文The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
+    zh: 我们推荐加购音乐节期间晚饭套餐。音乐节教授将会和学员们一起用餐，套餐还包括外出活动时的晚餐。
 
 ### Excursions and Activities
 -   key: outings-title
@@ -37,7 +37,7 @@
     zh: 短途旅行和活动
 -   key: outings-intro
     en: Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of the following available [excursions and activities](~~~URL~~~).
-    zh: 利用以下[可用的短途旅行和活动](~~~URL~~~)增强您的节日体验和阿马尔菲海岸的享受。
+    zh: 利用以下可选的[短途旅行和活动](~~~URL~~~)增强您的音乐节体验。
     is-markdown: true
 -   en: Excursions
     zh: 短途旅行
@@ -46,7 +46,7 @@
 ### This is for excursions and activities that are included in the program and
 ### don't cost anything
 -   en: Included
-    zh: 包括
+    zh: 已包括
 
 ### How to apply section
 -   en: How to Apply
@@ -54,14 +54,14 @@
 -   en: Application deadline
     zh: 报名截止日期
 -   en: Registration fee
-    zh: 中文Registration fee
+    zh: 注册费用
 -   en: (non-refundable)
-    zh: 中文Registration fee
+    zh: （不可退）
 -   en: Deposit
-    zh: 中文Deposit
+    zh: 押金
 -   key: deposit-refundable
     en: (refundable [in case of cancellation](~~~URL~~~))
-    zh: 中文(refundable [in case of cancellation](~~~URL~~~))
+    zh: (可退款 [如取消参与音乐节](~~~URL~~~))
     is-markdown: true
 
 ### Cancellation schedule
@@ -73,10 +73,10 @@
     zh: ~~~DATE~~~（含）之后申请退款
 -   key: after-date
     en: After ~~~DATE~~~
-    zh: ~~~DATE~~~（含）之后
+    zh: ~~~DATE~~~（含）之后申请退款
 -   key: full-refund
     en: Your deposit and any tuition payments made will be fully refunded without penalty (excluding registration fees).
-    zh: 已缴纳订金及学费将被全额退款。
+    zh: 已缴纳押金及学费将被全额退款（注册费用不可退）。
     is-markdown: true
 -   key: processing-fee
     en: A **~~~COST~~~** processing fee will be applied to your refund plus any prepaid nonrefundable expenses.
@@ -88,11 +88,11 @@
     is-markdown: true
 -   key: deposit-forfeit
     en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses.
-    zh: ~COST~订金将不予退还。其余已缴纳之不可退款项目皆不会被退回。
+    zh: ~COST~押金将不予退还。其余已缴纳之不可退款项目皆不会被退回。
     is-markdown: true
 -   key: deposit-forfeit-with-deductible
     en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses up to **~~~DEDUCTIBLE~~~**.
-    zh: 您的~COST~押金以及最多**~~~DEDUCTIBLE~~~**的预付不可退还费用将被没收。
+    zh: 您的~COST~押金以及最多**~~~DEDUCTIBLE~~~**的预付不可退还费用皆不会被退回。
     is-markdown: true
 -   key: no-refund
     en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made."
