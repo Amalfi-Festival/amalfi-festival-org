@@ -36,23 +36,27 @@ webpage-data:
 
 <section class="standard-block" markdown="1">
 
-## A customized course plan in piano teaching
+## An Immersive Experience with the Art of Piano Teaching
 
 ### Topic Lecture
 
-Senior professors of world-class music colleges teach each other affectionately and carry out thematic lectures on "difficult and miscellaneous diseases" in piano teaching; personalized customization meets the all-round needs of piano teachers.
+Our world-class professors lead engaging lectures covering a spectrum of topics, from practical methodologies and challenges in piano teaching to stylistic nuances and composers within the piano literature. The experience is personalized to cater to individual needs and interests.
 
-### Seminar (Workshop)
+### Seminar & Workshop
 
-Famous teachers will guide you on the spot and carry out practical exercises on topics such as piano playing skills, double piano and four-handed playing.
+Experts conduct workshops on various aspects, including piano technique, ensemble playing (piano duo & duet), and exercise methods, providing valuable insights and hands-on learning opportunities.
 
-### Roundtable Forum - International Big Shots (Roundtable & Discussion)
+### Repertoire Coaching Session
 
-Discuss music art and teaching experience with masters in a charming Mediterranean town, and have the opportunity to get close guidance and answer questions.
+A repertoire collection tailored for competitions and recitals is curated by festival faculties, offering a customized selection. Participants are encouraged to learn 1-2 short pieces in advance from this collection, receiving individual coaching during the Repertoire Seminar for further refinement.
 
-### Concert and master class observation
+### Roundtable Forum
 
-All master class courses, teachers and student concerts of the Piano Music Festival are observed throughout the whole process.
+A unique opportunity to engage in discussions on musical art and teaching experiences with esteemed pedagogues in the enchanting Mediterranean town. Participants also have the chance to receive one-on-one guidance, enhancing their musical journey.
+
+### Concert and Master Class Observation
+
+Teaching Seminar participants have the opportunity to attend Faculty Concerts, Young Artist Series Recitals, Master Classes, and various activities within the Piano Program. This inclusive approach offers a holistic and immersive experience for all involved.
 </section>
 
 <section id="faculty" markdown="1">
