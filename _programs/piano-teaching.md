@@ -75,53 +75,53 @@ All master class courses, teachers and student concerts of the Piano Music Festi
 
 ### Maiori
 
-Since ancient Roman times, the tourist attraction has the longest coastline on the Amalfi coast. There are mountain paths where you can walk on foot, and rare volcanic sand and gravel beaches. Majori is our main venue, where the accommodation of the music festival and most of the course activities are held.
+Since ancient Roman times, this tourist attraction boasts the longest coastline along the Amalfi Coast. Explore mountain paths on foot and discover rare volcanic sand and gravel beaches. Maiori serves as our primary venue, hosting the music festival accommodation and the majority of course activities.
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
 ### Amalfi's Lemons 🍋
 
-Experience a walk on the world-famous lemon tree path on the Amalfi coast in the morning, and taste a cup of southern Italy's most mellow espresso with friends.
+Embark on a morning stroll along the world-famous Lemon Tree Path on the Amalfi Coast, and savor a cup of Southern Italy's most mellow espresso with friends.
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/delizia-al-limone.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
 ### Minori
 
-In Minori, a small town only a 20-minute walk from Maiori, there is a dessert shop Sal De Riso that has appeared on a CNN documentary, one of the most famous of which is Delizia al limone, nicknamed "Venus's Breasts". Each music festival will have an outdoor concert and dinner at Minori, and some students will choose to visit the store here. Holding a cake, holding an Italian handmade ice cream, and walking back to Maiori in the sea breeze.
+In Minori, a quaint town just a 20-minute walk from Maiori, you'll find Sal De Riso, a dessert shop featured on a CNN documentary. Among its renowned treats is the "Delizia al limone," fondly nicknamed "Venus's Breasts." During each music festival, there's an outdoor concert and dinner in Minori. Some students opt to visit the famed dessert shop, strolling back to Maiori with cake in hand, alongside indulging in Italian handmade ice cream in the refreshing sea breeze.
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
 ### Concerts
 
-The concerts of the festival are divided into Faculty Concert and Young Artist Recital Series. There is a concert almost every day during the festival. Our event venue has selected churches and concert halls with different architectural styles in different towns, and strives to create a diversified music and artistic experience for the audience.
+The festival features Faculty Concerts and the Young Artist Recital Series, offering almost daily concerts. Our event venues include selected churches and concert halls in various towns, each with unique architectural styles. We aim to provide the audience with a diverse music and artistic experience throughout the festival.
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/fireworks.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-### Day & Night in a Mediterranean Town
+### Days & Nights in a Mediterranean Town
 
-The Amalfi Coast follows the Siesta Hour, which is unique to the Mediterranean region. Most shops and restaurants will close at the peak of the day at noon, when our piano master class will be held in the air-conditioned hall. After the lunch break, the nightlife in the Mediterranean town is wonderful. After a group formal dinner and daily concerts, professors and students often choose to drink in a small restaurant by the sea. If you are lucky, you can also watch a wonderful fireworks show in a nearby town at the seaside.
+The Amalfi Coast observes the Siesta Hour, a unique practice in the Mediterranean region. During the peak of the day at noon, most shops and restaurants close as our piano master class takes place in the air-conditioned hall. Following the lunch break, the Mediterranean town comes alive with vibrant nightlife. After group formal dinners and daily concerts, professors and students often gather to enjoy drinks at a seaside restaurant. If fortunate, you might also catch a spectacular fireworks show in a nearby town by the sea.
 
 ### Capri & Ravello Travels
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/capri.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-Listening to Debussy's piano prelude "The Hill of Anna Capri", I drove through Mamma Mia in the local population! ( All the way to horror), then take the cable car to the top of Anna Capri and immerse yourself in the color #0476D0 Capri blue.
+Driving through Mamma Mia while listening to Debussy's piano prelude "The Hill of Anna Capri" creates a captivating experience, transitioning from serenity to exhilaration. Taking the cable car to the summit of Anna Capri, you'll be surrounded by the enchanting color #0476D0, known as Capri Blue.
 
-In addition to the exciting beauty, Capri is one of the top ten most expensive resorts in the world. The island is full of luxury stores and five-star hotels that are hard to find a room. In 29 BC, in order to get Capri, Augustus the Great was willing to use an island with several times the land area in exchange.
+Beyond its mesmerizing beauty, Capri stands among the world's top ten most expensive resorts. Laden with luxury stores and exclusive five-star hotels, securing a room can be a challenge. In 29 BC, the esteemed Augustus the Great was willing to exchange an island several times to gain access to Capri.
 
-The one-day tour of Capri for members of Art Week includes ferry tickets, tickets, and tour guide services.
+As part of the Seminar, the one-day tour to Capri for participants includes ferry tickets, entry passes, and the guided tour service.
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/ravello.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-Ravello is known as the "City of Music", and the Ravello Festival, which is often attended by the conductor Muti, is held at Villa Rufolo. Lavillo is one of the inspirations for Wagner's opera Parsifal and a musical shrine walked by Liszt.
+Ravello, renowned as the "City of Music," hosts the Ravello Festival, frequently graced by conductor Muti, at the enchanting Villa Rufolo. Ravello served as an inspiration for Wagner's opera Parsifal and is a musical shrine revered by Liszt.
 
-The half-day tour of Lavello at Art Week arranged a special car and guide for the members to enjoy a relaxing and pleasant music tour.
+During the Seminar, the half-day tour to Ravello offers participants a guided tour, ensuring a leisurely and delightful musical exploration.
 
 {% capture tuition-description %}
 The cost for Tuition & Accommodations is listed as one total fee, which includes access to the Piano Festival, round-trip to and from Naples airport to Maiori, full hotel accommodation, daily breakfast and dinner, a formal dress party, translation services, and a certificate of completion.
