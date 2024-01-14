@@ -84,7 +84,7 @@ webpage-data:
 <img src="{{ _piano-dir | append: "spooner.jpg" | relative_url }}" alt="Spooner teaching a student" />
 </div>
 <div class="copy">
-    Receive individual lessons from world-renowned faculty.
+    Enjoy individual lessons with world-renowned faculty.
 </div>
 </div>
 
@@ -102,7 +102,7 @@ webpage-data:
 <img src="{{ _piano-dir | append: "giles-san-domenico.jpg" | relative_url }}" alt="Giles performing in San Domenico" />
 </div>
 <div class="copy">
-Held in spectacular venues throughout the Amalfi Coast, the Festival hosts daily concerts, including faculty recitals, and the Young Artist Series for students.
+Perform in "Young Artist Series" concerts and attend faculty recitals in spectacular venues throughout the Amalfi Coast area. 
 </div>
 </div>
 
