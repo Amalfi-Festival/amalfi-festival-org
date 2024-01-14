@@ -15,12 +15,12 @@ The Amalfi Festival offers participants opportunities to explore the Amalfi Coas
 
 ## Excursions
 
-While at the Amalfi Coast Music & Arts Festival, take a once-in-a-lifetime chance to explore the deep beauty and history of the region.
+While at the Amalfi Coast Music & Arts Festival, take a once-in-a-lifetime chance to explore the striking beauty and history of the region.
 
 </section>
 
 {% capture description -%}
-Located 350 meters above the sea at the top of the Dargone Valley, Ravello’s stunning scenic beauty has long made it a popular tourist destination. Founded by the Roman aristocracy in the 5th century as a shelter against the barbarian invasions that marked the end of the Western Roman Empire, it soon became a very wealthy and powerful town between the 10th and 13th centuries. Like Amalfi, Ravello owed its prosperity to extensive commerce throughout the Mediterranean, particularly with regard to its strong textile industry.
+Located 350 meters above the sea at the top of the Dargone Valley, Ravello’s stunning scenic beauty has long made it a popular tourist destination. Founded by the Roman aristocracy in the 5th century as a shelter against the barbarian invasions that marked the end of the Western Roman Empire, it soon became a wealthy and powerful town between the 10th and 13th centuries. Like Amalfi, Ravello owed its prosperity to extensive commerce throughout the Mediterranean, particularly with regard to its strong textile industry.
 
 The fall of Ravello’s wealth and influence came with Ruggero II and the Normanni domination. This was furthered by the Pisani invasion in 1337, which deprived the entire Amalfi Coast of its independence and political power. Now home to approx. 2,500 inhabitants, it earned a listing as a UNESCO World Heritage Site in 1996.
 
