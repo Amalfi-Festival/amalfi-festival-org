@@ -8,15 +8,15 @@ sessions:
             end: 2024-07-17
         faculty:
             -   Boris-Berman
-            -   Christopher Guzman
-            -   Min Kwon
-            -   Jerome Lowenthal 
+            -   Christopher-Guzman
+            -   Min-Kwon
             -   Wei-Lung-Li
             -   Marina-Lomazov
+            -   Jerome-Lowenthal 
             -   Yoshikazu-Nagai
             -   Ursula-Oppens
             -   Joseph-Rackers
-            -   Steven Spooner 
+            -   Steven-Spooner 
         associate-staff:
             -   Yetong-Tang
             -   Shichao-Zhang
@@ -26,13 +26,13 @@ sessions:
             start: 2024-07-18
             end: 2024-07-30
         faculty:
+            -   Tema-Blackstone
             -   Bernadene-Blaha
-            -   Tema Blackstone
-            -   Bruce Brubaker 
-            -   Hung-Kuan Chen 
+            -   Bruce-Brubaker 
+            -   Hung-Kuan-Chen 
             -   Kevin-Fitz-Gerald
             -   James-Giles
-            -   Douglas Humpherys
+            -   Douglas-Humpherys
             -   Kyu-Yeon-Kim
             -   Thomas-Rosenkranz
             -   Ursula-Oppens
