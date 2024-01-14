@@ -7,15 +7,12 @@ sessions:
         faculty:
             -   Boris-Berman
             -   Bernadene-Blaha
-            -   Enrico-Elisi
             -   Kevin-Fitz-Gerald
             -   James-Giles
-            -   Ian-Jones
             -   Wei-Lung-Li
             -   Marina-Lomazov
             -   Yoshikazu-Nagai
             -   Joseph-Rackers
-            -   Jerry-Wong
 application:
     form-url: https://forms.gle/33Zk5TXN2YP4Fb188
 outings:
