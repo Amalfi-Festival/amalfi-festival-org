@@ -84,7 +84,7 @@ webpage-data:
 <img src="{{ _piano-dir | append: "spooner.jpg" | relative_url }}" alt="Spooner teaching a student" />
 </div>
 <div class="copy">
-    Enjoy individual lessons with world-renowned faculty.
+Enjoy individual lessons with world-renowned faculty.
 </div>
 </div>
 
@@ -93,7 +93,7 @@ webpage-data:
 <img src="{{ _piano-dir | append: "IMG_1398_edited.jpg" | relative_url }}" alt="Nagai masterclass" />
 </div>
 <div class="copy">
-    Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
+Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
 </div>
 </div>
 
@@ -102,7 +102,7 @@ webpage-data:
 <img src="{{ _piano-dir | append: "giles-san-domenico.jpg" | relative_url }}" alt="Giles performing in San Domenico" />
 </div>
 <div class="copy">
-Perform in "Young Artist Series" concerts and attend faculty recitals in spectacular venues throughout the Amalfi Coast area. 
+Perform in “Young Artist Series” concerts and attend faculty recitals in spectacular venues throughout the Amalfi Coast area. 
 </div>
 </div>
 
