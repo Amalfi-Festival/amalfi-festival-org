@@ -68,7 +68,7 @@ All master class courses, teachers and student concerts of the Piano Music Festi
 
 <section class="standard-block" markdown="1">
 
-## Experience the best of the Amalfi Coast
+## Experience the Best of the Amalfi Coast
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
@@ -80,7 +80,7 @@ Since ancient Roman times, this tourist attraction boasts the longest coastline 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-### Amalfi's Lemons 🍋
+### Amalfi's Lemons
 
 Embark on a morning stroll along the world-famous Lemon Tree Path on the Amalfi Coast, and savor a cup of Southern Italy's most mellow espresso with friends.
 
@@ -105,7 +105,7 @@ The festival features Faculty Concerts and the Young Artist Recital Series, offe
 
 The Amalfi Coast observes the Siesta Hour, a unique practice in the Mediterranean region. During the peak of the day at noon, most shops and restaurants close as our piano master class takes place in the air-conditioned hall. Following the lunch break, the Mediterranean town comes alive with vibrant nightlife. After group formal dinners and daily concerts, professors and students often gather to enjoy drinks at a seaside restaurant. If fortunate, you might also catch a spectacular fireworks show in a nearby town by the sea.
 
-### Capri & Ravello Travels
+### Capri & Ravello Excursions
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/capri.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
