@@ -1,9 +1,19 @@
 ---
-first-name: # English first name
+first-name: Douglas
 last-name: Humpherys
-school: # School from which a professor teaches.
-school-zh: # Chinese name of the school.
+school: Eastman School of Music
+school-zh: 伊斯曼音乐学院
 website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 ---
 
-Place the person's bio here.
+Since winning the gold medal at the first Gina Bachauer International Piano Competition, Douglas Humpherys’ concert career has spanned four decades across four continents. During recent years, he has concertized in many of the major cities of Asia. A frequent guest artist in Beijing, he has performed at the National Center for the Performing Arts, the Beijing Concert Hall, and the Forbidden City Concert Hall. He has presented concerts and lecture-recitals throughout the Chinese conservatory and university system, including the Central, Shanghai, China, Wuhan, Shenyang, Guangzhou, Cheng-Du, Xian, Dalian, and Xiamen Conservatories, as well as Beijing, Tsinghua, Renmin Universities, and the Shenzhen School of the Arts. In 2002 he made his Korean debut in Seoul at the Kumho Art Hall, and during a 2007 tour of Taiwan, he performed in the cities of Taipei, Tainan, and Kaohsiung.
+
+Currently listed on the Artists Roster of Steinway and Sons, Mr. Humpherys often performs in Europe, with solo concerts in Moscow, Novgorod, Berlin, Hamburg, Prague, Venice, and Dublin, with additional engagements in Germany, Spain, the Czech Republic, Montenegro, and Serbia. He has performed throughout the United States and Canada at numerous universities and festivals. Recently, he was a guest artist with the Rochester Philharmonic Orchestra, and performed on the DiMenna Center Piano Series in New York City. In 2008 and 2012, he concertized and taught in Argentina with Teachers del Norte-Pianists del Sur, a project sponsored in part by the United States Embassy in Buenos Aires.
+
+Mr. Humpherys completed graduate degrees at the Juilliard School (MM) and the Eastman School of Music (DMA), where he served for twenty years as Chair of the Piano Department, and is currently Professor of Piano.
+
+During his student days he studied with Nelita True, Martin Canin, and Robert Smith. In high demand as a teacher, he has been appointed to visiting residencies or professorships at the Central Conservatory in Beijing, Yonsei University in Seoul, and the University of Michigan. His students have won numerous honors in competitions, including prizes at the Honens, Cleveland, Virginia Waring, Hilton Head, Washington DC, Poulenc, UNISA, and Sussex (UK) International Piano Competitions; the Osaka, Pacific, Seattle, San Jose, and Wideman Competitions, as well as five national first-prize winners of MTNA Competitions. In 2016, Professor Humpherys received Eastman’s Eisenhart Award for Excellence in Teaching, and in 2021 he was inducted into the Steinway and Sons National Teachers Hall of Fame.
+
+He has taught hundreds of master classes at universities and conservatories including the Central Music School of the Moscow Tchaikovsky Conservatory, most of the major conservatories in China, the Hong Kong Academy of the Performing Arts, the Korean National University of the Arts, National Taiwan Normal University, and the Royal Irish Academy of Music. He frequently teaches and concertizes at Summer Piano Festivals, most recently including the Bowdoin International Music Festival, the Beijing International Piano Festival, the Shanghai International Piano Festival and Institute, the Gijon International Piano Festival in Spain, the Wallace International Piano Festival in New Zealand, the Philadelphia Young Pianists Academy, the Washington DC International Piano Festival, the Interlochen Piano Festival, the Miami Music Festival, the Seattle Piano Institute, the Atlantic Music Festival, the North Coast International Piano Festival in California, and the Northern Lights Music Festival.
+
+Mr. Humpherys became the Artistic Director of the Gina Bachauer International Piano Competition in 2013, and has also adjudicated the Cleveland International Piano Competition, the Rachmaninoff International Young Artists’ Piano Competition in Novgorod, Russia, the Ricardo Viñes International Piano Competition in Spain, the 1st Korea International Competition for Young Artists, the PTNA National Piano Competition in Tokyo, and the Hilton Head International Piano Competition.
