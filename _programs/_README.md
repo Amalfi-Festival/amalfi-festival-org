@@ -71,7 +71,7 @@ cancellation-policy: # OPTIONAL. Override festival's cancellation policy for a s
         amount: 100
     forfeit:
         as-of-date: 2024-05-01
-        deductible: 1500 # if specified, adds the phrase "up to a deductible of X."
+        deductible: 1500 # if specified, adds the phrase "up to $X."
     no-refund:
         # Choose one of the following.
         as-of-date: 2024-05-01 # "As of [date]"
