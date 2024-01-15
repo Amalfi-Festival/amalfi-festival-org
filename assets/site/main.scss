@@ -78,20 +78,23 @@ h5 {
 strong { font-weight: 600; }
 
 .logo {
-    --logo-dome: #{$brand-blue};
-    --logo-amalfi: #{$brand-blue};
-    --logo-coast: #{$brand-gold};
-    --logo-festival: #{$brand-gold};
-
-    svg {
-        aspect-ratio: 3.29;
-
-        &:hover {
-        --logo-dome: #{$link-hover-color};
-        --logo-amalfi: #{$link-hover-color};
-        --logo-coast: #{$brand-light-gold};
-        --logo-festival: #{$brand-light-gold};
-        }
+    --logo-dome: #{$logo-dome-color};
+    --logo-amalfi: var(--logo-dome);
+    --logo-coast: #{$logo-link-color};
+    --logo-festival: var(--logo-coast);
+    svg:hover {
+        --logo-dome: #{$logo-dome-hover-color};
+        --logo-amalfi: var(--logo-dome);
+        --logo-coast: #{$logo-link-hover-color};
+        --logo-festival: var(--logo-coast);
+    }
+}
+body:has(#hero) .logo:not(footer .logo) {
+    --logo-dome: #{$logo-hero-dome-color};
+    --logo-coast: #{$logo-hero-link-color};
+    svg:hover {
+        --logo-dome: #{$logo-hero-dome-hover-color};
+        --logo-coast: #{$logo-hero-link-hover-color};
     }
 }
 
@@ -109,27 +112,34 @@ body > :is(header,footer) {
         text-decoration: none;
     }
 }
+
 body > header {
     align-items: center;
+
+    --selected-header-section-color: #{$logo-dome-color};
+    --header-link-color: #{$logo-link-color};
+    --header-link-hover-color: #{$logo-link-hover-color};
+
     .content-wrapper {
         align-items: center;
         gap: 1em;
         padding-top: .5rem;
         padding-bottom: .5rem;
-        border-bottom: $border-style;
+        border-bottom: border-style-with-color(var(--selected-header-section-color));
         @include breakpoint(tablet) {
             gap: .5rem;
             padding-top: 1rem;
         }
     }
     svg {
-        height: 4rem;
+        aspect-ratio: 3.8727;
+        height: 2.75rem;
         @include breakpoint(tablet) {
             width: 15rem;
             height: auto;
         }
         @include breakpoint(mobile) {
-            width: 10rem;
+            width: 12rem;
         }
     }
     nav {
@@ -152,15 +162,13 @@ body > header {
             column-gap: 2em;
         }
     }
+
     a {
-        color: $brand-gold;
-        font-weight: 300;
-        @include breakpoint(mobile) {
-            font-weight: 400;
-        }
+        color: var(--header-link-color);
+        font-weight: 400;
         &:hover {
-            color: $brand-light-gold;
-            letter-spacing: .059em;
+            color: var(--header-link-hover-color);
+            letter-spacing: .076em;
             font-weight: 600;
         }
     }
@@ -181,7 +189,6 @@ body > header {
     {%- endif -%}
     {%- if p -%}
         {%- assign _selected-header = _selected-header | append: "body." | append: p.slug | append: " > header .link-" | append: rp.slug | append: "," -%}
-
     {%- endif -%}
 {%- endfor -%}
 }
@@ -191,18 +198,18 @@ body:has(#hero) > header {
     left: 0;
     z-index: 1;
     width: 100%;
-    mix-blend-mode: plus-lighter;
-    filter: brightness(1.2) saturate(1.5);
-    .content-wrapper {
-        border-bottom: border-style-with-color(#{$brand-blue}80);
-    }
+    @include hero-shadow-filter;
+
+    --selected-header-section-color: #{$logo-hero-dome-color};
+    --header-link-color: #{$logo-hero-link-color};
+    --header-link-hover-color: #{$logo-hero-link-hover-color};
 }
 
 {{ _selected-header }}
 body.guests > header .link-guests {
     letter-spacing: .07em;
     font-weight: 600;
-    color: $brand-blue;
+    color: var(--selected-header-section-color);
 }
 
 body > main {
@@ -247,6 +254,9 @@ body > footer {
             align-items: center;
             align-self: center;
         }
+    }
+    .logo svg {
+        aspect-ratio: 3.6875;
     }
     svg {
         height: 4.5rem;

@@ -21,6 +21,17 @@ $footer-link-color: $brand-blue;
 $footer-link-hover-color: $brand-light-blue;
 
 $summary-hover-color: #{$brand-light-blue}22;
+
+$logo-dome-color: $brand-blue;
+$logo-dome-hover-color: $brand-light-blue;
+$logo-link-color: $brand-gold;
+$logo-link-hover-color: $brand-light-gold;
+$logo-hero-dome-color: #a7f1f0;
+$logo-hero-dome-hover-color: white;
+$logo-hero-link-color: #faf3ea;
+$logo-hero-link-hover-color: white;
+
+
 $standard-line-height: 1.6;
 $minimum-line-height: 1.3;
 
@@ -33,9 +44,12 @@ $border-radius-large: 1rem;
 $border-radius-small: .5rem;
 $sidebar-width: 19rem;
 
+@mixin hero-shadow-filter() {
+    filter:  drop-shadow(0 0 2px $dark-color) drop-shadow(0 0 10px #{$dark-color}c0);
+}
 @mixin hero-text() {
     color: $background-color;
-    text-shadow: $dark-color 0 0 15px;
+    @include hero-shadow-filter;
 }
 
 $minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
