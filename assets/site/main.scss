@@ -605,7 +605,7 @@ details {
         padding: $details-padding/2 $details-padding;
         border-radius: calc(#{$border-radius-small} - 1px);
         &:hover {
-            background-color: $brand-hover-blue;
+            background-color: $summary-hover-color;
         }
 
         .summary-title {

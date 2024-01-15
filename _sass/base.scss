@@ -10,7 +10,6 @@ $brand-lighter-yellow: #FFF9B3;
 $brand-blue: #025E73; //#08698D;
 $brand-blue-50: #80adb6; // Calculated as 50% $brand-blue over $background-color
 $brand-light-blue: #0A85B2;
-$brand-hover-blue: #0A85B222;
 
 $background-color: #FDFAF6; //#FEFCFA; //#F4FDFE;
 $body-color: $dark-color;
@@ -21,6 +20,7 @@ $footer-body-color: $dark-color;
 $footer-link-color: $brand-blue;
 $footer-link-hover-color: $brand-light-blue;
 
+$summary-hover-color: #{$brand-light-blue}22;
 $standard-line-height: 1.6;
 $minimum-line-height: 1.3;
 
