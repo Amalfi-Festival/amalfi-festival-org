@@ -30,6 +30,9 @@ webpage-data:
 
 <section class="standard-block" markdown="1">
 
+{% assign _src = site.program-assets-directory | append: "piano-teaching/seminar.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
 ## An Immersive Experience with the Art of Piano Teaching
 
 ### Topic Lecture
