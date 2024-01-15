@@ -69,6 +69,9 @@ Teaching Seminar participants have the opportunity to attend Faculty Concerts, Y
 
 <section class="standard-block" markdown="1">
 
+{% assign _src = site.program-assets-directory | append: "piano-teaching/seminar-excursion.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
 ## Experience the Best of the Amalfi Coast
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url -%}
