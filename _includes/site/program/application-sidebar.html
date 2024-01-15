@@ -1,7 +1,11 @@
 <ul class="highlight-box colored">
 <li>
     <h5>{% include utilities/localize.html string="Application deadline" %}</h5>
+{%- if is-guests-page -%}
+    <div>See program page for details</div>
+{%- else -%}
     <div>{% include site/program/application-deadline.html %}</div>
+{%- endif -%}
 </li>
 <li>
     <h5>{% include utilities/localize.html string="Registration fee" %}</h5>
@@ -11,7 +15,11 @@
 <li>
     <h5>{% include utilities/localize.html string="Deposit" %}</h5>
     <div>{%- include utilities/localize.html string="deposit-refundable" replace-key="~~~URL~~~" replace-value="#cancellation-policy--refunds" -%}</div>
+{%- if is-guests-page -%}
+    <div>See program page for details</div>
+{%- else -%}
     <div>{% include utilities/format-cost.html cost=application-deposit %}</div>
+{%- endif -%}
 </li>
 {%- if application.form-url -%}
 <li>

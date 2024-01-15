@@ -5,6 +5,8 @@ webpage-data:
     hero-image: home.jpg
 custom-css: guests
 ---
+{%- assign is-guests-page = true -%}
+
 <section class="standard-block" markdown="1">
 
 Tour fascinating locales, sit in on rehearsal and enjoy concerts under the stars. Expand your culinary vistas, experiment with clay or capture fabulous landscapes in paint. Visit the enchanting coastal towns of Amalfi and Positano, discover the stunning vistas of Ravello and the sparkling beaches of Capri and explore the haunting ruins of Pompeii.
@@ -128,6 +130,29 @@ Guest Program fees includes access to all festival activities for the full sessi
 {% include application-instructions.md %}
 
 {% include fees-deposits.md %}
-{% include site/program/cancellations.md %}
+{% include cancellation-policy.md hide-table-intro-paragraph=true %}
+
+Please refer to the program page for its cancellation policy:
+
+<ul>
+{%- for _p in site.data.festival.programs -%}
+    {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
+    {%- assign program-guest = program.tuition-guests -%}
+    {%- assign can-have-guests = false -%}
+    {%- unless program-guest -%}
+        {%- for session in program.sessions -%}
+            {%- if session.guests -%}
+                {%- assign can-have-guests = true -%}
+                {%- break -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endunless -%}
+    {%- unless program-guest or can-have-guests -%}
+        {%- continue -%}
+    {%- endunless %}
+{%- include site/program/get-apply-url.fx program=program hash="cancellation-policy--refunds" %}
+<li><a href="{{ __return }}">{{ program.title }}</a></li>
+{%- endfor -%}
+</ul>
 
 </section>

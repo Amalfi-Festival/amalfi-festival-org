@@ -8,4 +8,6 @@ If the festival is cancelled for any reason by the Amalfi Coast Music & Arts Fes
 
 Fees are subject to revision in cases of significant currency fluctuation between the Euro and the dollar or if international political situations or natural disaster cause significant economic duress resulting in unexpected cost increases.
 
+{% unless include.hide-table-intro-paragraph %}
 Deposit and tuition payment refunds are made according to the following schedule:
+{% endunless %}

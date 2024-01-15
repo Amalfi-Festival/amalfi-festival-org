@@ -1,8 +1,8 @@
 ## 费用和押金
 
 A non-refundable registration fee of **{% include utilities/format-cost.html cost=application-registration-fee %}**
-is required at the time of registration in addition to a deposit of
-**{% include utilities/format-cost.html cost=application-deposit %}** towards your total fees. On-line
+is required at the time of registration in addition to a deposit {% unless is-guests-page -%}of
+**{% include utilities/format-cost.html cost=application-deposit %}** {% endunless %}towards your total fees. On-line
 registrations area also assessed a service fee.
  
 Deposits are accepted on a first-come basis as space is limited.
