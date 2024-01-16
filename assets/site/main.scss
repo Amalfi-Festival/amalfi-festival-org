@@ -553,6 +553,7 @@ img[data-jslghtbx] {
             }
         }
         @include breakpoint(mobile) {
+            margin-left: 0;
             img {
                 max-width: 100%;
             }
