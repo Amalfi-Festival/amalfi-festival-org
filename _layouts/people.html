@@ -47,7 +47,14 @@ single{%- endif -%}">
 <h2>Portfolio</h2>
 <section id="portfolio" class="standard-block">
     {%- for image-path in page.portfolio -%}
-        <div><img src="{{ image-directory | append: image-path | relative_url }}" /></div>
+        {%- if image-path.filename -%}
+            {%- capture _img -%}{{ image-directory | append: image-path.filename | relative_url }}{%- endcapture -%}
+            {%- capture _thumb -%}{{ image-directory | append: image-path.thumb-filename | relative_url }}{%- endcapture -%}
+            <div><img src="{{ _thumb }}" data-jslghtbx="{{ _img }}" data-jslghtbx-group="a" /></div>
+        {%- else -%}
+            {%- capture _img -%}{{ image-directory | append: image-path | relative_url }}{%- endcapture -%}
+            <div><img src="{{ _img }}" data-jslghtbx="{{ _img }}" data-jslghtbx-group="a" /></div>
+        {%- endif -%}
     {%- endfor -%}
 </section>
 {%- endif -%}

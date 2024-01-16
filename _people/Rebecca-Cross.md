@@ -4,10 +4,14 @@ last-name: Cross
 role: Washington, DC
 website: https://rebeccacross.com
 portfolio:
-    - Becca Domestic Landscape.jpg
-    - Becca garden painting.jpg
-    - Becca Vatican painting.jpg
-    - Becca Tulips.jpg
+    - filename: Becca Domestic Landscape.jpg
+      thumb-filename: Becca Domestic Landscape-thumb.jpg
+    - filename: Becca garden painting.jpg
+      thumb-filename: Becca garden painting-thumb.jpg
+    - filename: Becca Vatican painting.jpg
+      thumb-filename: Becca Vatican painting-thumb.jpg
+    - filename: Becca Tulips.jpg
+      thumb-filename: Becca Tulips-thumb.jpg
     - Cross Ancient weapons Drawings Amalfi.jpg
 permalink: /people/:title
 ---

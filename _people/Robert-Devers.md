@@ -3,19 +3,31 @@ first-name: Robert
 last-name: Devers
 role: Blue Fire Studio, Mt. Rainier, MD
 portfolio:
-    - 41 large.jpg
-    - DSC09713.jpg
-    - DSC09715.jpg
-    - DSC09716.jpg
-    - DSC01070.jpg
+    - filename: 41 large.jpg
+      thumb-filename: 41 large-thumb.jpg
+    - filename: DSC09713.JPG
+      thumb-filename: DSC09713-thumb.jpg
+    - filename: DSC09715.JPG
+      thumb-filename: DSC09715-thumb.jpg
+    - filename: DSC09716.JPG
+      thumb-filename: DSC09716-thumb.jpg
+    - filename: DSC01070.JPG
+      thumb-filename: DSC01070-thumb.jpg
     - image001.jpg
-    - DSC00570.jpg
-    - 47 large.jpg
-    - 46 large.jpg
-    - DSC00721.jpg
-    - 27 large.jpg
-    - 53 large.jpg
-    - 57 large.jpg
+    - filename: DSC00570.JPG
+      thumb-filename: DSC00570-thumb.jpg
+    - filename: 47 large.jpg
+      thumb-filename: 47 large-thumb.jpg
+    - filename: 46 large.jpg
+      thumb-filename: 46 large-thumb.jpg
+    - filename: DSC00721.JPG
+      thumb-filename: DSC00721-thumb.jpg
+    - filename: 27 large.jpg
+      thumb-filename: 27 large-thumb.jpg
+    - filename: 53 large.jpg
+      thumb-filename: 53 large-thumb.jpg
+    - filename: 57 large.jpg
+      thumb-filename: 57 large-thumb.jpg
 permalink: /people/:title
 ---
 
