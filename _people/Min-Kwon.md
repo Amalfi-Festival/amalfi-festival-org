@@ -4,7 +4,7 @@ last-name: Kwon
 zh-name: # Chinese name, if available
 school: # Rutgers University
 school-zh: # Chinese name of the school.
-website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
+website: https:// # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 ---
 
 Korean-born American pianist Min Kwon excels in a versatile career that encompasses concerti, solo recitals, and chamber music appearances, while in high demand around the world as pedagogue, arts advocate, and administrator.  She has held professional engagements in over 60 countries on seven continents and all 50 U.S. states.   

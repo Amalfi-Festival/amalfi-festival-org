@@ -3,7 +3,6 @@ first-name: Tema
 last-name: Blackstone
 school: The Juilliard School
 school-zh: 茱莉亚学院预科
-website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 ---
 
 Tema Blackstone’s rich and varied life in music has grown out of her career as a pianist. Her influential work encompasses advocacy of music and musicians as a force for personal and societal well-being, and the passing on of the legacy of great music to new generations. She is currently on the faculty of The Juilliard’s Pre-College division in New York.  As a public speaker, Ms. Blackstone raises awareness of the positive effects of the arts on society, describing how music and medicine reflect and enhance one another. She champions this cause as musician and lecturer wherever she travels, from Boston, New York, Calgary and Toronto to France, Switzerland and China. Her impressive concert career encompasses solo engagements as well as piano duo performances with Hung-Kuan Chen, to whom she is married. The couple often teaches as a team and has performed worldwide.

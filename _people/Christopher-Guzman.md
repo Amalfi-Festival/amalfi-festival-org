@@ -3,7 +3,7 @@ first-name: Christopher
 last-name: Guzman
 school: Northwestern University
 school-zh: 美国西北大学音乐学院
-website: christopherguzmanpiano.com
+website: https://christopherguzmanpiano.com
 ---
 
 Pianist Christopher Guzman enjoys an international performing career, showcasing a broad range of styles from the Baroque era to the avant-garde. Since winning top prizes in international competitions such as the Walter M. Naumburg Competition (USA), the Seoul International Music Competition (S. Korea) and the Isang Yun Competition (S. Korea), Mr. Guzman has performed across Europe, North and South America, and Asia. As a result of winning the top prize at the Concours International de Piano d’Orléans in Orléans, France, he has toured France extensively, giving performances and teaching masterclasses.

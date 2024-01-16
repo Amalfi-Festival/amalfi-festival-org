@@ -4,7 +4,6 @@ last-name: Chen
 zh-name: 陈宏宽
 school: The Juilliard School
 school-zh: 茱莉亚学院
-website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 ---
 
 Pianist Hung-Kuan Chen’s life and art have been shaped by the sensibilities of East and West.  Born in Taipei and raised in Germany, he has played in many of the world’s foremost concert venues: Carnegie Hall (New York), Kennedy Center (Washington, D.C.), Davies Symphony Hall (San Francisco), the Tonhalle (Zürich), the Herkulesaal (Munich), the Sala Verdi (Milan), Suntory Hall (Tokyo), National Concert Hall (Taipei), and Shanghai Concert Hall, The National Theater and the Forbidden City Concert Hall (Beijing).

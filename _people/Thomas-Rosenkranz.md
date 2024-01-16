@@ -3,7 +3,6 @@ first-name: Thomas
 last-name: Rosenkranz
 school: University of Missouri-Kansas City Conservatory
 school-zh: 密苏里大学-堪萨斯城分校
-website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 ---
 Thomas Rosenkranz has charted a career that breaks through the conventional notion of what a classical pianist is. Equally at home with the standard repertoire to the most recent developments in contemporary music and improvisation, he has established himself as one of the most forward looking pianists of his generation. He currently serves as Professor of Piano and Keyboard Area Coordinator at the University of Missouri-Kansas City (UMKC) and as Honorary Visiting Professor of Piano at the Sichuan Conservatory of Music in China.  
 

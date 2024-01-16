@@ -12,7 +12,7 @@ prefers-en-name: # For almost everyone, please delete this line. Only include it
 role: # Use this if the instructors works for a non-academic institution, or roles that they have outside the festival. Instructors not in the piano programs, and staff will usually use this instead of |school|.
 school: # School from which a professor teaches.
 school-zh: # Chinese name of the school.
-website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
+website: https:// # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 portfolio:
     # For visual arts instructors, their works may be displayed as a gallery on their profile page. The images should be listed in order, and should be in the /assets/people/[person-slug]/ directory.
     - Filename.jpg
