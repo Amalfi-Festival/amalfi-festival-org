@@ -3,7 +3,6 @@ first-name: Douglas
 last-name: Humpherys
 school: Eastman School of Music
 school-zh: 伊斯曼音乐学院
-website: # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
 ---
 
 Since winning the gold medal at the first Gina Bachauer International Piano Competition, Douglas Humpherys’ concert career has spanned four decades across four continents. During recent years, he has concertized in many of the major cities of Asia. A frequent guest artist in Beijing, he has performed at the National Center for the Performing Arts, the Beijing Concert Hall, and the Forbidden City Concert Hall. He has presented concerts and lecture-recitals throughout the Chinese conservatory and university system, including the Central, Shanghai, China, Wuhan, Shenyang, Guangzhou, Cheng-Du, Xian, Dalian, and Xiamen Conservatories, as well as Beijing, Tsinghua, Renmin Universities, and the Shenzhen School of the Arts. In 2002 he made his Korean debut in Seoul at the Kumho Art Hall, and during a 2007 tour of Taiwan, he performed in the cities of Taipei, Tainan, and Kaohsiung.
