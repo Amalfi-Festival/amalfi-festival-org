@@ -33,7 +33,7 @@ custom-css: program
 
 {%- if reference-program.webpage-data.hero-image -%}
 <div id="hero" class="background-image-container parallax">
-    <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.webpage-data.hero-image | relative_url }}" />
+    <img {% if reference-program.webpage-data.hero-image-position %}style="object-position: {{ reference-program.webpage-data.hero-image-position }};" {% endif %}src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.webpage-data.hero-image | relative_url }}" />
     <div class="text"><h1 class="standard-block">{{ page.title | smartify }} <div><span>{{ translations }}</span></div></h1></div>
 </div>
 {%- else -%}

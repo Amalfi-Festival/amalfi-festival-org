@@ -47,7 +47,8 @@ cancellation-policy:
         after-date: 2024-05-01
 webpage-data:
     menu-title: Choral
-    hero-image: PHOTO-2023-09-04-18-51-02.jpg
+    hero-image: Conductor with chorus.jpg
+    hero-image-position: 65% 60%
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

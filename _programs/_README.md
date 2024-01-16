@@ -79,6 +79,7 @@ cancellation-policy: # OPTIONAL. Override festival's cancellation policy for a s
 webpage-data:
     menu-title: text
     hero-image: image-file.jpg
+    hero-image-position: # OPTIONAL. CSS object-position for the hero image.
     program-header-subtitle: HTML markup # OPTIONAL.
 ---
 {%- include site/program/initialize-program-variables.fx -%}
