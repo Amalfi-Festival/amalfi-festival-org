@@ -1,5 +1,6 @@
 ---
 title: Make a donation
+custom-css: payment
 ---
 
 <section class="standard-block" markdown="1">
@@ -23,15 +24,9 @@ All donations go directly to support our artistic programs and to help build the
 Please click below to make a sustaining gift. Please accept our enduring gratitude for your support.
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-
-<input type="hidden" name="cmd" value="_s-xclick">
-
-<input type="hidden" name="hosted_button_id" value="XS5GMK723S7FC">
-
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="XS5GMK723S7FC" />
+    <input type="submit" class="button" value="Donate with PayPal" name="Donate" />
 </form>
 
 </section>
