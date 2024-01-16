@@ -39,6 +39,7 @@
     en: Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of the following available [excursions and activities](~~~URL~~~).
     zh: 利用以下可选的[短途旅行和活动](~~~URL~~~)增强您的音乐节体验。
     is-markdown: true
+    zh: 利用以下可选的短途旅行和活动增强您的音乐节体验。
 -   en: Excursions
     zh: 短途旅行
 -   en: Activities
@@ -61,7 +62,7 @@
     zh: 押金
 -   key: deposit-refundable
     en: (refundable [in case of cancellation](~~~URL~~~))
-    zh: (可退款 [如取消参与音乐节](~~~URL~~~))
+    zh: （可退款 [如取消参与音乐节](~~~URL~~~)）
     is-markdown: true
 
 ### Cancellation schedule
