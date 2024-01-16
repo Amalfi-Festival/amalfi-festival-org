@@ -21,7 +21,8 @@ Looks up by |key| first before trying |string|
     {%- assign _l = page.lang | default: include.lang | default: "en" -%}
     {%- capture _t %}{{ entry[_l] | default: include.string }}{% endcapture -%}
     {%- if entry.is-markdown -%}
-        {{- _t | replace: include.replace-key, include.replace-value | smartify | markdownify -}}
+        {%- capture _t2 -%}{{ _t | replace: include.replace-key, include.replace-value }}{%- endcapture -%}
+        {%- include utilities/markdownify-without-p.html text=_t2 -%}
     {%- else -%}
         {{- _t | replace: include.replace-key, include.replace-value | smartify -}}
     {%- endif -%}

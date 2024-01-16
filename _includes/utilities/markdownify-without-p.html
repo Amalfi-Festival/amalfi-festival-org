@@ -1,1 +1,1 @@
-{{ include.text | smartify | markdownify | replace: "<p>", "" | replace: "</p>", "" }}
+{{ include.text | smartify | markdownify | remove: "<p>" | remove: "</p>"| strip }}
