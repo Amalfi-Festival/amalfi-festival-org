@@ -6,7 +6,13 @@ title: Make a donation
 
 ## Make Your Gift to the Amalfi Coast Music & Arts Festival
 
+{% assign _src = site.image-directory | append: "dinner-minori-2023.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
 Each summer, dozens of artists, musicians and writers converge on the Amalfi Coast from a wide range of countries. They bring with them their individual talents, their varying cultural backgrounds, and unique artistic offerings.  Young musicians and "emerging artists" take inspiration from the breathtaking setting of the Amalfi Coast. They find the creative process is nurtured by the warm, convivial atmosphere at the festival, with its emphasis on mentoring and strong sense of community.  Outstanding teachers and seasoned professionals work in collaboration with festival participatants to present unforgettable concerts and art exhibits, readings and seminars, sharing their gifts with festival guests and appreciative audiences. 
+
+{% assign _src = site.image-directory | append: "concert-piano-2023.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
  
 The Amalfi Coast Festival truly is greater than the sum of its parts. A special kind of "magic" happens in a different way each year, a pattern that is as wonderful as it is exciting and unpredictable.  One certainty is that the artistic sparks generated are sure to be transformative. The festival changes lives!
  
