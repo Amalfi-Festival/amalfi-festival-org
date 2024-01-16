@@ -1,9 +1,9 @@
 ---
-first-name: # English first name
+first-name: Bruce 
 last-name: Brubaker
-school: # School from which a professor teaches.
+school: New England Conservatory 
 school-zh: # Chinese name of the school.
-website: https:// # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
+website: https://brucebrubaker.com
 ---
 
 Place the person's bio here.
