@@ -98,8 +98,10 @@ Participants take excursions and enjoy meals together, spend time on the beach, 
     </ul>
     <div class="buttons">
         <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
+        {%- unless program.applications-closed -%}
         {%- include site/program/get-apply-url.fx program=program -%}
         <a href="{{ __return }}" class="button">Apply</a>
+        {%- endunless -%}
     </div>
     {%- endif -%}
 </div>

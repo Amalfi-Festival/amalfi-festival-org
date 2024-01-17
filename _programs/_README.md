@@ -3,6 +3,7 @@
 ### It is unlikely a program will use everything below. Remove any items that are not applicable.
 title: text # REQUIRED.
 to-be-announced: true # OPTIONAL, |true| or string. If the program is not yet confirmed, set to |true| and the message will say "To be announced", otherwise set a custom message. Remove the line completely once it is. If a program is not supposed to be part of the festival at all, remove it in festival.yaml.
+applications-closed: false # OPTIONAL, |true| or |false|. Set this to true if it's time to close applications for whatever reason.
 sessions: # REQUIRED. At least one session needs to exist.
     -   session-name: # OPTIONAL.
         session-name-zh: # OPTIONAL.

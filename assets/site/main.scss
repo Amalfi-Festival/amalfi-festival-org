@@ -586,6 +586,15 @@ img[data-jslghtbx] {
         background: linear-gradient(to bottom right, #037587, #{$brand-blue});
         color: $brand-lighter-yellow;
     }
+
+    &.disabled {
+        cursor: pointer;
+        filter: saturate(0);
+        &:hover {
+            background: linear-gradient(to bottom right, #A5DEE8, #9FD8ED);
+            color: $brand-blue;
+        }
+    }
 }
 
 details {

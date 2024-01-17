@@ -36,7 +36,11 @@ custom-css: program
 
 <div id="header" class="standard-block sidebar">
     <div><h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
+    {%- if page.applications-closed -%}
+    <div><span class="button disabled">{% include utilities/localize.html string="Applications closed" %}</span></div>
+    {%- else -%}
     <a class="apply button" href="{{ apply-url }}">{% include utilities/localize.html string="Apply" %}</a>
+    {%- endif -%}
     </div>
     <div><h2>
 {%- for session in reference-program.sessions -%}
