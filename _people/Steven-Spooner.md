@@ -4,6 +4,7 @@ last-name: Spooner
 school: # School from which a professor teaches.
 school-zh: # Chinese name of the school.
 website: https://www.stevenspooner.com
+---
 
 At the very forefront of American pianists, critics and audiences have unanimously hailed the distinctive and compelling performances of pianist Steven Spooner. “A pianist in the tradition that many believe died with the likes of Horowitz, Arrau, Bolet, Cziffra, and Wild. His talent, to my ears, is easily the equal of most major pianists of today and far superior to a large number of those most exciting and dynamic pianists of their generation” (Fanfare). “Such a breadth and variety of difficult pieces made me wonder at first if this recording was a hoax. But, no, Steven Spooner is the real deal, a pianist of apparently limitless raw technique that’s almost note perfect.” (American Record Guide). Spooner has been engaged at many of the world’s most prestigious venues such as Carnegie Hall, The Great Hall of the Liszt Academy (Budapest), Salle Cortot (Paris), and Shanghai Concert Hall, among many others as soloist with orchestra and recitalist. During the past seasons he has daringly reinvented the solo recital by allowing audiences to vote on the spot for one of several programs and like golden-age pianists, his concerts often feature his own compositions and virtuoso transcriptions.
 
