@@ -124,16 +124,17 @@ body > header {
         align-items: center;
         gap: 1em;
         padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding-bottom: .6rem;
         border-bottom: border-style-with-color(var(--selected-header-section-color));
         @include breakpoint(tablet) {
-            gap: .5rem;
+            gap: .7rem;
             padding-top: 1rem;
+            padding-bottom: .6rem;
         }
     }
     svg {
         aspect-ratio: 3.8727;
-        height: 2.75rem;
+        height: 3.4rem;
         @include breakpoint(tablet) {
             width: 15rem;
             height: auto;
@@ -142,8 +143,10 @@ body > header {
             width: 12rem;
         }
     }
+    $header-line-height: 1;
     nav {
         flex-grow: 1;
+        line-height: $header-line-height;
         display: flex;
         gap: .5em 1.5em;
         justify-content: flex-end;
@@ -163,6 +166,9 @@ body > header {
         }
     }
 
+    a.logo {
+        line-height: $header-line-height;
+    }
     a {
         color: var(--header-link-color);
         font-weight: 400;
