@@ -421,8 +421,8 @@ img[data-jslghtbx] {
 
 .highlight-box {
     width: $sidebar-width;
-    margin-left: 2rem;
-    margin-bottom: 1em;
+    margin-left: $sidebar-margin-left;
+    margin-bottom: $sidebar-margin-bottom;
     float: right;
     @include breakpoint(mobile) {
         float: initial;

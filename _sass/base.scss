@@ -42,7 +42,10 @@ $border-style: 1px solid #{$brand-blue-50};
 }
 $border-radius-large: 1rem;
 $border-radius-small: .5rem;
+$sidebar-margin-left: 2rem;
+$sidebar-margin-bottom: 1rem;
 $sidebar-width: 19rem;
+$sidebar-faculty-tile-padding: .5rem;
 
 @mixin hero-shadow-filter() {
     filter:  drop-shadow(0 0 2px $dark-color) drop-shadow(0 0 10px #{$dark-color}c0);

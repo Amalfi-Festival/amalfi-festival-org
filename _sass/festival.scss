@@ -72,11 +72,14 @@ h1 div {
     }
 
     &.class {
+        h4 {
+            margin-left: $sidebar-faculty-tile-padding;
+        }
         float: right;
         clear: right;
-        margin-left: 2rem;
+        margin-left: $sidebar-margin-left - $sidebar-faculty-tile-padding;
         margin-bottom: 2rem;
-        width: $sidebar-width;
+        width: $sidebar-width + $sidebar-faculty-tile-padding;
         @include breakpoint(tablet) {
             float: none;
             margin-left: 0;
@@ -134,7 +137,7 @@ h1 div {
         grid-template-columns: min-content 1fr;
         grid-template-rows: auto auto;
         gap: .2em .75em;
-        padding: .5rem;
+        padding: $sidebar-faculty-tile-padding;
         border-radius: .8rem;
     }
     img {

@@ -140,8 +140,8 @@ h3 .label {
     > *:first-child {
         width: $sidebar-width;
         float: right;
+        margin-left: $sidebar-margin-left;
         margin-bottom: 3rem;
-        margin-left: 2rem;
     }
     @include breakpoint(tablet) {
         display: flex;
