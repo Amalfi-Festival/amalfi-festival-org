@@ -3,8 +3,11 @@
 {%- endcapture %}
 
 ## {% include utilities/localize.html string="How to Apply" %}
+{: id="how-to-apply" }
 
 {% include site/program/application-sidebar.html %}
+
+中文
 
 1. Complete the online {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
 

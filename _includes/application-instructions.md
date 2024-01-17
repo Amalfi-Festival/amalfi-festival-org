@@ -3,6 +3,7 @@
 {%- endcapture %}
 
 ## {% include utilities/localize.html string="How to Apply" %}
+{: id="how-to-apply" }
 
 {% include site/program/application-sidebar.html %}
 

@@ -5,18 +5,26 @@ custom-css: apply
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
-{% capture translations %}
-{%- if reference-program.webpage-data.localizations -%}
-    {%- for translation in reference-program.webpage-data.localizations -%}
-        {%- if translation.program == page.slug -%}
-<span>{{ translation.abbreviation }}</span>
-            {% continue -%}
-        {%- endif -%}
-        {%- assign program-translated = site.apply | where: "slug", translation.program | first -%}
-<a href="{{ program-translated.url | relative_url }}">{{ translation.abbreviation }}</a>
-    {% endfor -%}
-{%- endif -%}
-{% endcapture %}
+{%- capture translations -%}
+{%- include site/festival/get-program-translations.fx program-slug=reference-program.slug -%}
+{%- assign _programs = __return -%}
+{%- unless _programs.size == 1 -%}
+{%- for translation in _programs -%}
+    {%- case translation.lang -%}
+        {%- when "zh" -%}
+            {%- assign _abbreviation = "中文" -%}
+        {%- else -%}
+            {%- assign _abbreviation = "en" -%}
+    {%- endcase -%}
+    {%- if translation.slug == page.slug -%}
+<span>{{ _abbreviation }}</span>
+        {%- continue -%}
+    {%- endif -%}
+{%- assign program-translated = site.apply | where: "slug", translation.slug | first -%}
+<a href="{{ program-translated.url | relative_url }}">{{ _abbreviation }}</a>
+{%- endfor -%}
+{%- endunless -%}
+{%- endcapture -%}
 
 <h1>{{ program.title | smartify }} <div><span>{{ translations }}</span></div></h1>
 

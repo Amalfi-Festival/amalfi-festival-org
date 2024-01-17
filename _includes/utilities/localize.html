@@ -1,8 +1,15 @@
 {%- comment -%}
-key: string reference to either |key| or |string| in site.data.localizations
-show-localization: Optional. Will take from page.show-localization if not specified.
+Localize using a source object referenced by a provided key.
+source: Source object (from front-matter or site.data)
+key: Key string
+is-markdown: Determines whether the value is in markdown. Smartify is applied first.
 
-Looks up by |key| first before trying |string|
+Return localized string from localizations.yaml.
+string: Lookup string. Will look for |key| first before trying |string|.
+replace-key: Token to look up and replace with |replace-value|.
+replace-value: String to replace |replace-key| in the string.
+
+Localize strings. Looks inside localizations.yaml, but can also retrieve strings with a provided source object. Can be told to markdownify. Looks up by |key| first before trying |string|. Can replace a token in the string, useful for markdown links.
 {%- endcomment -%}
 
 {%- if include.source -%}
@@ -12,7 +19,12 @@ Looks up by |key| first before trying |string|
     {%- else -%}
         {%- assign _k = include.key -%}
     {%- endif -%}
+    {%- if include.is-markdown -%}
+    {%- capture _t %}{{ include.source[_k] | smartify }}{%- endcapture -%}
+{%- include utilities/markdownify-without-p.html text=_t -%}
+    {%- else -%}
 {{ include.source[_k] }}
+    {%- endif -%}
 {%- else -%}
     {%- assign entry = site.data.localizations | where: "key", include.string | first -%}
     {%- unless entry -%}

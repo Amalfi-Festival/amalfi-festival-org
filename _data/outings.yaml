@@ -11,51 +11,41 @@
 excursions:
     ravello:
         name: Ravello
+        name-zh: 拉韦洛 Ravello
         tagline: An Artistic Refuge
-        cost: 95
-        length: Half day
+        length: (Half day)
+        length-zh: （半日）
         description: Called the "jewel of the coast." Exceptional views over the sea with unforgettable landscapes and visit to historical villa. Favorite destination of artists & musicians. Includes transportation, entry tickets, guide.
-        localizations:
-            zh:
-                name: 拉韦洛 Ravello
-                length: 半日
-                description: 费用包括大巴、门票、导游
+        description-zh: 费用包括大巴、门票、导游
+        cost: 95
     pompeii:
         name: Pompeii
+        name-zh: 庞贝古城 Pompeii
         tagline: A Buried Past
-        cost: 115
-        length: Half day
+        length: (Half day)
+        length-zh: （半日）
         description: World-famous archaeologic site of the ancient civilization frozen in time when buried under the lava of the 4th century eruption of the volcano Vesuvius. Includes transportation, entry tickets, expert guide.
-        localizations:
-            zh:
-                name: 庞贝古城 Pompeii
-                length: 半日
-                description: 费用包括大巴、门票、导游
+        description-zh: 费用包括大巴、门票、导游
+        cost: 115
     capri:
         name: Capri
+        name-zh: 卡普里岛 Capri Island
         tagline: Isle of Beauty and Mystery
-        cost: 155
-        length: Full day
+        length: (Full day)
+        length-zh: （一日）
         description: Travel by boat to the mythical island of Capri, an international wonder. Includes boat tickets, entries, expert guide.
-        localizations:
-            zh:
-                name: 卡普里岛 Capri Island
-                length: 一日
-                description: 费用包括大巴、渡轮、缆车、门票、导游
+        description-zh: 费用包括大巴、渡轮、缆车、门票、导游
+        cost: 155
 activities:
     language:
         name: Italian Language Class
-        cost: 450
+        name-zh: 意大利语课程
         description: Daily group class.
-        localizations:
-            zh:
-                name: 意大利语课程
-                description: 每日小组课
+        description-zh: 每日小组课
+        cost: 450
     cooking:
         name: Cooking Lesson
-        cost: 150
+        name-zh: 烹饪教学课程
         description: Includes instruction, transportation, interpreter-escort, 5-course meal and recipes.
-        localizations:
-            zh:
-                name: 烹饪教学课程
-                description: 单节
+        description-zh: 单节
+        cost: 150

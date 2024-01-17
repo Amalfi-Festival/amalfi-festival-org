@@ -49,9 +49,7 @@ outings:
         -   outing-slug: pompeii
         -   outing-slug: capri
             additional-description: "***No lessons are scheduled on this day because almost all students take this trip.***"
-            localizations:
-                zh:
-                    additional-description: "***这一天没有安排课程，因为几乎所有学生都会参加这次旅行。***"
+            additional-description-zh: "***这一天没有安排课程，因为几乎所有学生都会参加这次旅行。***"
     activities:
         -   outing-slug: language
         -   outing-slug: cooking
@@ -73,78 +71,28 @@ webpage-data:
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
-<section id="splash" class="proto">
-<div class="standard-block" markdown="1">
+{%- capture experience -%}
+Experience an intensive piano education amid the breathtaking views of the Amalfi Coast
+{%- endcapture -%}
 
-## Experience an intensive piano education amid the breathtaking views of the Amalfi Coast
-
-{% assign _piano-dir = site.program-assets-directory | append: "piano/" -%}
-<div class="image-copy">
-<div class="image">
-<img src="{{ _piano-dir | append: "spooner.jpg" | relative_url }}" alt="Spooner teaching a student" />
-</div>
-<div class="copy">
+{%- capture lessons -%}
 Enjoy individual lessons with world-renowned faculty.
-</div>
-</div>
+{%- endcapture -%}
 
-<div class="image-copy right">
-<div class="image">
-<img src="{{ _piano-dir | append: "IMG_1398_edited.jpg" | relative_url }}" alt="Nagai masterclass" />
-</div>
-<div class="copy">
+{%- capture masterclasses -%}
 Daily master classes provide a dynamic, interactive learning experience in a supportive environment.
-</div>
-</div>
+{%- endcapture -%}
 
-<div class="image-copy">
-<div class="image">
-<img src="{{ _piano-dir | append: "giles-san-domenico.jpg" | relative_url }}" alt="Giles performing in San Domenico" />
-</div>
-<div class="copy">
-Perform in “Young Artist Series” concerts and attend faculty recitals in spectacular venues throughout the Amalfi Coast area. 
-</div>
-</div>
+{%- capture concerts -%}
+Perform in "Young Artist Series" concerts and attend faculty recitals in spectacular venues throughout the Amalfi Coast area. 
+{%- endcapture -%}
 
-<div class="image-copy right">
-<div class="image">
-<img src="{{ _piano-dir | append: "group-naples-piazza-2023.jpg" | relative_url }}" alt="Group in Naples piazza" />
-</div>
-<div class="image">
-<img src="{{ _piano-dir | append: "lowenthal-oppens.jpg" | relative_url }}" alt="Lowenthal and Oppens duet" />
-</div>
-</div>
-
-<div class="image-copy row">
-<div class="image">
-<img src="{{ _piano-dir | append: "amalfi-from-water.jpg" | relative_url }}" alt="View of Amalfi from the water" />
-</div>
-<div class="copy">
+{%- capture outings -%}
 Opportunities to fully experience the Amalfi Coast with excursions to historic locations.
-</div>
-</div>
+{%- endcapture -%}
 
-</div>
-</section>
+{%- capture faculty -%}
+Our distinguished {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+{%- endcapture -%}
 
-<section id="faculty" markdown="1">
-
-## Our distinguished {{ site.data.festival.application.deadline | date: "%Y" }} faculty
-{: class="standard-block"}
-
-{% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
-<div class="standard-block tiles front-of-brochure">
-{%- include site/faculty-tiles.html faculty=all-faculty -%}
-</div>
-</section>
-
-<section id="video">
-    <iframe src="https://www.youtube.com/embed/dlnph4LxtrM?modestbranding=1" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
-</section>
-
-<section id="learn" class="background-image-container parallax">
-<img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
-<h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
-<a class="apply button" href="{{ apply-url }}">{% include utilities/localize.html string="Learn more and apply" %}</a>
-</section>
-
+{%- include site/program/piano-front-brochure.md -%}
