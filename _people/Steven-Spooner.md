@@ -2,7 +2,7 @@
 first-name: Steven
 last-name: Spooner
 school: Peabody Institute
-school-zh: 皮博迪学院
+school-zh: 皮博迪音乐学院
 website: https://www.stevenspooner.com
 ---
 

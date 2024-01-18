@@ -49,7 +49,7 @@ outings:
         -   outing-slug: pompeii
         -   outing-slug: capri
             additional-description: "***No lessons are scheduled on this day because almost all students take this trip.***"
-            additional-description-zh: "***这一天没有安排课程，因为几乎所有学生都会参加这次旅行。***"
+            additional-description-zh: "***由于几乎所有学生都将前往卡普里岛旅行，因此这一天将没有课程安排。***"
     activities:
         -   outing-slug: language
         -   outing-slug: cooking
