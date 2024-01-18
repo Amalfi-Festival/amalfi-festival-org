@@ -65,7 +65,7 @@ lang: zh
 
 ### 米诺里
 
-在离马约里只有20分钟步行路程的迷人小镇米诺里，您会发现Sal De Riso，这是一家被CNN纪录片推荐的甜点店。在其著名的美食中，有一款名为“Delizia al limone”的甜点，亲切地被昵称为“维纳斯之乳”。每届音乐节期间，米诺里都会举办户外音乐会和晚餐。一些学生选择晚餐后光顾这家著名的甜点店，手捧蛋糕漫步回到马约里，并在清新的海风中品尝意大利手工冰淇淋。
+在离马约里只有20分钟步行路程的迷人小镇米诺里，您会发现Sal De Riso，这是一家被CNN纪录片推荐的甜点店。在其著名的美食中，有一款名为“Delizia al limone”的甜点，亲切地被昵称为“维纳斯的乳房”。每届音乐节期间，米诺里都会举办户外音乐会和晚餐。一些学生选择晚餐后光顾这家著名的甜点店，手捧蛋糕漫步回到马约里，并在清新的海风中品尝意大利手工冰淇淋。
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}

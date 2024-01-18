@@ -1,13 +1,15 @@
-## 取消政策和退款
+## 取消及退款政策
+
+**†** **请注意：** *详细费用及退款政策以阿马尔菲海岸音乐艺术节官方英文页面为准。解释权归阿马尔菲海岸音乐艺术节所有。*
 
 所有退款申请必须以邮件形式发送。我们不接受电话或短信申请。
 
-If the festival is cancelled for any reason by the Amalfi Coast Music & Arts Festival, a full refund will be given, less the registration fee.
+如果由于任何原因阿马尔菲海岸音乐艺术节被取消，我们将退还除注册费之外的全部费用。
 
-{% if reference-program.slug == "choral" %}**Participants in the Choral Tour are required to carry travel insurance in case of cancellation or trip interruption.**{% else %}Travel insurance is strongly recommended for your protection in case of cancellation or trip interruption.{% endif %} {% unless reference-program %}**Participants in the Choral Tour are required to carry travel insurance.**{% endunless %} No refunds are available for partial use of program.
+{% if reference-program.slug == "choral" %}**参与合唱之旅的参与者需要购买旅行保险，以防旅行取消或中断。**{% else %}强烈建议您购买旅行保险，以确保在旅行取消或中断的情况下得到充分的保护。{% endif %} {% unless reference-program %}**合唱之旅的参与者必须购买旅行保险。**{% endunless %} 如已参加部分艺术节行程，余下部分不予退款。
 
-Fees are subject to revision in cases of significant currency fluctuation between the Euro and the dollar or if international political situations or natural disaster cause significant economic duress resulting in unexpected cost increases.
+如果欧元和美元之间出现重大汇率波动，或者国际政治局势或自然灾害导致经济压力，导致意外费用增加，费用可能会有所调整。
 
 {% unless include.hide-table-intro-paragraph %}
-如您需要取消音乐节行程，请注意以下退款规则:
+如您需要取消音乐节行程，请注意以下退款政策:
 {% endunless %}

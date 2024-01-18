@@ -7,9 +7,9 @@
 
 {% include site/program/application-sidebar.html %}
 
-中文
+报名流程
 
-1. Complete the online {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
+1. 网上填写 {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}application form.{% endif %}
 
 {% if application.allow-mail-registration %}
     * If you wish to register by mail, print and fill out the form.
@@ -34,16 +34,16 @@
     {%- endfor -%}
 {%- endunless %}
 
-1. Pay registration fee and deposit either <a href="{{ paymentRegistrationURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
+1. 通过 <a href="{{ paymentRegistrationURL }}">PayPal</a><sup>†</sup> 或邮寄支票缴纳注册费及押金。
 
-    * If paying by mail, enclose a check made out to *Center for Musical Studies* and send to:
+    * 如邮寄支票，收款人请写 *Center for Musical Studies* 并邮寄至:
 
         <div class="address">Center for Musical Studies<br/>
         724 Chesapeake Ave.<br/>
         Silver Spring, MD 20910</div>
 
-1. Applications are accepted until spaces are filled.
+1. 我们将持续接受报名，直至名额填满为止。
 
-1. Balance of payment is due upon receipt of invoice, approximately 60 days before departure. Pay <a href="{{ site.baseurl }}{% link payment.html %}?balance=1">electronically via PayPal</a> or by mail using instructions above.
+1. 全部款项应在收到账单后、出行前60天内通过<a href="{{ site.baseurl }}{% link payment.html %}?balance=1">PayPal</a> 或以上邮寄地址支付。
 
-**†** **Please note:** *A 4% service fee will be added to your total balance to cover the processing charges for online payment (Fee is 4.8% for foreign transactions, i.e. outside of the U.S.)*
+**†** **请注意：** *为覆盖在线支付的手续费，我们将向您的总余额添加4%的手续费费（对于国际交易，即美国以外的交易，费用为4.8%）。*
