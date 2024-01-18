@@ -2,7 +2,7 @@
 first-name: Wei-Lung
 last-name: Li
 zh-name: 李威龍
-school: Tainan National University of the Arts, Taiwan
+school: Tainan National University of the Arts
 school-zh: 台南艺术大学
 ---
 

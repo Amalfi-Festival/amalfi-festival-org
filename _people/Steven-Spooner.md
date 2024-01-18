@@ -1,8 +1,8 @@
 ---
-first-name: # English first name
+first-name: Steven
 last-name: Spooner
-school: # School from which a professor teaches.
-school-zh: # Chinese name of the school.
+school: Peabody Institute
+school-zh: 皮博迪学院
 website: https://www.stevenspooner.com
 ---
 
