@@ -23,10 +23,7 @@ custom-css: getting-here
 ## 签证
 有关申请欧洲申根地区签证细节请详阅意大利驻华大使馆官网与中国领事服务网之相关规定。如有需要，阿马尔菲海岸音乐艺术节将提供书面证明以作为您办理申根签证的辅助材料。我们建议您寻求当地旅行社或旅游中介的帮助来办理申根签证。
 
-## Visas
+[意大利驻华大使馆官方网站](https://ambpechino.esteri.it/ambasciata_pechino/zh/informazioni_e_servizi/visti） 
 
-The above information was taken from the [official website of the Italian Embassy in China](https://ambpechino.esteri.it/ambasciata_pechino/zh/informazioni_e_servizi/visti) on November 25, 2021.
-
-For more details, refer to the [China Consular Service Network](http://cs.mfa.gov.cn/zggmcg/cgqz/sbcgqz/sqysqz_660469/oz_660471/201310/t20131007_956130.shtml).
 
 </section>
