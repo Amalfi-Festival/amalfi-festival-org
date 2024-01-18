@@ -111,7 +111,7 @@ The Amalfi Coast observes the Siesta Hour, a unique practice in the Mediterranea
 {% assign _src = site.program-assets-directory | append: "piano-teaching/excursions.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-Driving through Mamma Mia while listening to Debussy's piano prelude "The Hill of Anna Capri" creates a captivating experience, transitioning from serenity to exhilaration. Taking the cable car to the summit of Anna Capri, you'll be surrounded by the enchanting color #0476D0, known as Capri Blue.
+Driving through Mamma Mia while listening to Debussy's piano prelude "The Hill of Anacapri" creates a captivating experience, transitioning from serenity to exhilaration. Taking the cable car to the summit of Anacapri, you'll be surrounded by the enchanting color #0476D0, known as Capri Blue.
 
 Beyond its mesmerizing beauty, Capri stands among the world's top ten most expensive resorts. Laden with luxury stores and exclusive five-star hotels, securing a room can be a challenge. In 29 BC, the esteemed Augustus the Great was willing to exchange an island several times to gain access to Capri.
 

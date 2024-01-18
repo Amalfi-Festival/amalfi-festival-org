@@ -17,7 +17,7 @@ sessions:
             -   Ursula-Oppens
             -   Joseph-Rackers
             -   Steven-Spooner 
-        associate-staff:
+        associate-faculty:
             -   Yetong-Tang
             -   Shichao-Zhang
     -   session-name: Session II
@@ -37,7 +37,7 @@ sessions:
             -   Ursula-Oppens
             -   Thomas-Rosenkranz
             -   Hong-Xu
-        associate-staff:
+        associate-faculty:
             -   Yetong-Tang
             -   Shichao-Zhang
 application:

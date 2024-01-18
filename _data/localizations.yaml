@@ -36,7 +36,7 @@
 ### Excursions and Activities
 -   key: outings-title
     en: Excursions & Activities
-    zh: 短途旅行和活动
+    zh: 短途旅行及活动
 -   key: outings-intro
     en: Enhance your festival experience and enjoyment of the Amalfi Coast by taking advantage of the following available excursions and activities.
     zh: 利用以下可选的短途旅行和活动增强您的音乐节体验。
@@ -62,7 +62,7 @@
     zh: 押金
 -   key: deposit-refundable
     en: (refundable [in case of cancellation](~~~URL~~~))
-    zh: （可退款 [如取消参与音乐节](~~~URL~~~)）
+    zh: （如取消行程可退 [退款政策](~~~URL~~~)）
     is-markdown: true
 
 ### Cancellation schedule
@@ -77,7 +77,7 @@
     zh: ~~~DATE~~~（含）之后申请退款
 -   key: full-refund
     en: Your deposit and any tuition payments made will be fully refunded without penalty (excluding registration fees).
-    zh: 已缴纳押金及学费将被全额退款（注册费用不可退）。
+    zh: 已缴纳押金及学费将被全额退款（45美元注册费用不可退）。
     is-markdown: true
 -   key: processing-fee
     en: A **~~~COST~~~** processing fee will be applied to your refund plus any prepaid nonrefundable expenses.
@@ -93,7 +93,7 @@
     is-markdown: true
 -   key: deposit-forfeit-with-deductible
     en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses up to **~~~DEDUCTIBLE~~~**.
-    zh: 您的~COST~押金以及最多**~~~DEDUCTIBLE~~~**的预付不可退还费用皆不会被退回。
+    zh: 您的~COST~押金以及最多**~~~DEDUCTIBLE~~~**的预付款皆不会被退回。
     is-markdown: true
 -   key: no-refund
     en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made."

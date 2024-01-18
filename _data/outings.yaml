@@ -34,7 +34,7 @@ excursions:
         length: (Full day)
         length-zh: （一日）
         description: Travel by boat to the mythical island of Capri, an international wonder. Includes boat tickets, entries, expert guide.
-        description-zh: 费用包括大巴、渡轮、缆车、门票、导游
+        description-zh: 费用包括大巴、渡轮、门票、导游
         cost: 155
 activities:
     language:

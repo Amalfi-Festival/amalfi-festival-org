@@ -2,7 +2,7 @@
 
 hostel-triple:
     name: Tuition with Hostel accommodations, triple occupancy
-    name-zh: 学费含青年旅舍住宿，三人间
+    name-zh: 学费含青年旅舍住宿，三人间，不含早餐
     description: Triple rooms with shared bathroom.
     description-zh: 三人间设有共用浴室
 
