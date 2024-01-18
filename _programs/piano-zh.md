@@ -1,6 +1,6 @@
 ---
 reference-program-slug: piano
-title: 第26届意大利阿马尔菲海岸钢琴艺术节
+title: 第27届意大利阿马尔菲海岸钢琴艺术节
 lang: zh
 webpage-data:
     menu-title: 钢琴艺术节

@@ -1,6 +1,6 @@
 ---
 reference-program-slug: piano-teaching
-title: 第26届意大利阿马尔菲海岸国际钢琴教学研讨会
+title: 第27届意大利阿马尔菲海岸国际钢琴教学研讨会
 lang: zh
 webpage-data:
     program-header-subtitle: "<h3>唐业彤, 联合项目主管<br/>张世超, 联合项目主管</h3>"
