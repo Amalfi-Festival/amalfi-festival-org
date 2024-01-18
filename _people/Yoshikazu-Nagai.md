@@ -5,7 +5,7 @@ zh-name: 永井良和
 prefers-en-name: true
 school: San Francisco Conservatory of Music
 school-zh: 旧金山音乐学院/皮博迪音乐学院
-website: https://yoshinagai.com
+website: http://www.yoshinagai.com/
 ---
 
 Praised by audiences and critics alike for his fresh interpretations and dramatic presentation style, Yoshikazu Nagai has performed as soloist and chamber musician throughout Asia, Europe and America in such venues as Shanghai Concert Hall in China, National Recital Hall in Taiwan, Carnegie Recital Hall and Merkin Concert Hall in New York, Kennedy Center's Terrace Theatre, The National Gallery and Phillips Collection in Washington D.C., and Seattle's Benaroya Hall. His schedule in recent seasons include recitals in Naples, Seoul, Guangzhou, Hong Kong, Shanghai, Singapore, Beijing, Cincinnati, Chicago, San Francisco and in recent collaborations with the Ives Quartet, violinists Robert Mann, and Anthony Marwood.
