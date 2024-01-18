@@ -1,11 +1,10 @@
-## 费用和押金
+## 费用及订金
 
-A non-refundable registration fee of **{% include utilities/format-cost.html cost=application-registration-fee %}**
-is required at the time of registration in addition to a deposit {% unless is-guests-page -%}of
-**{% include utilities/format-cost.html cost=application-deposit %}** {% endunless %}towards your total fees. On-line
-registrations area also assessed a service fee.
+在报名时，除了一项不可退还的注册费用 **{% include utilities/format-cost.html cost=application-registration-fee %}**
+外，您还需要支付一笔订金{% unless is-guests-page -%}of
+**{% include utilities/format-cost.html cost=application-deposit %}** {% endunless %}作为总费用的一部分。在线支付还会收取一笔手续费。
  
-Deposits are accepted on a first-come basis as space is limited.
+由于名额有限，我们将根据先到先得的原则接受订金。
 Formal participation in the program may not be considered confirmed until
 deposits are accepted by Center for Musical Studies. For information on
 refunds, see [Cancellation Policy](#cancellation-policy--refunds).
