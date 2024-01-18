@@ -40,10 +40,11 @@
 
         <div class="address">Center for Musical Studies<br/>
         724 Chesapeake Ave.<br/>
-        Silver Spring, MD 20910</div>
+        Silver Spring, MD 20910<br/>
+        U.S.A.</div>
 
 1. 我们将持续接受报名，直至名额填满为止。
 
-1. 全部款项应在收到账单后、出行前60天内通过<a href="{{ site.baseurl }}{% link payment.html %}?balance=1">PayPal</a> 或以上邮寄地址支付。
+1. 全部款项应在收到账单后、出行前60天内通过 <a href="{{ site.baseurl }}{% link payment.html %}?balance=1">PayPal</a> 或以上邮寄地址支付。
 
 **†** **请注意：** *为覆盖在线支付的手续费，我们将向您的总余额添加4%的手续费费（对于国际交易，即美国以外的交易，费用为4.8%）。*

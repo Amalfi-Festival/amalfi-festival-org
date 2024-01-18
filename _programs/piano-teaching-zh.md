@@ -33,7 +33,7 @@ lang: zh
 
 <section id="faculty" markdown="1">
 
-## {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+## {{ site.data.festival.application.deadline | date: "%Y" }} 师资团队
 {: class="standard-block" id="" }
 
 {% assign all-faculty = reference-program.sessions[0].faculty | sort -%}
@@ -107,6 +107,6 @@ lang: zh
 
 {% include site/program/outings-fees.md %}
 {% include application-instructions-zh.md %}
-{% include fees-deposits.md %}
-{% include site/program/cancellations.md %}
+{% include fees-deposits-zh.md %}
+{% include site/program/cancellations-zh.md %}
 </section>
