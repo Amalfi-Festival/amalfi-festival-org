@@ -34,8 +34,8 @@ sessions:
             -   James-Giles
             -   Douglas-Humpherys
             -   Kyu-Yeon-Kim
-            -   Thomas-Rosenkranz
             -   Ursula-Oppens
+            -   Thomas-Rosenkranz
             -   Hong-Xu
         associate-staff:
             -   Yetong-Tang
