@@ -54,11 +54,11 @@ outings:
         -   outing-slug: language
         -   outing-slug: cooking
 tuition:
-    meal-plan: 625
+    meal-plan: 695
     hotel-triple: 3385
     hostel-triple: 2995
     hotel-double-upgrade: 465
-    hotel-single-upgrade: 945
+    hotel-single-upgrade: 965
 tuition-guests:
     meal-plan: true
     hotel-triple: 3195
