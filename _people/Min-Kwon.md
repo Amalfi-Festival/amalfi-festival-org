@@ -2,6 +2,7 @@
 first-name: Min
 last-name: Kwon
 zh-name: 权敏
+prefers-en-name: true
 school: Rutgers University
 school-zh: 罗格斯大学
 
