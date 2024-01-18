@@ -1,6 +1,9 @@
 ---
 title: 交通及旅行注意事项
+custom-css: getting-here
 ---
+
+<section class="standard-block" markdown="1">
 
 ## 飞机
 距离我们最近的机场是位于那不勒斯市的 Naples International Airport（NAP）。到达机场后，音乐节提供免费的大巴（特定日期及时间）为大家免去舟车劳顿后的烦恼。从机场到音乐节所在地大约 70 公里，约 1.5 小时的车程。
@@ -25,3 +28,5 @@ title: 交通及旅行注意事项
 The above information was taken from the [official website of the Italian Embassy in China](https://ambpechino.esteri.it/ambasciata_pechino/zh/informazioni_e_servizi/visti) on November 25, 2021.
 
 For more details, refer to the [China Consular Service Network](http://cs.mfa.gov.cn/zggmcg/cgqz/sbcgqz/sqysqz_660469/oz_660471/201310/t20131007_956130.shtml).
+
+</section>
