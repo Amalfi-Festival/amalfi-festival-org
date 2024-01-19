@@ -192,9 +192,6 @@ section#splash-piano {
             margin-left: auto;
             margin-right: auto;
         }
-        @include breakpoint(min-tablet) {
-            aspect-ratio: 1.4;
-        }
         img {
             display: block;
             width: 100%;
