@@ -3,7 +3,7 @@ first-name: Shichao
 last-name: Zhang
 zh-name: 张世超
 school: Eastern Illinois University
-school-zh: 美国东伊利诺伊大学键盘系主任、美国伊斯曼音乐学院钢琴表演及文献博士、音乐节主管
+school-zh: 美国东伊利诺伊大学键盘系主任、音乐节主管
 permalink: /people/:title
 ---
 Pianist Shichao Zhang holds a Doctor of Musical Arts in Piano Performance and Literature, with a minor in Chamber Music and Accompanying, at the prestigious Eastman School of Music, under the tutelage of Professor Douglas Humpherys and Professor Jean Barr. During his time at the Eastman, he played an important role as a teacher in various capacities at Eastman, including the Primary/Secondary Piano Program, Class Piano Teacher, and a Studio Teaching Assistant. Dr. Zhang’s dedication and teaching led to his recognition with the 2013-2014 Eastman Teaching Assistant Prize. 
