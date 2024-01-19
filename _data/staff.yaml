@@ -25,6 +25,7 @@
 - name: Manfredi Paterniti
   title: Director of Development
   email: manfredipaterniti@studioesse.net
+  headshot-filename: Manfredi-Paterniti.jpg
 - name: Teresa Rocciola
   title: Publicist/Public Relations
 - name: Shichao Zhang
@@ -40,7 +41,6 @@
   headshot-filename: Paolo-DAgostino.jpg
 - name: Anais Kelsey-Verdecchia
   title: Executive Assistant
-  email: anais@amalfi-festival.org
 - name: Simona D'Acunto 
   title: Staff Assistant
   headshot-filename: Simona-DAcunto.jpg
