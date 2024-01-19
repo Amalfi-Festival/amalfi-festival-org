@@ -52,37 +52,51 @@ A unique opportunity to engage in discussions on musical art and teaching experi
 Teaching Seminar participants have the opportunity to attend Faculty Concerts, Young Artist Series Recitals, Master Classes, and various activities within the Piano Program. This inclusive approach offers a holistic and immersive experience for all involved.
 {%- endcapture -%}
 
-{%- capture experience -%}
+{%- capture faculty -%}
+Our distinguished {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+{%- endcapture -%}
+
+{%- capture experience-title -%}
 Experience the Best of the Amalfi Coast
 {%- endcapture -%}
 
-{%- capture maiori -%}
-### Maiori
+{%- capture maiori-title -%}
+Maiori
+{%- endcapture -%}
 
+{%- capture maiori-body -%}
 Since ancient Roman times, this tourist attraction boasts the longest coastline along the Amalfi Coast. Explore mountain paths on foot and discover rare volcanic sand and gravel beaches. Maiori serves as our primary venue, hosting the music festival accommodation and the majority of course activities.
 {%- endcapture -%}
 
-{%- capture lemons -%}
-### Amalfi's Lemons
+{%- capture lemons-title -%}
+Amalfi's Lemons
+{%- endcapture -%}
 
+{%- capture lemons-body -%}
 Embark on a morning stroll along the world-famous Lemon Tree Path on the Amalfi Coast, and savor a cup of Southern Italy's most mellow espresso with friends.
 {%- endcapture -%}
 
-{%- capture minori -%}
-### Minori
+{%- capture minori-title -%}
+Minori
+{%- endcapture -%}
 
+{%- capture minori-body -%}
 In Minori, a quaint town just a 20-minute walk from Maiori, you'll find Sal De Riso, a dessert shop featured on a CNN documentary. Among its renowned treats is the "Delizia al limone," fondly nicknamed "Venus's Breasts." During each music festival, there's an outdoor concert and dinner in Minori. Some students opt to visit the famed dessert shop, strolling back to Maiori with cake in hand, alongside indulging in Italian handmade ice cream in the refreshing sea breeze.
 {%- endcapture -%}
 
-{%- capture concerts -%}
-### Concerts
+{%- capture concerts-title -%}
+Concerts
+{%- endcapture -%}
 
+{%- capture concerts-body -%}
 The festival features Faculty Concerts and the Young Artist Recital Series, offering almost daily concerts. Our event venues include selected churches and concert halls in various towns, each with unique architectural styles. We aim to provide the audience with a diverse music and artistic experience throughout the festival.
 {%- endcapture -%}
 
-{%- capture days-nights -%}
-### Days & Nights in a Mediterranean Town
+{%- capture days-nights-title -%}
+Days & Nights in a Mediterranean Town
+{%- endcapture -%}
 
+{%- capture days-nights-body -%}
 The Amalfi Coast observes the Siesta Hour, a unique practice in the Mediterranean region. During the peak of the day at noon, most shops and restaurants close as our piano master class takes place in the air-conditioned hall. Following the lunch break, the Mediterranean town comes alive with vibrant nightlife. After group formal dinners and daily concerts, professors and students often gather to enjoy drinks at a seaside restaurant. If fortunate, you might also catch a spectacular fireworks show in a nearby town by the sea.
 {%- endcapture -%}
 

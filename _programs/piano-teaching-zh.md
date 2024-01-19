@@ -31,37 +31,51 @@ webpage-data:
 在教学研讨会期间，参与者有机会参加观摩教师音乐会、青年艺术家系列独奏会、大师课以及钢琴项目中的各种活动。为所有参与者提供了一次全面而沉浸式的体验。
 {%- endcapture -%}
 
-{%- capture experience -%}
+{%- capture faculty -%}
+卓越的 {{ site.data.festival.application.deadline | date: "%Y" }} 师资团队
+{%- endcapture -%}
+
+{%- capture experience-title -%}
 体验阿马尔菲海岸的至臻之美
 {%- endcapture -%}
 
-{%- capture maiori -%}
-### 马约里
+{%- capture maiori-title -%}
+马约里
+{%- endcapture -%}
 
+{%- capture maiori-body -%}
 自古罗马时代以来，这个旅游胜地以其在阿马尔菲海岸上最长的海岸线而闻名。徒步探索山间小径，发现罕见的火山沙和砾石海滩。马约里是我们的主要场地，提供音乐节住宿和大部分课程活动。
 {%- endcapture -%}
 
-{%- capture lemons -%}
-### 阿马尔菲的柠檬
+{%- capture lemons-title -%}
+阿马尔菲的柠檬
+{%- endcapture -%}
 
+{%- capture lemons-body -%}
 在阿马尔菲海岸上著名的柠檬树小径上进行早晨漫步，与朋友一起品味一杯意大利南部最醇香的浓缩咖啡。
 {%- endcapture -%}
 
-{%- capture minori -%}
-### 米诺里
+{%- capture minori-title -%}
+米诺里
+{%- endcapture -%}
 
+{%- capture minori-body -%}
 在离马约里只有20分钟步行路程的迷人小镇米诺里，您会发现Sal De Riso，这是一家被CNN纪录片推荐的甜点店。在其著名的美食中，有一款名为“Delizia al limone”的甜点，亲切地被昵称为“维纳斯的乳房”。每届音乐节期间，米诺里都会举办户外音乐会和晚餐。一些学生选择晚餐后光顾这家著名的甜点店，手捧蛋糕漫步回到马约里，并在清新的海风中品尝意大利手工冰淇淋。
 {%- endcapture -%}
 
-{%- capture concerts -%}
-### 音乐会
+{%- capture concerts-title -%}
+音乐会
+{%- endcapture -%}
 
+{%- capture concerts-body -%}
 音乐节呈现豪华的教师音乐会和青年艺术家独奏系列，几乎每日上演一场绝妙的音乐盛宴。我们的活动场地遍布各个城镇，包括精选的教堂和音乐厅，每一处都独具建筑风格之美。我们旨在通过整个音乐节为为参与者奉上一个丰富多彩的音乐与艺术之旅。
 {%- endcapture -%}
 
-{%- capture days-nights -%}
-### 地中海小镇的昼夜韵律
+{%- capture days-nights-title -%}
+地中海小镇的昼夜韵律
+{%- endcapture -%}
 
+{%- capture days-nights-body -%}
 阿马尔菲海岸沿袭着Siesta Hour（午休时间），这是地中海地区独具特色的传统。在正午的高峰时段，大部分商店和餐馆都会关门，而我们的钢琴大师课则在设有空调的大厅中进行。午餐休息后，地中海小镇在夜幕降临时变得生机勃勃。在集体正式晚餐和每日音乐会之后，教授和学生们经常会聚集在海边的餐厅喝一杯，尽情享受美好时光。如果幸运的话，您还有机会在邻近的海边小镇欣赏到壮观的烟火表演。
 {%- endcapture -%}
 

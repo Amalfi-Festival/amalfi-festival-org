@@ -7,7 +7,7 @@
 
 <section id="faculty" markdown="1">
 
-## {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+## {% include utilities/markdownify-without-p.html text=faculty %}
 {: class="standard-block" id="" }
 
 {% assign all-faculty = reference-program.sessions[0].faculty | sort -%}
@@ -21,29 +21,39 @@
 {% assign _src = site.program-assets-directory | append: "piano-teaching/seminar-excursion.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-## {{ experience }}
+## {{ experience-title }}
+
+### {{ maiori-title }}
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-{{ maiori }}
+{{ maiori-body }}
 
-{{ lemons }}
+### {{ lemons-title }}
+
+{{ lemons-body }}
+
+### {{ minori-title }}
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/minori.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-{{ minori }}
+{{ minori-body }}
+
+### {{ concerts-title }}
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-{{ concerts }}
+{{ concerts-body }}
+
+### {{ days-nights-title }}
 
 {% assign _src = site.program-assets-directory | append: "piano-teaching/nights.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
-{{ days-nights }}
+{{ days-nights-body }}
 
 ### {{ excursions-title }}
 
