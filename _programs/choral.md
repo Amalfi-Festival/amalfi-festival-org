@@ -48,7 +48,7 @@ cancellation-policy:
 webpage-data:
     menu-title: Choral
     hero-image: Conductor with chorus.jpg
-    hero-image-position: 65% 60%
+    hero-image-position: 65% 73%
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
