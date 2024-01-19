@@ -103,6 +103,9 @@ $standard-block-margin-left: 3rem;
     @if $form_factor == mid-desktop {
         @media only screen and (min-width: 1080px) { @content; }
     }
+    @if $form_factor == min-desktop {
+        @media only screen and (min-width: 769px) { @content; }
+    }
     @if $form_factor == tablet {
         @media only screen and (max-width: 768px) { @content; }
     }
