@@ -1,6 +1,8 @@
 ---
 first-name: Kyu Yeon
 last-name: Kim
+zh-name: 金茥娟
+prefers-en-name: true
 school: Seoul National University
 school-zh: 首尔大学
 ---

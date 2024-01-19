@@ -1,6 +1,8 @@
 <section class="standard-block" markdown="1">
 {%- assign _src = site.program-assets-directory | append: "piano-teaching/seminar.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
+{% assign _src = site.program-assets-directory | append: "piano-teaching/experience.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 {{ opening }}
 </section>
@@ -18,8 +20,6 @@
 
 <section class="standard-block" markdown="1">
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/experience.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
 
 ## {{ experience-title }}
 
