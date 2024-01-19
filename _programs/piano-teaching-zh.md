@@ -7,8 +7,7 @@ webpage-data:
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
-<section class="standard-block" markdown="1">
-
+{%- capture opening -%}
 ## 钢琴教育的个性化课程计划
 
 ### 主题讲座
@@ -30,64 +29,47 @@ webpage-data:
 ### 音乐会和大师课观摩
 
 在教学研讨会期间，参与者有机会参加观摩教师音乐会、青年艺术家系列独奏会、大师课以及钢琴项目中的各种活动。为所有参与者提供了一次全面而沉浸式的体验。
+{%- endcapture -%}
 
-</section>
+{%- capture experience -%}
+体验阿马尔菲海岸的至臻之美
+{%- endcapture -%}
 
-<section id="faculty" markdown="1">
-
-## {{ site.data.festival.application.deadline | date: "%Y" }} 师资团队
-{: class="standard-block" id="" }
-
-{% assign all-faculty = reference-program.sessions[0].faculty | sort -%}
-<div class="standard-block tiles front-of-brochure">
-{%- include site/faculty-tiles.html faculty=all-faculty -%}
-</div>
-</section>
-
-<section class="standard-block" markdown="1">
-
-## 体验阿马尔菲海岸的至臻之美
-
-{% assign _src = site.program-assets-directory | append: "piano-teaching/maiori.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- capture maiori -%}
 ### 马约里
 
 自古罗马时代以来，这个旅游胜地以其在阿马尔菲海岸上最长的海岸线而闻名。徒步探索山间小径，发现罕见的火山沙和砾石海滩。马约里是我们的主要场地，提供音乐节住宿和大部分课程活动。
+{%- endcapture -%}
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- capture lemons -%}
 ### 阿马尔菲的柠檬
 
 在阿马尔菲海岸上著名的柠檬树小径上进行早晨漫步，与朋友一起品味一杯意大利南部最醇香的浓缩咖啡。
+{%- endcapture -%}
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/delizia-al-limone.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- capture minori -%}
 ### 米诺里
 
 在离马约里只有20分钟步行路程的迷人小镇米诺里，您会发现Sal De Riso，这是一家被CNN纪录片推荐的甜点店。在其著名的美食中，有一款名为“Delizia al limone”的甜点，亲切地被昵称为“维纳斯的乳房”。每届音乐节期间，米诺里都会举办户外音乐会和晚餐。一些学生选择晚餐后光顾这家著名的甜点店，手捧蛋糕漫步回到马约里，并在清新的海风中品尝意大利手工冰淇淋。
+{%- endcapture -%}
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/concerts.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- capture concerts -%}
 ### 音乐会
 
 音乐节呈现豪华的教师音乐会和青年艺术家独奏系列，几乎每日上演一场绝妙的音乐盛宴。我们的活动场地遍布各个城镇，包括精选的教堂和音乐厅，每一处都独具建筑风格之美。我们旨在通过整个音乐节为为参与者奉上一个丰富多彩的音乐与艺术之旅。
+{%- endcapture -%}
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/fireworks.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- capture days-nights -%}
 ### 地中海小镇的昼夜韵律
 
 阿马尔菲海岸沿袭着Siesta Hour（午休时间），这是地中海地区独具特色的传统。在正午的高峰时段，大部分商店和餐馆都会关门，而我们的钢琴大师课则在设有空调的大厅中进行。午餐休息后，地中海小镇在夜幕降临时变得生机勃勃。在集体正式晚餐和每日音乐会之后，教授和学生们经常会聚集在海边的餐厅喝一杯，尽情享受美好时光。如果幸运的话，您还有机会在邻近的海边小镇欣赏到壮观的烟火表演。
+{%- endcapture -%}
 
-### 卡普里和拉韦洛之行
+{%- capture excursions-title -%}
+卡普里和拉韦洛之行
+{%- endcapture -%}
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/capri.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- capture excursions-body -%}
 驾车穿越Mamma Mia的同时聆听德彪西的钢琴前奏曲《阿纳卡普里的山丘》，创造出一种迷人的体验，从宁静过渡到激动人心。乘坐缆车到达阿纳卡普里的山顶，您将被迷人的#0476D0色彩所环绕，这被称为卡普里蓝。
 
 除了令人陶醉的美景，卡普里还被列为世界前十昂贵的度假胜地之一。充满奢侈品牌和独家五星级酒店，要想在这里预订房间可能会是一项挑战。公元前29年，备受尊敬的奥古斯都曾多次愿意交换岛屿以获取卡普里的通行权。
@@ -97,18 +79,10 @@ webpage-data:
 拉韦洛以“音乐之城”而闻名，经常在迷人的卢佛罗别墅举办由指挥家穆蒂主持的拉韦洛音乐节。拉韦洛曾是瓦格纳歌剧《帕西法尔》的灵感来源，是李斯特所崇敬的音乐圣地。
 
 在研讨会期间，前往拉韦洛的半日游为参与者提供了大巴及导游服务，确保您能够轻松愉悦地探索这个音乐之地。
-
-{% assign _src = site.program-assets-directory | append: "piano-teaching/ravello.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
+{%- endcapture -%}
 
 {% capture tuition-description %}
 学费和住宿费用合并为一个总费用，其中包括参与钢琴教学研讨会、观摩钢琴音乐节、往返那不勒斯机场至马约里的大巴、全程的酒店住宿、每日精心准备的早餐和晚餐、盛大的正式礼服晚会、专业的翻译服务以及一份精美的结业证书。这一全面的套餐确保参与者在研讨会期间获得无微不至的关怀和丰富的艺术体验。如果您还有其他疑问，请随时联系我们（微信号：Amalfi-Festival-YT）。
 {% endcapture %}
-{% include site/program/tuition-accommodations.md description=tuition-description %}
 
-{% include site/program/outings-fees.md %}
-{% include application-instructions-zh.md %}
-{% include fees-deposits-zh.md %}
-{% include site/program/cancellations-zh.md %}
-</section>
+{%- include site/program/piano-teaching-program.md -%}
