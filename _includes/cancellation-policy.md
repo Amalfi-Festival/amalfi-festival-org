@@ -1,4 +1,5 @@
 ## Cancellation Policy & Refunds
+{: id="cancellation-policy-refunds"}
 
 All cancellations must be made in writing by email. Phone calls or phone messages are not accepted.
 
