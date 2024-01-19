@@ -4,7 +4,7 @@ title: 钢琴艺术节
 lang: zh
 webpage-data:
     menu-title: 钢琴艺术节
-    program-header-subtitle: "<h3>James Giles, 艺术总监<br/>Yoshikazu Nagai（永井良和）, 师资主任</h3>"
+    program-header-subtitle: "<h3>James Giles，艺术总监<br/>Yoshikazu Nagai（永井良和），师资主任</h3>"
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
