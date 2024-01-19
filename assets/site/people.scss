@@ -22,7 +22,7 @@ body > main {
         float: right;
         margin-left: 2rem;
         @include breakpoint(mobile) {
-            margin-top: 3rem;
+            margin-top: 2rem;
             margin-left: 0;
         }
 
@@ -35,7 +35,7 @@ body > main {
         @include breakpoint(mobile) {
             max-width: 100%;
             width: auto;
-            height: min(60vh, 90vw);
+            max-height: min(60vh, 90vw);
             margin-left: auto;
             margin-right: auto;
             display: block;
