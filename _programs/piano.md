@@ -34,7 +34,6 @@ sessions:
             -   James-Giles
             -   Douglas-Humpherys
             -   Kyu-Yeon-Kim
-            -   Ursula-Oppens
             -   Thomas-Rosenkranz
             -   Hong-Xu
         associate-faculty:
