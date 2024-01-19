@@ -21,7 +21,7 @@ body:has(#hero) {
     }
 }
 #hero {
-    height: min(80vh, 125vw);
+    height: $hero-height;
     > .text {
         position: absolute;
         bottom: 0;
