@@ -24,9 +24,11 @@ body > main {
     img {
         float: right;
         margin-left: 2rem;
+        margin-bottom: 1rem;
         @include breakpoint(mobile) {
             margin-top: 2rem;
             margin-left: 0;
+            margin-bottom: 0;
         }
 
         width: 20em;
