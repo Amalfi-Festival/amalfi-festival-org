@@ -18,7 +18,7 @@
 
 <section class="standard-block" markdown="1">
 
-{% assign _src = site.program-assets-directory | append: "piano-teaching/seminar-excursion.jpg" | relative_url -%}
+{% assign _src = site.program-assets-directory | append: "piano-teaching/experience.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
 ## {{ experience-title }}
@@ -31,6 +31,9 @@
 {{ maiori-body }}
 
 ### {{ lemons-title }}
+
+{% assign _src = site.program-assets-directory | append: "piano-teaching/lemons.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 {{ lemons-body }}
 
