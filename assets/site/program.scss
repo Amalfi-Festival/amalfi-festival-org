@@ -57,6 +57,15 @@ h3 .label {
             margin-left: $sidebar-margin-left;
             margin-bottom: 3rem;
         }
+        > *:first-child:where(body:where(body.piano, body.piano-zh) #header.sidebar > *:first-child) {
+            width: 32vw;
+        }
+
+    }
+    @include breakpoint(mid-desktop) {
+        > *:first-child {
+            width: $sidebar-width;
+        }
     }
     @include breakpoint(tablet) {
         display: flex;
