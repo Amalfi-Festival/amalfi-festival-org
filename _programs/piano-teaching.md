@@ -24,7 +24,13 @@ tuition:
 webpage-data:
     menu-title: Piano Teaching
     hero-image: amalfi-cloister.jpg
-    program-header-subtitle: "<h3>Yetong Tang, Co-Director<br/>Shichao Zhang, Co-Director</h3>"
+    program-heads:
+        -   person-slug: Yetong-Tang
+            title: Co-Director
+            title-zh: 联合项目主管
+        -   person-slug: Shichao-Zhang
+            title: Co-Director
+            title-zh: 联合项目主管
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

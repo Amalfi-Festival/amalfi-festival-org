@@ -66,7 +66,13 @@ tuition-guests:
 webpage-data:
     menu-title: Piano
     hero-image: IMG_2351.jpg
-    program-header-subtitle: "<h3>James Giles, Artistic Director<br/>Yoshikazu Nagai, Faculty Chair</h3>"
+    program-heads:
+        -   person-slug: James-Giles
+            title: Artistic Director
+            title-zh: 艺术总监
+        -   person-slug: Yoshikazu-Nagai
+            title: Faculty Chair
+            title-zh: 师资主任
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

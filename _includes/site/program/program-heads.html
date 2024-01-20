@@ -1,0 +1,13 @@
+<h3 id="program-heads">
+{%- assign _head-strings = site.empty-array -%}
+{%- for _head in include.heads -%}
+    {%- assign _person = site.people | where: "slug", _head.person-slug | first -%}
+    {%- include site/person/person-localized-name.fx lang=page.lang person=_person -%}
+    {%- assign _localized-name = __result -%}
+    {%- capture _text -%}
+        <a href="{{ _person.url | relative_url }}">{{- _localized-name }}</a>{% if page.lang == "zh" %}，{% else %}, {% endif %}{% include utilities/localize.html source=_head key="title" -%}
+    {%- endcapture -%}
+    {%- assign _head-strings = _head-strings | push: _text -%}
+{%- endfor -%}
+{{- _head-strings | join: "<br/>" -}}
+</h3>

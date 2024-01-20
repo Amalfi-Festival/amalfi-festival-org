@@ -44,6 +44,10 @@ h3 .label {
             display: inline-block;
         }
     }
+
+    h3 a {
+        text-decoration: none;
+    }
 }
 #header.sidebar {
     gap: 2em;
@@ -99,6 +103,10 @@ h3 .label {
         text-align: center;
         margin-top: 0;
         margin-bottom: 2rem;
+    }
+
+    .zh-name {
+        display: block;
     }
 }
 

@@ -10,12 +10,8 @@
 {%- comment -%}This sort does not work if there are any staff included. Would need to refactor staff.yaml to list names similarly to faculty.{%- endcomment -%}
 {%- assign _f = _f | sort: "last-name" -%}
 {%- for faculty-member in _f -%}
-    {%- capture faculty-name -%}{{ faculty-member.first-name }} {{ faculty-member.last-name }}{%- if faculty-member.zh-name and _l == "zh" -%}<br/>({{ faculty-member.zh-name }}){%- endif -%}{%- endcapture -%}
-    {%- unless faculty-member.prefers-en-name -%}
-        {%- if faculty-member.zh-name and _l == "zh" -%}
-            {%- capture faculty-name -%}{{ faculty-member.zh-name }}{%- endcapture -%}
-        {%- endif -%}
-    {%- endunless -%}
+    {%- include site/person/person-localized-name.fx lang=_l person=faculty-member -%}
+    {%- assign faculty-name = __result -%}
 <div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/person/person-thumbnail-filepath.html person=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-zh and _l == "zh" %}{{ faculty-member.school-zh }}{% else %}{{ faculty-member.role | default: faculty-member.school }}{% endif %}</div>
 </a></div>
 {%- endfor -%}
