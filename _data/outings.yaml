@@ -13,8 +13,8 @@ excursions:
         name: Ravello
         name-zh: 拉韦洛 Ravello
         tagline: An Artistic Refuge
-        length: (Half day)
-        length-zh: （半日）
+        length: Half day
+        length-zh: 半日
         description: Called the "jewel of the coast." Exceptional views over the sea with unforgettable landscapes and visit to historical villa. Favorite destination of artists & musicians. Includes transportation, entry tickets, guide.
         description-zh: 费用包括大巴、门票、导游。
         cost: 95
@@ -22,8 +22,8 @@ excursions:
         name: Pompeii
         name-zh: 庞贝古城 Pompeii
         tagline: A Buried Past
-        length: (Half day)
-        length-zh: （半日）
+        length: Half day
+        length-zh: 半日
         description: World-famous archaeologic site of the ancient civilization frozen in time when buried under the lava of the 4th century eruption of the volcano Vesuvius. Includes transportation, entry tickets, expert guide.
         description-zh: 费用包括大巴、门票、导游。
         cost: 115
@@ -31,8 +31,8 @@ excursions:
         name: Capri
         name-zh: 卡普里岛 Capri Island
         tagline: Isle of Beauty and Mystery
-        length: (Full day)
-        length-zh: （一日）
+        length: Full day
+        length-zh: 一日
         description: Travel by boat to the mythical island of Capri, an international wonder. Includes boat tickets, entries, expert guide.
         description-zh: 费用包括大巴、渡轮、门票、导游。
         cost: 155

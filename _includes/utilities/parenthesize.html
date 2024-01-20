@@ -1,0 +1,2 @@
+{% assign _l = page.lang | default: include.lang | default: "en" -%}
+{%- if _l == "zh" %}（{{ include.text }}）{% else %}({{ include.text }}){% endif %}

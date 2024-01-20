@@ -9,6 +9,11 @@
 {%- capture _length -%}
 {%- include utilities/localize.html source=_festival-outing key="length" -%}
 {%- endcapture -%}
+{%- unless _length == "" -%}
+    {%- capture _length -%}
+    {%- include utilities/parenthesize.html text=_length -%}
+    {%- endcapture -%}
+{%- endunless -%}
 {%- capture _description -%}
 {%- include utilities/localize.html source=_festival-outing key="description" is-markdown=true -%}
 {%- endcapture -%}
