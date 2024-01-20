@@ -65,7 +65,7 @@ tuition-guests:
     hotel-single-upgrade: true
 webpage-data:
     menu-title: Piano
-    hero-image: 23.jpg
+    hero-image: IMG_2351.jpg
     program-header-subtitle: "<h3>James Giles, Artistic Director<br/>Yoshikazu Nagai, Faculty Chair</h3>"
 ---
 {%- include site/program/initialize-program-variables.fx -%}
