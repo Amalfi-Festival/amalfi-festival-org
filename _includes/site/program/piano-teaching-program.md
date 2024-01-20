@@ -10,7 +10,7 @@
 ## {% include utilities/markdownify-without-p.html text=faculty %}
 {: class="standard-block" id="" }
 
-{% assign all-faculty = reference-program.sessions[0].faculty | sort -%}
+{% assign all-faculty = reference-program.sessions[0].faculty -%}
 <div class="standard-block tiles front-of-brochure">
 {%- include site/faculty-tiles.html faculty=all-faculty -%}
 </div>

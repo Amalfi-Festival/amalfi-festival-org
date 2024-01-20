@@ -1,21 +1,15 @@
 {%- assign _l = page.lang | default: include.lang | default: "en" -%}
+{%- assign _f = site.empty-array -%}
 {%- for faculty-member-name in include.faculty -%}
-    {%- assign faculty-member = nil -%}
-    {%- for faculty-candidate in site.people -%}
-        {%- if faculty-candidate.slug == faculty-member-name -%}
-            {%- assign faculty-member = faculty-candidate -%}
-            {%- break -%}
-        {%- endif -%}
-    {%- endfor -%}
-    {%- unless faculty-member -%}
-        {%- for staff-candidate in site.staff -%}
-            {%- if staff-candidate.slug == faculty-member-name -%}
-                {%- assign faculty-member = staff-candidate -%}
-                {%- break -%}
-            {%- endif -%}
-        {%- endfor -%}
+    {%- assign _faculty-member = site.people | where: "slug", faculty-member-name | first -%}
+    {%- unless _faculty-member -%}
+        {%- assign _faculty-member = site.staff | where: "slug", faculty-member-name | first -%}
     {%- endunless -%}
-
+    {%- assign _f = _f | push: _faculty-member -%}
+{%- endfor -%}
+{%- comment -%}This sort does not work if there are any staff included. Would need to refactor staff.yaml to list names similarly to faculty.{%- endcomment -%}
+{%- assign _f = _f | sort: "last-name" -%}
+{%- for faculty-member in _f -%}
     {%- capture faculty-name -%}{{ faculty-member.first-name }} {{ faculty-member.last-name }}{%- if faculty-member.zh-name and _l == "zh" -%}<br/>({{ faculty-member.zh-name }}){%- endif -%}{%- endcapture -%}
     {%- unless faculty-member.prefers-en-name -%}
         {%- if faculty-member.zh-name and _l == "zh" -%}

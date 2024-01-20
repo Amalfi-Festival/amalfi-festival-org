@@ -30,17 +30,13 @@ outings: # OPTIONAL.
         -   outing-slug: outing-slug # REQUIRED.
             cost: 0 # OPTIONAL. Overrides the festival's cost for the excursion. If you use 0, the outing will say "included" instead of having a price.
             additional-description: text # OPTIONAL.
-            localizations:
-                zh:
-                    additional-description: text # OPTIONAL.
+            additional-description-zh: text # OPTIONAL.
         # ...
     excursions: # OPTIONAL.
         -   outing-slug: outing-slug # REQUIRED.
             cost: 0 # OPTIONAL. Overrides the festival's cost for the excursion. If you use 0, the outing will say "included" instead of having a price.
             additional-description: text # OPTIONAL.
-            localizations:
-                zh:
-                    additional-description: text # OPTIONAL.
+            additional-description-zh: text # OPTIONAL.
         # ...
 tuition: # REQUIRED.
     # For most programs with accommodation options

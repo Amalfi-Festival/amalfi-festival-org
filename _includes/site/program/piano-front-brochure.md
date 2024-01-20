@@ -49,7 +49,7 @@
 ## {% include utilities/markdownify-without-p.html text=faculty %}
 {: class="standard-block"}
 
-{% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq | sort -%}
+{% assign all-faculty = reference-program.sessions[0].faculty | concat: reference-program.sessions[1].faculty | uniq -%}
 <div class="standard-block tiles front-of-brochure">
 {%- include site/faculty-tiles.html faculty=all-faculty -%}
 </div>
