@@ -27,7 +27,7 @@
     zh: 学费为单期音乐节单人费用，包括一对一私教课、大师班、讲座、研讨会、音乐会等
 -   key: tuition-guests-link
     en: For guests and auditors, [click here](~~~URL~~~) for more information.
-    zh: 同行及旁听人员, [点击这里](~~~URL~~~) 获取更多信息。
+    zh: 同行及旁听人员，[点击这里](~~~URL~~~)获取更多信息。
     is-markdown: true
 -   key: meal-plan
     en: The meal plan provides daily dinners. We recommend this option as participants and faculty dine together, including when festival concerts are held in locations outside Maiori.
@@ -62,7 +62,7 @@
     zh: 订金
 -   key: deposit-refundable
     en: (refundable [in case of cancellation](~~~URL~~~))
-    zh: （如取消行程可退 [退款政策](~~~URL~~~)）
+    zh: （如取消行程可退。请参见[退款政策](~~~URL~~~)）
     is-markdown: true
 
 ### Cancellation schedule

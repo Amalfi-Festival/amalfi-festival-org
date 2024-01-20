@@ -9,7 +9,7 @@
 
 报名流程
 
-1. 网上填写 {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}application form.{% endif %}
+1. 网上填写并提交{% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}application form.{% endif %}
 
 {% if application.allow-mail-registration %}
     * If you wish to register by mail, print and fill out the form.
