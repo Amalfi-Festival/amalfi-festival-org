@@ -7,6 +7,28 @@ custom-css: guests
 ---
 {%- assign is-guests-page = true -%}
 
+{%- assign programs-with-guests = site.empty-array -%}
+{%- for _p in site.data.festival.programs -%}
+    {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
+    {%- if program.to-be-announced -%}
+        {%- continue -%}
+    {%- endif -%}
+    {%- assign program-guest = program.tuition-guests -%}
+    {%- assign can-have-guests = false -%}
+    {%- unless program-guest -%}
+        {%- for session in program.sessions -%}
+            {%- if session.guests -%}
+                {%- assign can-have-guests = true -%}
+                {%- break -%}
+            {%- endif -%}
+        {%- endfor -%}
+        {%- unless can-have-guests -%}
+            {%- continue -%}
+        {%- endunless -%}
+    {%- endunless %}
+    {%- assign programs-with-guests = programs-with-guests | push: program -%}
+{%- endfor -%}
+
 <section class="standard-block" markdown="1">
 
 Tour fascinating locales, sit in on rehearsal and enjoy concerts under the stars. Expand your culinary vistas, experiment with clay or capture fabulous landscapes in paint. Visit the enchanting coastal towns of Amalfi and Positano, discover the stunning vistas of Ravello and the sparkling beaches of Capri and explore the haunting ruins of Pompeii.
@@ -28,22 +50,7 @@ Guests will enjoy eating and socializing with the musicians and attending pre-co
 
 Guest Program fees includes access to all festival activities for the full session.
 
-{% for _p in site.data.festival.programs -%}
-    {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
-    {%- assign program-guest = program.tuition-guests -%}
-    {%- assign can-have-guests = false -%}
-    {%- unless program-guest -%}
-        {%- for session in program.sessions -%}
-            {%- if session.guests -%}
-                {%- assign can-have-guests = true -%}
-                {%- break -%}
-            {%- endif -%}
-        {%- endfor -%}
-    {%- endunless %}
-    {%- unless program-guest or can-have-guests -%}
-        {%- continue -%}
-    {%- endunless -%}
-
+{% for program in programs-with-guests -%}
 {%- capture details_summary -%}
 <h3>{{ program.title }}</h3>
 {%- endcapture -%}
@@ -134,25 +141,9 @@ Guest Program fees includes access to all festival activities for the full sessi
 
 Please refer to the program page for its cancellation policy:
 
-<ul>
-{%- for _p in site.data.festival.programs -%}
-    {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
-    {%- assign program-guest = program.tuition-guests -%}
-    {%- assign can-have-guests = false -%}
-    {%- unless program-guest -%}
-        {%- for session in program.sessions -%}
-            {%- if session.guests -%}
-                {%- assign can-have-guests = true -%}
-                {%- break -%}
-            {%- endif -%}
-        {%- endfor -%}
-    {%- endunless -%}
-    {%- unless program-guest or can-have-guests -%}
-        {%- continue -%}
-    {%- endunless %}
-{%- include site/program/get-apply-url.fx program=program hash="cancellation-policy-refunds" %}
-<li><a href="{{ __return }}">{{ program.title }}</a></li>
-{%- endfor -%}
-</ul>
+{%- for _p in programs-with-guests -%}
+{%- include site/program/get-apply-url.fx program=_p hash="cancellation-policy-refunds" %}
+* <a href="{{ __return }}">{{ _p.title }}</a>
+{% endfor -%}
 
 </section>

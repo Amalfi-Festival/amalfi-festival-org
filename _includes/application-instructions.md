@@ -11,26 +11,11 @@
 
 {% if application.allow-mail-registration %}
     * If you wish to register by mail, print and fill out the form.
-{%- endif -%}
-{%- unless application.form-url -%}
-    {%- for _p in site.data.festival.programs -%}
-        {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
-        {%- assign program-guest = program.tuition-guests -%}
-        {%- assign can-have-guests = false -%}
-        {%- unless program-guest -%}
-            {%- for session in program.sessions -%}
-                {%- if session.guests -%}
-                    {%- assign can-have-guests = true -%}
-                    {%- break -%}
-                {%- endif -%}
-            {%- endfor -%}
-        {%- endunless -%}
-        {%- unless program-guest or can-have-guests -%}
-            {%- continue -%}
-        {%- endunless %}
-    * [{{ program.title }}]({{ program.application.guest-form-url }})
-    {%- endfor -%}
-{%- endunless %}
+{%- elsif programs-with-guests -%}
+    {%- for _p in programs-with-guests %}
+    * <a href="[{{ _p.application.guest-form-url }}">{{ _p.title }}</a>
+    {% endfor -%}
+{%- endif %}
 
 1. Pay registration fee and deposit either <a href="{{ paymentRegistrationURL }}">electronically via PayPal</a><sup>†</sup> or by mail.
 
