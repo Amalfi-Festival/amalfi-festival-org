@@ -55,7 +55,7 @@ The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a 
 
 ## Concerts around the clock, art exhibits, and writing workshops plus Italian language & Mediterranean cooking classes!
 
-Concerts and master classes take place daily daily and are open to all festival participants. Seminars and workshops are offered by our outstanding faculty. Group meals provide opportunities to sample the finest in regional cuisine. Excursions to the area's outstanding tourist destinations round out the Amalfi experience!
+Concerts and master classes take place daily and are open to all festival participants. Seminars and workshops are offered by our outstanding faculty. Group meals provide opportunities to sample the finest in regional cuisine. Excursions to the area's outstanding tourist destinations round out the Amalfi experience!
 
 
 ## The Festival Spirit
