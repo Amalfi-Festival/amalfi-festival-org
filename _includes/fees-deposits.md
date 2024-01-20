@@ -8,7 +8,7 @@ registrations area also assessed a service fee.
 Deposits are accepted on a first-come basis as space is limited.
 Formal participation in the program may not be considered confirmed until
 deposits are accepted by Center for Musical Studies. For information on
-refunds, see [Cancellation Policy](#cancellation-policy--refunds).
+refunds, see [Cancellation Policy](#cancellation-policy-refunds).
  
 Price may be subject to change for currency, inflation, taxes, surcharges
 imposed, and fare increases as the price of the program was established {% include utilities/date.html date=site.data.festival.fees-and-deposits.prices-established-on %}.

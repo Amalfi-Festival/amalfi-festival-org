@@ -150,7 +150,7 @@ Please refer to the program page for its cancellation policy:
     {%- unless program-guest or can-have-guests -%}
         {%- continue -%}
     {%- endunless %}
-{%- include site/program/get-apply-url.fx program=program hash="cancellation-policy--refunds" %}
+{%- include site/program/get-apply-url.fx program=program hash="cancellation-policy-refunds" %}
 <li><a href="{{ __return }}">{{ program.title }}</a></li>
 {%- endfor -%}
 </ul>
