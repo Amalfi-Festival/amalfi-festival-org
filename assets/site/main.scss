@@ -519,6 +519,9 @@ img[data-jslghtbx] {
             margin-left: 0;
             font-weight: 600;
         }
+        &:not(html[lang="zn-cn"] *) .parenthetical:before {
+            content: " ";
+        }
         &:is(html[lang="zh-cn"] *) {
             h5, .parenthetical {
                 display: inline;
