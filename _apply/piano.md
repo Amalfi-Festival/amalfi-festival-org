@@ -35,6 +35,5 @@ During the application process, you may request lessons with the faculty listed 
 * Recordings must have been within the **last 12 months**.
 * Each work should be provided as **separate tracks**.
 
-{% include fees-deposits.md %}
 {% include site/program/cancellations.md %}
 

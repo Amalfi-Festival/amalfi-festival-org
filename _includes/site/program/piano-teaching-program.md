@@ -68,11 +68,9 @@
 {% include site/program/outings-fees.md %}
 {%- unless page.lang == "zh" -%}
 {% include application-instructions.md %}
-{% include fees-deposits.md %}
 {% include site/program/cancellations.md %}
 {%- else -%}
 {% include application-instructions-zh.md %}
-{% include fees-deposits-zh.md %}
 {% include site/program/cancellations-zh.md %}
 {%- endunless -%}
 
