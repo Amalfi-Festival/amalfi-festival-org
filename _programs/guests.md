@@ -136,7 +136,6 @@ Guest Program fees includes access to all festival activities for the full sessi
 {%- assign application-deposit = site.data.festival.application.deposit -%}
 {% include application-instructions.md %}
 
-{% include fees-deposits.md %}
 {% include cancellation-policy.md hide-table-intro-paragraph=true %}
 
 Please refer to the program page for its cancellation policy:

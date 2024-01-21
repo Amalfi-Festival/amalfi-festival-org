@@ -40,5 +40,4 @@ title: 申请钢琴艺术节
 
 请注意，我们将在收到完整的报名表和视频后开始处理您的报名。如果有任何问题或需要进一步协助，请随时联系我们。
 
-{% include fees-deposits-zh.md %}
 {% include site/program/cancellations-zh.md %}

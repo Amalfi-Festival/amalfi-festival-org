@@ -72,7 +72,6 @@ Friends and family members are welcome to join the tour as guests. They will enj
 
 {% include application-instructions.md %}
 
-{% include fees-deposits.md %}
 {% include site/program/cancellations.md %}
 
 </section>
