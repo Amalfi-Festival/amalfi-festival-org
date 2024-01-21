@@ -34,7 +34,7 @@ Can I come a day or two early or stay on after the festival?
 ## Everyday Concerns
  
 Do I need to bring any electrical appliances, such as a hairdryer?
-: We recommend you leave most electrical appliances at home. All accommodations (hotels and hostel) restrict the use of irons due to fire hazards. Electric water boilers are strictly prohibited.  Please note you will need a transformer  current as well as an adaptor plug to fit into the wall outlet (adaptors can also be found locally in hardware stores).
+: We recommend you leave most electrical appliances at home. All accommodations (hotels and hostel) provide hair dryers. The use of irons is restrictrd due to fire hazards. Electric water boilers are strictly prohibited.  Please note you will need a transformer  current as well as an adaptor plug to fit into the wall outlet (Adaptors can be found locally in hardware stores if you forget or lose yours).
  
 What kind of internet service is there in the town?
 : All accommodations have wireless service. The service can sometimes be inconsistent due to the position of the town between the mountains and the sea. 
@@ -57,11 +57,11 @@ Clothing
 Performers
 : Men are expected to perform in dress shirt while women should plan to appear in dressy summery attire. Please be sure to bring appropriate dress shoes. 
 
-Beach & Pool Wear
-: In addition to a bathing suit, a “cover-up” is a good idea so you can walk down to the beach. Be sure to pack hats & sunscreen for the dazzling Mediterranean sun!
+Beach Wear
+: In addition to a bathing suit, a “cover-up” is a good idea so you can walk down to the beach. Be sure to pack hats and sunscreen for the dazzling Mediterranean sun!
  
 Shoes
-: Both men and women who will be performing should  have dress shoes (or sandals for women.).
+: Both men and women who will be performing should have dress shoes (or sandals for women.).
  
 Everyday shoes
 : Because you will doing a lot of walking between the hotel and practice facilities, we recommend a pair of comfortable shoes or sandals. The Amalfi Coast is hilly terrain so be prepared to get some exercise, especially on excursion days.
