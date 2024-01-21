@@ -88,11 +88,11 @@
     zh: 我们将收取**~~~COST~~~**手续费。
     is-markdown: true
 -   key: deposit-forfeit
-    en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses.
+    en: Your ~COST~ deposit will be forfeited plus any prepaid nonrefundable expenses.
     zh: ~COST~订金将不予退还。其余已缴纳之不可退款项目皆不会被退回。
     is-markdown: true
 -   key: deposit-forfeit-with-deductible
-    en: Your ~COST~deposit will be forfeited plus any prepaid nonrefundable expenses up to **~~~DEDUCTIBLE~~~**.
+    en: Your ~COST~ deposit will be forfeited plus any prepaid nonrefundable expenses up to **~~~DEDUCTIBLE~~~**.
     zh: 您的~COST~订金以及最多**~~~DEDUCTIBLE~~~**的预付款皆不会被退回。
     is-markdown: true
 -   key: no-refund
