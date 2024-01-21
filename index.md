@@ -41,16 +41,17 @@ webpage-data:
 {% assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
 
 ## {{ festival-age }} Years of Music & Art on the Amalfi Coast
+
+{% assign _src = site.image-directory | append: "concert-choral-2022.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
 The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
 
 </section>
 
 <section class="copy" markdown="1">
 
-{% assign _src = site.image-directory | append: "concert-choral-2022.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
-{% assign _src = site.image-directory | append: "concert-pianos-2019.jpg" | relative_url -%}
+{% assign _src = site.image-directory | append: "concert-faculty-2023.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
 ## Concerts around the clock, art exhibits, and writing workshops plus Italian language & Mediterranean cooking classes!
