@@ -43,12 +43,12 @@ What kind of laundry facilities are there?
 : There are two laundromats in the center of town plus there is a dry cleaners that will do basic laundry (cost determined by weight) but it can take several days.  Many people do handwash in their sinks.  
  
 How do I obtain cash?
-: There are several ATM machines in town(called a Bancomat) to access money with your credit card. Be sure to check about fees associated with your credit card for international transactions.
+: In Maiori, there are several ATM machines (called a Bancomat in Italian) to access money with your credit card. Be sure to check about fees associated with your credit card for international transactions.
 
 ## What to Bring
 
 Carry-on Luggage
-: We strongly recommend you pack a basic over-night bag as part of your carry-on luggage with a change of clothes, sleepwear, basic toiletries, medications, and any other essentials you might need. In today's travel climate,  the occasional experienced serious problems with baggage handling, resulting in many late arrivals of luggage for our group (for the unlucky few, some bags arrive 3 or 4 days late). You may save yourself a lot of discomfort and anxiety by taking this precaution!  Also, make a photocopy of your passport and tuck it into your carry-on bag to have a record of it.
+: We strongly recommend you pack a basic over-night bag as part of your carry-on luggage that includes a change of clothes, sleepwear, basic toiletries, medications, and any other essentials you might need. In today's travel climate, occasional problems with baggage handling may result in delayed delivery of luggage (Sometimes lost or misplaced bags arrive 2 or 3 days late.). So, we advise this precaution for your own convenience and peace of mind. In addition, we recommend you take photos on your phone of your different luggage items in case you need to file a claim and also keep a photo of your passport.
  
  
 Clothing
