@@ -1,6 +1,9 @@
 ---
 title: 交通及旅行注意事项
+slug: getting-here-zh
 custom-css: getting-here
+webpage-data:
+    menu-title-zh: 如何到达
 ---
 
 <section class="standard-block" markdown="1">

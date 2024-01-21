@@ -23,6 +23,7 @@ tuition:
     hotel-single-upgrade: 945
 webpage-data:
     menu-title: Piano Teaching
+    menu-title-zh: 钢琴教学
     hero-image: abbazzia.jpg
     program-heads:
         -   person-slug: Yetong-Tang

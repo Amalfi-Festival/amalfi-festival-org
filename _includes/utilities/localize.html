@@ -23,7 +23,7 @@ Localize strings. Looks inside localizations.yaml, but can also retrieve strings
     {%- capture _t %}{{ include.source[_k] }}{%- endcapture -%}
 {%- include utilities/markdownify-without-p.html text=_t -%}
     {%- else -%}
-{{ include.source[_k] }}
+{{ include.source[_k] | default: include.source[include.key] }}
     {%- endif -%}
 {%- else -%}
     {%- assign entry = site.data.localizations | where: "key", include.string | first -%}

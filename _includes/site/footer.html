@@ -8,7 +8,11 @@
     <nav>
         <h1>Info</h1>
         <a href="{{ site.baseurl }}{% link payment.html %}">Payment Form</a>
-        <div><a href="{{ site.baseurl }}{% link getting-here.md %}">Getting Here</a> &middot; <a href="{{ site.baseurl }}{% link getting-here-zh.md %}">中文</a></div>
+        <div>
+            {%- assign _page = site.pages | where: "slug", "getting-here" | first -%}
+            {%- assign _page-zh = site.pages | where: "slug", "getting-here-zh" | first -%}
+            {%- if page.lang == "zh" %}<a href="{{ _page-zh.url | relative_url }}">{{ _page-zh.webpage-data.menu-title-zh }}</a>{% else %}<a href="{{ _page.url | relative_url }}">{{ _page.webpage-data.menu-title }}</a>{%- endif -%}
+        </div>
         <a href="{{ site.baseurl }}{% link excursions-and-activities.md  %}">Activities</a>
         <a href="{{ site.baseurl }}{% link faq.md %}">FAQ</a>
         <a href="{{ site.baseurl }}{% link staff.md %}">Staff</a>

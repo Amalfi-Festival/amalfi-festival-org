@@ -1,6 +1,9 @@
 ---
 title: Travel and Arrival Information
+slug: getting-here
 custom-css: getting-here
+webpage-data:
+    menu-title: Getting Here
 ---
 
 <section class="standard-block" markdown="1">

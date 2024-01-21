@@ -65,6 +65,7 @@ tuition-guests:
     hotel-single-upgrade: true
 webpage-data:
     menu-title: Piano
+    menu-title-zh: 钢琴项目
     hero-image: IMG_2351.jpg
     program-heads:
         -   person-slug: James-Giles
