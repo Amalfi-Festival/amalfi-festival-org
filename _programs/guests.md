@@ -121,7 +121,7 @@ Guest Program fees includes access to all festival activities for the full sessi
 
 {%- include site/program/get-apply-url.fx program=program hash="excursions--activities" -%}
 {%- assign _apply-url = __return -%}
-<tr class="base"><td><p><a href="{{ _apply-url }}">Fees for available excursions and activities</a></p>
+<tr class="base"><td colspan="2"><p><a href="{{ _apply-url }}">Fees for available excursions and activities</a></p>
 </td></tr>
 </tbody>
 </table>
