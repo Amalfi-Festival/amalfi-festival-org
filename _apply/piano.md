@@ -15,7 +15,7 @@ title: Apply to the Piano Program
 The Amalfi Festival's Piano Program offers 2 sessions, each of which includes:
 
 * Four 1-hour private lessons, with multiple faculty
-* An opportunity to participate in one master class
+* An opportunity to participate in a master class
 * An opportunity to perform in the Young Artist Series
 * Admission to all festival concerts
 

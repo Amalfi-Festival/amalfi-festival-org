@@ -9,7 +9,7 @@ hostel-triple:
 hotel-triple:
     name: Tuition with Hotel accommodations, triple occupancy
     name-zh: 学费含酒店住宿，三人间
-    description: Triple rooms includes buffet breakfast. **Limited number of triple rooms available.**
+    description: Triple room includes buffet breakfast. **Limited number of triple rooms available.**
     description-zh: 三人间包含自助早餐，但此房型较少
 
 hotel-double:

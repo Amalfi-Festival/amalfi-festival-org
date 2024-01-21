@@ -1,11 +1,11 @@
 ---
-title: Make a donation
+title: Support Us!
 custom-css: payment
 ---
 
 <section class="standard-block" markdown="1">
 
-## Make Your Gift to the Amalfi Coast Music & Arts Festival
+## Make a Donation to the Amalfi Coast Music & Arts Festival
 
 {% assign _src = site.image-directory | append: "dinner-minori-2023.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
