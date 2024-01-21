@@ -18,16 +18,9 @@
   title: Executive Director
   email: leslie.hyde@amalfi-festival.org
   headshot-filename: Leslie-Hyde.jpg
-- name: Fabrizio Soprano
-  title: Production Manager
-  email: fabrizio.soprano@gmail.com
-  headshot-filename: Fabrizio-Soprano.jpg
 - name: Manfredi Paterniti
   title: Business Director 
   headshot-filename: Manfredi-Paterniti.jpg
-- name: Teresa Rocciola
-  title: Publicist/Public Relations
-  headshot-filename: Teresa-Rocciola.jpg
 - name: Shichao Zhang
   title: Festival Manager
   email: shichao.zhang@amalfi-festival.org
@@ -36,6 +29,13 @@
   title: Piano Program Manager & Assistant to the Artistic Director, Head of the Piano Teaching Seminar
   email: yetong.tang@amalfi-festival.org
   person-slug: Yetong-Tang
+- name: Fabrizio Soprano
+  title: Production Manager
+  email: fabrizio.soprano@gmail.com
+  headshot-filename: Fabrizio-Soprano.jpg
+- name: Teresa Rocciola
+  title: Publicist/Public Relations
+  headshot-filename: Teresa-Rocciola.jpg
 - name: Paolo D'Agostino
   title: Production & Logistics Coordinator
   headshot-filename: Paolo-DAgostino.jpg
