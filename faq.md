@@ -37,7 +37,7 @@ Do I need to bring any electrical appliances, such as a hairdryer?
 : We recommend you leave most electrical appliances at home. All accommodations (hotels and hostel) provide hair dryers. The use of irons is restrictrd due to fire hazards. Electric water boilers are strictly prohibited.  Please note you will need a transformer  current as well as an adaptor plug to fit into the wall outlet (Adaptors can be found locally in hardware stores if you forget or lose yours).
  
 What kind of internet service is there in the town?
-: All accommodations have wireless service. The service can sometimes be inconsistent due to the position of the town between the mountains and the sea. 
+: All accommodations have wifi. The service can sometimes be inconsistent due to the position of the town between the mountains and the sea. 
  
 What kind of laundry facilities are there?
 : There are two laundromats in the center of town plus there is a dry cleaners that will do basic laundry (cost determined by weight) but it can take several days.  Many people do handwash in their sinks.  
@@ -71,8 +71,8 @@ Everyday shoes
 Medications/Health
 : All medications should be packed in your carry-on luggage so that you take no risk in losing them . Additionally, you should keep a detailed list of any prescription medications you rely on (in case of loss) plus the phone numbers of your physician. Your health insurance policy information should also be readily available.
  
-Appliances & Converters
- Please note that irons and water boilers are not permitted in the hotel rooms due to fire regulations. If absolutely necessary, keep in mind that for small appliances like electric razors, you will need a standard converter for European voltage (110: 220). You will also need a plug adapter to enable the U.S. plug to fit the standard Italian model (a plug with two round prongs). There are small, portable “travel hair-dryers" equipped with dual voltage to eliminate the need for a converter although you will still need an adapter.
+Adapters & Converters
+ Please note that irons and water boilers are not permitted in the hotel rooms due to fire regulations. For heavier applicances like electric razors, you will need a standard converter for European voltage (110: 220). You will also need a plug adapter to enable a foreign plug to fit the standard Italian outlet (a plug with two round prongs). It's possible to order a small, portable “travel hair-dryers" equipped with dual voltage to eliminate the need for a converter although you will still need an adapter.
  
 
 ## Meals
