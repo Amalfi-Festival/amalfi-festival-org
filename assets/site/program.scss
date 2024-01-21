@@ -96,6 +96,23 @@ h3 .label {
     }
 }
 
+body.piano-teaching, body.piano-teaching-zh {
+    section:first-of-type {
+        padding-bottom: 3rem;
+        @include breakpoint(tablet) {
+            display: flex;
+            flex-direction: column;
+
+            .highlight-box:nth-child(2) {
+                order: 3;
+            }
+            .highlight-box:nth-child(3) {
+                order: 4;
+            }
+        }
+    }
+}
+
 #faculty {
     background-color: white;
     padding: 3rem 0;

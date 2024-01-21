@@ -2,7 +2,16 @@
 {%- assign _src = site.program-assets-directory | append: "piano-teaching/seminar.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
 
+{% assign _src = site.program-assets-directory | append: "piano-teaching/group-1.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
+{% assign _src = site.program-assets-directory | append: "piano-teaching/group-2.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
+<div markdown="1">
 {{ opening }}
+</div>
+
 </section>
 
 <section id="faculty" markdown="1">
