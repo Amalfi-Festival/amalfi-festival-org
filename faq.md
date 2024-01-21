@@ -14,7 +14,7 @@ custom-css: faq
 ## Transportation to Italy
 
 Is air travel included in the program cost?
-: No, that cost is independent. 
+: No, you must make your air travel arrangements independently. Our staff is happy to advise you if you have questions. 
  
 What airport/city should I fly into?
 :Naples is the closest city to the Amalfi Coast with an international airport. The drive from the Naples airport to the festival can take 60 to 90 minutes, depending on traffic. If you prefer to fly into Rome, you must transfer to the downtown train station and take a train (approx. a 3-hour trip on Frecciarossa) to Naples. In Naples you will need to get a public bus to Maiori or else get a taxi to the Naples airport to join the group waiting for the festival shuttle bus. Otherwise, take a train to Salerno, the town closest to our facilities, where you can take a public bus (40 mins) to Maiori or arrange a private pick-up at the train station for approx. 80 euros. Night rates apply. 
