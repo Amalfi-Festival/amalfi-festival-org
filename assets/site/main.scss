@@ -616,7 +616,7 @@ img[data-jslghtbx] {
     }
 
     &.disabled {
-        cursor: pointer;
+        cursor: default;
         filter: saturate(0);
         &:hover {
             background: linear-gradient(to bottom right, #A5DEE8, #9FD8ED);
