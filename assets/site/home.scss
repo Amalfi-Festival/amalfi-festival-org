@@ -83,7 +83,7 @@ section#hero {
             display: flex;
             justify-content: flex-end;
             @include breakpoint(tablet) {
-                 width: min(50vh, calc(100% - 1.5rem));
+                 width: min(50vh, 70vw, calc(100% - 1.5rem));
             }
         }
         #svg-container {
@@ -108,11 +108,11 @@ section#hero {
         text-align: right;
         line-height: 1;
         padding-top: .5rem;
-        padding-bottom: .5em;
+        padding-bottom: .5rem;
         font-size: min(1.8rem, max(1rem, 4vh));
         @include breakpoint(tablet) {
             padding-right: 0;
-            font-size: min(3rem, 9vw, max(1rem, 4vh));
+            font-size: min(3rem, 7vw, max(1rem, 4vh));
         }
     }
     #hero-links {
@@ -127,7 +127,7 @@ section#hero {
         line-height: $standard-line-height;
         @include breakpoint(tablet) {
             text-align: center;
-            font-size: min(1.5rem, 5.5vw, max(.8rem, 3.2vh));
+            font-size: min(1.3rem, 4vw, max(.8rem, 3.2vh));
             line-height: 1.5;
             translate: .08em;
         }
