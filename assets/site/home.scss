@@ -8,15 +8,23 @@ body.has-hero > header {
 }
 body > main {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 @mixin section-padding {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-#festival + section {
+#festival ~ section {
     @include standard-block-behavior;
     @include section-padding;
+    clear: both;
+    h2 {
+        margin-top: 0;
+    }
+}
+#festival + section {
+    padding-bottom: 0;
 }
 
 section#hero {
@@ -290,7 +298,6 @@ section#spirit {
     }
 }
 
-
 section#festival {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -382,15 +389,15 @@ section#festival {
         font-size: 1.25em;
         margin: 0
     }
-
 }
 
 section#sponsors {
-    clear: both;
-    background-color: $background-color;
+    background-color: white;
     h2, h3 {
-        margin-top: 3rem;
         text-align: center;
+    }
+    h3 {
+        margin-top: 3rem;
     }
     .sponsor-gallery {
         display: flex;
