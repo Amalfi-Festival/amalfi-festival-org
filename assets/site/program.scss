@@ -7,12 +7,13 @@ body:has(#hero) {
     > main {
         margin-top: 0;
         h1 {
+            margin-top: 1rem;
             position: relative;
             z-index: 1;
             @include hero-text;
 
             a {
-                color: rgba(254, 252, 250, .6);
+                color: #{$background-color}f0;
                 &:hover {
                     color: $background-color;
                 }
@@ -23,6 +24,7 @@ body:has(#hero) {
 #hero {
     height: $hero-height;
     > .text {
+        @include backdrop-filter(blur(1px));
         position: absolute;
         bottom: 0;
         left: 0;

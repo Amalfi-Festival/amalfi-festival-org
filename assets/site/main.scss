@@ -218,6 +218,7 @@ body:has(#hero) > header {
     z-index: 1;
     width: 100%;
     @include hero-shadow-filter;
+    @include backdrop-filter(blur(1px));
 
     --selected-header-section-color: #{$logo-hero-dome-color};
     --header-link-color: #{$logo-hero-link-color};

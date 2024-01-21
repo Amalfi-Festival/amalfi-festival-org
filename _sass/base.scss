@@ -28,7 +28,7 @@ $logo-link-color: $brand-gold;
 $logo-link-hover-color: $brand-light-gold;
 $logo-hero-dome-color: #a7f1f0;
 $logo-hero-dome-hover-color: white;
-$logo-hero-link-color: #faf3ea;
+$logo-hero-link-color: #efefd7;
 $logo-hero-link-hover-color: white;
 
 $hero-height: min(80vh, 125vw);
@@ -49,7 +49,7 @@ $sidebar-width: 19rem;
 $sidebar-faculty-tile-padding: .5rem;
 
 @mixin hero-shadow-filter() {
-    filter:  drop-shadow(0 0 2px $dark-color) drop-shadow(0 0 10px #{$dark-color}c0);
+    filter:  drop-shadow(0 0 2px #000) drop-shadow(0 0 7px #{$dark-color});
 }
 @mixin hero-text() {
     color: $background-color;
