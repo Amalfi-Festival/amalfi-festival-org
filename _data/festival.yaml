@@ -5,11 +5,11 @@ edition: XXVII season, 2024
 ### have a matching filename in `_programs/`. If a program is not being offered this year, either
 ### comment out that item or delete it.
 programs:
+    -   program-slug: choral
     -   program-slug: piano
         zh: piano-zh
     -   program-slug: piano-teaching
         zh: piano-teaching-zh
-    -   program-slug: choral
     -   program-slug: visual-arts
     -   program-slug: writing
 
