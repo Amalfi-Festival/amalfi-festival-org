@@ -23,7 +23,7 @@ tuition:
     hotel-single-upgrade: 945
 webpage-data:
     menu-title: Piano Teaching
-    hero-image: amalfi-cloister.jpg
+    hero-image: abbazzia.jpg
     program-heads:
         -   person-slug: Yetong-Tang
             title: Co-Director
