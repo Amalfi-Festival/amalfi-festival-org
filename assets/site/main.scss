@@ -19,8 +19,18 @@
 }
 @font-face {
     font-family: 'Fahkwang';
+    font-weight: 500;
+    src: url({{ "/assets/site/fonts/Fahkwang-Medium.ttf" | relative_url }}) format('truetype');
+}
+@font-face {
+    font-family: 'Fahkwang';
     font-weight: 600;
     src: url({{ "/assets/site/fonts/Fahkwang-SemiBold.ttf" | relative_url }}) format('truetype');
+}
+@font-face {
+    font-family: 'Fahkwang';
+    font-weight: 700;
+    src: url({{ "/assets/site/fonts/Fahkwang-Bold.ttf" | relative_url }}) format('truetype');
 }
 
 :root {
@@ -59,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     letter-spacing: 0;
     font-weight: 600;
+}
+html[lang="zh-cn"] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 800;
 }
 :is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
     margin-top: 1rem;
@@ -498,7 +511,7 @@ img[data-jslghtbx] {
         > li:not(:first-child) {
             margin-top: 1.2em;
         }
-        div:has(+ div) {
+        .parenthetical {
             font-size: .9em;
         }
         :not(.description) div:last-child {
@@ -506,7 +519,14 @@ img[data-jslghtbx] {
             margin-left: 0;
             font-weight: 600;
         }
-
+        &:is(html[lang="zh-cn"] *) {
+            h5, .parenthetical {
+                display: inline;
+            }
+            .parenthetical {
+                font-size: unset;
+            }
+        }
         ul {
             list-style-type: disc;
         }
@@ -515,8 +535,11 @@ img[data-jslghtbx] {
                 display: inline;
             }
             li:not(.buttons) > *:nth-last-child(2):after {
-                content: ":";
+                content: ": ";
                 font-size: 1.05rem;
+            }
+            li:not(.buttons):where(html[lang="zh-cn"] *) > *:nth-last-child(2):after {
+                content: "：";
             }
             ul {
                 list-style-type: none;

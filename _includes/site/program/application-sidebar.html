@@ -1,7 +1,7 @@
 <ul class="highlight-box colored">
 <li>
     <h5>{% include utilities/localize.html string="Application deadline" %}</h5>
-{% if is-guests-page -%}
+{%- if is-guests-page -%}
     <div>See program page for details</div>
 {%- else -%}
     <div>{% include site/program/application-deadline.html %}</div>
@@ -11,14 +11,11 @@
 <li><span class="button disabled">{% include utilities/localize.html string="Applications closed" %}</span></li>
 {%- else -%}
 <li>
-    <h5>{% include utilities/localize.html string="Registration fee" %}</h5>
-    <div>{% include utilities/localize.html string="(non-refundable)" %}</div>
-    <div>{% include utilities/format-cost.html cost=application-registration-fee %}</div>
+    <h5>{% include utilities/localize.html string="Registration fee" %}</h5><div class="parenthetical">{% include utilities/localize.html string="(non-refundable)" %}</div><div>{% include utilities/format-cost.html cost=application-registration-fee %}</div>
 </li>
 <li>
-    <h5>{% include utilities/localize.html string="Deposit" %}</h5>
-    <div>{% include utilities/localize.html string="deposit-refundable" replace-key="~~~URL~~~" replace-value="#cancellation-policy-refunds" %}</div>
-    {% if is-guests-page -%}
+    <h5>{% include utilities/localize.html string="Deposit" %}</h5><div class="parenthetical">{% include utilities/localize.html string="deposit-refundable" replace-key="~~~URL~~~" replace-value="#cancellation-policy-refunds" %}</div>
+    {%- if is-guests-page -%}
     <div>See program page for details</div>
     {%- else -%}
     <div>{% include utilities/format-cost.html cost=application-deposit %}</div>

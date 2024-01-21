@@ -1,7 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.lang }}" lang="{% if page.lang == "zh" %}zh-cn{% else %}en-us{% endif %}">
 {%- include site/head.html -%}
 {%- capture body-class -%}
     {%- if layout.body-class or page.body-class -%}

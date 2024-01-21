@@ -61,7 +61,7 @@ h3 .label {
             margin-left: $sidebar-margin-left;
             margin-bottom: 3rem;
         }
-        > *:first-child:where(body:where(body.piano, body.piano-zh) #header.sidebar > *:first-child) {
+        > *:first-child:where(body.piano *, body.piano-zh *) {
             width: 32vw;
         }
 

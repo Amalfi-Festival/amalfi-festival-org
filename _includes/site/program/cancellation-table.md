@@ -58,7 +58,7 @@
 {%- if application-deposit -%}
     {%- capture _cost -%}
     <strong>{% include utilities/format-cost.html cost=application-deposit %}</strong>
-    {% endcapture -%}
+    {%- endcapture -%}
 {%- else -%}
     {%- assign _cost = "" -%}
 {%- endif -%}
