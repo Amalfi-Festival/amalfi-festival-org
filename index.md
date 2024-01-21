@@ -113,7 +113,7 @@ Participants take excursions and enjoy meals together, spend time on the beach, 
 
 </section>
 
-<section class="copy" markdown="1">
+<section class="copy standard-block" markdown="1">
 
 {% assign _src = site.image-directory | append: "view-minori.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
@@ -127,7 +127,7 @@ The Amalfi Guest Program offers a unique opportunity in cultural tourism. Sit in
 </section>
 
 
-<section class="copy" markdown="1">
+<section class="copy standard-block" markdown="1">
 
 {% assign _src = site.image-directory | append: "dinner-toast-2023.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
