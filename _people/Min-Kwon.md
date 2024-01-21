@@ -1,18 +1,11 @@
 ---
 first-name: Min
 last-name: Kwon
-<<<<<<< Updated upstream
 zh-name: 权敏
 prefers-en-name: true
 school: Rutgers University
 school-zh: 罗格斯大学
-
-=======
-zh-name: # Chinese name, if available
-school: # Rutgers University
-school-zh: # Chinese name of the school.
 website: https://http://www.minkwon.net
->>>>>>> Stashed changes
 ---
 
 Korean-born American pianist Min Kwon excels in a versatile career that encompasses concerti, solo recitals, and chamber music appearances, while in high demand around the world as pedagogue, arts advocate, and administrator. She has held professional engagements in over 60 countries on seven continents and all 50 U.S. states. 
