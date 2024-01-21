@@ -59,9 +59,9 @@ Guest Program fees includes access to all festival activities for the full sessi
 <table>
 <tbody>
 
-{%- if program-guest.intro -%}
-<tr><td colspan="2"><p>{{ program-guest.intro | smartify }}</p></td></tr>
-{%- endif -%}
+{%- if program.tuition-guests.intro -%}
+<tr><td colspan="2"><p>{{ program.tuition-guests.intro | smartify }}</p></td></tr>
+{%- endif %}
 
 {% comment %}This next section is taken from tuition-accommodations.md{% endcomment %}
 
@@ -121,7 +121,7 @@ Guest Program fees includes access to all festival activities for the full sessi
 
 {%- include site/program/get-apply-url.fx program=program hash="excursions--activities" -%}
 {%- assign _apply-url = __return -%}
-<tr class="base"><td colspan="2"><p><a href="{{ _apply-url }}">Fees for available excursions and activities</a></p>
+<tr class="base"><td colspan="2"><p><a href="{{ _apply-url }}">Fees for available excursions and activities</a></p><p><a href="{{ program.url | relative_url }}">Learn more about the {{ program.title }}</a></p>
 </td></tr>
 </tbody>
 </table>
