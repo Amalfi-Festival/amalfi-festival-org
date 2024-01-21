@@ -40,7 +40,7 @@ What kind of internet service is there in the town?
 : All accommodations have wireless service. The service can sometimes be inconsistent due to the position of the town between the mountains and the sea. 
  
 What kind of laundry facilities are there?
-: There are two laundromats in the town in close proximity.  There is a dry cleaners that will do basic laundry (cost determined by the kilo) but it can take several days.  Many people do handwash in their sinks.  
+: There are two laundromats in the center of town plus there is a dry cleaners that will do basic laundry (cost determined by weight) but it can take several days.  Many people do handwash in their sinks.  
  
 How do I obtain cash?
 : There are several ATM machines in town(called a Bancomat) to access money with your credit card. Be sure to check about fees associated with your credit card for international transactions.
