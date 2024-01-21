@@ -50,7 +50,7 @@ The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a 
 <section id="immersion">
     <div class="dome-container"><svg><use xlink:href="#dome" /></svg></div>
     <div class="standard-block">
-        <img src="{{ site.image-directory | append: "concert-piano-thunderstorm-2019.jpg" | relative_url }}" />
+        <img src="{{ site.image-directory | append: "concert-piano-thunderstorm-2019.jpg" | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
 <div markdown="1">
 
 ## A Mediterranean Cultural Immersion
@@ -61,7 +61,7 @@ Concerts and master classes take place daily and are open to all festival partic
 </section>
 
 <section id="spirit" class="background-image-container parallax">
-    <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
+    <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
 <div class="inset-container">
 <div class="content-container" markdown="1">
 
