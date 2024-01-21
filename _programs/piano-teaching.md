@@ -1,6 +1,6 @@
 ---
 title: Piano Teaching Seminar
-to-be-announced: true
+#to-be-announced: true
 sessions:
     -   dates:
             start: 2024-07-10

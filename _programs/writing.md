@@ -1,6 +1,6 @@
 ---
 title: Writers' Studio
-to-be-announced: true
+#to-be-announced: true
 sessions:
     -   class-name: writing-studio
         dates:
