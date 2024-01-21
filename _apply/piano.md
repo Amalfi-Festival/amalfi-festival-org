@@ -10,7 +10,7 @@ title: Apply to the Piano Program
 {:toc}
 </div>
 
-## Program details and application
+## Program Details and Application
 
 The Amalfi Festival's Piano Program offers 2 sessions, each of which includes:
 
@@ -29,7 +29,7 @@ During the application process, you may request lessons with the faculty listed 
 
 {% include application-instructions.md %}
 
-### Recording guidelines
+### Recording Guidelines
 
 * Application should include **video** recordings of **two** works, preferably solo, which demonstrate a contrast of style and character. Individual movements of sonatas and suites are allowed.
 * Recordings must have been within the **last 12 months**.
