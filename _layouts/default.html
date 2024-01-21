@@ -18,19 +18,6 @@
 </main>
 {%- include site/footer.html -%}
 
-<script>
-(() => {
-var h = document.getElementById("hero");
-var scale = 1.1;
-var scaleRemainder = scale - 1;
-if (h) {
-    var vh = window.innerHeight;
-    var eh = h.clientHeight;
-    document.querySelector("#hero img").style.transform = `translateY(${(vh/(vh+eh)*scaleRemainder*eh - scaleRemainder*.5*eh).toFixed(1)}px) scale(${scale})`;
-}
-var image = document.querySelectorAll('.background-image-container.parallax > img:first-child');
-new simpleParallax(image, { orientation: 'down', scale: scale, customWrapper: '.background-image-container' });
-})();
-</script>
+<script>(() => { parallaxify("hero"); })();</script>
 </body>
 </html>

@@ -23,10 +23,8 @@ webpage-data:
     header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
-<section id="hero">
-    <div class="background-image-container parallax">
-        <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
-    </div>
+<section id="hero" class="background-image-container parallax">
+    <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
     <div id="masthead">
         <div class="logo">
             <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
@@ -36,33 +34,44 @@ webpage-data:
     </div>
 </section>
 
-<section class="copy" markdown="1">
-
-{% assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
+<section id="years">
+    <div class="standard-block">
+        <img src="{{ site.image-directory | append: "concert-choral-2022.jpg" | relative_url }}" />
+<div markdown="1">
+{%- assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
 
 ## {{ festival-age }} Years of Music & Art on the Amalfi Coast
 
-{% assign _src = site.image-directory | append: "concert-choral-2022.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
-
 The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
-
+</div>
+    </div>
 </section>
 
-<section class="copy" markdown="1">
+<section id="immersion">
+    <div class="dome-container"><svg><use xlink:href="#dome" /></svg></div>
+    <div class="standard-block">
+        <img src="{{ site.image-directory | append: "concert-piano-thunderstorm-2019.jpg" | relative_url }}" />
+<div markdown="1">
 
-{% assign _src = site.image-directory | append: "concert-faculty-2023.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
+## A Mediterranean Cultural Immersion
 
-## Concerts around the clock, art exhibits, and writing workshops plus Italian language & Mediterranean cooking classes!
+Concerts and master classes take place daily and are open to all festival participants. Our outstanding faculty offer seminars and workshops. Group meals provide opportunities to sample the finest in regional cuisine. Excursions to the area's outstanding tourist destinations round out the Amalfi experience!
+</div>
+    </div>
+</section>
 
-Concerts and master classes take place daily and are open to all festival participants. Seminars and workshops are offered by our outstanding faculty. Group meals provide opportunities to sample the finest in regional cuisine. Excursions to the area's outstanding tourist destinations round out the Amalfi experience!
-
+<section id="spirit" class="background-image-container parallax">
+    <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
+<div class="inset-container">
+<div class="content-container" markdown="1">
 
 ## The Festival Spirit
+
 More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists, writers and guests from a wide range of countries to interact and learn from each other while engaged in the creative process.
 
 Participants take excursions and enjoy meals together, spend time on the beach, and in this close-knit community form long-lasting friendships and invaluable professional associations. 
+</div>
+</div>
 </section>
 
 <section id="festival" class="background-image-container parallax">
@@ -70,7 +79,7 @@ Participants take excursions and enjoy meals together, spend time on the beach, 
 
 <div class="inset-container">
 <div class="content-container">
-<h2 id="programs">Programs</h2>
+<h2 id="programs">Our {{ site.data.festival.application.deadline | date: "%Y" }} Season</h2>
 <div>
 {%- for _p in site.data.festival.programs -%}
 {%- assign _ps = _p.program-slug -%}
@@ -159,3 +168,5 @@ Your donations keep the festival thriving and provide much needed scholarship fu
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
+
+<script>(() => { parallaxify("spirit", 1.5); parallaxify("festival"); })();</script>

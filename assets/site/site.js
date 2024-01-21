@@ -111,6 +111,24 @@ class Accordion {
   }
 }
 
+function parallaxify(containerId, scale = 1.2) {
+  var container = document.getElementById(containerId);
+  var image = document.querySelector(`#${containerId} > img`);
+  if (!image)
+    return;
+  var scaleRemainder = scale - 1;
+
+  var vh = window.innerHeight;
+  var eh = container.clientHeight;
+  image.style.transform = `translateY(${(vh / (vh + eh) * scaleRemainder * eh - scaleRemainder * .5 * eh).toFixed(1)}px) scale(${scale})`;
+
+  new simpleParallax(image, {
+    orientation: 'down',
+    scale: scale,
+    customWrapper: '.background-image-container'
+  });
+}
+
 window.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll('details').forEach((el) => {
     new Accordion(el);

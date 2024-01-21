@@ -9,12 +9,14 @@ body.has-hero > header {
 body > main {
     margin-top: 0;
 }
-section {
-    &:not(:first-of-type, #festival) {
-        @include standard-block-behavior;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
+
+@mixin section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#festival + section {
+    @include standard-block-behavior;
+    @include section-padding;
 }
 
 section#hero {
@@ -149,6 +151,145 @@ section#hero {
         }
     }
 }
+
+#years, #immersion {
+    @include section-padding;
+    position: relative;
+
+    > div {
+        display: flex;
+        gap: 2rem;
+        @include breakpoint(mid-desktop) {
+            gap: 3rem;
+        }
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+            @include breakpoint(min-desktop) {
+                width: 52%;
+            }
+        }
+
+        h2 {
+            text-align:center;
+            margin-top: 0;
+        }
+    }
+}
+
+#years, #immersion, #spirit {
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        margin-left: 0;
+    }
+    @include breakpoint(mid-desktop) {
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+section#years {
+    background: linear-gradient(to bottom right, #fff5d1, #ffe7a3);
+    > div {
+        flex-direction: row-reverse;
+        @include breakpoint(tablet) {
+            flex-direction: column-reverse;
+        }
+        > div {
+            @include breakpoint(min-desktop) {
+                padding-left: 1rem;
+            }
+            @include breakpoint(mid-desktop) {
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+section#immersion {
+    background: linear-gradient(to bottom left, #9de2d9, #69a7d6);
+    > div {
+        @include breakpoint(tablet) {
+            flex-direction: column;;
+        }
+        > div {
+            @include breakpoint(min-desktop) {
+                padding-right: 1rem;
+            }
+            @include breakpoint(mid-desktop) {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .dome-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: clip;
+        left: 0;
+        top: 0;
+        mix-blend-mode: overlay;
+        opacity: .5;
+    }
+    svg {
+        position: absolute;
+        height: 84%;
+        aspect-ratio: .45;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+section#spirit {
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .inset-container {
+        @include breakpoint(tablet) {
+            @include standard-block-behavior;
+        }
+        @include breakpoint(min-desktop) {
+            width: 70%;
+        }
+        @include breakpoint(mid-desktop) {
+            width: 50%;
+        }
+    }
+
+    .content-container {
+        background: linear-gradient(to bottom, #158789e8, #175657f8);
+        color: $background-color;
+        border-radius: 1rem;
+        @include backdrop-filter(blur(2px));
+
+        padding: 3rem 4rem;
+        @include breakpoint(mobile) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    h2 {
+        text-align:center;
+        margin-top: 0;
+    }
+}
+
 
 section#festival {
     padding-top: 3rem;
