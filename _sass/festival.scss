@@ -28,12 +28,12 @@ h1 div {
     }
     a {
         text-decoration: none;
-        color: rgba(34, 26, 16, .4);
-        font-weight: 300;
+        color: #{$body-color}80;
+        font-weight: 400;
         &:hover {
             color: $body-color;
             letter-spacing: 0;
-            font-weight: 600;
+            font-weight: 700;
         }
     }
 }

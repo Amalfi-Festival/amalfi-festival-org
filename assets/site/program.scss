@@ -13,7 +13,7 @@ body:has(#hero) {
             @include hero-text;
 
             a {
-                color: #{$background-color}f0;
+                color: #{$background-color}d0;
                 &:hover {
                     color: $background-color;
                 }
