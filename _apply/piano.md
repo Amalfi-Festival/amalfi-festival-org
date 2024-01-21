@@ -10,7 +10,7 @@ title: Apply to the Piano Program
 {:toc}
 </div>
 
-## Program Details and Application
+## Program Details & Application
 
 The Amalfi Festival's Piano Program offers 2 sessions, each of which includes:
 
