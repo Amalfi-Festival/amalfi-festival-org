@@ -160,7 +160,7 @@ section .image-container {
     }
 }
 
-body.piano main { // used to be main:has(#learn) (see #60)
+body.piano main, body.piano-zh main { // used to be main:has(#learn) (see #60)
     margin-bottom: 0;
 }
 section#learn {
