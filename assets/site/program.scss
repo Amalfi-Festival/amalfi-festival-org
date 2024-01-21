@@ -176,6 +176,7 @@ section#learn {
     padding-bottom: 6rem;
     h3 {
         margin: 0;
+        font-size: 1em;
         padding: 1.2em;
         background: linear-gradient(to bottom, #FAD170DD, #{$brand-light-yellow}DD);
         @include backdrop-filter(blur(3px));

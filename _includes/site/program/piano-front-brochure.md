@@ -62,6 +62,6 @@
 <section id="learn" class="background-image-container parallax">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
-<a class="apply button" href="{{ apply-url }}">{% if reference-program.applications-closed %}{% include utilities/localize.html string="Learn more" %}{% else %}{% include utilities/localize.html string="Learn more and apply" %}{% endif %}</a>
+<a class="apply button" href="{{ apply-url }}">{% if reference-program.applications-closed %}{% include utilities/localize.html string="Learn more" %}{% else %}{% include utilities/localize.html string="Learn more & apply" %}{% endif %}</a>
 </section>
 
