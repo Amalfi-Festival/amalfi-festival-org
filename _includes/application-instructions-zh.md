@@ -11,29 +11,6 @@
 
 1. 网上填写并提交{% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}application form.{% endif %}
 
-{% if application.allow-mail-registration %}
-    * If you wish to register by mail, print and fill out the form.
-{%- endif -%}
-{%- unless application.form-url -%}
-    {%- for _p in site.data.festival.programs -%}
-        {%- assign program = site.programs | where: "slug", _p.program-slug | first -%}
-        {%- assign program-guest = program.tuition-guests -%}
-        {%- assign can-have-guests = false -%}
-        {%- unless program-guest -%}
-            {%- for session in program.sessions -%}
-                {%- if session.guests -%}
-                    {%- assign can-have-guests = true -%}
-                    {%- break -%}
-                {%- endif -%}
-            {%- endfor -%}
-        {%- endunless -%}
-        {%- unless program-guest or can-have-guests -%}
-            {%- continue -%}
-        {%- endunless %}
-    * [{{ program.title }}]({{ program.application.guest-form-url }})
-    {%- endfor -%}
-{%- endunless %}
-
 1. 通过 <a href="{{ paymentRegistrationURL }}">PayPal</a>**\*** 或邮寄支票缴纳注册费及押金。
 
     * 如邮寄支票，收款人请写 *Center for Musical Studies* 并邮寄至:

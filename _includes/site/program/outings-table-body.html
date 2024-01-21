@@ -26,7 +26,7 @@
 <td>
     <p class="name">{{ _name }}{% if _length %} {{ _length }}{% endif %}</p>
     {%- if _description -%}
-    <p class="description">{{ _description }} {{ _additional-description }} <a href="{{ site.baseurl }}{% link excursions-and-activities.md %}#{{ _outing.outing-slug | downcase }}">{% include utilities/localize.html string="Learn more" %}</a></p>
+    <p class="description">{{ _description }}{% unless page.lang == "zh" %} {{ _additional-description }}{% else %}{{ _additional-description }}{% endunless %} <a href="{{ site.baseurl }}{% link excursions-and-activities.md %}#{{ _outing.outing-slug | downcase }}">{% include utilities/localize.html string="Learn more" %}</a></p>
     {%- endif -%}
 </td><td class="cost" align="center" valign="top"><p>
     {%- if _cost == 0 -%}
