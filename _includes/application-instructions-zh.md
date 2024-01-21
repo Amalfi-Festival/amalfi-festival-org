@@ -7,8 +7,6 @@
 
 {% include site/program/application-sidebar.html %}
 
-报名流程
-
 1. 网上填写并提交{% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}application form.{% endif %}
 
 1. 通过 <a href="{{ paymentRegistrationURL }}">PayPal</a>**\*** 或邮寄支票缴纳注册费及押金。
