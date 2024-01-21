@@ -40,10 +40,10 @@ What kind of internet service is there in the town?
 : All accommodations have wifi. The service can sometimes be inconsistent due to the position of the town between the mountains and the sea. 
  
 What kind of laundry facilities are there?
-: There are two laundromats in the center of town plus there is a dry cleaners that will do basic laundry (cost determined by weight) but it can take several days.  Many people do handwash in their sinks.  
+: There are two laundromats in the center of town plus there is a dry cleaners that will wash and fold your laundry (cost determined by weight) but it can take several days.  Many people do handwash in their sinks.  
  
 How do I obtain cash?
-: In Maiori, there are several ATM machines (called a Bancomat in Italian) to access money with your credit card. Be sure to check about fees associated with your credit card for international transactions.
+: In Maiori, there are several ATM machines (called a Bancomat in Italian) to access Euros with your credit card. Be sure to check about fees associated with your credit card for international transactions.
 
 ## What to Bring
 
@@ -54,10 +54,10 @@ Carry-on Luggage
 Clothing
 : Be prepared to bring clothes for hot weather and a bathing suit for the beach. Dress during the day is informal. Keep in mind,that Italians don't usually wear shorts. Women will feel most comfortable in sun dresses or summery skirts and tops. For evenings, be prepared to dress for concerts. Please note: No shorts or tank tops are permitted in the hotel dining area at dinner.
  
-Performers
+Attire for Performers
 : Men are expected to perform in dress shirt while women should plan to appear in dressy summery attire. Please be sure to bring appropriate dress shoes. 
 
-Beach Wear
+Beachwear
 : In addition to a bathing suit, a “cover-up” is a good idea so you can walk down to the beach. Be sure to pack hats and sunscreen for the dazzling Mediterranean sun!
  
 Shoes
@@ -101,7 +101,7 @@ What do you mean by triple occupancy?
 ## Hostel: 
 
 What are the hostel accommodtions like?
-: The hostel accommodations vary from year to year. They are generally dormitory-style accommodations with shared rooms, simple furnishings, and a shared bathroom. Central air conditioning may be limited to smaller units.  No breakfast is included. 
+: The hostel accommodations vary from year to year. They are generally dormitory-style accommodations with shared rooms, simple furnishings, and a shared bathroom. Central air conditioning may be limited to smaller units by room.  No breakfast is included. 
  
 
 ## Insurance
@@ -111,6 +111,6 @@ Why do you recommend travel insurance?
 See listing of travel insurance agencies.
  
 Does my health insurance cover me in Italy?
-: You need to check your policy carefully to understand what kind of international coverage your provider offers. If there is any doubt, we recommend you consider a short-term policy for travel abroad to have a guarantee of coverage. 
+: You need to check your policy carefully to understand what kind of international coverage your provider offers. If there is any doubt, we recommend you consider a short-term policy for travel abroad to have guaranteed coverage. 
 
 </section>
