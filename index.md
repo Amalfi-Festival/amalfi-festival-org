@@ -36,7 +36,7 @@ webpage-data:
 
 <section id="years">
     <div class="standard-block">
-        <img src="{{ site.image-directory | append: "concert-choral-2022.jpg" | relative_url }}" />
+        <img src="{{ site.image-directory | append: "concert-choral-2022.jpg" | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
 <div markdown="1">
 {%- assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
 
@@ -61,7 +61,7 @@ Concerts and master classes take place daily and are open to all festival partic
 </section>
 
 <section id="spirit" class="background-image-container parallax">
-    <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
+    <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <div class="inset-container">
 <div class="content-container" markdown="1">
 
