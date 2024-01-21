@@ -34,7 +34,7 @@ Can I come a day or two early or stay on after the festival?
 ## Everyday Concerns
  
 Do I need to bring any electrical appliances, such as a hairdryer?
-: We recommend you leave most electrical appliances at home. All accommodations (hotels and hostel) provide hair dryers. The use of irons is restrictrd due to fire hazards. Electric water boilers are strictly prohibited.  Please note you will need a transformer  current as well as an adaptor plug to fit into the wall outlet (Adaptors can be found locally in hardware stores if you forget or lose yours).
+: We recommend you leave most electrical appliances at home. All accommodations (hotels and hostel) provide hair dryers. The use of irons is restrictrd due to fire hazards. Electric water boilers are strictly prohibited.  Please note you will need an adaptor plug for your chargers so they fit into the wall outlet (Adaptors can be found locally in hardware stores if you forget or lose yours).
  
 What kind of internet service is there in the town?
 : All accommodations have wifi. The service can sometimes be inconsistent due to the position of the town between the mountains and the sea. 
@@ -96,7 +96,7 @@ Do all Hotels have private bathrooms?
 Yes.
  
 What do you mean by triple occupancy?
-: The standard option for students is a shared room with three (3) beds. Double and single rooms are also available for a supplemental cost.
+: The standard option for students is a room with three (3) beds to be shared with two other roommates. Double (2 people) and single (private) rooms are also available for a supplemental cost. You may request specific roommates or the festival will assign appropriate students to share your room. 
 
 ## Hostel: 
 
