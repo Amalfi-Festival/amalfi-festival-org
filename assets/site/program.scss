@@ -3,7 +3,7 @@
 @charset "utf-8";
 @import "base", "festival";
 
-body:has(#hero) {
+body.has-hero {
     > main {
         margin-top: 0;
         h1 {
@@ -160,7 +160,7 @@ section .image-container {
     }
 }
 
-main:has(#learn) {
+body.piano main { // used to be main:has(#learn) (see #60)
     margin-bottom: 0;
 }
 section#learn {

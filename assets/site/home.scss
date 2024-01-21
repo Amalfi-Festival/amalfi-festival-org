@@ -3,7 +3,7 @@
 @charset "utf-8";
 @import "base";
 
-body:has(#hero) > header {
+body.has-hero > header {
     display: none;
 }
 body > main {

@@ -207,8 +207,8 @@ td.cost {
 tr:not(.header):has(+ tr:not(.base)) p:last-child {
     margin-block-end: 0;
 }
-tr:has(+ tr.base) {
-    border-bottom: $border-style;
+tr + tr.base {
+    border-top: $border-style;
 }
 .upgrade {
     td:first-child p {

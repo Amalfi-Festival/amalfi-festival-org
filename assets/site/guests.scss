@@ -20,8 +20,8 @@ details {
         margin-left: 0;
         border: 0;
     }
-    tr:has(+ tr.base) {
-        border-bottom: border-style-with-color($brand-blue);
+    tr + tr.base {
+        border-top: border-style-with-color($brand-blue);
     }
 
 }

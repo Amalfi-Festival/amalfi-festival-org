@@ -18,7 +18,7 @@ sponsors:
         - progetto.jpg
         - coelmo.jpg
 custom-css: home
-body-class: home
+body-class: home has-hero
 webpage-data:
     header-blend-mode: normal
 ---

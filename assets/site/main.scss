@@ -102,7 +102,7 @@ strong { font-weight: 600; }
         --logo-festival: var(--logo-coast);
     }
 }
-body:has(#hero) .logo:not(footer .logo) {
+body.has-hero .logo:not(footer .logo) {
     --logo-dome: #{$logo-hero-dome-color};
     --logo-coast: #{$logo-hero-link-color};
     svg:hover {
@@ -211,7 +211,7 @@ body > header {
     {%- endif -%}
 {%- endfor -%}
 }
-body:has(#hero) > header {
+body.has-hero > header {
     position: absolute;
     top: 0;
     left: 0;
