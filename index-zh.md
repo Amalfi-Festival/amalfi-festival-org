@@ -74,7 +74,7 @@ permalink: /zh/
 {%- endcapture -%}
 
 {%- capture sponsors-title -%}
-感谢我们慷慨的赞助商
+感谢我们慷慨的赞助方
 {%- endcapture -%}
 
 {%- capture sponsors-government -%}
@@ -82,7 +82,7 @@ permalink: /zh/
 {%- endcapture -%}
 
 {%- capture sponsors-corporate -%}
-企业赞助商
+企业赞助方
 {%- endcapture -%}
 
 {%- include site/festival/home.md -%}
