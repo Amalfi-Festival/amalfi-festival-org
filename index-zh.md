@@ -57,7 +57,7 @@ permalink: /zh/
 {%- endcapture -%}
 
 {%- capture sponsors-title -%}
-感谢我们慷慨的赞助方
+向我们慷慨的赞助方致以诚挚的感谢
 {%- endcapture -%}
 
 {%- capture sponsors-government -%}

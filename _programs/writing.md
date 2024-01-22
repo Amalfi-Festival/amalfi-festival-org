@@ -22,6 +22,7 @@ tuition:
     hotel-single-upgrade: 430
 webpage-data:
     menu-title: Writing
+    menu-title-zh: 作家工作室
     hero-image: ravello-villa-cimbrone.jpg
 ---
 {%- include site/program/initialize-program-variables.fx -%}
