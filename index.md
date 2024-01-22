@@ -67,9 +67,9 @@ Concerts and master classes take place daily and are open to all festival partic
 
 ## The Festival Spirit
 
-More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists, writers and guests from a wide range of countries to interact and learn from each other while engaged in the creative process.
+More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists, writers and guests from a wide range of countries to interact and learn from each other while engaged in the creative process, taking inspiration from the breathtaking surroundings. A uniquely collaborative and supportive environment is essential to the Amalfi experience.
 
-Participants take excursions and enjoy meals together, spend time on the beach, and in this close-knit community form long-lasting friendships and invaluable professional associations. 
+In their free time, participants take excursions and enjoy meals together, spend time on the beach, and in this close-knit community form long-lasting friendships and invaluable professional associations. The Amalfi experience lasts a lifetime!
 </div>
 </div>
 </section>
