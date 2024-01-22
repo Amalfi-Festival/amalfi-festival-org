@@ -19,8 +19,6 @@ sponsors:
         - coelmo.jpg
 custom-css: home
 body-class: home has-hero
-webpage-data:
-    header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
 <header id="hero" class="background-image-container parallax">
