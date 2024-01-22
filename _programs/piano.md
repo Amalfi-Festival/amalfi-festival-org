@@ -1,7 +1,7 @@
 ---
 title: Piano Program
 sessions:
-    -   session-name: Session I
+    -   session-name: Session 1
         session-name-zh: 第一期
         dates:
             start: 2024-07-05
@@ -20,7 +20,7 @@ sessions:
         associate-faculty:
             -   Yetong-Tang
             -   Shichao-Zhang
-    -   session-name: Session II
+    -   session-name: Session 2
         session-name-zh: 第二期
         dates:
             start: 2024-07-18
