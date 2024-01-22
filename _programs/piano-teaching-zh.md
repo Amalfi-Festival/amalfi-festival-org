@@ -2,8 +2,7 @@
 reference-program-slug: piano-teaching
 title: 钢琴教学研讨会
 lang: zh
-webpage-data:
-    program-header-subtitle: "<h3>唐业彤, 联合项目主管<br/>张世超, 联合项目主管</h3>"
+permalink: /zh/piano-teaching
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

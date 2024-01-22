@@ -2,6 +2,7 @@
 reference-program-slug: piano
 title: 钢琴艺术节
 lang: zh
+permalink: /zh/piano
 webpage-data:
     menu-title: 钢琴艺术节
 ---

@@ -2,6 +2,7 @@
 program-name: piano-zh
 lang: zh
 title: 申请钢琴艺术节
+permalink: /zh/piano-apply
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
