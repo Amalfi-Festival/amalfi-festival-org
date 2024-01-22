@@ -34,7 +34,7 @@ body > main {
     padding-bottom: 0;
 }
 
-section#hero {
+header#hero {
     position: relative;
     width: 100vw;
     max-width: 100vw;
@@ -53,6 +53,10 @@ section#hero {
     img {
         object-fit: cover;
         object-position: 75% 55%;
+    }
+    h2 {
+        margin: 0;
+        font-weight: 500;
     }
     #masthead {
         position: absolute;
@@ -84,7 +88,8 @@ section#hero {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: min-content;
-        gap: .3rem;
+        justify-items: flex-end;
+        gap: min(.3rem, 1vh);
 
         @include breakpoint(tablet) {
             justify-items: center;
@@ -96,16 +101,16 @@ section#hero {
         }
 
         #logo-container {
-            padding-top: 1rem;
+            padding-bottom: .3rem;
             display: flex;
             justify-content: flex-end;
             @include breakpoint(tablet) {
-                 width: min(50vh, 70vw, calc(100% - 1.5rem));
+                 width: min(70vw, 50vh);
             }
         }
         #svg-container {
             display: flex;
-            width: min(26rem, 100%, 45vh);
+            width: min(40vw, 45vh);
             justify-content: flex-end;
             height: 100%;
             translate: 3.7%;
@@ -122,31 +127,34 @@ section#hero {
         }
     }
     #festival-edition {
-        text-align: right;
         line-height: 1;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        font-size: min(1.8rem, max(1rem, 4vh));
+        font-size: min(1.6rem, 5vh, max(1rem, 4vh));
         @include breakpoint(tablet) {
             padding-right: 0;
-            font-size: min(3rem, 7vw, max(1rem, 4vh));
+            font-size: min(7vw, 5vh, max(1rem, 4vh));
+        }
+        @include breakpoint(min-desktop) {
+            translate: .1em;
         }
     }
     #hero-links {
-        padding-bottom: 1rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: .08em;
-        translate: .38em;
 
+        padding-top: min(.5rem, 3vh);
         text-align: right;
-        font-size: min(1.1rem, max(.8rem, 3vh));
+        font-size: min(1.1rem, 3vh, max(.8rem, 3vh));
         line-height: $standard-line-height;
         @include breakpoint(tablet) {
             text-align: center;
-            font-size: min(1.3rem, 4vw, max(.8rem, 3.2vh));
+            font-size: min(4vw, 3vh, max(.8rem, 3.2vh));
             line-height: 1.5;
             translate: .08em;
+        }
+        @include breakpoint(min-desktop) {
+            translate: .41em;
+            max-width: 25em;
         }
 
         a, span {

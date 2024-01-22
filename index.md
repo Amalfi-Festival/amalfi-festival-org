@@ -23,16 +23,17 @@ webpage-data:
     header-blend-mode: normal
 ---
 {%- include site/home-logo.svg -%}
-<section id="hero" class="background-image-container parallax">
+<header id="hero" class="background-image-container parallax">
     <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
     <div id="masthead">
         <div class="logo">
             <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
-            <span id="festival-edition">{{ site.data.festival.edition }}</span>
+            <noscript><h1>Amalfi Coast Music & Arts Festival</h1></noscript>
+            <h2 id="festival-edition">{{ site.data.festival.edition }}</h2>
             <div id="hero-links">{%- include site/festival-links.html omit-guests=true -%}</div>
         </div>
     </div>
-</section>
+</header>
 
 <section id="years">
     <div class="standard-block">
