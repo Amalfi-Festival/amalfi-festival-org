@@ -6,37 +6,43 @@
 {% assign _piano-dir = site.program-assets-directory | append: "piano/" -%}
 <div class="image-copy">
 <div class="image">
-<img src="{{ _piano-dir | append: "spooner.jpg" | relative_url }}" alt="Spooner teaching a student" />
+{%- assign _src = _piano-dir | append: "spooner.jpg" | relative_url -%}
+<img src="{{ _src }}" data-jslghtbx="{{ _src }}" data-jslghtbx-group="a" alt="Spooner teaching a student" />
 </div>
 <div class="copy">{% include utilities/markdownify-without-p.html text=lessons %}</div>
 </div>
 
 <div class="image-copy right">
 <div class="image">
-<img src="{{ _piano-dir | append: "IMG_1398_edited.jpg" | relative_url }}" alt="Nagai masterclass" />
+{%- assign _src = _piano-dir | append: "IMG_1398_edited.jpg" | relative_url -%}
+<img src="{{ _src }}" data-jslghtbx="{{ _src }}" data-jslghtbx-group="a" alt="Nagai masterclass" />
 </div>
 <div class="copy">{% include utilities/markdownify-without-p.html text=masterclasses %}</div>
 </div>
 
 <div class="image-copy">
 <div class="image">
-<img src="{{ _piano-dir | append: "giles-san-domenico.jpg" | relative_url }}" alt="Giles performing in San Domenico" />
+{%- assign _src = _piano-dir | append: "giles-san-domenico.jpg" | relative_url -%}
+<img src="{{ _src }}" data-jslghtbx="{{ _src }}" data-jslghtbx-group="a"  alt="Giles performing in San Domenico" />
 </div>
 <div class="copy">{% include utilities/markdownify-without-p.html text=concerts %}</div>
 </div>
 
 <div class="image-copy right">
 <div class="image">
-<img src="{{ _piano-dir | append: "group-naples-piazza-2023.jpg" | relative_url }}" alt="Group in Naples piazza" />
+{%- assign _src = _piano-dir | append: "group-naples-piazza-2023.jpg" | relative_url -%}
+<img src="{{ _src }}" data-jslghtbx="{{ _src }}" data-jslghtbx-group="a" alt="Group in Naples piazza" />
 </div>
 <div class="image">
-<img src="{{ _piano-dir | append: "lowenthal-oppens.jpg" | relative_url }}" alt="Lowenthal and Oppens duet" />
+{%- assign _src = _piano-dir | append: "lowenthal-oppens.jpg" | relative_url -%}
+<img src="{{ _src }}" data-jslghtbx="{{ _src }}" data-jslghtbx-group="a" alt="Lowenthal and Oppens duet" />
 </div>
 </div>
 
 <div class="image-copy row">
 <div class="image">
-<img src="{{ _piano-dir | append: "amalfi-from-water.jpg" | relative_url }}" alt="View of Amalfi from the water" />
+{%- assign _src = _piano-dir | append: "amalfi-from-water.jpg" | relative_url -%}
+<img src="{{ _src }}" data-jslghtbx="{{ _src }}" data-jslghtbx-group="a" alt="View of Amalfi from the water" />
 </div>
 <div class="copy">{% include utilities/markdownify-without-p.html text=outings %}</div>
 </div>
