@@ -1,5 +1,13 @@
 ### Dictionary of text for localizations.
 
+### Footer
+-   en: Programs
+    zh: xPrograms
+-   en: Info
+    zh: xInfo
+-   en: Contact
+    zh: xContact
+
 ### As in "table of contents"
 -   en: Contents
     zh: 目录
@@ -19,9 +27,6 @@
     zh: 教授团队
 -   en: Associate Faculty
     zh: 助理教师
--   key: colon-with-space
-    en: ": "
-    zh: "："
 
 ### Tuition
 -   key: tuition-title
@@ -104,3 +109,8 @@
     en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made."
     zh: 我们不再受理取消行程的申请。**一切已缴费用将不予退还。**
     is-markdown: true
+
+### Punctuation
+-   key: colon-with-space
+    en: ": "
+    zh: "："

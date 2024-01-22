@@ -2,11 +2,11 @@
 <footer id="footer" class="background-image-container parallax"><img id="footer-background" src="{{ site.image-directory | append: 'porto-di-maiori.jpg' | relative_url }}" /><div id="footer-backdrop"><div class="section-wrapper"><div class="content-wrapper">
 <div>
     <nav>
-        <h1>Programs</h1>
+        <h1>{%- include utilities/localize.html string="Programs" -%}</h1>
         {%- include site/festival-links.html include-translations=true -%}
     </nav>
     <nav>
-        <h1>Info</h1>
+        <h1>{%- include utilities/localize.html string="Info" -%}</h1>
         <a href="{{ site.baseurl }}{% link payment.html %}">Payment Form</a>
         <div>
             {%- assign _page = site.pages | where: "slug", "getting-here" | first -%}
@@ -20,7 +20,7 @@
         <a href="{{ site.baseurl }}{% link terms-and-conditions.md %}">Terms & Conditions</a>
     </nav>
     <nav id="contact">
-        <h1>Contact</h1>
+        <h1>{%- include utilities/localize.html string="Contact" -%}</h1>
         <div class="contact">Amalfi Coast Music & Arts Festival<br/>
         Center for Musical Studies<br/>
         724 Chesapeake Ave.<br/>
