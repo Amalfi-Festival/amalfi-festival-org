@@ -2,7 +2,7 @@
 <header id="hero" class="background-image-container parallax">
     <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
     <div class="lang-selection">
-        <a class="en" href="{% link index.md %}">en</a> <span>|</span> <a class="zh" href="{% link index-zh.md %}">中文</a>
+        <a class="en" href="{% link index.md %}">en</a> <a class="zh" href="{% link index-zh.md %}">中文</a>
     </div>
     <div id="masthead">
         <div class="logo">

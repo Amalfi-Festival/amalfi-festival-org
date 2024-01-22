@@ -177,26 +177,20 @@ header#hero {
     .lang-selection {
         position: absolute;
         top: .7rem;
-        @include breakpoint(tablet) {
-            left: .7rem;
-        }
-        @include breakpoint(min-desktop) {
-            right: .7rem;
-        }
+        left: .7rem;
 
         width: auto;
         height: auto;
         padding: 5px 10px;
         font-size: .9em;
         border-radius: $border-radius-small;
-
-//        background-color: #{$background-color}b0;
-        background: linear-gradient(to bottom right, #24A699b0, #277C8Fb0);
+        background-color: #00000080;
+        mix-blend-mode: overlay;
         @include backdrop-filter(blur(5px));
-        color: #{$body-color}80;
+        color: #fff;
         z-index: 1000;
         a {
-            color: #{$background-color}80;
+            color: #fff;
             text-decoration: none;
         }
     }
