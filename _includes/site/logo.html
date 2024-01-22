@@ -1,1 +1,1 @@
-<a href="{{ site.baseurl }}{% link index.md %}" class="logo"><svg><use xlink:href="{{ include.href }}" /></svg></a>
+<a href="{{ site.baseurl }}{% if page.lang == "zh" %}{% link index-zh.md %}{% else %}{% link index.md %}{% endif %}" class="logo"><svg><use xlink:href="{{ include.href }}" /></svg></a>
