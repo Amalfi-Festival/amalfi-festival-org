@@ -124,7 +124,7 @@ In their free time, participants take excursions and enjoy meals together, spend
 
 <section class="copy standard-block" markdown="1">
 
-{% assign _src = site.image-directory | append: "view-minori.jpg" | relative_url -%}
+{% assign _src = site.image-directory | append: "minori-view.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src %}
  
 ## Guests Are Always Welcome

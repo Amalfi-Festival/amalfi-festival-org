@@ -20,6 +20,9 @@ While at the Amalfi Coast Music & Arts Festival, take a once-in-a-lifetime chanc
 </section>
 
 {% capture description -%}
+{% assign _src = site.image-directory | append: "ravello-high.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
 Located 350 meters above the sea at the top of the Dargone Valley, Ravello’s stunning scenic beauty has long made it a popular tourist destination. Founded by the Roman aristocracy in the 5th century as a shelter against the barbarian invasions that marked the end of the Western Roman Empire, it soon became a wealthy and powerful town between the 10th and 13th centuries. Like Amalfi, Ravello owed its prosperity to extensive commerce throughout the Mediterranean, particularly with regard to its strong textile industry.
 
 The fall of Ravello’s wealth and influence came with Ruggero II and the Normanni domination. This was furthered by the Pisani invasion in 1337, which deprived the entire Amalfi Coast of its independence and political power. Now home to approx. 2,500 inhabitants, it earned a listing as a UNESCO World Heritage Site in 1996.
@@ -45,6 +48,9 @@ Its stunning views and powerful atmosphere have made it a favorite respite and i
 
 
 {%- capture description -%}
+{% assign _src = site.image-directory | append: "pompeii-relics.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
+
 The city of Pompeii was an ancient Roman town-city near modern Naples in the Italian region of Campania that was entirely destroyed and buried under 4 to 6 meters (13 to 20 ft.) of ash and pumice in the eruption of Mount Vesuvius in 79 AD.
 
 Researchers believe that Pompeii was founded in the 7th or 6th century BC by the Oscans, a people of central Italy. It came under Roman rule in the 4th century BC, and became a Roman colony in 80 BC after it joined an unsuccessful rebellion against the Roman Republic. By the time of its destruction 160 years later, its population was approximately 11,000 people, and featured a complex water system, amphitheater, gymnasium, and a port.
@@ -69,6 +75,9 @@ A tourist destination for over 250 years, Pompeii is now an UNESCO World Heritag
 
 {%- capture description -%}
 The Island of Capri is one of the most picturesque and visited locations in Campania. Its breathtaking landscapes and beauty stretch from the rocky caves around the island to the edge of the horizon, and have been an inspiration to poets, lovers and travelers throughout the centuries. Underlaid with limestone and characterized by fantastical towers and sinkholes in the rock, karst erosion over time has long since separated Capri from the mainland.
+
+{% assign _src = site.image-directory | append: "capri-town.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src %}
 
 For the Greeks and later the Romans till Tiberius, Capri was an island of boar, goats, and other animals. Hence the Island was named Kapros, which in Greek means "wild boar". Originally colonized by the Greeks, Roman Emperor Tiberius obtained the island after bartering Ischia for Capri with the Neapolitans. He then commenced with a multi villa-building project, rendering the island habitable. After the fall of the Western Roman Empire, Capri fell again under the rule of Naples, and suffered various attacks and ravages by pirates.
 
