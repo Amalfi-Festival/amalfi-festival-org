@@ -128,6 +128,7 @@
 ## {{ sponsors-title }}
 
 ### {{ sponsors-government }}
+{: id="government-sponsors"}
 
 <div class="sponsor-gallery">
 {%- for sponsor-image in site.data.sponsors.government -%}
