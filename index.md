@@ -149,7 +149,8 @@ Your donations keep the festival thriving and provide much needed scholarship fu
 
 </section>
 
-<section id="sponsors" markdown="1">
+<section id="sponsors">
+<div markdown="1">
 
 ## Many thanks to our generous sponsors
 
@@ -168,5 +169,8 @@ Your donations keep the festival thriving and provide much needed scholarship fu
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
+
+</div>
+</section>
 
 <script>(() => { parallaxify("spirit", 1.5); parallaxify("festival"); })();</script>

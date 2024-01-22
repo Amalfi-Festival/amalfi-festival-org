@@ -15,7 +15,7 @@ body > main {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-#festival ~ section {
+#festival ~ section:not(#sponsors) {
     @include standard-block-behavior;
     @include section-padding;
     clear: both;
@@ -443,6 +443,10 @@ section#festival {
 }
 
 section#sponsors {
+    > div {
+        @include standard-block-behavior;
+        padding-top: 1rem;
+    }
     background-color: white;
     padding-bottom: 5rem;
     h2, h3 {
