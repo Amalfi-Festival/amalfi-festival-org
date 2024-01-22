@@ -29,6 +29,7 @@ tuition-guests:
     hotel-single-upgrade: true
 webpage-data:
     menu-title: Visual Arts
+    menu-title-zh: 视觉艺术
     hero-image: capri.jpg
 ---
 {%- include site/program/initialize-program-variables.fx -%}

@@ -48,6 +48,7 @@ cancellation-policy:
         after-date: 2024-05-01
 webpage-data:
     menu-title: Choral
+    menu-title-zh: 合唱之旅
     hero-image: Conductor with chorus.jpg
     hero-image-position: 65% 73%
 ---
