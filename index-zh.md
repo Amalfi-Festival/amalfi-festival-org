@@ -71,15 +71,15 @@ We Appreciate Your Support!
 Your donations keep the festival thriving and provide much needed scholarship funds. Help extend the legacy of this unique festival and bring experiences of a lifetime to the artists and musicians seeking inspiration in this historic part of Italy.
 {%- endcapture -%}
 
-{%- capture sponsors -%}
+{%- capture sponsors-title -%}
 Many thanks to our generous sponsors
 {%- endcapture -%}
 
-{%- capture sponsor-government -%}
+{%- capture sponsors-government -%}
 Government sponsors
 {%- endcapture -%}
 
-{%- capture sponsor-corporate -%}
+{%- capture sponsors-corporate -%}
 Corporate sponsors
 {%- endcapture -%}
 

@@ -20,156 +20,69 @@ sponsors:
 custom-css: home
 body-class: home has-hero
 ---
-{%- include site/home-logo.svg -%}
-<header id="hero" class="background-image-container parallax">
-    <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
-    <div id="masthead">
-        <div class="logo">
-            <div id="logo-container"><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
-            <noscript><h1>Amalfi Coast Music & Arts Festival</h1></noscript>
-            <h2 id="festival-edition">{{ site.data.festival.edition }}</h2>
-            <div id="hero-links">{%- include site/festival-links.html omit-guests=true -%}</div>
-        </div>
-    </div>
-</header>
+{%- assign festival-year = site.data.festival.application.deadline | date: "%Y" -%}
+{%- assign festival-age = festival-year | minus: 1997 -%}
 
-<section id="years">
-    <div class="standard-block">
-        <img src="{{ site.image-directory | append: "concert-choral-2022.jpg" | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
-<div markdown="1">
-{%- assign festival-age = 'now' | date: "%Y" | minus: 1997 %}
+{%- capture years-title -%}
+{{ festival-age }} Years of Music & Art on the Amalfi Coast
+{%- endcapture -%}
 
-## {{ festival-age }} Years of Music & Art on the Amalfi Coast
+{%- capture years-body -%}
+The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes landmark destinations such as the excavations of Pompeii, the spectacular seaside towns of Amalfi and Ravello, the magical isle of Capri, and more.
+{%- endcapture -%}
 
-The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes landmark destinations such as the excavations of Pompeii, the spectacular seaside  towns of Amalfi and Ravello, the magical isle of Capri, and more.
-</div>
-    </div>
-</section>
+{%- capture immersion-title -%}
+A Mediterranean Cultural Immersion
+{%- endcapture -%}
 
-<section id="immersion">
-    <div class="dome-container"><svg><use xlink:href="#dome" /></svg></div>
-    <div class="standard-block">
-        <img src="{{ site.image-directory | append: "concert-piano-thunderstorm-2019.jpg" | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
-<div markdown="1">
-
-## A Mediterranean Cultural Immersion
-
+{%- capture immersion-body -%}
 Concerts and master classes take place daily and are open to all festival participants. Our outstanding faculty offer seminars and workshops. Group meals provide opportunities to sample the finest in regional cuisine. Excursions to the area's outstanding tourist destinations round out the Amalfi experience!
-</div>
-    </div>
-</section>
+{%- endcapture -%}
 
-<section id="spirit" class="background-image-container parallax">
-    <img src="{{ site.image-directory | append: 'festival-spirit-collage.jpg' | relative_url }}" />
-<div class="inset-container">
-<div class="content-container" markdown="1">
+{%- capture spirit-title -%}
+The Festival Spirit
+{%- endcapture -%}
 
-## The Festival Spirit
-
+{%- capture spirit-body -%}
 More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists, writers and guests from a wide range of countries to interact and learn from each other while engaged in the creative process, taking inspiration from the breathtaking surroundings. A uniquely collaborative and supportive environment is essential to the Amalfi experience.
 
 Beyond their individual achievements, in this close-knit community festival participants form long-lasting friendships and invaluable professional associations. The Amalfi experience lasts a lifetime!
-</div>
-</div>
-</section>
+{%- endcapture -%}
 
-<section id="festival" class="background-image-container parallax">
-<img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w, {{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w" sizes="100vw" alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
+{%- capture season-header -%}
+Our {{ festival-year }} Season
+{%- endcapture -%}
 
-<div class="inset-container">
-<div class="content-container">
-<h2 id="programs">Our {{ site.data.festival.application.deadline | date: "%Y" }} Season</h2>
-<div>
-{%- for _p in site.data.festival.programs -%}
-{%- assign _ps = _p.program-slug -%}
-{%- assign program = site.programs | where: "slug", _ps | first -%}
-<div>
-    {%- if program.to-be-announced -%}
-    <div>
-        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
-    </div>
-    <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
-    {%- else -%}
-    <a href="{{ program.url | relative_url }}">
-        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
-    </a>
-    <ul>
-        {%- for session in program.sessions -%}
-        <li>
-            {%- if session.session-name -%}
-                {{- session.session-name }}:
-            {% endif -%}
-            {%- include utilities/date.html dates=session.dates -%}
-        </li>
-        {%- endfor -%}
-    </ul>
-    <div class="buttons">
-        <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
-        {%- unless program.applications-closed -%}
-        {%- include site/program/get-apply-url.fx program=program -%}
-        <a href="{{ __return }}" class="button">Apply</a>
-        {%- endunless -%}
-    </div>
-    {%- endif -%}
-</div>
-{%- endfor -%}
-</div>
-</div>
-</div>
+{%- capture guests-title -%}
+Guests Are Always Welcome
+{%- endcapture -%}
 
-</section>
-
-<section class="copy standard-block" markdown="1">
-
-{% assign _src = site.image-directory | append: "minori-view.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
- 
-## Guests Are Always Welcome
-
+{%- capture guests-body -%}
 The Amalfi Guest Program offers a unique opportunity in cultural tourism. Sit in on  master classes and attend concerts and pre-concert lectures. Take advantage of festival excursions to the area's cultural sites and join festival meals and receptions.
+{%- endcapture -%}
 
-<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">Learn more</a>
+{%- capture support-title -%} 
+We Appreciate Your Support!
+{%- endcapture -%}
 
-</section>
-
-
-<section class="copy standard-block" markdown="1">
-
-{% assign _src = site.image-directory | append: "dinner-toast-2023.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
- 
-## We Appreciate Your Support!
-
+{%- capture support-body -%}
 Your donations keep the festival thriving and provide much needed scholarship funds. Help extend the legacy of this unique festival and bring experiences of a lifetime to the artists and musicians seeking inspiration in this historic part of Italy.
+{%- endcapture -%}
 
-<a class="button" href="{{ site.baseurl }}{% link donations.md %}">Donate Now</a>
+{%- capture donate-now -%}
+Donate Now
+{%- endcapture -%}
 
-</section>
+{%- capture sponsors-title -%}
+Many thanks to our generous sponsors
+{%- endcapture -%}
 
-<section id="sponsors">
-<div markdown="1">
+{%- capture sponsors-government -%}
+Government sponsors
+{%- endcapture -%}
 
-## Many thanks to our generous sponsors
+{%- capture sponsors-corporate -%}
+Corporate sponsors
+{%- endcapture -%}
 
-### Government sponsors
-
-<div class="sponsor-gallery">
-{%- for sponsor-image in page.sponsors.government -%}
-<div><img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image.icon | relative_url }}" /><div>{{ sponsor-image.label }}</div></div>
-{%- endfor -%}
-</div>
-
-### Corporate sponsors
-
-<div class="sponsor-gallery">
-{%- for sponsor-image in page.sponsors.corporate -%}
-<img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
-{%- endfor -%}
-</div>
-
-</div>
-</section>
-
-<script>(() => { parallaxify("spirit", 1.5); parallaxify("festival"); })();</script>
+{%- include site/festival/home.md -%}
