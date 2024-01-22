@@ -22,6 +22,13 @@ body > main {
     h2 {
         margin-top: 0;
     }
+
+    @include breakpoint(mobile) {
+        .button {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 #festival + section {
     padding-bottom: 0;
@@ -60,7 +67,7 @@ section#hero {
             linear-gradient(to bottom, transparent 25%, #{$brand-blue}80);
         background-blend-mode: multiply;
         @include backdrop-filter(blur(1px));
-        width: 50%;
+        width: 48%;
         padding: 0 1.5rem 0 $minimum-side-padding;
         @include breakpoint(tablet) {
             width: 100%;
@@ -167,6 +174,9 @@ section#hero {
     > div {
         display: flex;
         gap: 2rem;
+        @include breakpoint(tablet) {
+            gap: 0;
+        }
         @include breakpoint(mid-desktop) {
             gap: 3rem;
         }
@@ -176,25 +186,48 @@ section#hero {
         img {
             width: 100%;
             border-radius: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            @include breakpoint(min-tablet) {
+                width: $default-max-copy-width;
+            }
             @include breakpoint(min-desktop) {
                 width: 52%;
             }
         }
 
         h2 {
-            text-align:center;
+            text-align: center;
+            @include breakpoint(mobile) {
+                text-align: left;
+            }
             margin-top: 0;
+        }
+
+        @include breakpoint(min-desktop) {
+            p {
+                margin-left: 0;
+            }
         }
     }
 }
 
+@include breakpoint(mobile) {
+    #immersion > div img {
+        margin-bottom: 2rem;
+    }
+    .highlight-box.image img {
+        margin-bottom: 2rem;
+    }
+}
+@include breakpoint(min-desktop) {
+    .highlight-box.image {
+        margin-bottom: 0;
+    }
+}
+
 #years, #immersion, #spirit {
-    h2 {
-        font-size: 1.3em;
-    }
-    p {
-        margin-left: 0;
-    }
     @include breakpoint(mid-desktop) {
         h2 {
             font-size: 1.5em;
@@ -202,6 +235,24 @@ section#hero {
         p {
             font-size: 1.1rem;
         }
+    }
+}
+
+@include breakpoint(tablet) {
+    section .standard-block, section.standard-block {
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+section h2 {
+    @include breakpoint(tablet) {
+        text-align: center;
+    }
+    @include breakpoint(mobile) {
+        text-align: left;
     }
 }
 
@@ -393,6 +444,7 @@ section#festival {
 
 section#sponsors {
     background-color: white;
+    padding-bottom: 5rem;
     h2, h3 {
         text-align: center;
     }
@@ -402,17 +454,16 @@ section#sponsors {
     .sponsor-gallery {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        gap: 1em;
-        padding-left: 5.85rem;
-        padding-right: 5.85rem;
+        gap: 2em;
+        padding-top: 1rem;
         @include breakpoint(tablet) {
             padding-left: 0;
             padding-right: 0;
         }
         @include breakpoint(mobile) {
-            column-gap: .5em;
+            column-gap: 1em;
             justify-content: center;
         }
         > div {
@@ -420,17 +471,20 @@ section#sponsors {
             align-items: center;
             gap: .8em;
             div {
-                width: 7.5em;
+                width: 9em;
                 line-height: $minimum-line-height;
-                font-size: .9em;
             }
         }
     }
+    #government-sponsors img {
+        aspect-ratio: .84;
+    }
     img {
         mix-blend-mode: darken;
-        max-height: 4rem;
+        max-height: 4.5rem;
+        object-fit: contain;
         @include breakpoint(mobile) {
-            max-height: 3.5rem;
+            max-height: 4rem;
         }
         justify-self: center;
     }
