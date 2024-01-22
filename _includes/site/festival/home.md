@@ -57,20 +57,25 @@
 {%- for _p in site.data.festival.programs -%}
 {%- assign _ps = _p.program-slug -%}
 {%- assign program = site.programs | where: "slug", _ps | first -%}
+{%- assign reference-program = program -%}
+{%- if _p.zh and page.lang == "zh" -%}
+    {%- assign _ps = _p.zh -%}
+    {%- assign program = site.programs | where: "slug", _ps | first -%}
+{%- endif -%}
 <div>
-    {%- if program.to-be-announced -%}
+    {%- if reference-program.to-be-announced -%}
     <div>
-        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
+        <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/home.jpg' | relative_url }}" />
         <h3 class="program-name">{{ program.title | smartify }}</h3>
     </div>
-    <ul><li>{% if program.to-be-announced == true %}To be announced{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
+    <ul><li>{% if reference-program.to-be-announced == true %}{%- include utilities/localize.html string="To be announced" -%}{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
     {%- else -%}
     <a href="{{ program.url | relative_url }}">
-        <img src="{{ site.program-assets-directory | append: _ps | append: '/home.jpg' | relative_url }}" />
+        <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/home.jpg' | relative_url }}" />
         <h3 class="program-name">{{ program.title | smartify }}</h3>
     </a>
     <ul>
-        {%- for session in program.sessions -%}
+        {%- for session in reference-program.sessions -%}
         <li>
             {%- if session.session-name -%}
                 {{- session.session-name }}:
@@ -80,10 +85,10 @@
         {%- endfor -%}
     </ul>
     <div class="buttons">
-        <a href="{{ program.url | relative_url }}" class="  button">Learn more</a>
+        <a href="{{ program.url | relative_url }}" class="button">{%- include utilities/localize.html string="Learn more" -%}</a>
         {%- unless program.applications-closed -%}
         {%- include site/program/get-apply-url.fx program=program -%}
-        <a href="{{ __return }}" class="button">Apply</a>
+        <a href="{{ __return }}" class="button">{%- include utilities/localize.html string="Apply" -%}</a>
         {%- endunless -%}
     </div>
     {%- endif -%}
@@ -104,7 +109,7 @@
 
 {{ guests-body }}
 
-<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">Learn more</a>
+<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">{%- include utilities/localize.html string="Learn more" -%}</a>
 
 </section>
 
