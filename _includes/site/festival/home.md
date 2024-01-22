@@ -135,7 +135,7 @@
 ### {{ sponsors-government }}
 
 <div class="sponsor-gallery">
-{%- for sponsor-image in page.sponsors.government -%}
+{%- for sponsor-image in site.data.sponsors.government -%}
 <div><img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image.icon | relative_url }}" /><div>{{ sponsor-image.label }}</div></div>
 {%- endfor -%}
 </div>
@@ -143,7 +143,7 @@
 ### {{ sponsors-corporate }}
 
 <div class="sponsor-gallery">
-{%- for sponsor-image in page.sponsors.corporate -%}
+{%- for sponsor-image in site.data.sponsors.corporate -%}
 <img src="{{ site.image-directory | append: "sponsors/" | append: sponsor-image | relative_url }}" />
 {%- endfor -%}
 </div>
