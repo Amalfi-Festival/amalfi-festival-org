@@ -26,65 +26,63 @@ permalink: /zh/
 {%- assign festival-age = festival-year | minus: 1997 -%}
 
 {%- capture years-title -%}
-{{ festival-age }} Years of Music & Art on the Amalfi Coast
+{{ festival-age }}年音乐与艺术的辉煌盛宴在阿马尔菲海岸绽放
 {%- endcapture -%}
 
 {%- capture years-body -%}
-The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast. The region includes landmark destinations such as the excavations of Pompeii, the spectacular seaside towns of Amalfi and Ravello, the magical isle of Capri, and more.
+阿马尔菲海岸音乐与艺术节的总部坐落于意大利的马约里。每年夏季，我们都会带来一个月的音乐盛宴，将阿马尔菲海岸的壮丽之地点缀得如诗如画。这片区域蕴含着庞贝古城的神秘遗址、阿马尔菲和拉韦洛的壮美海滨小镇、还有令人陶醉的卡普里岛。
 {%- endcapture -%}
 
 {%- capture immersion-title -%}
-A Mediterranean Cultural Immersion
+地中海文化的沉浸之旅
 {%- endcapture -%}
 
 {%- capture immersion-body -%}
-Concerts and master classes take place daily and are open to all festival participants. Our outstanding faculty offer seminars and workshops. Group meals provide opportunities to sample the finest in regional cuisine. Excursions to the area's outstanding tourist destinations round out the Amalfi experience!
+每日的音乐会和大师班为所有音乐节参与者敞开大门。我们杰出的教授团队届时将会带来精彩纷呈的研讨会和工作坊。全体人员共进的晚餐让您品味当地美食的精髓。此外，游览该地区卓越的旅游胜地更是让阿马尔菲之旅的体验锦上添花！
 {%- endcapture -%}
 
 {%- capture spirit-title -%}
-The Festival Spirit
+音乐节的灵魂
 {%- endcapture -%}
 
 {%- capture spirit-body -%}
-More than a series of concerts, the festival is a vibrant international community that brings together musicians, artists, writers and guests from a wide range of countries to interact and learn from each other while engaged in the creative process, taking inspiration from the breathtaking surroundings. A uniquely collaborative and supportive environment is essential to the Amalfi experience.
-
-Beyond their individual achievements, in this close-knit community festival participants form long-lasting friendships and invaluable professional associations. The Amalfi experience lasts a lifetime!
+音乐节不仅仅是一连串音乐会，更是一个充满活力的国际社群，吸引着来自世界各地的音乐家、艺术家、作家和宾客。他们在创意的过程中相互交流、共同学习，从令人叹为观止的环境中汲取灵感。在这个紧密团结的社区中，音乐节参与者不仅收获个体的荣誉，还结下了持久的友谊和宝贵的专业联系。阿马尔菲的魅力将陪伴一生！
 {%- endcapture -%}
 
 {%- capture season-header -%}
-Our {{ festival-year }} Season
+{{ festival-year }}年度艺术节项目
 {%- endcapture -%}
 
 {%- capture guests-title -%}
-Guests Are Always Welcome
+热烈欢迎各位嘉宾！
 {%- endcapture -%}
 
 {%- capture guests-body -%}
-The Amalfi Guest Program offers a unique opportunity in cultural tourism. Sit in on  master classes and attend concerts and pre-concert lectures. Take advantage of festival excursions to the area's cultural sites and join festival meals and receptions.
+阿马尔菲嘉宾计划为您提供一场独特的文化之旅。您将有机会参与大师班、聆听音乐会及前期讲座。通过音乐节提供的文化之旅，您还能领略该地区的名胜古迹，并参与丰富多彩的音乐盛宴。
 {%- endcapture -%}
 
 {%- capture support-title -%} 
-We Appreciate Your Support!
+感谢您的支持！
 {%- endcapture -%}
 
 {%- capture support-body -%}
-Your donations keep the festival thriving and provide much needed scholarship funds. Help extend the legacy of this unique festival and bring experiences of a lifetime to the artists and musicians seeking inspiration in this historic part of Italy.
+您的慷慨捐赠不仅将助音乐节茁壮成长，更将为急需奖学金的学生提供关键支持。您的支持将继续书写这个独特音乐节的传奇，为那些在这个意大利历史名城中寻找灵感的艺术家和音乐家带来一生难忘的艺术和音乐体验。
 {%- endcapture -%}
 
 {%- capture donate-now -%}
-Donate Now
+捐赠
 {%- endcapture -%}
 
 {%- capture sponsors-title -%}
-Many thanks to our generous sponsors
+感谢我们慷慨的赞助商
 {%- endcapture -%}
 
 {%- capture sponsors-government -%}
-Government sponsors
+政府赞助方
 {%- endcapture -%}
 
 {%- capture sponsors-corporate -%}
-Corporate sponsors
+企业赞助商
 {%- endcapture -%}
 
 {%- include site/festival/home.md -%}
