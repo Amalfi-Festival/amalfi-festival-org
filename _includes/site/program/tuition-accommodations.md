@@ -34,39 +34,39 @@
 
 {%- if _has-cost -%}
     {%- include site/program/tuition-item.html item-name="cost" has-tuition-item=_has-cost name-key=_name-key description-key=_desc-key -%}
-{%- else -%}
-    {%- include site/program/has-tuition-item.fx tuition-item-name="hostel-triple" -%}
-    {%- assign _has-hostel-triple = __return %}
+{%- endif -%}
 
-    {%- if _has-hostel-triple -%}
-        {%- include site/program/tuition-item.html item-name="hostel-triple" has-tuition-item=_has-hostel-triple name-key=_name-key description-key=_desc-key -%}
-    {%- endif -%}
+{%- include site/program/has-tuition-item.fx tuition-item-name="hostel-triple" -%}
+{%- assign _has-hostel-triple = __return %}
 
-    {%- include site/program/has-tuition-item.fx tuition-item-name="hotel-triple" -%}
-    {%- assign _has-hotel-triple = __return %}
-    {%- include site/program/has-tuition-item.fx tuition-item-name="hotel-double" -%}
-    {%- assign _has-hotel-double = __return %}
+{%- if _has-hostel-triple -%}
+    {%- include site/program/tuition-item.html item-name="hostel-triple" has-tuition-item=_has-hostel-triple name-key=_name-key description-key=_desc-key -%}
+{%- endif -%}
 
-    {%- if _has-hotel-triple -%}
-        {%- include site/program/tuition-item.html item-name="hotel-triple" has-tuition-item=_has-hotel-triple name-key=_name-key description-key=_desc-key -%}
-    {%- elsif _has-hotel-double -%}
-        {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=_has-hotel-double name-key=_name-key description-key=_desc-key -%}
-    {%- endif -%}
+{%- include site/program/has-tuition-item.fx tuition-item-name="hotel-triple" -%}
+{%- assign _has-hotel-triple = __return %}
+{%- include site/program/has-tuition-item.fx tuition-item-name="hotel-double" -%}
+{%- assign _has-hotel-double = __return %}
 
-    {%- if reference-program.tuition.hotel-double-upgrade -%}
-    <tr class="upgrade">
-        <td valign="top"><p class="name">{{ site.data.accommodations.hotel-double-upgrade[_name-key] }}</p></td>
-        {%- assign price = base-price | plus: reference-program.tuition.hotel-double-upgrade -%}
-        <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=reference-program.tuition.hotel-double-upgrade %}</strong></p></td>
-    </tr>
-    {%- endif -%}
-    {%- if reference-program.tuition.hotel-single-upgrade -%}
-    <tr class="upgrade">
-        <td valign="top"><p class="name">{{ site.data.accommodations.hotel-single-upgrade[_name-key] }}</p></td>
-        {%- assign price = base-price | plus: reference-program.tuition.hotel-single-upgrade -%}
-        <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=reference-program.tuition.hotel-single-upgrade %}</strong></p></td>
-    </tr>
-    {%- endif -%}
+{%- if _has-hotel-triple -%}
+    {%- include site/program/tuition-item.html item-name="hotel-triple" has-tuition-item=_has-hotel-triple name-key=_name-key description-key=_desc-key -%}
+{%- elsif _has-hotel-double -%}
+    {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=_has-hotel-double name-key=_name-key description-key=_desc-key -%}
+{%- endif -%}
+
+{%- if reference-program.tuition.hotel-double-upgrade -%}
+<tr class="upgrade">
+    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-double-upgrade[_name-key] }}</p></td>
+    {%- assign price = base-price | plus: reference-program.tuition.hotel-double-upgrade -%}
+    <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=reference-program.tuition.hotel-double-upgrade %}</strong></p></td>
+</tr>
+{%- endif -%}
+{%- if reference-program.tuition.hotel-single-upgrade -%}
+<tr class="upgrade">
+    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-single-upgrade[_name-key] }}</p></td>
+    {%- assign price = base-price | plus: reference-program.tuition.hotel-single-upgrade -%}
+    <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=reference-program.tuition.hotel-single-upgrade %}</strong></p></td>
+</tr>
 {%- endif -%}
 
 {%- include site/program/has-tuition-item.fx tuition-item-name="lab-fee" -%}

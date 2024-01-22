@@ -26,6 +26,7 @@ tuition:
     cost: 2195
     name: Cost (not including airfare)
     description: Balance due will be made in two payments of $975. Invoices will be sent to trip participants with the deadline for those amounts.
+    hotel-single-upgrade: 450
 tuition-guests:
     intro: Guests of the choral tour will enjoy the same special trips and group activities and attend concerts on the other side of the podium. The cost and registration fees are the same for participants and guests. The registration form has a section for guests to apply.
     cost: true
