@@ -20,7 +20,7 @@ Localize strings. Looks inside localizations.yaml, but can also retrieve strings
         {%- assign _k = include.key -%}
     {%- endif -%}
     {%- if include.is-markdown -%}
-    {%- capture _t %}{{ include.source[_k] }}{%- endcapture -%}
+    {%- capture _t %}{{ include.source[_k] | default: include.source[include.key] }}{%- endcapture -%}
 {%- include utilities/markdownify-without-p.html text=_t -%}
     {%- else -%}
 {{ include.source[_k] | default: include.source[include.key] }}

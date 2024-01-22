@@ -66,13 +66,13 @@
     {%- if reference-program.to-be-announced -%}
     <div>
         <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/home.jpg' | relative_url }}" />
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
+        <h3 class="program-name">{%- include utilities/localize.html source=program key="title" is-markdown=true" -%}</h3>
     </div>
     <ul><li>{% if reference-program.to-be-announced == true %}{%- include utilities/localize.html string="To be announced" -%}{% else %}{{ program.to-be-announced }}{% endif %}</li></ul>
     {%- else -%}
     <a href="{{ program.url | relative_url }}">
         <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/home.jpg' | relative_url }}" />
-        <h3 class="program-name">{{ program.title | smartify }}</h3>
+        <h3 class="program-name">{%- include utilities/localize.html source=program key="title" is-markdown=true" -%}</h3>
     </a>
     <ul>
         {%- for session in reference-program.sessions -%}
