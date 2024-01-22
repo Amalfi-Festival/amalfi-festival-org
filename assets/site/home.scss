@@ -378,7 +378,7 @@ section#festival {
             padding-top: 1rem;
             gap: 4rem 2rem;
             @include breakpoint(tablet) {
-                column-gap: 1rem;
+                gap: 3rem 1rem;
             }
 
             > div {
@@ -433,8 +433,11 @@ section#festival {
     h2 {
         text-align: center;
         text-transform: uppercase;
+        margin: 0 0 1rem;
         font-size: 2em;
-        margin: 0 0 2rem;
+        @include breakpoint(mobile) {
+            font-size: 1.5em;
+        }
     }
     h3 {
         font-size: 1.25em;
