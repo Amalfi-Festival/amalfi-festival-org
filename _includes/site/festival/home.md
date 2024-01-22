@@ -76,12 +76,7 @@
     </a>
     <ul>
         {%- for session in reference-program.sessions -%}
-        <li>
-            {%- if session.session-name -%}
-                {{- session.session-name }}:
-            {% endif -%}
-            {%- include utilities/date.html dates=session.dates -%}
-        </li>
+        <li>{%- include site/session/get-session-name-with-dates.html session=session -%}</li>
         {%- endfor -%}
     </ul>
     <div class="buttons">

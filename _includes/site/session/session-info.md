@@ -3,11 +3,7 @@
 {%- if session.class-name == nil or reference-program.sessions.size > 1 -%}
     {%- capture session-name -%}{%- include site/session/get-session-name-with-dates.html session=session -%}{%- endcapture -%}
     {%- if session.session-name -%}
-        {%- unless page.lang -%}
-<h2 class="session" id="{{ session-name | slugify }}">{{ session-name }}</h2>
-        {%- else -%}
-<h2 class="session" id="{{ session-name | slugify }}">{{ session.session-name-zh | default: session.session-name }}: {% include utilities/date.html dates=session.dates %}</h2>
-        {%- endunless -%}
+<h2 class="session">{{ session-name }}</h2>
     {%- endif -%}
 {%- endif -%}
 

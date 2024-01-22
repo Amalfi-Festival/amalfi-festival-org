@@ -19,6 +19,9 @@
     zh: 教授团队
 -   en: Associate Faculty
     zh: 助理教师
+-   key: colon-with-space
+    en: ": "
+    zh: "："
 
 ### Tuition
 -   key: tuition-title
