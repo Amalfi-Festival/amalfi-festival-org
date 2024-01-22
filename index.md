@@ -61,7 +61,7 @@ Concerts and master classes take place daily and are open to all festival partic
 </section>
 
 <section id="spirit" class="background-image-container parallax">
-    <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
+    <img src="{{ site.image-directory | append: 'festival-spirit-collage.jpg' | relative_url }}" />
 <div class="inset-container">
 <div class="content-container" markdown="1">
 
