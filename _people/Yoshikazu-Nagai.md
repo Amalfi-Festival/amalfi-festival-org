@@ -4,7 +4,7 @@ last-name: Nagai
 zh-name: 永井良和
 prefers-en-name: true
 school: San Francisco Conservatory of Music
-school-zh: 旧金山音乐学院/皮博迪音乐学院
+school-zh: 旧金山音乐学院
 website: http://www.yoshinagai.com/
 ---
 
