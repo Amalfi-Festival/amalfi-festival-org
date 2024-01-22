@@ -33,7 +33,6 @@ sessions:
             -   Kevin-Fitz-Gerald
             -   James-Giles
             -   Douglas-Humpherys
-            -   Kyu-Yeon-Kim
             -   Thomas-Rosenkranz
             -   Hong-Xu
         associate-faculty:
