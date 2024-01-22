@@ -1,22 +1,5 @@
 ---
 layout: default
-sponsors:
-    government:
-        - icon: campania-arms.jpg
-          label: Regione Campania
-        - icon: salerno-arms.jpg
-          label: Provincia di Salerno
-        - icon: salerno-ente.jpg
-          label: Ente Pronvinciale di Salerno
-        - icon: amalfi-arms.jpg
-          label: Comune di Amalfi
-        - icon: maiori-arms.jpg
-          label: Comune di Maiori
-        - icon: minori-arms.gif
-          label: Comune di Minori
-    corporate:
-        - progetto.jpg
-        - coelmo.jpg
 custom-css: home
 body-class: home has-hero
 ---
