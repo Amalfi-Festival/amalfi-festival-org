@@ -343,6 +343,26 @@ body > footer {
     }
 }
 
+.lang-selection {
+    display: flex;
+    gap: .5rem;
+}
+:is(header, footer) {
+    .en, .zh {
+        opacity: .8;
+
+        &:hover {
+            opacity: 1;
+            font-weight: 700;
+        }
+    }
+}
+html[lang^="en"] :is(header,footer) .en,
+html[lang^="zh"] :is(header,footer) .zh {
+    opacity: 1;
+    font-weight: 700;
+}
+
 main:not(.standard-block) {
     :is(ul, ol) {
         padding-left: 1.5em;
