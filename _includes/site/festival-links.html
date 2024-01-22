@@ -6,7 +6,7 @@
         {%- assign _url = _pzh.url | relative_url -%}
     {%- endif -%}
     {%- if _program.to-be-announced -%}
-        {%- capture _url -%}{{ site.baseurl }}{% link index.md %}#programs{%- endcapture -%}
+        {%- capture _url -%}{{ site.baseurl }}{% link index.md %}#festival{%- endcapture -%}
     {%- endif -%}
 <div><a class="link-{{ _program.slug }}" href="{{ _url }}">{% include utilities/localize.html source=_program.webpage-data key="menu-title" %}</a>
 </div>
