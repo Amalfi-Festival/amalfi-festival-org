@@ -20,16 +20,30 @@
 
     {%- unless class.summary -%}
         {%- if class.images -%}
-            {%- for _i in class.images -%}
-                {%- if _i.filename -%}
-                    {%- assign _src = site.program-assets-directory | append: _i.filename | relative_url -%}
-                {%- else -%}
-                    {%- assign _src = site.program-assets-directory | append: _i | relative_url -%}
-                {%- endif -%}
-                {%- include site/sidebar-image.html src=_src alt=_i.alt -%}
-            {%- endfor -%}
-        {%- endif -%}
+            {%- if class.content contains "~IMAGE~" -%}
+                {%- assign _content = class.content -%}
+                {%- for _i in class.images -%}
+                    {%- if _i.filename -%}
+                        {%- assign _src = site.program-assets-directory | append: _i.filename | relative_url -%}
+                    {%- else -%}
+                        {%- assign _src = site.program-assets-directory | append: _i | relative_url -%}
+                    {%- endif -%}
+                    {%- capture _image-html -%}{%- include site/sidebar-image.html src=_src alt=_i.alt -%}{%- endcapture -%}
+                    {%- capture _content -%}{{ _content | replace_first: "~IMAGE~", _image-html }}{%- endcapture -%}
+                {%- endfor -%}
+{{ _content }}
+            {%- else -%}
+                {%- for _i in class.images -%}
+                    {%- if _i.filename -%}
+                        {%- assign _src = site.program-assets-directory | append: _i.filename | relative_url -%}
+                    {%- else -%}
+                        {%- assign _src = site.program-assets-directory | append: _i | relative_url -%}
+                    {%- endif -%}
+                    {%- include site/sidebar-image.html src=_src alt=_i.alt -%}
+                {%- endfor -%}
 {{ class.content }}
+            {%- endif -%}
+        {%- endif -%}
     {%- else -%}
         {%- if class.images -%}
             {%- for image in class.images -%}
