@@ -26,10 +26,8 @@ sessions:
             start: 2024-07-18
             end: 2024-07-30
         faculty:
-            -   Tema-Blackstone
             -   Bernadene-Blaha
             -   Bruce-Brubaker 
-            -   Hung-Kuan-Chen 
             -   Kevin-Fitz-Gerald
             -   James-Giles
             -   Douglas-Humpherys
