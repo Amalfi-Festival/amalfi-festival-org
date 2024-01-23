@@ -499,7 +499,7 @@ section#sponsors {
             padding-right: 0;
         }
         @include breakpoint(mobile) {
-            column-gap: 1em;
+            gap: 1em;
             justify-content: center;
         }
         > div {
@@ -514,14 +514,20 @@ section#sponsors {
     }
     #government-sponsors + .sponsor-gallery img {
         aspect-ratio: .84;
-    }
-    img {
-        mix-blend-mode: darken;
         max-height: 4.5rem;
-        object-fit: contain;
         @include breakpoint(mobile) {
             max-height: 4rem;
         }
+    }
+    #corporate-sponsors + .sponsor-gallery img {
+        max-height: 4rem;
+        @include breakpoint(mobile) {
+            max-height: 3.5rem;
+        }
+    }
+    img {
+        mix-blend-mode: darken;
+        object-fit: contain;
         justify-self: center;
     }
 }

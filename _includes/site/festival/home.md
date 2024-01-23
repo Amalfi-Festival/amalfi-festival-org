@@ -140,6 +140,7 @@
 </div>
 
 ### {{ sponsors-corporate }}
+{: id="corporate-sponsors"}
 
 <div class="sponsor-gallery">
 {%- for sponsor-image in site.data.sponsors.corporate -%}
