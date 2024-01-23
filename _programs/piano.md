@@ -27,7 +27,7 @@ sessions:
             end: 2024-07-30
         faculty:
             -   Bernadene-Blaha
-            -   Bruce-Brubaker 
+            -   Bruce-Brubaker
             -   Kevin-Fitz-Gerald
             -   James-Giles
             -   Douglas-Humpherys
