@@ -1,5 +1,6 @@
 ---
 title: Choral Tour
+title-zh: 合唱之旅
 sessions:
     -   class-name: choral-tour
         dates:
