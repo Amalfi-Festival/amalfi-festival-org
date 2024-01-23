@@ -1,5 +1,6 @@
 ---
 title: Visual Arts Program
+title-zh: 视觉艺术
 to-be-announced: true
 sessions:
     -   session-name: Painting

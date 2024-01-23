@@ -1,5 +1,6 @@
 ---
 title: Writers' Studio
+title-zh: 作家工作室
 to-be-announced: true
 sessions:
     -   class-name: writing-studio
