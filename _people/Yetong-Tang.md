@@ -3,7 +3,7 @@ first-name: Yetong
 last-name: Tang
 zh-name: 唐业彤
 school: Northwestern University, DMA
-school-zh: 美国西北大学音乐学院 钢琴表演及教学法博士候选人、音乐节钢琴部门主管及艺术总监助理
+school-zh: 美国西北大学音乐学院 钢琴表演及教学法博士候选人、音乐节钢琴项目主管及艺术总监助理
 permalink: /people/:title
 ---
 Originally from China, pianist Yetong Tang is currently pursuing the Doctor of Musical Arts degree in Piano Performance and Pedagogy at Northwestern University's Bienen School of Music, under the guidance of Dr. James Giles. Yetong received her Master's degree in Piano Performance from Northwestern University and the Bachelor's degree with Magna cum Laude honors in Piano Performance from the Ithaca College School of Music in New York State, where she studied with distinguished mentors, Dr. Dmitri Novgorodsky and Dr. Jennifer Hayghe.
