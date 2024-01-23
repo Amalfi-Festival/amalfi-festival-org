@@ -5,7 +5,6 @@
 <div class="title">
 <div class="standard-block" markdown="1">
 ### {{ _excursion.name }}
-{: id="" }
 </div>
 </div>
 </div>
