@@ -65,7 +65,7 @@
     {%- assign _ps = _p.zh -%}
     {%- assign program = site.programs | where: "slug", _ps | first -%}
 {%- endif -%}
-<div>
+<div id="{{ reference-program.slug }}">
     {%- if reference-program.to-be-announced -%}
     <div>
         <img src="{{ site.program-assets-directory | append: reference-program.slug | append: '/home.jpg' | relative_url }}" />
