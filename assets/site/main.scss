@@ -182,6 +182,9 @@ body > header {
     position: absolute;
     top: 1.3rem;
     right: $minimum-side-padding;
+    @include breakpoint(min-desktop) {
+        display: none;
+    }
     @include breakpoint(mobile) {
         right: $minimum-mobile-side-padding;
     }
@@ -207,14 +210,7 @@ body > header {
 
     &:is(body.hamburger-active #hamburger) {
         filter: none;
-/*            .hamburger-inner {
-            &, &:before, &:after { background-color: $background-color; }
-        }
-        &:hover .hamburger-inner {
-            &, &:before, &:after { background-color: white; }
-        }*/
     }
-
 
     $hamburger-width: 24px;
     $hamburger-line: 3px;
@@ -331,11 +327,6 @@ body.has-hero {
         z-index: 1;
         width: 100%;
         @include backdrop-filter(blur(1px));
-    }
-    #hamburger {
-        @include breakpoint(min-desktop) {
-            display: none;
-        }
     }
     #hamburger .hamburger-inner {
         &, &:before, &:after {
