@@ -1,6 +1,5 @@
 ---
 title: Terms & Conditions
-custom-css: festival
 ---
 
 <section id="cancellation-policy" class="standard-block" markdown="1">
@@ -109,9 +108,9 @@ out herein and in more specific pre-departure passenger information.
  
 For information concerning possible dangers at international destinations,
 contact the Travel Advisory Section of the U.S. State Department [(202) 647-5225](tel:(202) 647-5225),
-or access the State Department's [online travel advisory service](http://travel.state.gov/travel/travel_1744.html).
+or access the State Department's [online travel advisory service](https://travel.state.gov/travel/travel_1744.html).
 For medical information, call the U.S. Centers for Disease Control (CDC)
-[(404) 332-4559](tel:(404) 332-4559) or log on to [their website](http://www.cdc.gov/travel).
+[(404) 332-4559](tel:(404) 332-4559) or log on to [their website](https://www.cdc.gov/travel).
 By embarking upon his/her travel, the traveler voluntarily assumes all risk
 involved in such travel---whether expected or unexpected. Festival
 participants and/or guests are hereby warned of the above risks as well as

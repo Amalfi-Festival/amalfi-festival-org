@@ -51,9 +51,9 @@ Make sure your passport is up-to-date! For full information on obtaining or rene
 
 When planning your upcoming summer in Italy, travel insurance is essential.
 
-* [An introduction on how travel insurance works](https://www.nerdwallet.com/blog/insurance/travel-insurance/) (NerdWallet)
-* [An up-to-date list of highly ranked insurance providers](https://www.thebalance.com/best-travel-insurance-4796919) (The Balance)
-* [Resource when looking for information on potential insurance providers](https://www.forbes.com/sites/christopherelliott/2018/08/18/the-best-and-worst-travel-insurance-companies/#2d49b4c54fc2) (Forbes)
+* [An introduction on how travel insurance works](https://www.nerdwallet.com/article/insurance/travel-insurance) (NerdWallet)
+* [An up-to-date list of highly ranked insurance providers](https://www.thebalancemoney.com/best-travel-insurance-4796919) (The Balance)
+* [Resource when looking for information on potential insurance providers](https://www.forbes.com/advisor/travel-insurance/best-travel-insurance/) (Forbes)
 
 For your protection, we strongly recommend you purchase travel insurance. In case of a health problem or family emergency that might require you to make a last-minute change in plans. Although on-line search engine such as Kayak or Orbitz, usually offer an option to purchase travel insurance to cover your flight, we recommend a more extensive coverage that would cover your program fees, should you have to cancel unexpectedly.
  
