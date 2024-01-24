@@ -18,14 +18,14 @@
 {%- if layout.og-type == "profile" -%}
 <meta property="profile:first_name" content="{{ page.first-name }}" />
 <meta property="profile:last_name" content="{{ page.last-name }}" />
-<meta property="og:image" content="{% include site/person/person-thumbnail-filepath.html %}" />
-<meta property="twitter:card" content="summary_large_image" />
+{%- capture _image-url -%}{% include site/person/person-thumbnail-filepath.html %}{%- endcapture -%}
+<meta property="og:image" content="{{ _image-url | absolute_url }}" />
 {%- endif -%}
 
 {%- if layout.body-class contains "program" -%}
     {%- assign image = page.webpage-data.hero-image -%}
     {%- if image -%}
-<meta property="og:image" content="{{ site.program-assets-directory | append: page.id | append: '/home.jpg' | replace: "//", "/" | relative_url }}" />
+<meta property="og:image" content="{{ site.program-assets-directory | append: page.id | append: '/home.jpg' | replace: "//", "/" | absolute_url }}" />
 <meta property="twitter:card" content="summary_large_image" />
     {%- endif -%}
 {%- endif -%}
