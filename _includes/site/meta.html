@@ -7,7 +7,7 @@
 <meta property="twitter:title" content="{{ include.title }}" />
 
 {%- assign _md = page.webpage-data.meta-description | default: page.meta-description | default: page.excerpt | strip_html | truncatewords: 50 | strip -%}
-{%- unless _md == "" or !_md -%}
+{%- unless _md == "" -%}
 <meta name="description" content="{{ _md }}">
 <meta property="og:description" content="{{ _md }}" />
 <meta property="twitter:description" content="{{ _md }}" />
