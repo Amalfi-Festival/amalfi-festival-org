@@ -13,7 +13,7 @@
     * If you wish to register by mail, print and fill out the form.
 {%- elsif programs-with-guests -%}
     {%- for _p in programs-with-guests %}
-    * <a href="[{{ _p.application.guest-form-url }}">{{ _p.title }}</a>
+    * <a href="{{ _p.application.guest-form-url }}">{{ _p.title }}</a>
     {% endfor -%}
 {%- endif %}
 

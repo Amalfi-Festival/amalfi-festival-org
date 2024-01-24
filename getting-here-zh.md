@@ -25,7 +25,7 @@ webpage-data:
 请确保您持有有效的护照，并确保护照有效期超过旅行日期的6个月以上。
 
 ## 签证
-有关申请欧洲申根地区签证的详细信息，请查阅[意大利驻华大使馆官方网站](https://ambpechino.esteri.it/ambasciata_pechino/zh/informazioni_e_servizi/visti)以及中国领事服务网的相关规定。如有需要，阿马尔菲海岸音乐艺术节将提供书面证明，以作为您办理申根签证的辅助材料。
+有关申请欧洲申根地区签证的详细信息，请查阅[意大利驻华大使馆官方网站](https://ambpechino.esteri.it/zh/informazioni_e_servizi/visti)以及中国领事服务网的相关规定。如有需要，阿马尔菲海岸音乐艺术节将提供书面证明，以作为您办理申根签证的辅助材料。
 
 此外，我们建议您寻求当地旅行社或旅游中介的协助，以办理申根签证。
 

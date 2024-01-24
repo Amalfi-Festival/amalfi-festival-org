@@ -32,7 +32,7 @@ empty-array: []
 social:
     instagram: https://www.instagram.com/amalfi_coast_festival/
     facebook: https://www.facebook.com/AmalfiCoastFestival
-    youtube: http://www.youtube.com/user/AmalfiFestival
+    youtube: https://www.youtube.com/user/AmalfiFestival
 
 collections:
     people:
@@ -70,6 +70,10 @@ defaults:
             type: "apply"
         values:
             layout: "apply"
+
+plugins:
+  - jekyll-sitemap
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
