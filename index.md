@@ -3,7 +3,7 @@ layout: default
 custom-css: home
 body-class: home has-hero
 og-type: website
-meta-description: The Amalfi Coast Music & Arts Festival is based in Maiori, Italy and features a month of concerts each summer throughout the magnificent area of the Amalfi Coast.
+meta-description: The Amalfi Coast Music & Arts Festival, based in Maiori, Italy, features a month of concerts each summer throughout the magnificent area of the Amalfi Coast.
 ---
 {%- assign festival-year = site.data.festival.application.deadline | date: "%Y" -%}
 {%- assign festival-age = festival-year | minus: 1997 -%}

@@ -533,11 +533,12 @@ body > footer {
         }
     }
 
-    h1 {
+    h5 {
         text-transform: uppercase;
         font-size: 1em;
-        font-weight: 400;
+        font-weight: 500;
         margin-top: 0;
+        margin-bottom: 1rem;
         @include breakpoint(mobile) {
             margin-bottom: .5em;
         }
