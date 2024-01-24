@@ -150,4 +150,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
   var lightbox = new Lightbox();
   lightbox.load();
+
+  document.getElementById("hamburger").addEventListener("click", (e) => {
+    e.currentTarget.classList.toggle("is-active");
+    document.body.classList.toggle("hamburger-active");
+    document.querySelector("body > header").scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 });
