@@ -5,30 +5,10 @@ custom-css: program
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
-{%- capture translations -%}
-{%- include site/festival/get-program-translations.fx program-slug=reference-program.slug -%}
-{%- assign _programs = __return -%}
-{%- unless _programs.size == 1 -%}
-{%- for translation in _programs -%}
-    {%- case translation.lang -%}
-        {%- when "zh" -%}
-            {%- assign _abbreviation = "中文" -%}
-        {%- else -%}
-            {%- assign _abbreviation = "en" -%}
-    {%- endcase -%}
-    {%- if translation.slug == page.slug -%}
-<span>{{ _abbreviation }}</span>
-        {%- continue -%}
-    {%- endif -%}
-<a href="{{ translation.url | relative_url }}">{{ _abbreviation }}</a>
-{%- endfor -%}
-{%- endunless -%}
-{%- endcapture -%}
-
 {%- if reference-program.webpage-data.hero-image -%}
 <div id="hero" class="background-image-container parallax">
     <img {% if reference-program.webpage-data.hero-image-position %}style="object-position: {{ reference-program.webpage-data.hero-image-position }};" {% endif %}src="{{ site.program-assets-directory | append: reference-program.slug | append: '/' | append: reference-program.webpage-data.hero-image | relative_url }}" />
-    <div class="text"><h1 class="standard-block">{{ page.title | smartify }} <div><span>{{ translations }}</span></div></h1></div>
+    <div class="text"><h1 class="standard-block">{{ page.title | smartify }}</h1></div>
 </div>
 {%- else -%}
 <h1>{{ page.title | smartify }} <div><span>{{ translations }}</span></div></h1>

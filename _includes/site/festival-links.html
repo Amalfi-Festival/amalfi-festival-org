@@ -8,10 +8,12 @@
     {%- if _program.to-be-announced -%}
         {%- capture _url %}{% unless page.url == "/" %}{{ site.baseurl }}{% if page.lang == "zh" %}{% link index-zh.md %}{% else %}{% link index.md %}{% endif %}{% endunless %}#{{ _program.slug }}{% endcapture -%}
     {%- endif -%}
-<div><a class="link-{{ _program.slug }}" href="{{ _url }}">{% include utilities/localize.html source=_program.webpage-data key="menu-title" %}</a>
+<div style="--counter: {{ counter }}"><a class="link-{{ _program.slug }}" href="{{ _url }}">{% include utilities/localize.html source=_program.webpage-data key="menu-title" %}</a>
 </div>
+    {%- assign counter = counter | plus: 1 -%}
 {%- endfor -%}
 {%- unless include.omit-guests -%}
-{%- assign _program = site.programs | where: "slug", "guests" | first -%}
-<div><a class="link-{{ _program.slug }}" href="{{ _program.url | relative_url }}">{{ _program.webpage-data.menu-title }}</a></div>
+    {%- assign _program = site.programs | where: "slug", "guests" | first -%}
+<div style="--counter: {{ counter }}"><a class="link-{{ _program.slug }}" href="{{ _program.url | relative_url }}">{{ _program.webpage-data.menu-title }}</a></div>
+    {%- assign counter = counter | plus: 1 -%}
 {%- endunless -%}

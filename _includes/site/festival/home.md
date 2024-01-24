@@ -1,9 +1,6 @@
 {%- include site/home-logo.svg -%}
 <header id="hero" class="background-image-container parallax">
     <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
-    <div class="lang-selection">
-        <a class="en" href="{% link index.md %}">en</a> <a class="zh" href="{% link index-zh.md %}">中文</a>
-    </div>
     <div id="masthead">
         <div class="logo">
             <div id="logo-container"><noscript><h1>Amalfi Coast Music & Arts Festival</h1></noscript><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
