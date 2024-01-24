@@ -2,6 +2,7 @@
 layout: default
 custom-css: home
 body-class: home has-hero
+og-type: website
 lang: zh
 permalink: /zh/
 ---

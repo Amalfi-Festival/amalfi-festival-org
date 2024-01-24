@@ -4,35 +4,25 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
+    {%- assign _page-suffix = " &middot; " | append: site.title -%}
     {%- if page.title -%}
-        {%- assign page-title = page.title | strip_html | smartify | append:" &middot; " | append: site.title -%}
+        {%- assign page-title = page.title | strip_html | smartify -%}
+        <title>{{ page-title | append: _page-suffix }}</title>
     {%- elsif page.collection == "apply" -%}
-        {%- assign page-title = "Apply to the " | append: page.title | strip_html | smartify | append:" &middot; " | append: site.title -%}
+        {%- assign page-title = "Apply to the " | append: page.title | strip_html | smartify -%}
+        <title>{{ page-title | append: _page-suffix }}</title>
     {%- else -%}
         {%- assign page-title = site.title -%}
-    {%- endif -%}
-    <title>{{ page-title }}</title>
-
-    <meta property="og:title" content="{{ page-title }}" />
-    {%- assign _md = page.meta-description -%}
-    {%- if page.excerpt -%}
-        {%- assign _md = page.excerpt | strip_html | truncatewords: 50 -%}
-    {%- endif -%}
-    {%- if _md -%}
-    <meta name="description" content="{{ _md }}">
-    <meta property="og:description" content="{{ _md }}" />
-    {%- endif -%}
-    <meta property="og:type" content="{% if layout.og-type %}{{ layout.og-type }}{% elsif page.og-type %}{{ page.og-type }}{% else %}website{% endif %}" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    {%- assign image = page.webpage-data.hero-image -%}
-    {%- if page.preferred-splash-image -%}
-        {%- assign image = page.preferred-splash-image -%}
-    {%- endif -%}
-    {%- if image -%}
-    <meta property="og:image" content="" />
+        <title>{{ page-title }}</title>
     {%- endif -%}
 
-    <!-- CSS -->
+    {%- include site/meta.html title=page-title -%}
+
+{%- comment -%}
+##############
+CSS
+##############
+{%- endcomment -%}
     <link rel="stylesheet" href="{{ site.site-assets-directory | append: 'lightbox.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ site.site-assets-directory | append: 'main.css' | relative_url }}">
     {%- if layout.custom-css -%}
@@ -54,7 +44,12 @@
         {%- endif -%}
     {%- endif -%}
 
-    <!-- Icons -->
+
+{%- comment -%}
+##############
+ICONS
+##############
+{%- endcomment -%}
     <link rel="shortcut icon" href="{{ site.favicon-directory | append: 'favicon.ico?v=0' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.favicon-directory | append: 'apple-touch-icon.png?v=0' | relative_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon-directory | append: 'favicon-32x32.png?v=0' | relative_url }}">

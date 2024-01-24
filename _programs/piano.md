@@ -71,6 +71,7 @@ webpage-data:
         -   person-slug: Yoshikazu-Nagai
             title: Faculty Chair
             title-zh: 师资主任
+    meta-description: "The Amalfi Festival’s Piano Program offers private lessons, master classes, and recitals while offering opportunities to fully experience the Amalfi Coast with excursions to historic locations."
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

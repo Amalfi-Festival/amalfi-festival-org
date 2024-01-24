@@ -1,0 +1,31 @@
+{%- assign _murl = page.url | absolute_url %}
+<meta property="og:url" content="{{ _murl }}" />
+<meta property="twitter:url" content="{{ _murl }}" />
+<link rel="canonical" href="{{ _murl }}" />
+
+<meta property="og:title" content="{{ include.title }}" />
+<meta property="twitter:title" content="{{ include.title }}" />
+
+{%- assign _md = page.webpage-data.meta-description | default: page.meta-description | default: page.excerpt | strip_html | truncatewords: 50 | strip -%}
+{%- unless _md == "" or !_md -%}
+<meta name="description" content="{{ _md }}">
+<meta property="og:description" content="{{ _md }}" />
+<meta property="twitter:description" content="{{ _md }}" />
+{%- endunless -%}
+
+<meta property="og:type" content="{{ page.og-type | default: layout.og-type | default: "article" }}" />
+
+{%- if layout.og-type == "profile" -%}
+<meta property="profile:first_name" content="{{ page.first-name }}" />
+<meta property="profile:last_name" content="{{ page.last-name }}" />
+<meta property="og:image" content="{% include site/person/person-thumbnail-filepath.html %}" />
+<meta property="twitter:card" content="summary_large_image" />
+{%- endif -%}
+
+{%- if layout.body-class contains "program" -%}
+    {%- assign image = page.webpage-data.hero-image -%}
+    {%- if image -%}
+<meta property="og:image" content="{{ site.program-assets-directory | append: page.id | append: '/home.jpg' | replace: "//", "/" | relative_url }}" />
+<meta property="twitter:card" content="summary_large_image" />
+    {%- endif -%}
+{%- endif -%}
