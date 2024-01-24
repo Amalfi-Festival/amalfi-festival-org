@@ -4,7 +4,7 @@ title: 钢琴艺术节
 lang: zh
 permalink: /zh/piano
 webpage-data:
-    menu-title: 钢琴艺术节
+    meta-description: "The Amalfi Festival’s Piano Program offers private lessons, master classes, and recitals while offering opportunities to fully experience the Amalfi Coast with excursions to historic locations."
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

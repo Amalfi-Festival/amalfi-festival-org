@@ -32,6 +32,7 @@ webpage-data:
     menu-title: Visual Arts
     menu-title-zh: 视觉艺术
     hero-image: capri.jpg
+    meta-description: "The Visual Arts Program takes advantage of the cultural riches in the Amalfi Coast. Students tour an array of museums and architectural treasures and explore the artistic traditions of the area while embarking on an intensive course of study."
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 

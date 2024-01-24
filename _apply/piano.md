@@ -1,6 +1,8 @@
 ---
 program-name: piano
 title: Apply to the Piano Program
+webpage-data:
+    meta-description: "The Amalfi Festival’s Piano Program offers private lessons, master classes, and recitals while offering opportunities to fully experience the Amalfi Coast with excursions to historic locations."
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 

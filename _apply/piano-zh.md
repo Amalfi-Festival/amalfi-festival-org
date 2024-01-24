@@ -3,6 +3,8 @@ program-name: piano-zh
 lang: zh
 title: 申请钢琴艺术节
 permalink: /zh/piano-apply
+webpage-data:
+    meta-description: "The Amalfi Festival’s Piano Program offers private lessons, master classes, and recitals while offering opportunities to fully experience the Amalfi Coast with excursions to historic locations."
 ---
 {%- include site/program/initialize-program-variables.fx program=page.program-name -%}
 
