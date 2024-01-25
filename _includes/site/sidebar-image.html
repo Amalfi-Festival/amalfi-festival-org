@@ -1,1 +1,1 @@
-<div class="highlight-box image"><img src="{{ include.src }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" {% if include.alt %}alt="{{ include.alt | smartify }}"{% endif %} /></div>
+<div class="highlight-box image"><img src="{{ include.thumb | default: include.src }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" {% if include.alt %}alt="{{ include.alt | smartify }}"{% endif %} /></div>

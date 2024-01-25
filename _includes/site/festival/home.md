@@ -1,6 +1,7 @@
 {%- include site/home-logo.svg -%}
 <header id="hero" class="background-image-container parallax">
-    <img src="{{ site.image-directory | append: 'amalfi1.jpg' | relative_url }}" alt="Amalfi" />
+    <img src="{{ site.image-directory | append: "amalfi1@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi1.jpg" | relative_url }} 2500w, {{ site.image-directory | append: "amalfi1@0.5x.jpg" | relative_url }} 1478w" sizes="100vw" alt="Amalfi" />
+
     <div id="masthead">
         <div class="logo">
             <div id="logo-container"><noscript><h1>Amalfi Coast Music & Arts Festival</h1></noscript><div id="svg-container"><svg><use xlink:href="#home-logo" /></svg></div></div>
@@ -12,7 +13,7 @@
 
 <section id="years">
     <div class="standard-block">
-        <img src="{{ site.image-directory | append: "concert-choral-2022.jpg" | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
+        <img src="{{ site.image-directory | append: "concert-choral-2022@0.5x.jpg" | relative_url }}" data-jslghtbx="{{ site.image-directory | append: "concert-choral-2022.jpg" | relative_url }}" data-jslghtbx-group="a" />
 <div markdown="1">
 
 ## {{ years-title }}
@@ -25,7 +26,7 @@
 <section id="immersion">
     <div class="dome-container"><svg><use xlink:href="#dome" /></svg></div>
     <div class="standard-block">
-        <img src="{{ site.image-directory | append: "concert-piano-thunderstorm-2019.jpg" | relative_url }}" data-jslghtbx="{{ include.src }}" data-jslghtbx-group="a" />
+        <img src="{{ site.image-directory | append: "concert-piano-thunderstorm-2019@0.5x.jpg" | relative_url }}" data-jslghtbx="{{ site.image-directory | append: "concert-piano-thunderstorm-2019.jpg" | relative_url }}" data-jslghtbx-group="a" />
 <div markdown="1">
 
 ## {{ immersion-title }} 
@@ -36,7 +37,7 @@
 </section>
 
 <section id="spirit" class="background-image-container parallax">
-    <img src="{{ site.image-directory | append: 'festival-spirit-collage.jpg' | relative_url }}" />
+    <img src="{{ site.image-directory | append: "festival-spirit-collage@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "festival-spirit-collage.jpg" | relative_url }} 2500w, {{ site.image-directory | append: "festival-spirit-collage@0.5x.jpg" | relative_url }} 1024w" sizes="100vw" alt="Festival Spirit Collage" />
 <div class="inset-container">
 <div class="content-container" markdown="1">
 
@@ -98,7 +99,8 @@
 <section class="copy standard-block" markdown="1">
 
 {% assign _src = site.image-directory | append: "minori-view.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
+{% assign _thumb = site.image-directory | append: "minori-view@0.5x.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src thumb=_thumb %}
 
 ## {{ guests-title }}
 
@@ -112,7 +114,8 @@
 <section class="copy standard-block" markdown="1">
 
 {% assign _src = site.image-directory | append: "dinner-toast-2023.jpg" | relative_url -%}
-{%- include site/sidebar-image.html src=_src %}
+{% assign _thumb_ = site.image-directory | append: "dinner-toast-2023@0.5x.jpg" | relative_url -%}
+{%- include site/sidebar-image.html src=_src thumb=_thumb %}
 
 ## {{ support-title }}
 
