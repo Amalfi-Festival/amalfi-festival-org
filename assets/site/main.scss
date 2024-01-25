@@ -193,7 +193,11 @@ body > header {
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
+    transition-delay: 0s, $animation-length;
     transition-timing-function: linear;
+    &:is(body.hamburger-active.has-hero #hamburger) {
+        transition-delay: 0s, 0s;
+    }
     font: inherit;
     color: inherit;
     text-transform: none;
@@ -205,7 +209,9 @@ body > header {
     z-index: 20;
 
     .hamburger-inner {
-        &, &:before, &:after { background-color: $brand-blue; }
+        &, &:before, &:after {
+            background-color: $brand-blue;
+        }
     }
 
     &:is(body.hamburger-active #hamburger) {
@@ -222,7 +228,6 @@ body > header {
         height: $hamburger-line * 3 - $hamburger-spacing * 2;
         padding: $hamburger-padding;
         position: relative;
-        transition: background-color 0.15s linear;
     }
 
     .hamburger-inner {
@@ -230,13 +235,14 @@ body > header {
         top: 50%;
         margin-top: -2px;
 
+        $background-color-animation-length: $animation-length * 4;
         &, &:before, &:after {
             width: $hamburger-width;
             height: $hamburger-line;
             border-radius: $hamburger-line;
             position: absolute;
-            transition-property: transform;
-            transition-duration: 0.15s;
+            transition-property: transform, background-color;
+            transition-duration: 0.15s, $background-color-animation-length;
             transition-timing-function: ease;
         }
         &:before, &:after {
@@ -246,25 +252,25 @@ body > header {
         &:before { top: $hamburger-spacing; }
         &:after { bottom: $hamburger-spacing; }
 
-        transition-duration: 0.075s;
-        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-        filter: 0;
-        &:before { transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
-        &:after { transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+        transition-duration: 0.075s, $background-color-animation-length;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19), ease;
+        filter: none;
+        &:before { transition: top 0.075s 0.12s ease, opacity 0.075s ease, background-color $background-color-animation-length ease; }
+        &:after { transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color $background-color-animation-length ease; }
 
         &:is(body.hamburger-active .hamburger-inner) {
             transform: rotate(45deg);
-            transition-delay: 0.12s;
-            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition-delay: 0.12s, 0s;
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), ease;
             &:before {
                 top: 0;
                 opacity: 0;
-                transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+                transition: top 0.075s ease, opacity 0.075s 0.12s ease, background-color $background-color-animation-length ease;
             }
             &:after {
                 bottom: 0;
                 transform: rotate(-90deg);
-                transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), background-color $background-color-animation-length ease;
             }
         }
     }
@@ -318,7 +324,6 @@ body.has-hero {
 
         @include hero-shadow-filter;
     }
-
     #header-mobile,
     #header-desktop {
         position: absolute;
