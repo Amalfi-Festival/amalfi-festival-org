@@ -114,7 +114,7 @@
 <section class="copy standard-block" markdown="1">
 
 {% assign _src = site.image-directory | append: "dinner-toast-2023.jpg" | relative_url -%}
-{% assign _thumb_ = site.image-directory | append: "dinner-toast-2023@0.5x.jpg" | relative_url -%}
+{% assign _thumb = site.image-directory | append: "dinner-toast-2023@0.5x.jpg" | relative_url -%}
 {%- include site/sidebar-image.html src=_src thumb=_thumb %}
 
 ## {{ support-title }}
