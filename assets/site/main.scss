@@ -344,29 +344,39 @@ body.hamburger-active {
     overflow: hidden;
 }
 #nav-overlay {
-    position: absolute;
+    position: fixed;
     z-index: 11;
     display: flex;
     width: 100%;
+    left: 0;
+    top: 0;
+    height: 0;
+    opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: $animation-length * 4, $animation-length * 2;
+    transition-delay: $animation-length * 1, $animation-length * 3;
+    transition-timing-function: ease-in-out, linear;
+    background-color: red;
+    &:is(body.hamburger-active #nav-overlay) {
+        height: 100svh;
+        opacity: 1;
+        transition-property: height, opacity;
+        transition-duration: 0, $animation-length;
+        transition-delay: 0ms, 0ms;
+    }
 
     nav {
         overflow: scroll;
-        position: fixed;
-        left: 0;
-        top: 0;
         width: 100%;
-        height: 0;
-        opacity: 1;
         letter-spacing: .1em;
-        transition-property: height, opacity;
-        transition-duration: $animation-length * 2, $animation-length * 2;
+        transition-property: height;
+        transition-duration: $animation-length * 4;
+        transition-timing-function: ease-in-out;
+        background-color: $background-color;
         &:is(body.hamburger-active nav) {
-            background-color: $background-color;
-            height: 100svh;
-            top: 0;
-            opacity: 1;
-            transition-property: height, opacity;
-            transition-duration: $animation-length * 4, $animation-length * 3;
+            transition-property: height;
+            transition-duration: $animation-length * 4;
+            transition-delay: $animation-length;
         }
 
         > div {
@@ -387,15 +397,15 @@ body.hamburger-active {
                 }
 
                 opacity: 0;
-                transform: translateY(-.5rem);
+                transform: translateY(calc(-.1rem * (9 - var(--counter)))) scale(.7);
                 transition-property: opacity, transform;
-                transition-duration: $animation-length * 2;
-
+                transition-duration: $animation-length * 3;
+                transition-delay: calc((9 - var(--counter)) * #{$animation-length} * .25);
+                transition-linear-function: ease-in-out;
                 &:is(body.hamburger-active div) {
                     opacity: 1;
-                    transform: translateY(0);
-                    transition-property: opacity, transform;
-                    transition-duration: $animation-length * 5;
+                    transform: translateY(0) scale(1);
+                    transition-duration: $animation-length * 3;
                     transition-delay: calc(var(--counter) * #{$animation-length} * .5);
                 }
             }
