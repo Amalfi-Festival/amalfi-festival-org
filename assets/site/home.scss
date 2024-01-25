@@ -94,7 +94,7 @@ header#hero {
         grid-template-rows: min-content;
         justify-items: flex-end;
         gap: min(.3rem, 1vh);
-        @include hero-shadow-filter;
+        filter: drop-shadow(0 0 7px #{$dark-color});
 
         @include breakpoint(tablet) {
             justify-items: center;
