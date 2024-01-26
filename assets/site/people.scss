@@ -17,6 +17,13 @@ body > main {
         margin-top: 0;
         margin-bottom: 0;
     }
+    &:not(.standard-block) > h2:not(:only-of-type) {
+        text-indent: -$standard-block-margin-left;
+        padding-left: minimum-side-padding-with-addition($standard-block-margin-left);
+        @include breakpoint(mobile) {
+            padding-left: minimum-mobile-side-padding-with-addition($standard-block-margin-left);
+        }
+    }
 }
 
 #headshot {

@@ -12,6 +12,6 @@
 {%- for faculty-member in _f -%}
     {%- include site/person/person-localized-name.fx lang=_l person=faculty-member -%}
     {%- assign faculty-name = __result -%}
-<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/person/person-thumbnail-filepath.html person=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-zh and _l == "zh" %}{{ faculty-member.school-zh }}{% else %}{{ faculty-member.role | default: faculty-member.school }}{% endif %}</div>
+<div><a href="{{ faculty-member.url | relative_url }}"><div class="image"><img src="{% include site/person/person-thumbnail-filepath.html person=faculty-member %}" /></div><div class="name">{{ faculty-name }}</div><div class="school">{% if faculty-member.school-zh and _l == "zh" %}{{ faculty-member.school-zh }}{% else %}{{ faculty-member.role | default: faculty-member.school | join: '; ' }}{% endif %}</div>
 </a></div>
 {%- endfor -%}

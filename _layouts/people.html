@@ -8,7 +8,7 @@ og-type: profile
     <img src="{%- include site/person/person-headshot-filepath.html -%}" />
 </div>
 <h1>{{ page.first-name }} {{ page.last-name }}{% if page.zh-name %} <span class="zh-name">({{ page.zh-name }})</span>{% endif %}</h1>
-{% if page.school %}<h2>{{ page.school }}</h2>{% endif %}
+{% if page.role or page.school %}<h2>{{ page.role | default: page.school | join: "</h2><h2>" }}</h2>{% endif %}
 {% if page.website %}<h3><a href="{{ page.website }}">Personal website</a></h3>{% endif %}
 
 {%- assign availability = site.empty-array -%}
