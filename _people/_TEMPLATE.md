@@ -9,7 +9,7 @@ first-name: # English first name
 last-name: # English last name
 zh-name: # Chinese name, if available
 prefers-en-name: # For almost everyone, please delete this line. Only include it, and set it to |true| (see Nagai's page) if the following is desired: on Chinese pages the English name will be listed first, with |zh-name| listed in parenthesis. Usually, |zh-name| is used if it exists, otherwise the English name is used.
-role: # Use this if the instructors works for a non-academic institution, or roles that they have outside the festival. Instructors not in the piano programs, and staff will usually use this instead of |school|.
+role: # Use this if the instructors works for a non-academic institution, or roles that they have outside the festival. Instructors not in the piano programs, and staff will usually use this instead of |school|. If the individual has multiple roles, this can be an array of strings (see Anthony Blake Clark).
 school: # School from which a professor teaches.
 school-zh: # Chinese name of the school.
 website: https:// # If the person has a personal website they'd like to include, include it here. Otherwise, remove this line.
