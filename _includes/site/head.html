@@ -57,7 +57,7 @@ ICONS
     <link rel="manifest" href="{{ site.favicon-directory | append: 'site.webmanifest?v=0' | relative_url }}">
     <link rel="mask-icon" href="{{ site.favicon-directory | append: 'safari-pinned-tab.svg?v=0' | relative_url }}" color="#0a85b2">
     <meta name="msapplication-TileColor" content="#fdfaf6">
-    <meta name="theme-color" content="#fdfaf6">
+    <meta name="theme-color" content="{{ page.theme-color | default: "#fdfaf6" }}">
 
     <script src="{{ site.site-assets-directory | append: 'lightbox.min.js' | relative_url }}"></script>
     <script src="{{ site.site-assets-directory | append: 'simpleParallax.min.js' | relative_url }}"></script>
