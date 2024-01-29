@@ -71,4 +71,4 @@
 <a class="apply button" href="{{ apply-url }}">{% if reference-program.applications-closed %}{% include utilities/localize.html string="Learn more" %}{% else %}{% include utilities/localize.html string="Learn more & apply" %}{% endif %}</a>
 </section>
 
-<script>(() => { parallaxify("learn", 1.3); })();</script>
+<script>(() => { parallaxify("learn", 1.5); })();</script>
