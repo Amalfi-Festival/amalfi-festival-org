@@ -25,7 +25,7 @@
         724 Chesapeake Ave.<br/>
         Silver Spring, MD 20910</div>
 
-1. Applications are accepted until spaces are filled. Formal participation in the program may not be considered confirmed until deposits are accepted by Center for Musical Studies.
+1. Applications are accepted until spaces are filled. Your participation in the program may not be considered confirmed until deposits are accepted by Center for Musical Studies and you have received a formal confirmation notification.
 
 {% if reference-program.slug == "choral" %}
 1. All trip participants are required to [purchase travel insurance]({{ site.baseurl }}{% link getting-here.md %}#travel-insurance) that covers the tour in case of emergency, unexpected health issues, other unforeseen change of plans or need for cancellation.
