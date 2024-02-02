@@ -49,13 +49,13 @@ Make sure your passport is up-to-date! For full information on obtaining or rene
 
 ## Travel Insurance
 
-When planning your upcoming summer in Italy, travel insurance is essential.
+When planning your upcoming summer in Italy, travel insurance is essential. Choral tour members are required to have travel insurance for their protection. Others are strongly recommended to obtain it as well. Here is important information to review: 
 
 * [An introduction on how travel insurance works](https://www.nerdwallet.com/article/insurance/travel-insurance) (NerdWallet)
 * [An up-to-date list of highly ranked insurance providers](https://www.thebalancemoney.com/best-travel-insurance-4796919) (The Balance)
 * [Resource when looking for information on potential insurance providers](https://www.forbes.com/advisor/travel-insurance/best-travel-insurance/) (Forbes)
 
-For your protection, we strongly recommend you purchase travel insurance. In case of a health problem or family emergency that might require you to make a last-minute change in plans. Although on-line search engine such as Kayak or Orbitz, usually offer an option to purchase travel insurance to cover your flight, we recommend a more extensive coverage that would cover your program fees, should you have to cancel unexpectedly.
+For your protection, you should obtain travel insurance in case of a health problem or family emergency that might require you to make a last-minute change in plans. Although on-line search engine such as Kayak or Orbitz, usually offer an option to purchase trip insurance to cover your flight, the more extensive coverage of travel insurance that would cover your program fees in case of any cancellations is highly advisable. 
  
 Agencies offering travel insurance:
 * [InsureMyTrip](https://www.insuremytrip.com)

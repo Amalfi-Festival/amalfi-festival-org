@@ -34,7 +34,7 @@ for.
 
 Two concerts:
 
-- Perform Vivaldi's ***Gloria*** and cathedral choral classics in the historic Basilica San Giovanni di Napoli for a gala concert sponsored by the International Rotary Club of Naples.  An Italian chorus has been invited to join us.
+- Perform Vivaldi's ***Gloria*** and cathedral choral classics in the historic Basilica San Giovanni di Napoli for a gala concert sponsored by the International Rotary Club of Naples.  An Italian chorus will be invited to join us.
 
 - Celebrate the 4th of July with a memorable concert --- **Independence Day Americana** --- with  Broadway hits, patriotic songs, and spirituals in the enchanting gardens of the Palazzo Mezzacapo --- a much anticipated evening for our Italian audiences!
 
