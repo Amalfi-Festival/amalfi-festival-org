@@ -103,7 +103,7 @@ What are the hostel accommodations like?
 ## Insurance
 
 Why do you recommend travel insurance?
-: Each year we have at least one last-minute cancellation, due to unexpected health problems or family schedule changes. At such a late date it is impossible for us (or the airlines) to provide a full refund. Travel insurance provides important protection for unexpected situations, cancellations, lost luggage, etc.
+: Each year we have at least one last-minute cancellation, due to unexpected health problems or family schedule changes. At such a late date it is impossible for us (or the airlines) to provide a full refund. Travel insurance provides important protection for unexpected situations, cancellations, lost luggage, etc. and should cover your program fees in case of cancellation. 
 
     See a [listing of travel insurance agencies]({{ site.baseurl }}{% link getting-here.md %}#travel-insurance).
  
