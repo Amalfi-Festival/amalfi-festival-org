@@ -33,6 +33,7 @@ sessions:
             -   Douglas-Humpherys
             -   Thomas-Rosenkranz
             -   Hong-Xu
+            -   Wei-Yi-Yang
         associate-faculty:
             -   Yetong-Tang
             -   Shichao-Zhang
