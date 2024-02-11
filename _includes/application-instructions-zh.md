@@ -7,7 +7,11 @@
 
 {% include site/program/application-sidebar.html %}
 
-1. 网上填写并提交{% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}application form.{% endif %}
+{% if reference-program.applications-closed %}
+**Note: Application deadline has passed. Applications are closed.**
+{% endif %}
+
+1. 网上填写并提交{% if reference-program.applications-closed %}报名表。{% elsif application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}报名表。{% endif %}
 
 1. 通过 <a href="{{ paymentRegistrationURL }}">PayPal</a>**\*** 或邮寄支票缴纳注册费及押金。
 

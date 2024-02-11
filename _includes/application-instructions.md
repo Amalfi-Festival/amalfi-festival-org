@@ -7,13 +7,17 @@
 
 {% include site/program/application-sidebar.html %}
 
-1. Complete the online {% if application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
+{% if reference-program.applications-closed %}
+**Note: Application deadline has passed. Applications are closed.**
+{% endif %}
+
+1. Complete the online {% if reference-program.applications-closed %}application form.{% elsif application.form-url %}<a href="{{ application.form-url }}" target="_blank">application form</a>.{% else %}application form.{% endif %}
 
 {% if application.allow-mail-registration %}
     * If you wish to register by mail, print and fill out the form.
 {%- elsif programs-with-guests -%}
     {%- for _p in programs-with-guests %}
-    * <a href="{{ _p.application.guest-form-url }}">{{ _p.title }}</a>
+    * {% if _p.applications-closed %}{{ _p.title }} (Applications closed){% else %}<a href="{{ _p.application.guest-form-url }}">{{ _p.title }}</a>{% endif %}
     {% endfor -%}
 {%- endif %}
 
