@@ -1,9 +1,9 @@
 ---
 first-name: Wei-Yi
 last-name: Yang
-zh-name: # Chinese name, if available
+zh-name: 杨为谊
 school: Yale University
-school-zh: # Chinese name of the school.
+school-zh: 耶鲁大学音乐学院
 ---
 
 Pianist Wei-Yi Yang has received worldwide acclaim for his captivating performances and imaginative programming. Winner of the gold medal at the San Antonio International Piano Competition, he has performed at Lincoln Center for the Performing Arts, the John F. Kennedy Center for the Performing Arts, and across America, Asia, Europe, and Australia. Most recently, his debut at Carnegie Hall’s Stern Auditorium as the soloist in Messiaen’s Turangalîla-Symphonie was hailed by The New York Times as “sensational.”
