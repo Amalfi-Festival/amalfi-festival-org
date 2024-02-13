@@ -8,7 +8,7 @@
 {% include site/program/application-sidebar.html %}
 
 {% if reference-program.applications-closed %}
-**Note: Application deadline has passed. Applications are closed.**
+**注意：报名已截止，申请通道已关闭。**
 {% endif %}
 
 1. 网上填写并提交{% if reference-program.applications-closed %}报名表。{% elsif application.form-url %}<a href="{{ application.form-url }}" target="_blank">报名表</a>。{% else %}报名表。{% endif %}
