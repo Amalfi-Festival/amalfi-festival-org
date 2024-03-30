@@ -13,6 +13,7 @@ sessions:
             -   Wei-Lung-Li
             -   Marina-Lomazov
             -   Jerome-Lowenthal 
+            -   Kara-Huber
             -   Yoshikazu-Nagai
             -   Ursula-Oppens
             -   Joseph-Rackers
