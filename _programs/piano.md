@@ -10,7 +10,6 @@ sessions:
             -   Boris-Berman
             -   Christopher-Guzman
             -   Min-Kwon
-            -   Wei-Lung-Li
             -   Marina-Lomazov
             -   Jerome-Lowenthal 
             -   Kara-Huber
@@ -32,6 +31,7 @@ sessions:
             -   Kevin-Fitz-Gerald
             -   James-Giles
             -   Douglas-Humpherys
+            -   Wei-Lung-Li
             -   Thomas-Rosenkranz
             -   Hong-Xu
             -   Wei-Yi-Yang
