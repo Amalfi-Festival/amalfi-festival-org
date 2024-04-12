@@ -1,0 +1,4 @@
+{%- comment -%}
+768 is the breakpoint for desktop machines.
+{%- endcomment -%}
+sizes="(min-resolution: 2x) {{ include.smaller-width | divided_by: 2.0 | divided_by: 768 | times: 100 | round: 2 }}vw, (min-resolution: 3x) {{ include.smaller-width | divided_by: 3.0 | divided_by: 768 | times: 100 | round: 2 }}vw, 100vw"

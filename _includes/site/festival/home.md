@@ -1,6 +1,6 @@
 {%- include site/home-logo.svg -%}
 <header id="hero" class="background-image-container parallax">
-    <img src="{{ site.image-directory | append: "amalfi1@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi1.jpg" | relative_url }} 2500w, {{ site.image-directory | append: "amalfi1@0.5x.jpg" | relative_url }} 1478w" sizes="100vw" alt="Amalfi" />
+    <img src="{{ site.image-directory | append: "amalfi1@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi1@0.5x.jpg" | relative_url }} 1478w, {{ site.image-directory | append: "amalfi1.jpg" | relative_url }} 2500w" {% include utilities/img-size.html smaller-width=1478 %} alt="Amalfi" />
 
     <div id="masthead">
         <div class="logo">
@@ -37,7 +37,7 @@
 </section>
 
 <section id="spirit" class="background-image-container parallax">
-    <img src="{{ site.image-directory | append: "festival-spirit-collage@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "festival-spirit-collage.jpg" | relative_url }} 2500w, {{ site.image-directory | append: "festival-spirit-collage@0.5x.jpg" | relative_url }} 1024w" sizes="100vw" alt="Festival Spirit Collage" />
+    <img src="{{ site.image-directory | append: "festival-spirit-collage@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "festival-spirit-collage@0.5x.jpg" | relative_url }} 1024w, {{ site.image-directory | append: "festival-spirit-collage.jpg" | relative_url }} 2500w" {% include utilities/img-size.html smaller-width=1024 %} alt="Festival Spirit Collage" />
 <div class="inset-container">
 <div class="content-container" markdown="1">
 
@@ -49,7 +49,7 @@
 </section>
 
 <section id="festival" class="background-image-container parallax">
-<img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w, {{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w" sizes="100vw" alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
+<img src="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }}" srcset="{{ site.image-directory | append: "amalfi3@0.5x.jpg" | relative_url }} 1363w, {{ site.image-directory | append: "amalfi3.jpg" | relative_url }} 2400w" {% include utilities/img-size.html smaller-width=1363 %} alt="Scenic Photo Of Coast During Daytime, by Michael Giugliano on Pexels" />
 
 <div class="inset-container">
 <div class="content-container">
