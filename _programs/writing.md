@@ -1,7 +1,7 @@
 ---
 title: Writers' Studio
 title-zh: 作家工作室
-to-be-announced: true
+to-be-announced: Coming again in 2025!
 sessions:
     -   class-name: writing-studio
         dates:
