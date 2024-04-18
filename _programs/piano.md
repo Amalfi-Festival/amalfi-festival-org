@@ -41,6 +41,8 @@ sessions:
 application:
     form-url: https://forms.gle/ebvRKq7ULbid4MC48
     guest-form-url: https://forms.gle/LpyNuznuL6uogNDM9
+    deadline: 2024-04-15
+    extended-deadline: 2024-05-01
 outings:
     excursions:
         -   outing-slug: ravello
