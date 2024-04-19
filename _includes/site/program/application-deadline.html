@@ -10,7 +10,7 @@ deposit in one object, and then the deadline in another if it isn't specified.
 
 {%- if application-extended-deadline -%}
 <del>{% include utilities/date.html date=application-deadline %}</del><br/>
-extended to {% include utilities/date.html date=application-extended-deadline %}
+{%- include utilities/localize.html string="application-extended-deadline" -%}{% include utilities/date.html date=application-extended-deadline %}
 {%- else -%}
 {% include utilities/date.html date=application-deadline %}
 {%- endif -%}
