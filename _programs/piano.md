@@ -12,7 +12,6 @@ sessions:
             -   Min-Kwon
             -   Marina-Lomazov
             -   Jerome-Lowenthal 
-            -   Kara-Huber
             -   Yoshikazu-Nagai
             -   Ursula-Oppens
             -   Joseph-Rackers
@@ -32,7 +31,6 @@ sessions:
             -   James-Giles
             -   Douglas-Humpherys
             -   Wei-Lung-Li
-            -   Thomas-Rosenkranz
             -   Hong-Xu
             -   Wei-Yi-Yang
         associate-faculty:
