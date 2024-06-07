@@ -1,10 +1,10 @@
 ---
 title: Online Payment Form
-custom-js: payment-new
+custom-js:
+    - payment-new
+    - https://www.paypal.com/sdk/js?client-id=BAAIYGKETn5E4mx7lgjNfiIjRE3H39Z6yfcMw9PXIx3m600643IBOuUhqYLsRUtOMUM7JSyTSd2CQ5O19w&components=hosted-buttons&disable-funding=paylater&currency=USD
 custom-css: payment-new
 ---
-<script src="https://www.paypal.com/sdk/js?client-id=BAAIYGKETn5E4mx7lgjNfiIjRE3H39Z6yfcMw9PXIx3m600643IBOuUhqYLsRUtOMUM7JSyTSd2CQ5O19w&components=hosted-buttons&disable-funding=paylater&currency=USD"></script>
-
 <section id="formSelectionContainer">
 <form class="standard-block">
     <h3>Select the payment type:</h3>
@@ -17,20 +17,26 @@ custom-css: payment-new
 
 <section id="formContainer">
 
-<div class="standard-block form" id="formRegistration">
+<form class="standard-block" id="formRegistration" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_new">
 
     <h3>Select the program:</h3>
     <input type="hidden" name="on0" value="Program" />
     <ol id="programContainer">
-    {% for _p in site.data.festival.programs -%}
+    {%- assign _program-count = 0 -%}
+    {%- for _p in site.data.festival.programs -%}
     {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
     {%- if _program.to-be-announced or _program.applications-closed -%}
         {%- continue -%}
     {%- endif -%}
         <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title | smartify }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
+    {%- assign _program-count = _program-count | plus: 1 -%}
     {%- endfor -%}
+    {%- if _program-count == 0 -%}
+        <li>All program applications closed</li>
+    {%- endif -%}
     </ol>
 
+{%- unless _program-count == 0 -%}
     <h3><label for="os1">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
     <input type="text" id="amalfi-balance-name" class="amalfi-input name" required maxLength="200" />
 
@@ -61,21 +67,45 @@ custom-css: payment-new
     </tbody></table>
     </div>
 {% endfor %}
-    <div class="paymentContainer">
-        <h3>Payment:</h3>
-        <div id="paypal-container-MZJBKV9HEGM6E" class="paypalForm disabled" data-hosted-button-id="MZJBKV9HEGM6E"></div>
-    </div>
-</div>
 
+<h3>{{ "Click the button below to complete the transaction on PayPal's website." | smartify }}</h3>
+{% capture commonPayPalInstructions %}
+1. You may be asked to log into PayPal. If you have an account, log in and complete the transaction.
+
+    *Note: Some applicants have expressed a desire to avoid using their PayPal accounts to pay, but PayPal may recognize a previous login. If you do not wish to use your PayPal account to pay, then please make sure to log out first, then you may proceed with the steps below.*
+
+If you do not have a PayPal account, continue with the following steps:
+
+1. Click on **Pay with Debit or Credit Card**.
+
+    <img src="{{ site.image-directory | append: "payment-pay.png" | relative_url }}" />
+
+1. You will be asked to enter an email address. This is to send you a receipt of your payment. This does not create a PayPal account. Click on **Continue to Payment**.
+
+1. Enter your debit or credit card information.
+
+1. At the bottom of the form make sure that **Save info & create your PayPal account** is turned off.
+
+    <img src="{{ site.image-directory | append: "payment-account-creation.png" | relative_url }}" />
+
+1. Click on **Pay now as guest** to complete the transaction.
+{% endcapture %}
+{% capture paypalInstructions %}
+1. Click on the **Pay with PayPal** button below. You will taken to the PayPal website.
+
+{{ commonPayPalInstructions }}
+{% endcapture %}
+{% assign paypalInstructions = paypalInstructions | markdownify %}
+{% include site/details.html summary="Detailed Instructions" details=paypalInstructions %}
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="Q9299ADLMEWBL" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="submit" class="button" name="submit" value="Pay with PayPal" />
+{%- endunless -%}
+</form>
 
 <div class="standard-block form" id="formBalance">
-    <h3><label for="amalfi-balance-name">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
-    <input type="text" id="amalfi-balance-name" class="amalfi-input name" required maxLength="200" />
-    <h3><label for="amalfi-balance-cost">{{ "Enter the balance amount (USD):" | smartify }}</label></h3>
-    <input type="text" id="amalfi-balance-cost" class="amalfi-input cost" maxLength="10" inputmode="numeric" required pattern="^\d+(\.\d\d?)?$" />
-
-    <h3>Payment:</h3>
-    <div id="paypal-container-AS45VTKZZPP36" class="paypalForm disabled" data-hosted-button-id="AS45VTKZZPP36"></div>
+    <div id="paypal-container-AS45VTKZZPP36" class="paypalForm" data-hosted-button-id="AS45VTKZZPP36"></div>
 </div>
 
 </section>

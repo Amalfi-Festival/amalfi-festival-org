@@ -21,37 +21,58 @@ main ol {
     display: block;
 }
 
-input[type="text"] {
-    font-size: $form-text-size;
-    font-family: $body-font;
-    padding: .5em;
-    border-radius: $border-radius-small;
+*,
+#paypal-form-fields-container-AS45VTKZZPP36 {
+    input[type="text"], input[type="number"] {
+        font-size: $form-text-size;
+        font-family: $body-font;
+        padding: .5em;
+        border-radius: $border-radius-small;
+        height: initial;
 
-    border: border-style-with-color($brand-blue);
-    &:hover {
-        border-color: $brand-light-blue;
+        border: border-style-with-color($brand-blue);
+        &:hover {
+            border-color: $brand-light-blue;
+        }
+
+        width: $default-max-copy-width;
+        margin-left: $standard-block-margin-left;
+        @include breakpoint(mobile) {
+            width: 100%;
+            margin-left: 0;
+        }
     }
+}
 
-    width: $default-max-copy-width;
-    margin-left: $standard-block-margin-left;
-    @include breakpoint(mobile) {
-        width: 100%;
-        margin-left: 0;
-    }
-
+.paymentContainer {
+    display: none;
 }
 
 .paypalForm {
-    width: $default-max-copy-width;
-    margin-left: $standard-block-margin-left;
-    @include breakpoint(mobile) {
-        width: 100%;
-        margin-left: 0;
+    @include breakpoint(min-tablet) {
+        width: $default-max-copy-width !important;
     }
 
-    &.disabled {
-        opacity: 50%;
-        pointer-events: none;
+    #desc-label {
+        display: none;
+    }
+    .input-label {
+        // Identical to <h3> styling
+        font-family: $brand-font;
+        line-height: $minimum-line-height;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0;
+        font-weight: 600;
+        font-size: 1.17em;
+        @include breakpoint(mobile) {
+            font-size: 1.15em;
+        }
+    }
+    #paypal-form-fields-container-AS45VTKZZPP36 {
+        .currency-label {
+            display: none;
+        }
     }
 }
 
@@ -63,7 +84,7 @@ input[type="text"] {
     display: none;
 }
 {% for _p in site.data.festival.programs -%}
-{% if forloop.index0 > 0 %},{% endif %}.{{ _p.program-slug }} #invoice-{{ _p.program-slug }}, .{{ _p.program-slug }} .paymentContainer
+{% if forloop.index0 > 0 %},{% endif %}.{{ _p.program-slug }} #invoice-{{ _p.program-slug }}
 {% endfor %}
 {
     display: block;
@@ -101,6 +122,15 @@ input[type="radio"] {
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 input[type="submit"] {
     display: block;
     margin-top: 2rem;
@@ -111,14 +141,4 @@ input[type="submit"] {
 
 details img {
     width: 100%;
-}
-
-.paymentContainer {
-    display: none;
-}
-#paypal-form-fields-container-MZJBKV9HEGM6E,
-#paypal-form-fields-container-AS45VTKZZPP36 {
-    height: 0;
-    overflow: hidden;
-    margin: 0 !important;
 }

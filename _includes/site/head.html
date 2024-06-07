@@ -65,8 +65,14 @@ ICONS
     {%- if layout.custom-js -%}
         {%- if layout.custom-js[0] -%}
             {%- for js in layout.custom-js -%}
+                {%- if js contains "http" -%}
+            <script src="{{ js }}"></script>
+                {%- else -%}
             <script src="{{ site.site-assets-directory | append: js | append: '.js' | relative_url }}"></script>
+                {%- endif -%}
             {%- endfor -%}
+        {%- elsif layout.custom-js contains "http" -%}
+            <script src="{{ layout.custom-js }}"></script>
         {%- else -%}
             <script src="{{ site.site-assets-directory | append: layout.custom-js | append: '.js' | relative_url }}"></script>
         {%- endif -%}
@@ -74,8 +80,14 @@ ICONS
     {%- if page.custom-js -%}
         {%- if page.custom-js[0] -%}
             {%- for js in page.custom-js -%}
+                {%- if js contains "http" -%}
+            <script src="{{ js }}"></script>
+                {%- else -%}
             <script src="{{ site.site-assets-directory | append: js | append: '.js' | relative_url }}"></script>
+                {%- endif -%}
             {%- endfor -%}
+        {%- elsif page.custom-js contains "http" -%}
+            <script src="{{ page.custom-js }}"></script>
         {%- else -%}
             <script src="{{ site.site-assets-directory | append: page.custom-js | append: '.js' | relative_url }}"></script>
         {%- endif -%}
