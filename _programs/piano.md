@@ -1,5 +1,6 @@
 ---
 title: Piano Program
+applications-closed: true
 sessions:
     -   session-name: Session 1
         session-name-zh: 第一期
