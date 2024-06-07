@@ -1,15 +1,17 @@
 ---
 title: Online Payment Form
-custom-js: payment
+custom-js:
+    - payment
+    - https://www.paypal.com/sdk/js?client-id=BAAIYGKETn5E4mx7lgjNfiIjRE3H39Z6yfcMw9PXIx3m600643IBOuUhqYLsRUtOMUM7JSyTSd2CQ5O19w&components=hosted-buttons&disable-funding=paylater&currency=USD
 custom-css: payment
 ---
 <section id="formSelectionContainer">
 <form class="standard-block">
-<h3>Select the payment type:</h3>
-<ol id="payTypeContainer">
-    <li><input type="radio" name="payType" id="payTypeRegistration" value="registration" /> <label for="payTypeRegistration">Pay registration fee</label></li>
-    <li><input type="radio" name="payType" id="payTypeBalance" value="balance" /> <label for="payTypeBalance">Pay balance</label></li>
-</ol>
+    <h3>Select the payment type:</h3>
+    <ol id="payTypeContainer">
+        <li><input type="radio" name="payType" id="payTypeRegistration" value="formRegistration" /> <label for="payTypeRegistration">Pay registration fee</label></li>
+        <li><input type="radio" name="payType" id="payTypeBalance" value="formBalance" /> <label for="payTypeBalance">Pay balance</label></li>
+    </ol>
 </form>
 </section>
 
@@ -17,54 +19,53 @@ custom-css: payment
 
 <form class="standard-block" id="formRegistration" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_new">
 
-<h3>Select the program:</h3>
-<input type="hidden" name="on0" value="Program" />
-<ol id="programContainer">
-{%- assign _program-count = 0 -%}
-{%- for _p in site.data.festival.programs -%}
-{%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
-{%- if _program.to-be-announced or _program.applications-closed -%}
-    {%- continue -%}
-{%- endif -%}
-    <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title | smartify }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
+    <h3>Select the program:</h3>
+    <input type="hidden" name="on0" value="Program" />
+    <ol id="programContainer">
+    {%- assign _program-count = 0 -%}
+    {%- for _p in site.data.festival.programs -%}
+    {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
+    {%- if _program.to-be-announced or _program.applications-closed -%}
+        {%- continue -%}
+    {%- endif -%}
+        <li><input type="radio" name="os0" id="program-{{ _program.slug }}" value="{{ _program.title | smartify }}" data-slug="{{ _program.slug }}" required /> <label for="program-{{ _program.slug }}">{{ _program.title | smartify }}</label></li>
     {%- assign _program-count = _program-count | plus: 1 -%}
-{%- endfor -%}
-{%- if _program-count == 0 -%}
-    <li>All program applications closed</li>
-{%- endif -%}
-</ol>
+    {%- endfor -%}
+    {%- if _program-count == 0 -%}
+        <li>All program applications closed</li>
+    {%- endif -%}
+    </ol>
 
 {%- unless _program-count == 0 -%}
-<h3><label for="os1">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
-<input type="hidden" name="on1" value="Applicant Name" />
-<input type="text" name="os1" id="os1" maxLength="200" required />
+    <h3><label for="os1">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
+    <input type="text" id="amalfi-balance-name" class="amalfi-input name" required maxLength="200" />
 
 {% for _p in site.data.festival.programs -%}
     {%- assign _program = site.programs | where: "slug", _p.program-slug | first %}
     {%- include site/program/initialize-program-variables.fx program=_program -%}
-<div class="invoice" id="invoice-{{ _p.program-slug }}">
-<h3>Fee items</h3>
-<table><tbody>
-    <tr class="header"><td colspan="2"><p>{{ _program.title | smartify }}</p></td></tr>
-    <tr>
-        <td><p>Registration fee (non-refundable):</p></td>
-        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-registration-fee %}</p></td>
-    </tr>
-    <tr>
-        <td><p>Deposit:</p></td>
-        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-deposit %}</p></td>
-    </tr>
-    <tr>
-        <td><p>Credit card payment service fee:</p></td>
-        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=site.data.festival.application.credit-card-fee %}</p></td>
-    </tr>
-    <tr class="base">
-        <td><p>Total:</p></td>
-        {%- assign _total = application-registration-fee | plus: application-deposit | plus: site.data.festival.application.credit-card-fee -%}
-        <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=_total %}</p></td>
-    </tr>
-</tbody></table>
-</div>
+    {%- assign _total = application-registration-fee | plus: application-deposit | plus: site.data.festival.application.credit-card-fee -%}
+    <div class="invoice" id="invoice-{{ _p.program-slug }}" data-total="{{ _total }}">
+    <h3>Fee items:</h3>
+    <table><tbody>
+        <tr class="header"><td colspan="2"><p>{{ _program.title | smartify }}</p></td></tr>
+        <tr>
+            <td><p>Registration fee (non-refundable):</p></td>
+            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-registration-fee %}</p></td>
+        </tr>
+        <tr>
+            <td><p>Deposit:</p></td>
+            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-deposit %}</p></td>
+        </tr>
+        <tr>
+            <td><p>Credit card payment service fee:</p></td>
+            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=site.data.festival.application.credit-card-fee %}</p></td>
+        </tr>
+        <tr class="base">
+            <td><p>Total:</p></td>
+            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=_total %}</p></td>
+        </tr>
+    </tbody></table>
+    </div>
 {% endfor %}
 
 <h3>{{ "Click the button below to complete the transaction on PayPal's website." | smartify }}</h3>
@@ -103,27 +104,8 @@ If you do not have a PayPal account, continue with the following steps:
 {%- endunless -%}
 </form>
 
-<form class="standard-block" id="formBalance" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_new">
-<h3><label for="os0">{{ "Enter the participant's or guest's name:" | smartify }}</label></h3>
-<input type="hidden" name="on0" value="Applicant Name"/>
-<input type="text" name="os0" id="os0" maxLength="200" />
-
-<h3>{{ "Click the button below to enter the balance of payment and complete the transaction on PayPal's website." | smartify }}</h3>
-{% capture paypalInstructions %}
-1. Click on the **Pay with PayPal** button below. You will taken to the PayPal website.
-
-1. Enter the balance of payment. Click **Continue**.
-
-    <img src="{{ site.image-directory | append: "payment-amount.png" | relative_url }}" />
-
-{{ commonPayPalInstructions }}
-{% endcapture %}
-{% assign paypalInstructions = paypalInstructions | markdownify %}
-{% include site/details.html summary="Detailed Instructions" details=paypalInstructions %}
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="C8D429MWVTGK6">
-<input type="hidden" name="currency_code" value="USD" />
-<input type="submit" class="button" name="submit" value="Pay with PayPal" />
-</form>
+<div class="standard-block form" id="formBalance">
+    <div id="paypal-container-AS45VTKZZPP36" class="paypalForm" data-hosted-button-id="AS45VTKZZPP36"></div>
+</div>
 
 </section>

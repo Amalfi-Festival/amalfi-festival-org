@@ -8,7 +8,7 @@ $form-text-size: 1.2rem;
 main {
     min-height: 50vh;
 }
-form > ol {
+main ol {
     font-size: $form-text-size;
     list-style-type: none;
     padding-left: 0 !important;
@@ -16,29 +16,64 @@ form > ol {
 #formRegistration, #formBalance {
     display: none;
 }
-.registration #formRegistration,
-.balance #formBalance {
+.formRegistration #formRegistration,
+.formBalance #formBalance {
     display: block;
 }
 
-input[type="text"] {
-    font-size: $form-text-size;
-    font-family: $body-font;
-    padding: .5em;
-    border-radius: $border-radius-small;
+*,
+#paypal-form-fields-container-AS45VTKZZPP36 {
+    input[type="text"], input[type="number"] {
+        font-size: $form-text-size;
+        font-family: $body-font;
+        padding: .5em;
+        border-radius: $border-radius-small;
+        height: initial;
 
-    border: border-style-with-color($brand-blue);
-    &:hover {
-        border-color: $brand-light-blue;
+        border: border-style-with-color($brand-blue);
+        &:hover {
+            border-color: $brand-light-blue;
+        }
+
+        width: $default-max-copy-width;
+        margin-left: $standard-block-margin-left;
+        @include breakpoint(mobile) {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.paymentContainer {
+    display: none;
+}
+
+.paypalForm {
+    @include breakpoint(min-tablet) {
+        width: $default-max-copy-width !important;
     }
 
-    width: $default-max-copy-width;
-    margin-left: $standard-block-margin-left;
-    @include breakpoint(mobile) {
-        width: 100%;
-        margin-left: 0;
+    #desc-label {
+        display: none;
     }
-
+    .input-label {
+        // Identical to <h3> styling
+        font-family: $brand-font;
+        line-height: $minimum-line-height;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0;
+        font-weight: 600;
+        font-size: 1.17em;
+        @include breakpoint(mobile) {
+            font-size: 1.15em;
+        }
+    }
+    #paypal-form-fields-container-AS45VTKZZPP36 {
+        .currency-label {
+            display: none;
+        }
+    }
 }
 
 .cost {
@@ -85,6 +120,15 @@ input[type="radio"] {
     &:checked::before {
         transform: scale(1);
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 input[type="submit"] {

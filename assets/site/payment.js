@@ -1,12 +1,43 @@
 function payTypeChanged() {
-    document.getElementById("formContainer").className = document.forms[0].payType.value;
+    let payType = document.forms[0].payType.value;
+    if (!payType)
+        return;
+
+    document.getElementById("formContainer").className = payType;
     document.getElementById("formSelectionContainer").className = document.forms[0].payType.value;
+    loadPayPalForm(payType);
 }
 
-function programChanged() {
+function programChanged(e) {
     var slugOfSelectedProgram = document.querySelector('#programContainer input[name="os0"]:checked');
     slugOfSelectedProgram = slugOfSelectedProgram.dataset.slug;
     document.getElementById("formRegistration").className = `standard-block ${slugOfSelectedProgram}`;
+}
+
+function loadPayPalForm(payType) {
+    let paypalForm = document.querySelector(`#${payType} .paypalForm`);
+    if (!paypalForm || paypalForm.hostedButtonFormLoaded)
+        return;
+    let hostedButtonId = paypalForm.dataset.hostedButtonId;
+    paypal.HostedButtons({
+        hostedButtonId: hostedButtonId
+    }).render(`#paypal-container-${hostedButtonId}`);
+    paypalForm.hostedButtonFormLoaded = true;
+}
+
+function inputChanged(e) {
+    let input = e.target;
+    let parentNode = input.closest(".form");
+    if (!parentNode)
+        return;
+
+    let name = parentNode.querySelector("#memo");
+    let amount = parentNode.querySelector("#amount");
+
+    if (name.value && amount.value > 0)
+        parentNode.querySelector(".paypalForm").classList.remove("disabled");
+    else
+        parentNode.querySelector(".paypalForm").classList.add("disabled");
 }
 
 window.addEventListener("DOMContentLoaded", function() {
