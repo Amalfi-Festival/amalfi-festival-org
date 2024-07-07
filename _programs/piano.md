@@ -9,12 +9,12 @@ sessions:
             end: 2024-07-17
         faculty:
             -   Boris-Berman
+            -   Michele-Campanella
             -   Christopher-Guzman
             -   Min-Kwon
             -   Marina-Lomazov
-            -   Jerome-Lowenthal 
+            -   Leon-McCawley
             -   Yoshikazu-Nagai
-            -   Ursula-Oppens
             -   Joseph-Rackers
             -   Steven-Spooner 
         associate-faculty:
