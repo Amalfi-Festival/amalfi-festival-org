@@ -25,7 +25,7 @@ railway station instead of Naples.  The Salerno station is closer and more acces
 
 ## Airlines
 
-All participants are free to make their travel plans at their own discretion. There are many efficient search engines and websites with a range of flights and prices, such as [Kayak](https://www.kayak.com) or [Expedia](https://www.expedia.com).
+All participants are free to make their travel plans at their own discretion. There are many efficient search engines and websites with a range of flights and prices, such as [Kayak](https://www.kayak.com), [Expedia](https://www.expedia.com), or [Cheapflights](https://www.cheapflights.com).
  
 For arrival at the festival, your most convenient option is to fly into the city of Naples, which is approximately 90 minutes from our facilities. There are few direct flights from the U.S. to Naples outside of New York. Lufthansa (Star Alliance) and Air France (SkyTeam Alliance) have consistently offered reliable routes at the best prices.
  
