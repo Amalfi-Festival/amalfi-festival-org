@@ -13,3 +13,8 @@ Changes you commit will trigger an immediate update to the entire site. It will 
 To confirm that your changes are live, shift-click the reload button in your browser.
 
 * [General information regarding the festival](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_data/festival.yaml){:target="_blank"}
+
+
+## Programs
+
+* [Choral program](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/choral.md){:target="_blank"}
