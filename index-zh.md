@@ -5,6 +5,7 @@ body-class: home has-hero
 og-type: website
 lang: zh
 permalink: /zh/
+published: false
 ---
 {%- assign festival-year = site.data.festival.application.deadline | date: "%Y" -%}
 {%- assign festival-age = festival-year | minus: 1997 -%}

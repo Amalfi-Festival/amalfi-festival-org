@@ -5,6 +5,7 @@ custom-css: getting-here
 permalink: /zh/getting-here
 webpage-data:
     menu-title-zh: 如何到达
+published: false
 ---
 
 <section class="standard-block" markdown="1">

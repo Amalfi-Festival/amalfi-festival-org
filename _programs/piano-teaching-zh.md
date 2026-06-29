@@ -3,6 +3,7 @@ reference-program-slug: piano-teaching
 title: 钢琴教学研讨会
 lang: zh
 permalink: /zh/piano-teaching
+published: false
 ---
 {%- include site/program/initialize-program-variables.fx -%}
 
