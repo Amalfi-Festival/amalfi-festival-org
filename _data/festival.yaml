@@ -27,19 +27,26 @@ application:
 
 ### Information regarding fee changes and the cancellation policy.
 fees-and-deposits:
+    ### "The price of the program was established ____ and may be subject to change..."
     prices-established-on: 2023-12-30
+    ### "Registrants will be notified by ___ if the price increases..."
     notification-date-if-prices-increase: 2024-05-15
 cancellation-policy:
+    ### "Your deposit will be fully refunded without penalty..."
     full-refund:
         before-date: 2024-03-31
+    ### "A $___ processing fee will be applied to your refund..."
     processing-fee:
         as-of-date: 2024-04-01
         amount: 50
+    ### "Your $___ deposit will be forfeited plus any prepaid nonrefundable expenses."
     withdrawal-fee:
         as-of-date: 2024-04-15
         amount: 100
+    ### "Your first installment payment will be forfeited plus any prepaid nonrefundable expenses."
     forfeit:
         as-of-date: 2024-05-01
         deductible: 1500
+    ### "No refunds will be made..."
     no-refund:
         as-of-date: 2024-06-01
