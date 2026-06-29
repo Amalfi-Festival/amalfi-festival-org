@@ -1,3 +1,7 @@
+{% comment %}
+This snippet of text is included in application pages, program pages, and in the Terms & Conditions page.
+{% endcomment %}
+
 ## Cancellation Policy & Refunds
 {: id="cancellation-policy-refunds"}
 
