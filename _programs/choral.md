@@ -1,5 +1,5 @@
 ---
-title: Choral Tour
+title: Choral Week 
 title-zh: 合唱之旅
 applications-closed: false
 sessions:
