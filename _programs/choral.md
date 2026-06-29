@@ -11,9 +11,6 @@ sessions:
             - Anthony-Blake-Clark
             - Stan-Engebretson
 application:
-    deadline: 2024-01-31
-    registration-fee: 45
-    deposit: 500
     form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
     guest-form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
 outings:
