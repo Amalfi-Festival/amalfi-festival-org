@@ -108,6 +108,9 @@
     en: Your ~COST~ deposit will be forfeited plus any prepaid nonrefundable expenses up to **~~~DEDUCTIBLE~~~**.
     zh: 您的~COST~订金以及最多**~~~DEDUCTIBLE~~~**的预付款皆不会被退回。
     is-markdown: true
+-   key: first-installment-payment-forfeit
+    en: Your first installment payment will be forfeited plus any prepaid nonrefundable expenses.
+    is-markdown: true
 -   key: no-refund
     en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made."
     zh: 我们不再受理取消行程的申请。**一切已缴费用将不予退还。**

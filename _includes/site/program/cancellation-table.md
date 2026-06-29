@@ -51,7 +51,7 @@
     {%- endcapture -%}
 {%- else -%}
     {%- capture _html -%}
-    {%- include utilities/localize.html string="deposit-forfeit" -%}
+    {%- include utilities/localize.html string="first-installment-payment-forfeit" -%}
     {%- endcapture -%}
 {%- endif -%}
 
