@@ -15,6 +15,10 @@ To confirm that your changes are live, shift-click the reload button in your bro
 * [General information regarding the festival](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_data/festival.yaml){:target="_blank"}
 
 
+## Text that universally affects all programs
+
+* [Application instructions](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_includes/application-instructions.md){:target="_blank"}
+
 ## Programs
 
 * [Choral program](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/choral.md){:target="_blank"}
