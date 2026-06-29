@@ -1,15 +1,15 @@
 ---
 title: Choral Tour
 title-zh: 合唱之旅
-applications-closed: true
+applications-closed: false
 sessions:
-    -   class-name: choral-tour
+    -   class-name: choral-week
         dates:
-            start: 2024-06-29
-            end: 2024-07-05
+            start: 2027-06-27
+            end: 2027-07-03
         faculty:
             - Anthony-Blake-Clark
-            - Stan-Engebretson
+            - Brett-Karlin
 application:
     form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
     guest-form-url: https://forms.gle/Qe7tx2BsDdbZDgd6A
@@ -22,10 +22,10 @@ outings:
     activities:
         -   outing-slug: cooking
 tuition:
-    cost: 2195
+    cost: 2630
     name: Cost (not including airfare)
-    description: Balance due will be made in two payments of $975. Invoices will be sent to trip participants with the deadline for those amounts.
-    hotel-single-upgrade: 450
+    description: Balance due will be made in two installments. Invoices will be sent to trip participants with the deadline for those amounts.
+    hotel-single-upgrade: 500
 tuition-guests:
     intro: Guests of the choral tour will enjoy the same special trips and group activities and attend concerts on the other side of the podium. The cost and registration fees are the same for participants and guests. The registration form has a section for guests to apply.
     cost: true
