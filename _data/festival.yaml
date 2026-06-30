@@ -30,7 +30,7 @@ fees-and-deposits:
     ### "The price of the program was established ____ and may be subject to change..."
     prices-established-on: 2026-05-01
     ### "Registrants will be notified by ___ if the price increases..."
-    notification-date-if-prices-increase: 2024-05-15
+    notification-date-if-prices-increase: 2027-05-01
 cancellation-policy:
     ### "Your deposit will be fully refunded without penalty..."
     full-refund:
