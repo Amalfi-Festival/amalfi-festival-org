@@ -14,7 +14,7 @@ images:
 Join us on the breathtaking Amalfi Coast for a transformative week of music, culture, and unforgettable performances!
 Bring family members and friends along to enjoy this unique experience.  
 
-Sing in extraordinary settings with world renowned conductors, enjoy curated excurstions and authentic Italian experiences. Enjoy local cusine and community. Rehearse and perform in stunning, historic venues. 
+Sing in extraordinary settings with world renowned conductors, enjoy curated excursions and authentic Italian experiences. Enjoy local cusine and community. Rehearse and perform in stunning, historic venues. 
 
 ~IMAGE~
 
@@ -38,13 +38,13 @@ Work with internationally acclaimed conductors and clinicians
 
 Perform in two concerts in historic venues in stunning locations:  c
 
-- Perform ***Gloria*** and cathedral choral classics in the historic Basilica San Giovanni di Napoli for a gala concert sponsored by the International Rotary Club of Naples.
+- Concert 1 - "Italian Evolution." June 30 - with Chamber Orchestra in the incomparabe Basilica San Giovanni di Napoli, sponsored by the International Rotary Club of Naples.
 
-- Celebrate the 4th of July with a memorable concert --- **Independence Day Americana** --- with  Broadway hits, patriotic songs, and spirituals in the enchanting gardens of the Palazzo Mezzacapo --- a much anticipated evening for our Italian audiences!
-
+- Concert 2 - "American & Italian Friendship Concert" - July 2, Palazzo Mezzacapo Gardens, Maiori. A gala event in the enchanting, historic gardens where Caruso once sang. A much anticipated evening for our Italian audiences!
+- 
 Travel to renowned cultural landmarks and stunning landscapes:
 
-- Explore  this  magnificent  area   of  the Mediterranean,  where for centuries artists and musicians have come for inspiration and to soak up the beauty --- from the lush vineyards and terraced lemon groves to the rocky buffs and vivid sea. Visit some of the world's most dramatic sights: the haunting excavations of Pompeii, the magical island of Capri, the majesty of Ravello's villas, and more.
+- Explore  this  magnificent  area   of  the Mediterranean,  where for centuries artists and musicians have come for inspiration and to soak up the beauty --- from the lush vineyards and terraced lemon groves to the rocky buffs and vivid sea. Visit some of the world's most dramatic sights, such as the haunting excavations of Pompeii, the magical island of Capri, the majesty of Ravello's villas, and more.
 
 ~IMAGE~
 
