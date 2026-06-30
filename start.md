@@ -21,4 +21,8 @@ To confirm that your changes are live, shift-click the reload button in your bro
 
 ## Programs
 
-* [Choral program](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/choral.md){:target="_blank"}
+* [Choral](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/choral.md){:target="_blank"}
+* [Piano](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/piano.md){:target="_blank"}
+* [Piano teaching](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/piano-teaching.md){:target="_blank"}
+* [Visual arts](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/visual-arts.md){:target="_blank"}
+* [Writing](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_programs/writing.md){:target="_blank"}
