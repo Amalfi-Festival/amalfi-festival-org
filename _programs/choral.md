@@ -47,7 +47,7 @@ webpage-data:
 {% capture tuition-description %}
 The cost is listed as one total fee, which includes:
 
-- Accommodation in gracious festival hotels in heart of Maiori.
+- Accommodation in modern hotel overlooking the sea in Salerno, the Gateway to the Amalfi Coast.
 - Meals:  All breakfasts  (buffet) and 5 dinners (classic 3-course Italian dinners with wine and mineral water included).
 - Excursions with guide to Pompeii and Ravello.
 - Bilingual tour assistant and experienced festival personnel to assure every detail goes smoothly.
