@@ -11,8 +11,10 @@ images:
     -   filename: choral/palazzo-mezzacapo-gardens.jpg
         alt: Gardens of Palazzo Mezzacapo, by Marie Thérèse Hébert & Jean Robert Thibault on flickr
 ---
-Join fellow choristers for an unforgettable singing-vacation in Maiori, Italy!
+Join us on the breathtaking Amalfi Coast for a transformative week of music, culture, and unforgettable performances!
 Bring family members and friends along to enjoy this unique experience.  
+
+Sing in extraordinary settings with world renowned conductors, enjoy curated excurstions and authentic Italian experiences. Enjoy local cusine and community. Rehearse and perform in stunning, historic venues. 
 
 ~IMAGE~
 
@@ -32,9 +34,11 @@ for.
 
 ## Tour Highlights
 
-Two concerts:
+Work with internationally acclaimed conductors and clinicians
 
-- Perform Vivaldi's ***Gloria*** and cathedral choral classics in the historic Basilica San Giovanni di Napoli for a gala concert sponsored by the International Rotary Club of Naples.  An Italian chorus will be invited to join us.
+Perform in two concerts in historic venues in stunning locations:  c
+
+- Perform ***Gloria*** and cathedral choral classics in the historic Basilica San Giovanni di Napoli for a gala concert sponsored by the International Rotary Club of Naples.
 
 - Celebrate the 4th of July with a memorable concert --- **Independence Day Americana** --- with  Broadway hits, patriotic songs, and spirituals in the enchanting gardens of the Palazzo Mezzacapo --- a much anticipated evening for our Italian audiences!
 
