@@ -34,7 +34,7 @@ fees-and-deposits:
 cancellation-policy:
     ### "Your deposit will be fully refunded without penalty..."
     full-refund:
-        before-date: 2024-03-31
+        before-date: 2026-20-01
     ### "A $___ processing fee will be applied to your refund..."
     processing-fee:
         as-of-date: 2024-04-01
