@@ -28,7 +28,7 @@ application:
 ### Information regarding fee changes and the cancellation policy.
 fees-and-deposits:
     ### "The price of the program was established ____ and may be subject to change..."
-    prices-established-on: 2023-12-30
+    prices-established-on: 2026-05-01
     ### "Registrants will be notified by ___ if the price increases..."
     notification-date-if-prices-increase: 2024-05-15
 cancellation-policy:
