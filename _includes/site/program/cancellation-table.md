@@ -10,9 +10,9 @@
 <div>{% include utilities/localize.html string="full-refund" %}</div>
 
 {%- capture _date -%}
-{%- include utilities/date.html date=__c.processing-fee.as-of-date -%}
+{%- include utilities/date.html date=__c.processing-fee.before-date -%}
 {%- endcapture -%}
-{% include utilities/localize.html string="as-of-date" replace-key="~~~DATE~~~" replace-value=_date %}
+{% include utilities/localize.html string="before-date" replace-key="~~~DATE~~~" replace-value=_date %}
 {: class="dateline"}
 
 <div>

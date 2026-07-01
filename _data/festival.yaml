@@ -37,7 +37,7 @@ cancellation-policy:
         before-date: 2026-10-01
     ### "A $___ processing fee will be applied to your refund..."
     processing-fee:
-        as-of-date: 2026-10-02
+        before-date: 2026-11-30
         amount: 50
     ### "Your $___ deposit will be forfeited plus any prepaid nonrefundable expenses."
     withdrawal-fee:
