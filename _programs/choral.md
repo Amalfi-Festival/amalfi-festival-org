@@ -34,8 +34,8 @@ tuition-guests:
 webpage-data:
     menu-title: Choral
     menu-title-zh: 合唱之旅
-    hero-image: Conductor with chorus.jpg
-    hero-image-position: 65% 73%
+    hero-image: chorus-performance.jpg
+    hero-image-position: 0% 50%
     meta-description: "The Choral Tour is an unforgettable singing-vacation in Maiori, Italy! This unique experience includes performing the classics of choral repertoire at historic cloisters and cathedrals on the Amalfi Coast."
 ---
 {%- include site/program/initialize-program-variables.fx -%}
