@@ -1,5 +1,6 @@
 ---
 title: Piano Program
+to-be-announced: Stay Tuned!
 applications-closed: true
 sessions:
     -   session-name: Session 1

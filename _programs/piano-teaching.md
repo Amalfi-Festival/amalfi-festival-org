@@ -1,6 +1,6 @@
 ---
 title: Piano Teaching Seminar
-to-be-announced: Coming again in 2025!
+to-be-announced: Stay Tuned!
 sessions:
     -   dates:
             start: 2024-07-10
