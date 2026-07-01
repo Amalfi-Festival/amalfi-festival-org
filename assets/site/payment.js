@@ -2,15 +2,7 @@ function payTypeChanged() {
     let payType = document.forms[0].payType.value;
     if (!payType)
         return;
-
-    document.body.classList.remove("formRegistration", "formBalance");
-    document.body.classList.add(payType);
     loadPayPalForm(payType);
-}
-
-function programButtonClicked(e) {
-    var slugOfSelectedProgram = e.target.dataset.slug;
-    document.getElementById("registrationFees").className = `standard-block ${slugOfSelectedProgram}`;
 }
 
 function loadPayPalForm(payType) {
@@ -24,23 +16,17 @@ function loadPayPalForm(payType) {
     paypalContainer.append(formContainer);
 
     paypal.HostedButtons({
-        hostedButtonId: hostedButtonId,
-        onInit: (data, actions) => {
-            alert('hie');
-        }
+        hostedButtonId: hostedButtonId
     }).render(`#${formId}`);
 }
 
 window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("payTypeContainer").addEventListener("click", payTypeChanged);
-    document.getElementById("programContainer").addEventListener("click", programButtonClicked);
 
     var search = new URLSearchParams(location.search);
     if (search.get("registration")) {
         document.getElementById("payTypeRegistration").checked = true;
-        document.getElementById(`program-${search.get("registration")}`).checked = true;
         payTypeChanged();
-        programButtonClicked();
     } else if (search.get("balance")) {
         document.getElementById("payTypeBalance").checked = true;
         payTypeChanged();

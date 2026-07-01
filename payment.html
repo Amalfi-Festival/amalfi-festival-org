@@ -15,51 +15,5 @@ custom-css: payment
 </form>
 </section>
 
-<section id="registrationFees" class="standard-block">
-    <h3>Fee items:</h3>
-    <div id="programContainer">
-    {%- assign _program-count = 0 -%}
-    {%- for _p in site.data.festival.programs -%}
-    {%- assign _program = site.programs | where: "slug", _p.program-slug | first -%}
-    {%- if _program.to-be-announced or _program.applications-closed -%}
-        {%- continue -%}
-    {%- endif -%}
-        <div id="program-{{ _program.slug }}" data-slug="{{ _program.slug }}">{{ _program.title | smartify }}</div>
-    {%- assign _program-count = _program-count | plus: 1 -%}
-    {%- endfor -%}
-    {%- if _program-count == 0 -%}
-        <div>All program applications closed</div>
-    {%- endif -%}
-    </div>
-
-{% for _p in site.data.festival.programs -%}
-    {%- assign _program = site.programs | where: "slug", _p.program-slug | first %}
-    {%- include site/program/initialize-program-variables.fx program=_program -%}
-    {%- assign _total = application-registration-fee | plus: application-deposit | plus: site.data.festival.application.credit-card-fee -%}
-    <div class="invoice" id="invoice-{{ _p.program-slug }}" data-total="{{ _total }}">
-    <table><tbody>
-        <tr class="header"><td colspan="2"><p>{{ _program.title | smartify }}</p></td></tr>
-        <tr>
-            <td><p>Registration fee (non-refundable):</p></td>
-            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-registration-fee %}</p></td>
-        </tr>
-        <tr>
-            <td><p>Deposit:</p></td>
-            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=application-deposit %}</p></td>
-        </tr>
-        <tr>
-            <td><p>Credit card payment service fee:</p></td>
-            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=site.data.festival.application.credit-card-fee %}</p></td>
-        </tr>
-        <tr class="base">
-            <td><p>Total:</p></td>
-            <td class="cost" align="right" valign="top"><p>{% include utilities/format-cost.html cost=_total %}</p></td>
-        </tr>
-    </tbody></table>
-    </div>
-{% endfor %}
-
-</section>
-
 <section id="paypalFormContainer" class="standard-block">
 </section>
