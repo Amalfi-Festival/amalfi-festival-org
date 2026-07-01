@@ -20,7 +20,7 @@ programs:
 ### These dates can be overridden on a per-program basis.
 application:
     deadline: 2026-10-01
-#    extended-deadline: 2024-04-24
+#    extended-deadline: 2027-01-15
     registration-fee: 45
     deposit: 500
     credit-card-fee: 15
