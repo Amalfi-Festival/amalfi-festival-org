@@ -106,8 +106,6 @@
 
 {{ guests-body }}
 
-<a class="button" href="{{ site.baseurl }}{% link _programs/guests.md %}">{%- include utilities/localize.html string="Learn more" -%}</a>
-
 </section>
 
 

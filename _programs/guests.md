@@ -5,6 +5,7 @@ webpage-data:
     menu-title: Guests
     hero-image: home.jpg
     meta-description: "Friends and family members of Institute participants are invited to visit the festival as part of our Guest Program. Guests will enjoy a rich, cultural experience and unique back-stage perspective as they explore the area while sampling the festival’s diverse musical offerings, lectures and workshops."
+published: false
 ---
 {%- assign is-guests-page = true -%}
 
