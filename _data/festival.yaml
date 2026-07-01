@@ -46,7 +46,6 @@ cancellation-policy:
     ### "Your first installment payment will be forfeited plus any prepaid nonrefundable expenses."
     forfeit:
         as-of-date: 2027-03-01
-        deductible: 1500
     ### "No refunds will be made..."
     no-refund:
         as-of-date: 2027-05-01
