@@ -20,7 +20,7 @@ Sing in extraordinary settings with world renowned conductors, enjoy curated exc
 
 Our 2027 season will feature members of the **Dallas Symphony Chorus**
 under the baton of **Anthony Blake Clark**, Chorus Director, joined
-by **Chorus of Southern Florida**  music director **Brett Karlin**.  Other singers are invited to participate.
+by **Master Chorale of South Florida**  Artistic Director **Brett Karlin**. Other singers are invited to participate.
 
 ~IMAGE~
 
