@@ -60,7 +60,11 @@ Teaching Seminar participants have the opportunity to attend Faculty Concerts, Y
 {%- endcapture -%}
 
 {%- capture faculty -%}
+{%- if program.to-be-announced -%}
+Previous faculty
+{%- else -%}
 Our distinguished {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+{%- endif -%}
 {%- endcapture -%}
 
 {%- capture experience-title -%}

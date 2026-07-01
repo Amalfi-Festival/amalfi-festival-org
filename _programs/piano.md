@@ -100,7 +100,11 @@ Opportunities to fully experience the Amalfi Coast with excursions to historic l
 {%- endcapture -%}
 
 {%- capture faculty -%}
+{%- if program.to-be-announced -%}
+Previous faculty
+{%- else -%}
 Our distinguished {{ site.data.festival.application.deadline | date: "%Y" }} faculty
+{%- endif -%}
 {%- endcapture -%}
 
 {%- include site/program/piano-front-brochure.md -%}

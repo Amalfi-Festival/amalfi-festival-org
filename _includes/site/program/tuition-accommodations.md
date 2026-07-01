@@ -1,3 +1,5 @@
+{%- unless program.to-be-announced -%}
+
 {%- capture _s -%}
 {%- include utilities/localize.html string="tuition-title" -%}
 {%- endcapture -%}
@@ -96,4 +98,6 @@
     </tr>
 </tbody>
 </table>
-{%- endif %}
+{%- endif -%}
+
+{%- endunless %}

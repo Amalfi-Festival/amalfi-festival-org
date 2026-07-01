@@ -15,22 +15,28 @@ custom-css: program
 {%- endif -%}
 
 <div id="header" class="standard-block sidebar">
-    <div><h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
-    {%- if page.applications-closed -%}
-    <div><span class="button disabled">{% include utilities/localize.html string="Applications closed" %}</span></div>
-    {%- else -%}
-    <a class="apply button" href="{{ apply-url }}">{% include utilities/localize.html string="Apply" %}</a>
-    {%- endif -%}
+    <div>
+        {%- unless program.to-be-announced -%}
+        <h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
+            {%- if page.applications-closed -%}
+        <div><span class="button disabled">{% include utilities/localize.html string="Applications closed" %}</span></div>
+            {%- else -%}
+        <a class="apply button" href="{{ apply-url }}">{% include utilities/localize.html string="Apply" %}</a>
+            {%- endif -%}
+        {%- endunless -%}
     </div>
-    <div><h2>
-{%- for session in reference-program.sessions -%}
-{%- if forloop.index > 1 -%}<br/>{%- endif -%}
-{%- include site/session/get-session-name-with-dates.html session=session lang=page.lang -%}
-{%- endfor -%}
-    </h2>
-{%- if reference-program.webpage-data.program-heads -%}
-    {%- include site/program/program-heads.html heads=reference-program.webpage-data.program-heads -%}
-{%- endif -%}
+    <div>
+        <h2>
+        {%- unless program.to-be-announced -%}
+            {%- for session in reference-program.sessions -%}
+            {%- if forloop.index > 1 -%}<br/>{%- endif -%}
+            {%- include site/session/get-session-name-with-dates.html session=session lang=page.lang -%}
+            {%- endfor -%}
+        {%- endunless -%}
+        </h2>
+        {%- if reference-program.webpage-data.program-heads -%}
+            {%- include site/program/program-heads.html heads=reference-program.webpage-data.program-heads -%}
+        {%- endif -%}
     </div>
 </div>
 

@@ -65,10 +65,12 @@
     <iframe src="https://www.youtube.com/embed/dlnph4LxtrM?modestbranding=1" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
 </section>
 
+{%- unless program.to-be-announced -%}
 <section id="learn" class="background-image-container parallax">
 <img src="{{ site.program-assets-directory | append: 'piano/collage.jpg' | relative_url }}" />
 <h3><span class="label">{% include utilities/localize.html string="Application deadline" %}</span><br/>{% include site/program/application-deadline.html %}</h3>
 <a class="apply button" href="{{ apply-url }}">{% if reference-program.applications-closed %}{% include utilities/localize.html string="Learn more" %}{% else %}{% include utilities/localize.html string="Learn more & apply" %}{% endif %}</a>
 </section>
+{%- endunless -%}
 
 <script>(() => { parallaxify("learn", 1.5); })();</script>
