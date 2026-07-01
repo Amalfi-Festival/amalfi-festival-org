@@ -42,7 +42,7 @@ webpage-data:
 
 <section class="standard-block" markdown="1">
 
-{% include site/session/session-info.md faculty-type="" %}
+{% include site/session/session-info.md faculty-type="Co-Artistic Directors" %}
 
 {% capture tuition-description %}
 The cost is listed as one total fee, which includes:
