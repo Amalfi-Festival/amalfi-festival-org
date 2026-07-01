@@ -14,7 +14,7 @@ images:
 Join us on the breathtaking Amalfi Coast for a transformative week of music, culture, and unforgettable performances!
 Bring family members and friends along to enjoy this unique experience.  
 
-Sing in extraordinary settings with world renowned conductors, enjoy curated excursions and authentic Italian experiences. Enjoy local cusine and community. Rehearse and perform in stunning, historic venues. 
+Sing in extraordinary settings with world renowned conductors, enjoy curated excursions and authentic Italian experiences. Rehearse and perform in stunning, historic venues. Savor local cusine and community. 
 
 ~IMAGE~
 
@@ -37,7 +37,7 @@ Work with internationally acclaimed conductors and clinicians
 
 Perform in two concerts in historic venues in stunning locations:  c
 
-- Concert 1 - "Italian Evolution." June 30 - with Chamber Orchestra in the incomparabe Basilica San Giovanni di Napoli, sponsored by the International Rotary Club of Naples.
+- Concert 1 - "Handel in Italy"  - with chamber orchestra - June 30. Basilica San Giovanni di Napoli, sponsored by the International Rotary Club of Naples.
 
 - Concert 2 - "American & Italian Friendship Concert" - July 2, Palazzo Mezzacapo Gardens, Maiori. A gala event in the enchanting, historic gardens where Caruso once sang. A much anticipated evening for our Italian audiences!
 - 
