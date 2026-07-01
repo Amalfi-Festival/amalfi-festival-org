@@ -89,7 +89,7 @@
     en: After ~~~DATE~~~
     zh: ~~~DATE~~~（含）之后申请退款
 -   key: full-refund
-    en: Your deposit and any tuition payments made will be fully refunded without penalty (excluding registration fees).
+    en: Your deposit will be fully refunded without penalty (excluding registration fees).
     zh: 已缴纳订金及学费将被全额退款（45美元注册费用不可退）。
     is-markdown: true
 -   key: processing-fee
@@ -97,7 +97,7 @@
     zh: 我们将收取**~~~COST~~~**手续费。
     is-markdown: true
 -   key: withdrawal-fee
-    en: A **~~~COST~~~** withdrawal fee will be applied to your refund plus any prepaid nonrefundable expenses.
+    en: Your **~~~COST~~~** deposit will be forfeited plus any prepaid nonrefundable expenses.
     zh: 我们将收取**~~~COST~~~**手续费。
     is-markdown: true
 -   key: deposit-forfeit
@@ -112,7 +112,7 @@
     en: Your first installment payment will be forfeited plus any prepaid nonrefundable expenses.
     is-markdown: true
 -   key: no-refund
-    en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your tuition fees will be forfeited. No exceptions can be made."
+    en: "***No refunds will be made.*** Please note that due to the late date, the full amount of your program fees will be forfeited. No exceptions can be made."
     zh: 我们不再受理取消行程的申请。**一切已缴费用将不予退还。**
     is-markdown: true
 

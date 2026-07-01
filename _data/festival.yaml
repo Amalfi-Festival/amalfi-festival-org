@@ -42,7 +42,7 @@ cancellation-policy:
     ### "Your $___ deposit will be forfeited plus any prepaid nonrefundable expenses."
     withdrawal-fee:
         as-of-date: 2026-12-01
-        amount: 100
+        amount: 500
     ### "Your first installment payment will be forfeited plus any prepaid nonrefundable expenses."
     forfeit:
         as-of-date: 2027-03-01
