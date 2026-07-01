@@ -18,10 +18,9 @@ Sing in extraordinary settings with world renowned conductors, enjoy curated exc
 
 ~IMAGE~
 
-Our 2024 season will feature members of the **Baltimore Choral Arts Society**
-under the baton of **Anthony Blake Clark**, Music Director, joined
-by **National Philharmonic Chorale** alums with **Stan Engebretson**,
-Conductor Laureate.  Other singers are invited to participate.
+Our 2027 season will feature members of the **Dallas Symphony Chorus**
+under the baton of **Anthony Blake Clark**, Chorus Director, joined
+by **Chorus of Southern Florida**  music director **Brett Karlin**.  Other singers are invited to participate.
 
 ~IMAGE~
 
