@@ -35,7 +35,7 @@ for.
 
 Work with internationally acclaimed conductors and clinicians
 
-Perform in two concerts in historic venues in stunning locations:  c
+Perform in two concerts in historic venues in stunning locations:  
 
 - Concert 1 - "Handel in Italy"  - with chamber orchestra - June 30. Basilica San Giovanni di Napoli, sponsored by the International Rotary Club of Naples.
 
