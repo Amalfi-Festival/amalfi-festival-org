@@ -7,16 +7,19 @@ function payTypeChanged() {
 
 function loadPayPalForm(payType) {
     let paypalContainer = document.getElementById("paypalFormContainer");
-    paypalContainer.replaceChildren();
-
     let formContainer = document.createElement("div");
-    const hostedButtonId = payType == "formRegistration" ? "5PEGZF49YR5G2" : "LCQMKDH2KKVC6";
-    const formId = `paypalForm-${hostedButtonId}`;
+    const hostedButtonIds = {
+        payTypeRegistration: "5PEGZF49YR5G2",
+        payTypeInstallment: "XLANCSL4CNFLU",
+        payTypeBalance: "LCQMKDH2KKVC6",
+    }
+
+    const formId = `paypalForm-${hostedButtonIds[payType]}`;
     formContainer.setAttribute("id", formId);
-    paypalContainer.append(formContainer);
+    paypalContainer.replaceChildren(formContainer);
 
     paypal.HostedButtons({
-        hostedButtonId: hostedButtonId
+        hostedButtonId: hostedButtonIds[payType]
     }).render(`#${formId}`);
 }
 
