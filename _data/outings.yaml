@@ -1,13 +1,12 @@
 ### Contains all optional activities and excursions for all participants of
-### the festival.
+### the festival. This information is listed in the application pages of all programs.
 ###
 ### Each outing listed under |activities| or |excursions| uses a name which is referenced elsewhere
 ### as the |outing-slug|.
 ###
 ### name: Human-readable name for the outing.
 ### cost: Cost of outing for all programs. Can be overridden on a per-program basis.
-### description: Text is formatted as Markup.
-### localizations: Localizations for the same data.
+### description: Text is formatted as Markdown.
 excursions:
     ravello:
         name: Ravello
