@@ -1,7 +1,7 @@
 ---
 title: Visual Arts Program
 title-zh: 视觉艺术
-to-be-announced: Coming again in 2025!
+to-be-announced: Stay Tuned!
 sessions:
     -   session-name: Painting
         class-name: exploring-watercolor
