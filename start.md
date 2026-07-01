@@ -29,6 +29,8 @@ To confirm that your changes are live, shift-click the reload button in your bro
 
 ## Programs
 
+These files have a combination of the structured data describing each program, located in the *front matter* of the file (which is listed first, between the lines marked `---`), and textual descriptions. A guide to the format of the front matter is located in the [`_programs/_README.md`](https://github.com/Amalfi-Festival/amalfi-festival-org/blob/main/_programs/_README.md?plain=1) file.
+
 * [Choral]({{ gh }}_programs/choral.md){:target="_blank"}
 * [Piano]({{ gh }}_programs/piano.md){:target="_blank"}
 * [Piano teaching]({{ gh }}_programs/piano-teaching.md){:target="_blank"}
