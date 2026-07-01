@@ -17,6 +17,9 @@ To confirm that your changes are live, shift-click the reload button in your bro
 ## Text and data that universally affects program pages
 
 * [Application instructions]({{ gh }}_includes/application-instructions.md){:target="_blank"}
+    * Step-by-step instructions on registration and payments.
+    * Program-specific steps (e.g., having travel insurance for the choral program) are included in this file.
+    * Service fee percentages
 * (data) [Festival overview]({{ gh }}_data/festival.yaml){:target="_blank"}
     * "XXXth season, 2026" or "Since 1996"
     * Which programs to list as part of the festival
