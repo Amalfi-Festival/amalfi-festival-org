@@ -26,6 +26,9 @@ hotel-single-upgrade:
     name: "Hotel upgrade: Single Room"
     name-zh: 酒店房型升级至单人间
 
+hotel-superior-upgrade:
+    name: "Hotel upgrade: Superior Room"
+
 meal-plan:
     name: Meal plan dinners (optional)
     name-zh: 音乐节期间的晚餐（可选项目）

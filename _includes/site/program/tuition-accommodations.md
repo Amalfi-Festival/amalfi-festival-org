@@ -54,20 +54,17 @@
     {%- include site/program/tuition-item.html item-name="hotel-double" has-tuition-item=_has-hotel-double name-key=_name-key description-key=_desc-key -%}
 {%- endif -%}
 
-{%- if reference-program.tuition.hotel-double-upgrade -%}
+{%- assign _upgrade-keys = "hotel-double-upgrade,hotel-single-upgrade,hotel-superior-upgrade" | split: "," -%}
+{%- for key in _upgrade-keys -%}
+{%- if reference-program.tuition[key] -%}
+{%- assign _upgrade = reference-program.tuition[key] -%}
 <tr class="upgrade">
-    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-double-upgrade[_name-key] }}</p></td>
-    {%- assign price = base-price | plus: reference-program.tuition.hotel-double-upgrade -%}
-    <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=reference-program.tuition.hotel-double-upgrade %}</strong></p></td>
+    <td valign="top"><p class="name">{{ site.data.accommodations[key][_name-key] }}</p></td>
+    {%- assign price = base-price | plus: _upgrade -%}
+    <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=_upgrade %}</strong></p></td>
 </tr>
 {%- endif -%}
-{%- if reference-program.tuition.hotel-single-upgrade -%}
-<tr class="upgrade">
-    <td valign="top"><p class="name">{{ site.data.accommodations.hotel-single-upgrade[_name-key] }}</p></td>
-    {%- assign price = base-price | plus: reference-program.tuition.hotel-single-upgrade -%}
-    <td class="cost" align="center" valign="top"><p><strong>+ {% include utilities/format-cost.html cost=reference-program.tuition.hotel-single-upgrade %}</strong></p></td>
-</tr>
-{%- endif -%}
+{%- endfor -%}
 
 {%- include site/program/has-tuition-item.fx tuition-item-name="lab-fee" -%}
 {%- assign _has-lab-fee = __return %}
