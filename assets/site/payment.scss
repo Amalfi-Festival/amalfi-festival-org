@@ -13,50 +13,18 @@ main ol {
     list-style-type: none;
     padding-left: 0 !important;
 }
-#formRegistration, #formBalance {
+#registrationFees {
     display: none;
 }
-.formRegistration #formRegistration,
-.formBalance #formBalance {
+.formRegistration #registrationFees {
     display: block;
 }
 
-*,
-#paypal-form-fields-container-AS45VTKZZPP36 {
-    input[type="text"], input[type="number"] {
-        font-size: $form-text-size;
-        font-family: $body-font;
-        padding: .5em;
-        border-radius: $border-radius-small;
-        height: initial;
+#paypalFormContainer {
+    // Hide the title of the form
+    .item-header, #desc-label { display: none !important; }
 
-        border: border-style-with-color($brand-blue);
-        &:hover {
-            border-color: $brand-light-blue;
-        }
-
-        width: $default-max-copy-width;
-        margin-left: $standard-block-margin-left;
-        @include breakpoint(mobile) {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
-}
-
-.paymentContainer {
-    display: none;
-}
-
-.paypalForm {
-    @include breakpoint(min-tablet) {
-        width: $default-max-copy-width !important;
-    }
-
-    #desc-label {
-        display: none;
-    }
-    .input-label {
+    form .input-label {
         // Identical to <h3> styling
         font-family: $brand-font;
         line-height: $minimum-line-height;
@@ -69,25 +37,6 @@ main ol {
             font-size: 1.15em;
         }
     }
-    #paypal-form-fields-container-AS45VTKZZPP36 {
-        .currency-label {
-            display: none;
-        }
-    }
-}
-
-.cost {
-    padding-right: 2em;
-}
-
-.invoice {
-    display: none;
-}
-{% for _p in site.data.festival.programs -%}
-{% if forloop.index0 > 0 %},{% endif %}.{{ _p.program-slug }} #invoice-{{ _p.program-slug }}
-{% endfor %}
-{
-    display: block;
 }
 
 input[type="radio"] {
@@ -122,6 +71,26 @@ input[type="radio"] {
     }
 }
 
+input[type="text"], input[type="number"] {
+    font-size: $form-text-size;
+    font-family: $body-font;
+    padding: .5em;
+    border-radius: $border-radius-small;
+    height: initial;
+
+    border: border-style-with-color($brand-blue);
+    &:hover {
+        border-color: $brand-light-blue;
+    }
+
+    width: $default-max-copy-width;
+    margin-left: $standard-block-margin-left;
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -139,6 +108,41 @@ input[type="submit"] {
     font-weight: 400;
 }
 
-details img {
-    width: 100%;
+
+.cost {
+    padding-right: 2em;
+}
+
+.invoice {
+    display: none;
+}
+{% for _p in site.data.festival.programs -%}
+{% if forloop.index0 > 0 %},{% endif %}.{{ _p.program-slug }} #invoice-{{ _p.program-slug }}
+{% endfor %}
+{
+    display: block;
+}
+
+#programContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    div {
+        border: border-style-with-color($brand-blue);
+        &:hover {
+            border-color: $brand-light-blue;
+        }
+        border-radius: $border-radius-small;
+        padding-left: .5em;
+        padding-right: .5em;
+        cursor: pointer;
+    }
+}
+
+{% for _p in site.data.festival.programs -%}
+{% if forloop.index0 > 0 %},{% endif %}#registrationFees.{{ _p.program-slug }} #program-{{ _p.program-slug }}
+{% endfor %}
+{
+    background-color: $brand-light-blue;
+    color: $background-color;
 }
