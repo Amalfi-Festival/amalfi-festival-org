@@ -27,12 +27,14 @@ custom-css: program
     </div>
     <div>
         <h2>
-        {%- unless program.to-be-announced -%}
+        {%- if program.to-be-announced -%}
+            {{- program.to-be-announced | markdownify -}}
+        {%- else -%}
             {%- for session in reference-program.sessions -%}
             {%- if forloop.index > 1 -%}<br/>{%- endif -%}
             {%- include site/session/get-session-name-with-dates.html session=session lang=page.lang -%}
             {%- endfor -%}
-        {%- endunless -%}
+        {%- endif -%}
         </h2>
         {%- if reference-program.webpage-data.program-heads -%}
             {%- include site/program/program-heads.html heads=reference-program.webpage-data.program-heads -%}
