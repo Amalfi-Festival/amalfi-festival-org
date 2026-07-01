@@ -1,7 +1,7 @@
 ---
 title: Piano Program
-to-be-announced: Stay Tuned!
 applications-closed: true
+to-be-announced: Stay Tuned!
 sessions:
     -   session-name: Session 1
         session-name-zh: 第一期
