@@ -1,7 +1,7 @@
 ---
 images:
-    -   filename: choral/coast-from-top.jpg
-        alt: Coast
+    -   filename: choral/dinner-lemons.jpg
+        alt: Dinner
     -   filename: choral/basilica-san-giovanni.jpg
         alt: Basilica San Giovanni
     -   filename: choral/soloists.jpg
