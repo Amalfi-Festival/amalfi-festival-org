@@ -37,16 +37,16 @@ cancellation-policy:
         before-date: 2026-20-01
     ### "A $___ processing fee will be applied to your refund..."
     processing-fee:
-        as-of-date: 2024-04-01
+        before-date: 2026-11-30
         amount: 50
     ### "Your $___ deposit will be forfeited plus any prepaid nonrefundable expenses."
     withdrawal-fee:
-        as-of-date: 2024-04-15
+        as-of-date: 2026-12-01
         amount: 100
     ### "Your first installment payment will be forfeited plus any prepaid nonrefundable expenses."
     forfeit:
-        as-of-date: 2024-05-01
+        as-of-date: 2027-03-01
         deductible: 1500
     ### "No refunds will be made..."
     no-refund:
-        as-of-date: 2024-06-01
+        as-of-date: 2027-05-01
