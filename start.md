@@ -18,6 +18,7 @@ To confirm that your changes are live, shift-click the reload button in your bro
 ## Text that universally affects all programs
 
 * [Application instructions](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_includes/application-instructions.md){:target="_blank"}
+* [Outings](https://github.com/Amalfi-Festival/amalfi-festival-org/edit/main/_data/outings.yaml){:target="_blank"} (Excursions and activities: name, description, length, cost)
 
 ## Programs
 
