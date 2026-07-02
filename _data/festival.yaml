@@ -34,18 +34,23 @@ fees-and-deposits:
 cancellation-policy:
     ### "Your deposit will be fully refunded without penalty..."
     full-refund:
-        before-date: 2026-10-01
+        date-relation: before
+        date: 2026-10-01
     ### "A $___ processing fee will be applied to your refund..."
     processing-fee:
-        before-date: 2026-11-30
+        date-relation: before
+        date: 2026-11-30
         amount: 50
     ### "Your $___ deposit will be forfeited plus any prepaid nonrefundable expenses."
     withdrawal-fee:
-        as-of-date: 2026-12-01
+        date-relation: as-of
+        date: 2026-12-01
         amount: 500
     ### "Your first installment payment will be forfeited plus any prepaid nonrefundable expenses."
     forfeit:
-        as-of-date: 2027-03-01
+        date-relation: as-of
+        date: 2027-03-01
     ### "No refunds will be made..."
     no-refund:
-        as-of-date: 2027-05-01
+        date-relation: as-of
+        date: 2027-05-01
