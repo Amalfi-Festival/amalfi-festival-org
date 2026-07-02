@@ -95,3 +95,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+input[type="submit"] {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1em;
+    font-family: $body-font;
+    font-weight: 400;
+}
